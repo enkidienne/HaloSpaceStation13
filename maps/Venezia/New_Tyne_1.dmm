@@ -1,14 +1,18 @@
 "aR" = (/obj/structure/closet/crate,/obj/random/cash,/obj/random/cash,/obj/random/cash,/obj/random/cash,/obj/random/cash,/obj/random/cash,/turf/simulated/floor/carpet,/area/space)
-"bc" = (/obj/structure/repair_bench,/turf/simulated/floor/reinforced,/area/space)
+"ba" = (/obj/structure/tree/bushy,/obj/structure/flora/grass/brown,/turf/simulated/floor/holofloor/grass,/area/space)
 "be" = (/obj/vehicles/air/pelican,/turf/simulated/floor/light/tech_neon/tech_white,/area/space)
+"bu" = (/obj/structure/reagent_dispensers/water_cooler,/turf/simulated/floor/lino,/area/space)
 "bE" = (/obj/effect/floor_decal/corner/paleblue,/obj/effect/floor_decal/corner/paleblue{dir = 1},/obj/item/weapon/stool{anchored = 1},/turf/simulated/floor/tech/steel,/area/space)
+"bO" = (/obj/structure/tree/bushy,/turf/simulated/floor/holofloor/grass,/area/space)
 "cW" = (/obj/effect/floor_decal/corner/paleblue,/obj/effect/floor_decal/corner/paleblue{dir = 1},/obj/machinery/vending/snack,/turf/simulated/floor/tech/steel,/area/space)
 "cZ" = (/turf/simulated/floor/tech/steel,/area/space)
+"dL" = (/obj/structure/xeno_plant,/turf/simulated/floor/holofloor/grass,/area/space)
 "dT" = (/obj/effect/floor_decal/corner/paleblue,/obj/effect/floor_decal/corner/paleblue{dir = 1},/obj/machinery/vending/engineering,/turf/simulated/floor/tech/steel,/area/space)
 "dX" = (/obj/vehicles/air/pelican{dir = 2},/obj/effect/floor_decal/industrial/warning{dir = 8; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/light/tech_neon/tech_white,/area/space)
 "ed" = (/obj/effect/floor_decal/industrial/loading{dir = 4},/turf/simulated/floor/plating,/area/space)
 "eu" = (/obj/effect/floor_decal/industrial/warning{dir = 9; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/machinery/floodlight/active/hi_cap,/turf/simulated/floor/reinforced,/area/space)
 "ev" = (/obj/machinery/overmap_weapon_console/ship_scanning_console{dir = 8; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "holotable"; name = "Holotable - Scanning"},/turf/simulated/floor/carpet,/area/space)
+"gd" = (/obj/structure/tree/two,/turf/simulated/floor/holofloor/grass,/area/space)
 "gm" = (/turf/simulated/floor/plating,/area/space)
 "gx" = (/obj/effect/floor_decal/industrial/warning{dir = 8; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/light/tech_neon/tech_white,/area/space)
 "gQ" = (/obj/machinery/door/airlock/covenant,/turf/simulated/floor/drone_biomass,/area/space)
@@ -20,51 +24,73 @@
 "hO" = (/obj/structure/table/woodentable,/obj/item/weapon/pen,/turf/simulated/floor/carpet,/area/space)
 "hP" = (/obj/structure/bed/chair/comfy/captain{dir = 4; icon_state = "capchair_preview"; name = "Comfy chair"; tag = "icon-capchair_preview (EAST)"},/turf/simulated/floor/carpet,/area/space)
 "id" = (/obj/structure/table/woodentable,/turf/simulated/floor/lino,/area/space)
+"iz" = (/obj/structure/tree/four,/turf/simulated/floor/holofloor/grass,/area/space)
+"iE" = (/obj/structure/flora/pottedplant/bamboo,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "iI" = (/obj/effect/floor_decal/corner/paleblue,/obj/effect/floor_decal/corner/paleblue{dir = 1},/obj/machinery/vending/cigarette,/turf/simulated/floor/tech/steel,/area/space)
 "iZ" = (/obj/machinery/door/airlock/halo/maint{dir = 8},/turf/simulated/floor/reinforced,/area/space)
+"jn" = (/obj/structure/flora/ausbushes/brflowers,/turf/simulated/floor/holofloor/grass,/area/space)
 "jN" = (/obj/structure/table/woodentable,/obj/random/projectile/rifle,/turf/simulated/floor/carpet,/area/space)
 "jQ" = (/obj/effect/floor_decal/industrial/warning{dir = 6; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/plating,/area/space)
+"jV" = (/obj/structure/sofa,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "jW" = (/obj/effect/floor_decal/corner/paleblue,/obj/effect/floor_decal/corner/paleblue{dir = 1},/obj/machinery/vending/tool,/turf/simulated/floor/tech/steel,/area/space)
+"ka" = (/obj/structure/reagent_dispensers/fueltank,/turf/simulated/floor/pavement/empty,/area/space)
 "kf" = (/obj/machinery/vending/cigarette,/turf/simulated/floor/lino,/area/space)
 "ko" = (/obj/effect/floor_decal/industrial/warning{dir = 8; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/reinforced,/area/space)
 "kU" = (/obj/effect/floor_decal/industrial/warning{dir = 10; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/plating,/area/space)
 "lA" = (/obj/structure/electric_fence/ns,/turf/simulated/floor/plating,/area/space)
 "lY" = (/obj/structure/bed/chair/comfy/captain{dir = 8; icon_state = "capchair_preview"; name = "Comfy chair"; tag = "icon-capchair_preview (WEST)"},/turf/simulated/floor/carpet,/area/space)
-"ma" = (/obj/structure/reagent_dispensers/watertank,/turf/simulated/floor/reinforced,/area/space)
 "mJ" = (/obj/item/stack/material/silver/ten,/turf/simulated/floor/carpet,/area/space)
 "mP" = (/obj/structure/window/reinforced/treated{dir = 4},/obj/structure/window/reinforced/treated{dir = 2},/turf/simulated/floor/holofloor/grass,/area/space)
+"mZ" = (/obj/structure/window/reinforced/treated{dir = 2},/obj/structure/flora/ausbushes/sparsegrass,/turf/simulated/floor/holofloor/grass,/area/space)
 "nh" = (/obj/structure/sofa/corner{dir = 4},/turf/simulated/floor/lino,/area/space)
 "no" = (/obj/item/weapon/stool{anchored = 1},/turf/simulated/floor/lino,/area/space)
+"nr" = (/obj/structure/noticeboard,/turf/simulated/wall/r_wall,/area/space)
 "nz" = (/obj/structure/bed/chair/comfy/captain{dir = 1; icon_state = "capchair_preview"; name = "Comfy chair"; tag = "icon-capchair_preview (NORTH)"},/turf/simulated/floor/carpet,/area/space)
 "nJ" = (/obj/machinery/vending/snack,/turf/simulated/floor/lino,/area/space)
 "nZ" = (/obj/structure/rearm_repair_station,/turf/simulated/floor/light/tech_neon/tech_white,/area/space)
+"og" = (/obj/machinery/vending/tool,/turf/simulated/floor/pavement/empty,/area/space)
+"oo" = (/obj/structure/flora/ausbushes/ywflowers,/turf/simulated/floor/holofloor/grass,/area/space)
+"ou" = (/obj/structure/flora/ausbushes/ppflowers,/turf/simulated/floor/holofloor/grass,/area/space)
 "oV" = (/obj/effect/floor_decal/industrial/warning{dir = 5; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/machinery/floodlight/active/hi_cap,/turf/simulated/floor/plating,/area/space)
 "pb" = (/obj/machinery/crystal_static/pink,/obj/structure/window/reinforced/projresist,/obj/structure/window/reinforced/projresist{icon_state = "rwindow"; dir = 4},/turf/simulated/floor/reinforced,/area/space)
+"pE" = (/obj/structure/window/reinforced/treated{dir = 2},/obj/structure/flora/grass/brown,/turf/simulated/floor/holofloor/grass,/area/space)
 "pQ" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/turf/simulated/floor/reinforced,/area/space)
-"qf" = (/obj/structure/window/reinforced/treated{dir = 2},/obj/structure/window/reinforced/treated{dir = 8},/turf/simulated/floor/holofloor/grass,/area/space)
+"qa" = (/obj/structure/table/glass,/obj/item/weapon/folder/yellow,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "qn" = (/obj/effect/floor_decal/industrial/warning{dir = 5; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/machinery/floodlight/active/hi_cap,/turf/simulated/floor/reinforced,/area/space)
 "qq" = (/obj/effect/floor_decal/industrial/warning{dir = 1; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/machinery/floodlight/active/hi_cap,/turf/simulated/floor/plating,/area/space)
+"qU" = (/obj/structure/sofa/right,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"rn" = (/obj/structure/window/reinforced/treated{dir = 2},/obj/structure/flora/ausbushes/fullgrass,/turf/simulated/floor/holofloor/grass,/area/space)
 "se" = (/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (EAST)"; icon_state = "warning"; dir = 4},/obj/effect/floor_decal/industrial/warning{dir = 8; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/reinforced,/area/space)
 "sf" = (/obj/structure/table/woodentable,/turf/simulated/floor/carpet,/area/space)
+"si" = (/obj/structure/window/reinforced/treated{dir = 2},/obj/structure/flora/ausbushes/brflowers,/turf/simulated/floor/holofloor/grass,/area/space)
 "sB" = (/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (SOUTHEAST)"; icon_state = "warning"; dir = 6},/obj/machinery/floodlight/active/hi_cap,/turf/simulated/floor/plating,/area/space)
+"sC" = (/obj/structure/window/reinforced/treated{dir = 1},/obj/structure/flora/ausbushes/fullgrass,/turf/simulated/floor/holofloor/grass,/area/space)
 "sG" = (/obj/structure/electric_fence/ew,/turf/simulated/floor/plating,/area/space)
+"te" = (/obj/structure/flora/pottedplant/decorative,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"tO" = (/obj/structure/window/reinforced/treated{dir = 2},/obj/structure/window/reinforced/treated{dir = 8},/obj/structure/flora/ausbushes/ywflowers,/turf/simulated/floor/holofloor/grass,/area/space)
 "tY" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/turf/simulated/floor/plating,/area/space)
+"up" = (/obj/structure/showcase,/obj/structure/window/reinforced/treated{dir = 1},/obj/structure/window/reinforced/treated{dir = 8},/obj/structure/window/reinforced/treated{dir = 4},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "vv" = (/obj/structure/table/rack,/obj/item/stack/material/silver/ten,/turf/simulated/floor/carpet,/area/space)
+"vK" = (/obj/structure/table/glass,/obj/item/weapon/form_printer,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "vT" = (/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (SOUTHEAST)"; icon_state = "warning"; dir = 6},/obj/machinery/floodlight/active/hi_cap,/turf/simulated/floor/reinforced,/area/space)
 "wc" = (/obj/machinery/overmap_weapon_console/ship_scanning_console{name = "Holotable - Scanning"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "holotable"; dir = 1},/turf/simulated/floor/carpet,/area/space)
 "wd" = (/turf/simulated/floor/lino,/area/space)
+"wl" = (/obj/structure/flora/ausbushes/fullgrass,/turf/simulated/floor/holofloor/grass,/area/space)
 "wD" = (/turf/simulated/floor/water,/area/space)
 "wP" = (/obj/effect/floor_decal/industrial/warning{dir = 9; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/plating,/area/space)
 "xt" = (/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/plating,/area/space)
 "xC" = (/turf/simulated/wall/r_wall,/area/space)
 "yg" = (/obj/effect/floor_decal/industrial/warning{dir = 8; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/plating,/area/space)
 "zq" = (/turf/simulated/floor/light/tech_neon/tech_white,/area/space)
+"zA" = (/obj/structure/table/glass,/obj/item/weapon/gift,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "zD" = (/obj/structure/curtain/open/shower,/turf/simulated/floor/tiled/white,/area/space)
-"zS" = (/obj/structure/window/reinforced/treated{dir = 1},/obj/structure/window/reinforced/treated{dir = 8},/turf/simulated/floor/holofloor/grass,/area/space)
+"zH" = (/obj/structure/repair_bench,/turf/simulated/floor/pavement/empty,/area/space)
 "zY" = (/obj/effect/floor_decal/industrial/loading,/turf/simulated/floor/reinforced,/area/space)
 "Ad" = (/turf/simulated/floor/stairs/north,/area/space)
+"Bl" = (/obj/machinery/door/airlock/halo/maint{dir = 8},/turf/simulated/floor/pavement/empty,/area/space)
 "Bq" = (/obj/structure/sink/kitchen,/turf/simulated/floor/tiled/white,/area/space)
-"BT" = (/obj/machinery/vending/engivend,/turf/simulated/floor/reinforced,/area/space)
+"Bv" = (/obj/structure/flora/ausbushes/sparsegrass,/turf/simulated/floor/holofloor/grass,/area/space)
+"Cc" = (/obj/structure/tree/bushy/two,/turf/simulated/floor/holofloor/grass,/area/space)
 "CD" = (/turf/simulated/floor/tiled/white,/area/space)
 "CU" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/reinforced,/area/space)
 "De" = (/obj/structure/table/woodentable,/obj/item/weapon/pen,/obj/item/weapon/folder/yellow,/turf/simulated/floor/carpet,/area/space)
@@ -75,6 +101,8 @@
 "Ev" = (/obj/structure/curtain/open/shower,/obj/machinery/shower{dir = 1},/turf/simulated/floor/tiled/white,/area/space)
 "ER" = (/obj/effect/floor_decal/industrial/warning,/obj/machinery/floodlight/active/hi_cap,/turf/simulated/floor/plating,/area/space)
 "EV" = (/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"Fa" = (/obj/structure/window/reinforced/treated{dir = 1},/obj/structure/window/reinforced/treated{dir = 8},/obj/structure/flora/ausbushes/fullgrass,/turf/simulated/floor/holofloor/grass,/area/space)
+"FA" = (/obj/machinery/vending/engivend,/turf/simulated/floor/pavement/empty,/area/space)
 "FR" = (/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (EAST)"; icon_state = "warning"; dir = 4},/turf/simulated/floor/reinforced,/area/space)
 "FS" = (/obj/machinery/door/blast/regular/triple/ns,/turf/simulated/floor/tech/steel,/area/space)
 "Gw" = (/obj/effect/floor_decal/industrial/warning{dir = 5; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/plating,/area/space)
@@ -84,48 +112,62 @@
 "Hr" = (/obj/effect/floor_decal/corner/paleblue,/obj/effect/floor_decal/corner/paleblue{dir = 1},/obj/machinery/vending/engivend,/turf/simulated/floor/tech/steel,/area/space)
 "Hw" = (/turf/simulated/wall/drone_biomass,/area/space)
 "HG" = (/obj/effect/floor_decal/corner/paleblue,/obj/effect/floor_decal/corner/paleblue{dir = 1},/obj/machinery/vending/cola,/turf/simulated/floor/tech/steel,/area/space)
+"Ij" = (/obj/structure/closet,/turf/simulated/floor/pavement/empty,/area/space)
+"Il" = (/turf/simulated/floor/pavement/empty,/area/space)
 "Ir" = (/obj/effect/floor_decal/corner/paleblue,/obj/effect/floor_decal/corner/paleblue{dir = 1},/obj/machinery/food_replicator,/turf/simulated/floor/tech/steel,/area/space)
 "IC" = (/obj/effect/floor_decal/industrial/warning,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/turf/simulated/floor/reinforced,/area/space)
 "Ja" = (/obj/effect/floor_decal/industrial/warning{dir = 2; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/plating,/area/space)
+"Jn" = (/obj/structure/window/reinforced/treated{dir = 2},/obj/structure/tree/two,/turf/simulated/floor/holofloor/grass,/area/space)
 "JR" = (/obj/structure/window/reinforced/treated{dir = 8},/turf/simulated/floor/holofloor/grass,/area/space)
 "JT" = (/obj/structure/sofa/left{dir = 4},/turf/simulated/floor/lino,/area/space)
-"Kd" = (/obj/structure/closet,/turf/simulated/floor/reinforced,/area/space)
+"Ka" = (/obj/structure/reagent_dispensers/watertank,/turf/simulated/floor/pavement/empty,/area/space)
+"Kb" = (/obj/structure/window/reinforced/treated{dir = 1},/obj/structure/flora/ausbushes/sparsegrass,/turf/simulated/floor/holofloor/grass,/area/space)
 "Kg" = (/turf/simulated/floor/stairs,/area/space)
 "KL" = (/obj/effect/floor_decal/industrial/warning{dir = 1; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/plating,/area/space)
 "KM" = (/obj/machinery/door/airlock/multi_tile/covenant{covenant_secure = 1; dir = 8; name = "Yanmee Hive"},/turf/simulated/floor/drone_biomass,/area/space)
 "KY" = (/obj/structure/sofa{dir = 4},/turf/simulated/floor/lino,/area/space)
+"Lj" = (/obj/structure/flora/grass/brown,/turf/simulated/floor/holofloor/grass,/area/space)
 "Mc" = (/obj/structure/urinal{dir = 4},/turf/simulated/wall/r_wall,/area/space)
 "Mj" = (/obj/effect/floor_decal/industrial/warning{dir = 8; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/effect/floor_decal/industrial/warning{dir = 8; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/plating,/area/space)
 "Mz" = (/obj/machinery/door/airlock/multi_tile/civilian,/turf/simulated/floor/lino,/area/space)
+"MG" = (/obj/structure/table/glass,/turf/simulated/wall/r_wall,/area/space)
+"MK" = (/obj/structure/reagent_dispensers/coolanttank,/turf/simulated/floor/pavement/empty,/area/space)
 "MY" = (/obj/structure/curtain,/turf/simulated/floor/tiled/white,/area/space)
 "Nb" = (/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (EAST)"; icon_state = "warning"; dir = 4},/obj/structure/rearm_repair_station,/turf/simulated/floor/light/tech_neon/tech_white,/area/space)
+"Nc" = (/obj/structure/table/woodentable,/obj/item/weapon/folder/nt/rd,/turf/simulated/floor/carpet,/area/space)
 "Oq" = (/obj/effect/floor_decal/industrial/warning,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/obj/machinery/floodlight/active/hi_cap,/turf/simulated/floor/reinforced,/area/space)
 "OD" = (/obj/machinery/door/blast/regular,/turf/simulated/floor/tech/steel,/area/space)
+"OE" = (/obj/structure/showcase,/obj/structure/window/reinforced/treated{dir = 8},/obj/structure/window/reinforced/treated{dir = 1},/obj/structure/window/reinforced/treated{dir = 4},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "OP" = (/obj/structure/window/reinforced/treated{dir = 2},/turf/simulated/floor/holofloor/grass,/area/space)
 "OR" = (/obj/effect/floor_decal/industrial/warning{dir = 8; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (EAST)"; icon_state = "warning"; dir = 4},/turf/simulated/floor/reinforced,/area/space)
+"Pi" = (/obj/structure/sofa/left,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "Pj" = (/obj/vehicles/air/pelican{dir = 2},/turf/simulated/floor/light/tech_neon/tech_white,/area/space)
 "PA" = (/obj/machinery/door/blast/regular/triple,/turf/simulated/floor/tech/steel,/area/space)
+"PG" = (/obj/structure/window/reinforced/treated{dir = 1},/obj/structure/xeno_plant,/turf/simulated/floor/holofloor/grass,/area/space)
 "PX" = (/obj/vehicles/air/pelican{dir = 4},/turf/simulated/floor/light/tech_neon/tech_white,/area/space)
 "Qx" = (/obj/structure/bed/nest,/turf/simulated/floor/drone_biomass,/area/space)
+"QB" = (/obj/structure/window/reinforced/treated{dir = 4},/obj/structure/flora/ausbushes/ywflowers,/turf/simulated/floor/holofloor/grass,/area/space)
 "QK" = (/obj/effect/floor_decal/corner/paleblue,/obj/effect/floor_decal/corner/paleblue{dir = 1},/obj/structure/closet/crate/bin,/turf/simulated/floor/tech/steel,/area/space)
 "Rp" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/obj/effect/floor_decal/industrial/warning,/obj/machinery/floodlight/active/hi_cap,/obj/structure/rearm_repair_station,/turf/simulated/floor/reinforced,/area/space)
+"Rs" = (/obj/structure/mirror,/turf/simulated/wall/r_wall,/area/space)
+"Sb" = (/obj/structure/window/reinforced/treated{dir = 8},/obj/structure/flora/grass/brown,/turf/simulated/floor/holofloor/grass,/area/space)
 "So" = (/obj/structure/bed/nest,/obj/structure/bed/nest,/turf/simulated/floor/drone_biomass,/area/space)
+"Sq" = (/obj/structure/window/reinforced/treated{dir = 2},/obj/structure/xeno_plant,/turf/simulated/floor/holofloor/grass,/area/space)
 "SP" = (/obj/machinery/crystal_static/pink,/obj/structure/window/reinforced/projresist{icon_state = "rwindow"; dir = 1},/obj/structure/window/reinforced/projresist{icon_state = "rwindow"; dir = 4},/turf/simulated/floor/reinforced,/area/space)
 "SQ" = (/obj/structure/bookcase/manuals/engineering,/turf/simulated/floor/lino,/area/space)
+"SU" = (/obj/machinery/door/airlock/multi_tile/civilian{dir = 4},/turf/simulated/floor/pavement/empty,/area/space)
 "Tq" = (/obj/machinery/door/blast/regular/quadruple,/turf/simulated/floor/reinforced,/area/space)
+"Tx" = (/obj/structure/window/reinforced/treated{dir = 1},/obj/structure/flora/ausbushes/brflowers,/turf/simulated/floor/holofloor/grass,/area/space)
 "TD" = (/obj/structure/window/reinforced/treated{dir = 1},/obj/structure/window/reinforced/treated{dir = 4},/turf/simulated/floor/holofloor/grass,/area/space)
 "TL" = (/obj/effect/floor_decal/industrial/warning{dir = 2; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/effect/floor_decal/industrial/warning{dir = 10; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/light/tech_neon/tech_white,/area/space)
 "Ud" = (/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (SOUTHEAST)"; icon_state = "warning"; dir = 6},/turf/simulated/floor/plating,/area/space)
 "Uq" = (/obj/structure/window/reinforced/treated{dir = 1},/turf/simulated/floor/holofloor/grass,/area/space)
 "Vf" = (/turf/simulated/floor/drone_biomass,/area/space)
-"Vi" = (/obj/structure/reagent_dispensers/fueltank,/turf/simulated/floor/reinforced,/area/space)
 "Vn" = (/obj/effect/floor_decal/corner/paleblue,/obj/effect/floor_decal/corner/paleblue{dir = 1},/turf/simulated/floor/tech/steel,/area/space)
-"Vs" = (/obj/machinery/door/airlock/multi_tile/civilian{dir = 4},/turf/simulated/floor/reinforced,/area/space)
 "Vv" = (/obj/structure/table/woodentable,/obj/structure/table/woodentable,/obj/item/weapon/pen,/turf/simulated/floor/carpet,/area/space)
 "VL" = (/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/reinforced,/area/space)
 "VU" = (/obj/effect/floor_decal/industrial/warning{dir = 10; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/machinery/floodlight/active/hi_cap,/turf/simulated/floor/reinforced,/area/space)
 "Wq" = (/obj/structure/electric_fence/ns,/turf/simulated/floor/reinforced,/area/space)
-"WL" = (/obj/machinery/vending/tool,/turf/simulated/floor/reinforced,/area/space)
 "WM" = (/obj/effect/floor_decal/corner/paleblue,/obj/effect/floor_decal/corner/paleblue{dir = 1},/obj/machinery/vending/games,/turf/simulated/floor/tech/steel,/area/space)
 "Xh" = (/obj/effect/floor_decal/corner/paleblue,/obj/effect/floor_decal/corner/paleblue{dir = 1},/obj/structure/closet/emcloset,/turf/simulated/floor/tech/steel,/area/space)
 "XV" = (/obj/machinery/crystal_static/pink,/obj/structure/window/reinforced/projresist,/obj/structure/window/reinforced/projresist{icon_state = "rwindow"; dir = 8},/turf/simulated/floor/reinforced,/area/space)
@@ -134,7 +176,7 @@
 "Ys" = (/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (EAST)"; icon_state = "warning"; dir = 4},/turf/simulated/floor/plating,/area/space)
 "Yz" = (/obj/machinery/door/airlock/multi_tile/halo/secure{dir = 8},/turf/simulated/floor/carpet,/area/space)
 "YG" = (/obj/effect/floor_decal/corner/paleblue,/obj/effect/floor_decal/corner/paleblue{dir = 1},/obj/structure/closet/medical_wall/filled{pixel_y = 32},/turf/simulated/floor/tech/steel,/area/space)
-"YH" = (/obj/structure/reagent_dispensers/coolanttank,/turf/simulated/floor/reinforced,/area/space)
+"YJ" = (/obj/structure/window/reinforced/treated{dir = 2},/obj/structure/flora/bush,/turf/simulated/floor/holofloor/grass,/area/space)
 "YN" = (/obj/machinery/overmap_weapon_console/ship_scanning_console{name = "Holotable - Scanning"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "holotable"; dir = 4},/turf/simulated/floor/carpet,/area/space)
 "YP" = (/turf/simulated/floor/reinforced,/area/space)
 "Zm" = (/obj/structure/sofa/left{dir = 1},/turf/simulated/floor/lino,/area/space)
@@ -142,6 +184,7 @@
 "ZB" = (/obj/structure/table/rack,/obj/item/stack/material/gold/ten,/turf/simulated/floor/carpet,/area/space)
 "ZK" = (/obj/machinery/overmap_weapon_console/ship_scanning_console{name = "Holotable - Scanning"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "holotable"; dir = 2},/turf/simulated/floor/carpet,/area/space)
 "ZV" = (/obj/effect/floor_decal/corner/paleblue,/obj/effect/floor_decal/corner/paleblue{dir = 1},/obj/machinery/vending/sovietsoda,/turf/simulated/floor/tech/steel,/area/space)
+"ZZ" = (/obj/structure/table/glass,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 
 (1,1,1) = {"
 wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
@@ -172,7 +215,7 @@ wDwDwDwDwDwDwDwDwDwDwDwDwDwDxCHwHwQxVfVfVfQxHwxCEVxCHwQxVfVfVfQxHwHwxCwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCHwHwSoQxSoQxHwxCEVxCHwQxQxQxQxHwHwxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCxCxChlGSGSGSGSsfVvsfsfDejNGSGSGSGSvvxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCHwHwHwHwHwHwxCEVxCHwHwHwHwHwHwxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCxCxCaRGSGSGSGShPDesfZKwcsfsflYGSGSGSGSaRxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCxCxCxCxCxCxCZtxCxCxCxCxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCxCxCaRGSGSGSGShPgWsfYNevsfhClYGSGSGSGSaRxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDgmEVgmwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCxCxChlGSGSGSGSsfhOhCsfsfsfGSGSGSGSZBxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDgmEVgmwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCxCxChlGSGSGSGSsfhOhCsfsfNcGSGSGSGSZBxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDgmEVgmwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCxCxCZBGSGSGSGSnzGSGSnzGSGSGSGShlxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDlAEVlAwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCxCxCvvGSGSGSGSGSGSGSGSGSGSZBxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDgmEVgmwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCxCxCZBGSGSGSGSGSGSGSGShlxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
@@ -185,35 +228,35 @@ wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDgmEVlAwDwDwDwDwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDgmEVgmwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDlAEVlAwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCZtxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCqUjVPiqUjVPiiEEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVteqUjVPiqUjVPixCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVEVFaUqKbUqTxUqUqUqsCUqPGUqTDEVEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCEVEVxCxCxCxCxCEVJRDsDsDsizDsooouDsDswlBvYoEVxCxCxCxCxCEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCEVEVxCKgKgKgxCEVSbbODsdLDswlougdDsbaDsDsQBEVxCKgKgKgxCEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCEVEVxCEVEVEVxCEVJRBvDsouDsCcDsDswlLjouDsYoEVxCEVEVEVxCEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCEVEVxCEVEVEVxCEVJRDsDsbODsjnDsizDsDsgdwlYoEVxCEVEVEVxCEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVEVtOJnOPrnpEsiSqYJOPsimZOPmPEVEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVEVzSUqUqUqUqUqUqUqUqUqUqUqTDEVEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCEVEVxCxCxCxCxCEVJRDsDsDsDsDsDsDsDsDsDsDsYoEVxCxCxCxCxCEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCEVEVxCKgKgKgxCEVJRDsDsDsDsDsDsDsDsDsDsDsYoEVxCKgKgKgxCEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCEVEVxCEVEVEVxCEVJRDsDsDsDsDsDsDsDsDsDsDsYoEVxCEVEVEVxCEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCEVEVxCEVEVEVxCEVJRDsDsDsDsDsDsDsDsDsDsDsYoEVxCEVEVEVxCEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVEVqfOPOPOPOPOPOPOPOPOPOPOPmPEVEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVEVEVEVEVEVEVAdAdEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCxCxCxCxCxCxCxCxCxCxCxCxCxCMzwdxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCCDBqBqBqCDCDCDiZwdwdwdwdwdwdnonononowdwdiZYPYPYPKdKdKdKdKdxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCcZcZcZxCcZcZcZcZcZcZcZcZcZcZcZcZcZxCcZcZcZxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDMcCDCDCDCDCDCDCDxCJTwdwdwdwdnoididididnowdxCYPYPYPYPYPYPYPYPxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCcZwPGwcZxCcZwPKLKLKLGwcZwPKLKLKLGwcZxCcZwPGwcZxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCCDCDCDCDxCxCxCxCKYwdwdwdwdnoidHiSPidnowdxCYPYPYPYPYPYPYPYPxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCcZcZygYscZxCcZkUJaJaJajQcZkUJaJaJaUdcZxCcZygYscZcZxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDMcCDCDCDCDMYCDhcxCKYididwdwdnoidXVpbidnowdxCKdKdKdKdKdKdbcbcxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCcZcZcZygYscZxCcZcZcZcZcZcZcZcZcZcZcZcZcZxCcZygYscZcZcZxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCEVEVOEqavKZZupEVEVEVEVEVEVAdAdEVEVEVEVEVEVEVupZZzAZZupEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCxCRsRsRsxCxCxCxCxCnrnrxCxCMzwdxCxCxCxCxCMGxCxCxCxCxCxCxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCCDBqBqBqCDCDCDiZwdwdwdwdwdwdnonononowdwdBlIlIlIlIjIjIjIjIjxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCcZcZcZxCcZcZcZcZcZcZcZcZcZcZcZcZcZxCcZcZcZxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDMcCDCDCDCDCDCDCDxCJTwdwdwdwdnoididididnowdxCIlIlIlIlIlIlIlIlxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCcZwPGwcZxCcZwPKLKLKLGwcZwPKLKLKLGwcZxCcZwPGwcZxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCCDCDCDCDxCxCxCxCKYwdwdwdwdnoidHiSPidnowdxCIlIlIlIlIlIlIlIlxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCcZcZygYscZxCcZkUJaJaJajQcZkUJaJaJaUdcZxCcZygYscZcZxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDMcCDCDCDCDMYCDhcxCKYididwdwdnoidXVpbidnowdxCIjIjIjIjIjIjzHzHxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCcZcZcZygYscZxCcZcZcZcZcZcZcZcZcZcZcZcZcZxCcZygYscZcZcZxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDxCCDCDCDCDxCxCxCxCKYididwdwdnoididididnowdxCxCxCxCxCxCxCxCxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCcZcZcZcZygYscZxCcZwPKLKLKLGwcZwPKLKLKLGwcZxCcZygYscZcZcZcZxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDMcCDCDCDCDMYCDDQxCKYwdwdwdwdwdnonononowdwdiZYPYPmaYHYHYHBTWLxCwDwDwDwDwDwDwDwDwDwDwDwDwDxCcZwPtYGwcZygYscZxCcZkUJaJaJaUdcZkUJaJaJaUdcZxCcZygYscZwPtYGwcZxCwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCxCxCzDxCxCxCxCxCKYididwdwdwdwdwdwdwdwdwdxCYPYPYPYPYPYPYPYPxCwDwDwDwDwDwDwDwDwDwDwDwDxCcZcZyggmYscZMjYscZxCcZcZcZcZcZcZcZcZcZcZcZcZcZxCcZygYscZyggmYscZcZxCwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCCDCDCDCDCDCDCDxCKYididwdwdwdwdwdwdwdwdwdxCYPYPYPYPYPYPmamaxCwDwDwDwDwDwDwDwDwDwDwDxCcZcZcZkUJajQcZygYscZxCcZwPtYtYtYtYtYtYtYtYtYGwcZxCcZygYscZkUJaUdcZcZcZxCwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCEvCDEvCDEvCDEvxCnhDFDFDFZmwdwdwdSQSQkfnJxCViViViViViViViVixCwDwDwDwDwDwDwDwDwDwDxCcZcZcZcZcZcZcZcZygYscZxCcZyggmgmgmgmgmgmgmgmgmYscZxCcZygYscZcZcZcZcZcZcZcZxCwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDMcCDCDCDCDMYCDDQxCKYwdwdwdwdwdnonononowdwdBlIlIlKaMKMKMKFAogxCwDwDwDwDwDwDwDwDwDwDwDwDwDxCcZwPtYGwcZygYscZxCcZkUJaJaJaUdcZkUJaJaJaUdcZxCcZygYscZwPtYGwcZxCwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCxCxCzDxCxCxCxCxCKYididwdwdwdwdwdwdwdwdwdxCIlIlIlIlIlIlIlIlxCwDwDwDwDwDwDwDwDwDwDwDwDxCcZcZyggmYscZMjYscZxCcZcZcZcZcZcZcZcZcZcZcZcZcZxCcZygYscZyggmYscZcZxCwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCCDCDCDCDCDCDCDxCKYididwdwdwdwdwdwdwdwdwdxCIlIlIlIlIlIlKaKaxCwDwDwDwDwDwDwDwDwDwDwDxCcZcZcZkUJajQcZygYscZxCcZwPtYtYtYtYtYtYtYtYtYGwcZxCcZygYscZkUJaUdcZcZcZxCwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCEvCDEvCDEvCDEvxCnhDFDFDFZmwdwdbuSQSQkfnJxCkakakakakakakakaxCwDwDwDwDwDwDwDwDwDwDxCcZcZcZcZcZcZcZcZygYscZxCcZyggmgmgmgmgmgmgmgmgmYscZxCcZygYscZcZcZcZcZcZcZcZxCwDwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDxCxCxCxCxCxCxCxCxCxCxCxCxCxCMzwdxCxCxCxCxCxCxCxCxCxCxCxCxCxCxCwDwDwDwDwDwDwDwDwDxCcZwPtYtYtYtYtYtYtYgmYscZxCcZyggmgmgmgmgmgmgmgmgmYscZxCcZyggmtYtYtYtYtYtYtYGwcZxCwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCzqzqzqzqzqzqNbYPYPYPYPYPYPKgKggxnZzqzqzqnZzqzqzqzqnZzqzqzqxCwDwDwDwDwDwDwDwDwDxCcZkUJaJaJaJaJaJaJaJaUdcZxCcZkUJaJaJaJaJaJaJaJaJaUdcZxCcZkUJaJaJaJaJaJaJaJaUdcZxCwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCzqzqzqzqzqzqHkYPYPYPYPYPYPYPYPgxzqzqzqzqzqzqzqzqzqzqzqzqzqxCwDwDwDwDwDwDwDwDwDxCcZcZcZcZcZcZcZcZcZcZcZcZxCcZcZcZcZcZcZcZcZcZcZcZcZcZxCcZcZcZcZcZcZcZcZcZcZcZcZxCwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCzqzqzqzqzqzqHkYPYPYPYPYPYPYPYPgxzqzqzqzqzqzqzqzqzqzqzqzqzqxCwDwDwDwDwDwDwDwDwDxCxCxCxCxCxCxCxCxCxCPAcZcZxCxCxCxCxCxCPAcZcZxCxCxCxCxCxCPAcZcZxCxCxCxCxCxCxCxCxCxCwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCzqPXzqzqzqzqHkYPYPYPYPYPYPYPYPdXzqzqzqzqPjzqzqzqzqPjzqzqzqxCwDwDwDwDwDwDwDwDwDxCcZcZcZcZcZcZcZcZcZcZcZcZxCQKbEbEbEYGVnVnVnZVIrcWHGiIxCcZcZcZcZcZcZcZcZcZcZcZcZxCsGgmgmsGgmgmsGgmgmxC
-wDwDwDwDwDwDwDwDwDxCYjzqzqzqzqzqHkYPYPYPYPYPYPYPYPTLDlDlDlDlDlDlDlDlDlDlDlDlDlxCwDwDwDwDwDwDwDwDwDxCcZwPtYtYGwcZcZwPtYtYGwcZxCVngZgZgZVnVnVnVnVnVnVnVnVnxCcZwPtYtYtYtYtYtYtYtYGwcZxCqqKLKLKLKLKLKLKLoVgm
-wDwDwDwDwDwDwDwDwDxCzqzqzqzqzqzqHkYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPxCsGgmgmsGgmgmsGgmgmxCcZyggmgmYscZcZyggmgmYscZxCVngZgZgZVnVnVnVnVnVnVnVnVnxCcZyggmgmgmgmgmgmgmgmYscZODedgmJaJaJaJaJagmYsgm
-wDwDwDwDwDwDwDwDwDxCzqzqzqzqzqzqHkYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPcZyggmgmYscZcZyggmgmYscZxCVnbEbEbEXhWMWMWMXhVnVnVnVnxCcZyggmgmgmgmgmgmgmgmYscZODedYszqzqzqzqzqygYslA
-wDwDwDwDwDwDwDwDwDxCzqPXzqzqzqzqHkYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPVsYPYPYPYPYPYPYPYPYPVsYPcZyggmgmYscZcZyggmgmYscZxCVnVnVnVnxCxCxCxCxCVnVnVnVnxCcZyggmgmgmgmgmgmgmgmYscZODedYszqzqzqzqzqygYsxC
-wDwDwDwDwDwDwDwDwDxCzqzqzqzqzqzqHkYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPxCsGgmgmsGgmgmsGgmgmxCcZkUJaJaUdcZcZkUJaJaUdcZcZVnVnVnVnxCKgKgKgxCVnVnVnVncZcZkUJaJaJaJaJaJaJaJajQcZODedYszqzqzqzqzqygYsgm
+wDwDwDwDwDwDwDwDwDxCzqzqzqzqzqzqNbIlIlIlIlIlIlKgKggxnZzqzqzqnZzqzqzqzqnZzqzqzqxCwDwDwDwDwDwDwDwDwDxCcZkUJaJaJaJaJaJaJaJaUdcZxCcZkUJaJaJaJaJaJaJaJaJaUdcZxCcZkUJaJaJaJaJaJaJaJaUdcZxCwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCzqzqzqzqzqzqHkIlIlIlIlIlIlIlIlgxzqzqzqzqzqzqzqzqzqzqzqzqzqxCwDwDwDwDwDwDwDwDwDxCcZcZcZcZcZcZcZcZcZcZcZcZxCcZcZcZcZcZcZcZcZcZcZcZcZcZxCcZcZcZcZcZcZcZcZcZcZcZcZxCwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCzqzqzqzqzqzqHkIlIlIlIlIlIlIlIlgxzqzqzqzqzqzqzqzqzqzqzqzqzqxCwDwDwDwDwDwDwDwDwDxCxCxCxCxCxCxCxCxCxCPAcZcZxCxCxCxCxCxCPAcZcZxCxCxCxCxCxCPAcZcZxCxCxCxCxCxCxCxCxCxCwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCzqPXzqzqzqzqHkIlIlIlIlIlIlIlIldXzqzqzqzqPjzqzqzqzqPjzqzqzqxCwDwDwDwDwDwDwDwDwDxCcZcZcZcZcZcZcZcZcZcZcZcZxCQKbEbEbEYGVnVnVnZVIrcWHGiIxCcZcZcZcZcZcZcZcZcZcZcZcZxCsGgmgmsGgmgmsGgmgmxC
+wDwDwDwDwDwDwDwDwDxCYjzqzqzqzqzqHkIlIlIlIlIlIlIlIlTLDlDlDlDlDlDlDlDlDlDlDlDlDlxCwDwDwDwDwDwDwDwDwDxCcZwPtYtYGwcZcZwPtYtYGwcZxCVngZgZgZVnVnVnVnVnVnVnVnVnxCcZwPtYtYtYtYtYtYtYtYGwcZxCqqKLKLKLKLKLKLKLoVgm
+wDwDwDwDwDwDwDwDwDxCzqzqzqzqzqzqHkIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlxCsGgmgmsGgmgmsGgmgmxCcZyggmgmYscZcZyggmgmYscZxCVngZgZgZVnVnVnVnVnVnVnVnVnxCcZyggmgmgmgmgmgmgmgmYscZODedgmJaJaJaJaJagmYsgm
+wDwDwDwDwDwDwDwDwDxCzqzqzqzqzqzqHkIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlcZyggmgmYscZcZyggmgmYscZxCVnbEbEbEXhWMWMWMXhVnVnVnVnxCcZyggmgmgmgmgmgmgmgmYscZODedYszqzqzqzqzqygYslA
+wDwDwDwDwDwDwDwDwDxCzqPXzqzqzqzqHkIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlSUIlIlIlIlIlIlIlIlIlSUIlcZyggmgmYscZcZyggmgmYscZxCVnVnVnVnxCxCxCxCxCVnVnVnVnxCcZyggmgmgmgmgmgmgmgmYscZODedYszqzqzqzqzqygYsxC
+wDwDwDwDwDwDwDwDwDxCzqzqzqzqzqzqHkIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlIlxCsGgmgmsGgmgmsGgmgmxCcZkUJaJaUdcZcZkUJaJaUdcZcZVnVnVnVnxCKgKgKgxCVnVnVnVncZcZkUJaJaJaJaJaJaJaJajQcZODedYszqzqzqzqzqygYsgm
 wDwDwDwDwDwDwDwDwDxCxCxCxCxCxCxCxCxCxCxCxCxCxCTqYPYPYPxCxCxCxCxCxCxCxCxCxCxCxCxCwDwDwDwDwDwDwDwDwDxCcZcZcZcZcZcZcZcZcZcZcZcZcZVnVnVnVnxCKgKgKgxCVnVnVnVncZcZcZcZcZcZcZcZcZcZcZcZcZODedYszqzqzqzqzqygYsgm
 wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDYPkoYPYPzYzYzYzYYPYPFRYPwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCcZwPtYtYGwcZcZwPtYtYGwcZFSVnVnVnVnxCKgKgKgxCVnVnVnVnFScZwPtYtYtYtYtYtYtYtYGwcZODedYszqzqzqzqzqygYslA
 wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDYPkoYPYPYPYPYPYPYPYPFRYPwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCcZyggmgmYscZcZyggmgmYscZxCVnVnVnVnVnVnVnVnVnVnVnVnVnxCcZyggmgmgmgmgmgmgmgmYscZODedYszqzqzqzqzqygYsxC
