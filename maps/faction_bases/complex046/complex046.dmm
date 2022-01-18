@@ -282,6 +282,7 @@
 "gM" = (/obj/structure/table/standard,/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
 "gR" = (/obj/structure/closet/crate,/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
 "hx" = (/obj/structure/sofa/right,/turf/simulated/floor/carpet/blue,/area/faction_base/oni/barracks)
+"hI" = (/turf/unsimulated/wall,/area/faction_base/oni/digsite)
 "iX" = (/obj/machinery/light/colored/blue{icon_state = "blue1"; dir = 1},/obj/machinery/mech_recharger,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/research)
 "js" = (/obj/structure/table/rack,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/research)
 "jQ" = (/obj/item/modular_computer/console/unsc/oni_supply,/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
@@ -447,7 +448,7 @@ aabhbCbCbCbCbCbCbCbCbhaabQbQbQbQbQbQbQbQaabRbRbRbRbRbRbRbRaaWdbFogSxSxSxbFbJlNbF
 aabhbCbCbCbCbCbCbCbCbhaabQbQbQbQbQbQbQbQaabRbRbRbRbRbRbRbRaaWdUluUbJbJbJbFxfbFbFLnLnUJLnLnLnVLLnLnbNaa
 aabhbCbCbCbCbCbCbCbCbhaabQbQbQbQbQbQbQbQaabRbRbRbRbRbRbRbRaaWdNebJbJbJbJbFaxfvbFTaLnBlLnLnLnBlLncDbNaa
 aabhcMbCbCbCbCbCbCbCbhaabQbQbQbQbQbQbQbQaabRbRbRbRbRbRbRbRaaWdejehtKNheHbFfegJbFaKLnKeLnGRLnKeLnaKbNaa
-aafAbhbhbhbhbhbhbhbhbhaadbbQbQbQbQbQbQbQaaesbRbRbRbRbRbRbRaaWdbFbFbFbFbFbFbFbFbFbNbNbNbNbNbNbNbNbNbNaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aafAbhbhbhbhbhbhbhbhbhaadbbQbQbQbQbQbQbQaaesbRbRbRbRbRbRbRaaWdbFbFbFbFbFbFbFbFbFbNbNbNbNbNbNbNbNbNbNhI
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahIhI
 "}
 
