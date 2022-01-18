@@ -358,6 +358,7 @@
 "Ke" = (/obj/structure/grille,/obj/structure/window/reinforced/treated{dir = 4},/obj/structure/window/reinforced/treated{dir = 8},/turf/simulated/floor/tiled/dark,/area/faction_base/oni/blacksite)
 "Kf" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/structure/rearm_repair_station/human,/turf/simulated/floor/road{tag = "icon-road_empty (NORTH)"; icon_state = "road_empty"; dir = 1},/area/faction_base/oni/garage)
 "Kk" = (/obj/structure/bookcase/manuals/research_and_development,/turf/simulated/floor/tech/gray,/area/faction_base/oni/barracks)
+"Kv" = (/turf/unsimulated/wall,/area/faction_base/oni/blacksite)
 "KV" = (/obj/structure/table/standard,/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/unsc,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/blacksite)
 "Li" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/obj/structure/window/reinforced/treated{dir = 1},/obj/machinery/light/colored/orange{tag = "icon-orange1 (WEST)"; icon_state = "orange1"; dir = 8},/turf/simulated/floor/tiled/dark,/area/faction_base/oni/hangar)
 "Ln" = (/turf/simulated/floor/tiled/dark,/area/faction_base/oni/blacksite)
@@ -430,13 +431,13 @@ aabfKkbVbVbVbVbVbvbVbVbVbVbVbwbfbxbxbybzbAbIeVbxbxbxbxbDbEbKbxbFbGbHgCbMccbGbHbH
 aabfKkbVgigdgibSbTbUgdbVbVlCbnbfbxbWeVeVfyeVeVvTeVYObxbYbZegbxbFcbcdcccccccccccdfkbFbJbJbNcecgchclbNaa
 aabfbfbffJosfJbfbfbfbfbfgebfbfbfbxcocpeVcqeVeVcreVeVeleVeVbXbxcNcQcccccucccvcccccwbFbJWwbNczcgcgcAbNaa
 aaeEbfynZNbVbVRnuDEmbfrTbVbVrTbfbxcFcGcHbxeVeVbxevevbxeVeVcJbxcNcQcccKcLcOcPcQccccbFbJbJbNcRcgcgclbNaa
-aaeEbfIVZNbVbVXxZNVSbfcVbVbVcVbfbxXYcWcWeVeVeVevdhfSbxsoeVcYbxbFctcccccZcccZccfFfGbFbJxabNbNbNbNbNbNaa
-aaeEbfIVZNbVbVXxZNZNbfcVbVbVcVbfbxdmeVeVeVeVeVevgFdhbxsoeVdibxfwcQdjccccccccccfMfNbFbJbJbFiXEJiXbFbFaa
-aaeEbfxBZNbVbVXxZNVSbfcVbVbVcVbfbxdneVeVdtdtcXbxevevbxHDeVdobxbFbFbFbFdpccbFbFbFbFbFdkbJbFbJbJbJMObFaa
-aaeEbfkkbVbVbVXxZNEmbfcVgdbVcVbfbxdveVeVdBdCeVevdhfSbxHDeVdwbxbFdxdydzbJbJbJbJbJbJdzbJbJbJbJbJbJEJbFaa
-aaeEbfsOZNbVbVxxbfbfbfbfbfbfbfbfbxdEeVeVeeefeVevgFdhbxoSeVdYbxbFeibJbJbJbJbJbJedbJbJbJbJtObJbJbJMObFaa
-aaeEbfBMZNbVbVbVAWwlsDhxuWUVlBbfbxekeVeVereTeVbxevevbxbxelbxbxbFexbJbJebebbJfZbFPBbJbFbFbFbFbFbFbFbFaa
-aaeEbfkkbVbVbVXxdqbVbVbVbVZNlBbfbxgfeVeVeVeVeVeVeVeVeVeVeVeVeVeJbJbJbJebebbJETbFLnLnLnLnJsEGGDGDDRbNaa
+aaeEbfIVZNbVbVXxZNVSbfcVbVbVcVbfbxXYcWcWeVeVeVevdhfSbxsoeVcYbxbFctcccccZcccZccfFfGbFbJxabNbNbNbNbNbNKv
+aaeEbfIVZNbVbVXxZNZNbfcVbVbVcVbfbxdmeVeVeVeVeVevgFdhbxsoeVdibxfwcQdjccccccccccfMfNbFbJbJbFiXEJiXbFbFKv
+aaeEbfxBZNbVbVXxZNVSbfcVbVbVcVbfbxdneVeVdtdtcXbxevevbxHDeVdobxbFbFbFbFdpccbFbFbFbFbFdkbJbFbJbJbJMObFKv
+aaeEbfkkbVbVbVXxZNEmbfcVgdbVcVbfbxdveVeVdBdCeVevdhfSbxHDeVdwbxbFdxdydzbJbJbJbJbJbJdzbJbJbJbJbJbJEJbFKv
+aaeEbfsOZNbVbVxxbfbfbfbfbfbfbfbfbxdEeVeVeeefeVevgFdhbxoSeVdYbxbFeibJbJbJbJbJbJedbJbJbJbJtObJbJbJMObFKv
+aaeEbfBMZNbVbVbVAWwlsDhxuWUVlBbfbxekeVeVereTeVbxevevbxbxelbxbxbFexbJbJebebbJfZbFPBbJbFbFbFbFbFbFbFbFKv
+aaeEbfkkbVbVbVXxdqbVbVbVbVZNlBbfbxgfeVeVeVeVeVeVeVeVeVeVeVeVeVeJbJbJbJebebbJETbFLnLnLnLnJsEGGDGDDRbNKv
 aaeEbfwyZNbVbVXxdqbVbVbVbVZNEIbfbxggeVeVeVeVeVdGeVeVeVeVdGeVeVgjbJbJbJebebbJGabFTaLnLnLnLnLnLnLnZTbNaa
 aaeEbfyGZNbVbVgdqKeSLZtiuPTSEIbfbxbxgcbxbxbxgcbxbxbxgcbxbxbxbxbFPKbJbJbJbJbJjsbFLnLnLnLnLnLnLnLnASbNaa
 aaeEbfbfbfbfbfbfbfbfbfbfbfbfbfbfbxxKeVnXbxxKeVnXbxeUeVeVeVeXbxbFJlbJxaebebbJEwbFBaHhEGLnLnLnqgKVtvbNaa
