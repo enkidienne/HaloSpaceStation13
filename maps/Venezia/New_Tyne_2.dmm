@@ -1,3 +1,4 @@
+"ba" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced{tag = "icon-rwindow (EAST)"; icon_state = "rwindow"; dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/item/clothing/under/marshall,/turf/simulated/floor/lino,/area/space)
 "bs" = (/obj/structure/bookcase/manuals/engineering,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "bu" = (/obj/structure/bookcase,/obj/machinery/light{dir = 4},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "cG" = (/obj/structure/bookcase,/obj/machinery/light{dir = 8},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
@@ -5,11 +6,16 @@
 "dU" = (/obj/structure/flora/ausbushes/stalkybush,/turf/simulated/floor/holofloor/grass,/area/space)
 "eg" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced/treated{dir = 1},/obj/item/weapon/gun/projectile/revolver/mateba,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "eN" = (/obj/structure/table/woodentable,/obj/item/weapon/storage/box/matches,/obj/item/weapon/storage/fancy/cigar,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"eU" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced{tag = "icon-rwindow (EAST)"; icon_state = "rwindow"; dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/item/clothing/head/kitty{desc = "A pair of kitty ears. These one were stolen from a certain UNSC medic."},/turf/simulated/floor/lino,/area/space)
 "fM" = (/obj/structure/table/woodentable,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"fR" = (/obj/item/weapon/archaeological_find{pixel_y = 10},/obj/structure/table/woodentable,/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/lino,/area/space)
+"gv" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced{dir = 1},/obj/item/clothing/suit/armor/special/urfc/eluxor{desc = "A custom made armorset with a cape included, clearly made by an armorsmisth in a very rough and old fashioned way. Clearly made by the Khoros Raiders. This one is a replica."; species_restricted = list("exclude", "Human")},/turf/simulated/floor/lino,/area/space)
 "gE" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/pavement/empty,/area/space)
 "gR" = (/obj/structure/flora/ausbushes/fernybush,/turf/simulated/floor/holofloor/grass,/area/space)
 "gY" = (/obj/structure/sofa/left{dir = 4},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "hX" = (/obj/structure/filingcabinet/medical,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"it" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced,/obj/item/weapon/gun/projectile/ACL55,/turf/simulated/floor/lino,/area/space)
+"iS" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/item/clothing/head/helmet/urfccommander/beretofficer,/turf/simulated/floor/carpet,/area/space)
 "iX" = (/obj/item/weapon/stool/bar/padded,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "ji" = (/obj/structure/bed/chair/office/light{dir = 1; icon_state = "officechair_white_preview"; tag = "icon-officechair_white_preview (EAST)"},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "jS" = (/obj/machinery/door/airlock/multi_tile/glass,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
@@ -23,13 +29,18 @@
 "nw" = (/obj/structure/flora/ausbushes/ywflowers,/turf/simulated/floor/holofloor/grass,/area/space)
 "nG" = (/obj/structure/bookcase/manuals/medical,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "oa" = (/obj/structure/sofa{dir = 4},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"oQ" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced,/obj/structure/window/reinforced{tag = "icon-rwindow (EAST)"; icon_state = "rwindow"; dir = 4},/obj/item/clothing/head/cowboy_hat{name = "Reno's hat"},/turf/simulated/floor/lino,/area/space)
+"oR" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced{dir = 1},/obj/item/clothing/suit/armor/special/urfc/mclovin{desc = "A bulletproof vest. Filled with pouches and storage compartments, while still keeping a scary amount of both mobility and protection. An ideal collage of the strengths of the URF, but with the added protection found only in high tier UNSC equipment. It's quite comfy, probably won't last long in space. This one is a replica."; species_restricted = list("exclude", "Human"); visible_name = "Unknown"},/turf/simulated/floor/lino,/area/space)
 "pt" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "pI" = (/turf/simulated/floor/holofloor/grass,/area/space)
+"qp" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced{dir = 1},/obj/item/clothing/suit/armor/vest/solgov{desc = "A synthetic armor vest. This one is marked with the crest of the United Earth Government and a replica."; name = "Sol Central Government armored vest"; species_restricted = list("exclude", "Human")},/turf/simulated/floor/lino,/area/space)
 "qB" = (/turf/simulated/floor/stairs/west,/area/space)
 "qE" = (/obj/structure/flora/ausbushes/sunnybush,/turf/simulated/floor/holofloor/grass,/area/space)
+"qL" = (/obj/structure/sign/floorplaque{desc = "A plaque rememoring the capture of the UNSC Thorin, turned into the glorious URF Thorn."; name = "URF Thorn's memorial"},/turf/simulated/floor/lino,/area/space)
 "qN" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced/treated{dir = 1},/obj/structure/window/reinforced/treated{dir = 4},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"sX" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced{tag = "icon-rwindow (EAST)"; icon_state = "rwindow"; dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/item/weapon/material/machete/pantascmdo,/turf/simulated/floor/carpet,/area/space)
 "uY" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
-"vh" = (/obj/structure/table/woodentable,/obj/item/weapon/archaeological_find{pixel_y = 10},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/lino,/area/space)
+"vn" = (/obj/item/weapon/archaeological_find{pixel_y = 10},/obj/structure/table/woodentable,/obj/structure/window/reinforced{tag = "icon-rwindow (EAST)"; icon_state = "rwindow"; dir = 4},/turf/simulated/floor/lino,/area/space)
 "vW" = (/obj/item/weapon/archaeological_find{pixel_y = 10},/obj/structure/table/woodentable,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/lino,/area/space)
 "wr" = (/obj/structure/bookcase,/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "wD" = (/turf/simulated/floor/water,/area/space)
@@ -39,13 +50,14 @@
 "yL" = (/obj/machinery/light,/turf/simulated/floor/pavement/empty,/area/space)
 "zC" = (/obj/structure/bookcase/manuals/xenoarchaeology,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "Ad" = (/turf/simulated/floor/stairs/north,/area/space)
+"Br" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/item/clothing/under/frontier,/turf/simulated/floor/lino,/area/space)
 "Cr" = (/obj/structure/sofa/right{tag = "icon-sofaend_right (EAST)"; icon_state = "sofaend_right"; dir = 4},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
-"CO" = (/obj/machinery/door/airlock/multi_tile/glass{dir = 8},/turf/simulated/floor/lino,/area/space)
 "Dg" = (/obj/structure/closet/cabinet,/obj/random/snack,/obj/random/snack,/obj/random/clothing,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "Do" = (/obj/structure/table/woodentable,/obj/item/weapon/form_printer,/obj/item/weapon/pen,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"DC" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced{dir = 1},/obj/item/clothing/under/gao_battlejumper,/turf/simulated/floor/lino,/area/space)
 "DW" = (/obj/structure/table/woodentable,/obj/item/weapon/pen,/obj/item/weapon/form_printer,/obj/item/weapon/folder/yellow,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"Ej" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced,/obj/item/clothing/head/hijab{icon_state = "hijab"; name = "Kroros Raiders's Hijab"},/turf/simulated/floor/lino,/area/space)
 "Ep" = (/obj/structure/bookcase,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
-"Eq" = (/obj/item/weapon/archaeological_find{pixel_y = 10},/obj/structure/table/woodentable,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/turf/simulated/floor/lino,/area/space)
 "Es" = (/obj/structure/table/woodentable,/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "EV" = (/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "EZ" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced/treated{dir = 1},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
@@ -59,9 +71,14 @@
 "Hm" = (/turf/simulated/floor/pavement/empty,/area/space)
 "Ht" = (/obj/structure/closet/cabinet,/obj/random/plushie,/obj/random/snack,/obj/random/clothing,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "HJ" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/pavement/empty,/area/space)
+"HS" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/item/clothing/shoes/x52boots,/turf/simulated/floor/lino,/area/space)
 "Ig" = (/obj/structure/table/woodentable,/obj/item/pizzabox/meat,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"Ja" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced,/obj/item/clothing/shoes/tactical,/turf/simulated/floor/lino,/area/space)
 "Jp" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/simulated/floor/pavement/empty,/area/space)
 "Kg" = (/turf/simulated/floor/stairs,/area/space)
+"Kq" = (/obj/structure/sign/floorplaque{desc = "A plaque rememoring the capture of the UNSC Berthels, turned into the glorious URF Big Berta."; name = "URF Big Bertha's memorial"},/turf/simulated/floor/lino,/area/space)
+"Kr" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced,/obj/item/clothing/shoes/oni_guard,/turf/simulated/floor/lino,/area/space)
+"Ks" = (/obj/machinery/door/airlock/multi_tile/glass{dir = 8},/turf/simulated/floor/carpet,/area/space)
 "Kv" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced/treated{dir = 1},/obj/random/contraband,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "LR" = (/obj/item/weapon/archaeological_find{pixel_y = 10},/obj/structure/table/woodentable,/obj/structure/window/reinforced{tag = "icon-rwindow (EAST)"; icon_state = "rwindow"; dir = 4},/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/lino,/area/space)
 "Me" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/pavement/empty,/area/space)
@@ -76,19 +93,28 @@
 "QZ" = (/turf/simulated/floor/reinforced,/area/space)
 "Re" = (/obj/structure/table/woodentable,/obj/item/weapon/pen,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "Rm" = (/obj/item/weapon/archaeological_find{pixel_y = 10},/obj/structure/table/woodentable,/obj/structure/window/reinforced,/turf/simulated/floor/lino,/area/space)
+"RU" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/item/clothing/suit/armor/special/urfc/pantas{desc = "A bulletproof vest. Filled with pouches and storage compartments, while still keeping a scary amount of both mobility and protection. An ideal collage of the strengths of the URF, but with the added protection found only in high tier UNSC equipment. It's quite comfy, probably won't last long in space. This one is a replica."; restricted_accessory_slots = null; species_restricted = list("exclude", "Human")},/turf/simulated/floor/lino,/area/space)
 "Sx" = (/obj/structure/bookcase,/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "Tm" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"Ub" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced,/obj/structure/window/reinforced{tag = "icon-rwindow (EAST)"; icon_state = "rwindow"; dir = 4},/obj/item/clothing/head/helmet/x52hood,/turf/simulated/floor/carpet,/area/space)
 "Uj" = (/obj/machinery/light,/turf/simulated/floor/stairs,/area/space)
+"UB" = (/obj/item/weapon/archaeological_find{pixel_y = 10},/obj/structure/table/woodentable,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/lino,/area/space)
 "UH" = (/obj/structure/table/woodentable,/obj/random/drinkbottle,/obj/item/weapon/reagent_containers/food/drinks/shaker,/obj/item/weapon/reagent_containers/food/drinks/glass2/shot,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "UW" = (/obj/structure/bed/chair/office/light{dir = 2; icon_state = "officechair_white_preview"; tag = "icon-officechair_white_preview (EAST)"},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "Vf" = (/obj/item/target,/obj/structure/window/reinforced/treated{dir = 2},/turf/simulated/floor/reinforced,/area/space)
 "Vq" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/stairs,/area/space)
+"VJ" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/item/clothing/suit/armor/special/urfc/aztec{desc = "A bulletproof vest. Filled with pouches and storage compartments, while still keeping a scary amount of both mobility and protection. An ideal collage of the strengths of the URF, but with the added protection found only in high tier UNSC equipment. It's quite comfy, probably won't last long in space. This one is a replica."; species_restricted = list("exclude", "Human")},/turf/simulated/floor/lino,/area/space)
 "WV" = (/obj/structure/tree/two,/turf/simulated/floor/holofloor/grass,/area/space)
 "WZ" = (/turf/simulated/floor/stairs/east,/area/space)
 "Xm" = (/obj/structure/bookcase/manuals/research_and_development,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"XO" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced,/obj/item/clothing/head/helmet/urfccommander/eluxor,/turf/simulated/floor/carpet,/area/space)
+"XX" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/item/weapon/material/hatchet/unathiknife,/turf/simulated/floor/carpet,/area/space)
 "Ys" = (/obj/structure/table/woodentable,/obj/machinery/photocopier/faxmachine,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"YC" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced,/obj/structure/window/reinforced{tag = "icon-rwindow (EAST)"; icon_state = "rwindow"; dir = 4},/obj/payload/self_destruct{arm_time = 9999999999999999999; blocked_species = list("human"); name = "Replica Nuclear Warhead Payload"},/turf/simulated/floor/lino,/area/space)
 "YN" = (/obj/machinery/door/airlock/multi_tile/glass{dir = 8},/turf/simulated/floor/holofloor/tiled/dark,/area/space)
 "YW" = (/obj/structure/filingcabinet/chestdrawer,/turf/simulated/floor/holofloor/tiled/dark,/area/space)
+"YY" = (/obj/structure/showcase,/turf/simulated/floor/lino,/area/space)
+"Zj" = (/obj/structure/table/woodentable,/obj/structure/window/reinforced{dir = 1},/obj/item/weapon/material/machete/mclovin,/turf/simulated/floor/carpet,/area/space)
 
 (1,1,1) = {"
 wDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
@@ -141,22 +167,22 @@ wDwDwDwDwDwDwDwDwDndEVEVxCEVEVEVxCEVEVEVxCEVEVEpxCEpEVEVxCEVEVEVxCEVEVEVxCEVEVnd
 wDwDwDwDwDwDwDwDwDxCptEVEVEVEVEVdiEVEVEVEVEVEVEpEpEpEVEVEVEVEVEVdiEVEVEVEVEVTmxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDndHmHmHmHmGVEVEVEVEVEVEVEVGVEVEVEVGVEVEVEVEVEVEVEVGVHmHmHmHmndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDndHmpIpIHmxCxCxCxCxCxCxCxCxCxNxNxNxCxCxCxCxCxCxCxCxCHmpIpIHmndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCxCndndndndndxCxCEVEVEVxCxCndndndndndxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDndHmpIpIHmxCxCxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxCxCHmpIpIHmndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDndHmpIpIHmxCxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxCHmpIdUHmndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDndHmWVlYHmxCxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxCHmpIpIHmndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCHmpIpIHmxCxNxNxNxCxCxCxCxCxNxNxNxCxCxCxCxCxNxNxNxCHmpIpIHmxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCMedUpIHmxCxNxNxNxCxCRmRmFFxNxNxNEqRmRmxCxCxNxNxNxCHmQupIHJxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDndHmpIpIHJxCxNxNxNxCFFxNxNxNxNxNxNxNxNxNEqxCxNxNxNxCMeqEpIHmndwDwDwDwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVEVEVEVEVYNEVEVEVYNEVEVEVEVEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDndHmnwpIHmxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNHmpIpIHmndwDwDwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDndHmpIpIHmCOxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNCOHmpIgRHmndwDwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDndHmgRpIHJxCxNxNxNxCLRxNxNxNxNxNxNxNxNxNvhxCxNxNxNxCMepIpIHmndwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDndHmpIpIHmxCxNxNxNxCxCPVPVLRxNxNxNvWPVPVxCxCxNxNxNxCHmpIpIHmndwDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVxCxCxCxCxCxCxCxCxCxCxCEVEVEVxCxCxCxCxCxCxCxCxCxCxCEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDndMepIpIHmxCxNxNxNxCxCxCxCxCxNxNxNxCxCxCxCxCxNxNxNxCHmpInwHmngwDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDxCMexhpIHmxCxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxCHmqEpIJpxCwDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDndHmlYpIHmxCxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxCHmpIpIHmndwDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDndHmpIpIHmxCxCxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxNxCxCHmpIpIHmndwDwDwDwDwDwDwDwDwDxCxCxCxCxCxCxCxCxCEVEVEVxCxCxCxCxCxCxCEVEVEVxCxCxCxCxCxCxCEVEVEVxCxCxCxCxCxCxCxCxCwDwDwDwDwDwDwDwDwDwD
-wDwDwDwDwDwDwDwDwDndHmpIpIHJxCxCxCxCxCxCxCxCxCxNxNxNxCxCxCxCxCxCxCxCxCMeWVpIHmndwDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDndHmpIpIHmxCxCxCxCxCxCxCxCxCGSGSGSxCxCxCxCxCxCxCxCxCHmpIpIHmndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCxCndndndndndxCxCEVEVEVxCxCndndndndndxCxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDndHmpIpIHmxCxCRmRmRmRmRmFFYYGSGSGSYYUBRmRmRmRmRmxCxCHmpIpIHmndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDndHmpIpIHmxCvnGSGSGSGSGSGSGSGSGSGSGSGSGSGSGSGSGSfRxCHmpIdUHmndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDndHmWVlYHmxCvnGSxNxNxNxNxNxNGSGSGSxNxNxNxNxNxNGSfRxCHmpIpIHmndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCHmpIpIHmxCvnGSxNxCxCxCxCxCGSGSGSxCxCxCxCxCxNGSfRxCHmpIpIHmxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCMedUpIHmxCFFGSxNxCxCEjitoQGSGSGSHSJaKrxCxCxNGSUBxCHmQupIHJxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDndHmpIpIHJxCYYGSxNxCYCxNqLGSGSGSGSGSxNxNBrxCxNGSYYxCMeqEpIHmndwDwDwDwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVEVEVEVEVYNEVEVEVYNEVEVEVEVEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDndHmnwpIHmGSGSGSGSGSGSGSGSGSXXZjsXGSGSGSGSGSGSGSGSGSHmpIpIHmndwDwDwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDndHmpIpIHmKsGSGSGSGSGSGSGSGSiSXOUbGSGSGSGSGSGSGSGSKsHmpIgRHmndwDwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDndHmgRpIHJxCYYGSxNxCbaxNxNGSGSGSGSGSKqxNRUxCxNGSYYxCMepIpIHmndwDwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDndHmpIpIHmxCLRGSxNxCxCDCqpeUGSGSGSVJgvoRxCxCxNGSvWxCHmpIpIHmndwDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVxCxCxCxCxCxCxCxCxCxCxCEVEVEVxCxCxCxCxCxCxCxCxCxCxCEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDndMepIpIHmxCvnGSxNxCxCxCxCxCGSGSGSxCxCxCxCxCxNGSfRxCHmpInwHmngwDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDxCMexhpIHmxCvnGSxNxNxNxNxNxNGSGSGSxNxNxNxNxNxNGSfRxCHmqEpIJpxCwDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDndHmlYpIHmxCvnGSGSGSGSGSGSGSGSGSGSGSGSGSGSGSGSGSfRxCHmpIpIHmndwDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDndHmpIpIHmxCxCPVPVPVPVPVLRYYGSGSGSYYvWPVPVPVPVPVxCxCHmpIpIHmndwDwDwDwDwDwDwDwDwDxCxCxCxCxCxCxCxCxCEVEVEVxCxCxCxCxCxCxCEVEVEVxCxCxCxCxCxCxCEVEVEVxCxCxCxCxCxCxCxCxCwDwDwDwDwDwDwDwDwDwD
+wDwDwDwDwDwDwDwDwDndHmpIpIHJxCxCxCxCxCxCxCxCxCGSGSGSxCxCxCxCxCxCxCxCxCMeWVpIHmndwDwDwDwDwDwDwDwDwDxCEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVxCwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDndHmpIqEHmHmHmHmHmHmHmHmHmgEHmHmHmgEHmHmHmHmHmHmHmHmHmpIpIHmndwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVxCEVEVEVxCEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDndHmpIpIpIpIpIpIpIpIpIpIdUpIpIgRpIpIpIpIpIpIpIpIpIpIlYpIpIHmndwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVxCKgUjKgxCEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwD
 wDwDwDwDwDwDwDwDwDndHmnwpIpInwQupIlYpIWVpIpIpIpIpIpIpIqEpIxhpIpIdUQupIpIpIpIHmndwDwDwDwDwDwDwDwDwDndEVEVEVEVEVEVEVYNEVEVEVYNEVEVEVEVEVxCxCxCxCxCEVEVEVEVEVYNEVEVEVYNEVEVEVEVEVEVEVndwDwDwDwDwDwDwDwDwDwD

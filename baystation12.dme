@@ -2096,6 +2096,7 @@
 #include "code\modules\halo\trade\trade_items\weapon.dm"
 #include "code\modules\halo\trade\trade_items\weapon_cov.dm"
 #include "code\modules\halo\trade\trade_items\weapon_unsc.dm"
+#include "code\modules\halo\trophy\huntershield.dm"
 #include "code\modules\halo\turfs\area.dm"
 #include "code\modules\halo\turfs\cityprops.dm"
 #include "code\modules\halo\turfs\interiorobjs.dm"
