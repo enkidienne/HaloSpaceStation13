@@ -19,10 +19,8 @@
 		/mob/living/simple_animal/hostile/covenant/grunt/heavy = 1,\
 		/mob/living/simple_animal/hostile/covenant/jackal = 4,\
 		/mob/living/simple_animal/hostile/covenant/jackal/shield = 6,\
-		/mob/living/simple_animal/hostile/covenant/jackal/sniper = 4,\
 		/mob/living/simple_animal/hostile/covenant/drone = 4,\
-		/mob/living/simple_animal/hostile/covenant/drone/ranged = 5,\
-		/mob/living/simple_animal/hostile/covenant/elite = 4)
+		/mob/living/simple_animal/hostile/covenant/drone/ranged = 5)
 	default_radio_channel = RADIO_COV
 	special_jobs = list(/datum/job/covenant/mgalekgolo)
 	income = 1000
