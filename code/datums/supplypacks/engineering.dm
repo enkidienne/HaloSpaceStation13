@@ -170,7 +170,7 @@
 	containertype = /obj/structure/closet/crate/secure/large
 	containername = "\improper Disposal Dispenser Crate"
 	access = access_atmospherics
-
+/*
 /decl/hierarchy/supply_pack/engineering/shield_generator
 	name = "Shield Generator Construction Kit"
 	contains = list(/obj/item/weapon/circuitboard/shield_generator, /obj/item/weapon/stock_parts/capacitor, /obj/item/weapon/stock_parts/micro_laser, /obj/item/weapon/smes_coil, /obj/item/weapon/stock_parts/console_screen)
@@ -178,7 +178,7 @@
 	containertype = /obj/structure/closet/crate/secure
 	containername = "\improper shield generator construction kit crate"
 	access = access_ce
-/*
+
 /decl/hierarchy/supply_pack/engineering/smbig
 	name = "Supermatter Core"
 	contains = list(/obj/machinery/power/supermatter)
