@@ -137,13 +137,13 @@
 /obj/item/projectile/bullet/covenant/needles
 	name = "Needle"
 	desc = "A sharp, pink crystalline shard"
-	damage = 25 // Low damage, special effect would do the most damage.
+	damage = 20 //A little lower than the smg because of the shrapnel dam
 	shield_damage = 20
 	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
 	icon_state = "Needler Shot"
 	embed = 1
 	sharp = 1
-	var/max_track_steps = 5
+	var/max_track_steps = 3
 	var/shards_to_explode = 6
 	var/shard_name = "Needle shrapnel"
 	var/mob/locked_target
@@ -276,7 +276,7 @@
 
 /obj/item/projectile/bullet/covenant/needles/rifleneedle
 	name = "Rifle Needle"
-	damage = 35
+	damage = 25 //Shrapnel makes up the difference with the dmr
 	armor_penetration = 40
 	shield_damage = 5
 	shrapnel_damage = 10
@@ -285,7 +285,7 @@
 	tracer_type = /obj/effect/projectile/bullet/covenant/needles/rifleneedle
 	tracer_delay_time = 0.5 SECONDS
 	invisibility = 101
-	max_track_steps = 2
+	max_track_steps = 1
 	muzzle_type = /obj/effect/projectile/muzzle/cov_red
 	steps_between_delays = 3
 

@@ -27,6 +27,7 @@
 		casing.eject(get_turf(src), angle2dir(dir2angle(loc.loc.dir)+90)) //loc = gun, loc.loc = the man firing
 
 /obj/item/weapon_attachment/secondary_weapon/proc/fire_attachment(var/atom/target, var/mob/living/user,var/obj/item/weapon/gun/source)
+
 	source.next_fire_time = world.time + fire_delay
 	var/obj/item/ammo_casing/chambered
 	//checks if internal magazine is empty

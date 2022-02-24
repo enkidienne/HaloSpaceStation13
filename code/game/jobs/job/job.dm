@@ -235,7 +235,8 @@
 						var/add_as_players = 1
 						if(my_faction.living_minds.len != 0)
 							for(var/datum/mind/player in minds_balance)
-								if(!istype(player.current,/mob/living) || !player.active || player.current.stat == DEAD)
+								add_as_players = 1
+								if(!istype(player.current,/mob/living) || !player.active || isnull(player.current.ckey) ||  player.current.stat == DEAD)
 									continue
 								if(player.assigned_role)
 									var/datum/job/j = job_master.occupations_by_title[player.assigned_role]
