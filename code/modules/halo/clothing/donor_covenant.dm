@@ -1,6 +1,7 @@
 ////////Boltersam\\\\\\\\
 
 //JIRALHANAE
+#define JIRALHANAE_ICON_PATH_MOB 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_gear.dmi'
 
 /obj/item/clothing/head/helmet/jiralhanae/covenant/boltersam
 	icon_state = "bolter_helm"
@@ -52,13 +53,22 @@
 ///////billymom2///////////
 
 /obj/item/clothing/head/helmet/jiralhanae/covenant/billymom2
-	icon_state = "billymom2_helm"
+	icon = JIRALHANAE_ICON_PATH_MOB
+	icon_state = "helm_billymom2"
+	name = "Jiralhanae Stalker Helmet"
+	desc = "A helmet meant to be worn by Jiralhanae Stalkers."
 
 /obj/item/clothing/suit/armor/jiralhanae/covenant/billymom2
-	icon_state = "billymom2_armour"
+	icon = JIRALHANAE_ICON_PATH_MOB
+	icon_state = "armour_billymom2"
+	name = "Jiralhanae Stalker Armor"
+	desc = "The armor of a Jiralhanae stealth specialist."
 
 /obj/item/clothing/shoes/jiralhanae/covenant/billymom2
-	icon_state = " "
+	icon = JIRALHANAE_ICON_PATH_MOB
+	icon_state = "billymom2feet"
+	name = "Jiralhanae Stalker Greaves"
+	desc = "Leg armor meant to be worn by Jiralhanae Stalkers"
 
 /obj/item/weapon/storage/box/large/donator/billymom2
 	startswith = list(/obj/item/clothing/head/helmet/jiralhanae/covenant/billymom2,
@@ -690,3 +700,5 @@
 	suit = /obj/item/clothing/suit/armor/special/combatharness/major/zagarnt
 	gloves = /obj/item/clothing/gloves/thick/sangheili/zagarnt
 	shoes = /obj/item/clothing/shoes/sangheili/zagarnt
+
+#undef JIRALHANAE_ICON_PATH_OBJ
