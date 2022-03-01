@@ -2165,6 +2165,7 @@
 #include "code\modules\halo\vehicles\types\escape_pelican.dm"
 #include "code\modules\halo\vehicles\types\escape_pods.dm"
 #include "code\modules\halo\vehicles\types\ghost.dm"
+#include "code\modules\halo\vehicles\types\goblin.dm"
 #include "code\modules\halo\vehicles\types\hrunting.dm"
 #include "code\modules\halo\vehicles\types\mongoose.dm"
 #include "code\modules\halo\vehicles\types\pelican.dm"

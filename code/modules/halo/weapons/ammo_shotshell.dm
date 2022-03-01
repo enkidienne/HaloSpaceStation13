@@ -28,7 +28,7 @@
 /obj/item/ammo_casing/shotgun/pellet/low_power
 	desc = "A 12g shotgun shell, low-powder load."
 	caliber = "shotgunlowpower"
-	projectile_type = /obj/item/projectile/bullet/m120
+	projectile_type = /obj/item/projectile/bullet/pellet/low_power
 
 /obj/item/projectile/bullet/pellet/low_power
 	damage = 18
