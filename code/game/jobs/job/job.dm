@@ -169,9 +169,6 @@
 /datum/job/proc/has_alt_title(var/mob/H, var/supplied_title, var/desired_title)
 	return (supplied_title == desired_title) || (H.mind && H.mind.role_alt_title == desired_title)
 
-/datum/job
-	var/debug_pop_balance = 0
-
 /datum/job/proc/is_restricted(var/datum/preferences/prefs, var/feedback)
 	. = FALSE
 
@@ -188,37 +185,36 @@
 		to_chat(feedback, "<span class='boldannounce'>Restricted species, [S], for [title].</span>")
 		return TRUE
 
-
 	//is this gamemode trying to balance the faction population?
 	var/num_balancing_factions = ticker.mode ? ticker.mode.faction_balance.len : 0
 	if(num_balancing_factions >= 2)
-		if(debug_pop_balance)	to_debug_listeners("Checking gamemode balance for [src.title]...")
+		if(Debug2)	to_debug_listeners("Checking gamemode balance for [src.title]...")
 
 		//are we out of the safe time?
 		if(world.time > GLOB.round_no_balance_time)
-			if(debug_pop_balance)	to_debug_listeners("Timer: Balance checks active...")
+			if(Debug2)	to_debug_listeners("Timer: Balance checks active...")
 
-			if(GLOB.clients.len <= GLOB.min_players_balance) return //Do we have enough connected clients to bother balancing?
+			if(GLOB.clients.len < GLOB.min_players_balance) return //Do we have enough connected clients to bother balancing?
 			//only try to balance if this job is part of a faction, and there is at least 1 person assigned
 			var/datum/faction/my_faction = GLOB.factions_by_name[spawn_faction]
 			if(my_faction && my_faction.living_minds.len > 0)
-				if(debug_pop_balance)	to_debug_listeners("[my_faction.name] has [my_faction.living_minds.len] minds assigned")
+				if(Debug2)	to_debug_listeners("[my_faction.name] has [my_faction.living_minds.len] minds assigned")
 
 				//is our faction being balanced?
 				if(my_faction.type in ticker.mode.faction_balance)
-					if(debug_pop_balance)	to_debug_listeners("Faction: Balance checks active...")
+					if(Debug2)	to_debug_listeners("Faction: Balance checks active...")
 
 					var/list/minds_balance = list()
 
 					//work out how many players there are in total
-					var/total_faction_players = 1 //1, for ourselves.
+					var/total_faction_players = 0
 					for(var/faction_type in ticker.mode.faction_balance)
 						var/datum/faction/F = GLOB.factions_by_type[faction_type]
 						total_faction_players += F.players_alive()
 						minds_balance |= F.living_minds
 
 					//only try balancing if people have actually joined
-					if(debug_pop_balance)	to_debug_listeners("[total_faction_players] active")
+					if(Debug2)	to_debug_listeners("[total_faction_players] active")
 					if(total_faction_players > 0)
 
 						//Reset it so it doesn't interfere with any of our actual cost calcualations.
@@ -232,11 +228,10 @@
 						//var/my_faction_players = my_faction.living_minds.len
 						var/my_faction_players = pop_balance_mult //We need to take into account our own job pop balance cost.
 						var/my_ratio = 0
-						var/add_as_players = 1
-						if(my_faction.living_minds.len != 0)
+						if(minds_balance.len != 0)
 							for(var/datum/mind/player in minds_balance)
-								add_as_players = 1
-								if(!istype(player.current,/mob/living) || !player.active || isnull(player.current.ckey) ||  player.current.stat == DEAD)
+								var/add_as_players = 1
+								if(!player.current || !istype(player.current,/mob/living) || !player.active || isnull(player.current.ckey) ||  player.current.stat == DEAD)
 									continue
 								if(player.assigned_role)
 									var/datum/job/j = job_master.occupations_by_title[player.assigned_role]
@@ -250,15 +245,16 @@
 						var/list/last_checked_lock = ticker.mode.last_checked_lock
 						//are we overpopped?
 						if(my_ratio > max_ratio)
-							//If we're cost one, track us on the popbalance last-locked list.
 							var/block_role = TRUE
 							last_checked_lock |= my_faction.type
-							if(add_as_players <= 1)
+							//If we're cost one, give us the chance to skip poplock.
+							if(pop_balance_mult <= 1)
 								var/force_role = 1
 								//If all factions have checked, and failed the pop lock, and this job is cost-1, then allow us through anyway.
 								for(var/f_type in ticker.mode.faction_balance)
 									if(!(f_type in last_checked_lock))
 										force_role = 0
+										break
 								if(force_role)
 									block_role = FALSE
 
@@ -266,7 +262,7 @@
 								to_chat(feedback, "<span class='boldannounce'>Joining as [title] is blocked due to [spawn_faction] faction overpop.</span>")
 							else
 								message_admins("NOTICE: Poplock check was failed, but we're in a deadlock state so we'll let it through.")
-								last_checked_lock -= my_faction.type
+								last_checked_lock.Cut()
 							//tell the admins, but dont spam them too much
 							if(world.time > GLOB.last_admin_notice_overpop + 30 SECONDS)
 								GLOB.last_admin_notice_overpop = world.time
@@ -276,7 +272,7 @@
 									max [round(100*max_ratio)]% or [round(max_ratio*total_faction_players,0.1)]/[total_faction_players] players)")
 
 							return block_role
-						else if(debug_pop_balance)	to_debug_listeners("my_ratio:[my_ratio], max_ratio:[max_ratio], my_faction_players:[my_faction_players]")
+						else if(Debug2)	to_debug_listeners("my_ratio:[my_ratio], max_ratio:[max_ratio], my_faction_players:[my_faction_players]")
 
 	return FALSE
 
