@@ -1,5 +1,4 @@
 GLOBAL_LIST_EMPTY(capture_nodes)
-#define FALLBACK_MOBSPAWN_AMOUNT 4
 #define EXTRAPLAYER_CAP_AMT_INCREASE 0.25
 #define EXTRAPLAYER_CAP_AMT_MAX 2
 
@@ -20,6 +19,7 @@ GLOBAL_LIST_EMPTY(capture_nodes)
 	var/datum/progressbar/cap_bar
 	var/next_cap_tick_at = 0
 	var/list/capture_npc_spawnlocs = list()
+	var/fallback_spawns = 0
 	ai_access_level = 4
 
 /obj/machinery/computer/capture_node/New()
@@ -145,13 +145,13 @@ GLOBAL_LIST_EMPTY(capture_nodes)
 	var/list/defenders_spawn = F.defender_mob_types
 	if(defenders_spawn.len == 0)
 		return
-	if(capture_npc_spawnlocs.len == 0)
+	if(capture_npc_spawnlocs.len == 0 && fallback_spawns > 0)
 		var/area/our_area = loc.loc
 		var/list/view_turfs = list()
 		for(var/turf/t in our_area.contents)
 			if(t.density != 1)
 				view_turfs += t
-		for(var/i = 0 to FALLBACK_MOBSPAWN_AMOUNT)
+		for(var/i = 0 to fallback_spawns)
 			var/to_spawn = pickweight(defenders_spawn)
 			new to_spawn (pick(view_turfs))
 		return
@@ -253,3 +253,6 @@ GLOBAL_LIST_EMPTY(capture_nodes)
 
 /obj/effect/landmark/npc_capturespawn_marker
 	name = "Capture-Spawn marker"
+
+#undef EXTRAPLAYER_CAP_AMT_INCREASE
+#undef EXTRAPLAYER_CAP_AMT_MAX
