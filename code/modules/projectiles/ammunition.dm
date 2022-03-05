@@ -102,7 +102,7 @@
 
 /obj/item/ammo_casing/throw_impact(var/atom/A)
 	. = ..()
-	if(!BB)
+	if(!BB && loc)
 		var/obj/item/ammo_casing/here = locate(type) in loc.contents - src
 		if(here)
 			here.add_to_pile()
