@@ -289,10 +289,12 @@
 	muzzle_type = /obj/effect/projectile/muzzle/cov_red
 	steps_between_delays = 3
 
-/obj/effect/projectile/bullet/covenant/needles/rifleneedle
+/obj/effect/projectile/bullet/covenant/needles
 	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
-	icon_state = "needlerifle_trail"
 	alpha = 160
+
+/obj/effect/projectile/bullet/covenant/needles/rifleneedle
+	icon_state = "needlerifle_trail"
 
 /obj/item/ammo_magazine/fuel_rod
 	name = "Type-33 Light Anti-Armor Weapon Magazine"

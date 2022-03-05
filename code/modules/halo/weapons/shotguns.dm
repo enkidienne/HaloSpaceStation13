@@ -9,7 +9,8 @@
 	item_state = "m90"
 	fire_sound = 'code/modules/halo/sounds/Shotgun_Fire_New.wav'
 	reload_sound = 'code/modules/halo/sounds/Shotgun_Reload_New.wav'
-	ammo_type = /obj/item/ammo_casing/shotgun/pellet
+	ammo_type = /obj/item/ammo_casing/shotgun/pellet/high_power
+	caliber = "shotgunhighpower"
 	max_shells = 8
 	fire_delay = 8
 	one_hand_penalty = -1
@@ -99,7 +100,8 @@
 	item_state = "m45"
 	fire_sound = 'code/modules/halo/sounds/Shotgun_Shot_Sound_Effect.ogg'
 	reload_sound = 'code/modules/halo/sounds/Shotgun_Pump_Slide.ogg'
-	ammo_type = /obj/item/ammo_casing/shotgun/pellet
+	ammo_type = /obj/item/ammo_casing/shotgun/pellet/high_power
+	caliber = "shotgunhighpower"
 	max_shells = 6
 	one_hand_penalty = -1
 	dispersion = list(0.45)
@@ -116,7 +118,7 @@
 
 
 /obj/item/weapon/gun/projectile/shotgun/pump/m45_ts/police
-	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
+	ammo_type = /obj/item/ammo_casing/shotgun/beanbag/high_power
 
 /obj/item/weapon/gun/projectile/shotgun/pump/m45_ts/verb/toggle_light()
 	set category = "Object"
