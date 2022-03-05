@@ -40,6 +40,19 @@
 	. = ..()
 	guns_disabled = 0
 
+/obj/vehicles/goblin/enter_as_position(var/mob/user,var/position = "passenger",var/forced_by_faction = null)
+	var/mob/living/carbon/human/h = user
+	var/failcheck = 0
+	if(!istype(h))
+		failcheck = 1
+	else if(h.species.get_bodytype(h) != "Unggoy")
+		failcheck = 1
+	if(failcheck)
+		to_chat(user,"<span class = 'notice'>[src]'s seat isn't made for you.</span>")
+		return 0
+	else
+		. = ..()
+
 /obj/item/vehicle_component/health_manager/goblin
 	integrity = 500
 	resistances = list("bullet"=65,"energy"=65,"emp"=25,"bomb"=45)
@@ -49,7 +62,6 @@
 	pos_to_check = "driver"
 	gunner_weapons = list(/obj/item/weapon/gun/vehicle_turret/switchable/goblin_mg)
 	vital_components = newlist(/obj/item/vehicle_component/health_manager/goblin)
-
 
 /obj/item/weapon/gun/vehicle_turret/switchable/goblin_mg
 	name = "Goblin Heavy Needler"
@@ -88,7 +100,7 @@
 	name = "Goblin Plasma Bombs"
 	desc = "A 20-round storage of plasma bombs."
 	burst_size = 2
-	burst_delay = 1
+	burst_delay = 8
 	dispersion = list(0)
 	fire_delay = 25
 	fire_sound = 'code/modules/halo/sounds/plasma_torpedoes_fire.ogg'
@@ -108,12 +120,19 @@
 
 /obj/item/projectile/bullet/covenant/needles/heavy_goblin
 	name = "Heavy needle"
+	icon_state = "heavyneedle_shot"
 	damage = 35
 	armor_penetration = 40
 	shield_damage = 30
 	max_track_steps = 1
 	shards_to_explode = 12
 	shrapnel_damage = 15
+	muzzle_type = /obj/effect/projectile/muzzle/cov_red
+	tracer_type = /obj/effect/projectile/bullet/covenant/needles/heavyneedle
+	tracer_delay_time = 0.5 SECONDS
+
+/obj/effect/projectile/bullet/covenant/needles/heavyneedle
+	icon_state = "heavyneedle_trail"
 
 /obj/item/ammo_magazine/goblin_shotgun
 	name = "Internal Needle Shard Storage"
@@ -124,38 +143,38 @@
 /obj/item/ammo_casing/shotgun/pellet/goblin
 	desc = "A blamite shrapnel shot"
 	caliber = "needleshot"
-	projectile_type = /obj/item/projectile/bullet/pellet/shotgun/blamite
+	projectile_type = /obj/item/projectile/bullet/pellet/shotgun/low_power/blamite
 
-/obj/item/projectile/bullet/pellet/shotgun/blamite
-	name = "blamite shrapnel"
+/obj/item/projectile/bullet/pellet/shotgun/low_power/blamite
+	name = "blamite shards"
+	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
+	icon_state = "needleshot_shot"
 	fire_sound = 'code/modules/halo/sounds/goblin_shotgun.ogg'
+	muzzle_type = /obj/effect/projectile/muzzle/cov_red
+	tracer_type = /obj/effect/projectile/bullet/covenant/needles/needleshot
+	tracer_delay_time = 0.25 SECONDS
+
+/obj/effect/projectile/bullet/covenant/needles/needleshot
+	icon_state = "needleshot_trail"
 
 /obj/item/ammo_magazine/goblin_bombs
 	name = "Internal Plasma Bomb Rack"
 	caliber = "plasbomb"
 	max_ammo = 20
-	ammo_type = /obj/item/ammo_casing/spnkr
+	ammo_type = /obj/item/ammo_casing/plasbomb
+
+/obj/item/ammo_casing/plasbomb
+	icon = 'code/modules/halo/weapons/icons/Covenant Weapons.dmi'
+	icon_state = "plasmagrenade"
+	caliber = "plasbomb"
+	projectile_type = /obj/item/projectile/bullet/ssr/plasbomb
+
+/obj/item/projectile/bullet/ssr/plasbomb
+	name = "plasma bomb"
+	icon = 'code/modules/halo/weapons/icons/Covenant Weapons.dmi'
+	icon_state = "plasmagrenade_active"
+	muzzle_type = /obj/effect/projectile/muzzle/cov_blue
 
 /obj/item/weapon/hrunting_melee/goblin
 	name = "\the Goblin fist"
 	desc = "punch"
-
-/obj/item/weapon/hrunting_melee/goblin/resolve_attackby(atom/movable/a, mob/user, var/click_params)
-	var/mob/living/m = a
-	var/obj/vehicles/v = a
-	var/do_knockback = 0
-	if(istype(v))
-		do_knockback = 3
-	if(istype(m))
-		do_knockback = 8
-	if(do_knockback)
-		var/turf/t = get_turf(user)
-		var/throw_dir = get_dir(t, m)
-		var/turf/targ = t
-		for(var/i = 0 to do_knockback)
-			var/turf/targ_temp = get_step(targ,throw_dir)
-			if(targ_temp.density == 1)
-				break
-			targ = targ_temp
-		a.throw_at(targ, do_knockback, 1, user)
-	. = ..()

@@ -56,6 +56,8 @@
 	icon_state = "ssr"
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
 	check_armour = "bomb"
+	damage_type = "bomb"
+	damtype = "bomb"
 	step_delay = 1.3
 	kill_count = 21
 	shield_damage = 100
