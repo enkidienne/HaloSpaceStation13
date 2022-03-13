@@ -32,7 +32,7 @@ GLOBAL_LIST_INIT(first_names_jiralhanae, world.file2list('code/modules/halo/cove
 	brute_mod = 0.65
 	burn_mod = 0.65
 	pain_mod = 0.8
-	adrenal_break_threshold = 200//Originally, this was lower, however, the higher threshold allows brutes
+	adrenal_break_threshold = 100//Originally, this was lower, however, the higher threshold allows brutes
 	//to sustain a longer lasting lower-level painkill rather than having their adrenaline
 	//forcefully swapped for a very short term buff
 	explosion_effect_mod = 0.5
