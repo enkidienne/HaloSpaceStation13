@@ -71,9 +71,8 @@
 	desc = "A heavily modified M392 remade without a bullpup design and including a hardened barrel for a faster fire rate. Fires in bursts. Takes 7.62mm rounds."
 	fire_sound = 'code/modules/halo/sounds/innieDMRfirfix.ogg'
 	reload_sound = 'code/modules/halo/sounds/InnieDMRreload.ogg'
-	fire_delay = 8
-	burst_delay = 1.5
-	dispersion = list(0.26)
-	burst = 2
+	fire_delay = 5
+	dispersion = list(0)
+	burst = 1
 	accuracy = -2
 	scoped_accuracy = 0
