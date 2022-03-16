@@ -26,6 +26,7 @@
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/kig_yar_skirmisher)
 	pop_balance_mult = 1.5 //They're worth a bit more than a marine due to their speed.
+	open_slot_on_death = 1 //Since the speed nerf, these aren't nearly as powerful as they used to be.
 
 /datum/job/covenant/skirmcommando
 	title = "T-Vaoan Commando"

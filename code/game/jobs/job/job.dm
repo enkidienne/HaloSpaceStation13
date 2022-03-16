@@ -83,6 +83,11 @@
 				for(var/datum/objective/O in F.all_objectives)
 					H.mind.objectives.Add(O)
 				show_objectives(H.mind)
+	//Popbalance system. We're spawning them in, now, so let's cut the popbalance deadlock.
+	if(spawn_faction)
+		var/datum/faction/my_faction = GLOB.factions_by_name[spawn_faction]
+		var/list/last_checked_lock = ticker.mode.last_checked_lock
+		last_checked_lock -= my_faction.type
 
 /datum/job/proc/get_outfit(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch)
 	if(alt_title && alt_titles)
@@ -262,11 +267,6 @@
 								to_chat(feedback, "<span class='boldannounce'>Joining as [title] is blocked due to [spawn_faction] faction overpop.</span>")
 							else
 								message_admins("NOTICE: Poplock check was failed, but we're in a deadlock state so we'll let it through.")
-								//feedback parameter is missing when the latejoin jobs list calls this proc to construct the jobs list
-								//see: /mob/new_player/proc/LateChoices() in modules/mob/new_player/new_player.dm
-								//We don't want to put ourselves back into a deadlocked position
-								if(feedback)
-									last_checked_lock.Cut()
 							//tell the admins, but dont spam them too much
 							if(world.time > GLOB.last_admin_notice_overpop + 30 SECONDS)
 								GLOB.last_admin_notice_overpop = world.time
