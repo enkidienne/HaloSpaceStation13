@@ -29,7 +29,7 @@
 
 /obj/item/projectile/bullet/pellet/shotgun/high_power
 	name = "large shrapnel"
-	damage = 25
+	damage = 20
 	armor_penetration = 30
 	pellets = 6
 	range_step = 1.5
