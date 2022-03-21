@@ -153,8 +153,8 @@
 		/obj/item/dumb_ai_chip/cov = 2,
 		/obj/item/stack/barbedwire/covenant/fifteen = 5,
 		/obj/item/weapon/plastique/covenant = 8,
-		/obj/item/weapon/plastique/breaching/covenant = 3,
-		/obj/item/weapon/plastique/breaching/longrange/covenant = 3,
+		/obj/item/weapon/plastique/breaching/covenant = 5,
+		/obj/item/weapon/plastique/breaching/longrange/covenant = 5,
 		/obj/item/clothing/accessory/storage/IFAK/cov = 20,
 		/obj/item/weapon/pinpointer/artifact = 3
 	)
@@ -322,8 +322,8 @@
 		/obj/item/stack/barbedwire/covenant/fifteen = 5,
 		/obj/item/weapon/pickaxe/plasma_drill = 1,
 		/obj/item/weapon/plastique/covenant = 6,
-		/obj/item/weapon/plastique/breaching/covenant = 2,
-		/obj/item/weapon/plastique/breaching/longrange/covenant = 2,
+		/obj/item/weapon/plastique/breaching/covenant = 4,
+		/obj/item/weapon/plastique/breaching/longrange/covenant = 4,
 		/obj/item/clothing/accessory/storage/IFAK/cov = 20,
 		/obj/item/weapon/pinpointer/artifact = 2
 	)
@@ -405,8 +405,8 @@
 		/obj/item/weapon/pickaxe/plasma_drill = 1,
 		/obj/item/stack/barbedwire/covenant/fifteen = 5,
 		/obj/item/weapon/plastique/covenant = 6,
-		/obj/item/weapon/plastique/breaching/covenant = 2,
-		/obj/item/weapon/plastique/breaching/longrange/covenant = 2,
+		/obj/item/weapon/plastique/breaching/covenant = 4,
+		/obj/item/weapon/plastique/breaching/longrange/covenant = 4,
 		/obj/item/clothing/accessory/storage/IFAK/cov = 20,
 		/obj/item/weapon/pinpointer/artifact = 1
 	)
@@ -448,8 +448,8 @@
 	amounts = list(\
 		/obj/item/stack/barbedwire/covenant/fifteen = 5,
 		/obj/item/weapon/plastique/covenant = 6,
-		/obj/item/weapon/plastique/breaching/covenant = 2,
-		/obj/item/weapon/plastique/breaching/longrange/covenant = 2,
+		/obj/item/weapon/plastique/breaching/covenant = 4,
+		/obj/item/weapon/plastique/breaching/longrange/covenant = 4,
 		/obj/item/clothing/accessory/storage/IFAK/cov = 20,
 		/obj/item/weapon/pinpointer/artifact = 1
 	)
