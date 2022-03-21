@@ -137,8 +137,8 @@
 /obj/item/projectile/bullet/covenant/needles
 	name = "Needle"
 	desc = "A sharp, pink crystalline shard"
-	damage = 20 //A little lower than the smg because of the shrapnel dam
-	shield_damage = 20
+	damage = 15 //A little lower than the smg because of the shrapnel dam
+	shield_damage = 15
 	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
 	icon_state = "Needler Shot"
 	embed = 1

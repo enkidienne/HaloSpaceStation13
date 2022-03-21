@@ -154,7 +154,7 @@
 
 	firemodes = list(\
 	list(mode_name="short bursts",  burst=3, dispersion=list(0.2, 0.4, 0.7)),
-	list(mode_name="extended bursts",  burst=10, dispersion=list(0.3, 0.3, 0.5, 0.5, 0.7, 0.7, 0.9, 0.9))
+	list(mode_name="extended bursts",  burst=6, dispersion=list(0.3, 0.3, 0.5, 0.5, 0.7, 0.7, 0.9, 0.9))
 	)
 
 /obj/item/weapon/gun/projectile/needler/update_icon()
