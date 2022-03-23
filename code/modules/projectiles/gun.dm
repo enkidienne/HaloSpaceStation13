@@ -519,7 +519,7 @@
 
 	if(irradiate_non_cov > 0 && istype(user,/mob/living/carbon/human))
 		var/mob/living/carbon/human/h = user
-		if(istype(h.species,/datum/species/human))
+		if(istype(h.species,/datum/species/human) && user.faction != "Covenant")
 			h.rad_act(irradiate_non_cov)
 
 	if(screen_shake)
