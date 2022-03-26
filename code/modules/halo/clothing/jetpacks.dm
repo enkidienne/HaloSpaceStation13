@@ -8,6 +8,7 @@
 
 	var/flight_ticks_max = 65
 	var/flight_ticks_curr = 0
+	var/flight_ticks_regen = 4
 	var/takeoff_msg = "takes off!"
 	var/land_msg = "lands"
 	var/mob/living/cached_user
@@ -100,7 +101,7 @@
 		activate(usr)
 
 /obj/item/flight_item/process()
-	flight_ticks_curr = min(flight_ticks_max, flight_ticks_curr + flight_ticks_max /20)
+	flight_ticks_curr = min(flight_ticks_max, flight_ticks_curr + flight_ticks_regen)
 	flight_bar.update(flight_ticks_curr)
 	if(flight_ticks_curr == flight_ticks_max)
 		GLOB.processing_objects -= src
