@@ -254,11 +254,14 @@
 							//If we're cost one, give us the chance to skip poplock.
 							if(pop_balance_mult <= 1)
 								//If all factions have checked, and failed the pop lock, and this job is cost-1, then allow us through anyway.
+								var/forcerole = 1
 								for(var/f_type in ticker.mode.faction_balance)
 									if(!(f_type in last_checked_lock))
-										last_checked_lock -= my_faction.type
-										message_admins("NOTICE: Poplock check was failed, but we're in a deadlock state so we'll let it through.")
-										return FALSE
+										blockrole = 0
+								if(forcerole)
+									last_checked_lock -= my_faction.type
+									message_admins("NOTICE: Poplock check was failed, but we're in a deadlock state so we'll let it through.")
+									return FALSE
 
 							to_chat(feedback, "<span class='boldannounce'>Joining as [title] is blocked due to [spawn_faction] faction overpop.</span>")
 							//tell the admins, but dont spam them too much
