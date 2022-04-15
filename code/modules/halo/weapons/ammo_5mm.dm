@@ -5,7 +5,7 @@
 	projectile_type = /obj/item/projectile/bullet/m443
 
 /obj/item/projectile/bullet/m443
-	damage = 25
+	damage = 15
 	shield_damage = 15
 
 /obj/item/ammo_casing/m443_rubber

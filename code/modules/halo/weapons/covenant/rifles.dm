@@ -39,7 +39,7 @@
 
 	firemodes = list(\
 	list(mode_name="short bursts",  burst=5, dispersion=list(0.0,0.2,0.4,0.6,0.73)),
-	list(mode_name="extended bursts",  burst=15, dispersion=list(0.2,0.2,0.3,0.4, 0.5, 0.6, 0.7, 0.7, 0.8, 1.0))
+	list(mode_name="extended bursts",  burst=10, dispersion=list(0.2,0.2,0.3,0.4, 0.5, 0.6, 0.7, 0.7, 0.8, 1.0))
 	)
 
 /obj/item/weapon/gun/energy/plasmarifle/can_use_when_prone()

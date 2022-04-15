@@ -1,16 +1,18 @@
 
 /* some yanme wings made as jetpacks because making them anything else is too much fucking work */
 
-#define YANMEE_FLIGHT_TICKS 80
+#define YANMEE_FLIGHT_TICKS 85
 
 /obj/item/flight_item/yanmee
 	name = "\improper Yanme'e Wings (Minor)"
 	desc = "They go flap, you go up."
 
 	flight_ticks_max = YANMEE_FLIGHT_TICKS
+	flight_ticks_regen = 20
 	canremove = FALSE
 	flight_sound = 'code/modules/halo/sounds/yanmee_flying.ogg'
 	action_button_name = "Toggle Flight"
+	slowdown_general = 0
 	var/obj/item/weapon/weapon_stored			//ion want them yanme to lose their back slot
 	var/hidden = FALSE
 

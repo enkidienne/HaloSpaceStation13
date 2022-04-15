@@ -250,23 +250,20 @@
 						var/list/last_checked_lock = ticker.mode.last_checked_lock
 						//are we overpopped?
 						if(my_ratio > max_ratio)
-							var/block_role = TRUE
 							last_checked_lock |= my_faction.type
 							//If we're cost one, give us the chance to skip poplock.
 							if(pop_balance_mult <= 1)
-								var/force_role = 1
 								//If all factions have checked, and failed the pop lock, and this job is cost-1, then allow us through anyway.
+								var/forcerole = 1
 								for(var/f_type in ticker.mode.faction_balance)
 									if(!(f_type in last_checked_lock))
-										force_role = 0
-										break
-								if(force_role)
-									block_role = FALSE
+										forcerole = 0
+								if(forcerole)
+									last_checked_lock -= my_faction.type
+									message_admins("NOTICE: Poplock check was failed, but we're in a deadlock state so we'll let it through.")
+									return FALSE
 
-							if(block_role)
-								to_chat(feedback, "<span class='boldannounce'>Joining as [title] is blocked due to [spawn_faction] faction overpop.</span>")
-							else
-								message_admins("NOTICE: Poplock check was failed, but we're in a deadlock state so we'll let it through.")
+							to_chat(feedback, "<span class='boldannounce'>Joining as [title] is blocked due to [spawn_faction] faction overpop.</span>")
 							//tell the admins, but dont spam them too much
 							if(world.time > GLOB.last_admin_notice_overpop + 30 SECONDS)
 								GLOB.last_admin_notice_overpop = world.time
@@ -275,7 +272,7 @@
 									[round(100 * my_faction_players/total_faction_players)]% of living characters... \
 									max [round(100*max_ratio)]% or [round(max_ratio*total_faction_players,0.1)]/[total_faction_players] players)")
 
-							return block_role
+							return TRUE
 						else if(Debug2)	to_debug_listeners("my_ratio:[my_ratio], max_ratio:[max_ratio], my_faction_players:[my_faction_players]")
 
 	return FALSE

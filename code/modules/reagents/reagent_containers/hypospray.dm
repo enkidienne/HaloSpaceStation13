@@ -62,6 +62,9 @@
 		if(M.run_armor_check(H.get_organ(user.zone_sel.selecting), "melee") >= 100)
 			user.visible_message("<span class = 'warning'>The modified [src] bounces off of [M]'s armor!</span>")
 			return
+		user.visible_message(user,"<span class='warning'>[user] tries to inject [M] with [src]...</span>")
+		if(!do_after(user, 3 SECONDS, M,,,,1,1))
+			return
 	to_chat(user, "<span class='notice'>You inject [M] with [src].</span>")
 	to_chat(M, "<span class='notice'>You feel a tiny prick!</span>")
 	user.visible_message("<span class='warning'>[user] injects [M] with [src].</span>")

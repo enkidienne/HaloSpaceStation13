@@ -669,7 +669,7 @@
 	reagent_state = LIQUID
 	color = "#C8A5DC"
 	scannable = 1
-	overdose = 100
+	overdose = 0
 
 /datum/reagent/adrenaline/affect_blood(var/mob/living/carbon/human/M, var/alien, var/removed)
 	if(alien == IS_DIONA)
@@ -686,7 +686,7 @@
 		remove_self(5)
 		M.resuscitate()
 	while(volume >= M.species.adrenal_break_threshold)//slightly more than 100/5.
-		M.add_chemical_effect(CE_PAINKILLER,120) //Reach a threshold of adrenaline, massive painkill effect
+		M.add_chemical_effect(CE_PAINKILLER,120*(M.species.adrenal_break_threshold/30)) //Reach a threshold of adrenaline, massive painkill effect
 		M.add_chemical_effect(CE_PULSE,3) //But your heart goes mental
 		remove_self(M.species.adrenal_break_threshold) //And your body consumes the adrenaline for that last final push
 

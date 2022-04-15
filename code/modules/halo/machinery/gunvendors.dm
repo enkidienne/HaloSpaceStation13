@@ -54,8 +54,8 @@
 		/obj/item/weapon/grenade/frag/m9_hedp = 15,
 		/obj/item/weapon/grenade/smokebomb = 15,
 		/obj/item/weapon/plastique = 2,
-		/obj/item/weapon/plastique/breaching = 2,
-		/obj/item/weapon/plastique/breaching/longrange = 2,
+		/obj/item/weapon/plastique/breaching = 8,
+		/obj/item/weapon/plastique/breaching/longrange = 8,
 		/obj/item/turret_deploy_kit/HMG = 2,
 		/obj/item/turret_deploy_kit/chaingun = 2,
 	)
@@ -93,8 +93,8 @@
 		/obj/item/turret_deploy_kit/HMG = 3,
 		/obj/item/turret_deploy_kit/chaingun = 3,
 		/obj/item/weapon/plastique = 2,
-		/obj/item/weapon/plastique/breaching = 2,
-		/obj/item/weapon/plastique/breaching/longrange = 2,
+		/obj/item/weapon/plastique/breaching = 8,
+		/obj/item/weapon/plastique/breaching/longrange = 8,
 	)
 
 /obj/machinery/pointbased_vending/armory/heavy/innie // HEAVY WEAPONS
@@ -123,8 +123,8 @@
 		/obj/item/weapon/gun/projectile/m41 = 1,
 		/obj/item/turret_deploy_kit/HMG = 2,
 		/obj/item/weapon/plastique = 8,
-		/obj/item/weapon/plastique/breaching = 2,
-		/obj/item/weapon/plastique/breaching/longrange = 2,
+		/obj/item/weapon/plastique/breaching = 8,
+		/obj/item/weapon/plastique/breaching/longrange = 8,
 	)
 
 /obj/machinery/vending/armory/police
@@ -298,8 +298,8 @@
 	/obj/item/weapon/grenade/frag/m9_hedp = 15,
 	/obj/item/weapon/grenade/smokebomb = 15,
 	/obj/item/weapon/plastique = 4,
-	/obj/item/weapon/plastique/breaching = 2,
-	/obj/item/weapon/plastique/breaching/longrange= 2,
+	/obj/item/weapon/plastique/breaching = 8,
+	/obj/item/weapon/plastique/breaching/longrange= 8,
 	)
 
 /obj/machinery/pointbased_vending/armory/odstvend/armour

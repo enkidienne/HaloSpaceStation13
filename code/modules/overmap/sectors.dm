@@ -279,7 +279,8 @@ var/list/points_of_interest = list()
 
 /obj/effect/overmap/proc/do_superstructure_fail()
 	for(var/mob/player in GLOB.mobs_in_sectors[src])
-		player.dust()
+		if(istype(player.loc,/turf)) //There's a number of situations where being inside something may be a problem, so let's handle them all here.
+			player.dust()
 	loc = null
 
 	message_admins("NOTICE: Overmap object [src] has been destroyed. Please wait as it is deleted.")

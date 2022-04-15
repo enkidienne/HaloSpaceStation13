@@ -35,7 +35,7 @@
 
 	firemodes = list(\
 	list(mode_name="short bursts",  burst=4,dispersion=list(0.2, 0.4, 0.7, 1.0)),
-	list(mode_name="extended bursts",  burst=12, dispersion=list(0.3, 0.3, 0.5, 0.5, 0.9, 0.9, 1.2, 1.2))
+	list(mode_name="extended bursts",  burst=8, dispersion=list(0.3, 0.3, 0.5, 0.5, 0.9, 0.9, 1.2, 1.2))
 	)
 
 /obj/item/weapon/gun/projectile/m7_smg/update_icon()
@@ -61,7 +61,7 @@
 
 	firemodes = list(\
 	list(mode_name="short bursts",  burst=4, dispersion=list(0.1, 0.3, 0.6, 1.0)),
-	list(mode_name="extended bursts",  burst=12, dispersion=list(0.3, 0.3, 0.4, 0.5, 0.6, 0.8, 1.1))
+	list(mode_name="extended bursts",  burst=8, dispersion=list(0.3, 0.3, 0.4, 0.5, 0.6, 0.8, 1.1))
 	)
 
 /obj/item/weapon/gun/projectile/m7_smg/silenced/verb/scope()
