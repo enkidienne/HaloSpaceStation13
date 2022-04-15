@@ -257,7 +257,7 @@
 								var/forcerole = 1
 								for(var/f_type in ticker.mode.faction_balance)
 									if(!(f_type in last_checked_lock))
-										blockrole = 0
+										forcerole = 0
 								if(forcerole)
 									last_checked_lock -= my_faction.type
 									message_admins("NOTICE: Poplock check was failed, but we're in a deadlock state so we'll let it through.")
