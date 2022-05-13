@@ -56,7 +56,7 @@
 /obj/item/vehicle_component/health_manager/goblin
 	integrity = 500
 	resistances = list("bullet"=65,"energy"=65,"emp"=25,"bomb"=45)
-	repair_materials = list("plasteel")
+	repair_materials = list("nanolaminate")
 
 /datum/component_profile/goblin
 	pos_to_check = "driver"

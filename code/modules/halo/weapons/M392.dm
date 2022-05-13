@@ -68,7 +68,7 @@
 
 /obj/item/weapon/gun/projectile/m392_dmr/innie
 	name = "Modified M392 DMR"
-	desc = "A heavily modified M392 remade without a bullpup design and including a hardened barrel for a faster fire rate. Fires in bursts. Takes 7.62mm rounds."
+	desc = "A heavily modified M392 remade without a bullpup design and including a hardened barrel for a faster fire rate. Takes 7.62mm rounds."
 	fire_sound = 'code/modules/halo/sounds/innieDMRfirfix.ogg'
 	reload_sound = 'code/modules/halo/sounds/InnieDMRreload.ogg'
 	fire_delay = 5
