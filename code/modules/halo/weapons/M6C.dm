@@ -11,7 +11,7 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/m6s,/obj/item/ammo_magazine/m6s/m225,/obj/item/ammo_magazine/m6s_m228)
 	caliber = "12.7mm"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
-	fire_sound = 'code/modules/halo/sounds/MagnumShotSoundEffect.wav'
+	fire_sound = 'code/modules/halo/sounds/MagnumShotSoundEffect.ogg'
 	reload_sound = 'code/modules/halo/sounds/MagnumReloadSoundEffect.ogg'
 	load_method = MAGAZINE
 	dispersion = list(0.4)
