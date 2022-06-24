@@ -95,7 +95,6 @@
 	var/arm_time = 25 //Default charge time for weapons that charge
 	var/charge_sound = 'code/modules/halo/sounds/Spartan_Laser_Charge_Sound_Effect.ogg'
 	var/is_charging = 0
-	var/irradiate_non_cov = 0 //Set this to anything above 0, and it'll irradiate humans when fired. Spartans and Orions are ok.
 	var/is_heavy = 0 //Set this to anything above 0, and all species that aren't elites/brutes/spartans/orions have to two-hand it
 
 	//"Channeled" weapons, aka longfire beam sustained types (sentinel beam)//
@@ -516,11 +515,6 @@
 					to_chat(user, "<span class='warning'>You have trouble holding \the [src] steady.</span>")
 				if(4 to INFINITY)
 					to_chat(user, "<span class='warning'>You struggle to hold \the [src] steady!</span>")
-
-	if(irradiate_non_cov > 0 && istype(user,/mob/living/carbon/human))
-		var/mob/living/carbon/human/h = user
-		if(istype(h.species,/datum/species/human) && user.faction != "Covenant")
-			h.rad_act(irradiate_non_cov)
 
 	if(screen_shake)
 		spawn()

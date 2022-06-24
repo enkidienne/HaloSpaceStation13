@@ -74,7 +74,6 @@
 	burst_delay = 4
 	dispersion = list(0.3,0.45,0.6,0.73)
 
-	irradiate_non_cov = 20
 
 	magazine_type = /obj/item/ammo_magazine/throne_mag
 

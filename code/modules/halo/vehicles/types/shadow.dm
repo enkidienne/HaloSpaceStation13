@@ -69,7 +69,6 @@
 	burst = 15
 	burst_delay = 2
 
-	irradiate_non_cov = 10
 	magazine_type = /obj/item/ammo_magazine/shadow_cannon
 
 /obj/item/ammo_magazine/shadow_cannon

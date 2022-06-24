@@ -34,7 +34,6 @@
 		slot_s_belt_str = 'code/modules/halo/weapons/icons/Belt_Weapons.dmi',
 		)
 
-	irradiate_non_cov = 2 //this is per shot, so 12 rads from one burst
 	alt_charge_method = 1
 
 	firemodes = list(\
@@ -64,7 +63,6 @@
 	fire_delay = 5
 	burst_delay = 1.7
 	accuracy = -1
-	irradiate_non_cov = 3
 
 /obj/item/weapon/gun/projectile/concussion_rifle
 	name = "Type-50 Directed Energy Rifle / Heavy"

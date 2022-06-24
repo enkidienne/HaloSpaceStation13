@@ -75,8 +75,6 @@
 
 	dispersion = list(0.15,0.3,0.45,0.5,0.55)
 
-	irradiate_non_cov = 12
-
 	magazine_type = /obj/item/ammo_magazine/spirit_cannon
 
 /obj/item/ammo_magazine/spirit_cannon
