@@ -27,6 +27,13 @@ GLOBAL_LIST_INIT(sanshyuum_titles, world.file2list('code/modules/halo/covenant/s
 	default_faction = "Covenant"
 	gibbed_anim = null
 	dusted_anim = null
+	
+	pain_scream_sounds = list(\
+		'code/modules/halo/sounds/species_pain_screams/prophetscream_1.ogg',
+		'code/modules/halo/sounds/species_pain_screams/prophetscream_2.ogg',
+		'code/modules/halo/sounds/species_pain_screams/prophetscream_3.ogg',
+		'code/modules/halo/sounds/species_pain_screams/prophetscream_4.ogg',
+		'code/modules/halo/sounds/species_pain_screams/prophetscream_5.ogg')
 
 	has_limbs = list(
 		BP_CHEST =  list("path" = /obj/item/organ/external/chest),

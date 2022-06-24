@@ -46,11 +46,11 @@ Huragok Engineers. Their flight makes them hard to hit during combat and their n
 	equipment_slowdown_multiplier = 1.25 //Disincentives multiple weapon carry
 
 	pain_scream_sounds = list(\
-		'code/modules/halo/sounds/species_pain_screams/kiggyscream_1.ogg',
-		'code/modules/halo/sounds/species_pain_screams/kiggyscream_2.ogg',
-		'code/modules/halo/sounds/species_pain_screams/kiggyscream_3.ogg',
-		'code/modules/halo/sounds/species_pain_screams/kiggyscream_4.ogg',
-		'code/modules/halo/sounds/species_pain_screams/kiggyscream_5.ogg')
+		'code/modules/halo/sounds/species_pain_screams/yanmescream_1.ogg',
+		'code/modules/halo/sounds/species_pain_screams/yanmescream_2.ogg',
+		'code/modules/halo/sounds/species_pain_screams/yanmescream_3.ogg',
+		'code/modules/halo/sounds/species_pain_screams/yanmescream_4.ogg',
+		'code/modules/halo/sounds/species_pain_screams/yanmescream_5.ogg')
 
 /datum/species/yanmee/create_organs(var/mob/living/carbon/human/H)
 	. = ..()
