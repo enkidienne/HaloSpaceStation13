@@ -14,7 +14,6 @@
 	charge_meter = 0
 	dispersion = list(0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.6, 0.6, 0.6, 0.6)
 	w_class = ITEM_SIZE_HUGE
-	irradiate_non_cov = 1
 	move_delay_malus = 1.5
 	slowdown_general = 1
 	item_icons = list(

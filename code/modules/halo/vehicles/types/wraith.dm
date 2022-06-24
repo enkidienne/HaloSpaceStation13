@@ -59,7 +59,6 @@
 
 	guns_switchto = newlist(/datum/vehicle_gun/wraith_cannon,/datum/vehicle_gun/wraith_machinegun)
 	magazine_type = /obj/item/ammo_magazine/wraith_cannon
-	irradiate_non_cov = 15
 
 /datum/vehicle_gun/wraith_cannon
 	name = "Wraith Cannon"

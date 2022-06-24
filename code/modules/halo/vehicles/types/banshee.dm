@@ -57,7 +57,6 @@
 
 	guns_switchto = newlist(/datum/vehicle_gun/banshee_plas,/datum/vehicle_gun/banshee_fuel)
 	magazine_type = /obj/item/ammo_magazine/banshee_plas
-	irradiate_non_cov = 15
 
 /datum/vehicle_gun/banshee_fuel
 	name = "Mounted Fuel Rod Cannon"
