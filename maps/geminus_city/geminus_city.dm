@@ -22,6 +22,7 @@
 	#include "innie_supply/supply_program.dm"
 	#include "innie_supply/supply_shuttle.dm"
 	*/
+	#include "../../maps/urf_flagship/includes.dm"
 
 	#include "../../code/modules/halo/supply/unsc.dm"
 	#include "../../code/modules/halo/supply/oni.dm"
