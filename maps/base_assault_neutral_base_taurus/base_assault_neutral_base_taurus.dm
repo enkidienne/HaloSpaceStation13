@@ -1,9 +1,9 @@
 
-/datum/map/neutral_city
-	name = "KS7-535, Unknown Colony"
-	full_name = "111 Tauri System, UNSC Outpost"
+/datum/map/taurus_colony
+	name = "Taurus Colony"
+	full_name = "Taurus Colony"
 	system_name = "111 Tauri"
-	path = "base_assault_neutral_base"
+	path = "base_assault_neutral_base_taurus"
 	station_levels = list()
 	admin_levels = list()
 	accessible_z_levels = list()
@@ -28,7 +28,7 @@
 
 #if !defined(using_map_DATUM)
 
-	#define using_map_DATUM /datum/map/neutral_city
+	#define using_map_DATUM /datum/map/taurus_colony
 
 	#include "unit_tests.dm"
 
@@ -41,11 +41,11 @@
 
 	#include "../UNSC_Difference_Of_Opinion/includes.dm"
 
-	#include "gm.dm"
+	#include "../base_assault_neutral_base/gm.dm"
 
 	#include "areas.dm"
 	#include "overmap.dm"
-	#include "neutral_city.dmm"
+	#include "taurus.dmm"
 
 	#include "../CRS_Unyielding_Transgression/includes.dm"
 
@@ -56,7 +56,7 @@
 	#include "../../code/modules/halo/supply/oni.dm"
 	#include "../../code/modules/halo/supply/covenant.dm"
 
-	#include "neutral_base_overmap_tweaks.dm"
+	#include "../base_assault_neutral_base/neutral_base_overmap_tweaks.dm"
 
 #elif !defined(MAP_OVERRIDE)
 
@@ -65,7 +65,7 @@
 #endif
 
 
-/datum/map/neutral_city
+/datum/map/taurus_colony
 	allowed_jobs = list(\
 	/datum/job/unsc/spartan_two,
 	/datum/job/unsc/marine,
