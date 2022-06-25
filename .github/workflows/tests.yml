@@ -60,6 +60,7 @@ jobs:
           - base_assault_unsc_defend_vs_urf
           - unsc_achlys
           - base_assault_neutral_base
+          - base_assault_neutral_base_taurus
           - geminus_city         
           #- example
           #- overmap_example
