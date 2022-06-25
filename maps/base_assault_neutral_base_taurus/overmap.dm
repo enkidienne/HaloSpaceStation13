@@ -1,8 +1,8 @@
 
 /obj/effect/overmap/sector/taurus
 	name = "Taurus Colony"
-	icon = 'ks7_sector_icon.dmi'
-	icon_state = "ice"
+	icon = 'taurus_sector_icon.dmi'
+	icon_state = "jungle"
 
 	faction = "Human Civilian"
 	base = 1
