@@ -1,4 +1,12 @@
 
+#define PAYLOAD_EXPLOSION_MULT_EPI 6
+#define PAYLOAD_EXPLOSION_MULT_HEAVY 11
+#define PAYLOAD_EXPLOSION_MULT_LIGHT 16
+#define PAYLOAD_EXPLOSION_MULT_FLASH 21
+#define PAYLOAD_SUB_EXPLOSION_COUNT 12
+#define PAYLOAD_SUB_EXPLOSION_COUNT_DELAY_MIN 5 SECONDS
+#define PAYLOAD_SUB_EXPLOSION_COUNT_DELAY_MAX 30 SECONDS
+
 /obj/payload
 	name = "Nuclear Warhead Payload"
 	desc = "The word 'UNSC' is scratched out, replaced with a spraypainted image of a skull"
@@ -172,10 +180,25 @@
 	var/obj/effect/overmap/OM = map_sectors["[t.z]"]
 	if(OM)
 		OM.nuked_effects(b.loc)
-	explosion(get_turf(b),b.strength*20,b.strength*30,b.strength*35,b.strength*40)
-	for(var/mob/living/m in range(b.strength*20,b.loc))
-		to_chat(m,"<span class = 'userdanger'>A shockwave slams into you! You feel yourself falling apart...</span>")
-		m.gib() // Game over.
+	sleep(10)
+	var/list/subexplosion_aoe = trange(b.strength*PAYLOAD_EXPLOSION_MULT_EPI*3)
+	explosion(get_turf(b),\
+	b.strength*PAYLOAD_EXPLOSION_MULT_EPI,\
+	b.strength*PAYLOAD_EXPLOSION_MULT_HEAVY,\
+	b.strength*PAYLOAD_EXPLOSION_MULT_LIGHT,\
+	b.strength*PAYLOAD_EXPLOSION_MULT_FLASH\
+	)
+
+	for(var/i = 0 to PAYLOAD_SUB_EXPLOSION_COUNT)
+		spawn(0)
+			var/turf/explode_at = pick(subexplosion_aoe)
+			sleep(rand(PAYLOAD_SUB_EXPLOSION_COUNT_DELAY_MIN,PAYLOAD_SUB_EXPLOSION_COUNT_DELAY_MAX))
+			explosion(explode_at,\
+			b.strength*PAYLOAD_EXPLOSION_MULT_EPI/3,\
+			b.strength*PAYLOAD_EXPLOSION_MULT_HEAVY/3,\
+			b.strength*PAYLOAD_EXPLOSION_MULT_LIGHT/3,\
+			b.strength*PAYLOAD_EXPLOSION_MULT_FLASH/3\
+			)
 	if(OM)
 		GLOB.processing_objects |= OM //If they're not already processing, they better start now!
 		OM.superstructure_process()
@@ -183,3 +206,11 @@
 /datum/explosion/nuclearexplosion/New(var/obj/payload/b)
 	radiation_repository.radiate(b.loc,1000,10000)
 	. = ..()
+
+#undef PAYLOAD_EXPLOSION_MULT_EPI
+#undef PAYLOAD_EXPLOSION_MULT_HEAVY
+#undef PAYLOAD_EXPLOSION_MULT_LIGHT
+#undef PAYLOAD_EXPLOSION_MULT_FLASH
+#undef  PAYLOAD_SUB_EXPLOSION_COUNT
+#undef  PAYLOAD_SUB_EXPLOSION_COUNT_DELAY_MIN
+#undef PAYLOAD_SUB_EXPLOSION_COUNT_DELAY_MAX
