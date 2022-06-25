@@ -8,7 +8,7 @@
 	base = 1
 	block_slipspace = 1
 
-	map_bounds = list(1,150,150,1) //Format: (TOP_LEFT_X,TOP_LEFT_Y,BOTTOM_RIGHT_X,BOTTOM_RIGHT_Y)
+	map_bounds = list(2,159,179,2) //Format: (TOP_LEFT_X,TOP_LEFT_Y,BOTTOM_RIGHT_X,BOTTOM_RIGHT_Y)
 
 	overmap_spawn_near_me = list()
 	overmap_spawn_in_me = list()
