@@ -3308,6 +3308,7 @@
 #include "interface\skin.dmf"
 #include "maps\_map_include.dm"
 #include "maps\_gamemodes\_popbalance.dm"
+#include "maps\_gamemodes\gamemode_overrides.dm"
 #include "maps\_gamemodes\randantag\randantag.dm"
 #include "maps\geminus_city\geminus_city.dm"
 #include "maps\~mapsystem\map_preferences.dm"
