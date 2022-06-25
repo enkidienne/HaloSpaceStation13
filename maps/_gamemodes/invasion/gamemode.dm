@@ -16,7 +16,7 @@
 
 	var/safe_expire_warning = 0
 
-	var/list/factions = list(/datum/faction/unsc, /datum/faction/covenant, /datum/faction/insurrection)
+	factions = list(/datum/faction/unsc, /datum/faction/covenant, /datum/faction/insurrection)
 	var/list/endgame_fleets = list(/datum/faction/unsc)
 
 	var/list/overmap_hide = list()

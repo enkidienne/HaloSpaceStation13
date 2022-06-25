@@ -114,8 +114,9 @@ var/list/points_of_interest = list()
 		if(F)
 			F.flagship = src
 			F.get_flagship_name()	//update the archived name
-		if(istype(ticker.mode,/datum/game_mode/outer_colonies))
-			if(!(F.type in ticker.mode:factions))
+		var/datum/game_mode/gm = ticker.mode
+		if(istype(gm) && gm.factions.len > 0)
+			if(!(F.type in ticker.mode.factions))
 				invisibility = 101
 
 	if(base && faction)
