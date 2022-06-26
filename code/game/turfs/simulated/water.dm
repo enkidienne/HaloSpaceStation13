@@ -13,6 +13,11 @@
 			//var/obj/item/weapon/reagent_containers/container = W
 			W.reagents.add_reagent(/datum/reagent/water, 1000)
 
+/turf/simulated/floor/water/CanPass(atom/movable/mover, turf/target, height=1.5, air_group = 0)
+	if(deepwater && istype(mover,/obj/vehicles) && mover.elevation == elevation)
+		return 0
+	. = ..()
+
 /turf/simulated/floor/water/Enter(atom/movable/O, atom/oldloc)
 	if(deepwater && isliving(O))
 		to_chat(O, "<span class='warning'>You flounder inside [src]!</span>")

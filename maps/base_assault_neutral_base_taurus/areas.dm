@@ -90,3 +90,6 @@
 
 /area/planets/taurus/inside/shuttlebay
 	name = "City - Shuttle Bay"
+
+/area/planets/taurus/inside/beach_shack
+	name = "City - Beach Shack"
