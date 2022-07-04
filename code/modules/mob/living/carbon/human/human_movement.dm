@@ -70,7 +70,8 @@
 		tally = 0
 
 	var/turf/T = get_turf(src)
-	tally += T.get_movement_delay()
+	if(src.elevation == T.elevation)
+		tally += T.get_movement_delay()
 
 	return (tally+config.human_delay)
 
