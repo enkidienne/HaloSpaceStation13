@@ -17,3 +17,10 @@
 /obj/effect/overmap/sector/taurus/CanUntargetedBombard(var/obj/console_from)
 	console_from.visible_message("<span class = 'notice'>Post firing scan reveals shot telemetry was scrambled by hostile devices. Direct laser designation will be required.</span>")
 	return 0
+
+/obj/effect/overmap/sector/taurus/New()
+	loot_distributor.loot_list["taurusCapPoints"] = list(/obj/machinery/computer/capture_node,/obj/machinery/computer/capture_node,/obj/machinery/computer/capture_node,/obj/machinery/computer/capture_node)
+	. = ..()
+
+/obj/effect/loot_marker/taurus_capture_points
+	loot_type = "taurusCapPoints"
