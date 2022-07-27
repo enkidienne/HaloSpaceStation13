@@ -61,6 +61,7 @@ jobs:
           - unsc_achlys
           - base_assault_neutral_base
           - geminus_city         
+          - geminus_city_urf_active
           #- example
           #- overmap_example
     
