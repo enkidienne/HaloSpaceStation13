@@ -13,6 +13,7 @@
 	probability = 1
 	ship_lockdown_duration = 12 MINUTES
 	required_players = 6
+	votable = 1
 
 	var/safe_expire_warning = 0
 
@@ -32,7 +33,6 @@
 	var/cov_scan_next_tick = 0
 
 	var/end_conditions_required = 4 //3 destructions, with the fourth causing failure.
-	votable = 0
 
 /datum/game_mode/outer_colonies/pre_setup()
 	. = ..()

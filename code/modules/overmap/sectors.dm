@@ -117,7 +117,8 @@ var/list/points_of_interest = list()
 		var/datum/game_mode/gm = ticker.mode
 		if(istype(gm) && gm.factions.len > 0)
 			if(!(F.type in ticker.mode.factions))
-				invisibility = 101
+				loc = null //Throw them into nullspace. Slipspace capable ships will be able to escape this, so it's not completely unescapable.
+				slipspace_status = 1 //Log that they're in slipspace.
 
 	if(base && faction)
 		var/datum/faction/F = GLOB.factions_by_name[faction]
