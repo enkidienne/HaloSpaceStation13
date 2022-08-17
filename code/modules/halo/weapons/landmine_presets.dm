@@ -1,6 +1,6 @@
 
 /obj/item/device/landmine/explosive
-	name = "anti-personnel mine"
+	name = "high-explosive mine"
 	desc = "A dangerous area denial device. Can be customised for various anti-personnel purposes."
 	icon_state = "landmine4"
 	state = STATE_INACTIVE
@@ -23,7 +23,7 @@
 	state = STATE_ACTIVE
 
 /obj/item/device/landmine/emp
-	name = "anti-personnel mine"
+	name = "EMP mine"
 	desc = "A dangerous area denial device. Can be customised for various anti-personnel purposes."
 	icon_state = "landmine4"
 	state = STATE_INACTIVE
@@ -46,7 +46,7 @@
 	state = STATE_ACTIVE
 
 /obj/item/device/landmine/gas
-	name = "anti-personnel mine"
+	name = "gas mine"
 	desc = "A dangerous area denial device. Can be customised for various anti-personnel purposes."
 	icon_state = "landmine4"
 	state = STATE_INACTIVE
@@ -73,7 +73,7 @@
 	state = STATE_ACTIVE
 
 /obj/item/device/landmine/frag
-	name = "anti-personnel mine"
+	name = "fragmentation mine"
 	desc = "A dangerous area denial device. Can be customised for various anti-personnel purposes."
 	icon_state = "landmine4"
 	state = STATE_INACTIVE
@@ -98,7 +98,7 @@
 	state = STATE_ACTIVE
 
 /obj/item/device/landmine/flash
-	name = "anti-personnel mine"
+	name = "flash mine"
 	desc = "A dangerous area denial device. Can be customised for various anti-personnel purposes."
 	icon_state = "landmine4"
 	state = STATE_INACTIVE
@@ -122,7 +122,7 @@
 	state = STATE_ACTIVE
 
 /obj/item/device/landmine/foam
-	name = "anti-personnel mine"
+	name = "metal foam mine"
 	desc = "A dangerous area denial device. Can be customised for various anti-personnel purposes."
 	icon_state = "landmine4"
 	state = STATE_INACTIVE
@@ -143,7 +143,7 @@
 		overlays += "brown"
 
 /obj/item/device/landmine/flame
-	name = "anti-personnel mine"
+	name = "incendiary mine"
 	desc = "A dangerous area denial device. Can be customised for various anti-personnel purposes."
 	icon_state = "landmine4"
 	state = STATE_INACTIVE

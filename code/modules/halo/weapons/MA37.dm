@@ -9,20 +9,20 @@
 	fire_sound = 'code/modules/halo/sounds/MA37_Fire_New.wav'
 	//fire_sound_burst = 'code/modules/halo/sounds/MA37_Fire_New.wav'
 	reload_sound = 'code/modules/halo/sounds/MA37_Reload_New.wav'
-	magazine_type = /obj/item/ammo_magazine/ma37/m118
-	allowed_magazines = list(/obj/item/ammo_magazine/ma37/m118)
+	magazine_type = /obj/item/ammo_magazine/ma37/m118_hand
+	allowed_magazines = list(/obj/item/ammo_magazine/ma37/m118, /obj/item/ammo_magazine/ma37/m118_hand)
 	load_method = MAGAZINE
 	slot_flags = SLOT_BACK
 
-	burst = 5
-	burst_delay = 1.8
+	burst = 4
+	burst_delay = 1.6
 	one_hand_penalty = -1
-	dispersion = list(0.0,0.2,0.4,0.6,0.73)
+	dispersion = list(0.0,0.1,0.2,0.2)
 	hud_bullet_row_num = 20
 
 	firemodes = list(\
-	list(mode_name="short bursts",  burst=5, dispersion=list(0.0,0.2,0.4,0.6,0.73)),
-	list(mode_name="extended bursts",  burst=10, dispersion=list(0.2,0.2,0.3,0.4, 0.5, 0.6, 0.7, 0.7, 0.8, 1.0))
+	list(mode_name="short bursts",  burst=4, dispersion=list(0.0,0.1,0.2,0.2)),
+	list(mode_name="extended bursts",  burst=8, dispersion=list(0.0,0.1,0.2,0.2, 0.3, 0.3, 0.4, 0.4))
 	)
 
 	ammo_icon_state = null
@@ -54,9 +54,18 @@
 
 /obj/item/ammo_magazine/ma37/m118
 	name = "MA37 magazine (7.62mm) M118"
-	desc = "7.62x51mm M118 Full Metal Jacket Armour Piercing (FMJ-AP) magazine for the MA37 containing 40 shots."
+	desc = "7.62x51mm M118 Full Metal Jacket Armour Piercing (FMJ-AP) magazine for the MA37 containing 32 shots."
 	ammo_type = /obj/item/ammo_casing/m118
 
 /obj/item/weapon/storage/box/ma37_m118
 	name = "box of MA37 7.62mm M118 magazines"
 	startswith = list(/obj/item/ammo_magazine/ma37/m118 = 7)
+
+/obj/item/ammo_magazine/ma37/m118_hand
+	name = "MA37 magazine (7.62mm) M118"
+	desc = "7.62x51mm M118 Full Metal Jacket Armour Piercing (FMJ-AP), hand loaded with extra gunpowder for more of an impact, magazine for the MA37 containing 32 shots."
+	ammo_type = /obj/item/ammo_casing/m118_hand
+
+	/obj/item/weapon/storage/box/ma37_m118_hand
+	name = "box of MA37 7.62mm Hand-Loaded M118 magazines"
+	startswith = list(/obj/item/ammo_magazine/ma37/m118_hand = 7)

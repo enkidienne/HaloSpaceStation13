@@ -128,7 +128,7 @@
 
 //GLOVES
 
-/obj/item/clothing/gloves/soegloves/urfc
+/obj/item/clothing/gloves/thick/soegloves/urfc
 	name = "SOE Gloves"
 	desc = "These  gloves are somewhat fire and impact-resistant."
 	icon = 'code/modules/halo/clothing/urf_commando.dmi'

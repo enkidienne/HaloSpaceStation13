@@ -24,6 +24,18 @@
 	damage_type = PAIN
 	penetrating = 0
 
+/*M118 Hand Loaded Rounds */
+
+/obj/item/ammo_casing/m118_hand
+	desc = "A 7.62mm hand-loaded bullet casing."
+	caliber = "7.62mm"
+	projectile_type = /obj/item/projectile/bullet/m118_hand
+
+/obj/item/projectile/bullet/m118_hand
+	damage = 35
+	armor_penetration = 10
+	shield_damage = 10
+
 /* M119 Rounds */
 
 /obj/item/ammo_casing/m119

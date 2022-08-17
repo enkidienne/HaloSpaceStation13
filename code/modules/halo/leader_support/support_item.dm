@@ -9,7 +9,9 @@ GLOBAL_LIST_INIT(support_pads_global,list())
 	mouse_opacity = 0
 
 	var/list/options_init = list(\
+	/datum/support_option/supply_drop_personalised_ammo,
 	/datum/support_option/supply_drop/mass_ammo,
+	/datum/support_option/supply_drop/mass_ammo_odst,
 	/datum/support_option/supply_drop/medical_drop,
 	/datum/support_option/supply_drop/vehicle_drop,
 	/datum/support_option/supply_drop/construction_drop,
@@ -94,8 +96,18 @@ GLOBAL_LIST_INIT(support_pads_global,list())
 
 /obj/item/support_pad/covenant
 	options_init = list(\
+	/datum/support_option/supply_drop/personalised_ammo_covenant,
 	/datum/support_option/supply_drop/mass_ammo/cov,
 	/datum/support_option/supply_drop/medical_drop/cov,
 	/datum/support_option/supply_drop/vehicle_drop/cov,
 	/datum/support_option/supply_drop/construction_drop/cov,
+	)
+
+/obj/item/support_pad/innie
+	options_init = list(\
+	/datum/support_option/supply_drop_personalised_ammo,
+	/datum/support_option/supply_drop/mass_ammo/urf,
+	/datum/support_option/supply_drop/medical_drop,
+	/datum/support_option/supply_drop/vehicle_drop,
+	/datum/support_option/supply_drop/construction_drop,
 	)

@@ -383,12 +383,14 @@
         /obj/item/clothing/head/helmet/innie/medium/brown,
         /obj/item/clothing/suit/storage/innie/medium/brown,
         /obj/item/clothing/shoes/innie_boots/medium/brown,
-        /obj/item/clothing/mask/innie/shemagh)
+        /obj/item/clothing/mask/innie/shemagh,
+		/obj/item/clothing/gloves/thick/innie)
   can_hold = list(
         /obj/item/clothing/head/helmet/innie/medium/brown,
         /obj/item/clothing/suit/storage/innie/medium/brown,
         /obj/item/clothing/shoes/innie_boots/medium/brown,
-        /obj/item/clothing/mask/innie/shemagh)
+        /obj/item/clothing/mask/innie/shemagh,
+		/obj/item/clothing/gloves/thick/innie)
 
 /obj/item/weapon/storage/box/large/armorset/inniearmor/black
     name = "Black Insurrectionist Armor"
@@ -396,12 +398,14 @@
         /obj/item/clothing/head/helmet/innie/medium/black,
         /obj/item/clothing/suit/storage/innie/medium/black,
         /obj/item/clothing/shoes/innie_boots/medium/black,
-        /obj/item/clothing/mask/innie/shemagh)
+        /obj/item/clothing/mask/innie/shemagh,
+		/obj/item/clothing/gloves/thick/innie)
     can_hold = list(
         /obj/item/clothing/head/helmet/innie/medium/black,
         /obj/item/clothing/suit/storage/innie/medium/black,
         /obj/item/clothing/shoes/innie_boots/medium/black,
-        /obj/item/clothing/mask/innie/shemagh)
+        /obj/item/clothing/mask/innie/shemagh,
+		/obj/item/clothing/gloves/thick/innie)
 
 /obj/item/weapon/storage/box/large/armorset/inniearmor/blue
   name = "Blue Insurrectionist Armor"
@@ -409,12 +413,14 @@
         /obj/item/clothing/head/helmet/innie/medium/blue,
         /obj/item/clothing/suit/storage/innie/medium/blue,
         /obj/item/clothing/shoes/innie_boots/medium/blue,
-        /obj/item/clothing/mask/innie/shemagh)
+        /obj/item/clothing/mask/innie/shemagh,
+		/obj/item/clothing/gloves/thick/innie)
   can_hold = list(
         /obj/item/clothing/head/helmet/innie/medium/blue,
         /obj/item/clothing/suit/storage/innie/medium/blue,
         /obj/item/clothing/shoes/innie_boots/medium/blue,
-        /obj/item/clothing/mask/innie/shemagh)
+        /obj/item/clothing/mask/innie/shemagh,
+		/obj/item/clothing/gloves/thick/innie)
 
 /obj/item/weapon/storage/box/large/armorset/inniearmor/white
   name = "White Insurrectionist Armor"
@@ -422,12 +428,14 @@
         /obj/item/clothing/head/helmet/innie/medium/white,
         /obj/item/clothing/suit/storage/innie/medium/white,
         /obj/item/clothing/shoes/innie_boots/medium/white,
-        /obj/item/clothing/mask/innie/shemagh)
+        /obj/item/clothing/mask/innie/shemagh,
+		/obj/item/clothing/gloves/thick/innie)
   can_hold = list(
         /obj/item/clothing/head/helmet/innie/medium/white,
         /obj/item/clothing/suit/storage/innie/medium/white,
         /obj/item/clothing/shoes/innie_boots/medium/white,
-        /obj/item/clothing/mask/innie/shemagh)
+        /obj/item/clothing/mask/innie/shemagh,
+		/obj/item/clothing/gloves/thick/innie)
 
 /obj/item/weapon/storage/box/large/armorset/inniearmor/green
   name = "Green Insurrectionist Armor"
@@ -435,12 +443,14 @@
         /obj/item/clothing/head/helmet/innie/medium/green,
         /obj/item/clothing/suit/storage/innie/medium/green,
         /obj/item/clothing/shoes/innie_boots/medium/green,
-        /obj/item/clothing/mask/innie/shemagh)
+        /obj/item/clothing/mask/innie/shemagh,
+		/obj/item/clothing/gloves/thick/innie)
   can_hold = list(
         /obj/item/clothing/head/helmet/innie/medium/green,
         /obj/item/clothing/suit/storage/innie/medium/green,
         /obj/item/clothing/shoes/innie_boots/medium/green,
-        /obj/item/clothing/mask/innie/shemagh)
+        /obj/item/clothing/mask/innie/shemagh,
+		/obj/item/clothing/gloves/thick/innie)
 
 //soe
 //rifleman
@@ -450,14 +460,14 @@
         /obj/item/clothing/head/helmet/urfc,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/clothing/suit/armor/special/urfc,
-        /obj/item/clothing/gloves/soegloves/urfc,
+        /obj/item/clothing/gloves/thick/soegloves/urfc,
         /obj/item/clothing/shoes/magboots/urfc,
   )
   can_hold = list(
         /obj/item/clothing/head/helmet/urfc,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/clothing/suit/armor/special/urfc,
-        /obj/item/clothing/gloves/soegloves/urfc,
+        /obj/item/clothing/gloves/thick/soegloves/urfc,
         /obj/item/clothing/shoes/magboots/urfc)
 
 //CQB
@@ -469,14 +479,14 @@
         /obj/item/clothing/head/helmet/urfc/cqb,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/clothing/suit/armor/special/urfc,
-        /obj/item/clothing/gloves/soegloves/urfc,
+        /obj/item/clothing/gloves/thick/soegloves/urfc,
         /obj/item/clothing/shoes/magboots/urfc)
 
   can_hold = list(
         /obj/item/clothing/head/helmet/urfc/cqb,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/clothing/suit/armor/special/urfc,
-        /obj/item/clothing/gloves/soegloves/urfc,
+        /obj/item/clothing/gloves/thick/soegloves/urfc,
         /obj/item/clothing/shoes/magboots/urfc)
 
 //sniper
@@ -487,13 +497,13 @@
         /obj/item/clothing/head/helmet/urfc/sniper,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/clothing/suit/armor/special/urfc,
-        /obj/item/clothing/gloves/soegloves/urfc,
+        /obj/item/clothing/gloves/thick/soegloves/urfc,
         /obj/item/clothing/shoes/magboots/urfc)
   can_hold = list(
         /obj/item/clothing/head/helmet/urfc/sniper,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/clothing/suit/armor/special/urfc,
-        /obj/item/clothing/gloves/soegloves/urfc,
+        /obj/item/clothing/gloves/thick/soegloves/urfc,
         /obj/item/clothing/shoes/magboots/urfc)
 
 //medic
@@ -504,13 +514,13 @@
         /obj/item/clothing/head/helmet/urfc/medic,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/clothing/suit/armor/special/urfc,
-        /obj/item/clothing/gloves/soegloves/urfc,
+        /obj/item/clothing/gloves/thick/soegloves/urfc,
         /obj/item/clothing/shoes/magboots/urfc)
   can_hold = list(
         /obj/item/clothing/head/helmet/urfc/medic,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/clothing/suit/armor/special/urfc,
-        /obj/item/clothing/gloves/soegloves/urfc,
+        /obj/item/clothing/gloves/thick/soegloves/urfc,
         /obj/item/clothing/shoes/magboots/urfc)
 
 //Engineer
@@ -521,13 +531,13 @@
         /obj/item/clothing/head/helmet/urfc/engineer,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/clothing/suit/armor/special/urfc,
-        /obj/item/clothing/gloves/soegloves/urfc,
+        /obj/item/clothing/gloves/thick/soegloves/urfc,
         /obj/item/clothing/shoes/magboots/urfc)
   can_hold = list(
         /obj/item/clothing/head/helmet/urfc/engineer,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/clothing/suit/armor/special/urfc,
-        /obj/item/clothing/gloves/soegloves/urfc,
+        /obj/item/clothing/gloves/thick/soegloves/urfc,
         /obj/item/clothing/shoes/magboots/urfc)
 
 //squadleader
@@ -538,14 +548,14 @@
         /obj/item/clothing/head/helmet/urfc/squadleader,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/clothing/suit/armor/special/urfc/squadleader,
-        /obj/item/clothing/gloves/soegloves/urfc,
+        /obj/item/clothing/gloves/thick/soegloves/urfc,
         /obj/item/clothing/shoes/magboots/urfc)
 
   can_hold = list(
         /obj/item/clothing/head/helmet/urfc/squadleader,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/clothing/suit/armor/special/urfc/squadleader,
-        /obj/item/clothing/gloves/soegloves/urfc,
+        /obj/item/clothing/gloves/thick/soegloves/urfc,
         /obj/item/clothing/shoes/magboots/urfc)
 
 /obj/item/weapon/storage/box/large/armorset/soe/eva
@@ -554,7 +564,7 @@
         /obj/item/clothing/head/helmet/soe,
         /obj/item/clothing/suit/armor/special/soe,
         /obj/item/clothing/shoes/magboots/urfc,
-        /obj/item/clothing/gloves/soegloves/urfc,
+        /obj/item/clothing/thick/gloves/soegloves/urfc,
         /obj/item/weapon/tank/jetpack/void/urfc,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/weapon/tank/emergency/oxygen/engi)
@@ -562,7 +572,7 @@
         /obj/item/clothing/head/helmet/soe,
         /obj/item/clothing/suit/armor/special/soe,
         /obj/item/clothing/shoes/magboots/urfc,
-        /obj/item/clothing/gloves/soegloves/urfc,
+        /obj/item/clothing/thick/gloves/soegloves/urfc,
         /obj/item/weapon/tank/jetpack/void/urfc,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/weapon/tank/emergency/oxygen/engi)
