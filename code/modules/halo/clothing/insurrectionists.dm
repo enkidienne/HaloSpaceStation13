@@ -543,8 +543,6 @@
 	brightness_on = 6
 	on = 0
 
-	integrated_hud = /obj/item/clothing/glasses/hud/tactical/innie
-
 /obj/item/weapon/storage/briefcase/colossuscase
 	name = "Thick Brief Case"
 	desc = "This is a hardy metal bound briefcase which seems larger then your normal carry on. Inside of this enourmous case you can see there are two molded slots which seem perfectly fitted for both the Colossus Armor and Helmet in their entirety. You should silently thank whatever various diety you believe in that this case even exists in the first place."

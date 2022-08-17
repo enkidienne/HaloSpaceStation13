@@ -66,6 +66,6 @@
 	desc = "7.62x51mm M118 Full Metal Jacket Armour Piercing (FMJ-AP), hand loaded with extra gunpowder for more of an impact, magazine for the MA37 containing 32 shots."
 	ammo_type = /obj/item/ammo_casing/m118_hand
 
-	/obj/item/weapon/storage/box/ma37_m118_hand
+/obj/item/weapon/storage/box/ma37_m118_hand
 	name = "box of MA37 7.62mm Hand-Loaded M118 magazines"
 	startswith = list(/obj/item/ammo_magazine/ma37/m118_hand = 7)

@@ -1,3 +1,4 @@
+/*
 /datum/support_option/supply_drop/personalised_ammo//re-enabled for power/specialist roles and up only.
 	name = "Supply Drop (Ammunition, Personalised)"
 	desc = "Contains a small cache of ammunition, retrieved from a nearby stealth support vessel.\n2 magazines of ammo for each unique weapon being carried."
@@ -27,7 +28,7 @@
 		for(var/i = 1 to PERSONALISED_AMMO_DROP_MAG_AMT)
 			c.contents += new p.magazine_type (c)
 	return c
-
+*/
 /obj/structure/closet/crate/supply_drop
 	name = "Type-B Supply Capsule"
 	desc = "Used to drop supplies to groundside troops."

@@ -48,7 +48,7 @@
 	command_rank = 1
 
 /datum/job/covenant/skirmmurmillo
-	command_rank 1
+	command_rank = 1
 
 /datum/job/covenant/brute_captain
 	command_rank = 2
@@ -57,7 +57,7 @@
 	command_rank = 1
 
 /datum/job/covenant/brute_minor
-	commmand_rank = 1
+	command_rank = 1
 
 /datum/job/covenant/yanmee_leader
 	command_rank = 2

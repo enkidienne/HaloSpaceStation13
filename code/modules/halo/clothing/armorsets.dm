@@ -564,7 +564,7 @@
         /obj/item/clothing/head/helmet/soe,
         /obj/item/clothing/suit/armor/special/soe,
         /obj/item/clothing/shoes/magboots/urfc,
-        /obj/item/clothing/thick/gloves/soegloves/urfc,
+        /obj/item/clothing/gloves/thick/soegloves/urfc,
         /obj/item/weapon/tank/jetpack/void/urfc,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/weapon/tank/emergency/oxygen/engi)
@@ -572,7 +572,7 @@
         /obj/item/clothing/head/helmet/soe,
         /obj/item/clothing/suit/armor/special/soe,
         /obj/item/clothing/shoes/magboots/urfc,
-        /obj/item/clothing/thick/gloves/soegloves/urfc,
+        /obj/item/clothing/gloves/thick/soegloves/urfc,
         /obj/item/weapon/tank/jetpack/void/urfc,
         /obj/item/clothing/mask/gas/soebalaclava,
         /obj/item/weapon/tank/emergency/oxygen/engi)

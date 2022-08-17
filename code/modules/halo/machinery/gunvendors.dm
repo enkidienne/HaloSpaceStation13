@@ -76,7 +76,7 @@
 					/obj/item/weapon/gun/projectile/ma37_ar = 0,
 					"Ammunition" = -1,
 					/obj/item/ammo_magazine/m6d/m225 = 0,
-					/obj/item/ammo_magazine/ma37_m118_hand = 0,
+					/obj/item/ammo_magazine/ma37/m118_hand = 0,
 					/obj/item/ammo_magazine/m392/m120 = 0,
 					/obj/item/ammo_magazine/m7/m443 = 0,
 					/obj/item/ammo_magazine/m7/rubber = 0,

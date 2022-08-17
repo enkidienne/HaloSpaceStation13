@@ -33,8 +33,8 @@
 
 /obj/item/projectile/bullet/m118_hand
 	damage = 35
-	armor_penetration = 10
-	shield_damage = 10
+	armor_penetration = 5
+	shield_damage = 5
 
 /* M119 Rounds */
 
