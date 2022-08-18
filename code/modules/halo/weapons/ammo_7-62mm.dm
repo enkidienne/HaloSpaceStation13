@@ -24,17 +24,18 @@
 	damage_type = PAIN
 	penetrating = 0
 
-/*M118 Hand Loaded Rounds */
+/*M125 LE-AP Rounds */
+//used by: MA37 and M545
 
-/obj/item/ammo_casing/m118_hand
-	desc = "A 7.62mm hand-loaded bullet casing."
+/obj/item/ammo_casing/m125
+	desc = "A 7.62mm LE-AP casing."
 	caliber = "7.62mm"
-	projectile_type = /obj/item/projectile/bullet/m118_hand
+	projectile_type = /obj/item/projectile/bullet/m125
 
-/obj/item/projectile/bullet/m118_hand
-	damage = 35
-	armor_penetration = 5
-	shield_damage = 5
+/obj/item/projectile/bullet/m125
+	damage = 35//better damage
+	armor_penetration = 10//more AP
+	shield_damage = -15//worse against shields
 
 /* M119 Rounds */
 

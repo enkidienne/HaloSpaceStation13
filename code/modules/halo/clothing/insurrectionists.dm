@@ -518,7 +518,7 @@
 	heat_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	armor = list(melee = 75, bullet = 65, laser = 60, energy = 60, bomb = 75, bio = 50, rad = 50)
-	armor_thickness= 50
+	armor_thickness = 40
 	slowdown_general = 1
 	siemens_coefficient = 0.7
 
@@ -536,7 +536,7 @@
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	unacidable = 1
 	slowdown_general = 1
-	armor_thickness = 50
+	armor_thickness = 40
 	armor = list(melee = 75, bullet = 65, laser = 60, energy = 60, bomb = 75, bio = 50, rad = 50)
 	action_button_name = "Toggle Helmet Light"
 	light_overlay = "helmet_light"
@@ -573,10 +573,10 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	unacidable = 1
 	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic,/obj/item/weapon/tank)
-	slowdown_general = -5
-	armor_thickness = 20
-	armor_thickness_max = 20
-	armor = list(melee = 55, bullet = 50, laser = 55, energy = 45, bomb = 40, bio = 25, rad = 25)
+	slowdown_general = -4
+	armor_thickness = 15
+	armor_thickness_max = 15
+	armor = list(melee = 30, bullet = 30, laser = 25, energy = 25, bomb = 20, bio = 30, rad = 30)
 
 /obj/item/clothing/suit/justice/zeal/New()
 	. = ..()
@@ -595,9 +595,9 @@
 	heat_protection = HEAD | FACE
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	w_class = ITEM_SIZE_LARGE
-	armor_thickness = 20
-	armor_thickness_max = 20
-	armor = list(melee = 55, bullet = 50, laser = 55, energy = 45, bomb = 40, bio = 25, rad = 25)
+	armor_thickness = 15
+	armor_thickness_max = 15
+	armor = list(melee = 30, bullet = 30, laser = 25, energy = 25, bomb = 20, bio = 30, rad = 30)
 	unacidable = 1
 
 	integrated_hud = /obj/item/clothing/glasses/hud/tactical/innie

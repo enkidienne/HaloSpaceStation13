@@ -76,7 +76,8 @@
 					/obj/item/weapon/gun/projectile/ma37_ar = 0,
 					"Ammunition" = -1,
 					/obj/item/ammo_magazine/m6d/m225 = 0,
-					/obj/item/ammo_magazine/ma37/m118_hand = 0,
+					/obj/item/ammo_magazine/ma37/m125 = 0,//anti-armor
+					/obj/item/ammo_magazine/ma37/m118 = 0,//normal
 					/obj/item/ammo_magazine/m392/m120 = 0,
 					/obj/item/ammo_magazine/m7/m443 = 0,
 					/obj/item/ammo_magazine/m7/rubber = 0,
@@ -97,7 +98,8 @@
 					/obj/item/drop_pod_beacon = 0,
 					/obj/item/turret_deploy_kit/HMG = 0,
 					/obj/item/turret_deploy_kit/chaingun = 0,
-					/obj/item/weapon/storage/box/ma37_m118_hand = 0
+					/obj/item/weapon/storage/box/ma37_m125 = 0,
+					/obj/item/weapon/storage/box/ma37_m118 = 0,
 					)
 	amounts = list(\
 		/obj/item/weapon/grenade/frag/m9_hedp = 25,
@@ -107,7 +109,8 @@
 		/obj/item/weapon/plastique/breaching/longrange = 8,
 		/obj/item/turret_deploy_kit/HMG = 4,
 		/obj/item/turret_deploy_kit/chaingun = 4,
-		/obj/item/weapon/storage/box/ma37_m118_hand = 5,
+		/obj/item/weapon/storage/box/ma37_m125 = 5,
+		/obj/item/weapon/storage/box/ma37_m118 = 5,
 	)
 
 /obj/machinery/pointbased_vending/armory/heavy // HEAVY WEAPONS

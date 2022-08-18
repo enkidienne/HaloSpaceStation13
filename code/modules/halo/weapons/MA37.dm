@@ -9,8 +9,8 @@
 	fire_sound = 'code/modules/halo/sounds/MA37_Fire_New.wav'
 	//fire_sound_burst = 'code/modules/halo/sounds/MA37_Fire_New.wav'
 	reload_sound = 'code/modules/halo/sounds/MA37_Reload_New.wav'
-	magazine_type = /obj/item/ammo_magazine/ma37/m118_hand
-	allowed_magazines = list(/obj/item/ammo_magazine/ma37/m118, /obj/item/ammo_magazine/ma37/m118_hand)
+	magazine_type = /obj/item/ammo_magazine/ma37/m125
+	allowed_magazines = list(/obj/item/ammo_magazine/ma37/m118, /obj/item/ammo_magazine/ma37/m125)
 	load_method = MAGAZINE
 	slot_flags = SLOT_BACK
 
@@ -61,11 +61,11 @@
 	name = "box of MA37 7.62mm M118 magazines"
 	startswith = list(/obj/item/ammo_magazine/ma37/m118 = 7)
 
-/obj/item/ammo_magazine/ma37/m118_hand
-	name = "MA37 magazine (7.62mm) M118"
-	desc = "7.62x51mm M118 Full Metal Jacket Armour Piercing (FMJ-AP), hand loaded with extra gunpowder for more of an impact, magazine for the MA37 containing 32 shots."
-	ammo_type = /obj/item/ammo_casing/m118_hand
+/obj/item/ammo_magazine/ma37/m125
+	name = "MA37 magazine (7.62mm) M125"
+	desc = "7.62x51mm M125 Low Explosive Armor Piercing magazine for the MA37 containing 32 shots. Designed to impact armor, penetrate, then explode inside of it for extra penetration and tissue damage. Not designed to go up against shielding."
+	ammo_type = /obj/item/ammo_casing/m125
 
-/obj/item/weapon/storage/box/ma37_m118_hand
-	name = "box of MA37 7.62mm Hand-Loaded M118 magazines"
-	startswith = list(/obj/item/ammo_magazine/ma37/m118_hand = 7)
+/obj/item/weapon/storage/box/ma37_m125
+	name = "box of MA37 7.62mm LE-AP M125 magazines"
+	startswith = list(/obj/item/ammo_magazine/ma37/m125 = 7)

@@ -69,3 +69,14 @@
 /obj/item/weapon/storage/box/large/m545_m118
 	name = "box of M545 7.62mm M118 box magazines"
 	startswith = list(/obj/item/ammo_magazine/m545/m118 = 3)
+
+//M125 Ammunition
+
+/obj/item/ammo_magazine/m545/m125
+	name = "M545 box magazine (7.62mm) M125"
+	desc = "7.62x51mm M118 Light Explosive Armor Piercing (LE-AP) box magazine for the M545 squad support weapon containing 150 shots. Good against armor and flesh, not shielding."
+	ammo_type = /obj/item/ammo_casing/m125
+
+/obj/item/weapon/storage/box/large/m545_m125
+	name = "box of M545 7.62mm M125 box magazines"
+	startswith = list(/obj/item/ammo_magazine/m545/m125 = 3)

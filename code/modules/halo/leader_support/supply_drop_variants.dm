@@ -1,4 +1,4 @@
-/*
+/* //disabled, I will complete this at a later date in a different PR, groundwork is here, however.
 /datum/support_option/supply_drop/personalised_ammo//re-enabled for power/specialist roles and up only.
 	name = "Supply Drop (Ammunition, Personalised)"
 	desc = "Contains a small cache of ammunition, retrieved from a nearby stealth support vessel.\n2 magazines of ammo for each unique weapon being carried."
@@ -29,6 +29,7 @@
 			c.contents += new p.magazine_type (c)
 	return c
 */
+
 /obj/structure/closet/crate/supply_drop
 	name = "Type-B Supply Capsule"
 	desc = "Used to drop supplies to groundside troops."
@@ -127,11 +128,11 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 
 /obj/structure/closet/crate/supply_drop/mass_ammo/urf/WillContain()
 	return list(\
-	/obj/item/ammo_magazine/ma37/m118_hand,
-	/obj/item/ammo_magazine/ma37/m118_hand,
-	/obj/item/ammo_magazine/ma37/m118_hand,
-	/obj/item/ammo_magazine/ma37/m118_hand,
-	/obj/item/ammo_magazine/ma37/m118_hand,
+	/obj/item/ammo_magazine/ma37/m125,
+	/obj/item/ammo_magazine/ma37/m125,
+	/obj/item/ammo_magazine/ma37/m125,
+	/obj/item/ammo_magazine/ma37/m125,
+	/obj/item/ammo_magazine/ma37/m125,
 	/obj/item/ammo_magazine/m6d/m224,
 	/obj/item/ammo_magazine/m6d/m224,
 	/obj/item/ammo_magazine/m6d/m224,
