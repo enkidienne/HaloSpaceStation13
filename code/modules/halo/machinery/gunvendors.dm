@@ -157,7 +157,8 @@
 					"Ammunition" = -1,
 					/obj/item/ammo_magazine/spnkr = 0,
 					/obj/item/ammo_box/heavysniper = 0,
-					/obj/item/ammo_magazine/m545/m118 = 0,
+					/obj/item/ammo_magazine/m545/m125 = 0,//anti-armor
+					/obj/item/ammo_magazine/m545/m118 = 0,//normal
 					"Turrets" = -1,
 					/obj/item/turret_deploy_kit/HMG = 0,
 					"Explosives" = -1,
@@ -291,11 +292,9 @@
 /obj/machinery/vending/armory/attachment/innie
 	name = "Insurrectionist Attachment Vendor"
 	req_access = list(access_innie)
-	products = list(/obj/item/weapon_attachment/barrel/suppressor = 2,
-					/obj/item/weapon_attachment/sight/acog = 2,
-					/obj/item/weapon_attachment/light/flashlight = 2,
-					/obj/item/weapon_attachment/barrel/suppressor = 1,
-					/obj/item/weapon_attachment/vertical_grip = 2,
+	products = list(/obj/item/weapon_attachment/barrel/suppressor = 6,
+					/obj/item/weapon_attachment/sight/acog = 6,
+					/obj/item/weapon_attachment/sight/rds = 6,
 					)
 
 /obj/machinery/vending/armory/attachment/soe
@@ -474,6 +473,7 @@
 					/obj/item/weapon/gun/projectile/br55 = 0,
 					/obj/item/weapon/gun/projectile/m6d_magnum = 0,
 					/obj/item/weapon/gun/projectile/m7_smg = 0,
+					/obj/item/weapon/gun/projectile/ma37_ar = 0,
 					/obj/item/weapon/gun/projectile/m392_dmr/innie = 0,
 					/obj/item/weapon/gun/projectile/shotgun/soe = 0,
 					/obj/item/weapon/gun/projectile/m545_lmg = 0,
@@ -481,13 +481,16 @@
 					"Ammunition" = -1,
 					/obj/item/ammo_box/heavysniper = 0,
 					/obj/item/ammo_magazine/ma3/m118 = 0,
+					/obj/item/ammo_magazine/ma37/m125 = 0,//anti-armor
+					/obj/item/ammo_magazine/ma37/m118 = 0,//normal
 					/obj/item/ammo_magazine/m392/m120 = 0,
 					/obj/item/ammo_magazine/br55/m634 = 0,
 					/obj/item/ammo_magazine/m7/m443 = 0,
 					/obj/item/ammo_magazine/kv32 = 0,
 					/obj/item/ammo_box/shotgun = 0,
 					/obj/item/ammo_box/shotgun/slug = 0,
-					/obj/item/ammo_magazine/m545/m118 = 0,
+					/obj/item/ammo_magazine/m545/m125 = 0,//anti-armor
+					/obj/item/ammo_magazine/m545/m118 = 0,//normal
 					/obj/item/ammo_magazine/m6d/m225 = 0,
 					"Storage" = -1,
 					/obj/item/weapon/storage/belt/marine_ammo = 2,
@@ -529,7 +532,9 @@
 		/obj/item/weapon/grenade/frag/m9_hedp = 15,
 		/obj/item/weapon/grenade/smokebomb = 15,
 		/obj/item/weapon/storage/firstaid/unsc = 6,
-		/obj/item/device/landmine = 4
+		/obj/item/device/landmine = 4,
+		/obj/item/weapon/storage/box/ma37_m125 = 5,
+		/obj/item/weapon/storage/box/ma37_m118 = 5,
 		)
 
 /obj/machinery/vending/armory/commandovend/armour

@@ -74,7 +74,7 @@
 
 /obj/item/ammo_magazine/m545/m125
 	name = "M545 box magazine (7.62mm) M125"
-	desc = "7.62x51mm M118 Light Explosive Armor Piercing (LE-AP) box magazine for the M545 squad support weapon containing 150 shots. Good against armor and flesh, not shielding."
+	desc = "7.62x51mm M118 Light Explosive Armor Piercing (LE-AP) box magazine for the M545 squad support weapon containing 150 shots. Designed to impact armor, arm a fuse, penetrate, then detonate for maximum tissue damage, however when going up against shields, it tends to bounce off before the fuse has completed detonation, causing limited damage to shielding."
 	ammo_type = /obj/item/ammo_casing/m125
 
 /obj/item/weapon/storage/box/large/m545_m125

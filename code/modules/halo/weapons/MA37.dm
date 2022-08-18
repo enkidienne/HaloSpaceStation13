@@ -14,6 +14,8 @@
 	load_method = MAGAZINE
 	slot_flags = SLOT_BACK
 
+	wielded_item_state = "ma37"
+
 	burst = 4
 	burst_delay = 1.6
 	one_hand_penalty = -1
@@ -63,7 +65,7 @@
 
 /obj/item/ammo_magazine/ma37/m125
 	name = "MA37 magazine (7.62mm) M125"
-	desc = "7.62x51mm M125 Low Explosive Armor Piercing magazine for the MA37 containing 32 shots. Designed to impact armor, penetrate, then explode inside of it for extra penetration and tissue damage. Not designed to go up against shielding."
+	desc = "7.62x51mm M125 Low Explosive Armor Piercing magazine for the MA37 containing 32 shots. Designed to impact armor, arm a fuse, penetrate, then detonate for maximum tissue damage, however when going up against shields, it tends to bounce off before the fuse has completed detonation, causing limited damage to shielding."
 	ammo_type = /obj/item/ammo_casing/m125
 
 /obj/item/weapon/storage/box/ma37_m125

@@ -576,7 +576,7 @@
 	slowdown_general = -4
 	armor_thickness = 15
 	armor_thickness_max = 15
-	armor = list(melee = 30, bullet = 30, laser = 25, energy = 25, bomb = 20, bio = 30, rad = 30)
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 15, bio = 30, rad = 30)
 
 /obj/item/clothing/suit/justice/zeal/New()
 	. = ..()
@@ -597,7 +597,7 @@
 	w_class = ITEM_SIZE_LARGE
 	armor_thickness = 15
 	armor_thickness_max = 15
-	armor = list(melee = 30, bullet = 30, laser = 25, energy = 25, bomb = 20, bio = 30, rad = 30)
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 15, bio = 30, rad = 30)
 	unacidable = 1
 
 	integrated_hud = /obj/item/clothing/glasses/hud/tactical/innie

@@ -34,7 +34,7 @@
 
 /obj/item/projectile/bullet/m125
 	damage = 35//better damage
-	armor_penetration = 10//more AP
+	armor_penetration = 5 //more AP
 	shield_damage = -15//worse against shields
 
 /* M119 Rounds */
