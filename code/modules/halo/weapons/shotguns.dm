@@ -102,7 +102,7 @@
 	reload_sound = 'code/modules/halo/sounds/Shotgun_Pump_Slide.ogg'
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet/high_power
 	caliber = "shotgunhighpower"
-	max_shells = 8//yeah yeah not lore friendly but balance and making innies a bit more different
+	max_shells = 6
 	one_hand_penalty = -1
 	dispersion = list(0.45)
 	hud_bullet_row_num = 6

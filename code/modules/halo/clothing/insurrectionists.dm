@@ -519,7 +519,7 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	armor = list(melee = 75, bullet = 65, laser = 60, energy = 60, bomb = 75, bio = 50, rad = 50)
 	armor_thickness = 40
-	slowdown_general = 1
+	slowdown_general = 1.2
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/head/bomb_hood/security/colossus

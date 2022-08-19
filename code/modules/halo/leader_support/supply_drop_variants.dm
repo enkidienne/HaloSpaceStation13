@@ -224,7 +224,7 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 
 //RECON VEHICLE DROP//
 /datum/support_option/supply_drop/vehicle_drop
-	name = "Supply Drop (UNSC Transport Vehicle)"
+	name = "Supply Drop (UNSC Recon Vehicle)"
 	desc = "Contains a transport vehicle, retrieved from a nearby stealth support vessel."
 	rank_required = 2
 	cooldown_inflict = 5 MINUTES
