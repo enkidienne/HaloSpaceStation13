@@ -128,11 +128,11 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 
 /obj/structure/closet/crate/supply_drop/mass_ammo/urf/WillContain()
 	return list(\
-	/obj/item/ammo_magazine/ma37/m125,
-	/obj/item/ammo_magazine/ma37/m125,
-	/obj/item/ammo_magazine/ma37/m125,
-	/obj/item/ammo_magazine/ma37/m125,
-	/obj/item/ammo_magazine/ma37/m125,
+	/obj/item/ammo_magazine/ma37/m118,
+	/obj/item/ammo_magazine/ma37/m118,
+	/obj/item/ammo_magazine/ma37/m118,
+	/obj/item/ammo_magazine/ma37/m118,
+	/obj/item/ammo_magazine/ma37/m118,
 	/obj/item/ammo_magazine/m6d/m224,
 	/obj/item/ammo_magazine/m6d/m224,
 	/obj/item/ammo_magazine/m6d/m224,
@@ -228,7 +228,7 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	desc = "Contains a transport vehicle, retrieved from a nearby stealth support vessel."
 	rank_required = 2
 	cooldown_inflict = 5 MINUTES
-	item_to_drop = /obj/vehicles/warthog/troop/supplydrop_recon
+	item_to_drop = /obj/vehicles/warthog/turretless/supplydrop_recon
 
 /datum/support_option/supply_drop/vehicle_drop/cov
 	name = "Supply Drop (Covenant Recon Vehicle)"

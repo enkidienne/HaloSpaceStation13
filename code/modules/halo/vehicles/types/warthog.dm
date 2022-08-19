@@ -81,6 +81,13 @@
 
 	occupants = list(2,0)
 
+/obj/vehicles/warthog/turretless/supplydrop_recon/on_death()
+	. = ..()
+	for(var/turf in trange(2,loc))
+		if(prob(75))
+			new /obj/item/salvage/metal (turf)
+	qdel(src)
+
 /obj/vehicles/warthog/troop
 	name = "M12 Warthog LRV Troop Transport Modified"
 	desc = "A nimble vehicle capable of providing small to medium scale troop transport."
@@ -88,17 +95,10 @@
 	icon = 'code/modules/halo/vehicles/types/finalwarthog.dmi'
 	icon_state = "Warthog"
 
-	max_speed = 2.3
+	max_speed = 2.4
 
 	occupants = list(6,0)
 	exposed_positions = list("driver" = 0,"passenger" = 10)
-
-/obj/vehicles/warthog/troop/supplydrop_recon/on_death()
-	. = ..()
-	for(var/turf in trange(2,loc))
-		if(prob(75))
-			new /obj/item/salvage/metal (turf)
-	qdel(src)
 
 /obj/vehicles/warthog/troop/police
 	name = "M12 Warthog LRV Police Modified"

@@ -24,19 +24,6 @@
 	damage_type = PAIN
 	penetrating = 0
 
-/*M125 LE-AP Rounds */
-//used by: MA37 and M545
-
-/obj/item/ammo_casing/m125
-	desc = "A 7.62mm LE-AP casing."
-	caliber = "7.62mm"
-	projectile_type = /obj/item/projectile/bullet/m125
-
-/obj/item/projectile/bullet/m125
-	damage = 35//better damage
-	armor_penetration = 5 //more AP
-	shield_damage = -15//worse against shields
-
 /* M119 Rounds */
 
 /obj/item/ammo_casing/m119
