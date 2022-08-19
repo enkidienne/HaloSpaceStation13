@@ -1,10 +1,15 @@
-/* //disabled, I will complete this at a later date in a different PR, groundwork is here, however.
+#define PERSONALISED_AMMO_DROP_MAG_AMT 2
+
 /datum/support_option/supply_drop/personalised_ammo//re-enabled for power/specialist roles and up only.
 	name = "Supply Drop (Ammunition, Personalised)"
 	desc = "Contains a small cache of ammunition, retrieved from a nearby stealth support vessel.\n2 magazines of ammo for each unique weapon being carried."
 	rank_required = 1
 	cooldown_inflict = 2.5 MINUTES
-	item_to_drop = /obj/structure/closet/crate/supply_drop
+	item_to_drop = /obj/structure/closet/crate/supply_drop/personalised_ammo
+
+/obj/structure/closet/crate/supply_drop/personalised_ammo
+	name = "Supply Drop (Personal Ammunition)"
+	desc = "Used to drop supplies to groundside troops. Contains a small supply of ammunition for a single person."
 
 /datum/support_option/supply_drop/personalised_ammo/create_drop_item(var/turf/turf_at,var/mob/living/m)
 	var/obj/structure/closet/c = ..()
@@ -14,13 +19,12 @@
 	return c
 
 /datum/support_option/supply_drop/personalised_ammo/covenant//above comment
-	name = "Supply Drop (Ammunition, Personalised)"
-	desc = "Contains a small cache of ammunition, retrieved from a nearby stealth support vessel.\n2 magazines of ammo for each unique weapon being carried."
-	rank_required = 1
 	arrival_sfx = 'code/modules/halo/sound/sprit_flyby.ogg'
-	drop_delay = 2 SECONDS
-	cooldown_inflict = 2.5 MINUTES
-	item_to_drop = /obj/structure/closet/crate/supply_drop/cov
+	item_to_drop = /obj/structure/closet/crate/supply_drop/cov/personalised_ammo
+
+/obj/structure/closet/crate/supply_drop/cov/personalised_ammo
+	name = "Supply Drop (Personal Ammunition"
+	desc = "Used to drop supplies to groundside troops. Contains a small supply of ammunition for a single person."
 
 /datum/support_option/supply_drop/personalised_ammo/covenant/create_drop_item(var/turf/turf_at,var/mob/living/m)
 	var/obj/structure/closet/c = ..()
@@ -28,7 +32,6 @@
 		for(var/i = 1 to PERSONALISED_AMMO_DROP_MAG_AMT)
 			c.contents += new p.magazine_type (c)
 	return c
-*/
 
 /obj/structure/closet/crate/supply_drop
 	name = "Type-B Supply Capsule"
@@ -132,7 +135,6 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/ammo_magazine/ma37/m118,
 	/obj/item/ammo_magazine/ma37/m118,
 	/obj/item/ammo_magazine/ma37/m118,
-	/obj/item/ammo_magazine/ma37/m118,
 	/obj/item/ammo_magazine/m6d/m224,
 	/obj/item/ammo_magazine/m6d/m224,
 	/obj/item/ammo_magazine/m6d/m224,
@@ -141,13 +143,14 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/ammo_magazine/m392/m120,
 	/obj/item/ammo_magazine/m392/m120,
 	/obj/item/ammo_magazine/m392/m120,
-	/obj/item/ammo_magazine/m392/m120,
 	/obj/item/ammo_magazine/m7/m443,
 	/obj/item/ammo_magazine/m7/m443,
 	/obj/item/ammo_magazine/m7/m443,
 	/obj/item/ammo_magazine/m7/m443,
-	/obj/item/ammo_box/shotgun,
-	/obj/item/ammo_box/shotgun,
+	/obj/item/ammo_magazine/br55/m634,
+	/obj/item/ammo_magazine/br55/m634,
+	/obj/item/ammo_magazine/br55/m634,
+	/obj/item/ammo_magazine/br55/m634,
 	)
 
 
@@ -287,3 +290,5 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/weapon/wrench,
 	/obj/item/weapon/weldingtool,
 	)
+
+#undef PRERSONALISED_AMMO_DROP_MAG_AMT

@@ -105,7 +105,7 @@
 	max_shells = 6
 	one_hand_penalty = -1
 	dispersion = list(0.45)
-	hud_bullet_row_num = 6
+	hud_bullet_row_num = 8//balance
 	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_7x8.dmi'
 	hud_bullet_iconstate = "shell"
 	var/on = 0
