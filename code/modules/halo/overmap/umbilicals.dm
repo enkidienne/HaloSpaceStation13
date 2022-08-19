@@ -16,7 +16,7 @@
 	var/side = null //NORTH SOUTH EAST WEST are valid values for this. Setting this causes side-restrictions to apply
 	var/obj/effect/overmap/our_ship
 	var/broke = -1 //Use -1 to stop breaking.
-	//var/id = "CHANGE ME OR SUFFER!" //ID currently not used?
+	var/faction_locked = 0
 	var/obj/docking_umbilical/current_connected
 
 /obj/docking_umbilical/New()
@@ -135,6 +135,8 @@
 /obj/docking_umbilical/proc/get_all_umbis(var/obj/effect/overmap/connect_to)
 	var/list/valid_umbis = list()
 	for(var/obj/docking_umbilical/other_umbi in connect_to.connectors)
+		if(other_umbi.faction_locked && our_ship.get_faction() != other_umbi.our_ship.get_faction())
+			continue
 		if(isnull(other_umbi.current_connected) && (!other_umbi.broke) && check_dir_compatible(other_umbi))
 			valid_umbis += other_umbi
 	return valid_umbis
@@ -269,13 +271,9 @@
 	dir = WEST
 	pixel_x = -96
 
+//This is longer technically one-way but is simply faction-restricting, but the typepath is kept the same for back-compat.
 /obj/docking_umbilical/one_way
-	desc = "This umbilical permits extension and docking, but does not allow objects to dock at it."
-
-/obj/docking_umbilical/one_way/ship_setup()
-	. = ..()
-	if(our_ship)
-		our_ship.connectors -= src
+	faction_locked = 1
 
 /obj/docking_umbilical/one_way/north
 	dir = NORTH
