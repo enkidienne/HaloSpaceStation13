@@ -796,7 +796,7 @@
 /obj/item/weapon/gun/proc/use_scope()
 	set category = "Weapon"
 	set name = "Use Scope" //Gives slightly less info to the user but also allows for easy macro use.
-	set src = usr.contents
+
 	var/obj/item/weapon/gun/G = usr.get_active_hand()
 	if(!G) return
 	src = G
