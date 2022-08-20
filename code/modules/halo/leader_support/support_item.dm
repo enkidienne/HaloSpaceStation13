@@ -96,7 +96,7 @@ GLOBAL_LIST_INIT(support_pads_global,list())
 
 /obj/item/support_pad/covenant
 	options_init = list(\
-	/datum/support_option/supply_drop/personalised_ammo/covenant,
+	/datum/support_option/supply_drop/personalised_ammo_cov,
 	/datum/support_option/supply_drop/mass_ammo/cov,
 	/datum/support_option/supply_drop/medical_drop/cov,
 	/datum/support_option/supply_drop/vehicle_drop/cov,
