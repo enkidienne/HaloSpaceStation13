@@ -64,6 +64,53 @@
 	name = "Insurrectionist Equipment Rack"
 	desc = "An equipment rack, obviously stolen from the UNSC or their suppliers."
 	req_access = list(access_innie)
+	products = list(
+					"Melee" = -1,
+					/obj/item/weapon/material/knife/combat_knife = 0,
+					/obj/item/weapon/material/machete = 0,
+					"Guns" = -1,
+					/obj/item/weapon/gun/projectile/m6d_magnum = 0,
+					/obj/item/weapon/gun/projectile/m7_smg = 0,
+					/obj/item/weapon/gun/projectile/shotgun/pump/m45_ts = 0,
+					/obj/item/weapon/gun/projectile/m392_dmr = 0,
+					/obj/item/weapon/gun/projectile/br55 = 0,
+					/obj/item/weapon/gun/projectile/ma37_ar = 0,
+					"Ammunition" = -1,
+					/obj/item/ammo_magazine/m6d/m225 = 0,
+					/obj/item/ammo_magazine/ma37/m118 = 0,
+					/obj/item/ammo_magazine/m392/m120 = 0,
+					/obj/item/ammo_magazine/br55/m634 = 0,
+					/obj/item/ammo_magazine/m7/m443 = 0,
+					/obj/item/ammo_magazine/m7/rubber = 0,
+					/obj/item/ammo_box/shotgun = 0,
+					/obj/item/ammo_box/shotgun/slug = 0,
+					/obj/item/ammo_box/shotgun/beanbag = 0,
+					"Specialised Ammunition" = -1,
+					/obj/item/ammo_magazine/na4_tank = 0,
+					"Explosives" = -1,
+					/obj/item/weapon/grenade/frag/m9_hedp = 0,
+					/obj/item/weapon/grenade/smokebomb = 0,
+					/obj/item/weapon/plastique = 0,
+					/obj/item/weapon/plastique/breaching = 0,
+					/obj/item/weapon/plastique/breaching/longrange = 0,
+					"Miscellaneous" = -1,
+					/obj/item/weapon/armor_patch = 0,
+					/obj/item/weapon/armor_patch/mini = 0,
+					/obj/item/drop_pod_beacon = 0,
+					/obj/item/turret_deploy_kit/HMG = 0,
+					/obj/item/turret_deploy_kit/chaingun = 0,
+					/obj/item/weapon/storage/box/ma37_m118 = 0,
+					)
+	amounts = list(\
+		/obj/item/weapon/grenade/frag/m9_hedp = 25,
+		/obj/item/weapon/grenade/smokebomb = 25,
+		/obj/item/weapon/plastique = 4,
+		/obj/item/weapon/plastique/breaching = 8,
+		/obj/item/weapon/plastique/breaching/longrange = 8,
+		/obj/item/turret_deploy_kit/HMG = 4,
+		/obj/item/turret_deploy_kit/chaingun = 4,
+		/obj/item/weapon/storage/box/ma37_m118 = 5,
+	)
 
 /obj/machinery/pointbased_vending/armory/heavy // HEAVY WEAPONS
 	name = "UNSC Heavy Weapons Rack"
@@ -115,7 +162,11 @@
 					"Explosives" = -1,
 					/obj/item/weapon/plastique = 0,
 					/obj/item/weapon/plastique/breaching = 0,
-					/obj/item/weapon/plastique/breaching/longrange = 0
+					/obj/item/weapon/plastique/breaching/longrange = 0,
+					/obj/item/device/landmine/explosive = 0,
+					/obj/item/device/landmine/flame = 0,
+					/obj/item/device/landmine/emp = 0,
+					/obj/item/device/landmine/gas = 0,
 					)
 	amounts = list(\
 		/obj/item/weapon/gun/projectile/m545_lmg  = 1,
@@ -125,6 +176,10 @@
 		/obj/item/weapon/plastique = 8,
 		/obj/item/weapon/plastique/breaching = 8,
 		/obj/item/weapon/plastique/breaching/longrange = 8,
+		/obj/item/device/landmine/explosive = 4,
+		/obj/item/device/landmine/flame = 3,
+		/obj/item/device/landmine/emp = 2,
+		/obj/item/device/landmine/gas = 2,
 	)
 
 /obj/machinery/vending/armory/police
@@ -235,13 +290,9 @@
 /obj/machinery/vending/armory/attachment/innie
 	name = "Insurrectionist Attachment Vendor"
 	req_access = list(access_innie)
-	products = list(/obj/item/weapon_attachment/ma5_stock_butt/extended = 2,
-					/obj/item/weapon_attachment/ma5_upper_railed =2,
-					/obj/item/weapon_attachment/barrel/suppressor = 2,
-					/obj/item/weapon_attachment/sight/acog = 2,
-					/obj/item/weapon_attachment/light/flashlight = 2,
-					/obj/item/weapon_attachment/barrel/suppressor = 1,
-					/obj/item/weapon_attachment/vertical_grip = 2,
+	products = list(/obj/item/weapon_attachment/barrel/suppressor = 6,
+					/obj/item/weapon_attachment/sight/acog = 6,
+					/obj/item/weapon_attachment/sight/rds = 6,
 					)
 
 /obj/machinery/vending/armory/attachment/soe
@@ -420,6 +471,7 @@
 					/obj/item/weapon/gun/projectile/br55 = 0,
 					/obj/item/weapon/gun/projectile/m6d_magnum = 0,
 					/obj/item/weapon/gun/projectile/m7_smg = 0,
+					/obj/item/weapon/gun/projectile/ma37_ar = 0,
 					/obj/item/weapon/gun/projectile/m392_dmr/innie = 0,
 					/obj/item/weapon/gun/projectile/shotgun/soe = 0,
 					/obj/item/weapon/gun/projectile/m545_lmg = 0,
@@ -427,6 +479,7 @@
 					"Ammunition" = -1,
 					/obj/item/ammo_box/heavysniper = 0,
 					/obj/item/ammo_magazine/ma3/m118 = 0,
+					/obj/item/ammo_magazine/ma37/m118 = 0,
 					/obj/item/ammo_magazine/m392/m120 = 0,
 					/obj/item/ammo_magazine/br55/m634 = 0,
 					/obj/item/ammo_magazine/m7/m443 = 0,
@@ -475,7 +528,8 @@
 		/obj/item/weapon/grenade/frag/m9_hedp = 15,
 		/obj/item/weapon/grenade/smokebomb = 15,
 		/obj/item/weapon/storage/firstaid/unsc = 6,
-		/obj/item/device/landmine = 4
+		/obj/item/device/landmine = 4,
+		/obj/item/weapon/storage/box/ma37_m118 = 5,
 		)
 
 /obj/machinery/vending/armory/commandovend/armour

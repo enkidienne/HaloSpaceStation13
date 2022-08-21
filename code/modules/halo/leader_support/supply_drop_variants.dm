@@ -1,20 +1,5 @@
+#define PERSONALISED_AMMO_DROP_MAG_AMT 2
 
-//Currently disabled because it doesn't really fit with the idea of "SL is now an important person to keep alive"
-/*
-/datum/support_option/supply_drop/personalised_ammo
-	name = "Supply Drop (Ammunition, Personalised)"
-	desc = "Contains a small cache of ammunition, retrieved from a nearby stealth support vessel.\n2 magazines of ammo for each unique weapon being carried."
-	rank_required = 0
-	cooldown_inflict = 2.5 MINUTES
-	item_to_drop = /obj/structure/closet/crate/supply_drop
-
-/datum/support_option/supply_drop/personalised_ammo/create_drop_item(var/turf/turf_at,var/mob/living/m)
-	var/obj/structure/closet/c = ..()
-	for(var/obj/item/weapon/gun/projectile/p in m.contents)
-		for(var/i = 1 to PERSONALISED_AMMO_DROP_MAG_AMT)
-			c.contents += new p.magazine_type (c)
-	return c
-*/
 /obj/structure/closet/crate/supply_drop
 	name = "Type-B Supply Capsule"
 	desc = "Used to drop supplies to groundside troops."
@@ -29,6 +14,8 @@
 	icon_state = "Covenant_Supply_closed"
 	icon_closed = "Covenant_Supply_closed"
 	icon_opened = "Covenant_Supply"
+
+//ammo supply drops
 
 /datum/support_option/supply_drop/mass_ammo
 	name = "Supply Drop (UNSC, Ammunition, Mass )"
@@ -65,6 +52,77 @@
 	/obj/item/ammo_magazine/br55/m634,
 	)
 
+/datum/support_option/supply_drop/mass_ammo/odst
+	name = "Supply Drop (ODST, Ammunition, Mass )"
+	desc = "Contains a large cache of ammunition, retrieved from a nearby stealth support vessel.\n 4x a wide range of weapon magazines."
+	rank_required = 3
+	cooldown_inflict = 4 MINUTES
+	item_to_drop = /obj/structure/closet/crate/supply_drop/mass_ammo/odst
+
+/obj/structure/closet/crate/supply_drop/mass_ammo/odst
+	name = "Supply Drop (ODST, Ammunition, Mass)"
+	desc = "Used to drop supplies to groundside troops. Contains a large cache of ammunition."
+
+obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
+	return list(\
+	/obj/item/ammo_magazine/ma5b/m118,
+	/obj/item/ammo_magazine/ma5b/m118,
+	/obj/item/ammo_magazine/ma5b/m118,
+	/obj/item/ammo_magazine/ma5b/m118,
+	/obj/item/ammo_magazine/m6s/m225,
+	/obj/item/ammo_magazine/m6s/m225,
+	/obj/item/ammo_magazine/m6s/m225,
+	/obj/item/ammo_magazine/m6s/m225,
+	/obj/item/ammo_magazine/m392/m120,
+	/obj/item/ammo_magazine/m392/m120,
+	/obj/item/ammo_magazine/m392/m120,
+	/obj/item/ammo_magazine/m392/m120,
+	/obj/item/ammo_magazine/m7/m443/rnd48,
+	/obj/item/ammo_magazine/m7/m443/rnd48,
+	/obj/item/ammo_magazine/m7/m443/rnd48,
+	/obj/item/ammo_magazine/m7/m443/rnd48,
+	/obj/item/ammo_magazine/br55/m634,
+	/obj/item/ammo_magazine/br55/m634,
+	/obj/item/ammo_magazine/br55/m634,
+	/obj/item/ammo_magazine/br55/m634,
+	)
+
+/datum/support_option/supply_drop/mass_ammo/urf
+	name = "Supply Drop (URF, Ammunition, Mass )"
+	desc = "Contains a large cache of ammunition, retrieved from a nearby stealth support vessel.\n 4x a wide range of weapon magazines."
+	rank_required = 2
+	cooldown_inflict = 4 MINUTES
+	item_to_drop = /obj/structure/closet/crate/supply_drop/mass_ammo/urf
+
+/obj/structure/closet/crate/supply_drop/mass_ammo/urf
+	name = "Supply Drop (URF, Ammunition, Mass)"
+	desc = "Used to drop supplies to groundside troops. Contains a large cache of ammunition."
+
+/obj/structure/closet/crate/supply_drop/mass_ammo/urf/WillContain()
+	return list(\
+	/obj/item/ammo_magazine/ma37/m118,
+	/obj/item/ammo_magazine/ma37/m118,
+	/obj/item/ammo_magazine/ma37/m118,
+	/obj/item/ammo_magazine/ma37/m118,
+	/obj/item/ammo_magazine/m6d/m224,
+	/obj/item/ammo_magazine/m6d/m224,
+	/obj/item/ammo_magazine/m6d/m224,
+	/obj/item/ammo_magazine/m6d/m224,
+	/obj/item/ammo_magazine/m392/m120,
+	/obj/item/ammo_magazine/m392/m120,
+	/obj/item/ammo_magazine/m392/m120,
+	/obj/item/ammo_magazine/m392/m120,
+	/obj/item/ammo_magazine/m7/m443,
+	/obj/item/ammo_magazine/m7/m443,
+	/obj/item/ammo_magazine/m7/m443,
+	/obj/item/ammo_magazine/m7/m443,
+	/obj/item/ammo_magazine/br55/m634,
+	/obj/item/ammo_magazine/br55/m634,
+	/obj/item/ammo_magazine/br55/m634,
+	/obj/item/ammo_magazine/br55/m634,
+	)
+
+
 /datum/support_option/supply_drop/mass_ammo/cov
 	name = "Supply Drop (Covenant, Ammunition, Mass )"
 	arrival_sfx = 'code/modules/halo/sound/sprit_flyby.ogg'
@@ -91,6 +149,45 @@
 	/obj/item/ammo_magazine/rifleneedlepack,
 
 	)
+
+/datum/support_option/supply_drop/personalised_ammo//re-enabled for power/specialist roles and up only.
+	name = "Supply Drop (Ammunition, Personalised)"
+	desc = "Contains a small cache of ammunition, retrieved from a nearby stealth support vessel.\n2 magazines of ammo for each unique weapon being carried."
+	rank_required = 1
+	cooldown_inflict = 4 MINUTES//I don't want these getting spammed
+	item_to_drop = /obj/structure/closet/crate/supply_drop/personalised_ammo
+
+/obj/structure/closet/crate/supply_drop/personalised_ammo
+	name = "Supply Drop (Personal Ammunition)"
+	desc = "Used to drop supplies to groundside troops. Contains a small supply of ammunition for a single person."
+
+/datum/support_option/supply_drop/personalised_ammo/create_drop_item(var/turf/turf_at,var/mob/living/m)
+	var/obj/structure/closet/c = ..()
+	for(var/obj/item/weapon/gun/projectile/p in m.contents)
+		for(var/i = 1 to PERSONALISED_AMMO_DROP_MAG_AMT)
+			c.contents += new p.magazine_type (c)
+	return c
+
+
+/datum/support_option/supply_drop/personalised_ammo_cov//above
+	name = "Supply Drop (Covenant, Ammunition, Single )"
+	desc = "Contains a small cache of ammunition, retrieved from a nearby stealth support vessel.\n2 magazines of ammo for each unique weapon being carried."
+	arrival_sfx = 'code/modules/halo/sound/sprit_flyby.ogg'
+	drop_delay = 2 SECONDS
+	rank_required = 1
+	cooldown_inflict = 4 MINUTES//I don't want these getting spammed
+	item_to_drop = /obj/structure/closet/crate/supply_drop/cov/personalised
+
+/obj/structure/closet/crate/supply_drop/cov/personalised
+	name = "Supply Drop (Covenant, Ammunition, Single)"
+	desc = "Used to drop supplies to groundside troops. Contains a small supply of ammunition for a single person."
+
+/datum/support_option/supply_drop/personalised_ammo_cov/create_drop_item(var/turf/turf_at,var/mob/living/m)
+	var/obj/structure/closet/c = ..()
+	for(var/obj/item/weapon/gun/projectile/p in m.contents)
+		for(var/i = 1 to PERSONALISED_AMMO_DROP_MAG_AMT)
+			c.contents += new p.magazine_type (c)
+	return c
 
 //Actual Supply Drops//
 /datum/support_option/supply_drop/medical_drop
@@ -139,7 +236,7 @@
 //RECON VEHICLE DROP//
 /datum/support_option/supply_drop/vehicle_drop
 	name = "Supply Drop (UNSC Recon Vehicle)"
-	desc = "Contains a recon vehicle, retrieved from a nearby stealth support vessel."
+	desc = "Contains a transport vehicle, retrieved from a nearby stealth support vessel."
 	rank_required = 2
 	cooldown_inflict = 5 MINUTES
 	item_to_drop = /obj/vehicles/warthog/turretless/supplydrop_recon
@@ -201,3 +298,5 @@
 	/obj/item/weapon/wrench,
 	/obj/item/weapon/weldingtool,
 	)
+
+#undef PRERSONALISED_AMMO_DROP_MAG_AMT

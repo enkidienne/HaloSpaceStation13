@@ -102,10 +102,10 @@
 	reload_sound = 'code/modules/halo/sounds/Shotgun_Pump_Slide.ogg'
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet/high_power
 	caliber = "shotgunhighpower"
-	max_shells = 6
+	max_shells = 8//balance
 	one_hand_penalty = -1
 	dispersion = list(0.45)
-	hud_bullet_row_num = 6
+	hud_bullet_row_num = 8
 	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_7x8.dmi'
 	hud_bullet_iconstate = "shell"
 	var/on = 0

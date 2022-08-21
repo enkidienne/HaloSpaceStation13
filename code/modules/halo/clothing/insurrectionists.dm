@@ -268,6 +268,15 @@
 	item_state = "h_innie_helmet_white_visor"
 	icon_state = "h_innie_helmet_obj_white_visor"
 
+/obj/item/clothing/gloves/thick/innie
+	desc = "An older standard issue combat gloves model of the DV18 Armored Gloves."
+	name = "DV18 Armored Gloves"
+	item_state = "glovesworn"
+	icon_state = "gloveobj"
+	icon = INNIE_OVERRIDE
+	icon_override = INNIE_OVERRIDE
+	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 15, bio = 0, rad = 0)
+
 /obj/item/clothing/shoes/innie_boots
 	icon = INNIE_OVERRIDE
 	icon_override = INNIE_OVERRIDE
@@ -495,41 +504,43 @@
 
 /obj/item/clothing/suit/bomb_suit/security/colossus
 	name = "Colossus Armor"
-	desc = "When desperation reaches a breaking point humans will create things which are far scarier then they are practical. The colossus armor is a perfect example of this, with multiple layers of heavy impact plating fitted all across the exterior of the body suit, inside this, the wearer becomes a walking tank provided they are wielding enough firepower to emulate such a vehicle. Even without a hand held rocket launcher any foe will be hard pressed to pierce through the robust alloys protecting its user. Though, don't expect to be able to get around the battle field with any kind of speed, the key word of being a walking tank is 'walking'."
+	desc = "When desperation reaches a breaking point humans will create things which are far scarier then they are practical. The colossus armor is a perfect example of this, with multiple layers of heavy impact plating fitted all across the exterior of the body suit, inside this, the wearer becomes a walking tank provided they are wielding enough firepower to emulate such a vehicle. Even without a hand held rocket launcher any foe will be hard pressed to pierce through the robust alloys protecting its user. Though, don't expect to be able to get around the battle field with any kind of speed, the key word of being a walking tank is 'walking'. Protects you from anything that can possibly harm you, space, acid, fire, plasma, bullets, swords, at least as long as its kept in good condition. Immune to presure and temperature changes."
 	icon_state = "colossusarmor"
 	item_state = "colossusarmor"
 	w_class = ITEM_SIZE_HUGE//bulky item
-	item_flags = THICKMATERIAL
-	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic)
+	item_flags = THICKMATERIAL|STOPPRESSUREDAMAGE
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic,/obj/item/weapon/tank)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	flags_inv = 29
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
-	siemens_coefficient = 0
-	gas_transfer_coefficient = 0.01
-	permeability_coefficient = 0.01
-	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 20, rad = 15)
-	armor_thickness= 30
-	slowdown_general = 1
+	unacidable = 1
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	heat_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 75, bullet = 65, laser = 60, energy = 60, bomb = 75, bio = 50, rad = 50)
+	armor_thickness = 40
+	slowdown_general = 1.2
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/head/bomb_hood/security/colossus
 	name = "Colossus Helm"
-	desc = "It's all well and good to have your body protected by a few inches of pure metal, but the colossus set is not complete without making sure your brain stays in the same condition as your body. The Colossus helm is also heavy, unwieldly and covered in multiple layers of heavy impact plating. But you can't really be a walking tank without it."
+	desc = "It's all well and good to have your body protected by a few inches of pure metal, but the colossus set is not complete without making sure your brain stays in the same condition as your body. The Colossus helm is also heavy, unwieldly and covered in multiple layers of heavy impact plating. But you can't really be a walking tank without it. Immune to presure and temperature changes, and has an internal oxygen mask."
 	icon_state = "colossushelmet"
 	item_state = "colossushelmet"
 	body_parts_covered = HEAD
-	item_flags = THICKMATERIAL
+	item_flags = THICKMATERIAL|STOPPRESSUREDAMAGE|AIRTIGHT
 	w_class = ITEM_SIZE_HUGE
-	gas_transfer_coefficient = 0.01
-	permeability_coefficient = 0.01
+	flash_protection = FLASH_PROTECTION_MAJOR
+	cold_protection = HEAD | FACE
+	heat_protection = HEAD | FACE
+	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	unacidable = 1
 	slowdown_general = 1
-	siemens_coefficient = 1.5
-	armor_thickness = 20
-	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 20, rad = 15)
-	gas_transfer_coefficient = 0.90
+	armor_thickness = 40
+	armor = list(melee = 75, bullet = 65, laser = 60, energy = 60, bomb = 75, bio = 50, rad = 50)
 	action_button_name = "Toggle Helmet Light"
 	light_overlay = "helmet_light"
-	brightness_on = 4
+	brightness_on = 6
 	on = 0
 
 /obj/item/weapon/storage/briefcase/colossuscase
@@ -543,24 +554,29 @@
 	throw_range = 4
 	w_class = ITEM_SIZE_HUGE
 	max_w_class = ITEM_SIZE_HUGE
+	unacidable = 1
 	max_storage_space = 32
 	can_hold = list(/obj/item/clothing/head/bomb_hood/security/colossus, /obj/item/clothing/suit/bomb_suit/security/colossus)
 	slowdown_general = 0
 
 /obj/item/clothing/suit/justice/zeal
 	name = "Zeal Scout Suit"
-	desc = "The Zeal suit was initially designed by URF research efforts to create a scout suit which their forces could utilize on a large scale across multiple systems. Geminus Colony scientists were contracted for the project so that suspicion wouldn't be drawn to the scattered URF bases near Sol due to technological requirements of the initial design. When it was finished the URF had on their hands an advanced uniform which also provided moderate defense for the wearer. The armor is carefully constructed with nano-kinetic motors built into the joints between the small segments of armor provide enhanced speed by continuously storing and releasing kinetic energy from the users natural movements. Though it is a powerful addition to the URF's compliment of existing equipment the rare minerals required to power and store this kind of energy meant that the URF was only initially capable of small scale production. In the end only the largest URF bases ended up recieving any number of these suits to help in their efforts of liberation. Because of its light weight the suit has no storage capacity to speak of, only being capable of holding a single weapon on its magnetic harness. Due to the nature of the armor's abilities excess weight taken on by the user can lead to overtaxing the motors and a loss of speed very quickly."
+	desc = "The Zeal suit was initially designed by URF research efforts to create a scout suit which their forces could utilize on a large scale across multiple systems. Geminus Colony scientists were contracted for the project so that suspicion wouldn't be drawn to the scattered URF bases near Sol due to technological requirements of the initial design. When it was finished the URF had on their hands an advanced uniform which also provided moderate defense for the wearer. The armor is carefully constructed with nano-kinetic motors built into the joints between the small segments of armor provide enhanced speed by continuously storing and releasing kinetic energy from the users natural movements. Though it is a powerful addition to the URF's compliment of existing equipment the rare minerals required to power and store this kind of energy meant that the URF was only initially capable of small scale production. In the end only the largest URF bases ended up recieving any number of these suits to help in their efforts of liberation. Because of its light weight the suit has no storage capacity to speak of, only being capable of holding a single weapon on its magnetic harness. Due to the nature of the armor's abilities excess weight taken on by the user can lead to overtaxing the motors and a loss of speed very quickly. Immune to presure and temperature changes."
 	w_class = ITEM_SIZE_LARGE
 	icon_state = "zealarmor"
 	item_state = "zealarmor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|HANDS|LEGS|FEET
 	flags_inv = 29|HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
-	allowed = list(/obj/item/weapon/gun)
-	slowdown_general = -3
+	item_flags = THICKMATERIAL|STOPPRESSUREDAMAGE
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	heat_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	unacidable = 1
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic,/obj/item/weapon/tank)
+	slowdown_general = -4
 	armor_thickness = 15
 	armor_thickness_max = 15
-	siemens_coefficient = 0.5
-	armor = list(melee = 25, bullet = 30, laser = 20, energy = 20, bomb = 20, bio = 10, rad = 15)
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 15, bio = 30, rad = 30)
 
 /obj/item/clothing/suit/justice/zeal/New()
 	. = ..()
@@ -568,20 +584,37 @@
 
 /obj/item/clothing/head/helmet/zeal
 	name = "Zeal Scout Suit Helmet"
-	desc = "The Zeal suit was initially designed by URF research efforts to create a scout suit which their forces could utilize on a large scale across multiple systems. Geminus Colony scientists were contracted for the project so that suspicion wouldn't be drawn to the scattered URF bases near Sol due to technological requirements of the initial design."
+	desc = "The Zeal suit was initially designed by URF research efforts to create a scout suit which their forces could utilize on a large scale across multiple systems. Geminus Colony scientists were contracted for the project so that suspicion wouldn't be drawn to the scattered URF bases near Sol due to technological requirements of the initial design. Immune to presure and temperature changes, has an internal oxygen mask."
 	icon_state = "zealhelmet"
 	item_state = "zealhelmet"
 	body_parts_covered = HEAD
 	item_flags = THICKMATERIAL
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
-	w_class = ITEM_SIZE_LARGE//bulky item
-	siemens_coefficient = 0.5
+	flags_inv = THICKMATERIAL|STOPPRESSUREDAMAGE|AIRTIGHT
+	flash_protection = FLASH_PROTECTION_MODERATE
+	cold_protection = HEAD | FACE
+	heat_protection = HEAD | FACE
+	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	w_class = ITEM_SIZE_LARGE
 	armor_thickness = 15
 	armor_thickness_max = 15
-	armor = list(melee = 25, bullet = 30, laser = 20, energy = 20, bomb = 20, bio = 10, rad = 15)
-	gas_transfer_coefficient = 0.90
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 15, bio = 30, rad = 30)
+	unacidable = 1
 
 	integrated_hud = /obj/item/clothing/glasses/hud/tactical/innie
 
-
+/obj/item/weapon/storage/briefcase/zealcase
+	name = "Brief Case"
+	desc = "This is a hardy metal bound briefcase which seems larger then your normal carry on. Inside of this enourmous case you can see there are two slots that perfectly fit the ZEAL armor and its matching helmet. You could probably fit it in a backpack."
+	icon_state = "colossuscase"
+	item_state = "colossuscase"
+	flags = CONDUCT
+	force = 10.0
+	throw_speed = 1
+	throw_range = 4
+	unacidable = 1
+	w_class = ITEM_SIZE_LARGE
+	max_w_class = ITEM_SIZE_HUGE
+	max_storage_space = 32
+	can_hold = list(/obj/item/clothing/head/helmet/zeal, /obj/item/clothing/suit/justice/zeal)
+	slowdown_general = 0
 #undef INNIE_OVERRIDE
