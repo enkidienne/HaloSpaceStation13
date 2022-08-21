@@ -796,6 +796,11 @@
 /obj/item/weapon/gun/proc/use_scope()
 	set category = "Weapon"
 	set name = "Use Scope" //Gives slightly less info to the user but also allows for easy macro use.
-	set popup_menu = 1
+
+	var/obj/item/weapon/gun/G = usr.get_active_hand()
+	if(!G) return
+	src = G
+	if (scope_zoom_amount == 0) return
 
 	toggle_scope(usr, scope_zoom_amount)
+
