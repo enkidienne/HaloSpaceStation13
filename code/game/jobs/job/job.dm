@@ -227,7 +227,7 @@
 
 						//what is the max players we can have?
 						var/max_ratio = 1 / num_balancing_factions
-						max_ratio += max_ratio * config.max_overpop
+						max_ratio += config.max_overpop
 
 						//how many players do we have?
 						//var/my_faction_players = my_faction.living_minds.len
