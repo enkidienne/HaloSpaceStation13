@@ -1,9 +1,9 @@
 
 /obj/item/weapon/gun/projectile/ma37_ar
 	name = "\improper MA37 Assault Rifle"
-	desc = "Also formally known as the MA5. Takes 7.62mm ammo."
+	desc = "A staple of UNSC equipment, the MA37 Individual Combat Weapon System, MA37 ICWS, is a member of the MA5 series of rifles, primarily used by the UNSC Army, but with limited use by the UNSC Marine Corps and UNSC Navy. Although limited with a 32 round capacity, it has been fine-tuned to have a 4 round burst which fires at higher speeds than the MA5B. Uses 32 round capacity MA37 magazines, 7.62x51mm."
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
-	icon_state = "MA37"
+	icon_state = "Ma37"
 	item_state = "ma37"
 	caliber = "7.62mm"
 	fire_sound = 'code/modules/halo/sounds/MA37_Fire_New.wav'
@@ -13,6 +13,7 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/ma37/m118)
 	load_method = MAGAZINE
 	slot_flags = SLOT_BACK
+	wielded_item_state = "ma37-wielded"
 
 	burst = 4
 	burst_delay = 1.6
@@ -35,9 +36,16 @@
 /obj/item/weapon/gun/projectile/ma37_ar/update_icon()
 	. = ..()
 	if(ammo_magazine)
-		icon_state = "MA37"
+		icon_state = "Ma37"
 	else
-		icon_state = "MA37_unloaded"
+		icon_state = "Ma37_unloaded"
+
+	item_icons = list(
+		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
+		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
+		slot_back_str = 'code/modules/halo/weapons/icons/Back_Weapons.dmi',
+		slot_s_store_str = 'code/modules/halo/weapons/icons/Armor_Weapons.dmi',
+		)
 
 //Basic Magazine
 
