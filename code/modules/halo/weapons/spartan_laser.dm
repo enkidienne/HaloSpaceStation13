@@ -39,12 +39,6 @@
 	burst = 2
 	burst_delay = 2.5
 
-/obj/item/weapon/gun/energy/spartanlaser/verb/scope()
-	set category = "Weapon"
-	set name = "Use Scope"
-	set popup_menu = 1
-
-	toggle_scope(usr,scope_zoom_amount)
 
 /obj/item/projectile/beam/spartan
 	name = "spartan laser"
