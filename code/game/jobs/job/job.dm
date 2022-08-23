@@ -259,7 +259,7 @@
 									if(!(f_type in last_checked_lock))
 										forcerole = 0
 								if(forcerole)
-									last_checked_lock -= my_faction.type
+									last_checked_lock.Cut()
 									message_admins("NOTICE: Poplock check was failed, but we're in a deadlock state so we'll let it through.")
 									return FALSE
 
