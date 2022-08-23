@@ -78,3 +78,9 @@
 	id = access_x52_rd
 	access_type = ACCESS_TYPE_SYNDICATE
 	desc = "X52 Research Director"
+
+/var/const/access_innie_cargo = 197
+/datum/access/innie_cargo
+	id = access_innie_cargo
+	access_type = ACCESS_TYPE_SYNDICATE
+	desc = "Insurrectionist Supply"

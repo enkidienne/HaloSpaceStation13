@@ -61,7 +61,7 @@
 	latejoin_at_spawnpoints = 1
 	total_positions = 2
 	spawn_positions = 2
-	access = list(access_innie, access_innie_boss)
+	access = list(access_innie, access_innie_boss, access_innie_cargo)
 	selection_color = "#ff0000"
 	alt_titles = null
 
@@ -79,7 +79,7 @@
 	track_players = 1
 	total_positions = 1
 	spawn_positions = 1
-	access = list(access_innie, access_innie_boss)
+	access = list(access_innie, access_innie_boss, access_innie_cargo)
 	selection_color = "#ff0000"
 	faction_whitelist = "Insurrection"
 	alt_titles = null
@@ -96,6 +96,7 @@
 	whitelisted_species = list(/datum/species/orion)
 	total_positions = 2
 	spawn_positions = 2
+	access = list(access_innie, access_innie_boss, access_innie_cargo)
 	faction_whitelist = "Insurrection"
 
 /datum/job/insurrectionist_ai
