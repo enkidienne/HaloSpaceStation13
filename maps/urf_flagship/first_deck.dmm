@@ -535,7 +535,7 @@
 "ko" = (/obj/effect/landmark/start/geminus_innie{name = "Insurrectionist Commander"},/turf/simulated/floor/holofloor/wood,/area/urf_flagship/Troopbunks)
 "kp" = (/obj/machinery/shuttle_fuel,/turf/simulated/floor/shuttle/red,/area/shuttle/innie_shuttle_transport)
 "kq" = (/obj/machinery/slipspace_engine/human{req_access = list(250)},/turf/simulated/floor/plating,/area/urf_flagship/powercore)
-"kr" = (/obj/machinery/power/apc/super{step_y = 0},/turf/simulated/shuttle/wall{icon_state = "wall3"},/area/shuttle/innie_shuttle_transport)
+"kr" = (/obj/machinery/power/apc/super,/turf/simulated/shuttle/wall{icon_state = "wall3"},/area/shuttle/innie_shuttle_transport)
 "ks" = (/obj/machinery/light/small{tag = "icon-bulb1 (EAST)"; icon_state = "bulb1"; dir = 4},/turf/simulated/floor/holofloor/wood,/area/urf_flagship/captainroom)
 "kt" = (/obj/structure/table/rack,/obj/item/clothing/suit/storage/x52armor/medium,/obj/item/clothing/suit/storage/x52armor/medium,/turf/simulated/floor/holofloor/wood,/area/urf_flagship/captainroom)
 "ku" = (/obj/structure/table/rack,/turf/simulated/floor/holofloor/wood,/area/urf_flagship/captainroom)
