@@ -31,7 +31,7 @@
 	name = "Insurrection supply management program"
 	faction_name = "Insurrection"
 	shuttle_name = "Insurrection Supply Shuttle"
-	req_access = access_innie_boss
+	req_access = access_innie_cargo
 
 
 
