@@ -249,8 +249,16 @@
 
 						var/list/last_checked_lock = ticker.mode.last_checked_lock
 						//are we overpopped?
-						if(my_ratio > max_ratio)
-							last_checked_lock |= my_faction.type
+						if(my_ratio >= max_ratio)
+							//We need to ensure that this faction is actually deadlocked and isn't just using a high-pop cost role.
+							//Essentially, re-calculate the ratio, but as if the new role was just cost-1
+							var/re_ratio = (my_faction_players + 1 - pop_balance_mult) / (total_faction_players + 1 - pop_balance_mult)
+							if(Debug2)
+								to_debug_listeners("DEBUG: RE-CAlCULATED RATIO IS: [re_ratio]. MAX RATIO IS: [max_ratio]")
+							if(re_ratio >= max_ratio)
+								last_checked_lock |= my_faction.type
+							else
+								to_chat(feedback, "<span class='boldannounce'>Popbalance cost for this role is too high, but lower-cost roles would allow joining.</span>")
 							//If we're cost one, give us the chance to skip poplock.
 							if(pop_balance_mult <= 1)
 								//If all factions have checked, and failed the pop lock, and this job is cost-1, then allow us through anyway.
