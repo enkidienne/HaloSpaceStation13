@@ -115,47 +115,38 @@
 	item_state = "unsc_pilot_armor-worn"
 	item_flags = THICKMATERIAL
 	w_class = ITEM_SIZE_LARGE
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	armor = list(melee = 30, bullet = 30, laser = 10, energy = 10, bomb = 45, bio = 0, rad = 0)
-	armor_thickness = 20
 
 /obj/item/clothing/suit/storage/marine/military_police
 	name = "M52A Body Armor NavSec"
 	desc = "An armored protective vest worn by the members of the UNSC Marine Corps. This one is modified for the use of naval security officers."
 	armor = list(melee = 30, bullet = 30, laser = 10, energy = 10, bomb = 45, bio = 0, rad = 0)
-	armor_thickness = 20
 
 /obj/item/clothing/suit/storage/marine/medic
 	name = "Olive Camo M52A Body Armor Medic"
-	desc = "An armored protective vest worn by the members of the UNSC Marine Corps."
-	icon = ITEM_INHAND
-	icon_override = MARINE_OVERRIDE
 	item_state = "M52B Body Armor Medic"
 	icon_state = "M52B Body Armor Medic_obj"
-	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
-	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
 /obj/item/clothing/suit/storage/marine/medic/brown
 	name = "Brown Camo M52A Body Armor Medic"
-	desc = "An armored protective vest worn by the members of the UNSC Marine Corps."
-	icon = ITEM_INHAND
-	icon_override = MARINE_OVERRIDE
 	item_state = "M52B Body Armor Medic B"
 	icon_state = "M52B Body Armor Medic B_obj"
-	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
-	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
 /obj/item/clothing/suit/storage/marine/brown
 	name = "Brown Camo M52A Body Armor"
-	desc = "An armored protective vest worn by the members of the UNSC Marine Corps."
-	icon = ITEM_INHAND
-	icon_override = MARINE_OVERRIDE
 	item_state = "M52B Body Armor regular B"
 	icon_state = "M52B Body Armor regular B_obj"
-	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
+
+/obj/item/clothing/suit/storage/marine/CO_Armor
+	name = "CO's M52A Body Armor"
+	desc = "An armored protective vest worn by the members of the UNSC Marine Corps. Belongs to the CO, and contains some of the lightweight alloys utilised by ODST armor, allowing for slightly greater speed."
+	item_state = "M52B Body Armor CO"
+	icon_state = "M52B Body Armor CO_obj"
+
+/obj/item/clothing/suit/storage/marine/CO_Armor/New()
+	. = ..()
+	slowdown_per_slot[slot_wear_suit] = -0.1
+
 
 /obj/item/clothing/shoes/marine
 	name = "Olive VZG7 Armored Boots"

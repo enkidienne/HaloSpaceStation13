@@ -243,7 +243,7 @@
 	for(var/turf/t in locs)
 		for(var/turf/t_2 in range(1,t))
 			if(!(t_2 in locs) && t_2.density == 0 && !IsTurfAtmosUnsafe(t_2))
-				valid_exit_locs |= t
+				valid_exit_locs |= t_2
 				break
 
 	//try again for anny turfs
@@ -251,7 +251,7 @@
 		for(var/turf/t in locs)
 			for(var/turf/t_2 in range(1,t))
 				if(!(t_2 in locs) && t_2.density == 0)
-					valid_exit_locs |= t
+					valid_exit_locs |= t_2
 					break
 
 	if(valid_exit_locs.len == 0)

@@ -69,4 +69,7 @@
 	gm = ticker.mode
 	if(gm)
 		gm.register_scanner_destroy()
+	var/obj/effect/landmark/scanning_point/point = locate(/obj/effect/landmark/scanning_point) in range(2,src)
+	if(point && point.active_scanner == src)
+		point.active_scanner = null
 	. = ..()

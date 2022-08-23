@@ -36,12 +36,17 @@
 /obj/item/weapon/storage/proc/update_slowdown()
 	if(!use_dynamic_slowdown)
 		return
-	var/list/inv = contents //Originally used return_inv for searching contents of contents, but let's not do that for sanity's sake.
+	var/list/inv = return_inv() //We're grabbing both return_inv and contents as we want to make items in substorage
+	var/list/inv_toplevel = contents //One step less heavy than they actually are, for sanity and balance.
 	var/slowdown_total = 0
 	for(var/obj/A in inv)
-		if(A.w_class == 1)
-			continue
-		slowdown_total += base_storage_cost(A.w_class) * BACKPACK_SLOWDOWN_MOD
+		var/w_class_mod = A.w_class
+		if(!(A in inv_toplevel))
+			w_class_mod -= 1
+		if(w_class_mod != 0)
+			slowdown_total += base_storage_cost(A.w_class) * BACKPACK_SLOWDOWN_MOD
+		inv -= A
+
 	var/min_threshold_slowdown = (base_storage_cost(ITEM_SIZE_NORMAL) * BACKPACK_SLOWDOWN_MOD) * 2 //2 normals.
 	if(slowdown_total <= min_threshold_slowdown)
 		slowdown_total = 0
