@@ -51,6 +51,7 @@
 	canremove = 0
 	armor_thickness = null
 	armor_thickness_max = null
+	siemens_coefficient = 0.15
 
 /obj/item/clothing/gloves/thick/grunt_gloves/dropped(mob/user as mob)
 	. = ..()

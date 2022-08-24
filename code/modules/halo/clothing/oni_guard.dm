@@ -82,7 +82,7 @@
 	item_state = "unsc_gloves"
 	icon = ITEM_INHAND
 	icon_override = ONI_OVERRIDE
-	siemens_coefficient = 0
+	siemens_coefficient = 0.15
 	permeability_coefficient = 0.05
 	body_parts_covered = HANDS
 	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 15, bio = 0, rad = 0)

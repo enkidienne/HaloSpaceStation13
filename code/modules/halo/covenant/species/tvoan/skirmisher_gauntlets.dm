@@ -7,7 +7,7 @@
 	icon_override = SKIRMISHER_CLOTHING_PATH
 	icon_state = "murmilloglove"
 	item_state = "murmilloshield"
-	siemens_coefficient = 0
+	siemens_coefficient = 0.15
 	permeability_coefficient = 0.05
 	body_parts_covered = ARMS | HANDS
 	armor = list(melee = 30, bullet = 40, laser = 30, energy = 30, bomb = 25, bio = 0, rad = 0)
