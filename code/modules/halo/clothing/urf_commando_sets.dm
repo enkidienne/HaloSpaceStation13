@@ -3,7 +3,7 @@
 	var/helmet = /obj/item/clothing/head/helmet/urfc
 	var/armour = /obj/item/clothing/suit/armor/special/urfc
 	var/jumpsuit = /obj/item/clothing/under/urfc_jumpsuit
-	var/gloves = /obj/item/clothing/gloves/soegloves/urfc
+	var/gloves = /obj/item/clothing/gloves/thick/soegloves/urfc
 	var/shoes = /obj/item/clothing/shoes/magboots/urfc
 
 /obj/effect/urfc_armour_set/New()

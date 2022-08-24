@@ -39,7 +39,7 @@
 	icon_base = "harun_boots_obj"
 	item_state = "harun_boots"
 
-/obj/item/clothing/gloves/soegloves/urfc/eluxor
+/obj/item/clothing/gloves/thick/soegloves/urfc/eluxor
 	name = "SOE Gloves"
 	desc = "These  gloves are somewhat fire and impact-resistant."
 	icon = 'code/modules/halo/clothing/urf_commando.dmi'
@@ -58,14 +58,14 @@
 					/obj/item/clothing/head/helmet/urfccommander/eluxor,
 					/obj/item/clothing/suit/armor/special/urfc/eluxor,
 					/obj/item/clothing/shoes/magboots/urfc/eluxor,
-					/obj/item/clothing/gloves/soegloves/urfc/eluxor,
+					/obj/item/clothing/gloves/thick/soegloves/urfc/eluxor,
 					/obj/item/clothing/mask/gas/soebalaclava/eluxor,
 					)
 	can_hold = list(/obj/item/clothing/under/urfc_jumpsuit/eluxor,
 					/obj/item/clothing/head/helmet/urfccommander/eluxor,
 					/obj/item/clothing/suit/armor/special/urfc/eluxor,
 					/obj/item/clothing/shoes/magboots/urfc/eluxor,
-					/obj/item/clothing/gloves/soegloves/urfc/eluxor,
+					/obj/item/clothing/gloves/thick/soegloves/urfc/eluxor,
 					/obj/item/clothing/mask/gas/soebalaclava/eluxor,
 					)
 
@@ -74,7 +74,7 @@
 	uniform = /obj/item/clothing/under/urfc_jumpsuit/eluxor
 	head = /obj/item/clothing/head/helmet/urfccommander/eluxor
 	suit = /obj/item/clothing/suit/armor/special/urfc/eluxor
-	gloves = /obj/item/clothing/gloves/soegloves/urfc/eluxor
+	gloves = /obj/item/clothing/gloves/thick/soegloves/urfc/eluxor
 	shoes = /obj/item/clothing/shoes/magboots/urfc/eluxor
 	mask = /obj/item/clothing/mask/gas/soebalaclava/eluxor
 
@@ -140,7 +140,7 @@
 	item_state = "aztecboots_worn"
 	icon_state = "scpboots_obj"
 
-/obj/item/clothing/gloves/soegloves/urfc/aztec
+/obj/item/clothing/gloves/thick/soegloves/urfc/aztec
 	name = "Aztec Gloves"
 
 	item_state = "aztecgloves_worn"
@@ -187,11 +187,11 @@
 /obj/item/weapon/storage/box/large/donator/aztec
 	startswith = list(/obj/item/clothing/suit/armor/special/urfc/aztec,
 					/obj/item/clothing/shoes/magboots/urfc/aztec,
-					/obj/item/clothing/gloves/soegloves/urfc/aztec
+					/obj/item/clothing/gloves/thick/soegloves/urfc/aztec
 					)
 	can_hold = list(/obj/item/clothing/suit/armor/special/urfc/aztec,
 					/obj/item/clothing/shoes/magboots/urfc/aztec,
-					/obj/item/clothing/gloves/soegloves/urfc/aztec
+					/obj/item/clothing/gloves/thick/soegloves/urfc/aztec
 					)
 
 
