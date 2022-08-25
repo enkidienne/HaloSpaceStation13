@@ -34,7 +34,7 @@
 	item_state = "blank"
 	species_restricted = list("Yanme e")
 	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 15, bio = 0, rad = 0)
-	siemens_coefficient = 0
+	siemens_coefficient = 0.05
 	canremove = 0
 	unacidable = 1
 

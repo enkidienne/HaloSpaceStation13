@@ -60,6 +60,7 @@
 	desc = "These tactical gloves are somewhat fire and impact-resistant."
 	name = "\improper SWAT Gloves"
 	item_state = "swat_gl"
+	siemens_coefficient = 0.05
 	force = 5
 	armor = list(melee = 80, bullet = 60, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
 
@@ -68,7 +69,7 @@
 	name = "combat gloves"
 	icon_state = "work"
 	item_state = "wgloves"
-	siemens_coefficient = 0
+	siemens_coefficient = 0.1
 	permeability_coefficient = 0.05
 	force = 5
 	body_parts_covered = HANDS
@@ -112,7 +113,7 @@
 	name = "combat gloves"
 	icon_state = "work"
 	item_state = "wgloves"
-	siemens_coefficient = 0.50
+	siemens_coefficient = 0.15
 	armor = list(melee = 55, bullet = 45, laser = 10, energy = 5, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/gloves/tactical
@@ -121,7 +122,7 @@
 	icon_state = "work"
 	item_state = "wgloves"
 	force = 5
-	siemens_coefficient = 0.50
+	siemens_coefficient = 0.15
 	permeability_coefficient = 0.05
 	body_parts_covered = HANDS|ARMS
 	armor = list(melee = 30, bullet = 40, laser = 10, energy = 15, bomb = 20, bio = 0, rad = 0)

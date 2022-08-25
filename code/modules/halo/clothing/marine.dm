@@ -404,6 +404,7 @@
 	icon_override = MARINE_OVERRIDE
 	item_state_slots = list(slot_l_hand_str = "gloves", slot_r_hand_str = "gloves")
 	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 15, bio = 0, rad = 0)
+	siemens_coefficient = 0.15
 
 /obj/item/clothing/gloves/thick/unsc/brown
 	desc = "Standard Issue UNSC Marine Gloves."

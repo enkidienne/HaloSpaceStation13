@@ -42,7 +42,7 @@
 	icon_state = "neuralgloves_obj"
 	item_state = "neuralgloves"
 	item_flags = STOPPRESSUREDAMAGE | THICKMATERIAL | AIRTIGHT
-	siemens_coefficient = 0
+	siemens_coefficient = 0.05
 	permeability_coefficient = 0.05
 	body_parts_covered = HANDS
 	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 35, bio = 0, rad = 0)

@@ -71,7 +71,7 @@
 	icon_state = null
 	sprite_sheets = list("Sangheili" = SANGHEILI_ARMOUR_ICON)
 	species_restricted = list("Sangheili")
-	siemens_coefficient = 0
+	siemens_coefficient = 0.15
 	permeability_coefficient = 0.05
 	body_parts_covered = HANDS
 	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 30, bio = 0, rad = 0)

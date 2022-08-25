@@ -49,6 +49,7 @@
 	icon_state = "gloveobj"
 	force = 5
 	armor = list(melee = 20, bullet = 20, laser = 0,energy = 5, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0
 
 /obj/item/clothing/shoes/x52boots
 	name = "X-52 Jackboots"
@@ -276,6 +277,7 @@
 	icon = INNIE_OVERRIDE
 	icon_override = INNIE_OVERRIDE
 	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 15, bio = 0, rad = 0)
+	siemens_coefficient = 0.15
 
 /obj/item/clothing/shoes/innie_boots
 	icon = INNIE_OVERRIDE
