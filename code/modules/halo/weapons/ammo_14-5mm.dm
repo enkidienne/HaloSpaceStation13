@@ -34,13 +34,13 @@
 	projectile_type = /obj/item/projectile/bullet/m233
 
 /obj/item/projectile/bullet/m233 //Modified slightly to provide a downside for using the innie-heavy-sniper-rounds over normal rounds.
-	damage = 40
+	damage = 50
 	armor_penetration = 40
-	tracer_type = null
-	tracer_delay_time = null
 	pin_range = 3
 	pin_chance = 70
-	shield_damage = 100
+	shield_damage = 120
+	kill_count = 125
+	step_delay = 0
 
 /* M234 HVAP rounds */
 //used by: SRS99 sniper rifle
