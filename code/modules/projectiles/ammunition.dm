@@ -16,7 +16,7 @@
 	var/fire_sound = null //Launcher weapons runtime if they have no fire_sound variable.
 	var/spent_icon = "s-casing-spent"
 	var/in_pile = 1
-	var/max_in_pile = 25
+	var/max_in_pile = 15
 
 /obj/item/ammo_casing/New()
 	..()
@@ -73,13 +73,16 @@
 /obj/item/ammo_casing/update_icon()
 	if(spent_icon && !BB)
 		icon_state = spent_icon
-	if(in_pile > 1 && overlays.len < in_pile-1)
-		for(var/i = 1 to in_pile)
-			var/image/img = image(icon,icon_state,layer,dir)
-			img.pixel_x = rand(-16-i,16+i) - pixel_x
-			img.pixel_y = rand(-16-i,16+i) - pixel_y
-			img.transform = turn(matrix(), rand(120,300))
-			overlays += img
+	if(in_pile > 1)
+		if(overlays.len < in_pile-1)
+			for(var/i = 1 to in_pile-overlays.len)
+				var/image/img = image(icon,icon_state,layer,dir)
+				img.pixel_x = rand(-24-i,24+i) - pixel_x
+				img.pixel_y = rand(-24-i,24+i) - pixel_y
+				img.transform = turn(matrix(), rand(120,300))
+				overlays += img
+		else
+			overlays.Cut(in_pile-1,overlays.len)
 
 /obj/item/ammo_casing/examine(mob/user)
 	. = ..()
@@ -104,11 +107,15 @@
 	return 1
 
 /obj/item/ammo_casing/Move(var/atom/A)
-	if(!BB && !isnull(A))
-		var/obj/item/ammo_casing/here = locate(type) in A.contents - src
-		if(here && here.add_to_pile())
-			qdel(src)
-			return 0
+	if(in_pile == 1 && !BB && !isnull(A))
+		var/list/casing_search = A.contents - src
+		var/obj/item/ammo_casing/here = 1
+		while(!isnull(here))
+			here = locate(type) in casing_search
+			if(here && here.add_to_pile())
+				qdel(src)
+				return 0
+			casing_search -= here
 		atom_despawner.mark_for_despawn(src)
 	. = ..()
 
