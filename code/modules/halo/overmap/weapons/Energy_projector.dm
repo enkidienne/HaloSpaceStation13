@@ -123,7 +123,7 @@
 	icon_state = ""
 	alpha = 0
 	damage = 900
-	penetrating = 2
+	penetrating = 3
 	step_delay = 0.0 SECONDS
 	kill_count = 999 //so it doesn't despawn before cutting through the ship
 	tracer_type = /obj/effect/projectile/projector_laser_proj
@@ -138,6 +138,10 @@
 
 /obj/item/projectile/projector_laser_damage_proj/check_penetrate(var/atom/a)
 	. = ..()
+	if(istype(a,/obj/effect/shield))
+		return 0
+
+/obj/item/projectile/projector_laser_damage_proj/on_hit(var/atom/a)
 	if(isnull(glass_effect_beam))
 		glass_effect_beam = new
 	explosion(get_turf(a),-1,-1,2,5, adminlog = 0)
