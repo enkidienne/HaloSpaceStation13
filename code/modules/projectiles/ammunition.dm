@@ -96,19 +96,21 @@
 	else
 		. = ..()
 
-/obj/item/ammo_casing/proc/add_to_pile()
-	in_pile = min(max_in_pile,in_pile+1)
+/obj/item/ammo_casing/proc/add_to_pile(var/amt = 1)
+	if(in_pile + amt > max_in_pile)
+		return 0
+	in_pile += amt
 	update_icon()
+	return 1
 
-/obj/item/ammo_casing/throw_impact(var/atom/A)
-	. = ..()
-	if(!BB && loc)
-		var/obj/item/ammo_casing/here = locate(type) in loc.contents - src
-		if(here)
-			here.add_to_pile()
+/obj/item/ammo_casing/Move(var/atom/A)
+	if(!BB && !isnull(A))
+		var/obj/item/ammo_casing/here = locate(type) in A.contents - src
+		if(here && here.add_to_pile())
 			qdel(src)
-		else
-			atom_despawner.mark_for_despawn(src)
+			return 0
+		atom_despawner.mark_for_despawn(src)
+	. = ..()
 
 /obj/item/ammo_casing/Destroy()
 	in_pile = 0
