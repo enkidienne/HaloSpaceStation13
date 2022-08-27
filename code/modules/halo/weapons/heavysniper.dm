@@ -1,23 +1,35 @@
 /obj/item/weapon/gun/projectile/heavysniper
 	name = "anti-materiel rifle"
-	desc = "A portable anti-armour rifle fitted with a scope, the HI PTR-7 Rifle was originally designed to used against armoured exosuits. It is capable of punching through windows and non-reinforced walls with ease. Fires armor piercing 14.5mm shells."
+	desc = "An outdated bolt-action design capable of firing 14.5mm armour-piercng rounds over a significant range with the assistance of the mounted scope. Commonly found in Insurrectionist arsenals."
 	icon_state = "heavysniper"
 	item_state = "heavysniper" //sort of placeholder
+	wielded_item_state = "heavysniper-wielded" //sort of placeholder
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	slot_flags = SLOT_BACK
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
 	caliber = "14.5mm"
-	screen_shake = 2 //extra kickback
 	handle_casings = HOLD_CASINGS
 	load_method = SINGLE_CASING
-	max_shells = 1
+	max_shells = 2
 	ammo_type = /obj/item/ammo_casing/m233
 	one_hand_penalty = -1
-	accuracy = -5
-	scoped_accuracy = 10 //increased accuracy over the LWAP because only one shot
+	scoped_accuracy = 7
+	screen_shake = 0
+	fire_delay = 6
+	accuracy = -6 //Honestly stop hipfiring snipers damn it
+	dispersion = list(0)
+	scope_zoom_amount = 8
+	min_zoom_amount = 3
+	is_scope_variable = 1
+
+	hud_bullet_row_num = 2
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_32x16.dmi'
+	hud_bullet_iconstate = "sniper"
+
+	crosshair_file = 'code/modules/halo/weapons/icons/dragaim_icon.dmi'
+
 	var/bolt_open = 0
-	wielded_item_state = "heavysniper-wielded" //sort of placeholder
 
 /obj/item/weapon/gun/projectile/heavysniper/update_icon()
 	..()
@@ -43,6 +55,9 @@
 	add_fingerprint(user)
 	update_icon()
 
+/obj/item/weapon/gun/projectile/heavysniper/can_use_when_prone()
+	return 1
+
 /obj/item/weapon/gun/projectile/heavysniper/special_check(mob/user)
 	if(bolt_open)
 		to_chat(user, "<span class='warning'>You can't fire [src] while the bolt is open!</span>")
@@ -58,11 +73,4 @@
 	if(!bolt_open)
 		return
 	..()
-
-/obj/item/weapon/gun/projectile/heavysniper/verb/scope()
-	set category = "Weapon"
-	set name = "Use Scope"
-	set popup_menu = 1
-
-	toggle_scope(usr, 2.0)
 

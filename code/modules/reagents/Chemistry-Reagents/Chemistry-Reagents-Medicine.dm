@@ -252,7 +252,7 @@
 	M.AdjustWeakened(-1)
 	holder.remove_reagent(/datum/reagent/mindbreaker, 5)
 	M.hallucination = max(0, M.hallucination - 10)
-	M.adjustToxLoss(5 * removed) // It used to be incredibly deadly due to an oversight. Not anymore!
+	M.adjustToxLoss(12 * removed) // Boosted the baseline damage from 5 to 12 as this was used to easily ignore stuns.
 	M.add_chemical_effect(CE_PAINKILLER, 20)
 
 /datum/reagent/alkysine

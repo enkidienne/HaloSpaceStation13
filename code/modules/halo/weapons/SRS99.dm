@@ -37,8 +37,6 @@
 /obj/item/weapon/gun/projectile/srs99_sniper/can_use_when_prone()
 	return 1
 
-
-
 /obj/item/weapon/gun/projectile/srs99_sniper/update_icon()
 	if(ammo_magazine)
 		icon_state = "SRS99"

@@ -246,7 +246,7 @@
 		if(h in permutated)
 			continue
 		if(om) //If we're not using the fallback, we need to check distance ourselves.
-			if(get_dist(location,h) > 1)
+			if(get_dist(location,h) <= 1)
 				continue
 		spawn()
 			h.suppression_act(src)

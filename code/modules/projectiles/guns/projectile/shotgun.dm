@@ -15,6 +15,7 @@
 	handle_casings = HOLD_CASINGS
 	one_hand_penalty = 2
 	var/recentpump = 0 // to prevent spammage
+	var/min_pump_time_diff = 5
 
 /obj/item/weapon/gun/projectile/shotgun/pump/consume_next_projectile()
 	if(chambered)
@@ -22,7 +23,7 @@
 	return null
 
 /obj/item/weapon/gun/projectile/shotgun/pump/attack_self(mob/living/user as mob)
-	if(world.time >= recentpump + 10)
+	if(world.time >= recentpump + min_pump_time_diff)
 		pump(user)
 		recentpump = world.time
 
