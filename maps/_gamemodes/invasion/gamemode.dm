@@ -3,6 +3,8 @@
 #define BASE_SCANNER_DESTROYABLE_AMOUNT 4
 #define SCAN_JAM_LOC_NAME "Orbital Facility"
 
+#define ONI_BASE_BUMPSTAIR_TYPEPATHS list(/obj/structure/bumpstairs/road/gem_oni,/obj/structure/bumpstairs/road/oni_gem)
+
 #include "objectives.dm"
 
 /datum/game_mode/outer_colonies
@@ -128,12 +130,17 @@
 		GLOB.global_announcer.autosay("Intel suggests Covenant scanning has reached [scan_percent] percent complete.", "HIGHCOMM SIGINT", RADIO_SQUAD, LANGUAGE_ENGLISH)
 		GLOB.global_announcer.autosay("Our scan moves forward, bringing us closer to the holy relic! [scan_percent]%", "Covenant Overwatch", RADIO_COV, LANGUAGE_SANGHEILI)
 	if(scan_percent >= 100)
-		GLOB.global_announcer.autosay("The Covenant has completed their scan! We have failed to defend the colony. Stop the covenant escaping with what they found.", "HIGHCOMM SIGINT", RADIO_FLEET, LANGUAGE_ENGLISH)
+		GLOB.global_announcer.autosay("The Covenant has completed their scan! We have failed to defend the colony. Stop the covenant escaping with what they found.", "HIGHCOMM SIGINT", RADIO_SQUAD, LANGUAGE_ENGLISH)
 		GLOB.global_announcer.autosay("We have found the holy relic! Rejoice, for the Forerunners smile upon us on this day!", "Covenant Overwatch", RADIO_COV, LANGUAGE_SANGHEILI)
 		var/list/relic_sites = list()
 		for(var/obj/effect/landmark/artifact_spawn/spawnpoint in world)
 			relic_sites += spawnpoint.loc
 		new /obj/machinery/artifact/forerunner_artifact (pick(relic_sites))
+		for(var/obj/structure/bumpstairs/stair in world)
+			if(stair.type  in ONI_BASE_BUMPSTAIR_TYPEPATHS)
+				stair.faction_restrict = null
+				stair.my_bump.faction_restrict = null
+		GLOB.UNSC.fleet_spawn_at = min(GLOB.UNSC.fleet_spawn_at,world.time + 15 MINUTES)
 
 /datum/game_mode/outer_colonies/proc/register_scanner()
 	scanners_active++
