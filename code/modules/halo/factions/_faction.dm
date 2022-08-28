@@ -206,7 +206,7 @@
 
 	var/list/found_areas = list()
 	if(delivery_target)
-		for(var/cur_area in typesof(delivery_target.parent_area_type) - delivery_target.parent_area_type)
+		for(var/cur_area in typesof(delivery_target.parent_area_type))
 			var/area/A = locate(cur_area)
 			found_areas.Add(A)
 
