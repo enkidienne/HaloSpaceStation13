@@ -139,7 +139,7 @@
 	faction = "UNSC"
 	ship_datums = list(/datum/npc_ship/unsc_patrol)
 	available_ship_requests = newlist(/datum/npc_ship_request/halt/unsc,/datum/npc_ship_request/fire_on_target/unsc,/datum/npc_ship_request/control_fleet/unsc,/datum/npc_ship_request/add_to_fleet/unsc,/datum/npc_ship_request/give_control/unsc)
-	radio_channel = RADIO_FLEET
+	radio_channel = RADIO_SQUAD
 
 /obj/effect/overmap/ship/npc_ship/combat/unsc/generate_ship_name()
 	. = ..()
