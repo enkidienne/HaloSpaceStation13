@@ -28,7 +28,6 @@
 	/obj/effect/landmark/scanning_point,
 	/obj/effect/landmark/scanning_point,
 	/obj/effect/landmark/scanning_point,
-	null,null,null,null,null,null,null,null,null,null,null
 	)
 
 /obj/effect/loot_marker/scanpoints_random

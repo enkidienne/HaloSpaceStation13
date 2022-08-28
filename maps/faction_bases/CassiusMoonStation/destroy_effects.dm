@@ -3,7 +3,7 @@
 	var/datum/game_mode/outer_colonies/gm = ticker.mode
 	if(istype(gm))
 		gm.allow_scan = 1
-		GLOB.global_announcer.autosay("Our Moonbase has fallen! Reinforcements will take take longer to arrive. Regroup at the ONI base, and get ready to strike out at covenant scanning devices.", "HIGHCOMM SIGINT", RADIO_FLEET, LANGUAGE_ENGLISH)
+		GLOB.global_announcer.autosay("Our Moonbase has fallen! Reinforcements will take take longer to arrive. Regroup at the ONI base, and get ready to strike out at covenant scanning devices.", "HIGHCOMM SIGINT", RADIO_SQUAD, LANGUAGE_ENGLISH)
 		GLOB.global_announcer.autosay("The human defences are down! Their reinforcements are delayed! Plant the holy scanners, and locate the relic! Do not be distracted by the humans' groundside fortifications!", "Covenant Overwatch", RADIO_COV, LANGUAGE_SANGHEILI)
 
 		GLOB.UNSC.fleet_spawn_at += 45 MINUTES

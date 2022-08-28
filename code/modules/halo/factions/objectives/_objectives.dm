@@ -168,14 +168,14 @@
 /* protect leader */
 
 /datum/objective/protect/leader
-	lose_points = 50
+	win_points = 50
 
 /datum/objective/protect/leader/update_score_desc()
 	if(target)
 		short_text = "Protect [target.current.real_name], the [target.assigned_role]"
 	else
 		short_text = "Protect the [my_faction.name] Commander"
-	explanation_text = "[short_text] (-[lose_points] points)."
+	explanation_text = "[short_text] ([win_points] points)."
 
 /datum/objective/protect/leader/find_target()
 	target = my_faction.get_commander()
@@ -185,7 +185,8 @@
 
 /datum/objective/protect/leader/check_completion()
 	if(!target)
-		find_target()
+		if(!find_target())
+			return 0 //If there wasn't a leader, you don't get the points for protecting them.
 	if(override > 0)
 		return 1
 	else if(override < 0)

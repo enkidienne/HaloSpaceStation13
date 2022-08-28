@@ -25,4 +25,13 @@
 
 /obj/effect/overmap/sector/geminus_city/New()
 	. = ..()
+	loot_distributor.loot_list["scanRandom"] = list(\
+	/obj/effect/landmark/scanning_point,
+	/obj/effect/landmark/scanning_point,
+	/obj/effect/landmark/scanning_point,
+	/obj/effect/landmark/scanning_point,
+	)
 	//loot_distributor.loot_list["artifactRandom"] = list(/obj/machinery/artifact/forerunner_artifact,null,null,null,null,null,null,null,null,null)
+
+/obj/effect/loot_marker/scanpoints_random
+	loot_type = "scanRandom"
