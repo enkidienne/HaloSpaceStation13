@@ -322,6 +322,8 @@
 		return 0
 	if(job.is_restricted(client.prefs, src))
 		return
+	if(job.poplock_bypassing)
+		ticker.mode.last_checked_lock.Cut()
 
 	var/datum/spawnpoint/spawnpoint = job_master.get_spawnpoint_for(client, job, 1)
 	var/turf/spawn_turf = spawnpoint.get_spawn_turf(job.title)
