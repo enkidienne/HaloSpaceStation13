@@ -247,9 +247,8 @@
 			continue
 		if(om) //If we're not using the fallback, we need to check distance ourselves.
 			if(get_dist(location,h) <= 1)
-				continue
-		spawn()
-			h.suppression_act(src)
+				spawn()
+					h.suppression_act(src)
 
 /obj/item/projectile/Bump(atom/A as mob|obj|turf|area, forced=0)
 	if(A == src)
