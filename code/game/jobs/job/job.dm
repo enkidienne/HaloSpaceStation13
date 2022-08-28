@@ -55,6 +55,8 @@
 	//stop one faction from being heavily overpopulated
 	var/pop_balance_mult = 1
 
+	var/poplock_bypassing = 0 //Used for the job system to tag a job as being poplock-bypassing or not. Don't set this manually.
+
 	var/lace_access = 0 //Forces the job to have a neural lace, so we can store the access in it instead of in the ID..
 
 /datum/job/New()
@@ -190,6 +192,7 @@
 		to_chat(feedback, "<span class='boldannounce'>Restricted species, [S], for [title].</span>")
 		return TRUE
 
+	poplock_bypassing = 0
 	//is this gamemode trying to balance the faction population?
 	var/num_balancing_factions = ticker.mode ? ticker.mode.faction_balance.len : 0
 	if(num_balancing_factions >= 2)
@@ -267,8 +270,8 @@
 									if(!(f_type in last_checked_lock))
 										forcerole = 0
 								if(forcerole)
-									last_checked_lock.Cut()
 									message_admins("NOTICE: Poplock check was failed, but we're in a deadlock state so we'll let it through.")
+									poplock_bypassing = 1
 									return FALSE
 
 							to_chat(feedback, "<span class='boldannounce'>Joining as [title] is blocked due to [spawn_faction] faction overpop.</span>")
