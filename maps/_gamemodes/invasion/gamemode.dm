@@ -3,6 +3,8 @@
 #define BASE_SCANNER_DESTROYABLE_AMOUNT 4
 #define SCAN_JAM_LOC_NAME "Orbital Facility"
 
+#define POST_FLEET_ARRIVAL_GAMEND_DELAY 5 MINUTES
+
 #define ONI_BASE_BUMPSTAIR_TYPEPATHS list(/obj/structure/bumpstairs/road/gem_oni,/obj/structure/bumpstairs/road/oni_gem)
 
 #include "objectives.dm"
@@ -140,7 +142,11 @@
 			if(stair.type  in ONI_BASE_BUMPSTAIR_TYPEPATHS)
 				stair.faction_restrict = null
 				stair.my_bump.faction_restrict = null
-		GLOB.UNSC.fleet_spawn_at = min(GLOB.UNSC.fleet_spawn_at,world.time + 15 MINUTES)
+		var/fleet_spawn_at = GLOB.UNSC.fleet_spawn_at
+		var/newarrive = world.time + 15 MINUTES
+		if(fleet_spawn_at > newarrive + 5 MINUTES)//If the covenant are doing well and have more than 20 mins...
+			GLOB.COVENANT.fleet_spawn_at = min(fleet_spawn_at,newarrive)//Let's give them a neat reward...
+		fleet_spawn_at = min(fleet_spawn_at,newarrive)
 
 /datum/game_mode/outer_colonies/proc/register_scanner()
 	scanners_active++
@@ -154,7 +160,7 @@
 		return
 	scanner_destructions_left = max(0,scanner_destructions_left-1)
 	increase_scan_percent(-25)
-	GLOB.global_announcer.autosay("The Covenant's scanning signal has weakened! Eliminate all of their scanners!", "HIGHCOMM SIGINT", RADIO_FLEET, LANGUAGE_ENGLISH)
+	GLOB.global_announcer.autosay("The Covenant's scanning signal has weakened! Eliminate all of their scanners!", "HIGHCOMM SIGINT", RADIO_SQUAD, LANGUAGE_ENGLISH)
 	GLOB.global_announcer.autosay("A holy scanner has gone dark. Protect them, for their loss inhibits our progress!", "Covenant Overwatch", RADIO_COV, LANGUAGE_SANGHEILI)
 
 /datum/game_mode/outer_colonies/handle_latejoin(var/mob/living/carbon/human/character)
@@ -192,11 +198,18 @@
 
 	if(scan_percent < 100 && scanner_destructions_left == 0 && !scanners_active)
 		round_end_reasons += "the Covenant scanning devices were destroyed"
-		extra_pts += 1
+		extra_pts = end_conditions_required
 
 	if(GLOB.UNSC.fleet_spawn_at > 0 && world.time > GLOB.UNSC.fleet_spawn_at && GLOB.COVENANT.flagship_slipspaced != 0)
 		round_end_reasons += "the UNSC fleet has taken control of the sector in the absence of the Covenant"
-		extra_pts += 1
+		extra_pts = end_conditions_required
+
+	if(world.time >= GLOB.UNSC.fleet_spawn_at + POST_FLEET_ARRIVAL_GAMEND_DELAY)
+		if(world.time >= GLOB.COVENANT.fleet_spawn_at)
+			round_end_reasons += "a greater war has broken out over the sector"
+		else
+			round_end_reasons += "overwhelming UNSC forces have arrived"
+		extra_pts = end_conditions_required //Force a game-end.
 
 	for(var/datum/faction/F in factions)
 
@@ -432,3 +445,12 @@
 				objective.override = -1
 
 		check_finished()
+
+
+#undef SCANNER_TICK_DELAY
+#undef BASE_SCANNER_DESTROYABLE_AMOUNT
+#undef SCAN_JAM_LOC_NAME
+
+#undef POST_FLEET_ARRIVAL_GAMEND_DELAY
+
+#undef ONI_BASE_BUMPSTAIR_TYPEPATHS
