@@ -84,6 +84,10 @@
 
 /* ROUNDSTART ONLY UBER RANKS */
 
+/datum/job/covenant/brute_chieftan/firefight
+	spawn_positions = 1
+	total_positions = 0
+
 /datum/job/covenant/brute_captain/firefight
 	spawn_positions = 1
 	total_positions = 0
