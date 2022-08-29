@@ -267,7 +267,7 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 	sprite_sheets = list("Jiralhanae" = JIRALHANAE_ICON_PATH_MOB)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	armor = list(melee = 50, bullet = 45, laser = 50, energy = 40, bomb = 35, bio = 20, rad = 20)
-	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/sangheili)
+	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/jiralhanae)
 	totalshields = 210
 	armor_thickness = 30
 	matter = list("nanolaminate" = 2)
