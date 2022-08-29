@@ -50,6 +50,9 @@
 /datum/job/covenant/skirmmurmillo
 	command_rank = 1
 
+/datum/job/covenant/brute_chieftain
+	command_rank = 2
+	
 /datum/job/covenant/brute_captain
 	command_rank = 2
 
