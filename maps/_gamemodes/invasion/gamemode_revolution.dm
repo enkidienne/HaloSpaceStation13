@@ -21,8 +21,10 @@
 		/datum/job/covenant/unggoy_major,\
 		/datum/job/covenant/unggoy_ultra,\
 		/datum/job/covenant/unggoy_deacon,\
+		/datum/job/covenant/unggoy_heavy,\
 		/datum/job/covenant/skirmmurmillo,\
 		/datum/job/covenant/skirmcommando,\
+		/datum/job/covenant/skirmchampion,\
 		/datum/job/covenant/brute_minor,\
 		/datum/job/covenant/brute_major,\
 		/datum/job/covenant/brute_captain,\
@@ -30,6 +32,7 @@
 		/datum/job/covenant/yanmee_major,\
 		/datum/job/covenant/yanmee_ultra,\
 		/datum/job/covenant/yanmee_leader,\
+		/datum/job/covenant/mgalekgolo,\
 		/datum/job/unsc/spartan_two)
 
 /datum/game_mode/outer_colonies/revolution/setup_objectives()
