@@ -13,6 +13,7 @@
 
 	allowed_gamemodes = list("crusade")
 	allowed_jobs = list(\
+		/datum/job/covenant/brute_chieftain/firefight,\
 		/datum/job/covenant/brute_captain/firefight,\
 		/datum/job/covenant/brute_major/firefight,\
 		/datum/job/covenant/brute_minor/firefight,\
