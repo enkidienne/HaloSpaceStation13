@@ -183,7 +183,7 @@
 		/obj/item/weapon/grenade/plasma = 0,
 		/obj/item/weapon/grenade/frag/spike = 0,
 		"Misc" = -1,
-		/obj/item/turret_deploy_kit/plasturret = 2,
+		/obj/item/turret_deploy_kit/plasturret = 0,
 	)
 	amounts = list(
 		/obj/item/weapon/gun/launcher/grenade/brute_shot = 3,
@@ -229,6 +229,9 @@
 		/obj/item/flight_item/covenant_pack = 0,
 		/obj/item/dumb_ai_chip/cov = 0,
 		/obj/item/stack/barbedwire/covenant/fifteen = 0,
+		/obj/item/weapon/plastique/covenant = 0,
+		/obj/item/weapon/plastique/breaching/covenant = 0,
+		/obj/item/weapon/plastique/breaching/longrange/covenant = 0,
 		/obj/item/weapon/armor_patch/cov = 0,
 		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/weapon/pinpointer/artifact = 0,
@@ -239,6 +242,9 @@
 		/obj/item/flight_item/covenant_pack = 1,
 		/obj/item/dumb_ai_chip/cov = 2,
 		/obj/item/stack/barbedwire/covenant/fifteen = 5,
+		/obj/item/weapon/plastique/covenant = 8,
+		/obj/item/weapon/plastique/breaching/covenant = 5,
+		/obj/item/weapon/plastique/breaching/longrange/covenant = 5,
 		/obj/item/clothing/accessory/storage/IFAK/cov = 20,
 		/obj/item/weapon/pinpointer/artifact = 2,
 	)

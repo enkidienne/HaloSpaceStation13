@@ -1,4 +1,15 @@
 
+/datum/job/covenant/brute_chieftain
+	title = "Jiralhanae Chieftain"
+	department_flag = COM
+	total_positions = 1
+	spawn_positions = 1
+	outfit_type = /decl/hierarchy/outfit/jiralhanae/covenant/chieftain
+	faction_whitelist = "Covenant"
+	whitelisted_species = list(/datum/species/brutes)
+	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
+	pop_balance_mult = 2.5
+
 /datum/job/covenant/brute_captain
 	title = "Jiralhanae Captain"
 	department_flag = COM

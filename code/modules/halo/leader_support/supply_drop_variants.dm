@@ -135,6 +135,9 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 
 /obj/structure/closet/crate/supply_drop/cov/mass_ammo/WillContain()
 	return list(\
+	/obj/item/ammo_magazine/spiker,
+	/obj/item/ammo_magazine/spiker,
+	/obj/item/ammo_magazine/spiker,
 	/obj/item/ammo_magazine/needles,
 	/obj/item/ammo_magazine/needles,
 	/obj/item/ammo_magazine/needles,

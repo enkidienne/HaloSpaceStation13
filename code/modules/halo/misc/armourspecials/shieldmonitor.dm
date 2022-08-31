@@ -8,3 +8,6 @@
 
 /datum/armourspecials/shieldmonitor/sangheili
 	valid_helmets = list(/obj/item/clothing/head/helmet/sangheili)
+	
+/datum/armourspecials/shieldmonitor/jiralhanae
+	valid_helmets = list(/obj/item/clothing/head/helmet/jiralhanae/covenant/chieftain)
