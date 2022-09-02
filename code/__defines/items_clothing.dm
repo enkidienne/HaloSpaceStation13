@@ -54,6 +54,7 @@
 	/obj/item/device/healthanalyzer,\
 	/obj/item/weapon/storage/pill_bottle,\
 	/obj/item/stack/medical,\
+	/obj/item/weapon/grenade,\
 	)
 
 #define CANDLE_LUM 3 // For how bright candles are.

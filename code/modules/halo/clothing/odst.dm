@@ -70,6 +70,7 @@
 /obj/item/clothing/suit/armor/special/odst/New()
 	. = ..()
 	slowdown_per_slot[slot_wear_suit] = -0.1 //A slight speed boost for those wearing odst armour.
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
 
 /obj/item/clothing/shoes/magboots/odst
 	name = "ODST Magboots"

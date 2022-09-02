@@ -52,6 +52,10 @@
 	canremove = 0
 	unacidable = 1
 
+/obj/item/clothing/suit/armor/special/yanmee/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2, ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
 /obj/item/clothing/suit/armor/special/yanmee/major
 	icon_state = "major_harness"
 	item_state = "major_harness"

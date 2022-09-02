@@ -51,6 +51,10 @@
 	max_suitstore_w_class = ITEM_SIZE_HUGE
 	matter = list("nanolaminate" = 2)
 
+/obj/item/clothing/suit/armor/special/combatharness/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2, ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
 /obj/item/clothing/shoes/sangheili
 	name = "Sanghelli Leg Armour"
 	desc = "Leg armour, to be used with the Sangheili Combat Harness."

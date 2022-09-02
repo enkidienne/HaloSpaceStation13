@@ -165,6 +165,10 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 		/obj/item/weapon/gun/projectile/spiker,/obj/item/weapon/gun/projectile/mauler,\
 		/obj/item/weapon/gun/energy/plasmapistol, /obj/item/weapon/gun/energy/plasmarifle, /obj/item/weapon/gun/energy/plasmarifle/brute)
 
+/obj/item/clothing/suit/armor/jiralhanae/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
 /obj/item/clothing/suit/armor/jiralhanae/major
 	name = "Jiralhanae Major Chest Armour"
 	icon_state = "armour_major"
@@ -275,6 +279,10 @@ obj/item/clothing/under/covenant/jiralhanae/blue/rolled
 		/obj/item/weapon/grenade/plasma,/obj/item/weapon/grenade/frag/spike,/obj/item/weapon/grenade/brute_shot,/obj/item/weapon/grenade/toxic_gas,\
 		/obj/item/weapon/gun/projectile/spiker,/obj/item/weapon/gun/projectile/mauler,\
 		/obj/item/weapon/gun/energy/plasmapistol, /obj/item/weapon/gun/energy/plasmarifle, /obj/item/weapon/gun/energy/plasmarifle/brute)
+
+/obj/item/clothing/suit/armor/special/chieftain/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
 
 /* SHOES */
 

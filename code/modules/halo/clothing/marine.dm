@@ -249,6 +249,10 @@
 	allowed = list(/obj/item/weapon/tank)
 	armor = list(melee = 50, bullet = 45, laser = 50, energy = 40, bomb = 35, bio = 20, rad = 20) //Same armour as marines, but innate spacesuit slowdown and limited choice of suitstore
 
+/obj/item/clothing/suit/space/void/unsc/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
 /obj/item/clothing/head/helmet/space/void/unsc
 	name = "\improper Salvage Helmet"
 	desc = "A universally used helmet to protect one's head against the vacuum when doing EVA."
@@ -323,6 +327,10 @@
 	w_class = ITEM_SIZE_HUGE
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/weapon/tank)
 	armor = list(melee = 50, bullet = 45, laser = 50, energy = 40, bomb = 35, bio = 20, rad = 20)
+
+/obj/item/clothing/suit/spaceeva/eva/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
 
 /obj/item/clothing/head/helmet/eva/marine
 	name = "\improper EVA Marine Helmet"

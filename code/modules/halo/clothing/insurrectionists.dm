@@ -488,6 +488,10 @@
 	cold_protection = UPPER_TORSO | LOWER_TORSO | ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/innie/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
 /obj/item/clothing/mask/innie/shemagh
 	name = "Shemagh"
 	desc = "A headdress designed to keep out dust and protect against the sun."
@@ -523,6 +527,10 @@
 	armor_thickness = 40
 	slowdown_general = 1.2
 	siemens_coefficient = 0.7
+
+/obj/item/clothing/suit/bomb_suit/security/colossus/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
 
 /obj/item/clothing/head/bomb_hood/security/colossus
 	name = "Colossus Helm"
@@ -583,6 +591,8 @@
 /obj/item/clothing/suit/justice/zeal/New()
 	. = ..()
 	slowdown_per_slot[slot_wear_suit] = 1
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
 
 /obj/item/clothing/head/helmet/zeal
 	name = "Zeal Scout Suit Helmet"

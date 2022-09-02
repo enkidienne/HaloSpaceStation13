@@ -21,6 +21,10 @@
 	//5 less all-round protection compared to marines and high ranking grunts
 	armor = list(melee = 50, bullet = 45, laser = 50, energy = 40, bomb = 35, bio = 25, rad = 25)
 
+/obj/item/clothing/suit/armor/special/unggoy_combat_harness/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2, ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
 /obj/item/clothing/suit/armor/special/unggoy_combat_harness/major
 	name = "Unggoy Combat Harness (Major)"
 	icon_state = "combatharness_major"

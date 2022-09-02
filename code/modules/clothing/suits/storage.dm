@@ -1,6 +1,6 @@
 /obj/item/clothing/suit/storage/New()
 	..()
-	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src, slots = 2, slot_size = ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD) //two slots, fit only pocket sized items
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD) //two slots, fit only pocket sized items
 
 //Jackets with buttons, used for labcoats, IA jackets, First Responder jackets, and brown jackets.
 /obj/item/clothing/suit/storage/toggle

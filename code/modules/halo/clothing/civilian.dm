@@ -17,6 +17,7 @@
 /obj/item/clothing/suit/armor/vest/police/New()
 	. =..()
 	slowdown_per_slot[slot_wear_suit] = 2
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
 
 /obj/item/clothing/suit/armor/vest/police_medium//medium armor
 	name = "medium ballistic vest"
@@ -37,6 +38,8 @@
 /obj/item/clothing/suit/armor/vest/police_medium/New()//speeds are factoring other gear and chasing people on foot, meant to encourage using lighter armors to reduce meta
 	. = ..()
 	slowdown_per_slot[slot_wear_suit] = -1
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
 
 /obj/item/clothing/suit/storage/vest/tactical/police//light armor
 	name = "light ballistic vest"
@@ -56,6 +59,7 @@
 /obj/item/clothing/suit/storage/vest/tactical/police/New()
 	. = ..()
 	slowdown_per_slot[slot_wear_suit] = -2
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
 
 /obj/item/clothing/mask/balaclava/tactical/police
 	name = "police balaclava"
