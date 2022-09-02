@@ -29,7 +29,9 @@
 
 	integrated_hud = /obj/item/clothing/glasses/hud/tactical/spartan_hud
 
-
+/obj/item/clothing/head/helmet/spartan/New()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src, 1, ITEM_SIZE_SMALL,null,list(/obj/item/device/paicard,/obj/item/weapon/aicard),"AI Storage")
+	..()
 
 /obj/item/clothing/suit/armor/special/spartan
 	name = "MJOLNIR Powered Assault Armor Mark IV"
