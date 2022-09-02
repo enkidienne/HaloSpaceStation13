@@ -67,6 +67,15 @@
 
 	species_restricted = list("Knight")
 
+/obj/item/clothing/suit/armor/special/knight_armour/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2, ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+	if(!pockets_all)
+		pockets_all = list()
+	pockets_all += list(\
+	new/obj/item/weapon/storage/internal/pockets(src, 2, ITEM_SIZE_HUGE,null,list(/obj/item/weapon/gun),"Weapon Materialiser"),\
+	)
+
 /obj/item/clothing/shoes/magboots/knight_boots
 	name = "Knight Legs"
 	desc = "Armoured legs, to be fitted to the chassis of a Promethean Knight"

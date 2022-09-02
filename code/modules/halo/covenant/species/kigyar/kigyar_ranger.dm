@@ -29,6 +29,11 @@
 		/obj/item/ammo_magazine/needles,\
 		/obj/item/weapon/gun/projectile/needler)
 
+/obj/item/clothing/suit/armor/ranger_kigyar/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2, ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
+
 /obj/item/clothing/shoes/magboots/ranger_kigyar
 	name = "Kig-yar ranger magboots"
 	desc = "A pair of boots made for ranger kig-yars. Useful in harsh, low gravity enviroments.Allows the user to remain fixed to a spacecraft without the use of artificial gravity."

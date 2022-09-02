@@ -13,6 +13,17 @@
 	var/blood_overlay_type = "uniformblood"
 	var/visible_name = "Unknown"
 
+	//We're giving everything the ability to handle pockets. Let's see how this goes.
+	var/obj/item/weapon/storage/internal/pockets/pocket_curr = null //Our current (last opened) pocket.
+	var/list/pockets_all = null //A list containing all pockets on this item that were not opened last.
+
+/obj/item/clothing/Destroy()
+	QDEL_NULL(pocket_curr)
+	for(var/pocket in pockets_all)
+		pockets_all -= pocket
+		qdel(pocket)
+	. = ..()
+
 // Updates the icons of the mob wearing the clothing item, if any.
 /obj/item/clothing/proc/update_clothing_icon()
 	return
@@ -123,6 +134,48 @@
 		icon = sprite_sheets_obj[target_species]
 	else
 		icon = initial(icon)
+
+/obj/item/clothing/attack_hand(mob/user as mob)
+	if (pocket_curr)
+		if(pockets_all && user.s_active == pocket_curr)//If our open storage is our pocket, let's go forward by one.
+			pocket_curr.close(user)
+			pockets_all += pocket_curr
+			pocket_curr = pockets_all[1]
+			pockets_all -= pocket_curr
+		if(pocket_curr.handle_attack_hand(user))
+			..(user)
+	else
+		..(user)
+
+/obj/item/clothing/MouseDrop(obj/over_object as obj)
+	if (!pocket_curr || pocket_curr.handle_mousedrop(usr, over_object))
+		..(over_object)
+
+/obj/item/clothing/attackby(obj/item/W as obj, mob/user as mob)
+	..()
+	if(!(W in accessories))		//Make sure that an accessory wasn't successfully attached to suit.
+		pocket_curr.attackby(W, user)
+
+/obj/item/clothing/emp_act(severity)
+	if(pocket_curr)
+		if(pockets_all)
+			for(var/obj/pocket in pockets_all)
+				pocket.emp_act(severity)
+		pocket_curr.emp_act(severity)
+	..()
+
+/obj/item/clothing/examine(var/mob/user)
+	. = ..()
+
+	//see code/modules/halo/clothing/armour_patch.dm
+	if(pocket_curr)
+		var/pocket_output = ""
+		for(var/obj/pocket in list(pocket_curr) + pockets_all)
+			if(pocket_output != "")
+				pocket_output += ", "
+			pocket_output += "[pocket.name]"
+
+		to_chat(user,"<span class='info'>Pockets: [pocket_output]</span>")
 
 ///////////////////////////////////////////////////////////////////////
 // Ears: headsets, earmuffs and tiny objects
@@ -705,11 +758,6 @@ BLIND     // can't see anything
 
 	if(has_sensor == SUIT_HAS_SENSORS && sensor_mode != SUIT_SENSOR_OFF)
 		GLOB.emp_candidates.Add(src)
-/*
-/obj/item/clothing/glasses/hud/tactical/Destroy()
-	GLOB.emp_candidates.Remove(src)
-	. = ..()
-*/
 
 /obj/item/clothing/under/get_mob_overlay(mob/user_mob, slot)
 	var/image/ret = ..()

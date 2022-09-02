@@ -93,6 +93,10 @@
 	var/slots = 4
 	var/max_w_class = ITEM_SIZE_SMALL
 
+/obj/item/clothing/suit/armor/special/urfc/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
 /obj/item/clothing/suit/armor/special/soe
 	name = "SOE Spacesuit"
 	desc = "Heavyweight, somewhat durable armour issued to commandos for increased survivability in space."
@@ -112,6 +116,10 @@
 	item_state_slots = list(slot_l_hand_str = "urf_armor", slot_r_hand_str = "urf_armor")
 	armor_thickness = 20
 	slowdown_general = 1
+
+/obj/item/clothing/suit/armor/special/soe/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
 
 //SHOES
 

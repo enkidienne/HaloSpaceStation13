@@ -147,7 +147,6 @@
 	. = ..()
 	slowdown_per_slot[slot_wear_suit] = -0.1
 
-
 /obj/item/clothing/shoes/marine
 	name = "Olive VZG7 Armored Boots"
 	desc = "Standard issue combat boots for the UNSC Marines, worn as a part of the Marine BDU."
@@ -187,15 +186,7 @@
 	item_state = "UNSC Marine Ammo Belt"
 	storage_slots = 7
 
-	can_hold = list(\
-	/obj/item/weapon/material/knife/combat_knife,
-	/obj/item/ammo_magazine,
-	/obj/item/ammo_box,
-	/obj/item/weapon/armor_patch,
-	/obj/item/ammo_casing,
-	/obj/item/weapon/plastique,
-	/obj/item/weapon/tank/emergency/oxygen
-	)
+	can_hold = AMMO_BELT_CANHOLD
 
 /obj/item/weapon/storage/belt/marine_medic
 	name = "Medical Supplies Storage Belt"
@@ -257,6 +248,10 @@
 	w_class = ITEM_SIZE_HUGE
 	allowed = list(/obj/item/weapon/tank)
 	armor = list(melee = 50, bullet = 45, laser = 50, energy = 40, bomb = 35, bio = 20, rad = 20) //Same armour as marines, but innate spacesuit slowdown and limited choice of suitstore
+
+/obj/item/clothing/suit/space/void/unsc/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
 
 /obj/item/clothing/head/helmet/space/void/unsc
 	name = "\improper Salvage Helmet"
@@ -332,6 +327,10 @@
 	w_class = ITEM_SIZE_HUGE
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/weapon/tank)
 	armor = list(melee = 50, bullet = 45, laser = 50, energy = 40, bomb = 35, bio = 20, rad = 20)
+
+/obj/item/clothing/suit/spaceeva/eva/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
 
 /obj/item/clothing/head/helmet/eva/marine
 	name = "\improper EVA Marine Helmet"

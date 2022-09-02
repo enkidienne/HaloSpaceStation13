@@ -12,6 +12,10 @@
 	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
 	matter = list("nanolaminate" = 1)
 
+/obj/item/clothing/suit/armor/special/skirmisher/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2, ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
 /obj/item/clothing/suit/armor/special/skirmisher/major
 	name = "T\'Vaoan Major harness"
 	icon_state = "major_obj"

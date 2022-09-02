@@ -64,8 +64,6 @@
 	list(mode_name="extended bursts",  burst=8, dispersion=list(0.3, 0.3, 0.4, 0.5, 0.6, 0.8, 1.1))
 	)
 
-	toggle_scope(usr, scope_zoom_amount)
-
 /obj/item/weapon/gun/projectile/m7_smg/silenced/update_icon()
 	if(ammo_magazine)
 		icon_state = "m7smgs"

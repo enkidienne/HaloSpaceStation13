@@ -9,6 +9,54 @@
 
 #define ARMOUR_THICKNESS_DAMAGE_CAP 4
 
+#define MEDIC_BELT_CANHOLD list(\
+	/obj/item/ammo_magazine/m7,\
+	/obj/item/ammo_magazine/m6d,\
+	/obj/item/ammo_magazine/m6s,\
+	/obj/item/projectile/bullet/covenant/needles,\
+	/obj/item/weapon/storage/firstaid/unsc,\
+	/obj/item/weapon/storage/firstaid/erk,\
+	/obj/item/weapon/storage/firstaid/combat/unsc,\
+	/obj/item/device/healthanalyzer,\
+	/obj/item/weapon/reagent_containers/dropper,\
+	/obj/item/weapon/reagent_containers/glass/beaker,\
+	/obj/item/weapon/reagent_containers/glass/bottle,\
+	/obj/item/weapon/reagent_containers/syringe,\
+	/obj/item/weapon/flame/lighter/zippo,\
+	/obj/item/weapon/storage/fancy/cigarettes,\
+	/obj/item/weapon/storage/pill_bottle,\
+	/obj/item/stack/medical,\
+	/obj/item/device/flashlight/pen,\
+	/obj/item/clothing/mask/surgical,\
+	/obj/item/clothing/head/surgery,\
+	/obj/item/clothing/gloves/latex,\
+	/obj/item/weapon/reagent_containers/hypospray,\
+	/obj/item/clothing/glasses/hud/health\
+	)
+
+#define AMMO_BELT_CANHOLD list(\
+	/obj/item/weapon/material/knife/combat_knife,\
+	/obj/item/weapon/melee/blamite,\
+	/obj/item/weapon/melee/energy/elite_sword,\
+	/obj/item/ammo_magazine,\
+	/obj/item/ammo_box,\
+	/obj/item/weapon/armor_patch,\
+	/obj/item/ammo_casing,\
+	/obj/item/weapon/plastique,\
+	/obj/item/weapon/tank/emergency/oxygen\
+	)
+
+#define ARMOUR_POCKET_CANHOLD list(\
+	/obj/item/ammo_magazine,\
+	/obj/item/ammo_box,\
+	/obj/item/weapon/armor_patch,\
+	/obj/item/ammo_casing,\
+	/obj/item/device/healthanalyzer,\
+	/obj/item/weapon/storage/pill_bottle,\
+	/obj/item/stack/medical,\
+	/obj/item/weapon/grenade,\
+	)
+
 #define CANDLE_LUM 3 // For how bright candles are.
 
 // Item inventory slot bitmasks.

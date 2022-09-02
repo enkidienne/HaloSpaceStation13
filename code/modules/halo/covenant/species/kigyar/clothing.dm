@@ -64,6 +64,10 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	matter = list("nanolaminate" = 1)
 
+/obj/item/clothing/suit/armor/kigyar/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2, ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
 /obj/item/clothing/suit/armor/kigyar/major
 	name = "Kig-Yar Major Combat Harness"
 	icon_state = "scout_major"

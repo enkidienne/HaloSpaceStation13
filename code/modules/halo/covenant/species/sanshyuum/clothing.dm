@@ -11,6 +11,10 @@
 	species_restricted = list("San Shyuum")
 	unacidable = 1
 
+/obj/item/clothing/suit/prophet_robe/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2, ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
 /obj/item/clothing/under/prophet_internal
 	name = "San Shyuum Undersuit"
 	desc = "To be worn under San Shyuum robes"
@@ -30,6 +34,10 @@
 	species_restricted = list("San Shyuum")
 	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/gear/prophet_jumpsuit)
 	totalshields = 270 //Zealot Tier
+
+/obj/item/clothing/suit/armor/special/shielded_prophet_robe/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2, ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
 
 /obj/item/clothing/suit/armor/special/shielded_prophet_robe/santa
 	name = "Cheerful Robe"

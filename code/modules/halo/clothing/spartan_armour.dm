@@ -29,7 +29,9 @@
 
 	integrated_hud = /obj/item/clothing/glasses/hud/tactical/spartan_hud
 
-
+/obj/item/clothing/head/helmet/spartan/New()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src, 1, ITEM_SIZE_SMALL,null,list(/obj/item/device/paicard,/obj/item/weapon/aicard),"AI Storage")
+	..()
 
 /obj/item/clothing/suit/armor/special/spartan
 	name = "MJOLNIR Powered Assault Armor Mark IV"
@@ -63,6 +65,10 @@
 		/datum/armourspecials/gear/mjolnir_jumpsuit)*/
 	totalshields = 170 //10 less than major.
 	item_state_slots = list(slot_l_hand_str = "syndicate-black", slot_r_hand_str = "syndicate-black")
+
+/obj/item/clothing/suit/armor/special/spartan/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
 
 /obj/item/clothing/suit/armor/special/spartan/ui_action_click()
 	self_destruct(usr)
