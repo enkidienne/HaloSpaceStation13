@@ -50,6 +50,8 @@
 	/obj/item/ammo_magazine/br55/m634,
 	/obj/item/ammo_magazine/br55/m634,
 	/obj/item/ammo_magazine/br55/m634,
+	/obj/item/ammo_box/shotgun,
+	/obj/item/ammo_box/shotgun,
 	)
 
 /datum/support_option/supply_drop/mass_ammo/odst
@@ -85,6 +87,8 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/ammo_magazine/br55/m634,
 	/obj/item/ammo_magazine/br55/m634,
 	/obj/item/ammo_magazine/br55/m634,
+	/obj/item/ammo_box/shotgun,
+	/obj/item/ammo_box/shotgun,
 	)
 
 /datum/support_option/supply_drop/mass_ammo/urf
@@ -120,6 +124,8 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/ammo_magazine/br55/m634,
 	/obj/item/ammo_magazine/br55/m634,
 	/obj/item/ammo_magazine/br55/m634,
+	/obj/item/ammo_box/shotgun,
+	/obj/item/ammo_box/shotgun,
 	)
 
 
