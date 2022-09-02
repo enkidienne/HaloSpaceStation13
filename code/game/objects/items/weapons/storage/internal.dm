@@ -4,6 +4,7 @@
 	name = "Storage Pocket"
 	var/obj/item/master_item
 	cant_hold = list()
+	use_dynamic_slowdown = 0
 
 /obj/item/weapon/storage/internal/New(obj/item/MI)
 	master_item = MI

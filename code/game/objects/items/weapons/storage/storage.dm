@@ -43,7 +43,7 @@
 		var/w_class_mod = A.w_class
 		if(!(A in inv_toplevel))
 			w_class_mod -= 1
-		if(w_class_mod != 0)
+		if(w_class_mod <= 1)//Let's not make tiny items count.
 			slowdown_total += base_storage_cost(A.w_class) * BACKPACK_SLOWDOWN_MOD
 		inv -= A
 
