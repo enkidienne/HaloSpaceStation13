@@ -169,12 +169,13 @@
 
 	//see code/modules/halo/clothing/armour_patch.dm
 	if(pocket_curr)
-		var/numpock = "a"
-		var/plural = ""
-		if(pockets_all)
-			numpock = "[pockets_all.len+1]"
-			plural = "s"
-		to_chat(user,"<span class='info'>It has [numpock] distinct pocket[plural]</span>")
+		var/pocket_output = ""
+		for(var/obj/pocket in list(pocket_curr) + pockets_all)
+			if(pocket_output != "")
+				pocket_output += ", "
+			pocket_output += "[pocket.name]"
+
+		to_chat(user,"<span class='info'>Pockets: [pocket_output]</span>")
 
 ///////////////////////////////////////////////////////////////////////
 // Ears: headsets, earmuffs and tiny objects

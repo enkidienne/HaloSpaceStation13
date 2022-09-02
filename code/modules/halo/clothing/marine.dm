@@ -147,7 +147,6 @@
 	. = ..()
 	slowdown_per_slot[slot_wear_suit] = -0.1
 
-
 /obj/item/clothing/shoes/marine
 	name = "Olive VZG7 Armored Boots"
 	desc = "Standard issue combat boots for the UNSC Marines, worn as a part of the Marine BDU."
@@ -187,15 +186,7 @@
 	item_state = "UNSC Marine Ammo Belt"
 	storage_slots = 7
 
-	can_hold = list(\
-	/obj/item/weapon/material/knife/combat_knife,
-	/obj/item/ammo_magazine,
-	/obj/item/ammo_box,
-	/obj/item/weapon/armor_patch,
-	/obj/item/ammo_casing,
-	/obj/item/weapon/plastique,
-	/obj/item/weapon/tank/emergency/oxygen
-	)
+	can_hold = AMMO_BELT_CANHOLD
 
 /obj/item/weapon/storage/belt/marine_medic
 	name = "Medical Supplies Storage Belt"

@@ -1,13 +1,13 @@
 //A storage item intended to be used by other items to provide storage functionality.
 //Types that use this should consider overriding emp_act() and hear_talk(), unless they shield their contents somehow.
 /obj/item/weapon/storage/internal
+	name = "Storage Pocket"
 	var/obj/item/master_item
 	cant_hold = list()
 
 /obj/item/weapon/storage/internal/New(obj/item/MI)
 	master_item = MI
 	loc = master_item
-	name = master_item.name
 	verbs -= /obj/item/verb/verb_pickup	//make sure this is never picked up.
 	..()
 
@@ -91,9 +91,13 @@
 	return master_item.Adjacent(neighbor)
 
 // Used by webbings, coat pockets, etc
-/obj/item/weapon/storage/internal/pockets/New(var/newloc, var/slots, var/slot_size,var/startingitems)
+/obj/item/weapon/storage/internal/pockets/New(var/newloc, var/slots, var/slot_size,var/startingitems,var/canhold,var/pocketname)
 	storage_slots = slots
 	max_w_class = slot_size
+	if(canhold)
+		can_hold = canhold
+	if(pocketname)
+		name = pocketname
 	if(startingitems)
 		startswith = startingitems
 	..()
