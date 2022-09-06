@@ -71,6 +71,7 @@ GLOBAL_LIST_EMPTY(dante_enlisted_spawns)
 
 	spawn_faction = "UNSC"
 
+//These guys are causing issues with roundflow. Let's take them out, for now.
 /datum/job/achlys/marine/operative
 	title = "ONI Operative"
 	total_positions = 6
@@ -164,7 +165,7 @@ GLOBAL_LIST_EMPTY(dante_officer_spawns)
 	spawn_faction = "UNSC"
 
 /datum/map/unsc_achlys
-	allowed_jobs = list(/datum/job/achlys/CO,/datum/job/achlys/pilot,/datum/job/achlys/SL,/datum/job/achlys/marine,/datum/job/achlys/marine/operative,/datum/job/achlys/prisoner,/datum/job/achlys/sangheili)
+	allowed_jobs = list(/datum/job/achlys/CO,/datum/job/achlys/pilot,/datum/job/achlys/SL,/datum/job/achlys/marine,/datum/job/achlys/prisoner,/datum/job/achlys/sangheili)
 	allowed_spawns = list("Dante Officer","Dante Pilot","Dante Enlisted","Achlys Prison")
 
 	species_to_job_whitelist = list(/datum/species/sangheili = list(/datum/job/achlys/sangheili))
