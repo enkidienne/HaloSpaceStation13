@@ -59,9 +59,10 @@
 	designator_spawn = /obj/item/weapon/laser_designator/covenant
 
 /obj/machinery/overmap_weapon_console/mac/orbital_bombard/energy_projector/bombard_impact(var/turf/bombard)
-	var/obj/item/projectile/overmap/beam/b = new (loc)
-	b.do_glassing_effect(bombard,3)
-	qdel(b)
+	explosion(get_turf(bombard),3,4,5,15, adminlog = 0)
+	for(var/t in dview(9,bombard))
+		var/obj/effect/fire/noheat/fire = new (bombard)
+		fire.fire_fuel = 20 //4x the default.
 
 /obj/item/projectile/overmap/beam
 	name = "Super laser"
@@ -75,7 +76,7 @@
 	tracer_delay_time = 2 SECONDS
 	ship_hit_sound = 'code/modules/halo/sounds/om_proj_hitsounds/eprojector_hit_sound.wav'
 
-/obj/item/projectile/overmap/beam/proc/do_glassing_effect(var/turf/to_glass,var/glass_radius = 20,var/glassed_turf_use = /turf/unsimulated/floor/lava/glassed_turf)
+/obj/item/projectile/overmap/beam/proc/do_glassing_effect(var/turf/to_glass,var/glass_radius = 15,var/glassed_turf_use = /turf/unsimulated/floor/lava/glassed_turf)
 	if(istype(to_glass,/turf/simulated/open)) // if the located place is an open space it goes to the next z-level
 		to_glass = GetBelow(to_glass)
 	if(isnull(to_glass))
