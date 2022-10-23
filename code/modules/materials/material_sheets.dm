@@ -264,6 +264,9 @@
 	icon_state = "sheet-cloth"
 	default_type = "cloth"
 
+/obj/item/stack/material/cloth/ten
+	amount = 10
+
 /obj/item/stack/material/cardboard
 	name = "cardboard"
 	icon_state = "sheet-card"
