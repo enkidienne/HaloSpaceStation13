@@ -11,6 +11,20 @@
 
 /area/planets/taurus/exterior_autolight
 
+/area/planets/taurus/exterior_autolight/outside
+
+/area/planets/taurus/exterior_autolight/outside/beach_shore
+	name = "City - South Beach Shore"
+	icon_state = "blue"
+
+/area/planets/taurus/exterior_autolight/outside/south_west_beach_shore
+	name = "City - Southwest Beach Shore"
+	icon_state = "green"
+
+/area/planets/taurus/exterior_autolight/outside/north_west_roadwork
+	name = "City - Northwest Roadwork"
+	icon_state = "red"
+
 /area/planets/taurus/inside
 	dynamic_lighting = 1
 	requires_power = 0
@@ -93,3 +107,6 @@
 
 /area/planets/taurus/inside/beach_shack
 	name = "City - Beach Shack"
+
+/area/planets/taurus/inside/church_graveyard
+	name = "City - Church Graveyard"
