@@ -60,7 +60,7 @@ var/global/orion_password = null
 		if (timeleft <= 0)
 			spawn
 				explode()
-		GLOB.nanomanager.update_uis(src)
+		SSnano.update_uis(src)
 
 /obj/machinery/nuclearbomb/attackby(obj/item/weapon/O as obj, mob/user as mob, params)
 	if (istype(O, /obj/item/weapon/screwdriver))
@@ -214,7 +214,7 @@ var/global/orion_password = null
 		if (yes_code)
 			data["message"] = "*****"
 
-	ui = GLOB.nanomanager.try_update_ui(user, src, ui_key, ui, data, force_open)
+	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
 		ui = new(user, src, ui_key, "nuclear_bomb.tmpl", "Nuke Control Panel", 300, 510)
 		ui.set_initial_data(data)

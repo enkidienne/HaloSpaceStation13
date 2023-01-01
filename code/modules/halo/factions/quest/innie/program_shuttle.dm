@@ -63,7 +63,7 @@
 			reload_coords()
 		data["loaded_coords"] = loaded_coords
 
-	ui = GLOB.nanomanager.try_update_ui(user, src, ui_key, ui, data, force_open)
+	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
 		ui = new(user, src, ui_key, "shuttle_innie.tmpl", name, 950, 600, state = state)
 		ui.set_auto_update(1)

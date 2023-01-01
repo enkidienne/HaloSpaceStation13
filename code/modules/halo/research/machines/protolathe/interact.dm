@@ -15,7 +15,7 @@
 	data["resources"] = "matter: [components_storage_used + material_storage_used] out of [max_storage] sheets, \
 		reagents: [reagents.total_volume] out of [reagents.maximum_volume] units"
 
-	ui = GLOB.nanomanager.try_update_ui(user, src, ui_key, ui, data, force_open)
+	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
 		ui = new(user, src, ui_key, "protolathe.tmpl", "[src.name]", 800, 600)
 		ui.set_initial_data(data)

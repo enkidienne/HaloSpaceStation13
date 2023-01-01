@@ -25,7 +25,7 @@
 	data["detected_components"] = detected_components
 	data["user"] = "\ref[user]"
 
-	ui = GLOB.nanomanager.try_update_ui(user, src, ui_key, ui, data, force_open)
+	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
 		ui = new(user, src, ui_key, "manufactory.tmpl", "Jiralhanae Manufactory", 600, 400)
 		ui.set_initial_data(data)

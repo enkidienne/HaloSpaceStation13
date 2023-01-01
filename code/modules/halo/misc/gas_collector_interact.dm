@@ -25,7 +25,7 @@
 
 	data["user"] = "\ref[user]"
 
-	ui = GLOB.nanomanager.try_update_ui(user, src, ui_key, ui, data, force_open)
+	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
 		ui = new(user, src, ui_key, "gas_collector.tmpl", secured_geyser ? "[secured_geyser.name] Collector" : src.name, 450, 600)
 		ui.set_initial_data(data)

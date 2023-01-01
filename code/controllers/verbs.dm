@@ -69,7 +69,7 @@
 			debug_variables(plant_controller)
 			feedback_add_details("admin_verb", "DPlants")
 		if("Nano")
-			debug_variables(GLOB.nanomanager)
+			debug_variables(SSnano)
 			feedback_add_details("admin_verb", "DNano")
 		if("Alt Appearance Manager")
 			debug_variables(appearance_manager)

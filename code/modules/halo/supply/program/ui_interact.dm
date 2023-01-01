@@ -47,7 +47,7 @@
 			data["cart"] = cart
 			data["requests"] = requests
 
-	ui = GLOB.nanomanager.try_update_ui(user, src, ui_key, ui, data, force_open)
+	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
 		ui = new(user, src, ui_key, "faction_supply.tmpl", name, 1000, 600, state = state)
 		apply_styling(ui)

@@ -135,7 +135,7 @@
 	onclose(user, "window=fusion_drive", src)
 	*/
 
-	ui = GLOB.nanomanager.try_update_ui(user, src, ui_key, ui, data, force_open)
+	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
 		ui = new(user, src, ui_key, "fusion_reactor.tmpl", "Fusion Reactor", 550, 550)
 		ui.set_initial_data(data)
