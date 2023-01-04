@@ -66,9 +66,8 @@ proc/Ellipsis(original_msg, chance = 50)
 	if(chance <= 0) return "..."
 	if(chance >= 100) return original_msg
 
-	var/list
-		words = splittext(original_msg," ")
-		new_words = list()
+	var/list/words = splittext(original_msg," ")
+	var/list/new_words = list()
 
 	var/new_msg = ""
 
@@ -140,14 +139,14 @@ proc/RadioChat(mob/living/user, message, distortion_chance = 60, distortion_spee
 						if(english_only)
 							newletter += "*"
 						else
-							newletter = pick("ø", "Ð", "%", "æ", "µ")
+							newletter = pick("ï¿½", "ï¿½", "%", "ï¿½", "ï¿½")
 					distortion += 0.5 * distortion_speed
 				if("E") // Incomprehensible
 					newletter = pick("<", ">", "!", "$", "%", "^", "&", "*", "~", "#")
 					distortion += 0.75 * distortion_speed
 				if("F") // Total cut out
 					if(!english_only)
-						newletter = "¦w¡¼b»%> -BZZT-"
+						newletter = "ï¿½wï¿½ï¿½bï¿½%> -BZZT-"
 					else
 						newletter = "srgt%$hjc< -BZZT-"
 					new_message += newletter
@@ -157,15 +156,15 @@ proc/RadioChat(mob/living/user, message, distortion_chance = 60, distortion_spee
 						if("s")
 							newletter = "$"
 						if("e")
-							newletter = "€"
+							newletter = "ï¿½"
 						if("w")
-							newletter = "ø"
+							newletter = "ï¿½"
 						if("y")
-							newletter = "¡"
+							newletter = "ï¿½"
 						if("x")
-							newletter = "æ"
+							newletter = "ï¿½"
 						if("u")
-							newletter = "µ"
+							newletter = "ï¿½"
 		else
 			newletter = " *crackle* "
 			distortion += 0.25 * distortion_speed

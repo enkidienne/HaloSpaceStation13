@@ -307,5 +307,3 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/weapon/wrench,
 	/obj/item/weapon/weldingtool,
 	)
-
-#undef PRERSONALISED_AMMO_DROP_MAG_AMT
