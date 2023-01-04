@@ -1,3 +1,6 @@
+//For whatever reason this wasn't defined here?
+#define CLEAR_CASINGS 1
+
 //NA4 Defoliant Projector
 /obj/item/weapon/gun/projectile/na4_dp
 	name = "\improper NA4/Defoliant Projector"
