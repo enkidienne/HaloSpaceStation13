@@ -18,8 +18,9 @@ atupdate
 __pycache__
 
 # ignore config, but not subdirs
-config/*
 !config/*/
+config/*
 
-#VS Code files
+# VisualStudioCode
 .vscode/launch.json
+.history
