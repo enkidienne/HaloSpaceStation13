@@ -47,12 +47,12 @@ def main():
 
 	tree = ""
 	if namespace.projectfile[-4:] == ".txt":
-		with open(namespace.projectfile, "r", encoding='cp1252') as f:
+		with open(namespace.projectfile, "r", encoding='latin1') as f:
 			tree = f.read()
 
 	else:
 		tree = CompileFile(namespace.projectfile)
-		with open("dump.txt", "wt") as f:
+		with open("dump.txt", "wt", encoding='latin1') as f:
 			f.write(tree)
 
 
@@ -66,7 +66,7 @@ def main():
 	variables.sort()
 	code = GenCode(variables)
 	
-	with open(namespace.outfile, 'w') as outfile:
+	with open(namespace.outfile, 'w', encoding='latin1') as outfile:
 		outfile.write(code)
 	
 	hash = GenerateMD5(namespace.outfile)
@@ -83,7 +83,7 @@ def GenerateMD5(fname):
 def CompileFile(filename):
 	compiler_path = FindCompiler()
 
-	return subprocess.check_output([compiler_path, "-code_tree", filename], universal_newlines=True, encoding='cp1252')
+	return subprocess.check_output([compiler_path, "-code_tree", filename], universal_newlines=True, encoding='latin1')
 
 def FindCompiler():
 	compiler_path = None;
