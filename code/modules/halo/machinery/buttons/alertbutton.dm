@@ -5,7 +5,7 @@
 	var/un_alert_message = "Red Alert lifted."
 	var/alarm_color_string = "#ff9696"
 	var/sound/alarm_sound = 'code/modules/halo/sounds/r_alert_alarm_loop.ogg'
-	var/alarm_loop_time = 2.316 SECONDS //The amount of time it takes for the alarm sound to end. Used for restarting the sound.
+	var/alarm_loop_time = 13.896 SECONDS //The amount of time it takes for the alarm sound to end. Used for restarting the sound.
 	var/currently_alarming
 
 /obj/machinery/button/toggle/alarm_button/activate(var/mob/user)
