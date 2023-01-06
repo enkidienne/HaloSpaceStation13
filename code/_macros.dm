@@ -107,33 +107,64 @@
 
 #define ARGS_DEBUG log_debug("[__FILE__] - [__LINE__]") ; for(var/arg in args) { log_debug("\t[log_info_line(arg)]") }
 
-// Helper macros to aid in optimizing lazy instantiation of lists.
-// All of these are null-safe, you can use them without knowing if the list var is initialized yet
-
-//Picks from the list, with some safeties, and returns the "default" arg if it fails
-#define DEFAULTPICK(L, default) ((istype(L, /list) && L:len) ? pick(L) : default)
-// Ensures L is initailized after this point
-#define LAZYINITLIST(L) if (!L) L = list()
-// Sets a L back to null iff it is empty
-#define UNSETEMPTY(L) if (L && !L.len) L = null
-// Removes I from list L, and sets I to null if it is now empty
-#define LAZYREMOVE(L, I) if(L) { L -= I; if(!L.len) { L = null; } }
-// Adds I to L, initalizing L if necessary
-#define LAZYADD(L, I) if(!L) { L = list(); } L += I;
-// Sets L[A] to I, initalizing L if necessary
-#define LAZYSET(L, A, I) if(!L) { L = list(); } L[A] = I;
-// Reads I from L safely - Works with both associative and traditional lists.
-#define LAZYACCESS(L, I) (L ? (isnum(I) ? (I > 0 && I <= L.len ? L[I] : null) : L[I]) : null)
-// Reads the length of L, returning 0 if null
-#define LAZYLEN(L) length(L)
-// Null-safe L.Cut()
-#define LAZYCLEARLIST(L) if(L) L.Cut()
-// Reads L or an empty list if L is not a list.  Note: Does NOT assign, L may be an expression.
-#define SANITIZE_LIST(L) ( islist(L) ? L : list() )
-
 // Insert an object A into a sorted list using cmp_proc (/code/_helpers/cmp.dm) for comparison.
 #define ADD_SORTED(list, A, cmp_proc) if(!list.len) {list.Add(A)} else {list.Insert(FindElementIndex(A, list, cmp_proc), A)}
 
 //Currently used in SDQL2 stuff
 #define send_output(target, msg, control) target << output(msg, control)
 #define send_link(target, url) target << link(url)
+
+/// Semantic define for a 0 int intended for use as a bitfield
+#define EMPTY_BITFIELD 0
+
+
+/// Right-shift of INT by BITS
+#define SHIFTR(INT, BITS) ((INT) >> (BITS))
+
+
+/// Left-shift of INT by BITS
+#define SHIFTL(INT, BITS) ((INT) << (BITS))
+
+
+/// Convenience define for nth-bit flags, 0-indexed
+#define FLAG(BIT) SHIFTL(1, BIT)
+
+
+/// Test bit at index BIT is set in FIELD
+#define GET_BIT(FIELD, BIT) ((FIELD) & FLAG(BIT))
+
+
+/// Test bit at index BIT is set in FIELD; semantic alias of GET_BIT
+#define HAS_BIT(FIELD, BIT) GET_BIT(FIELD, BIT)
+
+
+/// Set bit at index BIT in FIELD
+#define SET_BIT(FIELD, BIT) ((FIELD) |= FLAG(BIT))
+
+
+/// Unset bit at index BIT in FIELD
+#define CLEAR_BIT(FIELD, BIT) ((FIELD) &= ~FLAG(BIT))
+
+
+/// Flip bit at index BIT in FIELD
+#define FLIP_BIT(FIELD, BIT) ((FIELD) ^= FLAG(BIT))
+
+
+/// Test any bits of MASK are set in FIELD
+#define GET_FLAGS(FIELD, MASK) ((FIELD) & (MASK))
+
+
+/// Test all bits of MASK are set in FIELD
+#define HAS_FLAGS(FIELD, MASK) (((FIELD) & (MASK)) == (MASK))
+
+
+/// Set bits of MASK in FIELD
+#define SET_FLAGS(FIELD, MASK) ((FIELD) |= (MASK))
+
+
+/// Unset bits of MASK in FIELD
+#define CLEAR_FLAGS(FIELD, MASK) ((FIELD) &= ~(MASK))
+
+
+/// Flip bits of MASK in FIELD
+#define FLIP_FLAGS(FIELD, MASK) ((FIELD) ^= (MASK))
