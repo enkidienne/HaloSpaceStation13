@@ -93,6 +93,8 @@
 			return global.SSgarbage;
 		if("SSlegacy")
 			return global.SSlegacy;
+		if("SSprofiler")
+			return global.SSprofiler;
 		if("SSvote")
 			return global.SSvote;
 		if("TELEBLOCK")
@@ -1025,6 +1027,8 @@
 			return global.sqlpass;
 		if("sqlport")
 			return global.sqlport;
+		if("stack_trace_storage")
+			return global.stack_trace_storage;
 		if("station_account")
 			return global.station_account;
 		if("station_date")
@@ -1197,6 +1201,8 @@
 			return global.wirelessProcess;
 		if("wizards")
 			return global.wizards;
+		if("world_init_maptick_profiler")
+			return global.world_init_maptick_profiler;
 		if("world_topic_spam_protect_ip")
 			return global.world_topic_spam_protect_ip;
 		if("world_topic_spam_protect_time")
@@ -1306,6 +1312,8 @@
 			global.SSgarbage=newval;
 		if("SSlegacy")
 			global.SSlegacy=newval;
+		if("SSprofiler")
+			global.SSprofiler=newval;
 		if("SSvote")
 			global.SSvote=newval;
 		if("TELEBLOCK")
@@ -2238,6 +2246,8 @@
 			global.sqlpass=newval;
 		if("sqlport")
 			global.sqlport=newval;
+		if("stack_trace_storage")
+			global.stack_trace_storage=newval;
 		if("station_account")
 			global.station_account=newval;
 		if("station_date")
@@ -2410,6 +2420,8 @@
 			global.wirelessProcess=newval;
 		if("wizards")
 			global.wizards=newval;
+		if("world_init_maptick_profiler")
+			global.world_init_maptick_profiler=newval;
 		if("world_topic_spam_protect_ip")
 			global.world_topic_spam_protect_ip=newval;
 		if("world_topic_spam_protect_time")
@@ -2472,6 +2484,7 @@
 	"SSatoms",
 	"SSgarbage",
 	"SSlegacy",
+	"SSprofiler",
 	"SSvote",
 	"TELEBLOCK",
 	"TWITCHBLOCK",
@@ -2938,6 +2951,7 @@
 	"sqllogin",
 	"sqlpass",
 	"sqlport",
+	"stack_trace_storage",
 	"station_account",
 	"station_date",
 	"status_icons_to_colour",
@@ -3024,6 +3038,7 @@
 	"wireColours",
 	"wirelessProcess",
 	"wizards",
+	"world_init_maptick_profiler",
 	"world_topic_spam_protect_ip",
 	"world_topic_spam_protect_time",
 	"world_uplinks",
