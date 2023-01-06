@@ -45,3 +45,32 @@
 		else
 			l.brightness_color = "#FFFFFF" //The base light-color.
 		l.update()
+
+//Stupid snowflake button for both sound and door control at the same time
+/obj/machinery/button/remote/blast_door/firing_sequence
+	var/area/area_base = null
+	var/sound_cooldown = 200
+	var/last_used = 0
+	var/alarm_sound = 'code/modules/halo/sounds/station_firing_sequence.ogg'
+	var/door_cooldown = 50
+	var/state = 1
+
+/obj/machinery/button/remote/blast_door/firing_sequence/trigger()
+	if((last_used + door_cooldown)<world.time)
+		if(state)
+			for(var/mob/m in GLOB.player_list)
+				if(isturf(m.loc) && istype(m.loc.loc,area_base))
+					to_chat(m,"<span class = 'danger'>Station firing sequence has been initialized.</span>")
+					if((last_used + sound_cooldown)<world.time)
+						m << alarm_sound
+		state = !state
+
+		for(var/obj/machinery/door/blast/M in world)
+			if(M.id == src.id)
+				if(M.density)
+					spawn(0)
+						M.open()
+				else
+					spawn(0)
+						M.close()
+	last_used = world.time
