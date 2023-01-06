@@ -15,7 +15,6 @@ use_map
 stopserver
 reboot_called
 atupdate
-__pycache__
 
 # ignore config, but not subdirs
 config/*
@@ -23,3 +22,7 @@ config/*
 
 #VS Code files
 .vscode/launch.json
+
+# python
+*.pyc
+__pycache__

@@ -271,7 +271,7 @@
 	head = /obj/item/clothing/head/helmet/spartan/burnedsweetpotato
 	l_ear = /obj/item/device/radio/headset/unsc/spartan
 
-////////bobatnight\\\\\\\
+////////bobatnight\\\\\\\\
 
 //ODST
 
@@ -478,7 +478,7 @@
 	suit = /obj/item/clothing/suit/armor/special/odst/donator/gulag
 
 
-///////Jul\\\\\\\
+///////Jul\\\\\\\\
 
 //Ship/Oni Crew
 
@@ -528,7 +528,7 @@ decl/hierarchy/outfit/Jul
 					)
 
 
-////////karmac\\\\\\\
+////////karmac\\\\\\\\
 
 //Marine
 
@@ -912,7 +912,7 @@ decl/hierarchy/outfit/Jul
 	head = /obj/item/clothing/head/helmet/spartan/mkv_grenadier
 
 
-////////mann\\\\\\\\\
+////////mann\\\\\\\\
 
 //ODST
 
@@ -1093,7 +1093,7 @@ obj/item/clothing/head/helmet/odst/donator/moerk
 	suit = /obj/item/clothing/suit/armor/special/odst/donator/moerk
 
 
-////////NANU\\\\\\\\\
+////////NANU\\\\\\\\
 
 //ODST
 
@@ -1444,7 +1444,7 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 	name = "stingray - spartan"
 	suit = /obj/item/clothing/suit/armor/special/spartan/stingray
 	head = /obj/item/clothing/head/helmet/spartan/stingray
-////////wildwehraboo\\\\\\\
+////////wildwehraboo\\\\\\\\
 
 //ODST
 
@@ -1464,7 +1464,7 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 	name = "wildwehraboo - ODST"
 	head = /obj/item/clothing/head/helmet/odst/donator/wildwehraboo
 	suit = /obj/item/clothing/suit/armor/special/odst/donator/wildwehraboo
-////////wehraboo\\\\\\\\\
+////////wehraboo\\\\\\\\
 
 //ODST
 
@@ -1559,7 +1559,7 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 	suit = /obj/item/clothing/suit/armor/special/spartan/mkv_airassault_amy
 	head = /obj/item/clothing/head/helmet/spartan/mkv_airassault_amy
 
-////////Riley\\\\\\\
+////////Riley\\\\\\\\
 
 //Marine
 

@@ -374,7 +374,7 @@
 	l_pocket = /obj/item/weapon/grenade/plasma
 
 
-///////Vampire132978123\\\\\\\
+///////Vampire132978123\\\\\\\\
 
 //Skirmisher
 

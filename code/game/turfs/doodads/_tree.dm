@@ -32,7 +32,7 @@
 	else if(is_sharp(I))
 		chopping = 1
 	if(chopping)
-		var/tmp/str_out = "<span class='info'>You start chopping down [src]... "
+		var/str_out = "<span class='info'>You start chopping down [src]... "
 		if(chopping < 2)
 			str_out += "The [I.name] isn't very effective."
 		str_out += "</span>"
