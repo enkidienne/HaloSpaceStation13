@@ -17,11 +17,12 @@ reboot_called
 atupdate
 
 # ignore config, but not subdirs
-config/*
 !config/*/
+config/*
 
-#VS Code files
+# VisualStudioCode
 .vscode/launch.json
+.history
 
 # python
 *.pyc
