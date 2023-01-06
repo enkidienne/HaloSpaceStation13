@@ -210,6 +210,14 @@ var/list/floor_decals = list()
 	name = "spline - plain"
 	icon_state = "spline_plain"
 
+/obj/effect/floor_decal/spline/plain/cee
+	name = "spline - cee"
+	icon_state = "spline_plain_cee"
+
+/obj/effect/floor_decal/spline/plain/corner
+	name = "spline - corner"
+	icon_state = "spline_plain_corner"
+
 /obj/effect/floor_decal/spline/fancy
 	name = "spline - fancy"
 	icon_state = "spline_fancy"

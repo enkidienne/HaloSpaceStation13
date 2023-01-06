@@ -33,10 +33,11 @@
 "aG" = (/turf/simulated/floor/tech/orange{tag = "icon-techfloor_orangefulltwogrid (EAST)"; icon_state = "techfloor_orangefulltwogrid"; dir = 4},/area/faction_base/oni/cryodorms)
 "aH" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tech/orange{tag = "icon-techfloor_orangefulltwogrid (WEST)"; icon_state = "techfloor_orangefulltwogrid"; dir = 8},/area/faction_base/oni/cryodorms)
 "aI" = (/obj/structure/closet/crate{name = "Defensive AI Crate"},/obj/item/dumb_ai_chip,/obj/item/dumb_ai_chip,/obj/item/dumb_ai_chip,/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
-"aJ" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
+"aJ" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; pixel_y = 0},/turf/simulated/floor/shuttle/yellow,/area/shuttle/oni_shuttle_supply)
 "aK" = (/obj/structure/bed,/obj/item/weapon/bedsheet/orange,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/blacksite)
 "aL" = (/obj/structure/table/rack,/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
 "aM" = (/obj/machinery/autolathe/ammo_fabricator/oni_fab,/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
+"aN" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/simulated/floor/shuttle/yellow,/area/shuttle/oni_shuttle_supply)
 "aO" = (/obj/machinery/door/airlock/halo/lifepod{name = "Cargo"; req_access = list(317)},/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
 "aP" = (/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
 "aQ" = (/obj/structure/table/standard,/obj/item/weapon/pinpointer/scanpoint_locator/unsc,/obj/item/weapon/pinpointer/scanpoint_locator/unsc,/obj/item/weapon/pinpointer/scanpoint_locator/unsc,/obj/machinery/light/small{dir = 1},/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
@@ -166,6 +167,7 @@
 "dk" = (/obj/machinery/light/colored/blue{icon_state = "blue1"; dir = 4},/turf/simulated/floor/tiled/dark,/area/faction_base/oni/research)
 "dl" = (/obj/machinery/door/airlock/multi_tile/halo{dir = 1; name = "Cargo Processing"; req_access = list(317)},/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
 "dm" = (/obj/effect/landmark/start/unsc_base_fallback,/turf/simulated/floor/tech/gray,/area/faction_base/oni/barracks)
+"dn" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
 "do" = (/obj/structure/table/steel_reinforced,/obj/item/bodybag/cryobag,/obj/item/bodybag/cryobag,/obj/item/bodybag/cryobag,/obj/item/roller,/obj/item/roller,/obj/item/roller,/obj/item/bodybag/cryobag,/obj/item/bodybag/cryobag,/obj/item/bodybag/cryobag,/obj/item/roller,/turf/simulated/floor/tiled/white,/area/faction_base/oni/medbay)
 "dp" = (/obj/machinery/door/airlock/multi_tile/halo/blast{name = "ONI Research"; req_access = list(315)},/turf/simulated/floor/tech/gray,/area/faction_base/oni/research)
 "dq" = (/obj/machinery/door/window/odst_armory{icon_state = "left"; dir = 8},/turf/simulated/floor/tech/gray,/area/faction_base/oni/barracks)
@@ -422,11 +424,11 @@ aaasckbqaWaWaWaWaWcjapcjcjdDcjaDsNeBsNaeaBaCaFaCaFaCaFaCaFaCaFaGaDHmaPaPaPaSaDbL
 aaasbqbqaWaWaWaWaWaWaWaWaWaWaWaDsNeBsNaeaHaFaFaFaFaFaFaFaFaFaFaGaDnVaPaPaPJPaDaPaPaPaPaPdQdTdZfbfbaDaa
 aaasbqcmcjcjcjmSaWaWaWaWaWaWaWaDsNeBsNaeaRaZaZaZaYaZaZaZbabbaZSnaDPGaPaPgvdeaDdlaPaDaDaDfXgqguguguaDaa
 aaasbqbqcjRwcjcjaWaWaWeAeAeAeDaDaDDraDaeaeaeaeaeaeaecIddaeaeaeaeaDaDaDdKaDaDaDaPgxdFgtgndJeygogmgnaDaa
-aaasbqbqcjcjcjcjaWaWaWcjcjcjcjbqeBeBdRdHdIdIdIdIdIdSeBeBbBaTaPsSaMeKgMaPaPaLdVaPgxgpemememgyememeqaDaa
+aaasbqbqcjcjcjcjaWaWaWcjcjcjcjbqeBeBdRdHdIdIdIdIdIdSeBeBbBaTaPsSaMeKgMaPaPaLdVaPgxgpaJememgyemaNeqaDaa
 aaasckbqbqbqbqbqbqbqbqbqbqbqbqbqeBeBdMdNdNdNdNdNdNdOeBeBetaPaPaPaPaPaPaPaPaPaPaPgxgremememgyememeqaDaa
 aaasbqbqbqbqcnbqakbqbqbqbqcnbqaueBeBdMdNdPdPdPdPdNdOfseBaPaPaPaPaPaPaPaPaPaPaPaPgxgsemememgyememeqaDaa
-aabfbfeIbVbfbfbfbfbfbfeIbVbfbfbfeBeBdMdNdPdPdPdPdNdOeBeBfHaPaPaPaPaPaPaPaPaPaPaPgxgpemememgyememeqaDaa
-aabfbibVbVbVbjbVbkbVbVbVbVfTfUbfeBeBdMfqdUdNdNdNdNdOeBeBaDaXcaflgRgRaPaPaPaPeagRgBaJgtgtgmgmgtgtgnaDaa
+aabfbfeIbVbfbfbfbfbfbfeIbVbfbfbfeBeBdMdNdPdPdPdPdNdOeBeBfHaPaPaPaPaPaPaPaPaPaPaPgxgpaJememgyemaNeqaDaa
+aabfbibVbVbVbjbVbkbVbVbVbVfTfUbfeBeBdMfqdUdNdNdNdNdOeBeBaDaXcaflgRgRaPaPaPaPeagRgBdngtgtgmgmgtgtgnaDaa
 aabfblbVbVdgbnbmbVbmbndgbVbVbVbVeBeBdRdWdWdWdWdWdWdReBfgaDaDaDaDfYgbgwgzaPfYgbgbgwaDLisXsXsXsXsXaDaDaa
 aabfbpbVbVbmbnbmbVbmbnbmbVbVbVfreBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBLEaDaa
 aabfbtbVbVdgbnbmbVbmbndgbVbVbubfeBeCeBeBeBeBeBdceBeBeCeBeBeBeBeCeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBaDaa
