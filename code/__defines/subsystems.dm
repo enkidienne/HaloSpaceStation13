@@ -90,6 +90,7 @@
 #define SS_INIT_UNIT_TESTS      -100
 
 // Process Scheduler Init Orders
+#define INIT_ORDER_PROFILER 101
 #define INIT_ORDER_DBCORE 18
 #define INIT_ORDER_BLACKBOX 17
 #define INIT_ORDER_SERVER_MAINT 16

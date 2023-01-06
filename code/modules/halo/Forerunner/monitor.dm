@@ -73,8 +73,8 @@
 	universal_understand = 1
 	ranged = 1
 	speak_chance = 7
-	health = 9999999999
-	maxHealth = 9999999999
+	health = 16777216
+	maxHealth = 16777216
 	resistance = 1000
 	feral = 1
 	var/npc_use_stunbeam = 1

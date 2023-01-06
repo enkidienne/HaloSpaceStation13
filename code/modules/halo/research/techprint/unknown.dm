@@ -6,7 +6,7 @@
 /datum/techprint/unknown/can_destruct_obj(var/obj/item/I)
 	//deconstruct anything and it might reveal a hidden techprint
 	return TRUE
-/
+
 /datum/techprint/unknown/GetPercent()
 	return 0
 

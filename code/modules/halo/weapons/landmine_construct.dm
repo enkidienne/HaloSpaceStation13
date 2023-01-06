@@ -105,6 +105,5 @@ payloads todo: explosive, EMP, gas, shrapnel, flame
 				update_desc()
 
 #undef STATE_EMPTY
-#undef STATE_SCANNER
 #undef STATE_PAYLOAD
 #undef STATE_WIRED

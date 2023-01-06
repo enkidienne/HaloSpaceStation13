@@ -906,6 +906,17 @@
 					/obj/item/stack/medical/ointment =3)
 	contraband = list(/obj/item/weapon/reagent_containers/pill/tox = 3)
 
+/obj/machinery/vending/wallmed3
+	name = "Medical Station"
+	desc = "A small wall-mounted medical vendor used in Covenant installations."
+	product_ads = "A wounded warrior is better than a dead one! Tend to your ailing wounds and continue to serve our glorius Covenant!"
+	icon_state = "wallmed_covenant"
+	density = 0
+	products = list(/obj/item/stack/medical/advanced/bruise_pack/covenant = 2,/obj/item/stack/medical/advanced/ointment/covenant = 2,/obj/item/weapon/reagent_containers/hypospray/autoinjector = 4,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/combat = 2,/obj/item/weapon/reagent_containers/hypospray/autoinjector/painkiller = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/necrosis = 1,/obj/item/weapon/reagent_containers/syringe/ld50_syringe/triadrenaline = 2,
+					/obj/item/device/healthanalyzer/covenant = 1,/obj/item/bodybag/cryobag/covenant = 1)
+
 /obj/machinery/vending/security
 	name = "SecTech"
 	desc = "A security equipment vendor."
