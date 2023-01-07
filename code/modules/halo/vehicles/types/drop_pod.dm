@@ -106,10 +106,6 @@
 	set name = "Launch Pod"
 	set src in range(1)
 	set category = "Vehicle"
-
-	if(movement_destroyed)
-		to_chat(usr,"<span class = 'notice'>[src] is unable to launch due to extensive damage</span>")
-		return
 	
 	if(!is_on_launchbay())
 		to_chat(usr,"<span class = 'notice'>[src] needs to be in a drop-bay to be launched.</span>")
@@ -139,6 +135,17 @@
 		launched = 1
 		spawn(5) //Slight delay so player clients can update.
 			post_drop_effects(drop_turf)
+		if(movement_destroyed) //Hurts players for using a destroyed pod
+			visible_message("<span class = 'danger'>The [src]s damaged systems malfunction causing it to violently crash into the ground.</span>")
+			for(var/mob/living/l in occupants) 
+				var/dam_max = BASE_VEHICLE_DEATH_EXPLODE_DAMAGE * ((bound_height / 32) + (bound_width / 32))/2 
+				l.adjustBruteLoss(dam_max/2)
+				dam_max /= 2
+				while(dam_max > 0)
+					var/dam_deal = rand(dam_max/3,dam_max)
+					dam_max -= dam_deal
+					l.adjustBruteLoss(dam_deal)
+			kick_occupants()
 
 /obj/vehicles/drop_pod/proc/post_drop_effects(var/turf/drop_turf)
 	//explosion(drop_turf,-1,0,2,5)
@@ -155,9 +162,6 @@
 	set src in range(1)
 	set category = "Vehicle"
 
-	if(movement_destroyed)
-		to_chat(usr,"<span class = 'notice'>[src] is unable to launch due to extensive damage</span>")
-		return
 	if(!is_on_launchbay())
 		to_chat(usr,"<span class = 'notice'>[src] needs to be in a drop-bay to be launched.</span>")
 		return
