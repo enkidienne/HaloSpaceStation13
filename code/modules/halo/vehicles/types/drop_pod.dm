@@ -107,6 +107,10 @@
 	set src in range(1)
 	set category = "Vehicle"
 
+	if(movement_destroyed)
+		to_chat(usr,"<span class = 'notice'>[src] is unable to launch due to extensive damage</span>")
+		return
+	
 	if(!is_on_launchbay())
 		to_chat(usr,"<span class = 'notice'>[src] needs to be in a drop-bay to be launched.</span>")
 		return
@@ -151,6 +155,9 @@
 	set src in range(1)
 	set category = "Vehicle"
 
+	if(movement_destroyed)
+		to_chat(usr,"<span class = 'notice'>[src] is unable to launch due to extensive damage</span>")
+		return
 	if(!is_on_launchbay())
 		to_chat(usr,"<span class = 'notice'>[src] needs to be in a drop-bay to be launched.</span>")
 		return
