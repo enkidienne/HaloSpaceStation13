@@ -51,6 +51,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on
 	use_power = 1
 	icon_state = "map_vent_out"
+	power_rating = 15000	//15 kW ~ 20 HP
 
 /obj/machinery/atmospherics/unary/vent_pump/siphon
 	pump_direction = 0
