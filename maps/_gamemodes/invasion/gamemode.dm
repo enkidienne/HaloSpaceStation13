@@ -69,6 +69,10 @@
 		//this is normally bad practice, but it seems to work fine in byond
 		factions.Add(F)
 
+	//Setup slipdrive-overload blocking.
+	for(var/obj/effect/overmap/om in list(GLOB.UNSC.base,GLOB.COVENANT.base,GLOB.INSURRECTION.base))
+		GLOB.disallow_slipdrive_explosion_zs |= om.map_z
+
 /datum/game_mode/outer_colonies/proc/setup_objectives()
 
 	//setup covenant objectives
