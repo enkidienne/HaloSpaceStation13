@@ -144,7 +144,7 @@ var/list/gamemode_cache = list()
 	var/walk_speed = 1
 
 	//Mob specific modifiers. NOTE: These will affect different mob types in different ways
-	var/human_delay = 0
+	var/human_delay = 1
 	var/robot_delay = 0
 	var/monkey_delay = 0
 	var/alien_delay = 0
