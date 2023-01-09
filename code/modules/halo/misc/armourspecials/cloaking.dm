@@ -3,8 +3,8 @@
 
 /datum/armourspecials/cloaking
 	var/cloak_active = 0
-	var/min_alpha = 15 //The minimum level of alpha to reach.
-	var/cloak_recover_time = 5 //The time in seconds it takes to recover to full cloak after being hit.
+	var/min_alpha = 45 //The minimum level of alpha to reach.
+	var/cloak_recover_time = 1.5 //The time in seconds it takes to recover to full cloak after being hit.
 	var/cloak_toggle_time = 2 //The time in seconds it takes to enable/disable the cloaking device.
 	var/cloak_disrupted = 0 //Is the cloak currently disrupted?
 	var/stored_blend_mode
@@ -17,8 +17,16 @@
 	stored_alpha = user.alpha
 	src.cloak_active = 1
 	user.blend_mode = BLEND_ADD
-	animate(user,alpha = min_alpha, color = CLOAKING_COLOUR, time = (cloak_toggle_time SECONDS))
-	if(cloak_disrupted)//This stops span from cloak disruption, but still applies the affects.
+	user.appearance_flags |= KEEP_TOGETHER
+	//let's get a colour similar to the terrain we're on, so we blend in a bit better.
+
+	var/turf/userturf = get_turf(user)
+	var/icon/i = icon(userturf.icon,userturf.icon_state)
+	var/turf_colour = i.GetPixel(rand(1,i.Width()),rand(1,i.Height()))
+	if(!turf_colour)
+		turf_colour = CLOAKING_COLOUR
+	animate(user,alpha = min_alpha, color = turf_colour, time = (cloak_toggle_time SECONDS))
+	if(cloak_disrupted)//This stops spam from cloak disruption, but still applies the affects.
 		return
 	if(voluntary)
 		user.visible_message("<span class = 'warning'>[user] activates their active camoflage</span>")
@@ -29,8 +37,9 @@
 /datum/armourspecials/cloaking/proc/deactivate_cloak(var/voluntary = 1)
 	src.cloak_active = 0
 	user.blend_mode = stored_blend_mode
-	animate(user,color = stored_colour, alpha = 255, time = (cloak_toggle_time SECONDS))
-	if(cloak_disrupted)//This stops span from cloak disruption, but still applies the affects.
+	user.appearance_flags &= KEEP_TOGETHER
+	animate(user,color = stored_colour, alpha = stored_alpha, time = (cloak_toggle_time SECONDS))
+	if(cloak_disrupted)//This stops spam from cloak disruption, but still applies the affects.
 		return
 	if(voluntary)
 		user.visible_message("<span class = 'warning'>[user] deactivates their active camoflage</span>")
@@ -44,7 +53,9 @@
 	src.cloak_disrupted = 1
 	deactivate_cloak(0)
 	spawn(disrupt_time SECONDS)
+		to_chat(user,"<span class = 'notice'>Your cloaking reasserts itself.</span>")
 		src.cloak_disrupted = 0
+		activate_cloak(0)
 
 /datum/armourspecials/cloaking/try_item_action()
 	if(!cloak_active)
