@@ -228,7 +228,7 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/weapon/storage/pill_bottle/bicaridine,
 	/obj/item/weapon/storage/pill_bottle/dermaline,
 	/obj/item/weapon/storage/pill_bottle/polypseudomorphine,
-	/obj/item/weapon/reagent_containers/syringe/psychostimulant
+	/obj/item/weapon/reagent_containers/syringe/psychostimulant,
 	)
 
 /datum/support_option/supply_drop/medical_drop/cov
@@ -250,7 +250,7 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/weapon/storage/pill_bottle/covenant/bicaridine,
 	/obj/item/weapon/storage/pill_bottle/covenant/dermaline,
 	/obj/item/weapon/storage/pill_bottle/covenant/polypseudomorphine,
-	/obj/item/weapon/reagent_containers/syringe/psychostimulant
+	/obj/item/weapon/reagent_containers/syringe/psychostimulant,
 	)
 
 //RECON VEHICLE DROP//
@@ -290,8 +290,8 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/stack/material/plasteel/ten,
 	/obj/item/stack/material/plasteel/ten,
 	/obj/item/stack/material/plasteel/ten,
-	/obj/item/weapon/storage/toolbox/mechanical
-	/obj/item/clothing/glasses/welding
+	/obj/item/weapon/storage/toolbox/mechanical,
+	/obj/item/clothing/glasses/welding,
 	)
 
 /datum/support_option/supply_drop/construction_drop/cov
@@ -310,6 +310,6 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/stack/material/nanolaminate/ten,
 	/obj/item/stack/material/nanolaminate/ten,
 	/obj/item/stack/material/nanolaminate/ten,
-	/obj/item/weapon/storage/toolbox/covenant_mech
-	/obj/item/clothing/glasses/welding
+	/obj/item/weapon/storage/toolbox/covenant_mech,
+	/obj/item/clothing/glasses/welding,
 	)
