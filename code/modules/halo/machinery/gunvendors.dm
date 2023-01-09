@@ -638,6 +638,7 @@
 					/obj/item/weapon/storage/pill_bottle/inaprovaline = 6,
 					"Injectors" = -1,
 					/obj/item/weapon/reagent_containers/hypospray = 3,
+					/obj/item/weapon/reagent_containers/syringe/psychostimulant = 10,
 					/obj/item/weapon/reagent_containers/syringe/ld50_syringe/triadrenaline = 10,
 					/obj/item/weapon/storage/box/syringes = 2,
 					)

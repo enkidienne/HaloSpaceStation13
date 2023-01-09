@@ -12,7 +12,7 @@
 	name = "Tri-Adrenaline"
 	description = "An extremely powerful synthetic stimulant. Capable of restarting a human heart."
 	reagent_state = LIQUID
-	color = "#00BFFF" //Same as inaprovaline because why not!
+	color = "#00BFFF"
 	metabolism = 0.2
 	overdose = REAGENTS_OVERDOSE
 	scannable = 1
@@ -45,7 +45,7 @@
 
 /datum/reagent/biofoampenaliser
 	name = "Bio-Foam Remnants"
-	description = "The remnants of biofoam, clogging the person's body and stopping further biofoam usage"
+	description = "The remnants of biofoam, clogging the person's body and stopping further biofoam usage."
 	reagent_state = LIQUID
 	color = "#edd9c0"
 	metabolism = REM*3
@@ -75,7 +75,7 @@
 		o.status &= ~ORGAN_BLEEDING
 		o.clamp_organ()
 		o.update_damages()
-		to_chat(o.owner,"<span class = 'notice'>You feel the biofoam stop the bleeding in your [o.name]</span>")
+		to_chat(o.owner,"<span class = 'notice'>You feel the biofoam stop the bleeding in your [o.name].</span>")
 
 /datum/reagent/biofoam/proc/mend_external(var/mob/living/carbon/human/H)
 	var/fixed_anything = 0
@@ -90,7 +90,7 @@
 			H.custom_pain("<span class = 'userdanger'>You feel the bones in your [o.name] being pushed into place.</span>",10)
 			fixed_anything = 1
 	if(fixed_anything)
-		to_chat(H,"<span class = 'notice'>You feel your limbs knitting themselves back together</span>")
+		to_chat(H,"<span class = 'notice'>You feel your limbs knitting themselves back together.</span>")
 
 /datum/reagent/biofoam/proc/mend_internal(var/mob/living/carbon/human/H)
 	var/fixed_anything = 0
@@ -100,7 +100,7 @@
 			I.damage = max(I.min_bruised_damage,I.damage-I.min_bruised_damage)
 			fixed_anything = 1
 	if(fixed_anything)
-		to_chat(H,"<span class = 'notice'>You feel your organs knitting themselves back together</span>")
+		to_chat(H,"<span class = 'notice'>You feel your organs knitting themselves back together.</span>")
 
 /datum/reagent/biofoam/proc/fix_wounds(var/mob/living/carbon/human/H)
 	var/fixed_anything = 0
@@ -135,7 +135,7 @@
 
 /datum/reagent/biofoam/affect_blood(var/mob/living/carbon/M,var/alien,var/removed) //Biofoam stops internal and external bleeding, heals organs and fixes bones.
 	if(istype(M,/mob/living/carbon/human))
-		M.custom_pain("You feel a searing pain in your veins",3)
+		M.custom_pain("You feel a searing pain in your veins.",3)
 		remove_embedded(M)
 		mend_internal(M)
 		fix_wounds(M)
@@ -178,7 +178,7 @@
 
 /datum/reagent/hyperzine_concentrated
 	name = "Concentrated Hyperzine"
-	description = "A long-lasting, powerful muscle stimulant. A concentrated version of Hyperzine, forgoing safety to provide a considerable boost the the user's speed and reaction time."
+	description = "A long-lasting, powerful muscle stimulant. A concentrated version of Hyperzine, forgoing safety to provide a considerable boost to the user's speed and reaction time."
 	taste_description = "acid"
 	reagent_state = LIQUID
 	color = "#FF3300"
@@ -201,7 +201,7 @@
 	. = ..()
 /datum/reagent/cryoprethaline
 	name = "Cryoprethaline"
-	description = "A cellular ice crystal formation inhibitor. Protects from the extreme cold of cryostasis"
+	description = "A cellular ice crystal formation inhibitor. Protects from the extreme cold of cryostasis."
 	taste_description = "lemon-lime"
 	reagent_state = LIQUID
 	color = "#DCD9CD"
@@ -253,7 +253,7 @@
 
 /datum/reagent/ketoprofen
 	name = "Ketoprofen"
-	description = "An anti-pyretic and painkiller"
+	description = "An anti-pyretic and painkiller."
 	taste_description = "chalk"
 	reagent_state = LIQUID
 	color = "#C8A5DC"
