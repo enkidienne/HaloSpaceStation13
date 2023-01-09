@@ -34,10 +34,10 @@
 	/obj/item/ammo_magazine/ma5b/m118,
 	/obj/item/ammo_magazine/ma5b/m118,
 	/obj/item/ammo_magazine/ma5b/m118,
-	/obj/item/ammo_magazine/m6d/m224,
-	/obj/item/ammo_magazine/m6d/m224,
-	/obj/item/ammo_magazine/m6d/m224,
-	/obj/item/ammo_magazine/m6d/m224,
+	/obj/item/ammo_magazine/m6d/m225,
+	/obj/item/ammo_magazine/m6d/m225,
+	/obj/item/ammo_magazine/m6d/m225,
+	/obj/item/ammo_magazine/m6d/m225,
 	/obj/item/ammo_magazine/m392/m120,
 	/obj/item/ammo_magazine/m392/m120,
 	/obj/item/ammo_magazine/m392/m120,
@@ -50,6 +50,8 @@
 	/obj/item/ammo_magazine/br55/m634,
 	/obj/item/ammo_magazine/br55/m634,
 	/obj/item/ammo_magazine/br55/m634,
+	/obj/item/ammo_box/shotgun,
+	/obj/item/ammo_box/shotgun,
 	/obj/item/ammo_box/shotgun,
 	/obj/item/ammo_box/shotgun,
 	)
@@ -89,6 +91,8 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/ammo_magazine/br55/m634,
 	/obj/item/ammo_box/shotgun,
 	/obj/item/ammo_box/shotgun,
+	/obj/item/ammo_box/shotgun,
+	/obj/item/ammo_box/shotgun,
 	)
 
 /datum/support_option/supply_drop/mass_ammo/urf
@@ -108,10 +112,10 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/ammo_magazine/ma37/m118,
 	/obj/item/ammo_magazine/ma37/m118,
 	/obj/item/ammo_magazine/ma37/m118,
-	/obj/item/ammo_magazine/m6d/m224,
-	/obj/item/ammo_magazine/m6d/m224,
-	/obj/item/ammo_magazine/m6d/m224,
-	/obj/item/ammo_magazine/m6d/m224,
+	/obj/item/ammo_magazine/m6d/m225,
+	/obj/item/ammo_magazine/m6d/m225,
+	/obj/item/ammo_magazine/m6d/m225,
+	/obj/item/ammo_magazine/m6d/m225,
 	/obj/item/ammo_magazine/m392/m120,
 	/obj/item/ammo_magazine/m392/m120,
 	/obj/item/ammo_magazine/m392/m120,
@@ -124,10 +128,11 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/ammo_magazine/br55/m634,
 	/obj/item/ammo_magazine/br55/m634,
 	/obj/item/ammo_magazine/br55/m634,
+	/obj/item/ammo_box/shotgun,
+	/obj/item/ammo_box/shotgun,
 	/obj/item/ammo_box/shotgun,
 	/obj/item/ammo_box/shotgun,
 	)
-
 
 /datum/support_option/supply_drop/mass_ammo/cov
 	name = "Supply Drop (Covenant, Ammunition, Mass )"
@@ -144,6 +149,11 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/ammo_magazine/spiker,
 	/obj/item/ammo_magazine/spiker,
 	/obj/item/ammo_magazine/spiker,
+	/obj/item/ammo_magazine/spiker,
+	/obj/item/ammo_magazine/mauler,
+	/obj/item/ammo_magazine/mauler,
+	/obj/item/ammo_magazine/mauler,
+	/obj/item/ammo_magazine/mauler,
 	/obj/item/ammo_magazine/needles,
 	/obj/item/ammo_magazine/needles,
 	/obj/item/ammo_magazine/needles,
@@ -156,7 +166,6 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/ammo_magazine/rifleneedlepack,
 	/obj/item/ammo_magazine/rifleneedlepack,
 	/obj/item/ammo_magazine/rifleneedlepack,
-
 	)
 
 /datum/support_option/supply_drop/personalised_ammo//re-enabled for power/specialist roles and up only.
@@ -218,7 +227,8 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/weapon/storage/firstaid/combat/unsc,
 	/obj/item/weapon/storage/pill_bottle/bicaridine,
 	/obj/item/weapon/storage/pill_bottle/dermaline,
-	/obj/item/weapon/storage/pill_bottle/polypseudomorphine
+	/obj/item/weapon/storage/pill_bottle/polypseudomorphine,
+	/obj/item/weapon/reagent_containers/syringe/psychostimulant
 	)
 
 /datum/support_option/supply_drop/medical_drop/cov
@@ -239,7 +249,8 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	/obj/item/weapon/storage/firstaid/combat/unsc/cov,
 	/obj/item/weapon/storage/pill_bottle/covenant/bicaridine,
 	/obj/item/weapon/storage/pill_bottle/covenant/dermaline,
-	/obj/item/weapon/storage/pill_bottle/covenant/polypseudomorphine
+	/obj/item/weapon/storage/pill_bottle/covenant/polypseudomorphine,
+	/obj/item/weapon/reagent_containers/syringe/psychostimulant
 	)
 
 //RECON VEHICLE DROP//
@@ -266,7 +277,7 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 	name = "Supply Drop (UNSC Construction/Reinforcement)"
 	desc = "Contains a variety of materials and some tools for construction and reinforcement of a position."
 	rank_required = 2
-	cooldown_inflict = 3 MINUTES
+	cooldown_inflict = 5 MINUTES
 	item_to_drop = /obj/structure/closet/crate/supply_drop/construction
 
 /obj/structure/closet/crate/supply_drop/construction
@@ -275,14 +286,12 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 
 /obj/structure/closet/crate/supply_drop/construction/WillContain()
 	return list(\
-	/obj/item/stack/material/steel/ten,
-	/obj/item/stack/material/steel/ten,
-	/obj/item/stack/material/steel/ten,
-	/obj/item/stack/material/steel/ten,
+	/obj/item/stack/material/steel/fifty,
 	/obj/item/stack/material/plasteel/ten,
 	/obj/item/stack/material/plasteel/ten,
-	/obj/item/weapon/wrench,
-	/obj/item/weapon/weldingtool,
+	/obj/item/stack/material/plasteel/ten,
+	/obj/item/weapon/storage/toolbox/mechanical
+	/obj/item/clothing/glasses/welding
 	)
 
 /datum/support_option/supply_drop/construction_drop/cov
@@ -297,13 +306,10 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 
 /obj/structure/closet/crate/supply_drop/cov/construction/WillContain()
 	return list(\
-	/obj/item/stack/material/steel/ten,
-	/obj/item/stack/material/steel/ten,
-	/obj/item/stack/material/steel/ten,
+	/obj/item/stack/material/steel/fifty,
 	/obj/item/stack/material/nanolaminate/ten,
 	/obj/item/stack/material/nanolaminate/ten,
-	/obj/item/stack/material/plasteel/ten,
-	/obj/item/stack/material/plasteel/ten,
-	/obj/item/weapon/wrench,
-	/obj/item/weapon/weldingtool,
+	/obj/item/stack/material/nanolaminate/ten,
+	/obj/item/weapon/storage/toolbox/covenant_mech
+	/obj/item/clothing/glasses/welding
 	)

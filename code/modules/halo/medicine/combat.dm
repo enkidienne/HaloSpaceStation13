@@ -1,7 +1,7 @@
 // Combat medical equipment
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/combat
 	name = "combat stabilization autoinjector"
-	desc = "Contains a drug cocktail designed to help stabilized critically injured troops"
+	desc = "Contains a drug cocktail designed to help stabilize critically injured troops."
 	band_color = COLOR_RED
 
 	amount_per_transfer_from_this = 15
@@ -11,14 +11,14 @@
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/necrosis
 	name = "tissue necrosis inhibitors"
-	desc = "Contains drugs that inhibit organ necrosis"
+	desc = "Contains drugs that inhibit organ necrosis."
 	band_color = COLOR_PURPLE
 
 	starts_with = list(/datum/reagent/peridaxon = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/antibiotic
 	name = "antibiotics autoinjector"
-	desc = "Contains a large dose of broad-spectrum antibiotics"
+	desc = "Contains a large dose of broad-spectrum antibiotics."
 	band_color = COLOR_DARK_GRAY
 
 	amount_per_transfer_from_this = 15
@@ -28,7 +28,7 @@
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/painkiller
 	name = "oxycodone autoinjector"
-	desc = "Contains a large dose of highly effective painkillers"
+	desc = "Contains a large dose of highly effective painkillers."
 	band_color = COLOR_BLUE
 
 	amount_per_transfer_from_this = 10
@@ -38,7 +38,7 @@
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/otomax
 	name = "otomax autoinjector"
-	desc = "Contains chemicals that reduce ear damage"
+	desc = "Contains chemicals that rapidly cure hearing loss."
 	band_color = COLOR_YELLOW
 
 	amount_per_transfer_from_this = 10
