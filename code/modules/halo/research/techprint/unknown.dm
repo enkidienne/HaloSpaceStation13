@@ -15,7 +15,8 @@
 	var/list/results = list()
 	. = results
 	for(var/check_type in GLOB.techprints_hidden)
-		if(ispath(I.type, check_type))
+		var/list/check_list = list(check_type)
+		if(check_objs(I,FALSE,check_list) || check_materials(I,FALSE,check_list) || check_reagents(I,FALSE,check_list))
 			results += GLOB.techprints_hidden[check_type]
 
 /datum/techprint/unknown/UpdateReqsString()

@@ -31,12 +31,12 @@ GLOBAL_VAR_INIT(tech_initialized, FALSE)
 		if(new_techprint.hidden)
 
 			//there should only be 1 entry in required_objs for hidden techs
-			if(new_techprint.required_objs.len > 1)
+			if(new_techprint.required_materials.len + new_techprint.required_reagents.len + new_techprint.required_objs.len > 1)
 				to_debug_listeners("TECH ERROR: hidden techprint [new_techprint.type] \
 					has more than 1 destroy trigger (len:[new_techprint.required_objs.len])! \
 					[english_list(new_techprint.required_objs)]")
 
-			for(var/checktype in new_techprint.required_objs)
+			for(var/checktype in new_techprint.required_materials + new_techprint.required_reagents + new_techprint.required_objs)
 
 				//they are indexed by the "destroy" type
 				//so if there is 2 hidden techs with the same destroy type, it's a problem
