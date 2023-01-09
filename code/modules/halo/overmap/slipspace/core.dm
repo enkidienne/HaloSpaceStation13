@@ -10,7 +10,7 @@
 //CORE PAYLOADS//
 /obj/payload/slipspace_core
 	name = "Slipspace Core"
-	desc = "The core of a slipspace device, detached and armed."
+	desc = "The core of a slipspace device, detached and ready to arm."
 	icon_state = "core"
 	activeoverlay =  "core_active"
 	w_class = ITEM_SIZE_HUGE
@@ -21,6 +21,10 @@
 	seconds_to_disarm = 30 // 30 sesconds to disarm.
 
 /obj/payload/slipspace_core/attack_hand(var/mob/living/carbon/human/user)
+	var/turf/t = get_turf(src)
+	if(t.z in GLOB.disallow_slipdrive_explosion_zs)
+		to_chat(user,"<span class = 'warning'>[src] hums for a moment, then stops. Something must be interfering with the slipspace field.</span>")
+		return
 	. = ..()
 	if(exploding && !disarming)
 		for(var/mob/player in GLOB.mobs_in_sectors[map_sectors["[z]"]])

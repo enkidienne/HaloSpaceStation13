@@ -1,4 +1,6 @@
 
+GLOBAL_LIST_EMPTY(disallow_slipdrive_explosion_zs)
+
 /obj/machinery/slipspace_engine
 	name = "Slipspace Engine"
 	desc = "An advanced machine capable of generating a safe bubble around the ship before entry into slipspace."
