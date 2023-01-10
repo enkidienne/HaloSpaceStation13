@@ -34,6 +34,7 @@
 		gm = ticker.mode
 		if(gm)
 			if(!istype(gm,/datum/game_mode/outer_colonies))
+				gm = null
 				forceMove(null)
 				GLOB.processing_objects -= src
 				qdel(src)
