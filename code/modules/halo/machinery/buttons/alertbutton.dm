@@ -1,4 +1,6 @@
 
+#define DEFAULT_LIGHT_STRING "#a0a080"
+
 /obj/machinery/button/toggle/alarm_button
 	var/area/area_base = null
 	var/alert_message = "Red Alert! All hands to combat stations!"
@@ -40,10 +42,11 @@
 	for(var/obj/machinery/light/l in GLOB.machines)
 		if(!istype(l.loc.loc,area_base))
 			continue
-		if(on && l.brightness_color == "#FFFFFF") //Only switch the color of lights that haven't been touched already.
-			l.brightness_color = alarm_color_string
-		else
-			l.brightness_color = "#FFFFFF" //The base light-color.
+		if(on)
+			if(l.brightness_color == DEFAULT_LIGHT_STRING) //Only switch the color of lights that haven't been touched already.
+				l.brightness_color = alarm_color_string
+		else if (l.brightness_color == alarm_color_string)
+			l.brightness_color = DEFAULT_LIGHT_STRING //The base light-color.
 		l.update()
 
 //Stupid snowflake button for both sound and door control at the same time
