@@ -31,7 +31,7 @@
 	else
 		var/list/colour_list = rgb2num(turf_colour)
 		//Make sure we're darkened.
-		turf_colour = rgb(colour_list[1]*COLOUR_DARKEN_MOD,g=colour_list[2]*COLOUR_DARKEN_MOD,b=colour_list[3]*COLOUR_DARKEN_MOD)
+		turf_colour = rgb(colour_list[1]*COLOUR_DARKEN_MOD,colour_list[2]*COLOUR_DARKEN_MOD,colour_list[3]*COLOUR_DARKEN_MOD)
 	animate(user,alpha = min_alpha, color = turf_colour, time = (cloak_toggle_time SECONDS))
 	if(cloak_disrupted)//This stops spam from cloak disruption, but still applies the affects.
 		return
