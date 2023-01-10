@@ -374,6 +374,7 @@
 	desc = "Leg armour, to be used with the Sangheili Combat Harness."
 	icon_state = "specops_legs_obj"
 	item_state = "specops_legs"
+	stepsound = 'code/modules/halo/sounds/walk_sounds/generic_walk.ogg'
 
 /obj/item/clothing/gloves/thick/sangheili/specops
 	name = "Sanghelli Combat Gauntlets (Spec-Ops)"
@@ -413,6 +414,7 @@
 	desc = "Leg armour, to be used with the Sangheili Combat Harness."
 	icon_state = "ss_legs_obj"
 	item_state = "ss_legs"
+	stepsound = 'code/modules/halo/sounds/walk_sounds/generic_walk.ogg'
 
 /obj/item/clothing/gloves/thick/sangheili/silentshadow
 	name = "Sanghelli Combat Gauntlets (Silent Shadow)"
