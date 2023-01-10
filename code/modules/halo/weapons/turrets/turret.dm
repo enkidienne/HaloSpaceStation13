@@ -263,7 +263,7 @@
 	burst_accuracy = list(0,0,0,0,0,0,-1)
 	dispersion = list(0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.2,1.4)
 
-	slowdown_general = 1.5
+	slowdown_general = 0.8
 
 	var/load_time = 1 //The time it takes to load the weapon, in seconds.
 	var/removed_from_turret = 0 //If the gun has been removed from the turret base.
