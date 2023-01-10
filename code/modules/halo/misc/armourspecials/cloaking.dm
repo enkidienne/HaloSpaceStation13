@@ -18,6 +18,8 @@
 	src.cloak_active = 1
 	user.blend_mode = BLEND_ADD
 	user.appearance_flags |= KEEP_TOGETHER
+	if(user.mouse_opacity != 0)
+		user.mouse_opacity = 0
 	//let's get a colour similar to the terrain we're on, so we blend in a bit better.
 
 	var/turf/userturf = get_turf(user)
@@ -38,6 +40,7 @@
 	src.cloak_active = 0
 	user.blend_mode = stored_blend_mode
 	user.appearance_flags &= KEEP_TOGETHER
+	user.mouse_opacity = 1
 	animate(user,color = stored_colour, alpha = stored_alpha, time = (cloak_toggle_time SECONDS))
 	if(cloak_disrupted)//This stops spam from cloak disruption, but still applies the affects.
 		return
