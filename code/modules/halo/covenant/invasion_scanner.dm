@@ -11,6 +11,10 @@
 	var/explosive_hits = 4
 	var/regen_at = 0
 
+/obj/structure/invasion_scanner/Initialize()
+	. = ..()
+	GLOB.processing_objects += src
+
 /obj/structure/invasion_scanner/ex_act(var/severity)
 	explosive_hits -= (round(3/severity))
 	if(explosive_hits <= 0)
@@ -21,10 +25,19 @@
 		regen_at = world.time + HIT_REGEN_TIME
 
 /obj/structure/invasion_scanner/process()
-	if(world.time >= regen_at)
-		explosive_hits = initial(explosive_hits)
-		regen_at = 0
-		GLOB.processing_objects -= src
+	if(gm)
+		if(world.time >= regen_at)
+			explosive_hits = initial(explosive_hits)
+			regen_at = 0
+			GLOB.processing_objects -= src
+	else
+		gm = ticker.mode
+		if(gm)
+			if(!istype(gm,/datum/game_mode/outer_colonies))
+				gm = null
+				forceMove(null)
+				GLOB.processing_objects -= src
+				qdel(src)
 
 /obj/structure/invasion_scanner/examine(var/mob/user)
 	. = ..()
@@ -66,10 +79,12 @@
 	anchored = !anchored
 
 /obj/structure/invasion_scanner/Destroy()
-	gm = ticker.mode
 	if(gm)
 		gm.register_scanner_destroy()
 	var/obj/effect/landmark/scanning_point/point = locate(/obj/effect/landmark/scanning_point) in range(2,src)
 	if(point && point.active_scanner == src)
 		point.active_scanner = null
 	. = ..()
+
+#undef HIT_REGEN_TIME
+

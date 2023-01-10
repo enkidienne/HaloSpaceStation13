@@ -9,6 +9,8 @@
 
 #include "objectives.dm"
 
+//There's also an include at the bottom of the file for postload includes.
+
 /datum/game_mode/outer_colonies
 	name = "Outer Colonies"
 	config_tag = "outer_colonies"
@@ -450,6 +452,8 @@
 
 		check_finished()
 
+
+#include "postload_includes.dm"
 
 #undef SCANNER_TICK_DELAY
 #undef BASE_SCANNER_DESTROYABLE_AMOUNT
