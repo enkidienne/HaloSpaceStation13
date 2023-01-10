@@ -1,5 +1,6 @@
 
 #define CLOAKING_COLOUR "#808080"
+#define COLOUR_DARKEN_MOD 0.75
 
 /datum/armourspecials/cloaking
 	var/cloak_active = 0
@@ -27,6 +28,10 @@
 	var/turf_colour = i.GetPixel(rand(1,i.Width()),rand(1,i.Height()))
 	if(!turf_colour)
 		turf_colour = CLOAKING_COLOUR
+	else
+		var/list/colour_list = rgb2num(turf_colour)
+		//Make sure we're darkened.
+		turf_colour = rgb(colour_list[1]*COLOUR_DARKEN_MOD,g=colour_list[2]*COLOUR_DARKEN_MOD,b=colour_list[3]*COLOUR_DARKEN_MOD)
 	animate(user,alpha = min_alpha, color = turf_colour, time = (cloak_toggle_time SECONDS))
 	if(cloak_disrupted)//This stops spam from cloak disruption, but still applies the affects.
 		return
@@ -56,7 +61,6 @@
 	src.cloak_disrupted = 1
 	deactivate_cloak(0)
 	spawn(disrupt_time SECONDS)
-		to_chat(user,"<span class = 'notice'>Your cloaking reasserts itself.</span>")
 		src.cloak_disrupted = 0
 		activate_cloak(0)
 
@@ -76,9 +80,9 @@
 /datum/armourspecials/cloaking/tryemp(severity)
 	switch(severity)
 		if(1)
-			disrupt_cloak(cloak_recover_time*2)
+			disrupt_cloak(cloak_recover_time*3)
 		if(2)
-			disrupt_cloak(cloak_recover_time*4)
+			disrupt_cloak(cloak_recover_time*6)
 
 /datum/armourspecials/cloaking/cov_specops
 	min_alpha = 45
@@ -88,10 +92,13 @@
 //Overall, SPI is a little bit worse than covenant cloak, but the unsc can produce more through research
 /datum/armourspecials/cloaking/human_spi
 	min_alpha = 50
-	cloak_recover_time = 3
+	cloak_recover_time = 5
 	cloak_toggle_time = 3
 
 /datum/armourspecials/cloaking/silentshadow
 	min_alpha=1 ///These are meant to be 100% admin-spawn kill-squads, so... have fun
 	cloak_recover_time = 2
 	cloak_toggle_time = 0.5
+
+#undef CLOAKING_COLOUR
+#undef COLOUR_DARKEN_MOD
