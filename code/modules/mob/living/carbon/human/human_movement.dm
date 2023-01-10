@@ -76,7 +76,8 @@
 		tally += T.get_movement_delay()
 
 	if(CE_SLOWREMOVE in chem_effects) //Goes here because it checks the full tally first.
-		tally =  max(0, tally - SLOWDOWN_REMOVAL_CHEM_MAX_REMOVED)
+		if(tally > 0)
+			tally = max(0, tally - SLOWDOWN_REMOVAL_CHEM_MAX_REMOVED)
 
 	if(CE_SPEEDBOOST in chem_effects)
 		tally -= SPEEDBOOST_CHEM_SPEED_INCREASE
