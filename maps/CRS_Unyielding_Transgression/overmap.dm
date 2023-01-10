@@ -28,11 +28,11 @@
 
 //Placeholders for the mapfile. If they have no desc they'll self-delete.
 /obj/structure/invasion_scanner/Initialize()
+	.=..()
 	if(isnull(desc))
 		return INITIALIZE_HINT_QDEL
-	.=..()
 
 /obj/structure/invasion_bombspawner/Initialize()
+	.=..()
 	if(isnull(desc))
 		return INITIALIZE_HINT_QDEL
-	.=..()
