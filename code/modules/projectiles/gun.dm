@@ -52,7 +52,7 @@
 	attack_verb = list("struck", "hit", "bashed")
 	zoomdevicename = "scope"
 
-	slowdown_general = 0.1
+	slowdown_general = 0.15
 
 	var/unique_name
 	var/burst = 1

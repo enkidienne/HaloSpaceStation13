@@ -15,7 +15,7 @@
 	caliber="flamethrower"
 	fire_delay = 7
 	one_hand_penalty = 3
-	slowdown_general = 0.15
+	slowdown_general = 0.20
 	dispersion = list(0.4)
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/na4_tank

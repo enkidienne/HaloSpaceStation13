@@ -26,7 +26,7 @@
 		slot_back_str = 'code/modules/halo/weapons/icons/Back_Weapons.dmi',
 		)
 	move_delay_malus = 1.5
-	slowdown_general = 0.4
+	slowdown_general = 0.5
 
 	burst = 12
 
