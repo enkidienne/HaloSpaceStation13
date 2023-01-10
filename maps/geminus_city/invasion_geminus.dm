@@ -1,6 +1,4 @@
 
-#include "../../code/modules/halo/covenant/invasion_scanner.dm"
-
 #include "../npc_ships/om_ship_areas.dm"
 #include "../area_holders/overmap_ship_area_holder.dmm"
 
