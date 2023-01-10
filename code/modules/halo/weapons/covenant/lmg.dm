@@ -15,7 +15,7 @@
 	dispersion = list(0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.6, 0.6, 0.6, 0.6)
 	w_class = ITEM_SIZE_HUGE
 	move_delay_malus = 1.5
-	slowdown_general = 1
+	slowdown_general = 0.5
 	item_icons = list(
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',

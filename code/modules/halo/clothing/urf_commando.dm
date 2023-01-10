@@ -115,7 +115,7 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	item_state_slots = list(slot_l_hand_str = "urf_armor", slot_r_hand_str = "urf_armor")
 	armor_thickness = 20
-	slowdown_general = 1
+	slowdown_general = 0.2
 
 /obj/item/clothing/suit/armor/special/soe/New()
 	..()

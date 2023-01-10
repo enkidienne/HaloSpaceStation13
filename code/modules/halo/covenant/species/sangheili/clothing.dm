@@ -400,7 +400,7 @@
 	name = "Sangheili Combat Harness (Silent Shadow)"
 	icon_state = "ss_chest_obj"
 	item_state = "ss_chest"
-	slowdown_general = -2 //They're meant to be primarily melee-only and admemespawn anyway, so.
+	slowdown_general = -1 //They're meant to be primarily melee-only and admemespawn anyway, so.
 	totalshields = 210
 	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/sangheili,/datum/armourspecials/cloaking/silentshadow)
 	action_button_name = "Toggle Active Camouflage"
