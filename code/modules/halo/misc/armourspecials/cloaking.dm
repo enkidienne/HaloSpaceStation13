@@ -80,6 +80,17 @@
 		if(2)
 			disrupt_cloak(cloak_recover_time*4)
 
+/datum/armourspecials/cloaking/cov_specops
+	min_alpha = 45
+	cloak_recover_time = 1.5
+	cloak_toggle_time = 2
+
+//Overall, SPI is a little bit worse than covenant cloak, but the unsc can produce more through research
+/datum/armourspecials/cloaking/human_spi
+	min_alpha = 50
+	cloak_recover_time = 3
+	cloak_toggle_time = 3
+
 /datum/armourspecials/cloaking/silentshadow
 	min_alpha=1 ///These are meant to be 100% admin-spawn kill-squads, so... have fun
 	cloak_recover_time = 2

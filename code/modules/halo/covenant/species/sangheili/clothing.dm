@@ -366,7 +366,7 @@
 	icon_state = "specops_chest_obj"
 	item_state = "specops_chest"
 	totalshields = 150
-	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/sangheili,/datum/armourspecials/cloaking)
+	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/sangheili,/datum/armourspecials/cloaking/cov_specops)
 	action_button_name = "Toggle Active Camouflage"
 
 /obj/item/clothing/shoes/sangheili/specops

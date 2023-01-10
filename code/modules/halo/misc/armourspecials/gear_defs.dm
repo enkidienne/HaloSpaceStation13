@@ -30,3 +30,11 @@
 /datum/armourspecials/gear/mjolnir_boots
 	gear_type = /obj/item/clothing/shoes/magboots/spartan
 	equip_slot = slot_shoes
+
+/datum/armourspecials/gear/spi_gloves
+	gear_type = /obj/item/clothing/gloves/SPIgen1
+	equip_slot = slot_gloves
+
+/datum/armourspecials/gear/spi_boots
+	gear_type = /obj/item/clothing/shoes/magboots/SPIgen1
+	equip_slot = slot_shoes
