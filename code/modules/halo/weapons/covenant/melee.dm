@@ -150,7 +150,7 @@
 	edge = 0
 	sharp = 0
 
-	disrupt_cloak = 0
+	cloak_disrupt = 0
 
 	lunge_dist = 2
 	start_execute_messages  = list(BP_CHEST = "\The USER prepares to run \the VICTIM through with \the WEAPON!", BP_HEAD = "\The USER steps over \the VICTIM and winds up their arm, holding \the WEAPON!")
