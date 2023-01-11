@@ -56,6 +56,7 @@
 	poplock_max = 1
 	poplock_divisor = 5
 	faction_whitelist = "Covenant"
+	whitelisted_species = list(/datum/species/unggoy)
 	pop_balance_mult = 1.5
 
 /* Not available during standard play */
