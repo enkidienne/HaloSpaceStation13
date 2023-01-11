@@ -472,7 +472,7 @@
 	src.status_error = 0
 	GLOB.nanomanager.update_uis(src)
 
-	if (R.category & CAT_COIN)
+	if (!emagged && R.category & CAT_COIN)
 		if(!coin)
 			to_chat(user, "<span class='notice'>You need to insert a coin to get this item.</span>")
 			return 0

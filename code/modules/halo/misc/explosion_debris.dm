@@ -19,11 +19,11 @@
 /obj/structure/destructible/Cross(var/obj/vehicles/crosser)
 	. = ..()
 	if(!.)
-		if(istype(crosser) && !crosser.can_overrun_cover)//Cover-overruners need to collide.
+		if(istype(crosser))
 			return 1
 
 /obj/structure/destructible/explosion_debris/CanPass(var/obj/vehicles/vpass)
-	if(istype(vpass) && !vpass.can_overrun_cover) //Cover-overrunners need to collide.
+	if(istype(vpass))
 		return 1
 	for(var/type in PROJECTILES_DEBRIS_IGNORE)
 		if(istype(vpass,type))
@@ -31,7 +31,7 @@
 	. = ..()
 
 /obj/structure/destructible/explosion_debris/CheckExit(var/obj/vehicles/vpass, turf/target as turf)
-	if(istype(vpass) && !vpass.can_overrun_cover) //Cover-overrunners need to collide.
+	if(istype(vpass))
 		return 1
 	. = ..()
 

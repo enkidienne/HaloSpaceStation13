@@ -62,7 +62,7 @@
 	item_state = "combatharness_specops"
 	//
 	action_button_name = "Toggle Active Camouflage"
-	specials = list(/datum/armourspecials/cloaking)
+	specials = list(/datum/armourspecials/cloaking/cov_specops)
 	//same as a marine
 	armor = list(melee = 55, bullet = 50, laser = 55, energy = 45, bomb = 40, bio = 25, rad = 25)
 

@@ -5,6 +5,7 @@
 	path = "crusade_octanus_landing"
 	allowed_gamemodes = list("crusade")
 	lobby_icon = 'code/modules/halo/splashworks/covenant.jpg'
+	id_hud_icons = 'maps/crusade/hud_icons.dmi'
 	system_name = "Sigma Octanus"
 	station_name  = "Sigma Octanus IV"
 	station_short = "Sigma Octanus IV"

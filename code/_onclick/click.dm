@@ -132,7 +132,9 @@
 				break
 
 		if(adjacent)
+			var/do_disrupt = 1
 			if(W)
+				do_disrupt = W.cloak_disrupt
 				// Return 1 in attackby() to prevent afterattack() effects (when safely moving items for example)
 				if(istype(loc,/obj/vehicles) && !istype(W,/obj/item/weapon/gun/vehicle_turret))
 					return
@@ -144,15 +146,17 @@
 					setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 				UnarmedAttack(A, 1)
 
-			disrupt_cloak_if_required()
+			disrupt_cloak_if_required(do_disrupt)
 			trigger_aiming(TARGET_CAN_CLICK)
 			return
 		else // non-adjacent click
+			var/do_disrupt = 1
 			if(W)
+				do_disrupt = W.cloak_disrupt
 				W.afterattack(A, src, 0, params) // 0: not Adjacent
 			else
 				RangedAttack(A, params)
-			disrupt_cloak_if_required()
+			disrupt_cloak_if_required(do_disrupt)
 
 			trigger_aiming(TARGET_CAN_CLICK)
 	return 1

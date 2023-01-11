@@ -5,6 +5,7 @@
 	path = "firefight_desert_outpost"
 	allowed_gamemodes = list("firefight")
 	lobby_icon = 'code/modules/halo/splashworks/title3.jpg'
+	id_hud_icons = 'maps/firefight/hud_icons.dmi'
 	boss_name = "UNSC"
 	company_name = "UNSC"
 
