@@ -14,6 +14,8 @@
 	force_divisor = 0.5
 	thrown_force_divisor = 0.5
 
+	disrupt_cloak = 0
+
 	executions_allowed = TRUE
 	start_execute_messages = list(BP_CHEST = "\The USER steps on \the VICTIM and brandishes \the WEAPON!", BP_HEAD = "\The USER grips \the VICTIM's shoulder and brandishes \the WEAPON!")
 	finish_execute_messages = list(BP_CHEST = "\The USER guts VICTIM with \the WEAPON!", BP_HEAD = "\The USER slices clean through \the VICTIM's neck with \the WEAPON!")
