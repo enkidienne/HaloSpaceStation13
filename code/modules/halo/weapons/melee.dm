@@ -6,12 +6,13 @@
 	icon_state = "Knife"
 	item_state = "butterflyknife_open"
 	w_class = ITEM_SIZE_SMALL
-	force = 30
-	throwforce = 10
 	sharp = 1
 	edge = 1
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	armor_penetration = 70
+
+	force_divisor = 0.5
+	thrown_force_divisor = 0.5
 
 	executions_allowed = TRUE
 	start_execute_messages = list(BP_CHEST = "\The USER steps on \the VICTIM and brandishes \the WEAPON!", BP_HEAD = "\The USER grips \the VICTIM's shoulder and brandishes \the WEAPON!")
@@ -31,8 +32,8 @@
 
 
 	w_class = ITEM_SIZE_LARGE
-	force_divisor = 0.5
-	thrown_force_divisor = 0.6
+	force_divisor = 0.83
+	thrown_force_divisor = 0.83
 	slot_flags = SLOT_BELT | SLOT_BACK
 	sharp = 1
 	edge = 1

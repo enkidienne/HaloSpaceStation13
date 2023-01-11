@@ -26,6 +26,8 @@
 	brightness_on = 4
 	on = 0
 
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical
+
 /obj/item/clothing/suit/armor/special/SPIgen1
 	name = "Semi-Powered Infiltration Armour Gen-1"
 	desc = "Advanced stealth capabilities and spaceworthiness with reduced protection. Fitted for human use."
