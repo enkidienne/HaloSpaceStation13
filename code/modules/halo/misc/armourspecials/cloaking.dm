@@ -92,13 +92,13 @@
 //Overall, SPI is a little bit worse than covenant cloak, but the unsc can produce more through research
 /datum/armourspecials/cloaking/human_spi
 	min_alpha = 55
-	cloak_recover_time = 1 SECONDS
-	cloak_toggle_time = 0.7 SECONDS
+	cloak_recover_time = 0.7 SECONDS
+	cloak_toggle_time = 0.4 SECONDS
 
 /datum/armourspecials/cloaking/silentshadow
 	min_alpha=1 ///These are meant to be 100% admin-spawn kill-squads, so... have fun
-	cloak_recover_time = 0.5 SECONDS
-	cloak_toggle_time = 0.5 SECONDS
+	cloak_recover_time = 0.3 SECONDS
+	cloak_toggle_time = 0.1 SECONDS
 
 #undef CLOAKING_COLOUR
 #undef COLOUR_DARKEN_MOD
