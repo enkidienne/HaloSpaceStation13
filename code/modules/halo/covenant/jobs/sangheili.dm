@@ -66,7 +66,6 @@
 	supervisors = "the Shipmaster"
 	outfit_type = /decl/hierarchy/outfit/sangheili/specops/infiltrator
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace)
-	is_whitelisted = TRUE
 	spawn_positions = 0
 	total_positions = 0
 	poplock_max = 1
