@@ -49,6 +49,11 @@
 	desc = "A standard ODST Squad Leader Helmet decorated with golden engravings."
 	item_state = "arol-helmet-worn"
 	icon_state = "arol-helmet-obj"
+	item_state_novisr = "arol-helmet-transparent"
+	icon_state_novisr = "arol-helmet-obj"
+	item_state_slots = list(slot_l_hand_str = "arol-helmet", slot_r_hand_str = "arol-helmet")
+
+	integrated_hud = /obj/item/clothing/glasses/hud/tactical/odst_hud/medic
 
 /obj/item/clothing/suit/armor/special/odst/aroliacue
 	name = "Ornamental Cuirass"
