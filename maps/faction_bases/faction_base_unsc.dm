@@ -26,7 +26,9 @@ GLOBAL_LIST_EMPTY(unsc_base_spawns)
 	/datum/job/unsc/oni/research,\
 	/datum/job/unsc_ai,\
 	/datum/job/unsc/odst,\
-	/datum/job/unsc/odst/squad_leader)
+	/datum/job/unsc/odst/squad_leader,\
+	/datum/job/unsc/oni/field_agent,\
+	)
 
 /datum/spawnpoint/unsc_base/New()
 	..()
@@ -55,14 +57,20 @@ GLOBAL_LIST_EMPTY(unsc_base_fallback_spawns)
 	display_name = "UNSC Base Fallback Spawns"
 	restrict_job_type = list(\
 	/datum/job/unsc/spartan_two,\
+	/datum/job/unsc/crew,\
+	/datum/job/unsc/medical,\
 	/datum/job/unsc/marine,\
 	/datum/job/unsc/marine/specialist,\
+	/datum/job/unsc/marine/hellbringer,\
 	/datum/job/unsc/marine/squad_leader,\
 	/datum/job/unsc/commanding_officer,\
 	/datum/job/unsc/executive_officer,\
 	/datum/job/unsc/oni/research,\
+	/datum/job/unsc_ai,\
 	/datum/job/unsc/odst,\
-	/datum/job/unsc/odst/squad_leader)
+	/datum/job/unsc/odst/squad_leader,\
+	/datum/job/unsc/oni/field_agent,\
+	)
 
 /datum/spawnpoint/unsc_base_fallback/New()
 	..()

@@ -84,6 +84,12 @@
 		if(2)
 			disrupt_cloak(cloak_recover_time*6)
 
+/datum/armourspecials/cloaking/on_drop(var/obj/source_armour)
+	if(!user)
+		return
+
+	deactivate_cloak(0)
+
 /datum/armourspecials/cloaking/cov_specops
 	min_alpha = 45
 	cloak_recover_time = 0.5 SECONDS

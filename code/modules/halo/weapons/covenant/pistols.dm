@@ -172,7 +172,7 @@
 //Stealth Variant
 /obj/item/weapon/gun/projectile/needler/stealth
 	name = "Type-33-S Guided Munitions Launcher"
-	desc = "This weapon fire razor-sharp crystalline shards which can explode violently when embedded into targets.A holy modification makes this weapon safe to use when cloaked."
+	desc = "This weapon fire razor-sharp crystalline shards which can explode violently when embedded into targets. A holy modification makes this weapon safe to use when cloaked."
 
 	silenced = 1
 	cloak_disrupt = 0

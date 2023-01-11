@@ -48,3 +48,7 @@
 
 /datum/armourspecials/gear/spi_boots/gen2
 	gear_type = /obj/item/clothing/shoes/magboots/SPIgen1/gen2
+
+/datum/armourspecials/gear/sangheili_infiltrator
+	gear_type = /obj/item/clothing/gloves/thick/sangheili/specops/infiltrator
+	equip_slot = slot_gloves

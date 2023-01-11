@@ -61,6 +61,19 @@
 	open_slot_on_death = TRUE //just like brutes, lowest rank of a leader caste can respawn indefinitely although still capped low
 	pop_balance_mult = 2
 
+/datum/job/covenant/sangheili_specops
+	title = "Special Operations Sangheili"
+	supervisors = "the Shipmaster"
+	outfit_type = /decl/hierarchy/outfit/sangheili/specops/infiltrator
+	access = list(access_covenant, access_covenant_command, access_covenant_slipspace)
+	is_whitelisted = TRUE
+	spawn_positions = 0
+	total_positions = 0
+	poplock_max = 1
+	poplock_divisor = 12
+	faction_whitelist = "Covenant"
+	whitelisted_species = list(/datum/species/sangheili)
+	pop_balance_mult = 2
 
 /* Not available during standard play */
 
@@ -71,18 +84,6 @@
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace)
 	total_positions = 1
 	spawn_positions = 1
-	faction_whitelist = "Covenant"
-	whitelisted_species = list(/datum/species/sangheili)
-	pop_balance_mult = 2
-
-/datum/job/covenant/sangheili_specops
-	title = "Special Operations Sangheili"
-	supervisors = "the Shipmaster"
-	outfit_type = /decl/hierarchy/outfit/sangheili/specops
-	access = list(access_covenant, access_covenant_command, access_covenant_slipspace)
-	is_whitelisted = TRUE
-	spawn_positions = 0
-	total_positions = 0
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 	pop_balance_mult = 2
