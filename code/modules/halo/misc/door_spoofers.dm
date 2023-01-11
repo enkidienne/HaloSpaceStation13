@@ -12,7 +12,7 @@
 	var/spoof_success_msg = "Function executed successfully.."
 	var/obj/item/device/ewar_spoofer/spoofer_device
 	var/obj/item/spoof_cable
-	var/loop_function = 0
+	var/sfx_file
 
 /datum/spoof_function/New(var/parent_device)
 	spoofer_device = parent_device
@@ -68,6 +68,8 @@
 		if(!isnull(can_spoof_msg))
 			display_msg(can_spoof_msg)
 			return
+		if(sfx_file)
+			sound_to(get_user(),sfx_file)
 		do_spoof(targ)
 		. = 1
 	cooldown_at = world.time + cooldown_for
@@ -80,6 +82,7 @@
 	function_name = "Door ID Bypass"
 	spoof_delay = 1 SECOND
 	cooldown_for = 3 SECONDS
+	sfx_file = 'sound/effects/sparks4.ogg'
 
 /datum/spoof_function/doorhack/can_spoof(var/obj/machinery/door/airlock/door)
 	. = ..()
@@ -100,6 +103,8 @@
 	function_name = "Vendor Force-Vend"
 	spoof_delay = 5 SECOND
 	cooldown_for = 10 SECOND
+
+	sfx_file = 'sound/effects/sparks2.ogg'
 
 	var/list/hack_access_disallow = list() //What accesses should we disallow us from hacking with this program?
 	var/num_products_vend = 8
@@ -161,6 +166,7 @@
 	function_name = "Light Network Override"
 	spoof_delay = 6 SECOND
 	cooldown_for = 20 SECOND
+	sfx_file = 'sound/effects/EMPulse.ogg'
 
 	var/disable_time = 2 MINUTES
 
@@ -177,13 +183,13 @@
 		if(l.status != 0)
 			continue//Don't bother with broken lights.
 		if(prob(10))
-			l.emp_act()
+			l.emp_act(2)
 		else
 			l.burn_out()//Temporary burn-out.
 			spawn(disable_time)
 				if(l.status == 3)
 					l.fix()
-		sleep(rand(1,3)) //Let's not do all the lights at once.
+		sleep(rand(2,5)) //Let's not do all the lights at once.
 
 //Ewar Spoofer Devices.
 /obj/item/device/ewar_spoofer
