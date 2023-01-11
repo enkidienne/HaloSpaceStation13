@@ -56,6 +56,11 @@
 	/datum/armourspecials/gear/spi_boots,\
 	)
 
+/obj/item/clothing/suit/armor/special/SPIgen1/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
+
+
 /obj/item/clothing/shoes/magboots/SPIgen1
 	name = "Semi-Powered Infiltration boots"
 	desc = "Advanced stealth capabilities, spaceworthiness and mag-pulse traction with reduced protection. Fitted for human use."
@@ -96,3 +101,40 @@
 	heat_protection = HANDS
 	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
 	species_restricted = list("Human")
+
+
+//Field Agent Gear
+/obj/item/clothing/suit/armor/special/SPIgen1/field_agent
+	desc = "Advanced stealth capabilities and spaceworthiness with reduced protection. Fitted for human use. Comes equipped with an electronic warfare device, mounted in an arm-compartment."
+	specials = list(\
+	/datum/armourspecials/cloaking/human_spi,\
+	/datum/armourspecials/gear/spi_gloves/field_agent,\
+	/datum/armourspecials/gear/spi_boots,\
+	)
+
+/obj/item/clothing/gloves/SPIgen1/field_agent //This has a door-spoofer inside; unlike the normal gloves.
+	desc = "Advanced stealth capabilities and spaceworthiness with reduced protection. Fitted for human use. Contains an ewar device for infiltration."
+
+/obj/item/clothing/gloves/SPIgen1/field_agent/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,1,ITEM_SIZE_SMALL,null,list(/obj/item/device/ewar_spoofer))
+	pocket_curr.name = "EWAR Storage"
+	pocket_curr.handle_item_insertion(new /obj/item/device/ewar_spoofer/unsc(loc))
+
+//Gen 2 Armour
+/obj/item/clothing/head/helmet/SPIgen1/gen2
+	armor_thickness = 20
+
+/obj/item/clothing/suit/armor/special/SPIgen1/gen2
+	armor_thickness = 20
+	specials = list(\
+	/datum/armourspecials/cloaking/cov_specops,\
+	/datum/armourspecials/gear/spi_gloves/gen2,\
+	/datum/armourspecials/gear/spi_boots/gen2,\
+	)
+
+/obj/item/clothing/shoes/magboots/SPIgen1/gen2
+	armor_thickness = 20
+
+/obj/item/clothing/gloves/SPIgen1/gen2
+	armor_thickness = 20

@@ -33,7 +33,7 @@ GLOBAL_LIST_INIT(mobs_to_reqdatum,list())
 
 	var/list/product_records = list()
 
-	var/list/products = list() //This vendor holds unlimited amounts. Format: typepath = pointprice
+	var/list/products = list() //This vendor holds high amounts. Format: typepath = pointprice
 	var/list/amounts = list() //Format: Typepath = amount. Only put amounts here if you want to limit them.
 
 /obj/machinery/pointbased_vending/proc/init_mob_reqdatum(var/mob/m)
@@ -63,7 +63,7 @@ GLOBAL_LIST_INIT(mobs_to_reqdatum,list())
 		if(custom_prod_amt)
 			product.amount = custom_prod_amt
 		else
-			product.amount = 100
+			product.amount = 50
 
 		src.product_records.Add(product)
 
@@ -108,6 +108,15 @@ GLOBAL_LIST_INIT(mobs_to_reqdatum,list())
 		ui.set_initial_data(data)
 		ui.open()
 
+/obj/machinery/pointbased_vending/proc/vend_item(var/datum/stored_items/vending_products/R,var/datum/vendor_req/user_req = null)
+	vend_ready = 0
+	flick(icon_vend,src)
+	spawn(vend_delay)
+		var/prod = R.get_product(get_turf(src))
+		if(user_req)
+			user_req.reqd_items[prod] = R.price
+		vend_ready = 1
+
 /obj/machinery/pointbased_vending/Topic(href, href_list)
 	if(stat & (BROKEN|NOPOWER))
 		return
@@ -131,12 +140,7 @@ GLOBAL_LIST_INIT(mobs_to_reqdatum,list())
 				to_chat(usr,"<span class = 'warning'>Insufficient requisition points for purchase.</span>")
 				return
 
-			vend_ready = 0
-			flick(icon_vend,src)
-			spawn(vend_delay)
-				var/prod = R.get_product(get_turf(src))
-				user_req.reqd_items[prod] = R.price
-				vend_ready = 1
+			vend_item(R,user_req)
 
 		src.add_fingerprint(usr)
 		GLOB.nanomanager.update_uis(src)

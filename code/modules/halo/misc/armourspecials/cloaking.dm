@@ -5,8 +5,8 @@
 /datum/armourspecials/cloaking
 	var/cloak_active = 0
 	var/min_alpha = 45 //The minimum level of alpha to reach.
-	var/cloak_recover_time = 1.5 //The time in seconds it takes to recover to full cloak after being hit.
-	var/cloak_toggle_time = 2 //The time in seconds it takes to enable/disable the cloaking device.
+	var/cloak_recover_time = 1.5 //The time in ticks it takes to recover to full cloak after being hit.
+	var/cloak_toggle_time = 2 SECONDS //The time in ticks it takes to enable/disable the cloaking device.
 	var/cloak_disrupted = 0 //Is the cloak currently disrupted?
 	var/stored_blend_mode
 	var/stored_colour
@@ -86,19 +86,19 @@
 
 /datum/armourspecials/cloaking/cov_specops
 	min_alpha = 45
-	cloak_recover_time = 1.5
-	cloak_toggle_time = 2
+	cloak_recover_time = 0.5 SECONDS
+	cloak_toggle_time = 0.2 SECONDS
 
 //Overall, SPI is a little bit worse than covenant cloak, but the unsc can produce more through research
 /datum/armourspecials/cloaking/human_spi
-	min_alpha = 50
-	cloak_recover_time = 5
-	cloak_toggle_time = 3
+	min_alpha = 55
+	cloak_recover_time = 1 SECONDS
+	cloak_toggle_time = 0.7 SECONDS
 
 /datum/armourspecials/cloaking/silentshadow
 	min_alpha=1 ///These are meant to be 100% admin-spawn kill-squads, so... have fun
-	cloak_recover_time = 2
-	cloak_toggle_time = 0.5
+	cloak_recover_time = 0.5 SECONDS
+	cloak_toggle_time = 0.5 SECONDS
 
 #undef CLOAKING_COLOUR
 #undef COLOUR_DARKEN_MOD
