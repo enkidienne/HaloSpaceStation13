@@ -30,3 +30,11 @@
 	starting_accessories = list(\
 		/obj/item/clothing/accessory/rank/fleet/enlisted/e6,\
 		/obj/item/clothing/accessory/badge/onib)
+
+/decl/hierarchy/outfit/job/unsc/oni/field_agent
+	name = "ONI Field Agent"
+	head = /obj/item/clothing/head/helmet/SPIgen1
+	uniform = /obj/item/clothing/under/color/black
+	suit = /obj/item/clothing/suit/armor/special/SPIgen1/field_agent
+	shoes = null
+	l_hand = /obj/item/language_learner/human_to_sang
