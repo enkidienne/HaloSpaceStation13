@@ -70,7 +70,7 @@
 	spawn_positions = 0
 	total_positions = 0
 	poplock_max = 1
-	poplock_divisor = 10
+	poplock_divisor = 12
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 	pop_balance_mult = 2
