@@ -1673,7 +1673,7 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 	wielded_item_state = null
 
 /obj/item/clothing/suit/storage/oni_guard/xor
-	name = "Refitted T voan Armour"
+	name = "Refitted T vaoan Armour"
 	desc = "Looks like someone captured and refitted the armour of a Covenant T vaoan."
 
 	icon = ONI_ITEM_INHAND
@@ -1682,7 +1682,7 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 	item_state = "xor_armour"
 
 /obj/item/clothing/suit/armor/special/SPIgen1/field_agent/xor
-	name = "Refitted T voan Armour"
+	name = "Refitted T vaoan Armour"
 	desc = "Looks like someone captured and refitted the armour of a Covenant Spec-Ops T vaoan."
 
 	icon = ONI_ITEM_INHAND
@@ -1697,7 +1697,7 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 	)
 
 /obj/item/clothing/shoes/oni_guard/xor
-	name = "Refitted T voan Boots"
+	name = "Refitted T vaoan Boots"
 	desc = "The boots of a T vaoan, fitted to function as footwear for humans."
 
 	icon = ONI_ITEM_INHAND
@@ -1715,7 +1715,7 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 	item_state = "xor_boots"
 
 /obj/item/clothing/gloves/thick/oni_guard/xor
-	name = "Refitted T voan Gloves"
+	name = "Refitted T vaoan Gloves"
 	desc = "These gloves have been refitted to allow for human usage."
 
 	icon = ONI_ITEM_INHAND
@@ -1724,7 +1724,7 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 	item_state = "xor_gloves"
 
 /obj/item/clothing/gloves/SPIgen1/field_agent/xor
-	name = "Refitted T voan Gloves"
+	name = "Refitted T vaoan Gloves"
 	desc = "These gloves have been refitted to allow for human usage."
 
 	icon = ONI_ITEM_INHAND
@@ -1743,8 +1743,8 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 	icon_state = "Oni_Helmet_Novisor"
 
 /obj/item/clothing/head/helmet/SPIgen1/xor
-	name = "Refitted T voan Helmet"
-	desc = "Despite the look, this isn't actually airtight."
+	name = "Refitted T vaoan Helmet"
+	desc = "Fittingly, this is actually airtight."
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR|BLOCKHEADHAIR
 
 	icon = ONI_ITEM_INHAND
