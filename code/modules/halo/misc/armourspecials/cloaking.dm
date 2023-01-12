@@ -4,8 +4,8 @@
 
 /datum/armourspecials/cloaking
 	var/cloak_active = 0
-	var/min_alpha = 45 //The minimum level of alpha to reach.
-	var/cloak_recover_time = 1.5 //The time in ticks it takes to recover to full cloak after being hit.
+	var/min_alpha = 50 //The minimum level of alpha to reach.
+	var/cloak_recover_time = 1.5 //The time in ticks it takes to recover to full cloak after disrupting. *1.5 when hit.
 	var/cloak_toggle_time = 2 SECONDS //The time in ticks it takes to enable/disable the cloaking device.
 	var/cloak_disrupted = 0 //Is the cloak currently disrupted?
 	var/stored_blend_mode
@@ -62,6 +62,8 @@
 	deactivate_cloak(0)
 	spawn(disrupt_time SECONDS)
 		src.cloak_disrupted = 0
+		if(user && user.lying)//if they're lying down, no autorecloak
+			return
 		activate_cloak(0)
 
 /datum/armourspecials/cloaking/try_item_action()
@@ -74,7 +76,7 @@
 		deactivate_cloak()
 
 /datum/armourspecials/cloaking/handle_shield(mob/m,damage,atom/damage_source)
-	disrupt_cloak()
+	disrupt_cloak(cloak_recover_time * 1.5)
 	return 0
 
 /datum/armourspecials/cloaking/tryemp(severity)
@@ -95,9 +97,9 @@
 	cloak_recover_time = 0.5 SECONDS
 	cloak_toggle_time = 0.2 SECONDS
 
-//Overall, SPI is a little bit worse than covenant cloak, but the unsc can produce more through research
+//Overall, SPI is a little bit worse than covenant cloak.
 /datum/armourspecials/cloaking/human_spi
-	min_alpha = 55
+	min_alpha = 50
 	cloak_recover_time = 0.7 SECONDS
 	cloak_toggle_time = 0.4 SECONDS
 

@@ -1660,6 +1660,14 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 ///////////CommanderXor/////////
 
 //ONI Researcher, using guard armour.
+//Also, SPI.
+/datum/armourspecials/gear/xor_spi_gloves
+	gear_type = /obj/item/clothing/gloves/SPIgen1/field_agent/xor
+	equip_slot = slot_gloves
+
+/datum/armourspecials/gear/xor_spi_boots
+	gear_type = /obj/item/clothing/shoes/magboots/SPIgen1/xor
+	equip_slot = slot_shoes
 
 /obj/item/weapon/gun/projectile/br55/xor
 	name = "FN-FAL"
@@ -1670,17 +1678,41 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 	wielded_item_state = null
 
 /obj/item/clothing/suit/storage/oni_guard/xor
-	name = "Refitted T voan Armour"
-	desc = "Looks like someone captured and refitted the armour of a Covenant T voan."
+	name = "Refitted T vaoan Armour"
+	desc = "Looks like someone captured and refitted the armour of a Covenant T vaoan."
 
 	icon = ONI_ITEM_INHAND
 	icon_override = ONI_OVERRIDE
 	icon_state = "armor"
 	item_state = "xor_armour"
 
+/obj/item/clothing/suit/armor/special/SPIgen1/field_agent/xor
+	name = "Refitted T vaoan Armour"
+	desc = "Looks like someone captured and refitted the armour of a Covenant Spec-Ops T vaoan."
+
+	icon = ONI_ITEM_INHAND
+	icon_override = ONI_OVERRIDE
+	icon_state = "armor"
+	item_state = "xor_armour"
+
+	specials = list(\
+	/datum/armourspecials/cloaking/human_spi,\
+	/datum/armourspecials/gear/xor_spi_gloves,\
+	/datum/armourspecials/gear/xor_spi_boots,\
+	)
+
 /obj/item/clothing/shoes/oni_guard/xor
+	name = "Refitted T vaoan Boots"
+	desc = "The boots of a T vaoan, fitted to function as footwear for humans."
+
+	icon = ONI_ITEM_INHAND
+	icon_override = ONI_OVERRIDE
+	icon_state = "boots_ico"
+	item_state = "xor_boots"
+
+/obj/item/clothing/shoes/magboots/SPIgen1/xor
 	name = "Refitted T voan Boots"
-	desc = "The boots of a T voan, fitted to function as footwear for humans."
+	desc = "The boots of a Spec-Ops T vaoan, fitted to function as footwear for humans."
 
 	icon = ONI_ITEM_INHAND
 	icon_override = ONI_OVERRIDE
@@ -1688,7 +1720,16 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 	item_state = "xor_boots"
 
 /obj/item/clothing/gloves/thick/oni_guard/xor
-	name = "Refitted T voan Gloves"
+	name = "Refitted T vaoan Gloves"
+	desc = "These gloves have been refitted to allow for human usage."
+
+	icon = ONI_ITEM_INHAND
+	icon_override = ONI_OVERRIDE
+	icon_state = "unsc gloves_obj"
+	item_state = "xor_gloves"
+
+/obj/item/clothing/gloves/SPIgen1/field_agent/xor
+	name = "Refitted T vaoan Gloves"
 	desc = "These gloves have been refitted to allow for human usage."
 
 	icon = ONI_ITEM_INHAND
@@ -1704,6 +1745,17 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 	icon = ONI_ITEM_INHAND
 	icon_override = ONI_OVERRIDE
 	item_state = "xor_helm"
+	icon_state = "Oni_Helmet_Novisor"
+
+/obj/item/clothing/head/helmet/SPIgen1/xor
+	name = "Refitted T vaoan Helmet"
+	desc = "Fittingly, this is actually airtight."
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR|BLOCKHEADHAIR
+
+	icon = ONI_ITEM_INHAND
+	icon_override = ONI_OVERRIDE
+	item_state = "xor_helm"
+	icon_state = "Oni_Helmet_Novisor"
 
 /obj/item/weapon/storage/backpack/marine/xor
 	name = "Storage Cape"

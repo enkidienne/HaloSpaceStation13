@@ -25,8 +25,10 @@
 		if(returnresult == 0)
 			continue
 		else
-			return returnresult
-
+			. = returnresult
+			if(i.handleshield_stop_processing)
+				return
+	return
 
 /obj/item/clothing/suit/armor/special/equipped(var/mob/user, var/slot)
 	if(slot == slot_wear_suit)

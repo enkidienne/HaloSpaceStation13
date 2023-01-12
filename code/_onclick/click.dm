@@ -88,6 +88,11 @@
 		if(isturf(A) || isturf(A.loc))
 			throw_item(A)
 			trigger_aiming(TARGET_CAN_CLICK)
+			var/obj/item/I = A
+			var/do_disrupt = 1
+			if(istype(I))
+				do_disrupt = I.cloak_disrupt
+			disrupt_cloak_if_required(do_disrupt)
 			return 1
 		throw_mode_off()
 
