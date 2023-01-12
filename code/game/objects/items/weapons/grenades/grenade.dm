@@ -72,6 +72,7 @@
 			if(iscarbon(user))
 				var/mob/living/carbon/C = user
 				C.throw_mode_on()
+			user.disrupt_cloak_if_required(cloak_disrupt)//Always disrupt on throws.
 	return
 
 /obj/item/weapon/grenade/proc/start_timer()
