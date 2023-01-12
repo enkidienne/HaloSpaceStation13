@@ -99,7 +99,7 @@
 
 //Overall, SPI is a little bit worse than covenant cloak, but the unsc can produce more through research
 /datum/armourspecials/cloaking/human_spi
-	min_alpha = 55
+	min_alpha = 50
 	cloak_recover_time = 0.7 SECONDS
 	cloak_toggle_time = 0.4 SECONDS
 

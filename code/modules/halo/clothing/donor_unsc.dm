@@ -1656,7 +1656,7 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 
 //ONI Researcher, using guard armour.
 //Also, SPI.
-/datum/armourspecials/gear/xor_spi_gloves/field_agent
+/datum/armourspecials/gear/xor_spi_gloves
 	gear_type = /obj/item/clothing/gloves/SPIgen1/field_agent/xor
 	equip_slot = slot_gloves
 
@@ -1692,7 +1692,7 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 
 	specials = list(\
 	/datum/armourspecials/cloaking/human_spi,\
-	/datum/armourspecials/gear/xor_spi_boots,\
+	/datum/armourspecials/gear/xor_spi_gloves,\
 	/datum/armourspecials/gear/xor_spi_boots,\
 	)
 
@@ -1740,6 +1740,7 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 	icon = ONI_ITEM_INHAND
 	icon_override = ONI_OVERRIDE
 	item_state = "xor_helm"
+	icon_state = "Oni_Helmet_Novisor"
 
 /obj/item/clothing/head/helmet/SPIgen1/xor
 	name = "Refitted T voan Helmet"
@@ -1749,6 +1750,7 @@ obj/item/clothing/head/helmet/odst/donator/pinstripe
 	icon = ONI_ITEM_INHAND
 	icon_override = ONI_OVERRIDE
 	item_state = "xor_helm"
+	icon_state = "Oni_Helmet_Novisor"
 
 /obj/item/weapon/storage/backpack/marine/xor
 	name = "Storage Cape"
