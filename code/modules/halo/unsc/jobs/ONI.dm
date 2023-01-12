@@ -34,7 +34,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/unsc/oni/guard/commander
 
 /datum/job/unsc/oni/field_agent
-	title = "ONI Field Agent, Section Unknown"
+	title = "ONI Field Agent"
 	supervisors = "the ONI Research Director, Shadowy and unknowable forces."
 	spawnpoint_override = "UNSC Base Spawns" //Resetting these back to the base spawnpoints, for compatability.
 	fallback_spawnpoint = "UNSC Base Fallback Spawns"
