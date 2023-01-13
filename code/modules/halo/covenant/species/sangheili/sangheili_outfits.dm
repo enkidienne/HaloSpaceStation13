@@ -171,6 +171,8 @@
 	l_pocket = null
 	r_pocket = null
 	l_hand = /obj/item/weapon/gun/energy/plasmapistol/stealth
+	r_hand = /obj/item/language_learner/unggoy_to_common
+
 	//
 	id_type = /obj/item/weapon/card/id/elite_specops
 	id_slot = slot_wear_id

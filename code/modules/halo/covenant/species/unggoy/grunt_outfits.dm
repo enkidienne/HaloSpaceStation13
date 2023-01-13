@@ -122,6 +122,7 @@
 	suit = /obj/item/clothing/suit/armor/special/unggoy_combat_harness/specops/infiltrator
 	belt = /obj/item/weapon/gun/projectile/needler/stealth
 	l_hand = /obj/item/weapon/gun/energy/plasmapistol/stealth
+	r_hand = /obj/item/language_learner/unggoy_to_common
 
 /decl/hierarchy/outfit/unggoy/specops/armed
 	name = "Armed Unggoy (Spec-Ops)"
