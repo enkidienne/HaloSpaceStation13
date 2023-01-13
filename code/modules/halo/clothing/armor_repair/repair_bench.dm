@@ -8,7 +8,7 @@
 
 /obj/structure/repair_bench/proc/repair_armor(var/obj/item/clothing/c,var/mob/user)
 	user.visible_message("[user] starts repairing [c] using [src]'s tools and materials.")
-	if(!do_after(user,ITEM_REPAIR_DELAY/2,src,1,1,,1))
+	if(!do_after(user,ITEM_REPAIR_DELAY/3,src,1,1,,1))
 		return
 	user.visible_message("[user] fully repairs [c].")
 	c.armor_thickness = c.armor_thickness_max
@@ -19,6 +19,12 @@
 		repair_armor(I,user)
 	else
 		. = ..()
+
+/obj/structure/repair_bench/attack_hand(var/mob/living/carbon/human/h)
+	if(!istype(h))
+		return
+	for(var/obj/item/clothing/I in list(h.w_uniform,h.wear_suit,h.shoes,h.gloves,h.wear_mask,h.glasses,h.l_ear,h.r_ear))
+		repair_armor(I,h)
 
 /obj/structure/repair_bench/cov
 	icon_state = "repair_bench_cov"
