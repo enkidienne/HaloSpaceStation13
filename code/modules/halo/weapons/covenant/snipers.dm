@@ -69,7 +69,7 @@
 	one_hand_penalty = -1
 	wielded_item_state = "beamrifle-wielded"
 	fire_delay = 10
-	accuracy = -12 //Honestly stop hipfiring snipers damn it
+	accuracy = -8 //Honestly stop hipfiring snipers damn it
 	dispersion = list(0)
 	scope_zoom_amount = 8
 	min_zoom_amount = 3

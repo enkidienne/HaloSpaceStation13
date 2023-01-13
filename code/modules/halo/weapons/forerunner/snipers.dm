@@ -15,7 +15,7 @@
 	fire_sound = 'code/modules/halo/sounds/binaryrifle_fire.ogg'
 	reload_sound = 'code/modules/halo/sounds/binaryrifle_reload.ogg'
 	one_hand_penalty = -1
-	accuracy = -12
+	accuracy = -8
 	screen_shake = 0
 	dispersion = list(0)
 	fire_delay = 12
@@ -41,13 +41,6 @@
 
 /obj/item/weapon/gun/projectile/binary_rifle/can_use_when_prone()
 	return 1
-
-/obj/item/weapon/gun/projectile/binary_rifle/verb/scope()
-	set category = "Weapon"
-	set name = "Use Scope"
-	set popup_menu = 1
-
-	toggle_scope(usr, scope_zoom_amount)
 
 /obj/item/weapon/gun/projectile/binary_rifle/update_icon()
 	if(ammo_magazine)
