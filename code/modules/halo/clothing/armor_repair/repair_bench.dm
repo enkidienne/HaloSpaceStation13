@@ -1,6 +1,6 @@
 /obj/structure/repair_bench
 	name = "\improper Armor Repair Bench"
-	desc = "An armor repair bench outfitted with the tools and materials to repair armor, leaving in a fully combat-ready state."
+	desc = "An armor repair bench outfitted with the tools and materials to repair armor, leaving it in a fully combat-ready state."
 	icon = 'code/modules/halo/clothing/armor_repair/armor_repair_sprites.dmi'
 	icon_state = "repair_bench"
 	density = 1
@@ -16,7 +16,8 @@
 
 /obj/structure/repair_bench/attackby(obj/item/I, mob/user)
 	if(istype(I,/obj/item/clothing))
-		repair_armor(I,user)
+		spawn(0)
+			repair_armor(I,user)
 	else
 		. = ..()
 
