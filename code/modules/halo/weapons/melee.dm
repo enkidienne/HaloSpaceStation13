@@ -30,7 +30,7 @@
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
 		)
-	armor_penetration = 70
+	armor_penetration = 50
 
 
 	w_class = ITEM_SIZE_LARGE
@@ -42,7 +42,7 @@
 	unbreakable = 1
 	attack_verb = list("chopped", "torn", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
-	unacidable = 1
+	unacidable = 0
 	lunge_dist = 2
 
 	executions_allowed = TRUE
@@ -54,6 +54,8 @@
 	desc = "A reinforced sword capable of safely parrying blows from energy weapons."
 	icon_state = "COsword_obj"
 	item_state = "machete"
+	unacidable = 1
+	armor_penetration = 70
 	applies_material_colour = FALSE
 	lunge_dist = 3
 
