@@ -7,8 +7,8 @@
 
 /mob/living/simple_animal/mgalekgolo/hit_with_weapon(obj/item/O, mob/living/user, var/effective_force, var/hit_zone)
 	if(crouched && !(get_dir(src,user) in get_allowed_attack_dirs()))
-		if(effective_force >= resistance*2)
-			effective_force -= resistance*2
+		if(effective_force >= resistance*1.5)
+			effective_force -= resistance*1.5
 			visible_message("<span class = 'danger'>[user] attacks [src.name] with \the [O.name], bypassing the armor plating!</span>")
 			.=..()
 		else
