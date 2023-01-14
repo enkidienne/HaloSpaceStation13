@@ -37,13 +37,13 @@
 	melee_damage_upper = 60
 	attacktext = "crushed"
 	a_intent = I_HURT
-	resistance = 20
+	resistance = 20 //Multiplied by two during melee fights.
 	attack_sound = 'sound/weapons/heavysmash.ogg'
 
 	/*response_help   = "pokes"
 	response_disarm = "pokes"
 	response_harm   = "thinks better about punching"*/
-	harm_intent_damage = 10
+	harm_intent_damage = 55
 
 	var/datum/mgalekgolo_weapon/active_weapon = /datum/mgalekgolo_weapon/fuel_rod_cannon
 	var/atom/current_target
