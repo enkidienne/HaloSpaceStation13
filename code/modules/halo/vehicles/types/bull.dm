@@ -23,6 +23,8 @@
 
 	move_sound = 'code/modules/halo/sounds/warthog_move.ogg'
 
+	vehicle_view_modifier = 1.5
+
 	light_color = "#FEFFE1"
 
 	can_smoke = 1
