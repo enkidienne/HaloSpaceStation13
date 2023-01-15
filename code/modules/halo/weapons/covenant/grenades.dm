@@ -1,4 +1,4 @@
-#define ADHERENCE_TIME 1.0
+#define ADHERENCE_TIME 5
 #define PLASNADE_EMBEDDED_DAM_ADD 10
 
 //plasma grenade visual effect
@@ -24,11 +24,11 @@
 
 /obj/item/weapon/grenade/plasma
 	name = "Type-1 Antipersonnel Grenade"
-	desc = "When activated, the coating of this grenade becomes a powerful adhesive, sticking to anyone it is thrown at. Takes 1.5 seconds to heat to full adherence temperature once activated."
+	desc = "When activated, the coating of this grenade becomes a powerful adhesive, sticking to anyone it is thrown at. Takes 0.25 seconds to heat to full adherence temperature once activated."
 	icon = 'code/modules/halo/weapons/icons/Covenant Weapons.dmi'
 	icon_state = "plasmagrenade"
 	throw_speed = 0 //sleep each tick
-	det_time = 30
+	det_time = 35
 	can_adjust_timer = 0
 	starttimer_on_hit = 1
 	arm_sound = 'code/modules/halo/sounds/Plasmanadethrow.ogg'
@@ -55,7 +55,6 @@
 			h.update_inv_r_hand()
 
 /obj/item/weapon/grenade/plasma/throw_impact(var/atom/A)
-	. = ..()
 	if(!active)
 		return
 	var/mob/living/L = A
@@ -66,6 +65,8 @@
 	else
 		L.embed(src)
 		A.visible_message("<span class = 'danger'>[src.name] sticks to [L.name]!</span>")
+		det_time += 1.5 SECONDS
+	. = ..()
 
 /obj/item/weapon/grenade/plasma/detonate()
 	var/turf/epicenter = get_turf(src)

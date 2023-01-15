@@ -46,18 +46,20 @@
 	whitelisted_species = list(/datum/species/unggoy)
 	pop_balance_mult = 1.5
 
-
-
-/* Not available during standard play */
-
 /datum/job/covenant/unggoy_specops
 	title = "Special Operations Unggoy"
 	supervisors = "the Elites"
-	outfit_type = /decl/hierarchy/outfit/unggoy/specops
-	access = list(access_covenant, access_covenant_command, access_covenant_slipspace)
+	outfit_type = /decl/hierarchy/outfit/unggoy/specops/infiltrator
+	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	spawn_positions = 0
 	total_positions = 0
+	poplock_max = 1
+	poplock_divisor = 5
 	faction_whitelist = "Covenant"
+	whitelisted_species = list(/datum/species/unggoy)
+	pop_balance_mult = 1.5
+
+/* Not available during standard play */
 
 /datum/job/covenant/unggoy_honour_guard
 	title = "Honour Guard Unggoy"

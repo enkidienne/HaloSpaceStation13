@@ -20,13 +20,16 @@
 			return 0
 
 /obj/item/clothing/suit/armor/special/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
+	. = 0
 	for(var/datum/armourspecials/i in specials)
 		var/returnresult = i.handle_shield(user,damage,damage_source)
 		if(returnresult == 0)
 			continue
 		else
-			return returnresult
-
+			. = returnresult
+			if(i.handleshield_stop_processing)
+				return
+	return
 
 /obj/item/clothing/suit/armor/special/equipped(var/mob/user, var/slot)
 	if(slot == slot_wear_suit)

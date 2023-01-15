@@ -116,6 +116,14 @@
 	//
 	id_type = /obj/item/weapon/card/id/grunt_specops
 
+/decl/hierarchy/outfit/unggoy/specops/infiltrator
+	name = "Unggoy (Spec-Ops Infiltrator)"
+
+	suit = /obj/item/clothing/suit/armor/special/unggoy_combat_harness/specops/infiltrator
+	belt = /obj/item/weapon/gun/projectile/needler/stealth
+	l_hand = /obj/item/weapon/gun/energy/plasmapistol/stealth
+	r_hand = /obj/item/language_learner/unggoy_to_common
+
 /decl/hierarchy/outfit/unggoy/specops/armed
 	name = "Armed Unggoy (Spec-Ops)"
 	belt = /obj/item/weapon/storage/belt/covenant_ammo/mobilespawn_unggoy

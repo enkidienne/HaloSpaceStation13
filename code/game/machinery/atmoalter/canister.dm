@@ -248,6 +248,7 @@ update_flag
 		src.health -= W.force
 		src.add_fingerprint(user)
 		healthcheck()
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
 	if(istype(user, /mob/living/silicon/robot) && istype(W, /obj/item/weapon/tank/jetpack))
 		var/datum/gas_mixture/thejetpack = W:air_contents

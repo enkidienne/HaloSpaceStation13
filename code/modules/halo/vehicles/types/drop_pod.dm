@@ -106,7 +106,7 @@
 	set name = "Launch Pod"
 	set src in range(1)
 	set category = "Vehicle"
-
+	
 	if(!is_on_launchbay())
 		to_chat(usr,"<span class = 'notice'>[src] needs to be in a drop-bay to be launched.</span>")
 		return
@@ -135,6 +135,15 @@
 		launched = 1
 		spawn(5) //Slight delay so player clients can update.
 			post_drop_effects(drop_turf)
+		if(movement_destroyed) //Hurts players for using a destroyed pod
+			visible_message("<span class = 'danger'>The [src] wreckage fails to fully protect from atmospheric entry and lands violently due to damaged air brakes.</span>")
+			for(var/mob/living/m in occupants)
+				var count = 2
+				while(count > 0) //Does it twice to make it more actively dangerous and randomise the spread of damage more
+					m.apply_damage(rand(20,70), BRUTE) //Brute damaged caused by violent impact
+					m.apply_damage(rand(10,30), BURN) //Some burn damage due to holes in the pod not protecting fully from atmospheric entry
+					count = count-1
+			kick_occupants()
 
 /obj/vehicles/drop_pod/proc/post_drop_effects(var/turf/drop_turf)
 	//explosion(drop_turf,-1,0,2,5)

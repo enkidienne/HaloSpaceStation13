@@ -9,4 +9,3 @@
 	I.plane = ABOVE_TURF_PLANE
 	I.layer = DECAL_LAYER
 	T.overlays += I
-	qdel(src)

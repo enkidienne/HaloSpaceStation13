@@ -366,20 +366,30 @@
 	icon_state = "specops_chest_obj"
 	item_state = "specops_chest"
 	totalshields = 150
-	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/sangheili,/datum/armourspecials/cloaking)
+	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/sangheili,/datum/armourspecials/cloaking/cov_specops)
 	action_button_name = "Toggle Active Camouflage"
+
+/obj/item/clothing/suit/armor/special/combatharness/specops/infiltrator
+	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/sangheili,/datum/armourspecials/cloaking/cov_specops,/datum/armourspecials/gear/sangheili_infiltrator)
 
 /obj/item/clothing/shoes/sangheili/specops
 	name = "Sanghelli Leg Armour (Spec-Ops)"
 	desc = "Leg armour, to be used with the Sangheili Combat Harness."
 	icon_state = "specops_legs_obj"
 	item_state = "specops_legs"
+	stepsound = 'code/modules/halo/sounds/walk_sounds/generic_walk.ogg'
 
 /obj/item/clothing/gloves/thick/sangheili/specops
 	name = "Sanghelli Combat Gauntlets (Spec-Ops)"
 	desc = "Hand armour, to be used with the Sangheili Combat Harness."
 	icon_state = "specops_gloves_obj"
 	item_state = "specops_gloves"
+
+/obj/item/clothing/gloves/thick/sangheili/specops/infiltrator/New()
+	. = ..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,1,ITEM_SIZE_SMALL,null,list(/obj/item/device/ewar_spoofer))
+	pocket_curr.name = "EWAR Storage"
+	pocket_curr.handle_item_insertion(new /obj/item/device/ewar_spoofer/covenant(loc))
 
 /obj/item/clothing/head/helmet/sangheili/silentshadow
 	name = "Sangheili Helmet (Silent Shadow)"
@@ -399,7 +409,7 @@
 	name = "Sangheili Combat Harness (Silent Shadow)"
 	icon_state = "ss_chest_obj"
 	item_state = "ss_chest"
-	slowdown_general = -2 //They're meant to be primarily melee-only and admemespawn anyway, so.
+	slowdown_general = -1 //They're meant to be primarily melee-only and admemespawn anyway, so.
 	totalshields = 210
 	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/sangheili,/datum/armourspecials/cloaking/silentshadow)
 	action_button_name = "Toggle Active Camouflage"
@@ -413,6 +423,7 @@
 	desc = "Leg armour, to be used with the Sangheili Combat Harness."
 	icon_state = "ss_legs_obj"
 	item_state = "ss_legs"
+	stepsound = 'code/modules/halo/sounds/walk_sounds/generic_walk.ogg'
 
 /obj/item/clothing/gloves/thick/sangheili/silentshadow
 	name = "Sanghelli Combat Gauntlets (Silent Shadow)"

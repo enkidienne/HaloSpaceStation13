@@ -5,6 +5,7 @@
 	path = "stranded_desert_outpost"
 	allowed_gamemodes = list("stranded")
 	lobby_icon = 'code/modules/halo/splashworks/title4.jpg'
+	id_hud_icons = 'maps/firefight/hud_icons.dmi'
 	boss_name = "UNSC"
 	company_name = "UNSC"
 

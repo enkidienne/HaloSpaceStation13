@@ -121,6 +121,14 @@
 				to_chat(user,"<span class = 'notice'>[src] hasn't been modified for your species!</span>")
 				return 0
 
+//Stealth Variant
+/obj/item/weapon/gun/energy/plasmapistol/stealth
+	name = "Type-25-S Directed Energy Pistol "
+	desc = "A dual funtionality pistol: It fires bolts of plasma, and when overcharged is capable of emitting a small emp burst at the point of impact. A holy modification makes this weapon safe to use when cloaked."
+
+	silenced = 1
+	cloak_disrupt = 0
+
 /obj/item/weapon/gun/projectile/needler // Uses "magazines" to reload rather than inbuilt cells.
 	name = "Type-33 Guided Munitions Launcher"
 	desc = "This weapon fire razor-sharp crystalline shards which can explode violently when embedded into targets."
@@ -160,3 +168,11 @@
 		icon_state = initial(icon_state)
 	else
 		icon_state = "[initial(icon_state)]_unloaded"
+
+//Stealth Variant
+/obj/item/weapon/gun/projectile/needler/stealth
+	name = "Type-33-S Guided Munitions Launcher"
+	desc = "This weapon fire razor-sharp crystalline shards which can explode violently when embedded into targets. A holy modification makes this weapon safe to use when cloaked."
+
+	silenced = 1
+	cloak_disrupt = 0

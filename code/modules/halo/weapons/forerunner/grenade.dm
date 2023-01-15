@@ -21,7 +21,7 @@
 	. = ..()
 	if(istype(crosser))
 		visible_message("<span class = 'danger'>Shards within [src] track [crosser], and explode!</span>")
-		crosser.adjustFireLoss(100)
+		crosser.adjustFireLoss(50)
 
 /obj/item/weapon/grenade/splinter
 	name = "Z-400 Pursuit Disruption Grid Generator"
@@ -29,7 +29,7 @@
 	icon = 'code/modules/halo/weapons/icons/forerunner_sprites.dmi'
 	icon_state = "splinternade"
 	can_adjust_timer = 0
-	det_time = 50
+	det_time = 25
 	alt_explosion_range = 2
 	alt_explosion_damage_max = 50
 

@@ -14,6 +14,15 @@
 	if(.)
 		UpdateMobSector(A)
 
+/obj/effect/z_darken
+	anchored = 1
+	density = 0
+	mouse_opacity = 0
+	icon = 'icons/turf/space.dmi'
+	icon_state = "empty"
+	plane = LIGHTING_PLANE
+	layer = ABOVE_LIGHTING_LAYER
+
 /turf/simulated/open/CanZPass(atom, direction)
 	UpdateMobSector(atom)
 	return 1
@@ -29,6 +38,7 @@
 	plane = SPACE_PLANE
 	density = 0
 	pathweight = 100000 //Seriously, don't try and path over this one numbnuts
+	var/obj/effect/darken_image
 
 	var/turf/below
 
@@ -70,24 +80,16 @@
 
 /turf/simulated/open/update_icon()
 	if(below)
-		underlays = list(image(icon = below.icon, icon_state = below.icon_state,dir = below.dir))
+		vis_contents.Cut()
+		vis_contents += below
 
-	var/list/noverlays = list()
 	if(!istype(below,/turf/space))
-		noverlays += image(icon =icon, icon_state = "empty", layer = ABOVE_WIRE_LAYER)
-
-	var/turf/simulated/T = get_step(src,NORTH)
-	if(istype(T) && !istype(T,/turf/simulated/open))
-		noverlays += image(icon ='icons/turf/cliff.dmi', icon_state = "metal", layer = ABOVE_WIRE_LAYER)
-
-	var/obj/structure/stairs/S = locate() in below
-	if(S && S.loc == below)
-		var/image/I = image(icon = S.icon, icon_state = "below", dir = S.dir, layer = ABOVE_WIRE_LAYER)
-		I.pixel_x = S.pixel_x
-		I.pixel_y = S.pixel_y
-		noverlays += I
-
-	overlays = noverlays
+		if(!darken_image)
+			darken_image = new /obj/effect/z_darken (src)
+	else
+		if(darken_image)
+			qdel(darken_image)
+			darken_image = null
 
 /turf/simulated/open/attackby(obj/item/C as obj, mob/user as mob)
 	if (istype(C, /obj/item/stack/rods))
@@ -129,6 +131,10 @@
 		coil.turf_place(src, user)
 		return
 	return
+
+/turf/simulated/open/Destroy()
+	. = ..()
+	qdel(darken_image)
 
 //Most things use is_plating to test if there is a cover tile on top (like regular floors)
 /turf/simulated/open/is_plating()

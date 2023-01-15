@@ -6,12 +6,15 @@
 	icon_state = "Knife"
 	item_state = "butterflyknife_open"
 	w_class = ITEM_SIZE_SMALL
-	force = 30
-	throwforce = 10
 	sharp = 1
 	edge = 1
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	armor_penetration = 70
+
+	force_divisor = 0.5
+	thrown_force_divisor = 0.5
+
+	cloak_disrupt = 0
 
 	executions_allowed = TRUE
 	start_execute_messages = list(BP_CHEST = "\The USER steps on \the VICTIM and brandishes \the WEAPON!", BP_HEAD = "\The USER grips \the VICTIM's shoulder and brandishes \the WEAPON!")
@@ -27,19 +30,19 @@
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
 		)
-	armor_penetration = 70
+	armor_penetration = 50
 
 
 	w_class = ITEM_SIZE_LARGE
-	force_divisor = 0.5
-	thrown_force_divisor = 0.6
+	force_divisor = 0.83
+	thrown_force_divisor = 0.83
 	slot_flags = SLOT_BELT | SLOT_BACK
 	sharp = 1
 	edge = 1
 	unbreakable = 1
 	attack_verb = list("chopped", "torn", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
-	unacidable = 1
+	unacidable = 0
 	lunge_dist = 2
 
 	executions_allowed = TRUE
@@ -51,6 +54,8 @@
 	desc = "A reinforced sword capable of safely parrying blows from energy weapons."
 	icon_state = "COsword_obj"
 	item_state = "machete"
+	unacidable = 1
+	armor_penetration = 70
 	applies_material_colour = FALSE
 	lunge_dist = 3
 

@@ -442,7 +442,7 @@
 	icon_state = "h_innie_chest_obj_brown"
 	blood_overlay_type = "h_innie_chest_brown"
 	armor = list(melee = 55, bullet = 60, laser = 45, energy = 50, bomb = 40, bio = 0, rad = 0)
-	slowdown_general = 0.2
+	slowdown_general = 0.1
 
 /obj/item/clothing/suit/storage/innie/heavy/blue
 	name = "M22H Body Armor - Blue Camo"
@@ -525,7 +525,7 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	armor = list(melee = 75, bullet = 65, laser = 60, energy = 60, bomb = 75, bio = 50, rad = 50)
 	armor_thickness = 40
-	slowdown_general = 1.2
+	slowdown_general = 0.8
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/suit/bomb_suit/security/colossus/New()
@@ -545,7 +545,6 @@
 	heat_protection = HEAD | FACE
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	unacidable = 1
-	slowdown_general = 1
 	armor_thickness = 40
 	armor = list(melee = 75, bullet = 65, laser = 60, energy = 60, bomb = 75, bio = 50, rad = 50)
 	action_button_name = "Toggle Helmet Light"
@@ -583,7 +582,7 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	unacidable = 1
 	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic,/obj/item/weapon/tank)
-	slowdown_general = -4
+	slowdown_general = -1
 	armor_thickness = 15
 	armor_thickness_max = 15
 	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 15, bio = 30, rad = 30)

@@ -1,6 +1,6 @@
 #define HUMAN_STRIP_DELAY        40   // Takes 40ds = 4s to strip someone.
 
-#define BACKPACK_SLOWDOWN_MOD 0.05 //The modifer to apply to the w_class of an item when calculating slowdown.
+#define BACKPACK_SLOWDOWN_MOD 0.025 //The modifer to apply to the w_class of an item when calculating slowdown.
 
 #define SHOES_SLOWDOWN         -1.0  // How much shoes slow you down by default. Negative values speed you up.
 
@@ -168,11 +168,9 @@
 #define slot_r_ear_str      "slot_r_ear"
 #define slot_belt_str       "slot_belt"
 #define slot_shoes_str      "slot_shoes"
-#define slot_head_str      	"slot_head"
 #define slot_wear_mask_str 	"slot_wear_mask"
 #define slot_handcuffed_str "slot_handcuffed"
 #define slot_legcuffed_str "slot_legcuffed"
-#define slot_wear_mask_str 	"slot_wear_mask"
 #define slot_wear_id_str  	"slot_wear_id"
 #define slot_gloves_str  	"slot_gloves"
 #define slot_glasses_str  	"slot_glasses"

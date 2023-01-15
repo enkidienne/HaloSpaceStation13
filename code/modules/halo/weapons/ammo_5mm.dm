@@ -7,6 +7,7 @@
 /obj/item/projectile/bullet/m443
 	damage = 15
 	shield_damage = 15
+	armor_penetration = 15
 
 /obj/item/ammo_casing/m443_rubber
 	desc = "A 5mm rubber bullet casing."

@@ -383,4 +383,3 @@ GLOBAL_LIST_INIT(om_base_sectors, list())
 #undef NPC_SHIP_LOSE_DELAY
 #undef ON_PROJECTILE_HIT_MESSAGES
 #undef ON_DEATH_MESSAGES
-#undef ALL_Civilian_SHIPNAMES

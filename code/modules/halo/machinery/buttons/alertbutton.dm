@@ -1,11 +1,13 @@
 
+#define DEFAULT_LIGHT_STRING "#a0a080"
+
 /obj/machinery/button/toggle/alarm_button
 	var/area/area_base = null
 	var/alert_message = "Red Alert! All hands to combat stations!"
 	var/un_alert_message = "Red Alert lifted."
-	var/alarm_color_string = "#ff0000"
+	var/alarm_color_string = "#ff9696"
 	var/sound/alarm_sound = 'code/modules/halo/sounds/r_alert_alarm_loop.ogg'
-	var/alarm_loop_time = 5.875 SECONDS //The amount of time it takes for the alarm sound to end. Used for restarting the sound.
+	var/alarm_loop_time = 13.896 SECONDS //The amount of time it takes for the alarm sound to end. Used for restarting the sound.
 	var/currently_alarming
 
 /obj/machinery/button/toggle/alarm_button/activate(var/mob/user)
@@ -40,8 +42,38 @@
 	for(var/obj/machinery/light/l in GLOB.machines)
 		if(!istype(l.loc.loc,area_base))
 			continue
-		if(on && l.brightness_color == "#FFFFFF") //Only switch the color of lights that haven't been touched already.
-			l.brightness_color = alarm_color_string
-		else
-			l.brightness_color = "#FFFFFF" //The base light-color.
+		if(on)
+			if(l.brightness_color == DEFAULT_LIGHT_STRING) //Only switch the color of lights that haven't been touched already.
+				l.brightness_color = alarm_color_string
+		else if (l.brightness_color == alarm_color_string)
+			l.brightness_color = DEFAULT_LIGHT_STRING //The base light-color.
 		l.update()
+
+//Stupid snowflake button for both sound and door control at the same time
+/obj/machinery/button/remote/blast_door/firing_sequence
+	var/area/area_base = null
+	var/sound_cooldown = 200
+	var/last_used = 0
+	var/alarm_sound = 'code/modules/halo/sounds/station_firing_sequence.ogg'
+	var/door_cooldown = 50
+	var/state = 1
+
+/obj/machinery/button/remote/blast_door/firing_sequence/trigger()
+	if((last_used + door_cooldown)<world.time)
+		if(state)
+			for(var/mob/m in GLOB.player_list)
+				if(isturf(m.loc) && istype(m.loc.loc,area_base))
+					to_chat(m,"<span class = 'danger'>Station firing sequence has been initialized.</span>")
+					if((last_used + sound_cooldown)<world.time)
+						m << alarm_sound
+		state = !state
+
+		for(var/obj/machinery/door/blast/M in world)
+			if(M.id == src.id)
+				if(M.density)
+					spawn(0)
+						M.open()
+				else
+					spawn(0)
+						M.close()
+	last_used = world.time

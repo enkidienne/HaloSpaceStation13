@@ -114,7 +114,7 @@
 
 /obj/machinery/pointbased_vending/armory/heavy // HEAVY WEAPONS
 	name = "UNSC Heavy Weapons Rack"
-	desc = "Storage for advanced weapons and ammunition"
+	desc = "Storage for advanced weapons and ammunition."
 	req_access = list(access_unsc_armoury, access_unsc_specialist)
 	products = list(
 					"Guns" = -1,
@@ -146,7 +146,7 @@
 
 /obj/machinery/pointbased_vending/armory/heavy/innie // HEAVY WEAPONS
 	name = "Insurrectionist Heavy Weapons Rack"
-	desc = "Storage for advanced weapons and ammunition"
+	desc = "Storage for advanced weapons and ammunition."
 	req_access = list(access_innie)
 	products = list(
 					"Guns" = -1,
@@ -194,7 +194,7 @@
 
 /obj/machinery/pointbased_vending/armory/armor
 	name = "UNSC Misc Equipment Vendor"
-	desc = "A machine full of spare UNSC armor and equipment"
+	desc = "A machine full of spare UNSC armor and equipment."
 	req_access = list(access_unsc_armoury)
 	products = list(
 					"Undersuits" = -1,
@@ -235,6 +235,7 @@
 					/obj/item/weapon/storage/pocketstore/hardcase/materials = 0,
 					/obj/item/weapon/storage/pocketstore/hardcase/tools = 0,
 					"Miscellaneous" = -1,
+					/obj/item/clothing/ears/earmuffs/earplugs = 0,
 					/obj/item/flight_item/bullfrog_pack = 0,
 					/obj/item/stack/barbedwire/fifteen = 0,
 					/obj/item/device/multitool = 0,
@@ -329,7 +330,6 @@
 					/obj/item/weapon/gun/projectile/ma5b_ar = 0,
 					/obj/item/weapon/gun/projectile/br55 = 0,
 					"Ammunition" = -1,
-					/obj/item/projectile/bullet/m228 = 0,
 					/obj/item/ammo_magazine/m6s/m225 = 0,
 					/obj/item/ammo_magazine/ma5b/m118 = 0,
 					/obj/item/ammo_magazine/m392/m120 = 0,
@@ -391,6 +391,7 @@
 					/obj/item/weapon/storage/pocketstore/hardcase/materials = 0,
 					/obj/item/weapon/storage/pocketstore/hardcase/tools = 0,
 					"Miscellaneous" = -1,
+					/obj/item/clothing/ears/earmuffs/earplugs = 0,
 					/obj/item/weapon/storage/firstaid/unsc = 0,
 					/obj/item/device/binoculars = 0,
 					/obj/item/stack/barbedwire/fifteen = 0,
@@ -559,6 +560,7 @@
 					/obj/item/clothing/mask/gas/soebalaclava = 7,
 					/obj/item/clothing/mask/gas/soebalaclava/open = 7,
 					"Miscellaneous" = -1,
+					/obj/item/clothing/ears/earmuffs/earplugs = 0,
 					/obj/item/weapon/armor_patch = 4,
 					 )
 
@@ -597,6 +599,7 @@
 					/obj/item/weapon/storage/pocketstore/hardcase/materials = 0,
 					/obj/item/weapon/storage/pocketstore/hardcase/tools = 0,
 					"Miscellaneous" = -1,
+					/obj/item/clothing/ears/earmuffs/earplugs = 0,
 					/obj/item/flight_item/bullfrog_pack = 0,
 					/obj/item/weapon/armor_patch = 0,
 					/obj/item/weapon/armor_patch/mini = 0,
@@ -635,6 +638,7 @@
 					/obj/item/weapon/storage/pill_bottle/inaprovaline = 6,
 					"Injectors" = -1,
 					/obj/item/weapon/reagent_containers/hypospray = 3,
+					/obj/item/weapon/reagent_containers/syringe/psychostimulant = 10,
 					/obj/item/weapon/reagent_containers/syringe/ld50_syringe/triadrenaline = 10,
 					/obj/item/weapon/storage/box/syringes = 2,
 					)

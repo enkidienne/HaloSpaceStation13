@@ -19,6 +19,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/unsc/oni/research/director
+	access = list(access_unsc,access_unsc_bridge,access_unsc_medical,access_unsc_armoury,access_unsc_odst,access_unsc_specialist,access_unsc_supplies,access_unsc_oni,access_unsc_cargo)
 
 /datum/job/unsc/oni/guard
 	title = "ONI Security Guard"
@@ -31,3 +32,17 @@
 	total_positions = 1
 	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/unsc/oni/guard/commander
+
+/datum/job/unsc/oni/field_agent
+	title = "ONI Field Agent"
+	supervisors = "the ONI Research Director, Shadowy and unknowable forces."
+	spawnpoint_override = "UNSC Base Spawns" //Resetting these back to the base spawnpoints, for compatability.
+	fallback_spawnpoint = "UNSC Base Fallback Spawns"
+	total_positions = 0
+	spawn_positions = 0
+	poplock_max = 2
+	poplock_divisor = 5
+	outfit_type = /decl/hierarchy/outfit/job/unsc/oni/field_agent
+	access = list(access_unsc,access_unsc_bridge,access_unsc_medical,access_unsc_armoury,access_unsc_odst,access_unsc_specialist,access_unsc_supplies,access_unsc_oni,access_unsc_cargo)
+	pop_balance_mult = 1.5
+	faction_whitelist = "UNSC"

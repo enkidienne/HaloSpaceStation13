@@ -24,7 +24,7 @@
 		)
 	burst_delay = 1.5
 	move_delay_malus = 1.5
-	slowdown_general = 1
+	slowdown_general = 0.5
 
 	firemodes = list(\
 	list(mode_name="short bursts",  burst=12,accuracy=0, dispersion=list(0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.6, 0.6, 0.6, 0.6)),

@@ -62,9 +62,17 @@
 	item_state = "combatharness_specops"
 	//
 	action_button_name = "Toggle Active Camouflage"
-	specials = list(/datum/armourspecials/cloaking)
+	specials = list(/datum/armourspecials/cloaking/cov_specops)
 	//same as a marine
 	armor = list(melee = 55, bullet = 50, laser = 55, energy = 45, bomb = 40, bio = 25, rad = 25)
+	//But slightly worse thickness.
+	armor_thickness = 15
+
+/obj/item/clothing/suit/armor/special/unggoy_combat_harness/specops/infiltrator/New()
+	..()
+	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,3, ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD + list(/obj/item/device/ewar_spoofer))
+	pocket_curr.name = "EWAR and Misc Storage"
+	pocket_curr.handle_item_insertion(new /obj/item/device/ewar_spoofer/covenant(loc))
 
 /obj/item/clothing/suit/armor/special/unggoy_combat_harness/honour_guard
 	name = "Unggoy Combat Harness (Honour Guard)"

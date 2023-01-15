@@ -25,7 +25,7 @@
 	if(can_feel_pain())
 		if(get_shock() >= 20) tally += (get_shock() / 30) //halloss shouldn't slow you down if you can't even feel it
 
-	if(istype(buckled, /obj/structure/bed/chair/wheelchair))
+	if(buckled && istype(buckled, /obj/structure/bed/chair/wheelchair))
 		for(var/organ_name in list(BP_L_HAND, BP_R_HAND, BP_L_ARM, BP_R_ARM))
 			var/obj/item/organ/external/E = get_organ(organ_name)
 			if(!E || E.is_stump())
@@ -42,8 +42,10 @@
 				equipment_slowdown += I.slowdown_general
 				equipment_slowdown += I.slowdown_per_slot[slot]
 
-		equipment_slowdown = max(equipment_slowdown - src.ignore_equipment_threshold, 0)
+		if(ignore_equipment_threshold && equipment_slowdown > ignore_equipment_threshold)
+			equipment_slowdown -= ignore_equipment_threshold
 		equipment_slowdown *= species.equipment_slowdown_multiplier
+
 		tally += equipment_slowdown
 
 		for(var/organ_name in list(BP_L_LEG, BP_R_LEG, BP_L_FOOT, BP_R_FOOT))
@@ -72,6 +74,13 @@
 	var/turf/T = get_turf(src)
 	if(src.elevation == T.elevation)
 		tally += T.get_movement_delay()
+
+	if(CE_SLOWREMOVE in chem_effects) //Goes here because it checks the full tally first.
+		if(tally > 0)
+			tally = max(0, tally - SLOWDOWN_REMOVAL_CHEM_MAX_REMOVED)
+
+	if(CE_SPEEDBOOST in chem_effects)
+		tally -= SPEEDBOOST_CHEM_SPEED_INCREASE
 
 	return (tally+config.human_delay)
 

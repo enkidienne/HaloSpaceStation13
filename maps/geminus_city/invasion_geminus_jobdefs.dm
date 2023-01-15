@@ -11,6 +11,7 @@
 		/datum/job/unsc/odst/squad_leader,\
 		/datum/job/unsc/commanding_officer,\
 		/datum/job/unsc/executive_officer,\
+		/datum/job/unsc/oni/field_agent,\
 		/datum/job/unsc/oni/research,\
 		/datum/job/unsc/oni/research/director,\
 		/datum/job/unsc_ai,\
@@ -21,12 +22,14 @@
 		/datum/job/covenant/sangheili_major,\
 		/datum/job/covenant/sangheili_ultra,\
 		/datum/job/covenant/sangheili_shipmaster,\
+		/datum/job/covenant/sangheili_specops,\
 		/datum/job/covenant/kigyarminor,\
 		/datum/job/covenant/unggoy_minor,
 		/datum/job/covenant/unggoy_major,\
 		/datum/job/covenant/unggoy_ultra,\
 		/datum/job/covenant/unggoy_deacon,\
 		/datum/job/covenant/unggoy_heavy,\
+		/datum/job/covenant/unggoy_specops,\
 		/datum/job/covenant/skirmmurmillo,\
 		/datum/job/covenant/skirmcommando,\
 		/datum/job/covenant/skirmchampion,\

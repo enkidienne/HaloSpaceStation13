@@ -1,3 +1,5 @@
+/datum/armourspecials
+	var/handleshield_stop_processing = 0 //If we should stop processing handleshields once we hit this.
 
 /datum/armourspecials/proc/tryemp(var/severity)
 

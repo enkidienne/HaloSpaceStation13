@@ -76,6 +76,7 @@
 	step_delay = 0
 	penetrating = 1
 	shield_damage = 210
+	kill_count = 125
 	tracer_type = /obj/effect/projectile/binaryrifle
 	tracer_delay_time = 2 SECONDS
 

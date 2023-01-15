@@ -23,13 +23,11 @@
 	desc = "A syringe filled with biofoam, used to quickly fix internal and external injuries. Only inject a second dose after 15 seconds has passed, as remnants of previous injections interferes with the processing of future ones until fully processed."
 	amount_per_transfer_from_this = 10
 
-
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/biofoam, 10)
 		mode = SYRINGE_INJECT
 		update_icon()
-
 
 /obj/item/weapon/reagent_containers/syringe/ld50_syringe/triadrenaline
 	name = "Tri-Adrenaline Syringe"
@@ -43,6 +41,21 @@
 		..()
 		reagents.add_reagent(/datum/reagent/triadrenaline, 10)
 		reagents.add_reagent(/datum/reagent/polypseudomorphine, 5)
+		mode = SYRINGE_INJECT
+		update_icon()
+
+/obj/item/weapon/reagent_containers/syringe/psychostimulant
+	name = "Psychostimulant Syringe"
+	desc = "A dangerous syringe full of a potent brain-mending concoction used to treat traumatic brain injuries. Side effects include loss of consciousness; contains biofoam."
+	amount_per_transfer_from_this = 15
+	volume = 15
+	time = 30
+
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/alkysine, 3)
+		reagents.add_reagent(/datum/reagent/inaprovaline, 7)
+		reagents.add_reagent(/datum/reagent/biofoam, 5)
 		mode = SYRINGE_INJECT
 		update_icon()
 

@@ -9,6 +9,9 @@
 	maxhealth = 1200
 	opacity = 1
 
+	open_sound_powered = 'code/modules/halo/sounds/airlock_sounds/covenantdoor64open.ogg'
+	close_sound_powered = 'code/modules/halo/sounds/airlock_sounds/covenantdoor64close.ogg'
+
 /obj/machinery/door/airlock/multi_tile/covenant/allowed(var/mob/m) //Covenant doors don't run on usual access cards. Internal tech scans the accesser.
 	if(covenant_secure)
 		if(m.faction == "Covenant")
@@ -28,8 +31,13 @@
 	width = 3
 	maxhealth = 1500
 
+	open_sound_powered = 'code/modules/halo/sounds/airlock_sounds/covenantdoor96open.ogg'
+
 /obj/machinery/door/airlock/multi_tile/covenant/four
 	name = "Vehicle Airlock"
 	icon = 'code/modules/halo/covenant/airlocks/door128.dmi'
 	width = 4
 	maxhealth = 2000
+
+	open_sound_powered = 'code/modules/halo/sounds/airlock_sounds/covenantdoor128open.ogg'
+	close_sound_powered = 'code/modules/halo/sounds/airlock_sounds/covenantdoor128close.ogg'

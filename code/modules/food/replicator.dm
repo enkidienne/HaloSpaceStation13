@@ -147,7 +147,7 @@
 		if(start_making) //want to do this first so that the first dish won't instantly come out
 			src.audible_message("<b>\The [src]</b> rumbles and vibrates.")
 			playsound(src.loc, 'sound/machines/juicer.ogg', 50, 1)
-			make_time = world.time + rand(100, 300)
+			make_time = world.time + rand(50, 150)
 			start_making = 0
 		if(world.time > make_time)
 			dispense_food(queued_dishes[1])

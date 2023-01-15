@@ -26,6 +26,7 @@
 		)
 	crosshair_file = 'code/modules/halo/weapons/icons/dragaim_icon.dmi'
 
+	cloak_disrupt = 0
 
 
 /obj/item/weapon/gun/projectile/m6c_magnum_s/update_icon()

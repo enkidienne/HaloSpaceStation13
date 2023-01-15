@@ -47,6 +47,10 @@
 	GLOB.COVENANT.setup_faction_objectives(list(/datum/objective/colony_capture/cov))
 	next_score_display = world.time + ship_lockdown_duration + SCORE_DISPLAY_DELAY
 
+	//Setup slipdrive-overload blocking.
+	for(var/obj/effect/overmap/om in list(GLOB.UNSC.base,GLOB.UNSC.flagship,GLOB.COVENANT.base,GLOB.COVENANT.flagship,GLOB.INSURRECTION.base,GLOB.INSURRECTION.flagship))
+		GLOB.disallow_slipdrive_explosion_zs |= om.map_z
+
 /datum/game_mode/base_assault/neutral/proc/do_display(var/list/display_to,var/sender_name,var/percentile,var/enemy_percentile,var/points_ours,var/points_enemy)
 	for(var/datum/mind/mind in display_to)
 		if(mind.current)

@@ -31,8 +31,6 @@
 	smoke_ammo_max = 5
 	smoke_step_dist = 1
 
-	can_overrun_cover = 1
-
 	min_speed = 13
 	max_speed = 4
 	acceleration = 4

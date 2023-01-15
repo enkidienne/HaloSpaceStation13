@@ -3,7 +3,7 @@
 	name = "Ammo Box"
 	desc = "An ammunition box used for quick loading."
 	icon = 'icons/obj/ammo.dmi'
-	icon_state = "666"
+	icon_state = "genericbox"
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_POCKET | SLOT_BELT
 	var/loading = 0
@@ -57,12 +57,14 @@
 
 /obj/item/ammo_box/shotgun
 	name = "Shotgun Shell Box"
+	icon_state = "buckbox"
 	desc = "A box of 8 gauge shells to assist in loading pump-action shotguns"
 	ammo_spawnwith = list(/obj/item/ammo_casing/shotgun/pellet/high_power)
 	capacity = 16
 
 /obj/item/ammo_box/shotgun/slug
 	name = "Shotgun Slug Box"
+	icon_state = "slugbox"
 	desc = "A box of 8 gauge slugs to assist in loading pump-action shotguns"
 	ammo_spawnwith = list(/obj/item/ammo_casing/shotgun/high_power)
 	desc_ammo_name = "slugs"
@@ -76,6 +78,7 @@
 
 /obj/item/ammo_box/shotgun/beanbag
 	name = "Shotgun Beanbag Box"
+	icon_state = "stunbox"
 	desc = "A box of 8 gauge beanbag shells to assist in loading pump-action shotguns"
 	ammo_spawnwith = list(/obj/item/ammo_casing/shotgun/beanbag/high_power)
 	desc_ammo_name = "beanbags"

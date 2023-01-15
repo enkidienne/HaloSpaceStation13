@@ -17,6 +17,7 @@ var/global/dmm_suite/preloader/_preloader = null
  *
  */
 /dmm_suite/load_map(var/dmm_file as file, var/z_offset as num, var/x_offset as num, var/y_offset as num,var/ignore_prepresent_wall = 0 as num)
+	set background = 1
 	if(!z_offset)//what z_level we are creating the map on
 		z_offset = world.maxz+1
 
