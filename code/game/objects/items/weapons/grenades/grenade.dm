@@ -134,7 +134,7 @@
 			mult = multiplier_non_direct
 		var/dmg_max = alt_explosion_damage_max * mult
 		while(dmg_max > 0)
-			var/amt_dealt = min(alt_explosion_dmg_cap,dmg_max)
+			var/amt_dealt = min(alt_explosion_damage_cap,dmg_max)
 			m.adjustFireLoss(amt_dealt)
 			dmg_max -= amt_dealt
 		m.updatehealth()
