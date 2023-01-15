@@ -93,6 +93,10 @@
 			return global.SSgarbage;
 		if("SSlegacy")
 			return global.SSlegacy;
+		if("SSnano")
+			return global.SSnano;
+		if("SSprocessing")
+			return global.SSprocessing;
 		if("SSprofiler")
 			return global.SSprofiler;
 		if("SSvote")
@@ -1312,6 +1316,10 @@
 			global.SSgarbage=newval;
 		if("SSlegacy")
 			global.SSlegacy=newval;
+		if("SSnano")
+			global.SSnano=newval;
+		if("SSprocessing")
+			global.SSprocessing=newval;
 		if("SSprofiler")
 			global.SSprofiler=newval;
 		if("SSvote")
@@ -2484,6 +2492,8 @@
 	"SSatoms",
 	"SSgarbage",
 	"SSlegacy",
+	"SSnano",
+	"SSprocessing",
 	"SSprofiler",
 	"SSvote",
 	"TELEBLOCK",
