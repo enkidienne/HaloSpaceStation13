@@ -38,7 +38,6 @@
 	var/list/faction_reputation = list()
 	var/leader_name
 	var/datum/computer_file/data/com/faction_contact_data
-	var/is_processing = 0
 	var/datum/money_account/money_account
 	var/max_npc_quests = 0
 	var/time_next_quest = 0

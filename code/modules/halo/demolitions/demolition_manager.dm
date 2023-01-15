@@ -6,7 +6,6 @@ GLOBAL_LIST_INIT(DEMOLITION_MANAGER_LIST, new)
 	var/max_health = 0
 	var/buckle_ratio = 0.5
 	var/buckle_damage = 45
-	var/is_processing = 0
 	var/list/linked_areas = list()
 	var/next_sound_time = 0
 	var/sound_interval = 5 SECONDS

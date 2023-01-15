@@ -81,7 +81,7 @@
 			data["selected_faction"] = selected_faction.name
 			data["faction_quests"] = faction_quests
 
-	ui = GLOB.nanomanager.try_update_ui(user, src, ui_key, ui, data, force_open)
+	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
 		ui = new(user, src, ui_key, "comms_innie.tmpl", name, 950, 600, state = state)
 		ui.set_auto_update(1)

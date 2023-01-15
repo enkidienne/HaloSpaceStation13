@@ -77,7 +77,7 @@ GLOBAL_LIST_INIT(support_pads_global,list())
 		"uservalid" = is_user_valid(user),
 		"have_rank" = have_required_rank(user,o)
 		))
-	ui = GLOB.nanomanager.try_update_ui(user, src, ui_key, ui, data, force_open)
+	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
 		//(nuser, nsrc_object, nui_key, ntemplate_filename, ntitle = 0, nwidth = 0, nheight = 0, var/atom/nref = null, var/datum/nanoui/master_ui = null, var/datum/topic_state/state = GLOB.default_state)
 		ui = new(user, src, ui_key, "leader_support_item.tmpl", "Command Uplink", 800, 400, state = state)
@@ -92,7 +92,7 @@ GLOBAL_LIST_INIT(support_pads_global,list())
 		if(o && istype(usr,/mob/living))
 			activate_option(o,usr)
 		src.add_fingerprint(usr)
-		GLOB.nanomanager.update_uis(src)
+		SSnano.update_uis(src)
 
 /obj/item/support_pad/covenant
 	options_init = list(\

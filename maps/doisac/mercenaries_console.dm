@@ -107,7 +107,7 @@
 	data["carriedCash"] = check_cash(user)
 	data["user"] = "\ref[user]"
 
-	ui = GLOB.nanomanager.try_update_ui(user, src, ui_key, ui, data, force_open)
+	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if(!ui)
 		ui = new(user, src, ui_key, "merc_console.tmpl", src.name, 500, 400, master_ui = master_ui, state = state)
 		ui.set_initial_data(data)

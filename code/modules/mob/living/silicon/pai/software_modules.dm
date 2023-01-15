@@ -39,7 +39,7 @@
 		data["prime"] = user.pai_law0
 		data["supplemental"] = user.pai_laws
 
-		ui = GLOB.nanomanager.try_update_ui(user, user, id, ui, data, force_open)
+		ui = SSnano.try_update_ui(user, user, id, ui, data, force_open)
 		if(!ui)
 			// Don't copy-paste this unless you're making a pAI software module!
 			ui = new(user, user, id, "pai_directives.tmpl", "pAI Directives", 450, 600)
@@ -106,7 +106,7 @@
 		data["channels"] = channels
 			*/
 
-		ui = GLOB.nanomanager.try_update_ui(user, user, id, ui, data, force_open)
+		ui = SSnano.try_update_ui(user, user, id, ui, data, force_open)
 		if(!ui)
 			ui = new(user, user, id, "pai_radio.tmpl", "Radio Configuration", 300, 150)
 			ui.set_initial_data(data)
@@ -132,7 +132,7 @@
 		// This is dumb, but NanoUI breaks if it has no data to send
 		data["manifest"] = PDA_Manifest
 
-		ui = GLOB.nanomanager.try_update_ui(user, user, id, ui, data, force_open)
+		ui = SSnano.try_update_ui(user, user, id, ui, data, force_open)
 		if(!ui)
 			// Don't copy-paste this unless you're making a pAI software module!
 			ui = new(user, user, id, "pai_manifest.tmpl", "Crew Manifest", 450, 600)
@@ -182,7 +182,7 @@
 
 		data["messages"] = messages
 
-		ui = GLOB.nanomanager.try_update_ui(user, user, id, ui, data, force_open)
+		ui = SSnano.try_update_ui(user, user, id, ui, data, force_open)
 		if(!ui)
 			// Don't copy-paste this unless you're making a pAI software module!
 			ui = new(user, user, id, "pai_messenger.tmpl", "Digital Messenger", 450, 600)
@@ -248,7 +248,7 @@
 		data["medical"] = M ? M.fields : null
 		data["could_not_find"] = user.medical_cannotfind
 
-		ui = GLOB.nanomanager.try_update_ui(user, user, id, ui, data, force_open)
+		ui = SSnano.try_update_ui(user, user, id, ui, data, force_open)
 		if(!ui)
 			// Don't copy-paste this unless you're making a pAI software module!
 			ui = new(user, user, id, "pai_medrecords.tmpl", "Medical Records", 450, 600)
@@ -302,7 +302,7 @@
 		data["security"] = S ? S.fields : null
 		data["could_not_find"] = user.security_cannotfind
 
-		ui = GLOB.nanomanager.try_update_ui(user, user, id, ui, data, force_open)
+		ui = SSnano.try_update_ui(user, user, id, ui, data, force_open)
 		if(!ui)
 			// Don't copy-paste this unless you're making a pAI software module!
 			ui = new(user, user, id, "pai_secrecords.tmpl", "Security Records", 450, 600)
@@ -352,7 +352,7 @@
 		data["progress_b"] = user.hackprogress % 10
 		data["aborted"] = user.hack_aborted
 
-		ui = GLOB.nanomanager.try_update_ui(user, user, id, ui, data, force_open)
+		ui = SSnano.try_update_ui(user, user, id, ui, data, force_open)
 		if(!ui)
 			// Don't copy-paste this unless you're making a pAI software module!
 			ui = new(user, user, id, "pai_doorjack.tmpl", "Door Jack", 300, 150)
@@ -443,7 +443,7 @@
 				gases[++gases.len] = gas
 			data["gas"] = gases
 
-		ui = GLOB.nanomanager.try_update_ui(user, user, id, ui, data, force_open)
+		ui = SSnano.try_update_ui(user, user, id, ui, data, force_open)
 		if(!ui)
 			// Don't copy-paste this unless you're making a pAI software module!
 			ui = new(user, user, id, "pai_atmosphere.tmpl", "Atmosphere Sensor", 350, 300)
@@ -503,7 +503,7 @@
 		data["frequency"] = format_frequency(user.sradio.frequency)
 		data["code"] = user.sradio.code
 
-		ui = GLOB.nanomanager.try_update_ui(user, user, id, ui, data, force_open)
+		ui = SSnano.try_update_ui(user, user, id, ui, data, force_open)
 		if(!ui)
 			// Don't copy-paste this unless you're making a pAI software module!
 			ui = new(user, user, id, "pai_signaller.tmpl", "Signaller", 320, 150)

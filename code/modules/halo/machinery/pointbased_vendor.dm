@@ -102,7 +102,7 @@ GLOBAL_LIST_INIT(mobs_to_reqdatum,list())
 	data["pointsleft"] = user_req.point_current
 	data["pointsmax"] = user_req.point_max
 
-	ui = GLOB.nanomanager.try_update_ui(user, src, ui_key, ui, data, force_open)
+	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
 		ui = new(user, src, ui_key, "vending_machine_pointbased.tmpl", src.name, 440, 600)
 		ui.set_initial_data(data)
@@ -143,7 +143,7 @@ GLOBAL_LIST_INIT(mobs_to_reqdatum,list())
 			vend_item(R,user_req)
 
 		src.add_fingerprint(usr)
-		GLOB.nanomanager.update_uis(src)
+		SSnano.update_uis(src)
 
 /obj/machinery/pointbased_vending/proc/do_refund_checks(var/obj/item/weapon/gun/projectile/p,var/user)
 	if(istype(p))
@@ -164,7 +164,7 @@ GLOBAL_LIST_INIT(mobs_to_reqdatum,list())
 		W.loc = null
 		user_req.point_current += user_req.reqd_items[W]
 		user_req.reqd_items -= W
-		GLOB.nanomanager.update_uis(src)
+		SSnano.update_uis(src)
 	else
 		to_chat(user,"<span class = 'notice'>[src] rejects [W]</span>")
 

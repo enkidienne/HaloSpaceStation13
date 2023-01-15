@@ -75,7 +75,7 @@
 
 	data["automatic"] = prox_trigger ? 1 : 0
 
-	ui = GLOB.nanomanager.try_update_ui(user, src, ui_key, ui, data, force_open)
+	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
 		ui = new(user, src, ui_key, "auto_mac.tmpl", name, 600, 250, state = state)
 		ui.set_auto_update(1)

@@ -19,8 +19,27 @@
 
 #define NEW_SS_GLOBAL(varname) if(varname != src){if(istype(varname)){Recover();qdel(varname);}varname = src;}
 
-#define START_PROCESSING(Processor, Datum) if (!Datum.isprocessing) {Datum.isprocessing = 1;Processor.processing += Datum}
-#define STOP_PROCESSING(Processor, Datum) Datum.isprocessing = 0;Processor.processing -= Datum
+/// Register a datum to be processed with a processing subsystem.
+#define START_PROCESSING(Processor, Datum) \
+if (Datum.is_processing) {\
+	if(Datum.is_processing != #Processor)\
+	{\
+		crash_with("Failed to start processing. [log_info_line(Datum)] is already being processed by [Datum.is_processing] but queue attempt occured on [#Processor]."); \
+	}\
+} else {\
+	Datum.is_processing = #Processor;\
+	Processor.processing += Datum;\
+}
+
+/// Unregister a datum with a processing subsystem.
+#define STOP_PROCESSING(Processor, Datum) \
+if(Datum.is_processing) {\
+	if(Processor.processing.Remove(Datum)) {\
+		Datum.is_processing = null;\
+	} else {\
+		crash_with("Failed to stop processing. [log_info_line(Datum)] is being processed by [Datum.is_processing] but de-queue attempt occured on [#Processor]."); \
+	}\
+}
 
 //SubSystem flags (Please design any new flags so that the default is off, to make adding flags to subsystems easier)
 
