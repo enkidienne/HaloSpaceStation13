@@ -91,6 +91,8 @@
 			return global.SSatoms;
 		if("SSgarbage")
 			return global.SSgarbage;
+		if("SSinactivity")
+			return global.SSinactivity;
 		if("SSlegacy")
 			return global.SSlegacy;
 		if("SSlighting")
@@ -1306,6 +1308,8 @@
 			global.SSatoms=newval;
 		if("SSgarbage")
 			global.SSgarbage=newval;
+		if("SSinactivity")
+			global.SSinactivity=newval;
 		if("SSlegacy")
 			global.SSlegacy=newval;
 		if("SSlighting")
@@ -2475,6 +2479,7 @@
 	"SMALLSIZEBLOCK",
 	"SSatoms",
 	"SSgarbage",
+	"SSinactivity",
 	"SSlegacy",
 	"SSlighting",
 	"SSnano",
