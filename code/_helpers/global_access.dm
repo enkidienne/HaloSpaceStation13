@@ -99,6 +99,8 @@
 			return global.SSprocessing;
 		if("SSprofiler")
 			return global.SSprofiler;
+		if("SSsun")
+			return global.SSsun;
 		if("SSvote")
 			return global.SSvote;
 		if("TELEBLOCK")
@@ -1322,6 +1324,8 @@
 			global.SSprocessing=newval;
 		if("SSprofiler")
 			global.SSprofiler=newval;
+		if("SSsun")
+			global.SSsun=newval;
 		if("SSvote")
 			global.SSvote=newval;
 		if("TELEBLOCK")
@@ -2495,6 +2499,7 @@
 	"SSnano",
 	"SSprocessing",
 	"SSprofiler",
+	"SSsun",
 	"SSvote",
 	"TELEBLOCK",
 	"TWITCHBLOCK",
