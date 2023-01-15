@@ -63,7 +63,7 @@
 "bk" = (/obj/item/weapon/inflatable_duck,/turf/simulated/floor/water,/area/faction_base/oni)
 "bl" = (/obj/machinery/light/invis,/turf/unsimulated/floor/grass2,/area/faction_base/oni)
 "bm" = (/obj/machinery/light/invis,/turf/simulated/floor/water,/area/faction_base/oni)
-"bn" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/obj/structure/filingcabinet,/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
+"bn" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
 "bo" = (/obj/item/weapon/wrench,/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,/obj/machinery/light{dir = 8},/obj/structure/table/marble,/turf/simulated/floor/tech/white,/area/faction_base/oni/medbay)
 "bp" = (/obj/structure/closet/crate/bin,/turf/simulated/floor/tiled/white,/area/faction_base/oni/barracks)
 "bq" = (/turf/simulated/floor/tech/steel,/area/faction_base/oni/garage)
@@ -315,7 +315,6 @@
 "gc" = (/obj/structure/sign/halo_floorsign/cargobay{dir = 4; icon_state = "cargobay"; pixel_y = 16},/turf/simulated/floor/tiled/dark,/area/faction_base/oni/hangar)
 "gd" = (/obj/machinery/light,/turf/simulated/floor/tech/gray,/area/faction_base/oni/barracks)
 "ge" = (/obj/machinery/door/airlock/halo{name = "Marine Bunks"; req_access = list(142)},/turf/simulated/floor/tech/gray,/area/faction_base/oni/barracks)
-"gf" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
 "gg" = (/obj/structure/sign/halo_floorsign/hangar{dir = 4; icon_state = "hangar"; pixel_y = 16},/turf/simulated/floor/tiled/white,/area/faction_base/oni/barracks)
 "gh" = (/obj/structure/sign/halo_floorsign/cargobay{dir = 1; icon_state = "cargobay"; pixel_x = 16},/turf/simulated/floor/tiled/dark,/area/faction_base/oni/hangar)
 "gi" = (/obj/structure/sign/halo_floorsign/cryobay,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/hangar)
@@ -462,7 +461,7 @@ aaabacacadafafafafafafafafahacacacaiajajajawawawawawawawawawawawawawawawawawawaw
 aaabacacadafafafafafafafafahacacacaiblajajawbmawawawawawbmawawawawawbmawawawawawbmawawawawawbmawawawaa
 aafoacacayafafafaffVafafafahfnabfWbebebebebebebebebebebebebebebeaDaDaDaDaDaDaDaDaDaDaDaDaDaDaDaDaDaDaa
 aaasatbqasaUaWaWaWasasasasasasaDaDaDaDaeaeaeaeaeaeaeaeaeaeaeaeaeaDaEaQaIaLaLaDgRgRdrdndndndsdudAdvaDaa
-aaasbgbqbPaWaWaWaWcicjcjKfcjfIaDsNLYsNaeaeamaoazavazazavazazazaAaDaPaPaPaPaPaOaPaPaPbndEdEaPaPJKjQaDaa
+aaasbgbqbPaWaWaWaWcicjcjKfcjfIaDsNLYsNaeaeamaoazavazazavazazazaAaDaPaPaPaPaPaOaPaPaPdEdEdEaPaPJKjQaDaa
 aaasckbqaWaWaWaWaWcjapcjcjdDcjaDsNeBsNaeaBaCaFaCaFaCaFaCaFaCaFaGaDHmaPaPaPaSaDbLaPgIaPaPaPaPaPaPNfaDaa
 aaasbqbqaWaWaWaWaWaWaWaWaWaWaWaDsNeBsNaeaHaFaFaFaFaFaFaFaFaFaFaGaDnVaPaPaPJPaDaPaPaPaPaPdQdTdZfbfbaDaa
 aaasbqcmcjcjcjmSaWaWaWaWaWaWaWaDsNeBsNaeaRaZaZaZaYaZaZaZbabbaZSnaDPGaPaPgvdeaDdlaPaDaDaDfXgqguguguaDaa
@@ -471,7 +470,7 @@ aaasbqbqcjcjcjcjaWaWaWcjcjcjcjbqeBeBdRdHdIdIdIdIdIdScfeBbBaTaPsSaMeKgMaPaPaLdVaP
 aaasckbqbqbqbqbqbqbqbqbqbqbqgabqeBeBdMdNdNdNdNdNdNdOeBeBetaPaPaPaPaPaPaPaPaPaPaPgxgremememgyememeqaDaa
 aaasbqbqbqbqcnbqakbqbqbqbqcnbqaueBeBdMdNdPdPdPdPdNdOfseBaPaPaPaPaPaPaPaPaPaPaPaPgxgsemememgyememeqaDaa
 aabfbfeIbVbfbfbfbfbfbfeIbVbfbfbfeBeBdMdNdPdPdPdPdNdOeBgcfHaPaPaPaPaPaPaPaPaPaPaPgxgpaJememgyemaNeqaDaa
-aabfbpbtbtbtbubtbvbtbtbtbtbwbSbfeBeBdMfqdUdNdNdNdNdOeBeBaDaXcaflgRgRaPaPaPaPeagRgBgfgtgtgmgmgtgtgnaDaa
+aabfbpbtbtbtbubtbvbtbtbtbtbwbSbfeBeBdMfqdUdNdNdNdNdOeBeBaDaXcaflgRgRaPaPaPaPeagRgBbngtgtgmgmgtgtgnaDaa
 aabfbUbtbtcddgdLbtdLdgcdbtbtbtbVeBeBdRdWdWdWdWdWdWdReBfgaDaDaDaDfYgbgwgzaPfYgbgbgwaDLisXsXsXsXsXaDaDaa
 aabfeTbtbtdLdgdLbtdLdgdLbtbtggfreBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBgheBeBeBeBeBeBeBeBeBeBeBeBLEaDaa
 aabffBbtbtcddgdLbtdLdgcdbtbtfCbfeBeCeBeBeBcWeBdceBeBeCeBeBeBeBeCeBeBeBeBeBeBeBeBeBeBeBeBeBeBgieBeBaDaa
