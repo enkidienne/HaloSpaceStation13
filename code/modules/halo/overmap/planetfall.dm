@@ -47,9 +47,11 @@
 	//We should have screen shake happen on these.
 	for(var/mob/m in GLOB.mobs_in_sectors[src])
 		to_chat(m,"<span class = 'danger'>Your vessel's hull screeches as it slows to a stop on the ground...</span>")
+		shake_camera(m, 1 SECOND, 2)
 
 	for(var/mob/m in GLOB.mobs_in_sectors[planet])
 		to_chat(m,"<span class = 'danger'>The sky is filled with the shape of [src]'s hull as it lands groundside...</span>")
+		shake_camera(m, 0.5 SECONDS, 1)
 
 /*
 /obj/effect/overmap/ship/proc/exit_landing_state()

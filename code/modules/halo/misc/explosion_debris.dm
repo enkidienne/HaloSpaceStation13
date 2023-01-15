@@ -16,22 +16,31 @@
 	bump_climb = 1
 	mob_climb_time = 0.7 SECONDS
 
+/obj/structure/destructible/proc/check_ignore_list(var/obj/i)
+	for(var/type in PROJECTILES_DEBRIS_IGNORE)
+		if(istype(i,type))
+			return 1
+	return 0
+
 /obj/structure/destructible/Cross(var/obj/vehicles/crosser)
 	. = ..()
 	if(!.)
 		if(istype(crosser))
 			return 1
+		if(check_ignore_list(crosser))
+			return 1
 
 /obj/structure/destructible/explosion_debris/CanPass(var/obj/vehicles/vpass)
 	if(istype(vpass))
 		return 1
-	for(var/type in PROJECTILES_DEBRIS_IGNORE)
-		if(istype(vpass,type))
-			return 1
+	if(check_ignore_list(vpass))
+		return 1
 	. = ..()
 
 /obj/structure/destructible/explosion_debris/CheckExit(var/obj/vehicles/vpass, turf/target as turf)
 	if(istype(vpass))
+		return 1
+	if(check_ignore_list(vpass))
 		return 1
 	. = ..()
 

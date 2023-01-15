@@ -699,6 +699,12 @@
 		accuracy = scoped_accuracy + scoped_accuracy_mod
 		if(screen_shake)
 			screen_shake = round(screen_shake*zoom_amount+1) //screen shake is worse when looking through a scope
+	else
+		var/obj/vehicles/v = user.loc
+		if(istype(v))
+			v.update_user_view(user,1)
+			v.update_user_view(user)
+
 
 /obj/item/weapon/gun/proc/toggle_attachment_light()
 	set name = "Toggle Light Attachment"
