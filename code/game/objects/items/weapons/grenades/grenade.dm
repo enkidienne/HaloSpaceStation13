@@ -16,7 +16,8 @@
 	var/can_adjust_timer = 1
 
 	var/alt_explosion_damage_max = 500 //The amount of armour + shield piercing damage done when grenade is stuck inside someone.
-	var/multiplier_non_direct = 0.5 //The multiplier to apply to the alt explosion max damage if the grenade is not directly on top of or inside someone.
+	var/alt_explosion_damage_cap = 20 //How much damage can the alt-explosion apply in one instance.
+	var/multiplier_non_direct = 1 //The multiplier to apply to the alt explosion max damage if the grenade is not directly on top of or inside someone.
 	var/alt_explosion_range = -1 //if set to -1, no armor bypass explosion
 
 /obj/item/weapon/grenade/proc/clown_check(var/mob/living/user)
@@ -131,7 +132,11 @@
 		var/mult = 1
 		if(get_turf(m) != get_turf(loc))
 			mult = multiplier_non_direct
-		m.adjustFireLoss(alt_explosion_damage_max*mult)
+		var/dmg_max = alt_explosion_damage_max * mult
+		while(dmg_max > 0)
+			var/amt_dealt = min(alt_explosion_dmg_cap,dmg_max)
+			m.adjustFireLoss(amt_dealt)
+			dmg_max -= amt_dealt
 		m.updatehealth()
 		m.UpdateAppearance()
 	return 1
