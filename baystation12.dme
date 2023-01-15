@@ -188,6 +188,8 @@
 #include "code\controllers\subsystems\garbage.dm"
 #include "code\controllers\subsystems\legacy.dm"
 #include "code\controllers\subsystems\profiler.dm"
+#include "code\controllers\subsystems\processing\nano.dm"
+#include "code\controllers\subsystems\processing\processing.dm"
 #include "code\controllers\voting\_vote.dm"
 #include "code\controllers\voting\announce_result.dm"
 #include "code\controllers\voting\calculate_winner.dm"
