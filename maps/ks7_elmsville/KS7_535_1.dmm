@@ -636,7 +636,7 @@
 "ml" = (/obj/item/ammo_box/heavysniper,/turf/simulated/floor/exoplanet/rockfloor,/area/exo_ice_facility/exterior/caves)
 "mm" = (/obj/item/weapon/gun/projectile/heavysniper,/turf/simulated/floor/exoplanet/rockfloor,/area/exo_ice_facility/exterior/caves)
 "mn" = (/obj/effect/overmap/sector/exo_depot,/turf/unsimulated/floor/rock2{density = 1; opacity = 1},/area/exo_ice_facility/exterior/caves)
-"mo" = (/obj/effect/landmark/map_data{name = "KS7-535"},/obj/autolight_init,/turf/unsimulated/floor/rock2{density = 1; opacity = 1},/area/exo_ice_facility/exterior/caves)
+"mo" = (/obj/effect/landmark/map_data{name = "KS7-535"},/obj/autolight_init/ks7,/turf/unsimulated/floor/rock2{density = 1; opacity = 1},/area/exo_ice_facility/exterior/caves)
 "mp" = (/obj/structure/table/standard,/obj/item/weapon/storage/box/lights/bulbs,/obj/item/weapon/storage/box/lights/bulbs,/obj/item/weapon/storage/box/lights/tubes,/obj/item/weapon/storage/box/lights/tubes,/turf/simulated/floor/tiled/dark,/area/exo_ice_facility/interior/aerodrome)
 "mq" = (/obj/structure/window/reinforced/treated{icon_state = "fwindow"; dir = 4},/turf/simulated/floor/tiled/dark,/area/exo_ice_facility/interior/aerodrome)
 "mr" = (/obj/structure/table/rack,/obj/item/weapon/storage/firstaid/unsc,/turf/simulated/floor/tiled/dark,/area/exo_ice_facility/interior/aerodrome)

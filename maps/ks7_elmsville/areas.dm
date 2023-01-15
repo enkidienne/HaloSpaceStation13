@@ -1,5 +1,5 @@
 
-/obj/autolight_init
+/obj/autolight_init/ks7
 	targ_area = /area/exo_ice_facility/exterior/autolight
 
 /area/exo_ice_facility

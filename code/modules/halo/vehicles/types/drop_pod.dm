@@ -106,7 +106,7 @@
 	set name = "Launch Pod"
 	set src in range(1)
 	set category = "Vehicle"
-	
+
 	if(!is_on_launchbay())
 		to_chat(usr,"<span class = 'notice'>[src] needs to be in a drop-bay to be launched.</span>")
 		return
@@ -219,6 +219,8 @@
 			continue
 		var/area/A = get_area(D)
 		var/entry_name = A.name
+		if(D.name != "Drop Pod landing Marker")
+			entry_name = D.name
 		var/entry_num = 1
 		while(valid_points[entry_name])
 			entry_num++
