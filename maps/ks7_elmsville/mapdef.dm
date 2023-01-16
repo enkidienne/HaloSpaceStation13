@@ -25,3 +25,5 @@
 
 	allowed_gamemodes = list("reclamation","spicyextended")
 	map_admin_faxes = list("Ministry of Tranquility (General)","Ministry of Resolution (War Matters)","Ministry of Fervent Intercession (Internal Affairs)")
+
+	area_usage_test_exempted_areas = list(/area/planets/Geminus/outdoor/autolight)
