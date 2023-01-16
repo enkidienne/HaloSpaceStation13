@@ -6,8 +6,10 @@
 	icon_state = "yithian"
 	icon_living = "yithian"
 	icon_dead = "yithian_dead"
+	health = 200
+	maxHealth = 200
+	resistance = 20
 	ranged = 1
-	elevation = 1
 	var/list/ignore_types = list() //Faction items like walls, doors, floors should go in here so we don't loop and keep designating our own turfs for conversion.
 
 /mob/living/simple_animal/hostile/converter_mob/ListTargets(var/dist = 8)
@@ -44,24 +46,23 @@
 		to_chat(src,"<span class = 'notice'>This cannot be marked for conversion.</span>")
 		return
 	var/build_type = BUILD_MARKER_FLOOR
-	var/turf/spawn_loc = attacked
+	var/list/spawn_locs = list(attacked)
 	if(istype(attacked,/turf/simulated/wall))
 		build_type = BUILD_MARKER_WALL
 	if(istype(attacked,/obj/machinery/door))
 		build_type = BUILD_MARKER_DOOR
-		spawn_loc = attacked.loc
+		var/obj/machinery/door/atk = attacked
+		spawn_locs = atk.locs.Copy()
 	if(istype(attacked,/obj/structure/window))
 		build_type = BUILD_MARKER_WINDOW
-		spawn_loc = attacked.loc
+		spawn_locs = list(attacked.loc)
 
-	var/obj/effect/landmark/build_marker/mark = new(spawn_loc)
-	var/obj/machinery/door/door = locate() in spawn_loc.contents
-	if(door)
-		door.open()
-	mark.build_faction = faction
-	mark.marker_type = build_type
-	visible_message("<span class = 'notice'>[src] marks [attacked]</span>")
-	target_mob = null
+	for(var/turf/spawn_loc in spawn_locs)
+		var/obj/effect/landmark/build_marker/mark = new(spawn_loc)
+		mark.build_faction = faction
+		mark.marker_type = build_type
+		visible_message("<span class = 'notice'>[src] marks [attacked]</span>")
+		target_mob = null
 
 /mob/living/simple_animal/hostile/converter_mob/dbg_forerunner
 	name = "Forerunner Designation Drone"
