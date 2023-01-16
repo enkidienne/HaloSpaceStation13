@@ -1881,7 +1881,6 @@
 #include "code\modules\halo\mobs\builder.dm"
 #include "code\modules\halo\mobs\converter.dm"
 #include "code\modules\halo\mobs\elevation_handling.dm"
-#include "code\modules\halo\mobs\faction_builders.dm"
 #include "code\modules\halo\mobs\grenade_throwing.dm"
 #include "code\modules\halo\mobs\holster_verb.dm"
 #include "code\modules\halo\mobs\hostile.dm"
