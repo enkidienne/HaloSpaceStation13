@@ -64,6 +64,9 @@
 		spawn(2)
 			item_to_disintegrate.force = orig_force
 		return 0
+
+	if(prob(1))
+		sound_to(user,'code/modules/halo/sounds/effects/rules_of_nature.ogg')
 	if(damage_source && !mob_holding_disintegrated)
 		if(parry_slice_objects)
 			visible_message("<span class = 'danger'>[user] slices [damage_source] in half!</span>")
