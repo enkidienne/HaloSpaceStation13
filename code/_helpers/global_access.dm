@@ -105,6 +105,8 @@
 			return global.SSprofiler;
 		if("SSsun")
 			return global.SSsun;
+		if("SStrade")
+			return global.SStrade;
 		if("SSvote")
 			return global.SSvote;
 		if("TELEBLOCK")
@@ -1322,6 +1324,8 @@
 			global.SSprofiler=newval;
 		if("SSsun")
 			global.SSsun=newval;
+		if("SStrade")
+			global.SStrade=newval;
 		if("SSvote")
 			global.SSvote=newval;
 		if("TELEBLOCK")
@@ -2486,6 +2490,7 @@
 	"SSprocessing",
 	"SSprofiler",
 	"SSsun",
+	"SStrade",
 	"SSvote",
 	"TELEBLOCK",
 	"TWITCHBLOCK",
