@@ -5,5 +5,5 @@
 	icon = 'code/modules/halo/flood/flood_window.dmi'
 	icon_state = "flood_window"
 	explosion_resistance = 60
-	health = 100
+	health = 25
 	grille_hitsound = 'code/modules/halo/sounds/airlock_sounds/flood_hit_sfx.ogg'
