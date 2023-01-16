@@ -65,7 +65,11 @@
 			item_to_disintegrate.force = orig_force
 		return 0
 	if(damage_source && !mob_holding_disintegrated)
-		visible_message("<span class = 'danger'>[user] slices [damage_source] in half!</span>")
+		if(parry_slice_objects)
+			visible_message("<span class = 'danger'>[user] slices [damage_source] in half!</span>")
+		else
+			visible_message("span class = 'danger'>[user] blocks [damage_source] with their [src]</span>")
+			return 1
 	else
 		visible_message("<span class = 'danger'>[item_to_disintegrate == damage_source ? "[user]" : "[attacker]"] cuts through [mob_holding_disintegrated]'s [item_to_disintegrate.name] with their [item_to_disintegrate == damage_source ? "[src.name]" : "[damage_source.name]"], rendering it useless!</span>")
 	if(mob_holding_disintegrated)
