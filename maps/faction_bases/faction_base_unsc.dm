@@ -45,11 +45,11 @@ GLOBAL_LIST_EMPTY(unsc_base_spawns)
 /area/faction_base/unsc_defense_platform
 	name = "UNSC Defense Platform"
 	icon_state = "firingrange"
+*/
 
 /area/faction_base/unsc_shuttle
 	name = "UNSC Shuttle"
 	icon_state = "shuttle"
-*/
 
 GLOBAL_LIST_EMPTY(unsc_base_fallback_spawns)
 

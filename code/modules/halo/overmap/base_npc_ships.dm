@@ -284,6 +284,7 @@ GLOBAL_LIST_INIT(om_base_sectors, list())
 		l.set_light(text2num(lights_reset[l]))
 
 /obj/effect/overmap/ship/npc_ship/proc/load_mapfile()
+	set background = 1
 	if(unload_at)
 		return
 	if(!chosen_ship_datum)
@@ -297,7 +298,7 @@ GLOBAL_LIST_INIT(om_base_sectors, list())
 		message_admins("Loading Ship-Map: [link]... This may cause lag.")
 		sleep(10) //A small sleep to ensure the above message is printed before the loading operation commences.
 		var/z_to_load_at = shipmap_handler.get_next_usable_z()
-		sleep(10) //Wait a tick again, to ensure te map is actually loaded in
+		sleep(10) //Wait a bit again, to ensure te map is actually loaded in
 		shipmap_handler.un_free_map(z_to_load_at)
 		map_sectors["[z_to_load_at]"] = src
 		maploader.load_map(link,z_to_load_at)

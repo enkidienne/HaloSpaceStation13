@@ -3,9 +3,9 @@
 #define PAYLOAD_EXPLOSION_MULT_HEAVY 10
 #define PAYLOAD_EXPLOSION_MULT_LIGHT 15
 #define PAYLOAD_EXPLOSION_MULT_FLASH 20
-#define PAYLOAD_SUB_EXPLOSION_COUNT 12
-#define PAYLOAD_SUB_EXPLOSION_COUNT_DELAY_MIN 5 SECONDS
-#define PAYLOAD_SUB_EXPLOSION_COUNT_DELAY_MAX 30 SECONDS
+#define PAYLOAD_SUB_EXPLOSION_COUNT 20
+#define PAYLOAD_SUB_EXPLOSION_COUNT_DELAY_MIN 2 SECONDS
+#define PAYLOAD_SUB_EXPLOSION_COUNT_DELAY_MAX 10 SECONDS
 
 /obj/payload
 	name = "Nuclear Warhead Payload"
@@ -180,8 +180,10 @@
 	var/obj/effect/overmap/OM = map_sectors["[t.z]"]
 	if(OM)
 		OM.nuked_effects(b.loc)
+	for(var/mob/living/l in range(5,get_turf(b)))
+		l.dust()
 	sleep(10)
-	var/list/subexplosion_aoe = trange(b.strength*PAYLOAD_EXPLOSION_MULT_EPI*3)
+	var/list/subexplosion_aoe = trange(b.strength*PAYLOAD_EXPLOSION_MULT_EPI*5)
 	explosion(get_turf(b),\
 	b.strength*PAYLOAD_EXPLOSION_MULT_EPI,\
 	b.strength*PAYLOAD_EXPLOSION_MULT_HEAVY,\

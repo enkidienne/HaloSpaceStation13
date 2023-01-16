@@ -38,7 +38,7 @@
 	var/icon
 	var/icon_state
 
-	var/upgrade_cooldown = 40
+	var/upgrade_cooldown = 30
 	var/action_cooldown = 40
 
 	var/can_downgrade_on_resist = 1

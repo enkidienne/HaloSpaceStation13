@@ -26,10 +26,12 @@
 
 	assailant = attacker
 	affecting = victim
-	last_upgrade = world.time
 
 	if(start_grab_name)
 		current_grab = all_grabstates[start_grab_name]
+
+	if(start_grab_name != NORM_PASSIVE)
+		last_upgrade = world.time
 
 /obj/item/grab/process()
 	current_grab.process(src)

@@ -59,7 +59,8 @@
 	spawnables = list(\
 	/obj/item/weapon/gun/projectile/m6d_magnum,
 	/obj/item/weapon/gun/projectile/m6c_magnum_s,
-	/obj/item/weapon/gun/energy/plasmapistol
+	/obj/item/weapon/gun/energy/plasmapistol,
+	/obj/item/weapon/gun/projectile/m6d_magnum/CO_magnum,
 	)
 
 /obj/effect/itemspawn_marker/smgs

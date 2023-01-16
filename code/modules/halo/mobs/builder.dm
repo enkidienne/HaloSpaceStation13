@@ -54,6 +54,8 @@
 		if(build_text == "wall" || build_text == "floor")
 			var/turf/t = loc
 			t.ChangeTurf(type_to_build)
+			t.lighting_clear_overlay()
+			t.lighting_build_overlay()
 		else
 			new type_to_build (loc)
 		qdel(src)
@@ -66,7 +68,6 @@
 	icon_living = "yithian"
 	icon_dead = "yithian_dead"
 	ranged = 1
-	elevation = 1
 	health = 200
 	maxHealth = 200
 	resistance = 20
