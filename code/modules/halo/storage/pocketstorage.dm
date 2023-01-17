@@ -86,7 +86,7 @@
 	desc = "A reinforced storage box, clipped near your pockets. Holds a variety of construction materials."
 	storage_slots = 2
 	max_w_class = ITEM_SIZE_LARGE
-	can_hold = list(/obj/item/stack/material,/obj/item/stack/barbedwire)
+	can_hold = list(/obj/item/stack/material,/obj/item/stack/barbedwire,/obj/item/stack/cable_coil)
 
 /obj/item/weapon/storage/pocketstore/hardcase/materials/cov
 	icon_state = "hardcase_cov_generic"
@@ -103,7 +103,8 @@
 		/obj/item/device/flashlight,
 		/obj/item/device/t_scanner,
 		/obj/item/device/analyzer,
-		/obj/item/device/robotanalyzer
+		/obj/item/device/robotanalyzer,
+		/obj/item/stack/cable_coil
 	)
 
 /obj/item/weapon/storage/pocketstore/hardcase/tools/cov
