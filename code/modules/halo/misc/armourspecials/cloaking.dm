@@ -1,6 +1,6 @@
 
-#define CLOAKING_COLOUR "#808080"
-#define COLOUR_DARKEN_MOD 0.75
+#define CLOAKING_COLOUR "#848484"
+//#define COLOUR_DARKEN_MOD 0.75
 
 /datum/armourspecials/cloaking
 	var/cloak_active = 0
@@ -25,13 +25,15 @@
 
 	var/turf/userturf = get_turf(user)
 	var/icon/i = icon(userturf.icon,userturf.icon_state)
-	var/turf_colour = i.GetPixel(rand(1,i.Width()),rand(1,i.Height()))
-	if(!turf_colour)
+	var/turf_colour = CLOAKING_COLOUR
+	//var/turf_colour = i.GetPixel(rand(1,i.Width()),rand(1,i.Height()))
+/*	if(!turf_colour) //This was a little bit too good at it's job.
 		turf_colour = CLOAKING_COLOUR
 	else
 		var/list/colour_list = rgb2num(turf_colour)
 		//Make sure we're darkened.
 		turf_colour = rgb(colour_list[1]*COLOUR_DARKEN_MOD,colour_list[2]*COLOUR_DARKEN_MOD,colour_list[3]*COLOUR_DARKEN_MOD)
+*/
 	animate(user,alpha = min_alpha, color = turf_colour, time = (cloak_toggle_time SECONDS))
 	if(cloak_disrupted)//This stops spam from cloak disruption, but still applies the affects.
 		return
@@ -71,6 +73,12 @@
 		if(cloak_disrupted)
 			to_chat(user,"<span class = 'warning'>You can't re-enable your cloak whilst it's being disrupted.</span>")
 			return
+		var/mob/living/carbon/human/h = user
+		if(istype(user))
+			var/obj/item/flight_item/f = h.back
+			if(istype(f) && f.active)
+				to_chat(user,"<span class = 'warning'>Your flight systems interfere with your active camo!</span>")
+				return
 		activate_cloak()
 	else
 		deactivate_cloak()
@@ -109,4 +117,4 @@
 	cloak_toggle_time = 0.1 SECONDS
 
 #undef CLOAKING_COLOUR
-#undef COLOUR_DARKEN_MOD
+//#undef COLOUR_DARKEN_MOD

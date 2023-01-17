@@ -60,8 +60,20 @@
 	user.update_inv_back(1)
 	. = ..()
 
+/obj/item/flight_item/proc/check_has_active_camo(var/mob/living/carbon/human/h)
+	if(istype(h))
+		var/obj/item/clothing/suit/armor/special/s = h.wear_suit
+		if(istype(s))
+			var/datum/armourspecials/cloaking/c = locate() in s.specials
+			if(c && c.cloak_active)
+				to_chat(h, "<span class = 'notice'>Your active camouflage systems interfere with [src] and it shuts off.</span>")
+				return 1
+	return 0
+
 /obj/item/flight_item/proc/activate(var/mob/living/user)
 	if(!istype(user))
+		return
+	if(check_has_active_camo(user))
 		return
 	cached_user = user
 	active = TRUE
