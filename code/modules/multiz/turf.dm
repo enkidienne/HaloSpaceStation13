@@ -58,6 +58,8 @@
 		GLOB.turf_changed_event.register(T, src, /turf/simulated/open/update_icon)
 	levelupdate()
 	for(var/atom/movable/A in src)
+		if(A.throwing)
+			continue
 		A.fall()
 	update_icon()
 
@@ -66,6 +68,8 @@
 
 /turf/simulated/open/Entered(var/atom/movable/mover)
 	..()
+	if(mover.throwing)
+		return
 	mover.fall()
 
 // Called when thrown object lands on this turf.
