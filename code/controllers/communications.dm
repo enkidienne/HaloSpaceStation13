@@ -388,6 +388,7 @@ var/global/datum/controller/radio/radio_controller
 
 	//now check to find jammers that are blocking incoming radio signals
 	//the assumption here for optimisation purposes is that there are less jammers than radios
+	var/datum/channel_cipher/cipher = signal.data["cipher"]
 	for(var/obj/effect/overmap/om in listening_sectors)
 		var/list/radios_jamming = listening_sectors[om]
 		var/list/radios_garble = list()
@@ -397,7 +398,23 @@ var/global/datum/controller/radio/radio_controller
 				continue
 			if(tj.jam_chance < 100 && !prob(tj.jam_chance))
 				continue
-			if(frequency in tj.ignore_freqs && (tj.jam_ignore_malfunction_chance == 0 || !prob(tj.jam_ignore_malfunction_chance)))
+			//if(isnull(cipher) || ("[cipher.channel_name]" in tj.ignore_freqs && (!prob(tj.jam_ignore_malfunction_chance))))
+			//	continue
+			if(!isnull(cipher))
+				//Ugly but the above wasn't working for some reason or another.
+				var/skip = 0
+				for(var/freq in tj.ignore_freqs)
+					world << freq
+					world << cipher.channel_name
+					if(freq == cipher.channel_name)
+						world << "rolling malf chance"
+						if(!prob(tj.jam_ignore_malfunction_chance))
+							skip = 1
+							world << "malf chance not rolled"
+							break
+				if(skip)
+					continue
+			else
 				continue
 			//We've passed the checks. This sector is in some way jammed.
 			//First, we do a range-based check.
@@ -410,15 +427,15 @@ var/global/datum/controller/radio/radio_controller
 			//This is for full-sector jams.
 			if(tj.jam_power > 0)
 				if(prob(tj.jam_power))
-					radios_garble |= radios_jamming
-				else
 					radios_gibberish |= radios_jamming
-			else if(tj.jam_power == -1)
-				radios_gibberish |= radios_jamming
+				else
+					radios_garble |= radios_jamming
 			else if(tj.jam_power == -2)
+				radios_gibberish |= radios_jamming
+			else if(tj.jam_power == -1)
 				radios_garble |= radios_jamming
 
-		if(radios_garble.len || radios_gibberish.len)
+		if(radios_garble.len > 0 || radios_gibberish.len > 0)
 		//Check garble, the worst effect, first. Then Gibberish.
 			radios -= radios_jamming
 			radios_garbled -= radios_jamming
