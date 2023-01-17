@@ -24,9 +24,9 @@
 	//let's get a colour similar to the terrain we're on, so we blend in a bit better.
 
 	var/turf/userturf = get_turf(user)
-	var/icon/i = icon(userturf.icon,userturf.icon_state)
 	var/turf_colour = CLOAKING_COLOUR
-	//var/turf_colour = i.GetPixel(rand(1,i.Width()),rand(1,i.Height()))
+//	var/icon/i = icon(userturf.icon,userturf.icon_state)
+//	var/turf_colour = i.GetPixel(rand(1,i.Width()),rand(1,i.Height()))
 /*	if(!turf_colour) //This was a little bit too good at it's job.
 		turf_colour = CLOAKING_COLOUR
 	else
