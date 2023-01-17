@@ -279,7 +279,7 @@
 "fs" = (/obj/structure/ai_routing_node/unsc,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/hangar)
 "ft" = (/obj/machinery/door/airlock/multi_tile/halo/blast{dir = 4; name = "Autopsy Lab"; req_access = list(315)},/obj/structure/curtain/medical,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/blacksite)
 "fu" = (/obj/structure/table/standard,/obj/item/weapon/folder/blue,/turf/simulated/floor/tiled/white,/area/faction_base/oni/blacksite)
-"fv" = (/obj/machinery/light/colored/green{tag = "icon-green1 (WEST)"; icon_state = "green1"; dir = 8},/turf/simulated/floor/reinforced,/area/faction_base/oni/research)
+"fv" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
 "fw" = (/obj/machinery/photocopier/faxmachine/unsc{dir = 8},/turf/simulated/wall/r_wall,/area/faction_base/oni/research)
 "fx" = (/obj/structure/table/standard,/obj/item/weapon/paper_bin,/obj/item/weapon/pen,/turf/simulated/floor/tiled/white,/area/faction_base/oni/blacksite)
 "fy" = (/obj/machinery/smartfridge/chemistry,/turf/simulated/wall/silver{tag = "icon-solidfwall_opening"; icon_state = "solidfwall_opening"},/area/faction_base/oni/medbay)
@@ -363,7 +363,7 @@
 "gY" = (/obj/effect/floor_decal/industrial/warning,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
 "gZ" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tech/steel,/area/faction_base/oni/garage)
 "ha" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/hangar)
-"hb" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
+"hb" = (/obj/machinery/light/colored/green{tag = "icon-green1 (WEST)"; icon_state = "green1"; dir = 8},/obj/machinery/overmap_comms/jammer/stationary/ONI,/turf/simulated/floor/reinforced,/area/faction_base/oni/research)
 "hc" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/hangar)
 "hd" = (/obj/machinery/door/airlock/multi_tile/halo/blast{name = "ONI Sector"; req_access = list(315)},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/research)
 "he" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/research)
@@ -497,7 +497,7 @@ aaasgZgZcjcjcjcjaWaWaWcjcjcjcjbqeBhadRdHdIdIdIdIdIdScfeBbBaTeKsSaMaDaPaPaPbOgzaP
 aaasckgZbqbqbqbqbqbqgZgZbqbqgabqhahadMdNdNdNdNdNdNdOeBeBetaPaPaPaPdKaPaPaPbObOaPgxgremememgyememeqaDaa
 aaasbqgZbqbqcnbqakgZgZbqbqcnbqaueBeBdMdNdPdPdPdPdNdOfseBaPbObOaPaPaDdvjQdAaPbObOgxgsemememgyememeqaDaa
 aabfbfeIbVbfbfbfbfbfbfeIbVbfbfbfeBeBdMdNdPdPdPdPdNdOeBgcfHbOaPaPaPaDgAgBaPaPaPaPgxgpaJememgyemaNeqaDaa
-aabfbpbtbtbtbubtbvbtbtbtbtbwbSbfeBeBdMfqdUdNdNdNdNdOhaeBaDaXcagDgEaDaDgGgHgKgKgLaDhbgtgtgmgmgtgtgnaDaa
+aabfbpbtbtbtbubtbvbtbtbtbtbwbSbfeBeBdMfqdUdNdNdNdNdOhaeBaDaXcagDgEaDaDgGgHgKgKgLaDfvgtgtgmgmgtgtgnaDaa
 aabfbUbtbtcddgdLbtdLdgcdbtbtbtbVeBeBdRdWdWdWdWdWdWdRhahcaDaDaDaDaDaDgNeBeBeBeBfgaDaDaDaDaDaDaDaDaDaDaa
 aabfeTbtbtdLdgdLbtdLdgdLbtbtggfreBeBhahaeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBgheBeBeBeBLYeBeBeBeBeBeBhaaDaa
 aabffBbtbtcddgdLbtdLdgcdbtbtfCbfeBeCeBhaeBcWeBdceBeBeCeBeBeBeBeCeBeBhahahahahaeBeBeBeBeBeBeBgieBeCaDaa
@@ -521,7 +521,7 @@ aabhbCbCbCbCbCbCbCbCbhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWdbFkEbJheebebbJYmbF
 aabhbCbCbCbCbCbCbCbCbhaabQbQbQbQbQbQbQbQaabRbRbRbRbRbRbRbRaaWdbFwsbJbJbJVobJYabFaKLnKeLnLnhlKeLnaKbNaa
 aabhbCbCbCbCbCbCbCbCbhaabQbQbQbQbQbQbQbQaabRbRbRbRbRbRbRbRaaWdbFogSxSxSxbFbJlNbFbNbNbNLngWLnbNbNbNbNaa
 aabhbCbCbCbCbCbCbCbCbhaabQbQbQbQbQbQbQbQaabRbRbRbRbRbRbRbRaaWdUluUhehebJbFxfbFbFLnLnUJLnLnLnVLhlhlbNaa
-aabhbCbCbCbCbCbCbCbCbhaabQbQbQbQbQbQbQbQaabRbRbRbRbRbRbRbRaaWdNebJhehebJbFaxfvbFTaLnBlLnLnLnBlhlcDbNaa
+aabhbCbCbCbCbCbCbCbCbhaabQbQbQbQbQbQbQbQaabRbRbRbRbRbRbRbRaaWdNebJhehebJbFaxhbbFTaLnBlLnLnLnBlhlcDbNaa
 aabhcMbCbCbCbCbCbCbCbhaabQbQbQbQbQbQbQbQaabRbRbRbRbRbRbRbRaaWdejehtKNheHbFfegJbFaKLnKeLnGRLnKehlaKbNaa
 aafAbhbhbhbhbhbhbhbhbhaadbbQbQbQbQbQbQbQaaesbRbRbRbRbRbRbRaaWdbFbFbFbFbFbFbFbFbFbNbNbNbNbNbNbNbNbNbNhI
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahIhI
