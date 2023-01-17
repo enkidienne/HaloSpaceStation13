@@ -404,13 +404,9 @@ var/global/datum/controller/radio/radio_controller
 				//Ugly but the above wasn't working for some reason or another.
 				var/skip = 0
 				for(var/freq in tj.ignore_freqs)
-					world << freq
-					world << cipher.channel_name
 					if(freq == cipher.channel_name)
-						world << "rolling malf chance"
 						if(!prob(tj.jam_ignore_malfunction_chance))
 							skip = 1
-							world << "malf chance not rolled"
 							break
 				if(skip)
 					continue
