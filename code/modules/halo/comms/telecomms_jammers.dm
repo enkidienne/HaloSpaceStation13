@@ -72,7 +72,7 @@
 
 	jam_power = 25
 	jam_chance = 70
-	jam_range = 36
+	jam_range = 21
 	jam_ignore_malfunction_chance = 20
 
 	ignore_freqs = list(RADIO_SQUAD,RADIO_MARINE,RADIO_ODST,RADIO_ONI,RADIO_SPARTAN,RADIO_FLEET)
@@ -97,7 +97,7 @@
 
 	jam_power = -1
 	jam_chance = 100
-	jam_range = 21
+	jam_range = 16
 	jam_ignore_malfunction_chance = 10
 
 	ignore_freqs = list(RADIO_COV,RADIO_COVREQ)
@@ -111,7 +111,7 @@
 
 	jam_chance = 60
 	jam_power = -1
-	jam_range = 70
+	jam_range = 30
 	jam_ignore_malfunction_chance = 0
 
 	ignore_freqs = list(RADIO_URFC)
