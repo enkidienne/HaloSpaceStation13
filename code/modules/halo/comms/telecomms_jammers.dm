@@ -33,6 +33,7 @@
 			jamming_sector = map_sectors["[src.z]"]
 			jamming_sector.telecomms_jammers.Add(src)
 			anchored = 1
+			jammer_singleuse_used = 1
 		return
 	. = ..()
 	if(active)
@@ -50,7 +51,7 @@
 
 /obj/machinery/overmap_comms/jammer/process()
 	. = ..()
-	if(active && jam_time_remaining != -1 && world.time > jam_end_at)
+	if(jammer_singleuse_used && world.time > jam_end_at)
 		visible_message("<span class = 'danger'>[src] begins to overheat...</span>")
 		GLOB.processing_objects -= src
 		explosion(get_turf(src),-1,1,2,0)
