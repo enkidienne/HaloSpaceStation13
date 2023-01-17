@@ -16,6 +16,7 @@
 	var/jam_range = -1 //-1 = whole sector, anything higher is in tile-range.
 	var/jam_ignore_malfunction_chance = 0 //Chance for the jammer to jam frequencies in the ignore_freqs list.
 	var/jam_time_remaining = -1 //Sets a limited timeframe, after which the jammer explodes.
+	var/jammer_singleuse_used = 0
 	var/jam_end_at
 	var/obj/effect/overmap/jamming_sector
 
