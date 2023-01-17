@@ -1,78 +1,107 @@
 
 
-
-/* PLACEHOLDER */
-
 /obj/machinery/overmap_comms/jammer
 	name = "radio jammer"
+	desc = "Used to jam incoming radio communications."
 	icon = 'code/modules/halo/comms/machines/telecomms.dmi'
 	icon_state = "relay_off"
 	icon_state_active = "relay"
 	icon_state_inactive = "relay_off"
-	desc = "Used to jam incoming radio communications."
 	w_class = ITEM_SIZE_NORMAL
 	active = 0
 	var/list/ignore_freqs = list()
 	var/jam_power = -1 // -1 = force garbled, -2 = force gibberish, any value 0+ = force gibberish, chance for garbled.
 	var/jam_chance = 100
-	var/jam_range = 1 //The jamming range, in tiles.
+	var/jam_range = -1 //-1 = whole sector, anything higher is in tile-range.
 	var/jam_ignore_malfunction_chance = 0 //Chance for the jammer to jam frequencies in the ignore_freqs list.
+	var/jam_time_remaining = -1 //Sets a limited timeframe, after which the jammer explodes.
+	var/jam_end_at
 	var/obj/effect/overmap/jamming_sector
 
-/obj/machinery/overmap_comms/jammer/toggle_active()
+/obj/machinery/overmap_comms/jammer/examine(var/mob/user)
 	. = ..()
+	to_chat(user,"<span class = 'notice'>[src] is [active ? "active" : "inactive"]\nA readout on [src] states:\nPower: [jam_power].\nIntercept Chance: [jam_chance].</span>")
+	if(jam_time_remaining > 0)
+		to_chat(user,"<span class = 'notice'>[src] has a powerful internal battery, prone to dangerously overheating. Usually more powerful than a standard jammer, but overloads after a short time.</span>")
 
+/obj/machinery/overmap_comms/jammer/toggle_active()
+	anchored = 0
+	if(jam_time_remaining > 0)
+		if(!active)
+			jam_end_at = world.time + jam_time_remaining
+			jamming_sector = map_sectors["[src.z]"]
+			jamming_sector.telecomms_jammers.Add(src)
+			anchored = 1
+		return
+	. = ..()
 	if(active)
 		jamming_sector = map_sectors["[src.z]"]
 		jamming_sector.telecomms_jammers.Add(src)
-		GLOB.telecoms_jammers.Add(src)
+		anchored = 1
 	else if(!failure_timer)
 		if(jamming_sector)
 			jamming_sector.telecomms_jammers.Remove(src)
 			jamming_sector = null
-		GLOB.telecoms_jammers.Remove(src)
+
+/obj/machinery/overmap_comms/jammer/attack_hand(var/mob/user)
+	toggle_active()
+	to_chat(user,"<span class = 'notice'>You toggle [src] to [active ? "on":"off"]</span>")
+
+/obj/machinery/overmap_comms/jammer/process()
+	. = ..()
+	if(active && jam_time_remaining != -1 && world.time > jam_end_at)
+		visible_message("<span class = 'danger'>[src] begins to overheat...</span>")
+		GLOB.processing_objects -= src
+		explosion(get_turf(src),-1,1,2,0)
+		qdel(src)
 
 
 
-/* OBSOLETE */
+//Faction Jammers//
 
-/obj/machinery/telecomms_jammers
-	name = "malfunctioning radio jammer"
-	desc = "This radio jammer is no longer working. You'll have to order a new one."
-	icon = 'code/modules/halo/comms/machines/telecomms.dmi'
-	icon_state = "relay_off"
-	var/jam_power = -1 // -1 = force gibberish, -2 = force garbled, any value 0+ = force gibberish, chance for garbled.
-	var/jam_chance = 50
-	var/jam_range = 1 //The jamming range, in tiles.
-	var/jam_ignore_malfunction_chance = 0 //Chance for the jammer to jam frequencies in the ignore_freqs list.
-	var/jamming_active = 0
+/obj/machinery/overmap_comms/jammer/unsc
 
-/obj/machinery/telecomms_jammers/unsc
-	icon_state = "jammer_unsc"
-	/*
-	ignore_freqs = list(SHIPCOM_NAME,BERTELS_NAME,TEAMCOM_NAME,SQUADCOM_NAME,FLEETCOM_NAME,ODST_NAME,ONI_NAME)
 	jam_power = 25
 	jam_chance = 70
 	jam_range = 40
-	jam_ignore_malfunction_chance = 30
-	*/
+	jam_ignore_malfunction_chance = 20
 
-/obj/machinery/telecomms_jammers/covenant
-	icon_state = "jammer_covenant"
+	ignore_freqs = list(RADIO_SQUAD,RADIO_MARINE,RADIO_ODST,RADIO_ONI,RADIO_SPARTAN,RADIO_FLEET)
+
+/obj/machinery/overmap_comms/jammer/unsc/limited
+	jam_time_remaining = 2 MINUTES
+	jam_range = -1
+
+/obj/machinery/overmap_comms/jammer/covenant
 	icon = 'code/modules/halo/comms/machines/telecomms_64.dmi'
-	/*
-	//ignore_freqs = list("BattleNet")
+	icon_state = "jammer_covenant"
+	icon_state_active = "jammer_covenant"
+	icon_state_inactive = "jammer_covenant_off"
+
 	jam_power = -2
 	jam_chance = 100
 	jam_range = 20
 	jam_ignore_malfunction_chance = 10
-	*/
 
-/obj/machinery/telecomms_jammers/insurrectionist
-	icon_state = "jammer_insurrectionist"
-	/*
-	jam_range = 150
-	jam_chance = 50
+	ignore_freqs = list(RADIO_COV,RADIO_COVREQ)
+
+/obj/machinery/overmap_comms/jammer/covenant/limited
+	jam_time_remaining = 2 MINUTES
+	jam_range = -1
+
+/obj/machinery/overmap_comms/jammer/insurrectionist
+
+	jam_chance = 60
 	jam_power = -1
+	jam_range = 80
 	jam_ignore_malfunction_chance = 0
-	*/
+
+	ignore_freqs = list(RADIO_URFC)
+
+/obj/machinery/overmap_comms/jammer/insurrectionist/Initialize()
+	. = ..()
+	ignore_freqs += GLOB.INSURRECTION.get_innie_channel_name()
+
+/obj/machinery/overmap_comms/jammer/insurrectionist/limited
+	jam_time_remaining = 4 MINUTES //Innie jammer is awful, so let's give it a bit of extra jam time.
+	jam_range = -1
