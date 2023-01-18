@@ -78,6 +78,7 @@
 "bz" = (/obj/structure/table/glass,/obj/machinery/door/window/northleft,/obj/machinery/door/window/southleft,/turf/simulated/floor/tiled/white,/area/faction_base/oni/medbay)
 "bA" = (/obj/structure/sign/chemistry{name = "\improper Chemlab"},/turf/simulated/wall/silver{tag = "icon-solidfwall_opening"; icon_state = "solidfwall_opening"},/area/faction_base/oni/medbay)
 "bB" = (/obj/structure/grille,/obj/structure/window/reinforced/projresist{icon_state = "rwindow"; dir = 1},/obj/structure/window/reinforced/projresist{icon_state = "rwindow"; dir = 8},/obj/machinery/door/firedoor,/obj/structure/window/reinforced/projresist{icon_state = "rwindow"; dir = 4},/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
+"bC" = (/obj/effect/overmap/complex046,/turf/unsimulated/wall,/area/faction_base/oni)
 "bD" = (/obj/structure/grille,/obj/structure/window/reinforced/treated,/obj/structure/window/reinforced/treated{dir = 1},/obj/structure/window/reinforced/treated{tag = "icon-rwindow (WEST)"; icon_state = "rwindow"; dir = 8},/turf/simulated/floor/tiled/white,/area/faction_base/oni/medbay)
 "bE" = (/obj/structure/grille,/obj/structure/window/reinforced/treated,/obj/structure/window/reinforced/treated{dir = 1},/turf/simulated/floor/tiled/white,/area/faction_base/oni/medbay)
 "bF" = (/turf/simulated/wall/r_wall,/area/faction_base/oni/research)
@@ -515,5 +516,5 @@ aaeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEUluUhehebJbFxfbFbF
 aaeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeENebJhehebJbFaxhbbFTaLnBlLnLnLnBlhlcDbNaa
 aaeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEejehtKNheHbFfegJbFaKLnKeLnGRLnKehlaKbNaa
 aaeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEeEbFbFbFbFbFbFbFbFbFbNbNbNbNbNbNbNbNbNbNhI
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahIhI
+bCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahIhI
 "}
