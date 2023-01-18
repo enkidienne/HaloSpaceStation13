@@ -35,7 +35,7 @@
 	post_status_check_chance = 40
 
 /datum/weather/windy //Sound Only.
-	weather_sfx = list('code/modules/halo/sounds/weather/wind_high.ogg')
+	weather_sfx = list('code/modules/halo/sounds/weather/wind_low.ogg')
 
 /datum/weather/windy/p20
 	weather_chance = 20
@@ -45,7 +45,7 @@
 
 /datum/weather/snow
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "snow1",'code/modules/halo/misc/weather_overlays.dmi' = "snow2")
-	weather_sfx = list('code/modules/halo/sounds/weather/wind_high.ogg')
+	weather_sfx = list('code/modules/halo/sounds/weather/wind_low.ogg')
 
 /datum/weather/snow/p45
 	weather_chance = 45
@@ -59,7 +59,7 @@
 
 /datum/weather/sandstorm
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "sandstorm_light")
-	weather_sfx = list('code/modules/halo/sounds/weather/wind_high.ogg')
+	weather_sfx = list('code/modules/halo/sounds/weather/wind_low.ogg')
 
 /datum/weather/sandstorm/p25_night_p10
 	weather_chance = 25
@@ -76,6 +76,7 @@
 
 /datum/weather/ash
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "light_ash_obscuring")
+	weather_sfx = list('code/modules/halo/sounds/weather/wind_low.ogg')
 
 /datum/weather/ash/p20
 	weather_chance = 20
