@@ -174,8 +174,8 @@
 				found.forced_ambience_vol = w_sfx_vol
 			if(w_icon && w_icon_state)
 				var/image/I = image(icon = w_icon, icon_state = w_icon_state)
-				I.layer = BASE_AREA_LAYER
-				I.plane = BASE_PLANE
+				I.layer = ABOVE_PROJECTILE_LAYER
+				I.plane = EFFECTS_BELOW_LIGHTING_PLANE
 				found.overlays = list(I)
 			w_picked.picked_effects(found)
 
