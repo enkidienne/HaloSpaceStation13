@@ -14,17 +14,20 @@
 	dynamic_lighting = 0
 	requires_power= 0
 	luminosity = 1
+	sound_env = RURAL_OPEN
 
 /area/exo_research_facility/exterior/autolight
 	icon_state = "yellow"
 
 /area/exo_research_facility/exterior/umbilical
 	name = "VT9-042 - Umbilical"
+	sound_env = SMALL_ENCLOSED
 
 /area/exo_research_facility/exterior/Caves
 	name = "VT9-042 - Caves"
 	dynamic_lighting = 1
 	luminosity = 0
+	sound_env = TUNNEL_ENCLOSED
 
 /area/exo_research_facility/exterior/Caves/riverrock
 	name = "VT9-042 - River Rock"
@@ -37,6 +40,7 @@
 	dynamic_lighting = 1
 	luminosity = 0
 	requires_power= 0
+	sound_env = SMALL_ENCLOSED
 
 /area/exo_research_facility/interior/airstrip_upper
 	name = "VT9-042 - Airstrip Upper"
@@ -49,6 +53,7 @@
 
 /area/exo_research_facility/interior/hangar
 	name = "VT9-042 - Crescent Base Hangar Bay"
+	sound_env = LARGE_ENCLOSED
 
 /area/exo_research_facility/interior/medicalb
 	name = "VT9-042 - Crescent Base Medical Bay"
@@ -91,6 +96,7 @@
 
 /area/exo_research_facility/interior/external_wall_upper
 	name = "VT9-042 - Crescent Base External Upper Wall"
+	sound_env = RURAL_OPEN
 
 /area/exo_research_facility/exterior/Caves/lower
 	name = "VT9-042 - Lower Caves"
