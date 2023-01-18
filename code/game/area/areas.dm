@@ -279,7 +279,7 @@ var/list/mob/living/forced_ambiance_list = new
 	var/turf/T = get_turf(L)
 
 	if(L.client.ambience_playing != src)//only continue if we're not already playing ambience for this area.
-		world << "Playing ambience for area [src]"
+		L.client.ambience_playing = null
 		if(forced_ambience)
 			if(forced_ambience.len)
 				forced_ambiance_list |= L
