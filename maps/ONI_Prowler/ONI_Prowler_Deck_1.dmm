@@ -7,7 +7,7 @@
 "ag" = (/obj/structure/lattice,/turf/space,/area/space)
 "ah" = (/obj/machinery/computer/helm{tag = "icon-nav (WEST)"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "nav"; dir = 2; icon_keyboard = ""; icon_screen = "covie_console_overlay"},/obj/structure/cable/blue{icon_state = "0-2"},/obj/structure/computerframe{anchored = 1; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; tag = "icon-computer"},/turf/simulated/floor/tiled/dark,/area/corvette/onifox/starboardengine)
 "ai" = (/turf/simulated/floor/plating,/area/corvette/onifox/starboardengine)
-"aj" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/halo_lifepod{name = "Boarding Pod"},/turf/simulated/floor/plating,/area/corvette/onifox/starboardengine)
+"aj" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/halo/lifepod{name = "Boarding Pod"},/turf/simulated/floor/plating,/area/corvette/onifox/starboardengine)
 "ak" = (/obj/structure/cable/blue{icon_state = "1-4"},/turf/simulated/floor/tiled/dark,/area/corvette/onifox/starboardengine)
 "al" = (/obj/structure/cable/blue{icon_state = "1-2"},/obj/structure/cable/blue{icon_state = "2-8"},/turf/simulated/floor/tiled/dark,/area/corvette/onifox/starboardengine)
 "am" = (/turf/simulated/wall/r_wall,/area/corvette/onifox/Armoury)
@@ -148,7 +148,7 @@
 "cR" = (/turf/simulated/wall/r_wall,/area/corvette/onifox/medbay)
 "cS" = (/obj/machinery/door/firedoor,/obj/structure/cable/blue{dir = 2; icon_state = "1-2"},/obj/machinery/door/airlock/halo{name = "Medical Bay"; req_access = list(117)},/turf/simulated/floor/tiled/white,/area/corvette/onifox/medbay)
 "cT" = (/obj/machinery/light,/obj/machinery/button/remote/blast_door{_wifi_id = "prowlerhallwayairlock"; id = "prowlerhallwayairlock"; name = "Blast Door Control"; pixel_x = 0; pixel_y = -32; req_access = list(117)},/turf/simulated/floor/tiled/dark,/area/corvette/onifox/hallway)
-"cU" = (/obj/machinery/door/airlock/multi_tile/halo/triple{layer = 10; req_access = list(117)},/obj/machinery/door/blast/regular{_wifi_id = "prowlerhallwayairlock"; id = "prowlerhallwayairlock"},/turf/simulated/floor/tiled/dark,/area/corvette/onifox/umbilical)
+"cU" = (/obj/machinery/door/airlock/multi_tile/halo/blast_normal_triple{layer = 10; req_access = list(117)},/obj/machinery/door/blast/regular{_wifi_id = "prowlerhallwayairlock"; id = "prowlerhallwayairlock"},/turf/simulated/floor/tiled/dark,/area/corvette/onifox/umbilical)
 "cV" = (/turf/simulated/floor/tiled/dark,/area/corvette/onifox/umbilical)
 "cW" = (/obj/structure/closet/walllocker/emerglocker/south,/turf/simulated/floor/tiled/dark,/area/corvette/onifox/hallway)
 "cX" = (/turf/simulated/wall/r_wall,/area/corvette/onifox/portengine)
@@ -222,7 +222,7 @@
 "en" = (/obj/machinery/atmospherics/pipe/manifold4w/visible/blue,/turf/simulated/floor/plating,/area/corvette/onifox/Reactorcore)
 "eo" = (/obj/structure/cable/blue{dir = 2; icon_state = "1-2"},/obj/machinery/atmospherics/binary/fusion_cooling{icon_state = "cooling_manifold"; dir = 8},/turf/simulated/floor/plating,/area/corvette/onifox/Reactorcore)
 "ep" = (/obj/machinery/camera/autoname/invis/oni_prowler{icon_state = "camera"; dir = 1},/turf/simulated/floor/tiled,/area/corvette/onifox/Crewmess)
-"eq" = (/obj/structure/table/rack{dir = 8; layer = 2.9},/obj/item/weapon/storage/box/m5,/obj/item/weapon/storage/box/m5,/obj/item/weapon/storage/box/m5,/obj/item/weapon/melee/baton/humbler,/obj/item/weapon/melee/baton/humbler,/obj/item/weapon/melee/baton/humbler,/obj/item/weapon/melee/baton/humbler,/turf/simulated/floor/tiled,/area/corvette/onifox/Bridge)
+"eq" = (/obj/structure/table/rack{dir = 8; layer = 2.9},/obj/item/weapon/melee/baton/humbler,/obj/item/weapon/melee/baton/humbler,/obj/item/weapon/melee/baton/humbler,/obj/item/weapon/melee/baton/humbler,/turf/simulated/floor/tiled,/area/corvette/onifox/Bridge)
 "er" = (/turf/simulated/floor/tiled,/area/corvette/onifox/Bridge)
 "es" = (/obj/machinery/light,/obj/machinery/camera/autoname/invis/oni_prowler{icon_state = "camera"; dir = 1},/turf/simulated/floor/tiled,/area/corvette/onifox/Crewmess)
 "et" = (/obj/structure/cable/blue{icon_state = "1-4"},/obj/structure/cable/blue{icon_state = "1-2"},/turf/simulated/floor/tiled/white,/area/corvette/onifox/medbay)
@@ -251,7 +251,6 @@
 "eQ" = (/obj/structure/cable/blue{icon_state = "1-2"},/turf/simulated/floor/plating,/area/corvette/onifox/Reactorcore)
 "eR" = (/obj/structure/cable/blue{dir = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/corvette/onifox/Reactorcore)
 "eS" = (/obj/machinery/portable_atmospherics/powered/scrubber,/turf/simulated/floor/plating,/area/corvette/onifox/Reactorcore)
-"eT" = (/obj/machinery/door/blast/regular{_wifi_id = "prowlerportairlock"; id = "prowlerportairlock"},/obj/machinery/door/airlock/multi_tile/halo/triple{layer = 10; req_access = list(117)},/turf/simulated/floor/tiled/dark,/area/corvette/onifox/umbilical)
 "eU" = (/obj/machinery/door/blast/regular{_wifi_id = "prowlerportairlock"; id = "prowlerportairlock"},/turf/simulated/floor/tiled/dark,/area/corvette/onifox/umbilical)
 "eV" = (/obj/machinery/door/blast/regular{_wifi_id = "prowlerportairlock"; id = "prowlerportairlock"},/obj/structure/cable/blue{icon_state = "1-2"},/turf/simulated/floor/tiled/dark,/area/corvette/onifox/umbilical)
 "eW" = (/obj/machinery/light/colored/orange,/turf/simulated/floor/plating,/area/corvette/onifox/Reactorcore)
@@ -375,7 +374,7 @@ aaaaaaaaaaaaaaaaaaaNaNaNaNdFbYdFaNdGdHdIaNdJdgdhcPdLdkdkdMdkdNdodOdPcRfXdRgicXdT
 aaaaaaaaaaaaaaaaaaaaaNaNaTecaNedaNeeaNefaNegdggjcPeheidkgfdkejdodOdkewcVgkcEekeAeAfUdVelemendYdXeogldEcXcXaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNeqeraNgmaNdJdgfgcPdkdkdkdkdkdketeuevgaexfVcVeydvdvfWeBeAeAeCeDeAeEgndEcXcXaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNeFgoaNaNaNegdggpcPeIeJfZeKeLgdgqeNeOcRdrcVgbdEgcdvdveQdvdvdveRdvdveSdEcXcXaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNcPcPcPcPcRcRcRcRcRcRcRcRcRcReTeUeVcXeWgegreXeWdvdveRdvgseSdEcXcXaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNcPcPcPcPcRcRcRcRcRcRcRcRcRcReUeUeVcXeWgegreXeWdvdveRdvgseSdEcXcXaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaNaNaTaNaNaNaNaNaNeYcPcPcPcRcRcReZcRcRcRcRcRcRfacVgtcYdEdEdEfbdEdEfceRdEdEfbdEcXcXaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNcPcPcPcPcRcRcRcRcRcRcRcRcRcRcVcVfecXcXcXcXcXgufCfhfigvfkcYfhflaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNcPaaaaaaaaaaaaaaaaaacRcRcRcRcXgwcXcXcXcXcXcXcXcXfhfmfnfncXfoflaaaaaaaaaaaaaaaa
