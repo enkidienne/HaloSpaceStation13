@@ -437,7 +437,7 @@ var/global/list/light_type_cache = list()
 /obj/machinery/light/bullet_act(var/obj/item/projectile/Proj)
 	if(status != LIGHT_BROKEN && status != LIGHT_EMPTY)
 		if(prob(Proj.damage))
-			visible_message("<span class = 'warning>[src] shatters!</span>")
+			visible_message("<span class = 'warning'>[src] shatters!</span>")
 			broken()
 		else
 			visible_message("<span class = 'notice'>[Proj] glances off of [src].</span>")
