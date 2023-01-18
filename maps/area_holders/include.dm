@@ -40,6 +40,8 @@
 
 /area/planets/Geminus/indoor/quest_instance
 
+/area/planets/Geminus/indoor/npc_factory
+
 /area/shuttle/innie_offsite_supply
 
 /area/shuttle/covenant_offsite_supply
