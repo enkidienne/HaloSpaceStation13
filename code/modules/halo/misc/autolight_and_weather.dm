@@ -67,7 +67,7 @@
 	post_status_check_chance = 10
 
 /datum/weather/sandstorm/heavy
-	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "sandstorm")
+	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "sandstorm_heavy")
 	weather_sfx = list('code/modules/halo/sounds/weather/wind_high.ogg')
 
 /datum/weather/sandstorm/heavy/day_p40
