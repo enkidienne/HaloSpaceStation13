@@ -1820,7 +1820,7 @@
 #include "code\modules\halo\medicine\firstaid.dm"
 #include "code\modules\halo\misc\artifact_spawn.dm"
 #include "code\modules\halo\misc\atom_despawner.dm"
-#include "code\modules\halo\misc\autolight.dm"
+#include "code\modules\halo\misc\autolight_and_weather.dm"
 #include "code\modules\halo\misc\bumpstairs.dm"
 #include "code\modules\halo\misc\bumpstairs_oni.dm"
 #include "code\modules\halo\misc\bumpstairs_road.dm"

@@ -276,40 +276,43 @@ var/list/mob/living/forced_ambiance_list = new
 	// Ambience goes down here -- make sure to list each area seperately for ease of adding things in later, thanks! Note: areas adjacent to each other should have the same sounds to prevent cutoff when possible.- LastyScratch
 	if(!(L && L.is_preference_enabled(/datum/client_preference/play_ambiance)))	return
 
-
-	// If we previously were in an area with force-played ambiance, stop it.
-	if(L in forced_ambiance_list)
-		sound_to(L, sound(null, channel = 1))
-		forced_ambiance_list -= L
-
 	var/turf/T = get_turf(L)
-	var/hum = 0
-	if(!L.ear_deaf)
-		for(var/obj/machinery/atmospherics/unary/vent_pump/vent in src)
-			if(vent.can_pump())
-				hum = 1
-				break
 
-	if(hum)
-		if(!L.client.ambience_playing)
-			L.client.ambience_playing = 1
-			L.playsound_local(T,sound('sound/ambience/shipambience.ogg', repeat = 1, wait = 0, volume = 25, channel = 2))
-	else
-		if(L.client.ambience_playing)
-			L.client.ambience_playing = 0
-			sound_to(L, sound(null, channel = 2))
-
-	if(forced_ambience)
-		if(forced_ambience.len)
-			forced_ambiance_list |= L
-			L.playsound_local(T,sound(pick(forced_ambience), repeat = 1, wait = 0, volume = 25, channel = 1))
+	if(L.client.ambience_playing != src)//only continue if we're not already playing ambience for this area.
+		world << "Playing ambience for area [src]"
+		if(forced_ambience)
+			if(forced_ambience.len)
+				forced_ambiance_list |= L
+				L.playsound_local(T,sound(pick(forced_ambience), repeat = 1, wait = 0, volume = forced_ambience_vol, channel = 1))
+				L.client.ambience_playing = src
+			else
+				sound_to(L, sound(null, channel = 1))
 		else
-			sound_to(L, sound(null, channel = 1))
-	else if(src.ambience.len && prob(35))
-		if((world.time >= L.client.played + 600))
-			var/sound = pick(ambience)
-			L.playsound_local(T, sound(sound, repeat = 0, wait = 0, volume = 25, channel = 1))
-			L.client.played = world.time
+			if(L in forced_ambiance_list)
+				// If we previously were in an area with force-played ambiance, stop it.
+				sound_to(L, sound(null, channel = 1))
+				forced_ambiance_list -= L
+
+			if(src.ambience.len && prob(35))
+				if((world.time >= L.client.played + 600))
+					var/sound = pick(ambience)
+					L.playsound_local(T, sound(sound, repeat = 0, wait = 0, volume = 25, channel = 1))
+					L.client.played = world.time
+
+			var/hum = 0
+			if(!L.ear_deaf)
+				for(var/obj/machinery/atmospherics/unary/vent_pump/vent in src)
+					if(vent.can_pump())
+						hum = 1
+						break
+			if(hum)
+				if(!L.client.ambience_playing)
+					L.client.ambience_playing = src
+					L.playsound_local(T,sound('sound/ambience/shipambience.ogg', repeat = 1, wait = 0, volume = 25, channel = 2))
+			else
+				if(L.client.ambience_playing)
+					L.client.ambience_playing = 0
+					sound_to(L, sound(null, channel = 2))
 
 /area/proc/gravitychange(var/gravitystate = 0)
 	has_gravity = gravitystate
