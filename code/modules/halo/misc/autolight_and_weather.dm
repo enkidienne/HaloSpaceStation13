@@ -106,7 +106,7 @@
 	var/targ_area = null
 	var/init_recursive = 0 //Should we search children of the provided area too?
 	var/light_type = /obj/daylight_mark
-	var/autolight_chance = 70 //The chance that this autolight actually initialises their lights. For rng night-time.
+	var/autolight_chance = 100 //The chance that this autolight actually initialises their lights. For rng night-time.
 	var/autolight_fail = 0 //Have we failed autolights?
 	var/weathers = list() //Format: weather datums. Order matters, generally try to put low %s first.
 
