@@ -35,7 +35,7 @@
 	post_status_check_chance = 40
 
 /datum/weather/windy //Sound Only.
-	weather_sfx = list()
+	weather_sfx = list('code/modules/halo/sounds/weather/wind_high.ogg')
 
 /datum/weather/windy/p20
 	weather_chance = 20
@@ -45,18 +45,21 @@
 
 /datum/weather/snow
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "snow1",'code/modules/halo/misc/weather_overlays.dmi' = "snow2")
+	weather_sfx = list('code/modules/halo/sounds/weather/wind_high.ogg')
 
 /datum/weather/snow/p45
 	weather_chance = 45
 
 /datum/weather/snow/blizzard
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "snow2_obscuring",'code/modules/halo/misc/weather_overlays.dmi' = "snow3_obscuring")
+	weather_sfx = list('code/modules/halo/sounds/weather/wind_high.ogg')
 
 /datum/weather/snow/blizzard/p20
 	weather_chance = 20
 
 /datum/weather/sandstorm
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "sandstorm_light")
+	weather_sfx = list('code/modules/halo/sounds/weather/wind_high.ogg')
 
 /datum/weather/sandstorm/p25_night_p10
 	weather_chance = 25
@@ -65,6 +68,7 @@
 
 /datum/weather/sandstorm/heavy
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "sandstorm")
+	weather_sfx = list('code/modules/halo/sounds/weather/wind_high.ogg')
 
 /datum/weather/sandstorm/heavy/day_p40
 	weather_chance = 40
@@ -162,16 +166,17 @@
 				w_icon = pick(w.weather_icons)
 				w_icon_state = w.weather_icons[w_icon]
 			break
-	for(var/area/found in area_search)
-		if(w_sfx)
-			found.forced_ambience = list(w_sfx) //Fully replace their ambience with ours.
-			found.forced_ambience_vol = w_sfx_vol
-		if(w_icon && w_icon_state)
-			var/image/I = image(icon = w_icon, icon_state = w_icon_state)
-			I.layer = BASE_AREA_LAYER
-			I.plane = BASE_PLANE
-			found.overlays = list(I)
-		w_picked.picked_effects(found)
+	if(w_picked)
+		for(var/area/found in area_search)
+			if(w_sfx)
+				found.forced_ambience = list(w_sfx) //Fully replace their ambience with ours.
+				found.forced_ambience_vol = w_sfx_vol
+			if(w_icon && w_icon_state)
+				var/image/I = image(icon = w_icon, icon_state = w_icon_state)
+				I.layer = BASE_AREA_LAYER
+				I.plane = BASE_PLANE
+				found.overlays = list(I)
+			w_picked.picked_effects(found)
 
 /obj/autolight_init/proc/finalise_initialise(var/area/found)
 	qdel(src)
