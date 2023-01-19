@@ -1,6 +1,6 @@
 
 #include "../npc_ships/om_ship_areas.dm"
-#include "../area_holders/overmap_ship_area_holder.dmm"
+#include "../area_holders/include.dm"
 
 #include "co_ord_console.dm"
 

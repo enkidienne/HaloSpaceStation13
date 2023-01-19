@@ -42,7 +42,7 @@
 /area/exoplanet/grass/play_ambience(var/mob/living/L)
 	..()
 	if(!L.ear_deaf && L.client && !L.client.ambience_playing)
-		L.client.ambience_playing = 1
+		L.client.ambience_playing = src
 		L.playsound_local(get_turf(L),sound('sound/ambience/jungle.ogg', repeat = 1, wait = 0, volume = 25, channel = 2))
 
 /datum/random_map/noise/exoplanet/grass
@@ -82,6 +82,6 @@
 		resources["diamond"] = 1
 
 /turf/simulated/floor/exoplanet/grass/fire_act(datum/gas_mixture/air, temperature, volume)
-	if((temperature > T0C + 200 && prob(5)) || temperature > T0C + 1000) 
+	if((temperature > T0C + 200 && prob(5)) || temperature > T0C + 1000)
 		name = "scorched ground"
 		icon_state = "scorched"

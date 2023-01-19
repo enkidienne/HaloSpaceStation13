@@ -12,7 +12,7 @@
 
 	overmap_spawn_near_me = list(/obj/effect/overmap/ship/unsclightbrigade)
 
-	parent_area_type = /area/exo_research_facility/sublevel1/interior
+	parent_area_type = /area/exo_research_facility
 
 	occupy_range = 28
 

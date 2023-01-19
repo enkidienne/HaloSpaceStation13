@@ -243,6 +243,8 @@
 	for(var/turf/t in locs)
 		for(var/turf/t_2 in range(1,t))
 			if(!(t_2 in locs) && !istype(t_2,/turf/simulated/open) && t_2.density == 0)
+				if(locate(/obj/effect/shield) in t_2.contents) //No putting people inside shields.
+					continue
 				if(locate(/obj/structure/window) in t_2.contents) //Just no windows.
 					valid_exit_locs_fallback += t_2
 					continue
