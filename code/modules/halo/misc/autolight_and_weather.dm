@@ -49,6 +49,12 @@
 /datum/weather/windy/p10
 	weather_chance = 10
 
+/datum/weather/windy/heavy
+	weather_sfx = list('code/modules/halo/sounds/weather/wind_high.ogg')
+
+/datum/weather/windy/heavy/p40
+	weather_chance = 40
+
 /datum/weather/snow
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "snow1",'code/modules/halo/misc/weather_overlays.dmi' = "snow2")
 	weather_sfx = list('code/modules/halo/sounds/weather/wind_low.ogg')
@@ -92,6 +98,9 @@
 /datum/weather/ash/p20
 	weather_chance = 20
 
+/datum/weather/ash/p60
+	weather_chance = 60
+
 //Mostly Adminspawn. Look kinda awful too; codersprites.//
 /datum/weather/flood
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "flood_obscuring")
@@ -128,6 +137,8 @@
 	return INITIALIZE_HINT_LATELOAD
 
 /obj/autolight_init/proc/init_autolight(var/list/area_search)
+	if(autolight_chance == null)//Don't even bother rolling if it's exactly null.
+		return
 	if(!prob(autolight_chance))
 		autolight_fail = 1
 	for(var/area/found in area_search)
@@ -232,7 +243,7 @@
 //Some Presets, for admin weather-changing use.//
 
 /obj/autolight_init/dbg_weather
-	autolight_chance = 0
+	autolight_chance = null
 
 /obj/autolight_init/dbg_weather/rain
 	weathers = list(/datum/weather/rain)
