@@ -9,8 +9,10 @@
 //Weather Datums//
 /datum/weather
 	var/list/weather_icons = list() //Format icon = icon state. We pick one of these on init.
-	var/list/weather_sfx = list() //We pick one of these on init.
+	var/list/weather_sfx = list() //For the main targeted area.
+	var/list/weather_sfx_adjacent //List. For areas adjacent to the main targeted area. If not supplied, uses base weather sfx but with lowered volume.
 	var/sfx_vol = 100
+	var/apply_sfx_adjacent = 0
 	var/weather_env = null //What sort of environment should we force usage of on the area? If null, leaves the same.
 	var/weather_chance = 100
 	var/required_autolight_fail_status = -1 //What does autolight_fail need to be set to for this to be used? -1 means we don't care..
@@ -18,9 +20,11 @@
 
 /datum/weather/proc/picked_effects(var/area/a)
 
+
 /datum/weather/rain
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "rain1",'code/modules/halo/misc/weather_overlays.dmi' = "rain1_splashlight",'code/modules/halo/misc/weather_overlays.dmi' = "rain2",'code/modules/halo/misc/weather_overlays.dmi' = "rain2_splashlight")
 	weather_sfx = list('code/modules/halo/sounds/weather/rain_light.ogg')
+	apply_sfx_adjacent = 1
 
 /datum/weather/rain/p25
 	weather_chance = 25
@@ -28,6 +32,7 @@
 /datum/weather/rain/heavy
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "rain1_splash",'code/modules/halo/misc/weather_overlays.dmi' = "rain2_splash")
 	weather_sfx = list('code/modules/halo/sounds/weather/rain_heavy.ogg')
+	apply_sfx_adjacent = 1
 
 /datum/weather/rain/heavy/p20_night_p40
 	weather_chance = 20
@@ -36,6 +41,7 @@
 
 /datum/weather/windy //Sound Only.
 	weather_sfx = list('code/modules/halo/sounds/weather/wind_low.ogg')
+	apply_sfx_adjacent = 1
 
 /datum/weather/windy/p20
 	weather_chance = 20
@@ -46,6 +52,7 @@
 /datum/weather/snow
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "snow1",'code/modules/halo/misc/weather_overlays.dmi' = "snow2")
 	weather_sfx = list('code/modules/halo/sounds/weather/wind_low.ogg')
+	apply_sfx_adjacent = 1
 
 /datum/weather/snow/p45
 	weather_chance = 45
@@ -53,6 +60,7 @@
 /datum/weather/snow/blizzard
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "snow2_obscuring",'code/modules/halo/misc/weather_overlays.dmi' = "snow3_obscuring")
 	weather_sfx = list('code/modules/halo/sounds/weather/wind_high.ogg')
+	apply_sfx_adjacent = 1
 
 /datum/weather/snow/blizzard/p20
 	weather_chance = 20
@@ -60,6 +68,7 @@
 /datum/weather/sandstorm
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "sandstorm_light")
 	weather_sfx = list('code/modules/halo/sounds/weather/wind_low.ogg')
+	apply_sfx_adjacent = 1
 
 /datum/weather/sandstorm/p25_night_p10
 	weather_chance = 25
@@ -69,6 +78,7 @@
 /datum/weather/sandstorm/heavy
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "sandstorm_heavy")
 	weather_sfx = list('code/modules/halo/sounds/weather/wind_high.ogg')
+	apply_sfx_adjacent = 1
 
 /datum/weather/sandstorm/heavy/day_p40
 	weather_chance = 40
@@ -77,6 +87,7 @@
 /datum/weather/ash
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "light_ash_obscuring")
 	weather_sfx = list('code/modules/halo/sounds/weather/wind_low.ogg')
+	apply_sfx_adjacent = 1
 
 /datum/weather/ash/p20
 	weather_chance = 20
@@ -86,6 +97,7 @@
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "flood_obscuring")
 	weather_sfx = list('code/modules/halo/sounds/weather/flood_ambience.ogg')
 	weather_chance = 100
+	apply_sfx_adjacent = 1
 
 /datum/weather/glassed
 	weather_icons = list('code/modules/halo/misc/weather_overlays.dmi' = "light_ash_glassed")
@@ -148,7 +160,7 @@
 	var/w_icon
 	var/w_icon_state
 	var/w_sfx
-	var/w_sfx_vol
+	var/w_sfx_adj
 	for(var/type in weathers)
 		var/datum/weather/w = new type ()
 		var/w_chance = w.weather_chance
@@ -162,22 +174,37 @@
 			w_picked = w
 			if(w.weather_sfx)
 				w_sfx = w.weather_sfx
-				w_sfx_vol = w.sfx_vol
+			if(w.weather_sfx_adjacent)
+				w_sfx_adj = w.weather_sfx_adjacent
 			if(w.weather_icons.len)
 				w_icon = pick(w.weather_icons)
 				w_icon_state = w.weather_icons[w_icon]
 			break
 	if(w_picked)
+		var/list/contentslist = list()
 		for(var/area/found in area_search)
+			contentslist += found.contents
 			if(w_sfx)
-				found.forced_ambience = list(w_sfx) //Fully replace their ambience with ours.
-				found.forced_ambience_vol = w_sfx_vol
+				found.forced_ambience = w_sfx//Fully replace their ambience with ours.
+				found.forced_ambience_vol = w_picked.sfx_vol
 			if(w_icon && w_icon_state)
 				var/image/I = image(icon = w_icon, icon_state = w_icon_state)
 				I.layer = ABOVE_PROJECTILE_LAYER
 				I.plane = EFFECTS_BELOW_LIGHTING_PLANE
 				found.overlays = list(I)
 			w_picked.picked_effects(found)
+
+		if(w_picked.apply_sfx_adjacent)
+			var/w_sfx_adj_vol = w_picked.sfx_vol
+			if(!w_sfx_adj)
+				w_sfx_adj = w_sfx
+				w_sfx_adj_vol = w_sfx_adj_vol/3
+			for(var/turf/t in contentslist)
+				for(var/t_2 in trange(1,t))
+					var/area/a = get_area(t_2)
+					if(!(a in area_search))//If it's not an original area, we'll be applying the lowered volume.
+						a.forced_ambience = w_sfx_adj
+						a.forced_ambience_vol = w_sfx_adj_vol
 
 /obj/autolight_init/proc/finalise_initialise(var/area/found)
 	qdel(src)
