@@ -10,6 +10,7 @@
 	explosion_resistance = 1
 	var/health = 10
 	var/destroyed = 0
+	var/grille_hitsound = 'sound/effects/grillehit.ogg'
 
 
 /obj/structure/grille/ex_act(severity)
@@ -27,7 +28,7 @@
 /obj/structure/grille/attack_hand(mob/user as mob)
 
 	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-	playsound(loc, 'sound/effects/grillehit.ogg', 80, 1)
+	playsound(loc, grille_hitsound, 80, 1)
 	user.do_attack_animation(src)
 
 	var/damage_dealt = 1

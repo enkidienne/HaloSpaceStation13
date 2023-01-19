@@ -237,21 +237,25 @@
 
 /obj/vehicles/proc/pick_valid_exit_loc()
 	var/list/valid_exit_locs = list()
+	var/list/valid_exit_locs_fallback = list()
 
 	//check for atmos safe turfs
 	for(var/turf/t in locs)
 		for(var/turf/t_2 in range(1,t))
-			if(!(t_2 in locs) && t_2.density == 0 && !IsTurfAtmosUnsafe(t_2))
-				valid_exit_locs |= t_2
-				break
+			if(!(t_2 in locs) && !istype(t_2,/turf/simulated/open) && t_2.density == 0)
+				if(locate(/obj/effect/shield) in t_2.contents) //No putting people inside shields.
+					continue
+				if(locate(/obj/structure/window) in t_2.contents) //Just no windows.
+					valid_exit_locs_fallback += t_2
+					continue
+				if(!IsTurfAtmosUnsafe(t_2))
+					valid_exit_locs |= t_2
+				else
+					valid_exit_locs_fallback += t_2
 
 	//try again for anny turfs
 	if(valid_exit_locs.len == 0)
-		for(var/turf/t in locs)
-			for(var/turf/t_2 in range(1,t))
-				if(!(t_2 in locs) && t_2.density == 0)
-					valid_exit_locs |= t_2
-					break
+		valid_exit_locs = valid_exit_locs_fallback
 
 	if(valid_exit_locs.len == 0)
 		return null

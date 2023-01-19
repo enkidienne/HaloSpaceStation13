@@ -102,13 +102,17 @@
 		if(A == src || A == src.loc)
 			continue
 		var/atom/valTarg = return_valid_target(A)
-		if(valTarg)
-			T = valTarg
+		if(!valTarg)
+			targlist -= A
+			continue
 
 		var/atom/F = Found(A)
 		if(F)
-			T = F
-			break
+			targlist -= A
+			targlist += F
+			continue
+	if(targlist.len)
+		T = pick(targlist)
 	if(our_overmind && !isnull(T))
 		our_overmind.create_report(1,src,null,targlist.len,assault_target,loc)
 	return T

@@ -50,9 +50,15 @@
 /obj/item/stack/tile/covenant/fifty
 	amount = 50
 
+/decl/flooring/drone
+	name = "biomass"
+	desc = "It's covered in hardened alien biomass.."
+	icon = 'icons/turf/floors.dmi'
+	icon_base = "diona"
+	flags = TURF_ACID_IMMUNE | TURF_REMOVE_SHOVEL
+
 /turf/simulated/floor/drone_biomass
 	name = "biomass"
-	desc = "It is covered in a hardened alien biomass."
 	icon_state = "diona"
 	icon = 'code/modules/halo/covenant/turfs/biomass.dmi'
-	initial_flooring = /decl/flooring/diona
+	initial_flooring = /decl/flooring/drone

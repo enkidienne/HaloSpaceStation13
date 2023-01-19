@@ -25,3 +25,12 @@
 
 	use_overmap = 1
 	allowed_gamemodes = list("reclamation","spicyextended")
+
+	area_coherency_test_exempt_areas = list(
+		/area/space,
+		/area/exoplanet,
+		/area/exoplanet/desert,
+		/area/exoplanet/grass,
+		/area/exoplanet/snow,
+		/area/planets/Geminus/outdoor/autolight
+	)

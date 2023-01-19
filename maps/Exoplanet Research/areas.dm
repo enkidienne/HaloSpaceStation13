@@ -1,164 +1,141 @@
+
+/obj/autolight_init/vt9
+	targ_area = /area/exo_research_facility/exterior/autolight
+	autolight_chance = 90 //It's mostly day, here.
+	weathers = list(/datum/weather/windy/p20,/datum/weather/sandstorm/p25_night_p10,/datum/weather/sandstorm/heavy/day_p40)
+
 /area/exo_research_facility
 	name = "Research Facility"
 	dynamic_lighting = 0
 	has_gravity = 1
 	base_turf = /turf/simulated/floor/asteroid/planet
 
-/area/exo_research_facility/ground/exterior
+/area/exo_research_facility/exterior
 	dynamic_lighting = 0
 	requires_power= 0
-	has_gravity = 1
 	luminosity = 1
+	sound_env = RURAL_OPEN
 
-/area/exo_research_facility/ground/exterior/courtyard
-	name = "Crescent Base Courtyard"
+/area/exo_research_facility/exterior/autolight
+	icon_state = "yellow"
 
-/area/exo_research_facility/ground/exterior/umbilical
-	name = "VT9-042 Eastern Valley Wilds"
+/area/exo_research_facility/exterior/umbilical
+	name = "VT9-042 - Umbilical"
+	sound_env = SMALL_ENCLOSED
 
-/area/exo_research_facility/ground/exterior/wildsn
-	name = "VT9-042 Northern Wilds"
-
-/area/exo_research_facility/ground/exterior/wildss
-	name = "VT9-042 Southern Valley Wilds"
-
-/area/exo_research_facility/ground/exterior/perimeter
-	name = "Crescent Base Perimeter"
-
-/area/exo_research_facility/ground/exterior/Caves
-	name = "VT9-042 Caves"
-	dynamic_lighting = 1
-	requires_power= 0
-	has_gravity = 1
-	luminosity = 0
-
-/area/exo_research_facility/ground/interior
-	name = "Crescent Base ground level interior"
-	dynamic_lighting = 0
-	requires_power= 0
-	has_gravity = 1
-	luminosity = 1
-
-/area/exo_research_facility/ground/interior/barracks
-	name = "Crescent Base Barracks"
-
-/area/exo_research_facility/ground/interior/hangar
-	name = "Crescent Base Hangar Bay"
-
-/area/exo_research_facility/ground/interior/medicalb
-	name = "Crescent Base Medical Bay"
-
-/area/exo_research_facility/ground/interior/sciencecrew
-	name = "Crescent Base Main Compound Entrance"
-
-/area/exo_research_facility/ground/interior/sciencelabs
-	name = "Crescent Base Science Labs"
-
-/area/exo_research_facility/ground/interior/northeastg
-	name = "Crescent Base Northeast Tower Ground"
-
-/area/exo_research_facility/ground/interior/northwestg
-	name = "Crescent Base Northwest Tower Ground"
-
-/area/exo_research_facility/ground/interior/southeastg
-	name = "Crescent Base Southeast Tower Ground"
-
-/area/exo_research_facility/ground/interior/southwestg
-	name = "Crescent Base Southwest Tower Ground"
-
-/area/exo_research_facility/ground/interior/centralg
-	name = "Crescent Base Gate Tower Ground"
-
-/area/exo_research_facility/ground/interior/commsg
-	name = "Crescent Base Communications Station"
-
-/area/exo_research_facility/roof/interior
-	name = "Crescent Base sublevel 1 interior"
-	dynamic_lighting = 0
-	requires_power= 0
-	has_gravity = 1
-	luminosity = 1
-
-/area/exo_research_facility/roof/interior/Lunchhall
-	name = "Crescent Base Lunch Hall"
-
-/area/exo_research_facility/roof/interior/Livingquar
-	name = "Crescent Base Living Quarters"
-
-/area/exo_research_facility/roof/exterior
-	name = "Crescent Base Rooftop Level Exterior"
-	dynamic_lighting = 0
-	requires_power= 0
-	has_gravity = 1
-	luminosity = 1
-
-/area/exo_research_facility/roof/exterior/northeastr
-	name = "Crescent Base Northeast Tower Rooftop"
-
-/area/exo_research_facility/roof/exterior/nortwestr
-	name = "Crescent Base Northwest Tower Rooftop"
-
-/area/exo_research_facility/roof/exterior/southeastr
-	name = "Crescent Base Southeast Tower Rooftop"
-
-/area/exo_research_facility/roof/exterior/southwestr
-	name = "Crescent Base Southwest Tower Rooftop"
-
-/area/exo_research_facility/roof/exterior/hangarr
-	name = "Crescent Base Hangar Rooftop"
-
-/area/exo_research_facility/roof/exterior/gater
-	name = "Crescent Base Gate Tower Rooftop"
-
-/area/exo_research_facility/roof/exterior/northeastr
-	name = "VT9-042 Rooftop Exterior"
-
-/area/exo_research_facility/sublevel1/interior
-	dynamic_lighting = 0
-	luminosity = 1
-	requires_power = 0
-
-/area/exo_research_facility/sublevel1/exterior/Caves
-	name = "VT9 Lower Caves"
+/area/exo_research_facility/exterior/Caves
+	name = "VT9-042 - Caves"
 	dynamic_lighting = 1
 	luminosity = 0
-	base_turf = /turf/simulated/floor/asteroid/planet
+	sound_env = TUNNEL_ENCLOSED
 
-/area/exo_research_facility/sublevel1/interior/xenoresearch
-	name = "Crescent Base Xeno-Research"
+/area/exo_research_facility/exterior/Caves/riverrock
+	name = "VT9-042 - River Rock"
 
-/area/exo_research_facility/sublevel1/interior/virology
-	name = "Crescent Base Virology"
+/area/exo_research_facility/exterior/Caves/upper
+	name = "VT9-042 - Upper Caves"
 
-/area/exo_research_facility/sublevel1/interior/orionsector
-	name = "Crescent Base Orion-Sector"
+/area/exo_research_facility/interior
+	name = "VT9-042 - Ground Level"
+	dynamic_lighting = 1
+	luminosity = 0
+	requires_power= 0
+	sound_env = SMALL_ENCLOSED
 
-/area/exo_research_facility/sublevel1/interior/slipspacelab
-	name = "Crescent Base Slipspace Lab"
+/area/exo_research_facility/interior/airstrip_upper
+	name = "VT9-042 - Airstrip Upper"
 
-/area/exo_research_facility/sublevel1/interior/xenoarchaeology
-	name = "Crescent Base Xeno-Archaeo"
+/area/exo_research_facility/interior/airstrip_lower
+	name = "VT9-042 - Airstrip Lower"
 
-/area/exo_research_facility/sublevel1/interior/botany
-	name = "Crescent Base Botany"
+/area/exo_research_facility/interior/barracks
+	name = "VT9-042 - Crescent Base Barracks"
 
-/area/exo_research_facility/sublevel1/interior/comms
-	name = "Crescent Base Comms"
+/area/exo_research_facility/interior/hangar
+	name = "VT9-042 - Crescent Base Hangar Bay"
+	sound_env = LARGE_ENCLOSED
 
-/area/exo_research_facility/sublevel1/interior/Hallway
-	name = "Crescent Base Hallway"
+/area/exo_research_facility/interior/medicalb
+	name = "VT9-042 - Crescent Base Medical Bay"
 
-/area/exo_research_facility/sublevel1/interior/entrance
-	name = "Crescent Base Sublevel Entrance"
+/area/exo_research_facility/interior/sciencecrew
+	name = "VT9-042 - Crescent Base Main Compound Entrance"
 
-/area/exo_research_facility/sublevel1/interior/mech
-	name = "Crescent Base Mechbay"
+/area/exo_research_facility/interior/sciencelabs
+	name = "VT9-042 - Crescent Base Science Labs"
 
-/area/exo_research_facility/sublevel1/interior/mechtest
-	name = "Crescent Base Mechtest Bay"
+/area/exo_research_facility/interior/northeastg
+	name = "VT9-042 - Crescent Base Northeast Tower Ground"
 
-/area/exo_research_facility/sublevel1/interior/destruct
-	name = "Emergency Sanitation Storage"
+/area/exo_research_facility/interior/northwestg
+	name = "VT9-042 - Crescent Base Northwest Tower Ground"
+
+/area/exo_research_facility/interior/southeastg
+	name = "VT9-042 - Crescent Base Southeast Tower Ground"
+
+/area/exo_research_facility/interior/southwestg
+	name = "VT9-042 - Crescent Base Southwest Tower Ground"
+
+/area/exo_research_facility/interior/centralg
+	name = "VT9-042 - Crescent Base Gate Tower Ground"
+
+/area/exo_research_facility/interior/commsg
+	name = "VT9-042 - Crescent Base Communications Station"
+
+/area/exo_research_facility/interior/mining
+	name = "VT9-042 - Crescent Base Mining Outpost"
+
+/area/exo_research_facility/interior/Lunchhall
+	name = "VT9-042 - Crescent Base Lunch Hall"
+
+/area/exo_research_facility/interior/Livingquar
+	name = "VT9-042 - Crescent Base Living Quarters"
+
+/area/exo_research_facility/interior/hangar_upper
+	name = "VT9-042 - Crescent Base Hangar Rooftop"
+
+/area/exo_research_facility/interior/external_wall_upper
+	name = "VT9-042 - Crescent Base External Upper Wall"
+	sound_env = RURAL_OPEN
+
+/area/exo_research_facility/exterior/Caves/lower
+	name = "VT9-042 - Lower Caves"
+
+/area/exo_research_facility/interior/xenoresearch
+	name = "VT9-042 - Crescent Base Xeno-Research"
+
+/area/exo_research_facility/interior/virology
+	name = "VT9-042 - Crescent Base Virology"
+
+/area/exo_research_facility/interior/orionsector
+	name = "VT9-042 - Crescent Base Orion-Sector"
+
+/area/exo_research_facility/interior/slipspacelab
+	name = "VT9-042 - Crescent Base Slipspace Lab"
+
+/area/exo_research_facility/interior/xenoarchaeology
+	name = "VT9-042 - Crescent Base Xeno-Archaeo"
+
+/area/exo_research_facility/interior/botany
+	name = "VT9-042 - Crescent Base Botany"
+
+/area/exo_research_facility/interior/comms
+	name = "VT9-042 - Crescent Base Comms"
+
+/area/exo_research_facility/interior/Hallway
+	name = "VT9-042 - Crescent Base Hallway"
+
+/area/exo_research_facility/interior/entrance
+	name = "VT9-042 - Crescent Base Sublevel Entrance"
+
+/area/exo_research_facility/interior/mech
+	name = "VT9-042 - Crescent Base Mechbay"
+
+/area/exo_research_facility/interior/mechtest
+	name = "VT9-042 - Crescent Base Mechtest Bay"
+
+/area/exo_research_facility/interior/destruct
+	name = "VT9-042 - Emergency Sanitation Storage"
 
 /*
 /area/exo_research_facility/sublevel1/interior

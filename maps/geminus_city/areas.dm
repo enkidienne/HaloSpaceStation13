@@ -1,3 +1,7 @@
+/obj/autolight_init/geminus
+	targ_area = /area/planets/Geminus/outdoor/autolight
+	autolight_chance = 50
+	weathers = list(/datum/weather/windy/p20,/datum/weather/rain/p25,/datum/weather/rain/heavy/p20_night_p40)
 
 /area/planets/Geminus
 	name = "\improper Geminus City"
@@ -6,155 +10,105 @@
 
 /area/planets/Geminus/outdoor
 	name = "\improper Geminus City Area"
+	requires_power = 0
+	sound_env = URBAN_OPEN
 
-/area/planets/Geminus/outdoor/north
-	name = "\improper Geminus City - North"
+/area/planets/Geminus/outdoor/autolight
+	name = "\improper Geminus City Area"
+	requires_power = 0
+
+/area/planets/Geminus/outdoor/caves
+	name = "\improper Geminus City - Caves"
 	icon_state = "yellow"
+	dynamic_lighting = 1
+	sound_env = TUNNEL_ENCLOSED
 
-/area/planets/Geminus/outdoor/south
-	name = "\improper Geminus City - South"
-	icon_state = "blue"
-
-/area/planets/Geminus/outdoor/west
-	name = "\improper Geminus City - West"
-	icon_state = "red"
-
-/area/planets/Geminus/outdoor/level1
-	name = "\improper Geminus City - level 1 exterior"
-	icon_state = "red"
-
-/*/area/planets/Geminus/outdoor/level2
-	name = "\improper Geminus City - level 2 exterior"
-	icon_state = "red"*/
-
-/area/planets/Geminus/outdoor/central
-	name = "\improper Geminus City - Central"
-	icon_state = "green"
-
-
-/area/planets/Geminus/outdoor/metro/abandoned
-	name = "\improper Abandoned Metro"
-	icon_state = "green"
+/area/planets/Geminus/outdoor/caves_upper
+	name = "\improper Geminus City - Upper Caves"
+	icon_state = "yellow"
+	dynamic_lighting = 1
+	sound_env = TUNNEL_ENCLOSED
 
 /area/planets/Geminus/indoor
-	name = "\improper Geminus Interior"
+	name = "\improper Geminus City - Geminus Interior"
 	icon_state = "yellow"
+	luminosity = 0
+	dynamic_lighting = 1
+	sound_env = SMALL_ENCLOSED
 
 /area/planets/Geminus/indoor/arrivalbus
-	name = "\improper Arrival Bus"
+	name = "\improper Geminus City - Arrival Bus"
 	icon_state = "yellow"
-/*
-/area/planets/Geminus/indoor/disco
-	name = "\improper Disco"
-	icon_state = "red"
-*/
-
-/*
-/area/planets/Geminus/indoor/backroom
-	name = "\improper Nightclub Backroom"
-	icon_state = "green"
-*/
 
 /area/planets/Geminus/indoor/bar
-	name = "\improper Bar"
+	name = "\improper Geminus City - Bar"
 	icon_state = "bar"
+	sound_env = LARGE_ENCLOSED
 
 /area/planets/Geminus/indoor/kitchen
-	name = "\improper Bar"
+	name = "\improper Geminus City - Kitchen"
 	icon_state = "kitchen"
 
 /area/planets/Geminus/indoor/stage
-	name = "\improper Stage"
+	name = "\improper Geminus City - Stage"
 	icon_state = "theatre"
 
 /area/planets/Geminus/indoor/hotel
-	name = "\improper Hotel"
+	name = "\improper Geminus City - Hotel"
 	icon_state = "yellow"
 
 /area/planets/Geminus/indoor/gamebar
-	name = "game Bar"
+	name = "\improper Geminus City - Game Bar"
 	icon_state = "yellow"
 
 /area/planets/Geminus/indoor/grocery
-	name = "grocery Store"
+	name = "\improper Geminus City - Grocery Store"
 	icon_state = "kitchen"
 
 /area/planets/Geminus/indoor/courtroom
-	name = "\improper Courtroom"
+	name = "\improper Geminus City - Courtroom"
 	icon_state = "courtroom"
-/*
-/area/planets/Geminus/indoor/living1nw
-	name = "\improper Northwest Appartment Level 1"
-	icon_state = "courtroom"
-
-/area/planets/Geminus/indoor/living1ne
-	name = "\improper Northeast Apartment Level 1"
-	icon_state = "courtroom"
-
-/area/planets/Geminus/indoor/living1sw
-	name = "\improper Southwest Apartment Level 1"
-	icon_state = "courtroom"
-
-/area/planets/Geminus/indoor/living2nw
-	name = "\improper Northwest Appartment Level 2"
-	icon_state = "courtroom"
-
-/area/planets/Geminus/indoor/living2ne
-	name = "\improper Northeast Appartment Level 2"
-	icon_state = "courtroom"
-
-/area/planets/Geminus/indoor/living2sw
-	name = "\improper Southwest Appartment Level 2"
-	icon_state = "courtroom"
-
-/area/planets/Geminus/indoor/labs1
-	name = "\improper Research and development level 1"
-	icon_state = "courtroom"
-*/
-
+	sound_env = LARGE_ENCLOSED
 
 /area/planets/Geminus/indoor/chapel
-	name = "\improper Chapel"
+	name = "\improper Geminus City - Chapel"
 	icon_state = "chapel"
 
 /area/planets/Geminus/indoor/virology
-	name = "\improper Virology"
+	name = "\improper Geminus City - Virology"
 	icon_state = "virology"
 
 /area/planets/Geminus/indoor/virologyaccess
-	name = "\improper Virology Access"
+	name = "\improper Geminus City - Virology Access"
 	icon_state = "virology"
 
 /area/planets/Geminus/indoor/police_station
-	name = "\improper Police Station"
+	name = "\improper Geminus City - Police Station"
 	icon_state = "brig"
 
-/*/area/planets/Geminus/indoor/xenoflora
-	name = "\improper Xenoflora Lab"
-	icon_state = "xeno_f_lab"*/
-
 /area/planets/Geminus/indoor/city_hall
-	name = "\improper City Hall"
+	name = "\improper Geminus City - City Hall"
 	icon_state = "dk_yellow"
 
 /area/planets/Geminus/indoor/city_hall1
-	name = "\improper City Hall Level 1"
+	name = "\improper Geminus City - City Hall Level 1"
 	icon_state = "dk_yellow"
 
 /area/planets/Geminus/indoor/mayor
-	name = "\improper Mayor Office"
+	name = "\improper Geminus City - Mayor Office"
 	icon_state = "captain"
+	sound_env = SMALL_SOFTFLOOR
 
 /area/planets/Geminus/indoor/mayor_car_park
-	name = "\improper Mayor Car Park"
+	name = "\improper Geminus City - Mayor Car Park"
 	icon_state = "captain"
-
+/*
 /area/planets/Geminus/indoor/headmeetingroom
 	name = "\improper City Hall Meeting Room"
 	icon_state = "conference"
-
+*/
 /area/planets/Geminus/indoor/cargo
-	name = "\improper Cargo"
+	name = "\improper Geminus City - Cargo"
 	icon_state = "quart"
 /*
 /area/planets/Geminus/indoor/disposal_bay
@@ -174,19 +128,15 @@
 */
 
 /area/planets/Geminus/indoor/morgue
-	name = "\improper Morgue"
+	name = "\improper Geminus City - Morgue"
 	icon_state = "morgue"
 
-/area/planets/Geminus/outdoor/nuclear
-	name = "\improper Nuclear Storage"
-	icon_state = "nuke_storage"
-
-/area/planets/Geminus/outdoor/aiupload
-	name = "\improper City AI Upload"
+/area/planets/Geminus/indoor/aiupload
+	name = "\improper Geminus City - City AI Upload"
 	icon_state = "ai_upload"
 
 /area/planets/Geminus/indoor/tech_storage
-	name = "\improper Tech Shop"
+	name = "\improper Geminus City - Tech Shop"
 	icon_state = "green"
 /*
 /area/planets/Geminus/indoor/mining
@@ -195,24 +145,67 @@
 */
 
 /area/planets/Geminus/indoor/armory
-	name = "\improper City Police Armory"
+	name = "\improper Geminus City - City Police Armory"
 	icon_state = "yellow"
 
 /area/planets/Geminus/indoor/hospital
-	name = "\improper City Hospital"
+	name = "\improper Geminus City - City Hospital"
 	icon_state = "medbay"
+	sound_env = LARGE_ENCLOSED
 
 /area/planets/Geminus/indoor/hospital1
-	name = "\improper City Hospital Level 1"
+	name = "\improper Geminus City - City Hospital Level 1"
 	icon_state = "medbay"
+	sound_env = LARGE_ENCLOSED
 
 /area/planets/Geminus/indoor/cmo
-	name = "\improper Chief Medical Officer Office"
+	name = "\improper Geminus City - Chief Medical Officer Office"
 	icon_state = "cmo"
 
-/area/planets/Geminus/outdoor/space_elevator
-	name = "\improper Space Elevator"
+/area/planets/Geminus/indoor/nuclear_storage
+	name = "\improper Geminus City - Nuclear Storage"
+
+/area/planets/Geminus/indoor/metro_abandoned
+	name = "\improper Geminus City - Abandoned Metro"
+	icon_state = "green"
+
+/area/planets/Geminus/indoor/slums_clubgun
+	name = "\improper Geminus City - Slums Club and Gun Store"
+
+/area/planets/Geminus/indoor/slums_entrancebar
+	name = "\improper Geminus City - Slums Entrance Bar"
+
+/area/planets/Geminus/indoor/slums_entrancebar_small
+	name = "\improper Geminus City - Slums Entrance Bar (Small)"
+
+/area/planets/Geminus/indoor/slums_surgery
+	name = "\improper Geminus City - Slums Surgery"
+
+/area/planets/Geminus/indoor/slums_botany
+	name = "\improper Geminus City - Slums Botany"
+
+/area/planets/Geminus/indoor/slums_hideout
+	name = "\improper Geminus City - Slums Hideout"
+
+/area/planets/Geminus/indoor/slums_pub
+	name = "\improper Geminus City - Slums Pub"
+
+/area/planets/Geminus/indoor/slums_hotel
+	name = "\improper Geminus City - Slums Hotel"
+
+/area/planets/Geminus/indoor/slums_tiny_kitchen
+	name = "\improper Geminus City - Slums Tiny Kitchen"
+
+/area/planets/Geminus/indoor/slums_police
+	name = "\improper Geminus City - Slums Abandoned Police Station"
+
+/area/planets/Geminus/indoor/slums_largehideout
+	name = "\improper Geminus City - Slums Hideout (Large)"
+
+/area/planets/Geminus/indoor/space_elevator
+	name = "\improper Geminus City - Space Elevator"
 	icon_state = "observatory"
+
 /*
 /area/planets/Geminus/outdoor/spaceport
 	name = "\improper Spaceport"
@@ -234,6 +227,7 @@
 	name = "\improper Geminus Underground Northeast"
 	icon_state = "yellow"
 	base_turf = /turf/simulated/floor/asteroid/planet
+	sound_env = TUNNEL_ENCLOSED
 
 /area/geminus_underground/northwest
 	name = "\improper Geminus Underground Northwest"

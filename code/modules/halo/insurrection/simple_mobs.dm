@@ -6,6 +6,7 @@
 	faction = "Insurrection"
 	health = 100
 	maxHealth = 100
+	break_stuff_probability = 0
 	icon = 'code/modules/halo/insurrection/simple_mobs.dmi'
 	var/armour_colour = "brown"
 	var/armour_tier = "light"
