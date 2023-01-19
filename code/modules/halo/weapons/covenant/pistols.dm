@@ -148,6 +148,7 @@
 	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_5x6.dmi'
 	hud_bullet_iconstate = "needle"
 	slowdown_general = 0
+	salvage_components = list(/obj/item/plasma_core)
 	matter = list("nanolaminate" = 1)
 	auto_eject = 1
 	auto_eject_sound = null

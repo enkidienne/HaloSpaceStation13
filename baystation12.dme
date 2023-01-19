@@ -2165,6 +2165,7 @@
 #include "code\modules\halo\unsc\supply\medical.dm"
 #include "code\modules\halo\unsc\supply\misc.dm"
 #include "code\modules\halo\unsc\supply\NPCs.dm"
+#include "code\modules\halo\unsc\supply\onispecial.dm"
 #include "code\modules\halo\unsc\supply\regammo.dm"
 #include "code\modules\halo\unsc\supply\specammo.dm"
 #include "code\modules\halo\unsc\supply\weapons.dm"

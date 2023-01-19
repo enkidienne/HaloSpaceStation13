@@ -20,6 +20,7 @@
 	accuracy = 1
 	wielded_item_state = "carbine-wielded"
 	speed_reload_time = -1 //already auto-ejects
+	salvage_components = list(/obj/item/plasma_core)
 	matter = list("nanolaminate" = 1)
 	hud_bullet_row_num = 9
 	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_7x8.dmi'
@@ -82,7 +83,7 @@
 
 	alt_charge_method = 1
 	matter = list("nanolaminate" = 2)
-	salvage_components = list(/obj/item/plasma_core)
+	salvage_components = list(/obj/item/plasma_core = 2)
 
 	item_icons = list(
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
@@ -127,6 +128,7 @@
 	accuracy = -1
 	scoped_accuracy = 2
 	wielded_item_state = "needlerifle-wielded"
+	salvage_components = list(/obj/item/plasma_core)
 	matter = list("nanolaminate" = 1)
 
 	item_icons = list(

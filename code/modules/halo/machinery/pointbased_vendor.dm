@@ -63,7 +63,7 @@ GLOBAL_LIST_INIT(mobs_to_reqdatum,list())
 		if(custom_prod_amt)
 			product.amount = custom_prod_amt
 		else
-			product.amount = 50
+			product.amount = 30
 
 		src.product_records.Add(product)
 

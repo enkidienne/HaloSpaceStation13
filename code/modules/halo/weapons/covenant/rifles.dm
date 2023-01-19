@@ -71,6 +71,8 @@
 	icon_state = "concussion_rifle"
 	item_state = "concussion_rifle"
 	fire_sound = 'code/modules/halo/sounds/conc_rifle_fire.ogg'
+	salvage_components = list(/obj/item/plasma_core)
+	matter = list("nanolaminate" = 1)
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/concussion_rifle
 	one_hand_penalty = -1
