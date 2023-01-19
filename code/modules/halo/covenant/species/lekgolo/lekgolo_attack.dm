@@ -74,6 +74,10 @@
 		to_chat(src,"<span class='notice'>You must be facing [A] to fire at it!</span>")
 		return
 
+	if(istype(loc,/obj/vehicles))
+		to_chat(src,"<span class = 'notice'>Your weapon is simply too unwieldy to fire from inside a vehicle!</span>")
+		return
+
 	if(isnull(active_weapon))
 		return
 	if(active_weapon.next_shot > world.time)
