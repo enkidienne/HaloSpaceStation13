@@ -1,6 +1,6 @@
 
 #define PLANETFALL_BOUND_PADDING 10 //How many extra tiles to add to our bounds
-#define CRASHLAND_DELETE_OBJS list(/obj/machinery/overmap_weapon_console,/obj/machinery/shuttle_spawner)
+#define CRASHLAND_DELETE_OBJS list(/obj/effect/landmark/start,/obj/machinery/overmap_weapon_console,/obj/machinery/shuttle_spawner)
 
 /obj/effect/overmap/ship
 	var/obj/effect/overmap/old_om_type
