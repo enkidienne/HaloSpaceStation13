@@ -70,8 +70,6 @@ Once a dongle is created and given info, it can't be modified by players.
 
 */
 
-GLOBAL_LIST_EMPTY(telecoms_jammers)
-
 /obj/effect/overmap
 	var/list/telecomms_receivers = list()
 	var/list/telecomms_jammers = list()

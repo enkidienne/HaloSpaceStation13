@@ -13,32 +13,38 @@
 	base_state = "orange"		// base description and icon_state
 	icon_state = "orange1"
 	light_type = /obj/item/weapon/light/tube/large/neon/orange
+	brightness_color = "#fef9eb"
 
 /obj/machinery/light/colored/purple
 	base_state = "purple"		// base description and icon_state
 	icon_state = "purple1"
 	light_type = /obj/item/weapon/light/tube/large/neon/purple
+	brightness_color = "#fcebfe"
 
 /obj/machinery/light/colored/red
 	base_state = "red"		// base description and icon_state
 	icon_state = "red1"
 	light_type = /obj/item/weapon/light/tube/large/neon/red
+	brightness_color = "#feebeb"
 
 
 /obj/machinery/light/colored/pink
 	base_state = "pink"		// base description and icon_state
 	icon_state = "pink1"
 	light_type = /obj/item/weapon/light/tube/large/neon/pink
+	brightness_color = "#fff9f9"
 
 /obj/machinery/light/colored/blue
 	base_state = "blue"		// base description and icon_state
 	icon_state = "blue1"
 	light_type = /obj/item/weapon/light/tube/large/neon/blue
+	brightness_color = "#ebf7fe"
 
 /obj/machinery/light/colored/green
 	base_state = "green"		// base description and icon_state
 	icon_state = "green1"
 	light_type = /obj/item/weapon/light/tube/large/neon/green
+	brightness_color = "#ebfeec"
 
 
 //colored bulbs
@@ -73,6 +79,11 @@
 	brightness_color = "#ebfeec"
 	light_color = "#ebfeec"
 
+/obj/item/weapon/light/tube/large/streetlight
+	brightness_range = 8
+	brightness_power = 2
+//	brightness_color = "#0080ff"
+
 /obj/machinery/light/floor
 	icon_state = "floor1"
 	base_state = "floor"
@@ -96,8 +107,7 @@
 	icon_state = "streetlamp1"
 	base_state = "streetlamp"
 	desc = "A street lighting fixture."
-	brightness_range = 8
-	brightness_color = "#0080ff"
+	light_type = /obj/item/weapon/light/tube/large/streetlight
 	density = 1
 
 /obj/machinery/light/invis

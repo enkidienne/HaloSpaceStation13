@@ -287,26 +287,7 @@ var/global/datum/controller/radio/radio_controller
 
 	//let's check for nearby telecomms machinery which will interact with the signal
 	for(var/obj/effect/overmap/nearby_sector in range(OVERMAP_TELECOMMS_BASE_RANGE, source_sector))
-/*
-		//check for jammers
-		for(var/obj/machinery/overmap_comms/jammer/tj in nearby_sector.telecomms_jammers)
-			if(!tj.active)
-				continue
-			if(frequency in tj.ignore_freqs)
-				continue
 
-			//if the signal is being jammed at the source, we wont bother sending any outgoing signals at all
-			signal.data["jammed"] = 1
-
-			var/image/speech_bubble = image('icons/mob/talk.dmi',source,"radio2")
-			spawn(30) qdel(speech_bubble)
-
-			//var/list/jammed_mobs = get_mobs_in_radio_ranges(list(source))
-			for(var/mob/M in hear(7,get_turf(source)))
-				show_image(M, speech_bubble)
-				to_chat(M, "\icon[source] <span class='danger'>[source] emits a loud screeching wail!</span>")
-			return
-*/
 		//check for receivers
 		var/sector_finished = 0
 		for(var/obj/machinery/overmap_comms/receiver/receiver in nearby_sector.telecomms_receivers)
@@ -407,37 +388,60 @@ var/global/datum/controller/radio/radio_controller
 
 	//now check to find jammers that are blocking incoming radio signals
 	//the assumption here for optimisation purposes is that there are less jammers than radios
-	if(transmit_global)
-		for(var/obj/machinery/overmap_comms/jammer/tj in GLOB.telecoms_jammers)
+	var/datum/channel_cipher/cipher = signal.data["cipher"]
+	for(var/obj/effect/overmap/om in listening_sectors)
+		var/list/radios_jamming = listening_sectors[om]
+		var/list/radios_garble = list()
+		var/list/radios_gibberish = list()
+		for(var/obj/machinery/overmap_comms/jammer/tj in om.telecomms_jammers)
 			if(!tj.active)
 				continue
 			if(tj.jam_chance < 100 && !prob(tj.jam_chance))
 				continue
-			if(frequency in tj.ignore_freqs && (tj.jam_ignore_malfunction_chance == 0 || !prob(tj.jam_ignore_malfunction_chance)))
+			//if(isnull(cipher) || ("[cipher.channel_name]" in tj.ignore_freqs && (!prob(tj.jam_ignore_malfunction_chance))))
+			//	continue
+			if(!isnull(cipher))
+				//Ugly but the above wasn't working for some reason or another.
+				var/skip = 0
+				for(var/freq in tj.ignore_freqs)
+					if(freq == cipher.channel_name)
+						if(!prob(tj.jam_ignore_malfunction_chance))
+							skip = 1
+							break
+				if(skip)
+					continue
+			else
 				continue
+			//We've passed the checks. This sector is in some way jammed.
+			//First, we do a range-based check.
+			if(tj.jam_range != -1)
+				for(var/obj/i in radios_jamming)
+					if(get_dist(get_turf(i),get_turf(tj)) > tj.jam_range)
+						radios_jamming -= i
 
-			//get nearby sectors to jam incoming signals (including the sector the jammer is located in)
-			var/obj/effect/overmap/jammed_sector = map_sectors["[tj.z]"]
-			for(var/obj/effect/overmap/nearby_sector in range(tj.jam_range, jammed_sector))
 
-				//are there any radios in this sector that would hear the signal?
-				var/nearby_listening_sector = listening_sectors[nearby_sector]
-				if(listening_sectors.Find(nearby_sector))
-					//whoops this sector is getting jammed,  no radios will be getting incoming signals
-					radios -= nearby_listening_sector
-					radios_garbled -= nearby_listening_sector
-					radios_out_of_range -= nearby_listening_sector
-					radios_encrypted -= nearby_listening_sector
+			//This is for full-sector jams.
+			if(tj.jam_power > 0)
+				if(prob(tj.jam_power))
+					radios_gibberish |= radios_jamming
+				else
+					radios_garble |= radios_jamming
+			else if(tj.jam_power == -2)
+				radios_gibberish |= radios_jamming
+			else if(tj.jam_power == -1)
+				radios_garble |= radios_jamming
 
-					if(tj.jam_power > 0)
-						if(prob(tj.jam_power))
-							radios_garbled += nearby_listening_sector
-						else
-							radios_out_of_range += nearby_listening_sector
-					else if(tj.jam_power == -1)
-						radios_out_of_range += nearby_listening_sector
-					else if(tj.jam_power == -2)
-						radios_garbled += nearby_listening_sector
+		if(radios_garble.len > 0 || radios_gibberish.len > 0)
+		//Check garble, the worst effect, first. Then Gibberish.
+			radios -= radios_jamming
+			radios_garbled -= radios_jamming
+			radios_out_of_range -= radios_jamming
+			radios_encrypted -= radios_jamming
+
+			if(radios_garble.len)
+				radios_garbled |= radios_garble
+			if(radios_gibberish.len)
+				radios_out_of_range |= radios_gibberish
 
 	//send the signal for the devices to do their own processing
 	//note that receive_signal() for radios above specifically does not output any chat messages to players

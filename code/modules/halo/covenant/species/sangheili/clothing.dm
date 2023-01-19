@@ -365,7 +365,8 @@
 	name = "Sangheili Combat Harness (Spec-Ops)"
 	icon_state = "specops_chest_obj"
 	item_state = "specops_chest"
-	totalshields = 150
+	totalshields = 50
+	armor_thickness = 15
 	specials = list(/datum/armourspecials/shields/elite,/datum/armourspecials/shieldmonitor/sangheili,/datum/armourspecials/cloaking/cov_specops)
 	action_button_name = "Toggle Active Camouflage"
 

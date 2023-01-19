@@ -434,6 +434,14 @@ var/global/list/light_type_cache = list()
 				electrocute_mob(user, get_area(src), src, rand(0.7,1.0))
 
 
+/obj/machinery/light/bullet_act(var/obj/item/projectile/Proj)
+	if(status != LIGHT_BROKEN && status != LIGHT_EMPTY)
+		if(prob(Proj.damage))
+			visible_message("<span class = 'warning'>[src] shatters!</span>")
+			broken()
+		else
+			visible_message("<span class = 'notice'>[Proj] glances off of [src].</span>")
+
 // returns whether this light has power
 // true if area has power and lightswitch is on
 /obj/machinery/light/powered()

@@ -31,7 +31,7 @@
 	update_light()
 	//updateMineralOverlays()
 
-/turf/unsimulated/floor/lava/Entered(atom/movable/Obj,atom/OldLoc)
+/turf/unsimulated/floor/lava/proc/lava_melt(var/atom/movable/Obj)
 	var/loseme = 0
 	if(isliving(Obj))
 		loseme = 1
@@ -53,9 +53,13 @@
 					src.visible_message("\icon[Obj]<span class='danger'>[Obj] sinks under the surface of [src]!</span>")
 					qdel(Obj)
 
-	light_range = 5
-	light_power = 2
-	light_color = "#00FF00"
+/turf/unsimulated/floor/lava/Entered(atom/movable/Obj,atom/OldLoc)
+	. = ..()
+	lava_melt(Obj)
+
+/turf/unsimulated/floor/lava/Crossed(var/atom/a)
+	. = ..()
+	lava_melt(a)
 
 //mostly ripped off asteroid code
 /turf/unsimulated/floor/lava/proc/updateMineralOverlays()

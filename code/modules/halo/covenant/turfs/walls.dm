@@ -18,6 +18,7 @@
 /turf/simulated/wall/drone_biomass
 	name = "biomass covered wall"
 	desc = "An armor-plated wall which acts as both protection and separation. It is covered in a hardened alien biomass"
+	icon_state = "diona"
 
 	floor_type = /turf/simulated/floor/drone_biomass
 
