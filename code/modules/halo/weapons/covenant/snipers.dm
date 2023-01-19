@@ -20,7 +20,7 @@
 	accuracy = 1
 	wielded_item_state = "carbine-wielded"
 	speed_reload_time = -1 //already auto-ejects
-	salvage_components = list(/obj/item/plasma_core)
+	salvage_components = list()
 	matter = list("nanolaminate" = 1)
 	hud_bullet_row_num = 9
 	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_7x8.dmi'
@@ -128,7 +128,7 @@
 	accuracy = -1
 	scoped_accuracy = 2
 	wielded_item_state = "needlerifle-wielded"
-	salvage_components = list(/obj/item/plasma_core)
+	salvage_components = list()
 	matter = list("nanolaminate" = 1)
 
 	item_icons = list(

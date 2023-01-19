@@ -83,7 +83,7 @@
 	"Jiralhanae" = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons_big.dmi'
 	)
 	lunge_dist = 3
-	salvage_components = list(/obj/item/plasma_core)
+	salvage_components = list()
 	matter = list("duridium" = 1)
 
 /obj/item/weapon/gun/projectile/spiker/update_icon()
@@ -160,7 +160,7 @@
 	item_state_slots = list(slot_l_hand_str = "mauler", slot_r_hand_str = "mauler")
 	sprite_sheets = list("Kig-Yar" = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons.dmi')
 	lunge_dist = 3
-	salvage_components = list(/obj/item/plasma_core)
+	salvage_components = list()
 	matter = list("duridium" = 1)
 
 /obj/item/weapon/gun/projectile/mauler/update_icon()
@@ -222,7 +222,7 @@
 	"Jiralhanae" = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons_big.dmi',
 	)
 	item_state_slots = list(slot_l_hand_str = "gravhammer", slot_r_hand_str = "gravhammer", slot_back_str = "back_hammer")
-	salvage_components = list(/obj/item/plasma_core = 3)
+	salvage_components = list()
 	matter = list("nanolaminate" = 2, "duridium" = 3)
 	var/unique_afterattack = 1
 
@@ -263,7 +263,7 @@
 	force = 40
 	lunge_dist = 4
 	hitsound = "swing_hit"
-	salvage_components = list(/obj/item/plasma_core)
+	salvage_components = list()
 	item_state_slots = list(slot_l_hand_str = "gravlesshammer", slot_r_hand_str = "gravlesshammer", slot_back_str = "back_hammer")
 	sprite_sheets = list(\
 	"Jiralhanae" = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons_big.dmi'
@@ -293,7 +293,7 @@
 	sprite_sheets = list("Default" = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons.dmi',
 	"Jiralhanae" = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons_big.dmi'
 	)
-	salvage_components = list(/obj/item/plasma_core = 2)
+	salvage_components = list()
 	matter = list("nanolaminate" = 2, "kemocite" = 1, "duridium" = 1)
 
 	whitelisted_grenades = list(/obj/item/weapon/grenade/brute_shot)
