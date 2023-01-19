@@ -1,9 +1,17 @@
 
 #define PLANETFALL_BOUND_PADDING 10 //How many extra tiles to add to our bounds
+#define CRASHLAND_DELETE_OBJS list(/obj/machinery/overmap_weapon_console,/obj/machinery/shuttle_spawner)
 
 /obj/effect/overmap/ship
 	var/obj/effect/overmap/old_om_type
 	var/obj/effect/overmap/landed_on = null
+
+/obj/effect/overmap/ship/proc/remove_important_objs(var/turf/t)
+	for(var/atom/a in t)
+		for(var/type in CRASHLAND_DELETE_OBJS)
+			if(istype(a,type))
+				qdel(a)
+				break
 
 /obj/effect/overmap/ship/proc/do_crash_landing(var/obj/effect/overmap/planet,var/keep_umbilicals_active = 0)
 	do_landing(planet,keep_umbilicals_active)
@@ -27,12 +35,15 @@
 	var/list/planetbounds = list(max(1,map_bounds[1] - PLANETFALL_BOUND_PADDING),min(255,map_bounds[2] + PLANETFALL_BOUND_PADDING),min(255,map_bounds[3] + PLANETFALL_BOUND_PADDING),max(1,map_bounds[4] - PLANETFALL_BOUND_PADDING))
 	var/area/newoutside = new planet.parent_area_type (null)
 	for(var/z_level in map_z)
-		for(var/turf/space/space in block(locate(planetbounds[1],planetbounds[4],z_level),locate(planetbounds[3],planetbounds[2],z_level)))
-			newoutside.contents += space
-			if(space.x == planetbounds[1] || space.x == planetbounds[3] || space.y == planetbounds[4] || space.y == planetbounds[2])
-				space.ChangeTurf(/turf/unsimulated/mineral)
-			else
-				space.ChangeTurf(newoutside.base_turf)
+		for(var/turf/t in block(locate(planetbounds[1],planetbounds[4],z_level),locate(planetbounds[3],planetbounds[2],z_level)))
+			remove_important_objs(t)
+			var/turf/space/space = t
+			if(istype(space))
+				newoutside.contents += space
+				if(space.x == planetbounds[1] || space.x == planetbounds[3] || space.y == planetbounds[4] || space.y == planetbounds[2])
+					space.ChangeTurf(/turf/unsimulated/mineral)
+				else
+					space.ChangeTurf(newoutside.base_turf)
 	for(var/level in map_z)
 		if(!old_om_type)
 			old_om_type = map_sectors["[level]"]
@@ -70,3 +81,5 @@
 			if(istype(t,/turf/simulated/open) || istype(t,/turf/unsimulated/mineral))
 				t.ChangeTurf(/turf/space)
 */
+#undef PLANETFALL_BOUND_PADDING
+#undef CRASHLAND_DELETE_OBJS
