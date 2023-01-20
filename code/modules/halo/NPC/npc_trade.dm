@@ -27,18 +27,22 @@
 	//this uses the default SS13 item_worth procs so its a good fallback
 	. = get_value(O)
 
+	var/is_trade_item = 0
 	//see if we are already selling the item
 	var/datum/trade_item/T = trade_items_inventory_by_type[O.type]
 	if(T)
-		return T.value
+		is_trade_item = 1
+		. = T.value
 
 	//check if its an accepted item
-	T = trade_items_by_type[O.type]
-	if(T)
-		//this is in the accepted trade categories initialise the trade item but keep it hidden for now
-		//note: spawn_trade_item() will slightly randomise the sale value to make it different per NPC
-		spawn_trade_item(T, 1)
-		return T.value
+	if(!is_trade_item)
+		T = trade_items_by_type[O.type]
+		if(T)
+			//this is in the accepted trade categories initialise the trade item but keep it hidden for now
+			//note: spawn_trade_item() will slightly randomise the sale value to make it different per NPC
+			is_trade_item = 1
+			spawn_trade_item(T, 1)
+			. = T.value
 
 	//check if it's a container
 	if (istype(O, /obj/item/weapon/storage))
@@ -49,13 +53,15 @@
 		return total_value
 
 	//try and find it via the global controller
-	T = GLOB.trade_controller.trade_items_by_type[O.type]
-	if(T)
-		. = T.value
+	if(!is_trade_item)
+		T = GLOB.trade_controller.trade_items_by_type[O.type]
+		if(T)
+			. = T.value
 
 	if(istype(O, /obj/item/stack))
 		var/obj/item/stack/S = O
-		return . * S.amount
+		if(S.amount > 1)
+			. = . +  . * (S.amount - 1) * NPC_TRADER_SELLTO_PRICE_MOD
 
 	//try and find it via the global categories
 	/*

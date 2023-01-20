@@ -30,7 +30,7 @@
 	var/datum/trade_item/T = trade_items_inventory_by_type[O.type]
 	if(T)
 		T.quantity += 1
-		T.value = round(T.value * 0.95)		//price goes down a little
+		T.value = round(T.value * NPC_TRADER_SELLTO_PRICE_MOD)		//price goes down a little
 		update_trade_item_ui(T)
 		return 1
 	return 0
