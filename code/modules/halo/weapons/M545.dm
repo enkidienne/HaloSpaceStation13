@@ -23,7 +23,6 @@
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
 		)
 	burst_delay = 1.5
-	move_delay_malus = 0.7
 	slowdown_general = 0.5
 
 	firemodes = list(\

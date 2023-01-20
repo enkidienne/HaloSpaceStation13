@@ -25,7 +25,6 @@
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
 		slot_back_str = 'code/modules/halo/weapons/icons/Back_Weapons.dmi',
 		)
-	move_delay_malus = 0.7
 	slowdown_general = 0.5
 
 	burst = 12
