@@ -1,12 +1,16 @@
 
 #define PLANETFALL_BOUND_PADDING 10 //How many extra tiles to add to our bounds
-#define CRASHLAND_DELETE_OBJS list(/obj/machinery/overmap_weapon_console,/obj/machinery/shuttle_spawner)
+#define CRASHLAND_DELETE_OBJS list(/obj/effect/landmark/start,/obj/machinery/overmap_weapon_console,/obj/machinery/shuttle_spawner)
 
 /obj/effect/overmap/ship
 	var/obj/effect/overmap/old_om_type
 	var/obj/effect/overmap/landed_on = null
 
 /obj/effect/overmap/ship/proc/remove_important_objs(var/turf/t)
+	var/list/spawntypes = spawntypes() //Remove all logged spawnpoints so nobody spawns on this area.
+	for(var/spawn_name in spawntypes)
+		var/datum/spawnpoint/S = spawntypes[spawn_name]
+		S.turfs -= t
 	for(var/atom/a in t)
 		for(var/type in CRASHLAND_DELETE_OBJS)
 			if(istype(a,type))

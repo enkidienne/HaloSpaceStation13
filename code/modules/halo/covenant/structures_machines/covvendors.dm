@@ -91,7 +91,8 @@
 		/obj/item/weapon/grenade/plasma = 0,
 		/obj/item/weapon/grenade/smokebomb/covenant = 0,
 		"Misc" = -1,
-		/obj/item/turret_deploy_kit/plasturret = 0
+		/obj/item/turret_deploy_kit/plasturret = 0,
+		/obj/item/drop_pod_beacon/covenant = 0
 	)
 	amounts = list(\
 		/obj/item/weapon/gun/projectile/fuel_rod = 1,
@@ -99,7 +100,7 @@
 		/obj/item/weapon/gun/energy/beam_rifle = 2,
 		/obj/item/weapon/grenade/plasma = 15,
 		/obj/item/weapon/grenade/smokebomb/covenant = 15,
-		/obj/item/turret_deploy_kit/plasturret = 3
+		/obj/item/turret_deploy_kit/plasturret = 3,
 	)
 
 /obj/machinery/pointbased_vending/armory/covenant/sangheili/equipment // Equipment for Sangheili
@@ -185,6 +186,7 @@
 		/obj/item/weapon/grenade/frag/spike = 0,
 		"Misc" = -1,
 		/obj/item/turret_deploy_kit/plasturret = 0,
+		/obj/item/drop_pod_beacon/covenant = 0
 	)
 	amounts = list(
 		/obj/item/weapon/gun/launcher/grenade/brute_shot = 3,
@@ -273,7 +275,8 @@
 		/obj/item/weapon/grenade/plasma = 0,
 		/obj/item/weapon/grenade/smokebomb/covenant = 0,
 		"Misc" = -1,
-		/obj/item/turret_deploy_kit/plasturret = 0
+		/obj/item/turret_deploy_kit/plasturret = 0,
+		/obj/item/drop_pod_beacon/covenant = 0
 	)
 	amounts = list(\
 		/obj/item/weapon/gun/energy/beam_rifle = 2,
@@ -365,7 +368,8 @@
 		/obj/item/weapon/grenade/plasma = 0,
 		/obj/item/weapon/grenade/smokebomb/covenant = 0,
 		"Misc" = -1,
-		/obj/item/turret_deploy_kit/plasturret = 0
+		/obj/item/turret_deploy_kit/plasturret = 0,
+		/obj/item/drop_pod_beacon/covenant = 0
 	)
 	amounts = list(\
 		/obj/item/weapon/gun/projectile/fuel_rod = 2,
@@ -454,7 +458,8 @@
 		/obj/item/weapon/plastique/breaching/longrange/covenant = 0,
 		/obj/item/weapon/armor_patch/cov = 0,
 		/obj/item/weapon/armor_patch/mini/cov = 0,
-		/obj/item/weapon/pinpointer/artifact = 0
+		/obj/item/weapon/pinpointer/artifact = 0,
+		/obj/item/drop_pod_beacon/covenant = 0
 	)
 	amounts = list(\
 		/obj/item/stack/barbedwire/covenant/fifteen = 5,

@@ -46,14 +46,14 @@
 	capacity_flag = ITEM_SIZE_VEHICLE
 	vehicle_carry_size = ITEM_SIZE_VEHICLE_SMALL
 
-/obj/vehicles/drop_pod/supply_pod
+/obj/vehicles/drop_pod/overmap/supply_pod
 	icon = 'code/modules/halo/vehicles/supply_unsc.dmi'
 	icon_state = "UNSC_Supply"
 
-/obj/vehicles/drop_pod/supply_pod/update_object_sprites()
+/obj/vehicles/drop_pod/overmap/supply_pod/update_object_sprites()
 	return
 
-/obj/vehicles/drop_pod/supply_pod/enter_as_position(var/mob/user,var/position = "passenger")
+/obj/vehicles/drop_pod/overmap/supply_pod/enter_as_position(var/mob/user,var/position = "passenger")
 	to_chat(user,"<span class = 'notice'>[src] does not have any seats for people.</span>")
 	return 0
 

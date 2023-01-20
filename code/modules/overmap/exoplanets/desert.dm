@@ -75,14 +75,26 @@
 	icon_state = "asteroidplating"
 
 /turf/simulated/floor/exoplanet/desert/New()
-	icon_state = "desert[rand(0,8)]"
-	..()
+	. = ..()
+	icon_state = "desert[rand(0,6)]"
 
 /turf/simulated/floor/exoplanet/desert/fire_act(datum/gas_mixture/air, temperature, volume)
 	if((temperature > T0C + 1700 && prob(5)) || temperature > T0C + 3000)
 		name = "molten silica"
 		icon_state = "sandglass"
 		diggable = 0
+
+/turf/simulated/floor/exoplanet/desert/dark/New()
+	. = ..()
+	icon_state = "desert[rand(7,8)]"
+
+/turf/simulated/floor/exoplanet/desert/dark/quicksand_random
+	var/quicksand_chance = 10
+
+/turf/simulated/floor/exoplanet/desert/dark/quicksand_random/New()
+	. = ..()
+	if(prob(quicksand_chance))
+		new /obj/structure/quicksand (src)
 
 /obj/structure/quicksand
 	name = "sand"

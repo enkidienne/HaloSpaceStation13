@@ -21,7 +21,7 @@
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
 		)
 	wielded_item_state = "repeater-wielded"
-	salvage_components = list(/obj/item/plasma_core)
+	salvage_components = list(/obj/item/plasma_core = 2)
 	matter = list("nanolaminate" = 2)
 	hud_bullet_usebar = 1
 	overheat_capacity = 121

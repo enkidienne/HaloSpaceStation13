@@ -89,6 +89,8 @@
 			return global.SMALLSIZEBLOCK;
 		if("SSatoms")
 			return global.SSatoms;
+		if("SSevent")
+			return global.SSevent;
 		if("SSgarbage")
 			return global.SSgarbage;
 		if("SSinactivity")
@@ -1308,6 +1310,8 @@
 			global.SMALLSIZEBLOCK=newval;
 		if("SSatoms")
 			global.SSatoms=newval;
+		if("SSevent")
+			global.SSevent=newval;
 		if("SSgarbage")
 			global.SSgarbage=newval;
 		if("SSinactivity")
@@ -2482,6 +2486,7 @@
 	"SHOCKIMMUNITYBLOCK",
 	"SMALLSIZEBLOCK",
 	"SSatoms",
+	"SSevent",
 	"SSgarbage",
 	"SSinactivity",
 	"SSlegacy",

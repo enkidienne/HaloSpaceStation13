@@ -35,7 +35,7 @@
 	alt_explosion_range = 3
 	alt_explosion_damage_max = 40
 	matter = list("nanolaminate" = 1, "kemocite" = 1)
-	salvage_components = list(/obj/item/plasma_core)
+	salvage_components = list()
 	item_state_slots = list(slot_l_hand_str = "plasma_nade_off", slot_r_hand_str = "plasma_nade_off")
 	item_icons = list(\
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi', \
