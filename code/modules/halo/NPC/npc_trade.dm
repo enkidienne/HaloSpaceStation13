@@ -51,7 +51,11 @@
 	//try and find it via the global controller
 	T = GLOB.trade_controller.trade_items_by_type[O.type]
 	if(T)
-		return T.value
+		. = T.value
+
+	if(istype(O, /obj/item/stack))
+		var/obj/item/stack/S = O
+		return . * S.amount
 
 	//try and find it via the global categories
 	/*
