@@ -1,4 +1,6 @@
 
+#define NPC_TRADER_SELLTO_PRICE_MOD 0.95 //This is the price-modifier applied to an item after it's sold to an npc trader.
+
 /mob/living/simple_animal/npc
 	name = "NPC"
 	desc = "Surprisingly, this one is neither wearing a red shirt nor called Bob."
