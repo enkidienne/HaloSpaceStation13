@@ -1,7 +1,6 @@
 
 #include "overmap.dm"
 #include "areas.dm"
-#include "mapdef.dm"
 
 #include "glassed_planet_1.dmm"
 #include "glassed_planet_2.dmm"
@@ -9,7 +8,6 @@
 #if !defined(using_map_DATUM)
 
 	#define using_map_DATUM /datum/map/ks7_elmsville
-	#include "jobdefs.dm"
 
 #elif !defined(MAP_OVERRIDE)
 
