@@ -93,6 +93,8 @@
 			return global.SSevent;
 		if("SSgarbage")
 			return global.SSgarbage;
+		if("SSinactivity")
+			return global.SSinactivity;
 		if("SSlegacy")
 			return global.SSlegacy;
 		if("SSlighting")
@@ -1312,6 +1314,8 @@
 			global.SSevent=newval;
 		if("SSgarbage")
 			global.SSgarbage=newval;
+		if("SSinactivity")
+			global.SSinactivity=newval;
 		if("SSlegacy")
 			global.SSlegacy=newval;
 		if("SSlighting")
@@ -2484,6 +2488,7 @@
 	"SSatoms",
 	"SSevent",
 	"SSgarbage",
+	"SSinactivity",
 	"SSlegacy",
 	"SSlighting",
 	"SSnano",
