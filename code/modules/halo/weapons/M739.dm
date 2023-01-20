@@ -15,7 +15,7 @@
 	fire_sound = 'code/modules/halo/sounds/Assault_Rifle_Fire_New.wav'
 	reload_sound = 'code/modules/halo/sounds/UNSC_Saw_Reload_Sound_Effect.ogg'
 	one_hand_penalty = -1
-	dispersion = list(0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.6, 0.6, 0.6, 0.6)
+	dispersion = list(0.2, 0.2, 0.2, 0.2, 0.3, 0.3, 0.3, 0.3, 0.4, 0.4, 0.4, 0.5)
 	w_class = ITEM_SIZE_HUGE
 	hud_bullet_row_num = 50
 	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_2x5.dmi'
@@ -25,14 +25,14 @@
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
 		slot_back_str = 'code/modules/halo/weapons/icons/Back_Weapons.dmi',
 		)
-	move_delay_malus = 1.5
+	move_delay_malus = 0.7
 	slowdown_general = 0.5
 
 	burst = 12
 
 	firemodes = list(\
-	list(mode_name="short bursts",  burst=12,accuracy=0, dispersion=list(0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.6, 0.6, 0.6, 0.6)),
-	list(mode_name="extended bursts", burst=24, accuracy=-1,dispersion=list(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.7, 0.7, 0.7, 0.7))
+	list(mode_name="short bursts",  burst=12,accuracy=0, dispersion=list(0.2, 0.2, 0.2, 0.2, 0.3, 0.3, 0.3, 0.3, 0.4, 0.4, 0.4, 0.5)),
+	list(mode_name="extended bursts", burst=24, accuracy=-1,dispersion=list(0.3, 0.3, 0.3, 0.3, 0.4, 0.4, 0.4, 0.4, 0.5, 0.5, 0.5, 0.6))
 	)
 
 /obj/item/weapon/gun/projectile/m739_lmg/update_icon()

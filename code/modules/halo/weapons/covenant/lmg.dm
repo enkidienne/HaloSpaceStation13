@@ -12,9 +12,8 @@
 	one_hand_penalty = -1
 	max_shots = 500
 	charge_meter = 0
-	dispersion = list(0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.6, 0.6, 0.6, 0.6)
+	dispersion = list(0.2, 0.2, 0.2, 0.2, 0.3, 0.3, 0.3, 0.3, 0.4, 0.4, 0.4, 0.5)
 	w_class = ITEM_SIZE_HUGE
-	move_delay_malus = 1.5
 	slowdown_general = 0.5
 	item_icons = list(
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
@@ -31,8 +30,8 @@
 	burst = 12
 
 	firemodes = list(\
-	list(mode_name="short bursts",  burst=12, accuracy=0, dispersion=list(0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.6, 0.6, 0.6, 0.6)),
-	list(mode_name="extended bursts", burst=24, accuracy=-1,dispersion=list(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.7, 0.7, 0.7, 0.7))
+	list(mode_name="short bursts",  burst=12, accuracy=0, dispersion=list(0.2, 0.2, 0.2, 0.2, 0.3, 0.3, 0.3, 0.3, 0.4, 0.4, 0.4, 0.5)),
+	list(mode_name="extended bursts", burst=24, accuracy=-1,dispersion=list(0.3, 0.3, 0.3, 0.3, 0.4, 0.4, 0.4, 0.4, 0.5, 0.5, 0.5, 0.6))
 	)
 
 /obj/item/weapon/gun/energy/plasmarepeater/proc/cov_plasma_recharge_tick()
