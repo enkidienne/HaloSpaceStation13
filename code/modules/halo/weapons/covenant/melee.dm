@@ -26,6 +26,7 @@
 	slot_flags = SLOT_POCKET | SLOT_BELT
 	activate_sound = 'code/modules/halo/sounds/Energysworddeploy.ogg'
 	deactivate_sound = 'code/modules/halo/sounds/Energysworddeactivate.ogg'
+	salvage_components = list(/obj/item/plasma_core = 3)
 	matter = list("nanolaminate" = 1)
 
 	lunge_dist = ESWORD_LEAP_DIST
@@ -144,6 +145,7 @@
 	icon_state = "en_dag_handle"
 	icon_state_deployed = "en_dag_deploy"
 	w_class = ITEM_SIZE_SMALL
+	salvage_components = list(/obj/item/plasma_core = 1)
 	active_force = 30
 	active_throwforce = 12
 	armor_penetration = 70
@@ -232,6 +234,7 @@ Luckily, this isn't a downside due to the explosive properties of such a large a
 	edge = 1
 	sharp = 1
 	armor_penetration = 70
+	salvage_components = list(/obj/item/plasma_core)
 	matter = list("nanolaminate" = 1)
 	var/explode_delay = 10 SECONDS
 	var/explode_at = -1

@@ -27,7 +27,7 @@
 		)
 	crosshair_file = 'code/modules/halo/weapons/icons/dragaim_missile.dmi'
 	wielded_item_state = "fuelrod-wielded"
-	salvage_components = list(/obj/item/plasma_core)
+	salvage_components = list()
 	matter = list("nanolaminate" = 2, "kemocite" = 1)
 	slowdown_general = 0.5
 	scope_zoom_amount = 1.5
