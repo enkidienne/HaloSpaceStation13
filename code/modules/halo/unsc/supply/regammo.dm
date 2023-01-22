@@ -57,11 +57,11 @@
 
 /* Shotgun */
 
-/decl/hierarchy/supply_pack/unsc_ammo/shotgun_pellet //Regular shotgun ammo.
-	name = "Shotgun pellet ammunition (4 quickloader boxes)"
+/decl/hierarchy/supply_pack/unsc_ammo/shotgun //Regular shotgun ammo.
+	name = "Shotgun ammunition (4 quickloader boxes)"
 	cost = 50
 	contains = list(/obj/item/ammo_box/shotgun = 4)
-	containername = "\improper Shotgun pellet crate"
+	containername = "\improper Shotgun shell crate"
 
 /decl/hierarchy/supply_pack/unsc_ammo/shotgun_slug //Shotgun slugs.
 	name = "Shotgun slug ammunition (4 quickloader boxes)"

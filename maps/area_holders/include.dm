@@ -54,6 +54,8 @@
 
 /area/shuttle/offsite_berth_transport
 
+/area/shuttle/covenant_onsite_supply
+
 //OBJECTS//
 
 /obj/effect/shuttle_landmark/innie_offsite_supply

@@ -24,7 +24,7 @@
 	icon_override = MARINE_OVERRIDE
 	item_state = "arol-hat-worn"
 	icon_state = "arol-hat-obj"
-	name = "Officer's Service Cap."
+	name = "Officer's Service Cap"
 	desc = "A round, flat, visored combination cover to distinguish an Officer's position."
 
 /obj/item/weapon/material/machete/officersword/aroliacue
