@@ -212,6 +212,7 @@
 "ed" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/road{tag = "icon-road_empty (NORTH)"; icon_state = "road_empty"; dir = 1},/area/faction_base/oni/garage)
 "ee" = (/obj/machinery/bodyscanner{tag = "icon-body_scanner_0 (WEST)"; icon_state = "body_scanner_0"; dir = 8},/turf/simulated/floor/tech/white,/area/faction_base/oni/medbay)
 "ef" = (/obj/machinery/body_scanconsole{tag = "icon-body_scannerconsole (WEST)"; icon_state = "body_scannerconsole"; dir = 8},/turf/simulated/floor/tech/white,/area/faction_base/oni/medbay)
+"eg" = (/obj/machinery/organ_printer/flesh/mapped,/turf/simulated/floor/tech/white,/area/faction_base/oni/medbay)
 "eh" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/storage/box/bodybags,/turf/simulated/floor/tiled/white,/area/faction_base/oni/medbay)
 "ei" = (/obj/machinery/light/colored/blue{icon_state = "blue1"; dir = 1},/obj/machinery/optable,/turf/simulated/floor/tiled/white,/area/faction_base/oni/blacksite)
 "ej" = (/obj/machinery/light/colored/red{icon_state = "red1"; dir = 4},/turf/simulated/floor/greengrid,/area/faction_base/oni/research)
@@ -308,7 +309,6 @@
 "fW" = (/obj/machinery/light,/turf/simulated/floor/pavement/empty,/area/faction_base/oni)
 "fX" = (/obj/machinery/light/colored/blue{icon_state = "blue1"; dir = 4},/obj/structure/table/standard,/obj/item/stack/nanopaste,/obj/item/stack/nanopaste,/obj/item/weapon/reagent_containers/spray/cleaner{desc = "Someone has crossed out the Space from Space Cleaner and written in Surgery. 'Do not remove under punishment of death!!!' is scrawled on the back."; name = "Surgery Cleaner"},/turf/simulated/floor/tiled/white,/area/faction_base/oni/research)
 "fY" = (/obj/structure/closet/crate/large{icon_state = "secgearcrate"; name = "Plasteel Crate"; tag = "icon-secgearcrate"},/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
-"fZ" = (/obj/machinery/organ_printer/flesh/mapped{matter = 1000; max_stored_matter = 1000},/turf/simulated/floor/tech/white,/area/faction_base/oni/medbay)
 "ga" = (/obj/structure/sign/halo_floorsign/hangar{icon_state = "hangar"; dir = 4},/turf/simulated/floor/tech/steel,/area/faction_base/oni/garage)
 "gb" = (/obj/structure/closet/crate,/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
 "gc" = (/obj/structure/sign/halo_floorsign/cargobay{dir = 4; icon_state = "cargobay"; pixel_y = 16},/turf/simulated/floor/tiled/dark,/area/faction_base/oni/hangar)
@@ -543,7 +543,7 @@ aabebfIVhhbVbVXxhhhhbfcVhihicVbfbxboeVeVeVeVeVepgFdhbxsoeVdibxfwcQdjhfccccccccfM
 aabebfxBhhdmbVXxZNVSbfcVbVhicVbfbxbcbreVdtdtcXeudhdhbxHDeVdobxbFbFbFbFdpccbFbFbFbFbFdkbJbNeQeReReUbNaa
 aabebfkkhihibVXxZNEmbfcVgdbVcVbfbxbcbWeVdBdheVepdhfSbxHDeVdwbxbFeXeYdzbJbJbJbJhebJdzbJbJeZfafafcfdbNaa
 aabebfsOZNhjbVxxbfbfbfbfbfbfbfbfbxcFbWeVeeefeVepgFdhbxoSeVdYbxbFfffmbJhehehehehkbJbJhehefteRfufxfzbNaa
-aabebfBMZNbVbVgVAWwlsDhxuWUVlBbfbxekcEeVerfZeVevewewbxbxelbxbxbFexbJbJebebbJdVbFPBbJbFbFbNbNbNbNbNbNaa
+aabebfBMZNbVbVgVAWwlsDhxuWUVlBbfbxekcEeVeregeVevewewbxbxelbxbxbFexbJbJebebbJdVbFPBbJbFbFbNbNbNbNbNbNaa
 aabebfkkhidmbVXxdqbVhihibVZNlBbfbxbscSeVeVeVeVeVeVeVeVeVeVeVeVeJbJbJbJebebbJETbFhlLnLnLnJscxieifDRbNaa
 aabebfwyhhhihiXxdqbVbVhihiZNEIbfbxdhezeVeVeVeFdGeVeVeVeVdGeVeVgjVobJbJebebbJGabFhmhlhlhlLnLnLnLnZTbNaa
 aabebfyGZNdmhigdqKeSLZtiuPTSEIbfbxeGeLeMbxeGeNeMbxbxeObxbxbxbxbFogbJbJbJbJbJjsbFLnLnLnLnLnLnLnLnASbNaa

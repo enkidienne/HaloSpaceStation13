@@ -41,6 +41,7 @@
 	src.modules += new /obj/item/weapon/circular_saw(src)
 	src.modules += new /obj/item/weapon/surgicaldrill/covenant(src)
 	src.modules += new /obj/item/weapon/gripper/organ(src)
+	src.modules += new /obj/item/vacuum_shield_holder(src)
 
 	var/datum/matter_synth/medicine = new /datum/matter_synth/medicine(20000)
 	synths += medicine
@@ -103,6 +104,7 @@
 	src.modules += new /obj/item/device/pipe_painter(src)
 	src.modules += new /obj/item/weapon/armor_patch/huragok(src)
 	src.modules += new /obj/item/weapon/rcd/borg(src)
+	src.modules += new /obj/item/vacuum_shield_holder(src)
 //	src.modules += new /obj/item/weapon/inflatable_dispenser/robot(src)	//Might as well make a new version of this that deploys weak energy barriers that act as a temporaru fix for breaches.
 
 	var/datum/matter_synth/metal = new /datum/matter_synth/metal(600000000)	//When an alternative is coded in for the huragoks to regenerate matter outside a cyborg recharge station, let's get rid of this infinite resource.

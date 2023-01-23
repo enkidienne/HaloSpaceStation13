@@ -29,3 +29,52 @@
 	if(shield_health > 0)
 		return AIR_BLOCKED
 	return ZONE_BLOCKED
+
+/*
+	Code for vac shield holder.
+
+*/
+
+/obj/structure/energybarricade/vacuum_shield/attackby(obj/item/weapon/W as obj, mob/user as mob)
+	if(istype(W,/obj/item/vacuum_shield_holder))
+		visible_message("[user] collapses \the [src.name].")
+		new/obj/item/energybarricade/vacuum_shield(get_turf(src))
+		spawn(0)
+			qdel(src)
+	return
+..()
+
+/obj/item/energybarricade/vacuum_shield/attackby(obj/item/weapon/W as obj, mob/user as mob)
+
+	if(istype(W,/obj/item/vacuum_shield_holder))
+		var/obj/item/vacuum_shield_holder/RH = W
+		if(!RH.held)
+			to_chat(user, "<span class='notice'>You collect the vacuum shield.</span>")
+			src.forceMove(RH)
+			RH.held = src
+			return
+
+	..()
+
+/obj/item/vacuum_shield_holder
+	name = "vacuum shield rack"
+	desc = "A rack for carrying a vacuum shield."
+	icon = 'energybarricade.dmi'
+	icon_state = "vacuum"
+	var/obj/item/energybarricade/vacuum_shield/held
+
+/obj/item/vacuum_shield_holder/New()
+	..()
+	held = new /obj/item/energybarricade/vacuum_shield(src)
+
+/obj/item/vacuum_shield_holder/attack_self(mob/user as mob)
+
+	if(!held)
+		to_chat(user, "<span class='notice'>The rack is empty.</span>")
+		return
+
+	to_chat(user, "<span class='notice'>You deploy the vacuum shield.</span>")
+	var/obj/structure/energybarricade/vacuum_shield/R = new /obj/structure/energybarricade/vacuum_shield(user.loc)
+	R.add_fingerprint(user)
+	qdel(held)
+	held = null
