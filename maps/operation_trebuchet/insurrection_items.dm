@@ -1,7 +1,4 @@
 
-#define LAUNCH_ABORTED -1
-#define LAUNCH_UNDERWAY -2
-
 /obj/effect/landmark/innie_bomb
 	name = "innie bomb spawn"
 
@@ -33,66 +30,18 @@
 	anchored = 0
 	density = 1
 
-/turf/simulated/hangar_door
-	icon = 'maps/operation_trebuchet/hangar_door.dmi'
-	icon_state = "pdoor1"
+/obj/machinery/button/toggle/hangar_button/tranq_hangar
+	targ_door_tag = "Tranq Hangar"
+	targ_landpoint_tag = "Tranq Hangar Point"
 
-/obj/structure/hangar_door
-	invisibility = 101
-	icon = 'maps/operation_trebuchet/hangar_door.dmi'
-	icon_state = "pdoor0"
-	density = 0
-	anchored = 1
-	var/closed = 0 //This is immediately changed on init to be 1
-
-/obj/structure/hangar_door/Initialize()
+/obj/structure/hangar_door/tranq_hangar/New()
 	. = ..()
-	toggle_door()
+	tag = "Tranq Hangar"
 
-/obj/structure/hangar_door/proc/door_animate(var/close = 0)
-	invisibility = 0
-	if(close)
-		flick("pdoorc0",src)
-	else
-		flick("pdoorc1",src)
-		invisibility = 101
+/obj/effect/landmark/dropship_land_point/insurrection_hangar
+	name = "Antarctica Hangar"
+	faction = "innie"
 
-/obj/structure/hangar_door/proc/toggle_door()
-	var/turf/our_turf = loc
-	if(closed)
-		door_animate()
-		if(istype(our_turf))
-			our_turf.ChangeTurf(/turf/simulated/open)
-		closed = 0
-	else
-		door_animate(1)
-		if(istype(our_turf))
-			our_turf.ChangeTurf(/turf/simulated/hangar_door)
-		closed = 1
-
-/obj/machinery/button/toggle/tranq_hangar
-	name = "Hangar Toggle"
-	desc = "Opens/closes the hangar doors."
-
-/obj/machinery/button/toggle/tranq_hangar/proc/toggle_hangar_doors()
-	for(var/obj/structure/hangar_door/d in world)
-		if(d.z in GetConnectedZlevels(z))
-			d.toggle_door()
-
-/obj/machinery/button/toggle/tranq_hangar/proc/toggle_landing_points()
-	for(var/obj/effect/landmark/dropship_land_point/insurrection_hangar/point in world)
-		if(point.faction == initial(point.faction))
-			point.faction = "Civilian"
-		else
-			point.faction = initial(point.faction)
-
-/obj/machinery/button/toggle/tranq_hangar/activate(mob/living/user)
-	if(operating || !istype(wifi_sender))
-		return
-
+/obj/effect/landmark/dropship_land_point/insurrection_hangar/New()
 	. = ..()
-	toggle_hangar_doors()
-	toggle_landing_points()
-
-#undef LAUNCH_ABORTED
-#undef LAUNCH_UNDERWAY
+	tag = "Tranq Hangar Point"

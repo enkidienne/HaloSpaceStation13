@@ -55,6 +55,9 @@
 	name = "VT9-042 - Crescent Base Hangar Bay"
 	sound_env = LARGE_ENCLOSED
 
+/area/exo_research_facility/interior/hangar_lower
+	name = "VT9-042 - Crescent Base Hangar Bay Lower"
+
 /area/exo_research_facility/interior/medicalb
 	name = "VT9-042 - Crescent Base Medical Bay"
 
