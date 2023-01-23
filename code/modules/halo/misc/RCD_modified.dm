@@ -25,8 +25,9 @@
 	var/max_stored_matter = 30
 
 	var/work_id = 0
+	var/mode_faction = "Human" //Filters out non-matching modes at the child-level.
 	var/decl/hierarchy/rcd_mode/work_mode
-	var/static/list/work_modes
+	var/list/work_modes
 
 	var/canRwall = 0
 	var/disabled = 0
@@ -100,6 +101,11 @@
 	stored_matter -= amount
 	return 1
 
+//Covenant RCD//
+
+/obj/item/weapon/rcd/cov
+	mode_faction = "Covenant"
+
 /obj/item/weapon/rcd_ammo
 	name = "compressed matter cartridge"
 	desc = "A highly-compressed matter cartridge usable in rapid construction (and deconstruction) devices, such as railguns."
@@ -166,10 +172,13 @@
 	var/delay
 	var/handles_type
 	var/work_type
+	var/faction_tag = null //"Human" or "Covenant" are the ones used, right now. Null means usable by all.
 
 /decl/hierarchy/rcd_mode/proc/do_work(var/obj/item/weapon/rcd/rcd, var/atom/target, var/user)
 	for(var/child in children)
 		var/decl/hierarchy/rcd_mode/rcdm = child
+		if(!isnull(rcdm.faction_tag) && rcdm.faction_tag != rcd.mode_faction)
+			continue
 		if(!rcdm.can_handle_work(rcd, target))
 			continue
 		if(!rcd.useResource(rcdm.cost, user))
@@ -222,12 +231,23 @@
 	name = "Airlock"
 
 /decl/hierarchy/rcd_mode/airlock/basic
+	faction_tag = "Human"
 	cost = 10
 	delay = 5 SECONDS
 	handles_type = /turf/simulated/floor
 	work_type = /obj/machinery/door/airlock
 
 /decl/hierarchy/rcd_mode/airlock/basic/can_handle_work(var/rcd, var/turf/target)
+	return ..() && !target.contains_dense_objects() && !(locate(/obj/machinery/door/airlock) in target)
+
+/decl/hierarchy/rcd_mode/airlock/basic_cov
+	faction_tag = "Covenant"
+	cost = 10
+	delay = 5 SECONDS
+	handles_type = /turf/simulated/floor
+	work_type = /obj/machinery/door/airlock/covenant
+
+/decl/hierarchy/rcd_mode/airlock/basic_cov/can_handle_work(var/rcd, var/turf/target)
 	return ..() && !target.contains_dense_objects() && !(locate(/obj/machinery/door/airlock) in target)
 
 /*
@@ -245,10 +265,18 @@
 	return istype(target) && (isspace(target) || istype(target, get_base_turf_by_area(target)))
 
 /decl/hierarchy/rcd_mode/floor_and_walls/floor_turf
+	faction_tag = "Human"
 	cost = 3
 	delay = 2 SECONDS
 	handles_type = /turf/simulated/floor
 	work_type = /turf/simulated/wall
+
+/decl/hierarchy/rcd_mode/floor_and_walls/floor_turf_cov
+	faction_tag = "Covenant"
+	cost = 3
+	delay = 2 SECONDS
+	handles_type = /turf/simulated/floor
+	work_type = /turf/simulated/wall/covenant
 
 /*
 	Deconstruction
