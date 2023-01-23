@@ -29,7 +29,7 @@
 
 /decl/hierarchy/supply_pack/oni_food
 	name = "ONI MREs"
-	faction_lock = "UNSC"
+	faction_lock = "ONI"
 	containertype = /obj/structure/closet/crate/secure/weapon
 
 /decl/hierarchy/supply_pack/oni_food/mre_chicken

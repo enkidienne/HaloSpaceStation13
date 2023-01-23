@@ -11,6 +11,24 @@
 	cost = 10000
 	containername = "\improper Biological Sample crate"
 
+/decl/hierarchy/supply_pack/oni_special/orion
+	name = "Orion Surgical Supplies"
+	containertype = /obj/structure/closet/crate/freezer //Needs a freezer so organs don't decay
+	contains = list(
+	/obj/item/organ/internal/eyes/occipital_reversal/theta = 1,
+	/obj/item/organ/internal/heart/spartan/theta = 1,
+	/obj/item/organ/internal/liver/spartan/theta = 1,
+	/obj/item/organ/internal/lungs/theta = 1
+	)
+	cost = 3500
+	containername = "\improper Orion organs freezer"
+
+/decl/hierarchy/supply_pack/oni_special/laceinjector //So UNSC has a way to give basic access to people
+	name = "UNSC Lace Access Injector"
+	contains = list(/obj/item/lace_injector/marine = 1)
+	cost = 400
+	containername = "\improper Neural Lace crate"
+
 /* MATERIALS - Expensive so that ONI hopefully doesn't powergame research. Not all items included, just in case they somehow do. */
 
 /decl/hierarchy/supply_pack/oni_special/plasma_core
@@ -23,7 +41,7 @@
 	name = "Nanolaminate (10 sheets)"
 	contains = list(/obj/item/stack/material/nanolaminate/ten = 1)
 	cost = 500
-	containername = "\improper Plasma Core crate"
+	containername = "\improper Nanolaminate crate"
 
 /decl/hierarchy/supply_pack/oni_special/pinkcrystal
 	name = "Pink Crystal (1)"

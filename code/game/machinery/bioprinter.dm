@@ -197,10 +197,6 @@
 	stored_matter = 1000
 	max_stored_matter = 1000
 
-/obj/machinery/organ_printer/flesh/mapped/Initialize()
-	. = ..()
-	stored_matter = max_stored_matter
-
 /obj/machinery/organ_printer/flesh/dismantle()
 	var/turf/T = get_turf(src)
 	if(T)
