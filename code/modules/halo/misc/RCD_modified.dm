@@ -148,6 +148,9 @@
 /obj/item/weapon/rcd/borg/can_use(var/mob/user,var/turf/T)
 	return (user.Adjacent(T) && !user.incapacitated())
 
+/obj/item/weapon/rcd/borg/cov
+	mode_faction = "Covenant"
+
 
 /obj/item/weapon/rcd/mounted/useResource(var/amount, var/mob/user)
 	var/cost = amount*130 //so that a rig with default powercell can build ~2.5x the stuff a fully-loaded RCD can.

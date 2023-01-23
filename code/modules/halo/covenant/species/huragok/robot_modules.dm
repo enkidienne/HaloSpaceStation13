@@ -103,7 +103,7 @@
 	src.modules += new /obj/item/device/lightreplacer(src)
 	src.modules += new /obj/item/device/pipe_painter(src)
 	src.modules += new /obj/item/weapon/armor_patch/huragok(src)
-	src.modules += new /obj/item/weapon/rcd/borg(src)
+	src.modules += new /obj/item/weapon/rcd/borg/cov(src)
 	src.modules += new /obj/item/vacuum_shield_holder(src)
 //	src.modules += new /obj/item/weapon/inflatable_dispenser/robot(src)	//Might as well make a new version of this that deploys weak energy barriers that act as a temporaru fix for breaches.
 

@@ -35,7 +35,7 @@
 
 */
 
-/obj/structure/energybarricade/vacuum_shield/attackby(obj/item/weapon/W as obj, mob/user as mob)
+/obj/structure/energybarricade/vacuum_shield/attackby(obj/item/weapon/W as obj, mob/user as mob) //Huragok instantly collapses the shield.
 	if(istype(W,/obj/item/vacuum_shield_holder))
 		visible_message("[user] collapses \the [src.name].")
 		new/obj/item/energybarricade/vacuum_shield(get_turf(src))
@@ -44,7 +44,7 @@
 	return
 ..()
 
-/obj/item/energybarricade/vacuum_shield/attackby(obj/item/weapon/W as obj, mob/user as mob)
+/obj/item/energybarricade/vacuum_shield/attackby(obj/item/weapon/W as obj, mob/user as mob) //Huragok picks it up to add back to holder.
 
 	if(istype(W,/obj/item/vacuum_shield_holder))
 		var/obj/item/vacuum_shield_holder/RH = W
