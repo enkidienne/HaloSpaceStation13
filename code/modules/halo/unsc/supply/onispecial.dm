@@ -18,7 +18,8 @@
 	/obj/item/organ/internal/eyes/occipital_reversal/theta = 1,
 	/obj/item/organ/internal/heart/spartan/theta = 1,
 	/obj/item/organ/internal/liver/spartan/theta = 1,
-	/obj/item/organ/internal/lungs/theta = 1
+	/obj/item/organ/internal/lungs/theta = 1,
+	/obj/item/species_convert/orion = 1
 	)
 	cost = 3500
 	containername = "\improper Orion organs freezer"
