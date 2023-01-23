@@ -73,3 +73,19 @@
 
 /obj/effect/loot_marker/artifact_spawn
 	loot_type = "artifactRandom"
+
+/obj/machinery/button/toggle/hangar_button/vt9_hangar
+	targ_door_tag = "VT9Hangar"
+	targ_landpoint_tag = "VT9HangarPoint"
+
+/obj/structure/hangar_door/vt9_hangar/New()
+	. = ..()
+	tag = "VT9Hangar"
+
+/obj/effect/landmark/dropship_land_point/unsc/vt9_hangar
+	name = "Crescent Base Hangar"
+	faction = "None" //Locked until someone opens the hangar doors.
+
+/obj/effect/landmark/dropship_land_point/unsc/vt9_hangar/New()
+	. = ..()
+	tag = "VT9HangarPoint"
