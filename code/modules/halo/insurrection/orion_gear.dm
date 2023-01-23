@@ -102,3 +102,16 @@
 		icon_state = "MA9"
 	else
 		icon_state = "MA9_unloaded"
+
+/obj/item/species_convert/orion
+	name = "Project Orion Finaliser Reagent"
+	desc = "Contains chemicals and reagents used in the final step of project Orion."
+
+	convert_to = "Orion"
+
+/obj/item/species_convert/orion/can_convert(var/mob/living/carbon/human/h)
+	for(var/tag in list(BP_HEART,BP_LIVER,BP_EYES))
+		var/organ = h.internal_organs_by_name[tag]
+		if(!istype(organ,/obj/item/organ/internal/heart/spartan/theta) && !istype(organ,/obj/item/organ/internal/liver/spartan/theta) && !istype(organ,/obj/item/organ/internal/eyes/occipital_reversal/theta))
+			return 0
+	return 1

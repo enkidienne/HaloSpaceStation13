@@ -4,7 +4,7 @@
 	name = "Lace Injector"
 	desc = "Injects accesses into a neural lace."
 	icon = 'icons/obj/syringe.dmi'
-	item_state = "syringe_0"
+	item_state = "10"
 	var/list/access_add = list()
 
 /obj/item/lace_injector/attack(mob/living/M, mob/living/carbon/human/h, var/target_zone)
@@ -20,6 +20,8 @@
 		lace = h.create_stack(access_add)
 	else
 		lace.access |= access_add
+	h.drop_from_inventory(src)
+	qdel(src)
 
 /obj/item/lace_injector/marine
 	name = "Lace Injector (MARINE)"
