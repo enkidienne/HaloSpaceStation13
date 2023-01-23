@@ -25,3 +25,13 @@
 	cold_level_2 = 190 //-83C
 	cold_level_3 = 114 //-159C
 	blood_volume = 600 // Normal Human has 560
+
+	has_organ = list(
+		BP_HEART =    /obj/item/organ/internal/heart/spartan/theta,
+		BP_LUNGS =    /obj/item/organ/internal/lungs,
+		BP_LIVER =    /obj/item/organ/internal/liver/spartan/theta,
+		BP_KIDNEYS =  /obj/item/organ/internal/kidneys,
+		BP_BRAIN =    /obj/item/organ/internal/brain,
+		BP_EYES =     /obj/item/organ/internal/eyes/occipital_reversal/theta
+		)
+
