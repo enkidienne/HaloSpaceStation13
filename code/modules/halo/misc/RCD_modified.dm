@@ -36,11 +36,8 @@
 	. = ..()
 
 	if(!work_modes)
-//		work_modes = list()
 		var/decl/hierarchy/h = decls_repository.get_decl(/decl/hierarchy/rcd_mode)
 		work_modes = h.children
-//		for(var/decl/hierarchy/rcd_mode/m in h.children)
-//			if(m.faction_tag == use_mode_faction)
 	work_mode = work_modes[1]
 
 /obj/item/weapon/rcd/attack()
