@@ -308,6 +308,3 @@
 
 /decl/hierarchy/rcd_mode/deconstruction/wall/can_handle_work(var/obj/item/weapon/rcd/rcd, var/turf/simulated/wall/target)
 	return ..() && (rcd.canRwall || !target.reinf_material)
-
-
-//Covenant RCD Mode variants//
