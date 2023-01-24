@@ -242,7 +242,8 @@
 									continue
 								if(player.assigned_role)
 									var/datum/job/j = job_master.occupations_by_title[player.assigned_role]
-									add_as_players = j.pop_balance_mult
+									if(j)
+										add_as_players = j.pop_balance_mult
 								if(player.current.faction == my_faction.name)
 									my_faction_players += add_as_players
 								total_faction_players += add_as_players
