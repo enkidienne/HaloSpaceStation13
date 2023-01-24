@@ -4,7 +4,7 @@
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 	damage = 50
 	armor_penetration = 40
-	shield_damage = 30
+	shield_damage = 50
 
 /obj/item/projectile/bullet/shotgun/beanbag		//because beanbags are not bullets
 	name = "beanbag"
