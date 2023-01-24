@@ -21,7 +21,7 @@
 	/obj/item/organ/internal/lungs/theta = 1,
 	/obj/item/species_convert/orion = 1
 	)
-	cost = 3500
+	cost = 4000
 	containername = "\improper Orion organs freezer"
 
 /decl/hierarchy/supply_pack/oni_special/laceinjector //So UNSC has a way to give basic access to people

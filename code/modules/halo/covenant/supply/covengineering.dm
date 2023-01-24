@@ -20,7 +20,7 @@
 /decl/hierarchy/supply_pack/covenant_engineering/phoron
 	name = "Phoron (10 Sheets)"
 	contains = list(/obj/item/stack/material/phoron/ten = 1)
-	cost = 50
+	cost = 250
 	containername = "\improper Small Phoron Crate"
 
 /decl/hierarchy/supply_pack/covenant_engineering/nanolaminateten

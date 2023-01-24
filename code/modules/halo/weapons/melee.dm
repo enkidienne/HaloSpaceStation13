@@ -50,10 +50,12 @@
 	finish_execute_messages = list(BP_CHEST = "\The USER guts VICTIM with \the WEAPON!", BP_HEAD = "\The USER slices clean through \the VICTIM's neck with \the WEAPON!")
 
 /obj/item/weapon/material/machete/officersword
-	name = "CO's Sword"
+	name = "Officer's Sword"
 	desc = "A reinforced sword capable of safely parrying blows from energy weapons."
 	icon_state = "COsword_obj"
-	item_state = "machete"
+	item_state = "officer-sword"
+	slot_flags = SLOT_BELT | SLOT_BACK
+	attack_verb = list("sliced", "torn", "cut", "riposted", "carved", "diced")
 	unacidable = 1
 	armor_penetration = 70
 	applies_material_colour = FALSE

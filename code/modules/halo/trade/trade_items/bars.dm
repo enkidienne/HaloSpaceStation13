@@ -9,7 +9,7 @@
 	category = "ore"
 	quantity = 0
 	value = 35
-	trader_weight = 0
+	trader_weight = 1
 
 /datum/trade_item/sheet_silver
 	name = "silver bar"
@@ -17,7 +17,7 @@
 	category = "ore"
 	quantity = 0
 	value = 50
-	trader_weight = 0
+	trader_weight = 1
 
 /datum/trade_item/sheet_gold
 	name = "gold bar"
@@ -25,7 +25,7 @@
 	category = "ore"
 	quantity = 0
 	value = 70
-	trader_weight = 0
+	trader_weight = 1
 
 /datum/trade_item/sheet_diamond
 	name = "diamond sheets"
@@ -33,7 +33,7 @@
 	category = "ore"
 	quantity = 0
 	value = 150
-	trader_weight = 0
+	trader_weight = 1
 
 /datum/trade_item/sheet_phoron
 	name = "solid phoron"
@@ -41,7 +41,7 @@
 	category = "ore"
 	quantity = 0
 	value = 170
-	trader_weight = 0
+	trader_weight = 1
 
 /datum/trade_item/sheet_uranium
 	name = "uranium bar"
@@ -49,7 +49,7 @@
 	category = "ore"
 	quantity = 0
 	value = 125
-	trader_weight = 0
+	trader_weight = 1
 
 /datum/trade_item/sheet_steel
 	name = "steel sheets"
@@ -65,7 +65,7 @@
 	category = "ore"
 	quantity = 0
 	value = 75
-	trader_weight = 0
+	trader_weight = 1
 
 /datum/trade_item/sheet_platinum
 	name = "platinum sheets"

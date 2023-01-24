@@ -8,6 +8,31 @@
 
 ////////Aroliacue\\\\\\
 
+// WEAPONS
+
+/obj/item/weapon/gun/projectile/srs99_sniper/aro
+	name = "SRS-99F 'Amaryllis'"
+	desc = "An enormous, one-of-a-kind variant of the Sniper Rifle System 99 Anti-Matériel, assembled from Forerunner components. While functionally similar to the regular SRS-99, it utilizes an energy-based ignition system rather than a firing pin."
+	icon = 'code/modules/halo/weapons/icons/forerunner_sprites64.dmi'
+	icon_state = "SRS99"
+	item_state = "arosniper"
+	wielded_item_state = "arosniper"
+	fire_sound = 'code/modules/halo/sounds/HybridRifleFiring.ogg'
+	reload_sound = 'code/modules/halo/sounds/binaryrifle_reload.ogg'
+
+	item_icons = list(
+		slot_l_hand_str = 'code/modules/halo/weapons/icons/weapon_sprites_inhand64_l.dmi',
+		slot_r_hand_str = 'code/modules/halo/weapons/icons/weapon_sprites_inhand64_r.dmi',
+		slot_back_str = 'code/modules/halo/weapons/icons/Back_Weapons64.dmi',
+		)
+
+/obj/item/weapon/gun/projectile/srs99_sniper/aro/update_icon()
+	if(ammo_magazine)
+		icon_state = "SRS99"
+	else
+		icon_state = "SRS99_unloaded"
+	. = ..()
+
 //CO
 
 /obj/item/clothing/under/mildress/aroliacue
@@ -17,21 +42,21 @@
 	icon_state = "arol-uniform-obj"
 	worn_state = "arol-uniform"
 	name = "Officer's Dress"
-	desc = "An elegant, well-fitting suit for all kinds of whimsical occasions."
+	desc = "An elegant, well-fitting suit fit for ceremonial occasions."
 
 /obj/item/clothing/head/dress/aroliacue
+	name = "Officer's Service Cap"
+	desc = "A round, flat, visored combination cover to distinguish an officer's position."
 	icon = MARINE_INHAND
 	icon_override = MARINE_OVERRIDE
 	item_state = "arol-hat-worn"
 	icon_state = "arol-hat-obj"
-	name = "Officer's Service Cap"
-	desc = "A round, flat, visored combination cover to distinguish an Officer's position."
 
 /obj/item/weapon/material/machete/officersword/aroliacue
 	icon_state = "arol-officersword-obj"
 	item_state = "arol-officersword"
 	name = "Officer's Sabre"
-	desc = "A simple, rigid blade, designed to emphasise finesse and dexterity in combat. Likely belongs to someone of a high office."
+	desc = "A simple, rigid blade, designed to emphasise finesse and dexterity in combat. Likely belongs to someone of a high rank."
 
 /decl/hierarchy/outfit/aroliacue_co
 	name = "Aroliacue - CO"
@@ -40,6 +65,7 @@
 	suit = /obj/item/clothing/suit/armor/special/odst/aroliacue
 	l_hand = /obj/item/clothing/head/helmet/odst/aroliacue
 	r_hand = /obj/item/weapon/material/machete/officersword/aroliacue
+	back = /obj/item/weapon/gun/projectile/srs99_sniper/aro
 
 
 //ODST
@@ -62,8 +88,8 @@
 	icon_state = "arol-armour-obj"
 
 /obj/item/weapon/storage/box/large/donator/aroliacue/CO
-	startswith = list(/obj/item/clothing/under/mildress/aroliacue,/obj/item/clothing/head/dress/aroliacue,/obj/item/weapon/material/machete/officersword/aroliacue,/obj/item/clothing/head/helmet/odst/aroliacue,/obj/item/clothing/suit/armor/special/odst/aroliacue)
-	can_hold = list(/obj/item/clothing/under/mildress/aroliacue,/obj/item/clothing/head/dress/aroliacue,/obj/item/weapon/material/machete/officersword/aroliacue,/obj/item/clothing/head/helmet/odst/aroliacue,/obj/item/clothing/suit/armor/special/odst/aroliacue)
+	startswith = list(/obj/item/clothing/under/mildress/aroliacue,/obj/item/clothing/head/dress/aroliacue,/obj/item/weapon/material/machete/officersword/aroliacue,/obj/item/clothing/head/helmet/odst/aroliacue,/obj/item/clothing/suit/armor/special/odst/aroliacue,/obj/item/weapon/gun/projectile/srs99_sniper/aro)
+	can_hold = list(/obj/item/clothing/under/mildress/aroliacue,/obj/item/clothing/head/dress/aroliacue,/obj/item/weapon/material/machete/officersword/aroliacue,/obj/item/clothing/head/helmet/odst/aroliacue,/obj/item/clothing/suit/armor/special/odst/aroliacue,/obj/item/weapon/gun/projectile/srs99_sniper/aro)
 
 ////////ashvor\\\\\\\\
 
