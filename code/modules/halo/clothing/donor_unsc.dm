@@ -45,12 +45,12 @@
 	desc = "An elegant, well-fitting suit fit for ceremonial occasions."
 
 /obj/item/clothing/head/dress/aroliacue
+	name = "Officer's Service Cap"
+	desc = "A round, flat, visored combination cover to distinguish an officer's position."
 	icon = MARINE_INHAND
 	icon_override = MARINE_OVERRIDE
 	item_state = "arol-hat-worn"
 	icon_state = "arol-hat-obj"
-	name = "Officer's Service Cap"
-	desc = "A round, flat, visored combination cover to distinguish an officer's position."
 
 /obj/item/weapon/material/machete/officersword/aroliacue
 	icon_state = "arol-officersword-obj"
