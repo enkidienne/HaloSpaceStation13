@@ -3,7 +3,7 @@
 	value = 100
 	category = "crops"
 	item_type = /obj/item/weapon/reagent_containers/food/snacks/grown
-	trader_weight = 0
+	trader_weight = 1
 
 /datum/trade_item/wood
 	name = "wood planks"
