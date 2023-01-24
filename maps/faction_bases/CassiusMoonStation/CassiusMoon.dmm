@@ -161,7 +161,7 @@
 "de" = (/obj/machinery/light/small,/turf/simulated/floor/plating,/area/faction_base/unsc/moonbase/corridor_central)
 "df" = (/obj/structure/window/reinforced/projresist{icon_state = "rwindow"; dir = 4},/obj/structure/window/reinforced/projresist{icon_state = "rwindow"; dir = 8},/turf/simulated/floor/greengrid,/area/faction_base/unsc/moonbase/aicore)
 "dg" = (/obj/machinery/door/airlock/halo/maint/moonbase_cassius_maint,/turf/simulated/floor/plating,/area/faction_base/unsc/moonbase/briefing_a)
-"dh" = (/obj/structure/window/reinforced,/obj/structure/table/glass,/obj/machinery/reagentgrinder,/obj/item/stack/material/phoron{amount = 10000},/obj/item/stack/material/phoron{amount = 10000},/turf/simulated/floor/tiled/white,/area/faction_base/unsc/moonbase/chemistry)
+"dh" = (/obj/structure/window/reinforced,/obj/structure/table/glass,/obj/machinery/reagentgrinder,/obj/item/stack/material/phoron{amount = 50},/turf/simulated/floor/tiled/white,/area/faction_base/unsc/moonbase/chemistry)
 "di" = (/obj/machinery/door/airlock/halo/moonbase_cassius_general/escape_pod,/turf/simulated/floor/plating,/area/faction_base/unsc/moonbase/command_deck)
 "dj" = (/turf/simulated/floor/tiled,/area/faction_base/unsc/moonbase/briefing_a)
 "dk" = (/obj/machinery/light,/turf/simulated/floor/tiled,/area/faction_base/unsc/moonbase/chemistry)
