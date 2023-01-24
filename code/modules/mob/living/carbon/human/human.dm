@@ -128,7 +128,7 @@
 				ear_damage = min(ear_damage + 30,50*species.explosion_effect_mod)
 				ear_deaf = min(ear_damage + 120,120*species.explosion_effect_mod)
 			throw_mob = TRUE
-			throw_range = world.view + 2
+			throw_range = rand(world.view - 2,world.view)
 
 		if(3.0)
 			b_loss = 30
@@ -137,7 +137,7 @@
 				ear_damage = min(ear_damage + 15,50*species.explosion_effect_mod)
 				ear_deaf = min(ear_damage + 60,120*species.explosion_effect_mod)
 			throw_mob = TRUE
-			throw_range = world.view - 2
+			throw_range = rand(world.view - 4, world.view - 2)
 
 	if(!blinded)
 		flash_eyes(FLASH_PROTECTION_MODERATE,FALSE,FALSE,FALSE, /obj/screen/fullscreen/flash, eyeflash_duration)

@@ -73,7 +73,7 @@
 	force = 35
 	is_heavy = 1
 	armor_penetration = 70
-	accuracy = 0
+	accuracy = -1
 	dispersion = list(0.2,0.3,0.5)
 	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_5x6.dmi'
 	hud_bullet_iconstate = "spike"
@@ -82,7 +82,7 @@
 	sprite_sheets = list(\
 	"Jiralhanae" = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons_big.dmi'
 	)
-	lunge_dist = 3
+	lunge_dist = 2
 	salvage_components = list()
 	matter = list("duridium" = 1)
 
@@ -152,14 +152,14 @@
 	force = 35
 	is_heavy = 1
 	armor_penetration = 70
-	accuracy = 0
+	accuracy = -1
 	dispersion = list(0.45)
 	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_7x8.dmi'
 	hud_bullet_iconstate = "mauler"
 	w_class = ITEM_SIZE_NORMAL
 	item_state_slots = list(slot_l_hand_str = "mauler", slot_r_hand_str = "mauler")
 	sprite_sheets = list("Kig-Yar" = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_weapons.dmi')
-	lunge_dist = 3
+	lunge_dist = 2
 	salvage_components = list()
 	matter = list("duridium" = 1)
 
