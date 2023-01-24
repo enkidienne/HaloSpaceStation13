@@ -24,12 +24,11 @@
 	armor_penetration = 10
 	shield_damage = 25
 	pellets = 8
-	range_step = 1
+	range_step = 0.5
 	spread_step = 5
 
 /obj/item/projectile/bullet/pellet/shotgun/high_power
 	name = "large shrapnel"
-	damage = 20
 	armor_penetration = 30
 	pellets = 6
 	range_step = 1.5
