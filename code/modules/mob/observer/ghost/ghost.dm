@@ -153,7 +153,7 @@ Works together with spawning an observer, noted above.
 		//Wave Respawn code. Synchronise your death watches..
 		if(mind && mind.current)
 			var/datum/faction/f = GLOB.factions_by_name[mind.current.faction]
-			if(f.wave_respawn)
+			if(f && f.wave_respawn)
 				var/msg_extra = "You're the first one to die in this wave. Keep in mind how long you have left until respawn, and coordinate with your faction members."
 				if(f.wave_timeofdeath_use != 0)
 					ghost.timeofdeath = f.wave_timeofdeath_use
@@ -547,9 +547,10 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	else if(!MayRespawn(1, ticker.mode.get_respawn_time()))
 		return
 
-	var/datum/faction/f = GLOB.factions_by_name[mind.current.faction]
-	if(f && f.wave_respawn) //If we have a faction, reset the faction's wave-respawn time so we can start the next wave.
-		f.wave_timeofdeath_use = 0
+	if(mind && mind.current)
+		var/datum/faction/f = GLOB.factions_by_name[mind.current.faction]
+		if(f && f.wave_respawn) //If we have a faction, reset the faction's wave-respawn time so we can start the next wave.
+			f.wave_timeofdeath_use = 0
 
 
 	to_chat(usr, "You can respawn now, enjoy your new life!")

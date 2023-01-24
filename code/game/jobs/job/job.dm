@@ -242,7 +242,8 @@
 									continue
 								if(player.assigned_role)
 									var/datum/job/j = job_master.occupations_by_title[player.assigned_role]
-									add_as_players = j.pop_balance_mult
+									if(j)
+										add_as_players = j.pop_balance_mult
 								if(player.current.faction == my_faction.name)
 									my_faction_players += add_as_players
 								total_faction_players += add_as_players
@@ -254,7 +255,7 @@
 						if(my_ratio >= max_ratio)
 							//We need to ensure that this faction is actually deadlocked and isn't just using a high-pop cost role.
 							//Essentially, re-calculate the ratio, but as if the new role was just cost-1
-							var/re_ratio = (my_faction_players + 1 - pop_balance_mult) / (total_faction_players + 1 - pop_balance_mult)
+							var/re_ratio = max(1,my_faction_players + 1 - pop_balance_mult) / max(1,total_faction_players + 1 - pop_balance_mult)
 							if(Debug2)
 								to_debug_listeners("DEBUG: RE-CAlCULATED RATIO IS: [re_ratio]. MAX RATIO IS: [max_ratio]")
 							if(re_ratio >= max_ratio)
