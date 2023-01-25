@@ -27,3 +27,8 @@
 	name = "T\'Vaoan Champion helmet"
 	icon_state = "championhelmet"
 	item_state = "championhelmet_worn"
+
+/obj/item/clothing/head/helmet/kigyar/skirmisher/unsc
+	name = "T\'Vaoan Separatist helmet"
+	icon_state = "unschelmet"
+	item_state = "unschelmet_worn"

@@ -65,3 +65,13 @@
 /decl/hierarchy/outfit/yanmee/leader/armed
 	name = "Armed Yanmee Leader"
 	l_hand = /obj/item/weapon/gun/energy/plasmapistol
+
+/decl/hierarchy/outfit/yanmee/unsc
+	name = "UNSC Yanmee"
+	l_ear = /obj/item/device/radio/headset/unsc/marine
+	back = /obj/item/flight_item/yanmee/unsc
+	suit = /obj/item/clothing/suit/armor/special/yanmee/unsc
+	l_hand = /obj/item/language_learner/unggoy_to_common
+	//
+	id_type = /obj/item/weapon/card/id/yanmee_unsc
+	id_slot = slot_wear_id
