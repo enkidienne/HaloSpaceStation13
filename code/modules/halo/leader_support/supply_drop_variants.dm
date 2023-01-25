@@ -1,4 +1,8 @@
 #define PERSONALISED_AMMO_DROP_MAG_AMT 2
+ //Halve mag-amount. Tracks subtypes of provided types.
+#define PERSONALISED_AMMO_DROP_RESTRICT list(/obj/item/weapon/gun/projectile/na4_dp,/obj/item/weapon/gun/projectile/ACL55,/obj/item/weapon/gun/projectile/srs99_sniper,/obj/item/weapon/gun/projectile/m41,/obj/item/weapon/gun/projectile/fuel_rod,/obj/item/weapon/gun/projectile/boltshot,/obj/item/weapon/gun/projectile/suppressor)
+//No. None. As above.
+#define PERSONALISED_AMMO_DROP_EXCLUDE list(/obj/item/weapon/gun/projectile/binary_rifle)
 
 /obj/structure/closet/crate/supply_drop
 	name = "Type-B Supply Capsule"
@@ -182,7 +186,16 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 /datum/support_option/supply_drop/personalised_ammo/create_drop_item(var/turf/turf_at,var/mob/living/m)
 	var/obj/structure/closet/c = ..()
 	for(var/obj/item/weapon/gun/projectile/p in m.contents)
-		for(var/i = 1 to PERSONALISED_AMMO_DROP_MAG_AMT)
+		var/drop_amt = PERSONALISED_AMMO_DROP_MAG_AMT
+		for(var/type in PERSONALISED_AMMO_DROP_RESTRICT)
+			if(istype(p,type))
+				drop_amt = drop_amt/2
+		for(var/type in PERSONALISED_AMMO_DROP_EXCLUDE)
+			if(istype(p,type))
+				drop_amt = 0
+		if(drop_amt == 0)
+			continue
+		for(var/i = 1 to drop_amt)
 			c.contents += new p.magazine_type (c)
 	return c
 
