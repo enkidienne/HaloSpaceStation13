@@ -32,13 +32,13 @@
 
 /decl/hierarchy/supply_pack/oni_special/laceinjectorodst //So UNSC has a way to give access to people
 	name = "UNSC ODST Lace Access Injector"
-	contains = list(/obj/item/lace_injector/odst = 1)
+	contains = list(/obj/item/lace_injector/marine_spec = 1)
 	cost = 500
 	containername = "\improper Neural Lace crate"
 
 /decl/hierarchy/supply_pack/oni_special/laceinjectorofficer //So UNSC has a way to give basic access to people
 	name = "UNSC Officer Lace Access Injector"
-	contains = list(/obj/item/lace_injector/officer = 1)
+	contains = list(/obj/item/lace_injector/odst = 1)
 	cost = 1000
 	containername = "\improper Neural Lace crate"
 
