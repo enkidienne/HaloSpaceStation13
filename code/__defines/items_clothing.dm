@@ -43,6 +43,7 @@
 	/obj/item/weapon/armor_patch,\
 	/obj/item/ammo_casing,\
 	/obj/item/weapon/plastique,\
+	/obj/item/squad_manager,\
 	/obj/item/weapon/tank/emergency/oxygen\
 	)
 
@@ -55,6 +56,7 @@
 	/obj/item/weapon/storage/pill_bottle,\
 	/obj/item/stack/medical,\
 	/obj/item/weapon/grenade,\
+	/obj/item/squad_manager,\
 	)
 
 #define CANDLE_LUM 3 // For how bright candles are.
