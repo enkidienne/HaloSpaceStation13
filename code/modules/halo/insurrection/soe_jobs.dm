@@ -18,6 +18,8 @@
 	whitelisted_species = list(/datum/species/human)
 	loadout_allowed = TRUE
 
+	radio_speech_size = RADIO_SPEECH_SPECIALIST
+
 /datum/job/soe_commando_officer
 	title = "SOE Commando Officer"
 	spawn_faction = "Insurrection"
@@ -37,6 +39,8 @@
 	whitelisted_species = list(/datum/species/human)
 	loadout_allowed = TRUE
 
+	radio_speech_size = RADIO_SPEECH_LEADER
+
 /datum/job/soe_commando_captain
 	title = "SOE Commando Captain"
 	spawn_faction = "Insurrection"
@@ -54,3 +58,5 @@
 	faction_whitelist = "Insurrection"
 	whitelisted_species = list(/datum/species/human)
 	loadout_allowed = TRUE
+
+	radio_speech_size = RADIO_SPEECH_LEADER

@@ -26,3 +26,5 @@
 		access_unsc_specialist)
 	whitelisted_species = list(/datum/species/spartan)
 	pop_balance_mult = 3
+
+	radio_speech_size = RADIO_SPEECH_LEADER

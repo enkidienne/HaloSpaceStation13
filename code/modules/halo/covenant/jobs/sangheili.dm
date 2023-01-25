@@ -13,6 +13,8 @@
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	pop_balance_mult = 2.5
 
+	radio_speech_size = RADIO_SPEECH_COMMANDER
+
 /datum/job/covenant/sangheili_ultra
 	title = "Sangheili Ultra"
 	department_flag = COM
@@ -26,6 +28,8 @@
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	pop_balance_mult = 2.5
 
+	radio_speech_size = RADIO_SPEECH_LEADER
+
 /datum/job/covenant/sangheili_honour_guard
 	title = "Sangheili Honour Guard"
 	total_positions = 0
@@ -36,6 +40,8 @@
 	whitelisted_species = list(/datum/species/sangheili)
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	pop_balance_mult = 2
+
+	radio_speech_size = RADIO_SPEECH_COMMANDER
 
 /datum/job/covenant/sangheili_major
 	title = "Sangheili Major"
@@ -50,6 +56,8 @@
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	pop_balance_mult = 2
 
+	radio_speech_size = RADIO_SPEECH_LEADER
+
 /datum/job/covenant/sangheili_minor
 	title = "Sangheili Minor"
 	total_positions = 2
@@ -60,6 +68,8 @@
 	whitelisted_species = list(/datum/species/sangheili)
 	open_slot_on_death = TRUE //just like brutes, lowest rank of a leader caste can respawn indefinitely although still capped low
 	pop_balance_mult = 2
+
+	radio_speech_size = RADIO_SPEECH_SPECIALIST
 
 /datum/job/covenant/sangheili_specops
 	title = "Special Operations Sangheili"
@@ -74,6 +84,8 @@
 	whitelisted_species = list(/datum/species/sangheili)
 	pop_balance_mult = 2
 
+	radio_speech_size = RADIO_SPEECH_SPECIALIST
+
 /* Not available during standard play */
 
 /datum/job/covenant/sangheili_ranger
@@ -87,6 +99,8 @@
 	whitelisted_species = list(/datum/species/sangheili)
 	pop_balance_mult = 2
 
+	radio_speech_size = RADIO_SPEECH_SPECIALIST
+
 /datum/job/covenant/sangheili_zealot
 	title = "Sangheili Zealot"
 	total_positions = 0
@@ -96,3 +110,5 @@
 	whitelisted_species = list(/datum/species/sangheili)
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace)
 	pop_balance_mult = 2
+
+	radio_speech_size = RADIO_SPEECH_LEADER

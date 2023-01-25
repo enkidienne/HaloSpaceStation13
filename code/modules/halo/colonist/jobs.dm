@@ -38,6 +38,8 @@
 			            */
 	alt_titles = list("Governor")
 
+	radio_speech_size = RADIO_SPEECH_COMMANDER
+
 /datum/job/colonist/police
 	title = "GCPD Officer"
 	economic_modifier = 1.5
@@ -46,6 +48,8 @@
 						access_external_airlocks, access_emergency_storage,
 			            access_eva, access_sec_doors)*/
 	alt_titles = list("GCPD SWAT Officer","GCPD Cadet","GCPD Detective","GCPD Forensic Scientist")
+
+	radio_speech_size = RADIO_SPEECH_SPECIALIST
 
 /datum/job/colonist/police/chief
 	title = "Chief of Police"
@@ -58,6 +62,8 @@
 			            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
 			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway, access_external_airlocks)*/
 
+	radio_speech_size = RADIO_SPEECH_LEADER
+
 /datum/job/colony_ai
 	title = "UEG Colonial AI"
 	spawn_faction = "Human Colony"
@@ -66,6 +72,9 @@
 	outfit_type = /decl/hierarchy/outfit/job/colony_AI
 	req_admin_notify = 1
 	//job_guide = "Your responsibility is to aid the captain and ship's crew and you are given a vast amount of autonomy to that end. You are entirely loyal to the UNSC and your current mission however."
+
+	radio_speech_size = 140
+
 	equip(var/mob/living/carbon/human/H)
 		if(!H)	return 0
 		return 1

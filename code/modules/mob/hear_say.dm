@@ -208,14 +208,34 @@
 	var/part_b = "</span> <span class='message'>" // Tweaked for security headsets -- TLE
 	var/part_c = "</span></span>"
 
+	//Shifted up for rank-check reasons.
+	var/datum/job/speaker_job
+	if(rank_text)
+		speaker_name += " ([rank_text])"
+		speaker_job = job_master.GetJob("[rank_text]")
+
+	var/speech_size = 100
+	var/faction_speech = 1 //Does this speech-size only apply to our own faction?
+	if(speaker_job)
+		speech_size = speaker_job.radio_speech_size
+		faction_speech =  speaker_job.radio_speech_faction
+
+	var/speech_size_modify = 0 //Should we modify the speech size?
+	if(!faction_speech)//Only bother with radio speech size if they're our faction. (Or we're not checking that.)
+		speech_size_modify = 1
+	else
+		if(speaker && speaker.faction == faction)
+			speech_size_modify = 1
+
+	if(speech_size_modify)
+		message = "<span style='font-size: [speech_size]%;'>[message]</span>"
+
 	var/formatted
 	if(language)
 		formatted = language.format_message_radio(message, verb)
 	else
 		formatted = "[verb], <span class=\"body\">\"[message]\"</span>"
 
-	if(rank_text)
-		speaker_name += " ([rank_text])"
 
 	on_hear_radio(part_a, speaker_name, track, part_b, part_c, formatted)
 

@@ -6,6 +6,8 @@
 	outfit_type = /decl/hierarchy/outfit/yanmee/minor
 	whitelisted_species = list(/datum/species/yanmee)
 
+	radio_speech_size = RADIO_SPEECH_SMALLER
+
 /datum/job/covenant/yanmee_major
 	title = "Yanme e Major"
 	total_positions = 2
@@ -13,6 +15,8 @@
 	open_slot_on_death = 1
 	outfit_type = /decl/hierarchy/outfit/yanmee/major
 	whitelisted_species = list(/datum/species/yanmee)
+
+	radio_speech_size = RADIO_SPEECH_SMALLER
 
 /datum/job/covenant/yanmee_ultra
 	title = "Yanme e Ultra"
@@ -24,6 +28,8 @@
 	whitelisted_species = list(/datum/species/yanmee)
 	pop_balance_mult = 1.5 //They have a shield.
 
+	radio_speech_size = RADIO_SPEECH_STANDARD
+
 /datum/job/covenant/yanmee_leader
 	title = "Yanme e Leader"
 	total_positions = 1
@@ -33,3 +39,5 @@
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/yanmee)
 	pop_balance_mult = 1.5
+
+	radio_speech_size = RADIO_SPEECH_SPECIALIST

@@ -8,6 +8,8 @@
 	whitelisted_species = list(/datum/species/unggoy)
 	pop_balance_mult = 1
 
+	radio_speech_size = RADIO_SPEECH_SMALLER
+
 /datum/job/covenant/unggoy_major
 	title = "Unggoy Major"
 	total_positions = 4
@@ -17,6 +19,8 @@
 	whitelisted_species = list(/datum/species/unggoy)
 	pop_balance_mult = 1
 
+	radio_speech_size = RADIO_SPEECH_SMALLER
+
 /datum/job/covenant/unggoy_ultra
 	title = "Unggoy Ultra"
 	total_positions = 1
@@ -25,6 +29,8 @@
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/unggoy)
+
+	radio_speech_size = RADIO_SPEECH_STANDARD
 
 /datum/job/covenant/unggoy_heavy
 	title = "Unggoy Heavy"
@@ -36,6 +42,8 @@
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/unggoy)
 
+	radio_speech_size = RADIO_SPEECH_STANDARD
+
 /datum/job/covenant/unggoy_deacon
 	title = "Unggoy Deacon"
 	total_positions = 1
@@ -45,6 +53,8 @@
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/unggoy)
 	pop_balance_mult = 1.5
+
+	radio_speech_size = RADIO_SPEECH_LEADER
 
 /datum/job/covenant/unggoy_specops
 	title = "Special Operations Unggoy"
@@ -59,6 +69,8 @@
 	whitelisted_species = list(/datum/species/unggoy)
 	pop_balance_mult = 1.5
 
+	radio_speech_size = RADIO_SPEECH_SPECIALIST
+
 /* Not available during standard play */
 
 /datum/job/covenant/unggoy_honour_guard
@@ -69,3 +81,5 @@
 	spawn_positions = 0
 	total_positions = 0
 	faction_whitelist = "Covenant"
+
+	radio_speech_size = RADIO_SPEECH_SPECIALIST
