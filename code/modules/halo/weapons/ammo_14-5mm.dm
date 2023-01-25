@@ -26,11 +26,11 @@
 	step_delay = 0
 
 /* M233 tracerless rounds  */
-//used by: SRS99 sniper rifle
+//used by: URF Bolt Action Rifle
 
 /obj/item/ammo_casing/m233
 	desc = "A 14.5mm bullet casing."
-	caliber = "14.5mm"
+	caliber = "14.5mmtracerless"
 	projectile_type = /obj/item/projectile/bullet/m233
 
 /obj/item/projectile/bullet/m233 //Modified slightly to provide a downside for using the innie-heavy-sniper-rounds over normal rounds.
