@@ -576,7 +576,7 @@
 "ald" = (/turf/simulated/floor/tech/orange{tag = "icon-techfloor_orangefulltwogrid (SOUTHEAST)"; icon_state = "techfloor_orangefulltwogrid"; dir = 6},/area/planets/Geminus/indoor/slums_clubgun)
 "ale" = (/turf/simulated/wall/r_wall,/area/planets/Geminus/indoor/space_elevator)
 "alf" = (/obj/effect/floor_decal/corner/red{tag = "icon-corner_white (NORTHEAST)"; icon_state = "corner_white"; dir = 5},/obj/structure/filingcabinet/chestdrawer,/turf/simulated/floor/decor{icon_state = "tiled"},/area/planets/Geminus/indoor/police_station)
-"alg" = (/obj/machinery/computer/account_database,/obj/machinery/camera/autoname/invis/geminus_city,/turf/simulated/floor/greengrid,/area/planets/Geminus/indoor/nuclear_storage)
+"alg" = (/obj/machinery/camera/autoname/invis/geminus_city,/turf/simulated/floor/greengrid,/area/planets/Geminus/indoor/nuclear_storage)
 "alh" = (/obj/machinery/camera/autoname/invis/geminus_city,/turf/simulated/floor/pavement{dir = 1; icon_state = "pavement"; tag = "icon-pavement (EAST)"},/area/planets/Geminus/outdoor/autolight)
 "ali" = (/obj/machinery/door/unpowered/simple/wood,/turf/simulated/floor/decor{icon_state = "tiledwood2"; tag = "icon-wooden1"},/area/planets/Geminus/indoor/bar)
 "alj" = (/obj/machinery/camera/autoname/invis/geminus_city,/turf/simulated/floor/decor{icon_state = "tiledwood2"; tag = "icon-wooden1"},/area/planets/Geminus/indoor/bar)
