@@ -197,9 +197,9 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 			if(istype(p,type))
 				drop_amt = 0
 		if(drop_amt == 0)
-			manifest.info += "[initial(p.name)] Ammunition x Not Available\[br\]"
+			manifest.info += "[initial(p.name)] Ammunition x Not Available\n"
 			continue
-		manifest.info += "[initial(p.name)] Ammunition x [drop_amt]\[br\]"
+		manifest.info += "[initial(p.name)] Ammunition x [drop_amt]\n"
 		for(var/i = 1 to drop_amt)
 			c.contents += new p.magazine_type (c)
 	return c
