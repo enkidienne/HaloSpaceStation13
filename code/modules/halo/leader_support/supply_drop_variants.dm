@@ -185,6 +185,9 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 
 /datum/support_option/supply_drop/personalised_ammo/create_drop_item(var/turf/turf_at,var/mob/living/m)
 	var/obj/structure/closet/c = ..()
+	var/obj/item/weapon/paper/manifest = new (c)
+	c.contents += manifest
+	manifest.name = "Order Manifest"
 	for(var/obj/item/weapon/gun/projectile/p in m.contents)
 		var/drop_amt = PERSONALISED_AMMO_DROP_MAG_AMT
 		for(var/type in PERSONALISED_AMMO_DROP_RESTRICT)
@@ -194,7 +197,9 @@ obj/structure/closet/crate/supply_drop/mass_ammo/odst/WillContain()
 			if(istype(p,type))
 				drop_amt = 0
 		if(drop_amt == 0)
+			manifest.info += "[p] Ammunition x Not Available\n"
 			continue
+		manifest.info += "[p] Ammunition x [drop_amt]\n"
 		for(var/i = 1 to drop_amt)
 			c.contents += new p.magazine_type (c)
 	return c
