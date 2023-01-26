@@ -153,7 +153,7 @@
 
 /obj/item/clothing/attackby(obj/item/W as obj, mob/user as mob)
 	..()
-	if(!(W in accessories))		//Make sure that an accessory wasn't successfully attached to suit.
+	if(!(W in accessories) && pocket_curr)		//Make sure that an accessory wasn't successfully attached to suit.
 		pocket_curr.attackby(W, user)
 
 /obj/item/clothing/emp_act(severity)

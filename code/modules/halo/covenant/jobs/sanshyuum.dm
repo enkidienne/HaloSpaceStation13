@@ -11,6 +11,8 @@
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	pop_balance_mult = 0.5
 
+	radio_speech_size = RADIO_SPEECH_COMMANDER
+
 /datum/job/covenant/lesser_prophet/equip()
 	.=..()
 	var/datum/job/to_modify = job_master.occupations_by_type[/datum/job/covenant/sangheili_honour_guard]

@@ -13,6 +13,8 @@
 	alt_titles = list("ONI Doctor","ONI Physicist","ONI Botanist","ONI Chemist","ONI Weapons Researcher","ONI Surgeon","ONI Geneticist")
 	access = list(access_unsc,access_unsc_bridge,access_unsc_medical,access_unsc_armoury,access_unsc_supplies,access_unsc_oni,access_unsc_cargo)
 
+	radio_speech_size = RADIO_SPEECH_SPECIALIST
+
 /datum/job/unsc/oni/research/director
 	title = "ONI Research Director"
 	supervisors = "the directors of ONI Section III"
@@ -20,6 +22,8 @@
 	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/unsc/oni/research/director
 	access = list(access_unsc,access_unsc_bridge,access_unsc_medical,access_unsc_armoury,access_unsc_odst,access_unsc_specialist,access_unsc_supplies,access_unsc_oni,access_unsc_cargo)
+
+	radio_speech_size = RADIO_SPEECH_LEADER
 
 /datum/job/unsc/oni/guard
 	title = "ONI Security Guard"
@@ -32,6 +36,8 @@
 	total_positions = 1
 	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/unsc/oni/guard/commander
+
+	radio_speech_size = RADIO_SPEECH_SPECIALIST
 
 /datum/job/unsc/oni/field_agent
 	title = "ONI Field Agent"
@@ -46,3 +52,5 @@
 	access = list(access_unsc,access_unsc_bridge,access_unsc_medical,access_unsc_armoury,access_unsc_odst,access_unsc_specialist,access_unsc_supplies,access_unsc_oni,access_unsc_cargo)
 	pop_balance_mult = 1.5
 	faction_whitelist = "UNSC"
+
+	radio_speech_size = RADIO_SPEECH_SPECIALIST

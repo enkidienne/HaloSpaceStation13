@@ -28,6 +28,8 @@
 		access_unsc_odst,\
 		access_unsc_specialist)
 
+	radio_speech_size = RADIO_SPEECH_COMMANDER
+
 /datum/job/unsc/executive_officer
 	title = "UNSC Executive Officer"
 	total_positions = 1
@@ -54,3 +56,5 @@
 		access_unsc_ids,\
 		access_unsc_odst,\
 		access_unsc_specialist)
+
+	radio_speech_size = RADIO_SPEECH_COMMANDER

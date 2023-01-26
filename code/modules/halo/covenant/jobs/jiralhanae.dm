@@ -10,6 +10,8 @@
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	pop_balance_mult = 2.5
 
+	radio_speech_size = RADIO_SPEECH_COMMANDER
+
 /datum/job/covenant/brute_captain
 	title = "Jiralhanae Captain"
 	department_flag = COM
@@ -20,6 +22,8 @@
 	whitelisted_species = list(/datum/species/brutes)
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	pop_balance_mult = 2
+
+	radio_speech_size = RADIO_SPEECH_LEADER
 
 /datum/job/covenant/brute_major
 	title = "Jiralhanae Major"
@@ -32,6 +36,8 @@
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
 	pop_balance_mult = 2
 
+	radio_speech_size = RADIO_SPEECH_LEADER
+
 /datum/job/covenant/brute_minor
 	title = "Jiralhanae Minor"
 	total_positions = 2
@@ -42,3 +48,5 @@
 	open_slot_on_death = 1 //Lowest rank of a leader caste can respawn indefinitely although still capped low
 	pop_balance_mult = 2
 	access = list(access_covenant, access_covenant_cargo)
+
+	radio_speech_size = RADIO_SPEECH_SPECIALIST

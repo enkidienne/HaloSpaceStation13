@@ -12,6 +12,7 @@
 	whitelisted_species = list(/datum/species/human)
 	intro_blurb = "You are X-52! Working for a top secret military research project, one day you decided to go AWOL with your secrets and expertise. Now you're out for yourselves. Just remember the UNSC will always be looking for you..."
 
+	radio_speech_size = RADIO_SPEECH_SPECIALIST
 
 /datum/job/geminus_x52/research_director
 	title = "X52 Research Director"
@@ -27,3 +28,5 @@
 	alt_titles = null
 	whitelisted_species = list(/datum/species/human)
 	intro_blurb = "You are X-52! Working for a top secret military research project, one day you decided to go AWOL with your secrets and expertise. Now you're out for yourselves. Just remember the UNSC will always be looking for you..."
+
+	radio_speech_size = RADIO_SPEECH_SPECIALIST
