@@ -5,13 +5,13 @@
 	total_positions = 0
 	spawn_positions = 0
 	poplock_max = 1
-	poplock_divisor = 12
+	poplock_divisor = 11
 	track_players = TRUE
 	outfit_type = /decl/hierarchy/outfit/sangheili/shipmaster
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
-	pop_balance_mult = 3
+	pop_balance_mult = 2.5
 
 	radio_speech_size = RADIO_SPEECH_COMMANDER
 
