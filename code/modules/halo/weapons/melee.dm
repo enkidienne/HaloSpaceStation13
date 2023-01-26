@@ -42,7 +42,7 @@
 	unbreakable = 1
 	attack_verb = list("chopped", "torn", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
-	unacidable = 0
+	unacidable = 1
 	lunge_dist = 2
 
 	executions_allowed = TRUE
@@ -51,7 +51,7 @@
 
 /obj/item/weapon/material/machete/officersword
 	name = "Officer's Sword"
-	desc = "A reinforced sword capable of safely parrying blows from energy weapons."
+	desc = "A reinforced sword. Lighter than it looks, allowing for longer range lunges."
 	icon_state = "COsword_obj"
 	item_state = "officer-sword"
 	slot_flags = SLOT_BELT | SLOT_BACK
