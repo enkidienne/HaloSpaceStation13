@@ -40,6 +40,8 @@
 	resistance = 20 //Multiplied by two during melee fights.
 	attack_sound = 'sound/weapons/heavysmash.ogg'
 
+	see_in_dark = 7
+
 	/*response_help   = "pokes"
 	response_disarm = "pokes"
 	response_harm   = "thinks better about punching"*/
