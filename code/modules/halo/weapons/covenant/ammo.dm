@@ -137,7 +137,7 @@
 /obj/item/projectile/bullet/covenant/needles
 	name = "Needle"
 	desc = "A sharp, pink crystalline shard"
-	damage = 15 //A little lower than the smg because of the shrapnel dam
+	damage = 10 //SMG gets some AP on top of higher damage.
 	shield_damage = 15
 	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
 	icon_state = "Needler Shot"
@@ -175,7 +175,7 @@
 					L.contents -= I
 					I.forceMove(get_turf(L))//And placing it on the ground below
 					qdel(I)
-	if(prob(NEEDLER_EMBED_PROB)) //Most of the weapon's damage comes from embedding. This is here to make it more common.
+	if(prob(NEEDLER_EMBED_PROB))
 		var/obj/item/weapon/material/shard/shrapnel/needleshrap/shard = new
 		shard.name = shard_name
 		shard.die_at = world.time + NEEDLER_SHARD_DET_TIME
