@@ -5,6 +5,7 @@
 	name = "Automated Defenses"
 	desc = "An automated defense emplacment. Stay away."
 	icon = 'code/modules/halo/icons/overmap/faction_misc.dmi'
+	icons_pickfrom_list = list('code/modules/halo/icons/overmap/faction_misc.dmi')
 	icon_state = "SMAC"
 
 	faction = "civilian"
@@ -76,7 +77,7 @@
 			next_fire_at = world.time + AUTO_DEFENSE_FIRE_DELAY
 	else
 		var/list/unauthed_ships = list()
-		for(var/obj/effect/overmap/ship in in_range)
+		for(var/obj/effect/overmap/ship/ship in in_range)
 			if(!ship.block_slipspace && ship.get_faction() != ship_source.get_faction())
 				unauthed_ships += ship
 		if(unauthed_ships.len == 0)

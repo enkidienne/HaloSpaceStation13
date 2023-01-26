@@ -13,15 +13,31 @@ GLOBAL_LIST_EMPTY(innie_base_spawns)
 
 /datum/spawnpoint/innie_base
 	display_name = "Innie Base Spawns"
-	restrict_job_type = list(\
-		/datum/job/ship_crew_innie,\
-		/datum/job/ship_cap_innie,\
-		/datum/job/URF_commando,\
-		/datum/job/URF_commando_officer)
+	restrict_job_type = list(
+		/datum/job/geminus_innie,
+		/datum/job/geminus_innie/officer,
+		/datum/job/geminus_innie/commander,
+		/datum/job/soe_commando,
+		/datum/job/soe_commando_officer)
 
 /datum/spawnpoint/innie_base/New()
 	..()
 	turfs = GLOB.innie_base_spawns
+
+GLOBAL_LIST_EMPTY(innie_base_fallback_spawns)
+
+/datum/spawnpoint/innie_base_fallback
+	display_name = "Innie Base Fallback Spawns"
+	restrict_job_type = list(
+		/datum/job/geminus_innie,
+		/datum/job/geminus_innie/officer,
+		/datum/job/geminus_innie/commander,
+		/datum/job/soe_commando,
+		/datum/job/soe_commando_officer)
+
+/datum/spawnpoint/innie_base_fallback/New()
+	..()
+	turfs = GLOB.innie_base_fallback_spawns
 
 /obj/effect/landmark/start/innie_base
 	name = "Innie Base Spawns"
@@ -29,6 +45,13 @@ GLOBAL_LIST_EMPTY(innie_base_spawns)
 /obj/effect/landmark/start/innie_base/New()
 	..()
 	GLOB.innie_base_spawns += loc
+
+/obj/effect/landmark/start/innie_base_fallback
+	name = "Innie Base Fallback Spawns"
+
+/obj/effect/landmark/start/innie_base_fallback/New()
+	..()
+	GLOB.innie_base_fallback_spawns += loc
 
 /area/faction_base/innie
 	name = "Insurrectionist Faction Base"

@@ -1,6 +1,7 @@
 
 /datum/job/covenant
 	spawn_faction = "Covenant"
+	fallback_spawnpoint = "Covenant Base Fallback Spawns"
 	//track_players = TRUE
 	account_allowed = FALSE
 	loadout_allowed = FALSE
