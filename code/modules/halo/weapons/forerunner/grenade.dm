@@ -21,7 +21,8 @@
 	. = ..()
 	if(istype(crosser))
 		visible_message("<span class = 'danger'>Shards within [src] track [crosser], and explode!</span>")
-		crosser.adjustFireLoss(50)
+		crosser.adjustFireLoss(12)
+		crosser.adjustBruteLoss(12)
 
 /obj/item/weapon/grenade/splinter
 	name = "Z-400 Pursuit Disruption Grid Generator"
@@ -30,6 +31,7 @@
 	icon_state = "splinternade"
 	can_adjust_timer = 0
 	det_time = 25
+	starttimer_on_hit = 1
 	alt_explosion_range = 2
 	alt_explosion_damage_max = 50
 
