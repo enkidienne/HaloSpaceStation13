@@ -296,6 +296,8 @@
 	for(var/obj/mecha/M in in_sight)
 		L += M
 
+	L -= src //Just in case we added ourselves to our own targets list.
+
 	return L
 
 /mob/living/simple_animal/hostile/death(gibbed, deathmessage, show_dead_message)
