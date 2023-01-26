@@ -17,9 +17,6 @@
 	. = ..()
 
 /mob/living/simple_animal/mgalekgolo/ex_act(severity)
-	if(!blinded)
-		flash_eyes()
-
 	var/damage
 	switch (severity)
 		if (1.0)
