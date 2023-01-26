@@ -16,7 +16,7 @@
 	var/can_adjust_timer = 1
 
 	var/alt_explosion_damage_max = 500 //The amount of armour + shield piercing damage done when grenade is stuck inside someone.
-	var/alt_explosion_damage_cap = 20 //How much damage can the alt-explosion apply in one instance.
+	var/alt_explosion_damage_cap = 15 //How much damage can the alt-explosion apply in one instance.
 	var/multiplier_non_direct = 1 //The multiplier to apply to the alt explosion max damage if the grenade is not directly on top of or inside someone.
 	var/alt_explosion_range = -1 //if set to -1, no armor bypass explosion
 
@@ -130,7 +130,7 @@
 
 	for(var/mob/living/m in range(alt_explosion_range,loc))
 		var/mult = 1
-		if(get_turf(m) != get_turf(loc))
+		if(multiplier_non_direct != mult && get_turf(m) != get_turf(loc))
 			mult = multiplier_non_direct
 		var/dmg_max = alt_explosion_damage_max * mult
 		while(dmg_max > 0)
