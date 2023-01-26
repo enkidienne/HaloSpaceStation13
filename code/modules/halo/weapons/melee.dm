@@ -10,6 +10,7 @@
 	edge = 1
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	armor_penetration = 70
+	unacidable = 1
 
 	force_divisor = 0.5
 	thrown_force_divisor = 0.5
