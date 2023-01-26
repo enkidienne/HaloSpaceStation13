@@ -8,7 +8,7 @@
 	icon_state = "magnum"
 	item_state = "halo_pistol"
 	magazine_type = /obj/item/ammo_magazine/m6d/m225
-	allowed_magazines = list(/obj/item/ammo_magazine/m6d/m224,/obj/item/ammo_magazine/m6d/m225, /obj/item/ammo_magazine/m6d/m228)
+	allowed_magazines = list(/obj/item/ammo_magazine/m6d/m224,/obj/item/ammo_magazine/m6d/m225, /obj/item/ammo_magazine/m6d/m228,/obj/item/ammo_magazine/m6s,/obj/item/ammo_magazine/m6s/m225,/obj/item/ammo_magazine/m6s_m228)
 	caliber = "12.7mm"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	one_hand_penalty = 1

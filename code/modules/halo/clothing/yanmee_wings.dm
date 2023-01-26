@@ -127,4 +127,9 @@
 	icon_state = "ywings_leader_item"
 	item_state = "ywings_leader"
 
+/obj/item/flight_item/yanmee/unsc
+	name = "\improper UNSC Yanme'e Wings"
+	icon_state = "ywings_unsc_item"
+	item_state = "ywings_unsc"
+
 #undef YANMEE_FLIGHT_TICKS

@@ -76,6 +76,11 @@
 	icon = 'code/modules/halo/covenant/items/Cards.dmi'
 	icon_state = "murmillo_id"
 
+/obj/item/weapon/card/id/skirmisher_unsc
+	name = "UNSC Tvoan Separatist"
+	icon = 'code/modules/halo/icons/objs/(Placeholder)card.dmi'
+	icon_state = "id"
+
 
 
 /***** SANGHEILI *****/
@@ -176,3 +181,8 @@
 	name = "Yanme'e Leader identification card"
 	icon = 'code/modules/halo/covenant/items/Cards.dmi'
 	icon_state = "droneleader_id"
+
+/obj/item/weapon/card/id/yanmee_unsc
+	name = "UNSC Yanme'e Separatist"
+	icon = 'code/modules/halo/icons/objs/(Placeholder)card.dmi'
+	icon_state = "id"

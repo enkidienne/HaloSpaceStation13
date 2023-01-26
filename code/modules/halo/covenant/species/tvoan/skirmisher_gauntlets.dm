@@ -65,3 +65,8 @@
 	icon_state = "championglove"
 	shieldstrength = 60
 	totalshields = 60
+
+/obj/item/clothing/gloves/skirmisher_shield_gauntlets/unsc
+	name = "T\'Vaoan Separatist shield gauntlets"
+	item_state = "unscshield"
+	icon_state = "unscglove"

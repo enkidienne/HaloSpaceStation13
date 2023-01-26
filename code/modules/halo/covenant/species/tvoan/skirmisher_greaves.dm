@@ -38,4 +38,10 @@
 	item_state = "champion_greaves"
 	species_restricted = list("Tvaoan Kig-Yar")
 
+/obj/item/clothing/shoes/skirmisher/unsc
+	name = "T\'Vaoan Separatist greaves"
+	icon_state = "unscboot"
+	item_state = "unsc_greaves"
+	species_restricted = list("Tvaoan Kig-Yar")
+
 #undef SKIRMISHER_CLOTHING_PATH

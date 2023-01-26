@@ -72,4 +72,10 @@
 	specials = list(/datum/armourspecials/shields/unggoy)
 	totalshields = 40
 
+/obj/item/clothing/suit/armor/special/yanmee/unsc
+	name = "UNSC Yanme'e Carapace"
+	desc = "An olive-drab carapace with integrated armour and reverse-engineered microgravity units to assist in flight."
+	icon_state = "unsc_harness"
+	item_state = "unsc_harness"
+
 #undef YANMEE_ICON
