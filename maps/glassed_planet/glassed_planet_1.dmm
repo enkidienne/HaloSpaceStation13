@@ -258,6 +258,7 @@
 "eX" = (/obj/effect/floor_decal/corner/yellow/full,/obj/machinery/food_replicator,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/glassed_planet/interior/mining_shack)
 "eY" = (/obj/effect/decal/cleanable/cobweb,/turf/simulated/floor/asteroid/planet,/area/glassed_planet/exterior/caves)
 "eZ" = (/obj/structure/lattice,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor,/area/glassed_planet/interior/outpost_groundfloor/hangar)
+"fa" = (/obj/effect/landmark/map_data{name = "KS7-535"},/obj/autolight_init/glassed_planet,/turf/unsimulated/mineral,/area/glassed_planet/exterior/caves)
 "fb" = (/mob/living/simple_animal/hostile/giant_spider/nurse,/turf/simulated/floor/asteroid/planet,/area/glassed_planet/exterior/caves)
 "fc" = (/obj/machinery/optable,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/white,/area/glassed_planet/interior/crashed_shuttle_room/med)
 "fd" = (/obj/structure/closet/crate/large,/obj/item/clothing/suit/space/emergency,/obj/item/clothing/suit/space/emergency,/obj/item/clothing/suit/space/emergency,/obj/item/clothing/suit/space/emergency,/obj/item/clothing/head/helmet/space/emergency,/obj/item/clothing/head/helmet/space/emergency,/obj/item/clothing/head/helmet/space/emergency,/obj/item/clothing/head/helmet/space/emergency,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/shuttle/yellow,/area/glassed_planet/interior/crashed_shuttle_room/cargoS)
@@ -272,7 +273,6 @@
 "fm" = (/turf/simulated/mineral/random/planet,/area/glassed_planet/exterior/autolight)
 "fn" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/asteroid/planet,/area/glassed_planet/interior/outpost_groundfloor)
 "fo" = (/obj/effect/overmap/sector/exo_depot,/turf/unsimulated/mineral,/area/glassed_planet/exterior/caves)
-"fp" = (/obj/effect/landmark/map_data{name = "KS7-535"},/turf/unsimulated/mineral,/area/glassed_planet/exterior/caves)
 "fq" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/freezer,/area/glassed_planet/interior/outpost_groundfloor)
 "fr" = (/obj/machinery/light,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/freezer,/area/glassed_planet/interior/outpost_groundfloor)
 
@@ -426,5 +426,5 @@ aaadadadadadadadadadadadadadadadadadadadadadadadadadadadadadahahahahahahahahahah
 aaaeadadadadadadadadadadadadadadadadadadadadadadadadadadadadahahahahahahahahahaeaeaeaeaeaeahahahahahahahahahahahahahahahahahahcTelelcTcTcTcTcTcTcTcTcTcTcTahahahahahahahahahahahahahahahahahahahahahaeaeaeaeaeaeaeaeaeahahahahahahaeaeaeaeaeahahahahaeaecmcmcmcmcmcmcmaeaeaeaectcScScScScScScScScScScScSctaa
 foaeadadadadadadadadadaeaeaeadadadadaeaeaeadadadadadadadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeahahahahahahahahahahahahahahahahahahcTcTcTcTahahahahahahaeahahahahahahahahahahahaeahahahahahahahahahahaeaeaeaeaeaeaeaeaeaeahahchahahahahaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaectcSedeZdicScSedcScScSdiedctaa
 aaaeadadadadadadaeaeaeaeaeaeaeadadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeahahahahahaeahahahahahahaeaeahahahahaeahahahahahaeaeaeahahahahahahahahaeaeaeaeahahahahahaeaeaeaeaeaeaeaeaeaeaeaeaeahahahaeaeaeahaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaectctctctctctctctctctctctctctaa
-fpaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+faaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}
