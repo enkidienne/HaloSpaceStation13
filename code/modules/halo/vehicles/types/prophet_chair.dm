@@ -24,8 +24,9 @@
 	smoke_step_dist = 0
 
 	acceleration = 2
-	min_speed = 8.5
-	max_speed = 2.5
+	min_speed = 7
+	max_speed = 5
+	drag = 2
 
 	light_color = "#C1CEFF"
 

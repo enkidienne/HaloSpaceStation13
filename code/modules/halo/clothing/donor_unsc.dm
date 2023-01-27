@@ -1167,34 +1167,73 @@ obj/item/clothing/head/helmet/odst/donator/moerk
 	back = /obj/item/weapon/storage/backpack/odst/nanu
 
 
-////////Pinstripe\\\\\\\\
+////////Tristain01\\\\\\\\
 
 //ODST
 
-obj/item/clothing/head/helmet/odst/donator/pinstripe
-	name = "Pinstripe's ODST Helmet"
-	item_state = "pinstripe-helmet_worn"
-	icon_state = "pinstripe-helmet_obj"
-	item_state_novisr = "pinstripe-helmet_worn"
-	icon_state_novisr = "pinstripe-helmet_obj"
+obj/item/clothing/head/helmet/odst/donator/roadcone
+	name = "Sleek ODST Helmet"
+	desc = "This ODST helmet seems to be more streamlined and form-fitting compared to other variants."
+	item_state = "roadcone-helmet_worn"
+	icon_state = "roadcone-helmet_obj"
+	item_state_novisr = "roadcone-helmet_worn"
+	icon_state_novisr = "roadcone-helmet_obj"
 
-/obj/item/clothing/suit/armor/special/odst/donator/pinstripe
-	name = "Pinstripe's ODST Armour"
-	icon_state = "pinstripe-armor_obj"
-	item_state = "pinstripe-armor_worn"
+obj/item/clothing/head/helmet/odst/donator/roadcone_orange
+	name = "Sleek Orange ODST Helmet"
+	desc = "This orange-painted ODST helmet seems to be more streamlined and form-fitting compared to other variants."
+	item_state = "roadconeorange-helmet_worn"
+	icon_state = "roadconeorange-helmet_obj"
+	item_state_novisr = "roadconeorange-helmet_worn"
+	icon_state_novisr = "roadconeorange-helmet_obj"
 
-/obj/item/weapon/storage/box/large/donator/pinstripe
-	startswith = list(/obj/item/clothing/head/helmet/odst/donator/pinstripe,
-					/obj/item/clothing/suit/armor/special/odst/donator/pinstripe
-					)
-	can_hold = list(/obj/item/clothing/head/helmet/odst/donator/pinstripe,
-					/obj/item/clothing/suit/armor/special/odst/donator/pinstripe
-					)
+/obj/item/clothing/suit/armor/special/odst/donator/roadcone
+	name = "Sleek ODST Armor"
+	desc = "This ODST armor seems to be more streamlined and form-fitting compared to other variants."
+	icon_state = "roadcone-armor_obj"
+	item_state = "roadcone-armor_worn"
+	flags_inv = HIDETAIL
 
-/decl/hierarchy/outfit/pinstripe_odst
-	name = "pinstripe - ODST"
-	head = /obj/item/clothing/head/helmet/odst/donator/pinstripe
-	suit = /obj/item/clothing/suit/armor/special/odst/donator/pinstripe
+/obj/item/clothing/suit/armor/special/odst/donator/roadcone_orange
+	name = "Sleek Orange ODST Armor"
+	desc = "This orange-painted ODST armor seems to be more streamlined and form-fitting compared to other variants."
+	icon_state = "roadconeorange-armor_obj"
+	item_state = "roadconeorange-armor_worn"
+	flags_inv = HIDETAIL
+
+/obj/item/clothing/under/unsc/marine_fatigues/roadcone
+	name = "Sleek Jumpsuit"
+	desc = "A comfortable jumpsuit fitted to military specifications."
+	icon_state = "roadcone-undersuit_obj"
+	item_state = "roadcone-undersuit_worn"
+
+/obj/item/weapon/storage/box/large/donator/roadcone
+	startswith = list(
+	/obj/item/clothing/head/helmet/odst/donator/roadcone,
+	/obj/item/clothing/suit/armor/special/odst/donator/roadcone,
+	/obj/item/clothing/head/helmet/odst/donator/roadcone_orange,
+	/obj/item/clothing/suit/armor/special/odst/donator/roadcone_orange,
+	/obj/item/clothing/under/unsc/marine_fatigues/roadcone,
+	)
+	can_hold = list(
+	/obj/item/clothing/head/helmet/odst/donator/roadcone,
+	/obj/item/clothing/suit/armor/special/odst/donator/roadcone,
+	/obj/item/clothing/head/helmet/odst/donator/roadcone_orange,
+	/obj/item/clothing/suit/armor/special/odst/donator/roadcone_orange,
+	/obj/item/clothing/under/unsc/marine_fatigues/roadcone
+	)
+
+/decl/hierarchy/outfit/roadcone_odst
+	name = "Roadcone - ODST"
+	head = /obj/item/clothing/head/helmet/odst/donator/roadcone
+	uniform = /obj/item/clothing/under/unsc/marine_fatigues/roadcone
+	suit = /obj/item/clothing/suit/armor/special/odst/donator/roadcone
+
+/decl/hierarchy/outfit/roadcone_odst_orange
+	name = "Roadcone - ODST (Orange)"
+	head = /obj/item/clothing/head/helmet/odst/donator/roadcone_orange
+	uniform = /obj/item/clothing/under/unsc/marine_fatigues/roadcone
+	suit = /obj/item/clothing/suit/armor/special/odst/donator/roadcone_orange
 
 //Spartan
 

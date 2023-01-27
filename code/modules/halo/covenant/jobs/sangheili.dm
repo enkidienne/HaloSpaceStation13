@@ -5,7 +5,7 @@
 	total_positions = 0
 	spawn_positions = 0
 	poplock_max = 1
-	poplock_divisor = 9
+	poplock_divisor = 11
 	track_players = TRUE
 	outfit_type = /decl/hierarchy/outfit/sangheili/shipmaster
 	faction_whitelist = "Covenant"
@@ -39,7 +39,7 @@
 	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
-	pop_balance_mult = 2
+	pop_balance_mult = 1.5 //Honour Guards should be staying with the Prophet, thus they see significantly less combat on the ground and are balanced accordingly.
 
 	radio_speech_size = RADIO_SPEECH_COMMANDER
 
