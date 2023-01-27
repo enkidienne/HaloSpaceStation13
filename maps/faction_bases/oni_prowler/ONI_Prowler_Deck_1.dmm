@@ -199,11 +199,15 @@
 "dQ" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/halo/oni_ship_preset{name = "Morgue"},/turf/simulated/floor/tech/white,/area/oniprowler/medbayport)
 "dR" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/multi_tile/halo/blast_normal_triple/oni_ship_preset/ns,/turf/simulated/floor/tiled/dark,/area/oniprowler/cargobay)
 "dS" = (/obj/item/clothing/suit/rubber/skrell,/turf/simulated/floor/plating,/area/oniprowler/medbayport)
-"dT" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/space)
+"dT" = (/obj/machinery/computer/cryopod,/turf/simulated/wall/r_wall,/area/oniprowler/medbayport)
 "dU" = (/obj/item/weapon/handcuffs/cable,/turf/simulated/floor/plating,/area/oniprowler/medbayport)
 "dV" = (/obj/item/clothing/suit/rubber/unathi,/turf/simulated/floor/plating,/area/oniprowler/medbayport)
 "dW" = (/obj/item/clothing/suit/rubber/tajaran,/turf/simulated/floor/plating,/area/oniprowler/medbayport)
 "dX" = (/obj/structure/bed,/obj/item/weapon/bedsheet/rainbow,/turf/simulated/floor/plating,/area/oniprowler/medbayport)
+"dY" = (/obj/machinery/cryopod/unsc,/turf/simulated/floor/tiled/white,/area/oniprowler/medbayport)
+"dZ" = (/obj/effect/landmark/start{name = "ONI Researcher"},/turf/simulated/floor/tiled/white,/area/oniprowler/medbayport)
+"ea" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/space)
+"eb" = (/obj/effect/landmark/start{name = "ONI Research Director"},/turf/simulated/floor/tiled/white,/area/oniprowler/medbayport)
 "gm" = (/obj/machinery/nav_computer/unsc,/obj/machinery/light,/obj/machinery/camera/autoname/invis/oni_prowler{icon_state = "camera"; dir = 8},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
 
 (1,1,1) = {"
@@ -240,10 +244,10 @@ aaaaaaaaaaaaaaaaaacqcrcscubLcvbLcubLbLbLcxbLbLbLbLbLbLbLbLbLbLbLbLbLcocpbNcnaXaY
 aaaaaaaaaaaaaaaaaaaNaNbYbLcwbYbLbLbLbLbLcxbLbLbLbLbLbLbLbLbLbLbLbLbLcocpbNcnbdaZaZaZbaaZaZbcbNbNbNbNbNbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaacqcFcscGbLcKbLbLbLbLbLdObLbLbLbLbLbLbLbLbLbLbLbLbLdRcpbNcnbeaZaZaZbaaZaZbcbNctbNbNbNbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaNaNaTaNcMbYcMaNdHcNaNaNcyczcAcBcyczcAcBdocDcBcBcBcBcBbNcnaXaYaZaZbaaZbbbcbNbNbNbNbNbNamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaNaNaNcOaNcZaNaNdNaNaNcEcHcIcBcEcHcIcBcHcHcHcBdScJcBbNbNdTaQaQaWaWaQaQaRbNbNbNbNbNbNamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNgmaNaNcPcQcRcBcPcQcRcBcHcHcHcBcJdUcBbNbNbNbNbNbNbNbNbNbNbNbNbNbNbNbNamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNaNcBcBcBcBcBcBcBcBdQcBcBcBcJcJcBcScScScScScScScScScSbMcUambNbNbNamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNcBcBcBcBcBcBcBcWcHcXcYcBcJdVcBdadbdcdddedddfdgdhcSdidiamamamamamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaNaNaNcOaNcZaNaNdNaNaNcEcHcIcBcEcHcIdTcHdZdYcHcBcJcBbNbNeaaQaQaWaWaQaQaRbNbNbNbNbNbNamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNgmaNaNcPcQcRcBcPcQcRcBebdZdYcHcBcJcBbNbNbNbNbNbNbNbNbNbNbNbNbNbNbNbNamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNaNcBcBcBcBcBcBcBcBdQcBcBcBcBdScBcScScScScScScScScScSbMcUambNbNbNamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNcBcBcBcBcBcBcBcWcHcXcYcBdUdVcBdadbdcdddedddfdgdhcSdidiamamamamamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNcBcBcBcBcBcBcBdjcHcHdkcBdWdXcBdldldldldldldldldldmdidicScScScSaKaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBdndldldldldldldldlcldidicSdididpaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNcBaaaaaaaaaaaaaaaaaacBcBcBcBcBcSdqdldldldldldldlcSdididPdsdidpaaaaaaaaaaaaaaaa
