@@ -3339,6 +3339,8 @@
 #include "maps\_gamemodes\_popbalance.dm"
 #include "maps\_gamemodes\gamemode_overrides.dm"
 #include "maps\_gamemodes\randantag\randantag.dm"
+#include "maps\faction_bases\complex046\complex046.dm"
+#include "maps\faction_bases\oni_prowler\include.dm"
 #include "maps\system_conquest\system_conquest.dm"
 #include "maps\~mapsystem\map_preferences.dm"
 #include "maps\~mapsystem\map_ranks.dm"
