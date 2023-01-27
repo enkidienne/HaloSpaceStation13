@@ -19,6 +19,7 @@
 
 #include "../faction_bases/cov_base/include.dm"
 #include "../faction_bases/innie_base/include.dm"
+#include "../faction_bases/unsc_base/include.dm"
 
 #include "../urf_flagship/includes.dm"
 

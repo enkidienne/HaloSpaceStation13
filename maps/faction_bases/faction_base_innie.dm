@@ -6,6 +6,7 @@
 	icon_state = "base_innie"
 	faction = "Insurrection"
 	defense_type = /obj/effect/overmap/ship/npc_ship/automated_defenses/innie
+	overmap_spawn_near_me = list(/obj/effect/overmap/ship/urf_flagship)
 	base = 1
 
 
