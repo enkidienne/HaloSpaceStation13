@@ -56,19 +56,13 @@
 
 /area/shuttle/covenant_onsite_supply
 
-/area/faction_base/cov
-
 /area/faction_base/cov_defense_platform
 
 /area/faction_base/covenant_shuttle
 
-/area/faction_base/innie
-
 /area/faction_base/innie_defense_platform
 
 /area/faction_base/innie_shuttle
-
-/area/faction_base/unsc
 
 /area/faction_base/unsc_defense_platform
 

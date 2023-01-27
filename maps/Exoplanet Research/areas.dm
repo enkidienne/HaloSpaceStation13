@@ -94,9 +94,6 @@
 /area/exo_research_facility/interior/Livingquar
 	name = "VT9-042 - Crescent Base Living Quarters"
 
-/area/exo_research_facility/interior/hangar_upper
-	name = "VT9-042 - Crescent Base Hangar Rooftop"
-
 /area/exo_research_facility/interior/external_wall_upper
 	name = "VT9-042 - Crescent Base External Upper Wall"
 	sound_env = RURAL_OPEN

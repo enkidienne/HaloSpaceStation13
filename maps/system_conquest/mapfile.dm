@@ -10,7 +10,7 @@
 	admin_levels = list()
 	accessible_z_levels = list()
 	lobby_icon = 'code/modules/halo/splashworks/title6.jpg'
-	id_hud_icons = 'maps/geminus_city/geminus_hud_icons.dmi'
+	id_hud_icons = 'maps/ks7_elmsville/hud_icons.dmi'
 
 	station_name  = "Geminus City"
 	station_short = "Geminus"

@@ -199,7 +199,7 @@
 "dQ" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/halo/oni_ship_preset{name = "Morgue"},/turf/simulated/floor/tech/white,/area/oniprowler/medbayport)
 "dR" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/multi_tile/halo/blast_normal_triple/oni_ship_preset/ns,/turf/simulated/floor/tiled/dark,/area/oniprowler/cargobay)
 "dS" = (/obj/item/clothing/suit/rubber/skrell,/turf/simulated/floor/plating,/area/oniprowler/medbayport)
-"dT" = (/obj/machinery/computer/cryopod,/turf/simulated/wall/r_wall,/area/oniprowler/medbayport)
+"dT" = (/obj/machinery/computer/cryopod{pixel_y = 32},/turf/simulated/floor/tech/maint,/area/oniprowler/holdingcells)
 "dU" = (/obj/item/weapon/handcuffs/cable,/turf/simulated/floor/plating,/area/oniprowler/medbayport)
 "dV" = (/obj/item/clothing/suit/rubber/unathi,/turf/simulated/floor/plating,/area/oniprowler/medbayport)
 "dW" = (/obj/item/clothing/suit/rubber/tajaran,/turf/simulated/floor/plating,/area/oniprowler/medbayport)
@@ -223,10 +223,11 @@
 "eo" = (/obj/machinery/camera/autoname/invis/oni_prowler,/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
 "ep" = (/obj/structure/bed/chair/comfy/captain{dir = 8; icon_state = "capchair_preview"; name = "Bridge chair"; tag = "icon-capchair_preview (WEST)"},/obj/machinery/light,/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
 "eq" = (/obj/machinery/light,/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
-"er" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/space)
+"er" = (/obj/machinery/computer/cryopod{pixel_x = -32},/turf/simulated/floor/tiled/white,/area/oniprowler/medbayport)
 "es" = (/obj/machinery/oxygen_pump/anesthetic{name = "surgery anesthetic"; pixel_y = -32},/obj/machinery/optable,/obj/machinery/light,/turf/simulated/floor/tech/white,/area/oniprowler/medbayport)
 "et" = (/obj/effect/landmark/start{name = "ONI Research Director"},/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tiled/white,/area/oniprowler/medbayport)
 "eu" = (/obj/machinery/light,/turf/simulated/floor/tiled/white,/area/oniprowler/medbayport)
+"ev" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/space)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -243,7 +244,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababab
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababababababababaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababacadaeafabababababaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagabababababasahahahahaMababababaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagabababababasahahahdTaMababababaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagagabababajakalahahaiababababaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagamamabababababdraoabababababaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagamamamababapapanahahabarawataaaaaaaaaaaaaaaa
@@ -262,7 +263,7 @@ aaaaaaaaaaaaaaaaaacqcrencubLcvbLeobLbLbLcxbLbLbLbLbLbLbLbLbLbLbLbLbLcocpbNcnaXaZ
 aaaaaaaaaaaaaaaaaaaNaNbYbLcwbYbLbLbLbLbLcxbLbLbLbLbLbLbLbLbLbLbLbLbLcocpbNcnbdaZaZaZbaaZaZbcbNbNbNbNbNbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaacqcFepcGbLcKbLeqbLbLbLdObLbLbLbLbLbLbLbLbLbLbLbLbLdRcpbNcnbeaZaZaZbaaZaZbcbNctbNbNbNbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaNaNaTaNcMbYcMaNdHcNaNaNcyczcAcBcyczcAcBdocDcBcBcBcBcBemcnaXaZaZaZbaaZaZbcbNbNbNbNbNbNamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaNaNaNcOaNcZaNaNdNaNaNdqcHcHcBdqcHcHdTcHdZdYcHcBcJcBbNbNeraQaQaWaWaQaQaRbNbNbNbNbNdaamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaNaNaNcOaNcZaNaNdNaNaNdqcHcHcBdqcHcHcBerdZdYcHcBcJcBbNbNevaQaQaWaWaQaQaRbNbNbNbNbNdaamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNdDaNaNcPescRcBcPescRcBetdZdYcHcBcJcBbNbNbNbNeabNbNbNbNeabNbNeabNbNbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNaNcBcBcBcBcBcBcBcBdQcBcBcBcBdScBcScScScScScScScScScSbMcUambNbNbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNcBcBcBcBcBcBcBeccHcXcYcBdUdVcBeddbdcdddedddfdgeecSdidiamamamamamaaaaaaaaaaaaaa
