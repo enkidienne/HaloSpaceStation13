@@ -74,8 +74,6 @@
 
 /area/faction_base/unsc_shuttle
 
-/area/faction_base/oni
-
 //OBJECTS//
 
 /obj/effect/shuttle_landmark/innie_offsite_supply
