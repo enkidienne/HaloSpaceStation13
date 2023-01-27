@@ -23,13 +23,22 @@
 		return 0
 	var/parry_chance_divisor = 1
 	var/force_half_damage = 0
+	var/is_proj = 0
 	var/obj/item/weapon/gun/this_weapon = src
 	if(istype(this_weapon) && this_weapon.one_hand_penalty == -1 && !this_weapon.is_held_twohanded(user))//Ensure big twohanded guns are worse at parrying when not twohanded.
 		parry_chance_divisor = 2
+	if(istype(damage_source,/obj/item/projectile))
+		parry_chance_divisor = 2 //Drastically lower the chance of parrying bullets.
+		is_proj = 1
 	if(!prob((BASE_WEAPON_PARRYCHANCE * (w_class - 1))/parry_chance_divisor)) //Do our base parrychance calculation.
 		return 0
+	if(is_proj && prob(1))
+		sound_to(user,'code/modules/halo/sounds/effects/rules_of_nature.ogg')
 	else if (attacker)
-		visible_message("<span class = 'danger'>[user] parries [attacker]'s [damage_source.name] with their [src.name]</span>")
+		var/verb_use = "parries"
+		if(is_proj)
+			verb_use = "blocks"
+		visible_message("<span class = 'danger'>[user] [verb_use] [attacker]'s [damage_source.name] with their [src.name]</span>")
 		playsound(loc, hitsound, 50, 1, -1)
 		if(istype(damage_source,/obj/item))
 			playsound(loc, damage_source.hitsound, 50, 1, -1)
@@ -41,7 +50,7 @@
 	var/mob/living/mob_holding_disintegrated
 
 	//Grab a set of references to the weapon and person being disintegrated.
-	if(istype(damage_source,/obj/item/projectile))
+	if(istype(damage_source,/obj/item/projectile) && parry_slice_objects)
 		item_to_disintegrate = damage_source
 		mob_holding_disintegrated = null
 	else if(parry_slice_objects && !damage_source.parry_slice_objects && !damage_source.unacidable)
@@ -65,14 +74,8 @@
 			item_to_disintegrate.force = orig_force
 		return 0
 
-	if(prob(1))
-		sound_to(user,'code/modules/halo/sounds/effects/rules_of_nature.ogg')
 	if(damage_source && !mob_holding_disintegrated)
-		if(parry_slice_objects)
-			visible_message("<span class = 'danger'>[user] slices [damage_source] in half!</span>")
-		else
-			visible_message("<span class = 'danger'>[user] blocks [damage_source] with their [src]</span>")
-			return 1
+		visible_message("<span class = 'danger'>[user] slices [damage_source] in half!</span>")
 	else
 		visible_message("<span class = 'danger'>[item_to_disintegrate == damage_source ? "[user]" : "[attacker]"] cuts through [mob_holding_disintegrated]'s [item_to_disintegrate.name] with their [item_to_disintegrate == damage_source ? "[src.name]" : "[damage_source.name]"], rendering it useless!</span>")
 	if(mob_holding_disintegrated)
