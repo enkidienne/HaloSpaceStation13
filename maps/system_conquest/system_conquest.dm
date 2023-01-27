@@ -21,6 +21,8 @@
 #include "../faction_bases/innie_base/include.dm"
 #include "../faction_bases/unsc_base/include.dm"
 
+#include "../faction_bases/oni_prowler/include.dm"
+
 #include "../urf_flagship/includes.dm"
 
 #include "../CRS_Unyielding_Transgression/includes.dm"

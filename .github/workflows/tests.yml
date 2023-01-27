@@ -63,6 +63,7 @@ jobs:
           - base_assault_neutral_base_taurus
           - geminus_city         
           - geminus_city_urf_active
+          - system_conquest
           #- example
           #- overmap_example
     
