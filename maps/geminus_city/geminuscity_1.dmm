@@ -109,10 +109,12 @@
 "ce" = (/obj/machinery/light,/turf/simulated/floor/plating,/area/geminus_underground/southeast)
 "cf" = (/turf/unsimulated/mineral,/area/geminus_underground)
 "cg" = (/turf/simulated/mineral/planet,/area/geminus_underground)
+"ch" = (/obj/machinery/camera{c_tag = "Shuttle Airlock"; dir = 8; network = list("MINE")},/obj/machinery/conveyor_switch/oneway{id = "mining_internal"; name = "mining conveyor"},/turf/simulated/floor/decor{tag = "icon-stonepavement"; icon_state = "stonepavement"},/area/geminus_underground/northwest)
 "ci" = (/turf/unsimulated/mineral,/area/geminus_underground/north)
 "cj" = (/turf/simulated/mineral/random/planet,/area/geminus_underground/northwest)
 "ck" = (/turf/simulated/mineral/random/planet,/area/geminus_underground/southwest)
 "cl" = (/turf/simulated/mineral/random/planet,/area/geminus_underground/south)
+"cm" = (/obj/machinery/camera/autoname{dir = 8},/turf/simulated/floor/decor{tag = "icon-techfloor_white"; icon_state = "techfloor_white"},/area/geminus_underground/northwest)
 "cn" = (/turf/simulated/mineral/random/planet,/area/geminus_underground)
 "co" = (/turf/unsimulated/mineral,/area/geminus_underground/northwest)
 "cp" = (/obj/machinery/light/small{icon_state = "bulb1"; dir = 1},/turf/simulated/floor/pavement/empty,/area/geminus_underground/northwest)
@@ -180,7 +182,6 @@
 "dB" = (/obj/machinery/conveyor{dir = 4; id = "mining_internal"},/turf/simulated/floor/plating,/area/geminus_underground/northwest)
 "dC" = (/obj/machinery/conveyor{dir = 4; id = "mining_internal"},/obj/structure/plasticflaps/mining,/turf/simulated/floor/plating,/area/geminus_underground/northwest)
 "dD" = (/obj/machinery/conveyor{dir = 9; id = "mining_internal"},/turf/simulated/floor/plating,/area/geminus_underground/northwest)
-"dE" = (/obj/machinery/camera{c_tag = "Shuttle Airlock"; dir = 8; network = list("MINE")},/obj/machinery/conveyor_switch/oneway{id = "mining_internal"; name = "mining conveyor"},/turf/simulated/floor/decor{tag = "icon-stonepavement"; icon_state = "stonepavement"},/area/geminus_underground/northwest)
 "dF" = (/obj/effect/wingrille_spawn/reinforced/full,/turf/simulated/floor/decor{tag = "icon-techfloor_white"; icon_state = "techfloor_white"},/area/geminus_underground/northwest)
 "dG" = (/obj/machinery/conveyor{dir = 2; id = "mining_internal"},/obj/machinery/light/small{dir = 4; pixel_y = 8},/turf/simulated/floor/plating,/area/geminus_underground/northwest)
 "dH" = (/obj/structure/noticeboard{pixel_y = 27},/turf/simulated/floor/decor{tag = "icon-stonepavement"; icon_state = "stonepavement"},/area/geminus_underground/northwest)
@@ -193,7 +194,6 @@
 "dO" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/decor{tag = "icon-stonepavement"; icon_state = "stonepavement"},/area/geminus_underground/northwest)
 "dP" = (/obj/machinery/door/window/westright{name = "Production Area"},/mob/living/simple_animal/npc/colonist/mineral_trader,/turf/simulated/floor/decor{tag = "icon-techfloor_white"; icon_state = "techfloor_white"},/area/geminus_underground/northwest)
 "dQ" = (/turf/simulated/floor/decor{tag = "icon-techfloor_white"; icon_state = "techfloor_white"},/area/geminus_underground/northwest)
-"dR" = (/obj/machinery/camera{c_tag = "Production Room"; dir = 8; network = list("MINE")},/turf/simulated/floor/decor{tag = "icon-techfloor_white"; icon_state = "techfloor_white"},/area/geminus_underground/northwest)
 "dS" = (/obj/machinery/mineral/input,/turf/simulated/floor/plating,/area/geminus_underground/northwest)
 "dT" = (/obj/structure/closet/secure_closet/miner,/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/decor{tag = "icon-stonepavement"; icon_state = "stonepavement"},/area/geminus_underground/northwest)
 "dU" = (/obj/structure/closet/secure_closet/miner,/obj/machinery/light_construct{tag = "icon-tube-construct-stage1 (NORTH)"; icon_state = "tube-construct-stage1"; dir = 1},/turf/simulated/floor/decor{tag = "icon-stonepavement"; icon_state = "stonepavement"},/area/geminus_underground/northwest)
@@ -273,9 +273,9 @@ coaaaaaaaaaaaaaaaacjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcj
 coaaaaaaaaaaaaaaaacjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbbbbadaeaeaeadbbbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxcncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncf
 coaaaaaaaaaaaaaaaacjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjbabababababababababababacjcjcjcjcjcjcjbacMbacjcjbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbbbbadaeaeaeadbbbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxcncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncf
 coaaaaaaaaaaaaaaaacjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjbadxcCdydzdAdBdBdCdBdDbacjcjcjcjcjcjcjbabdbacjcjbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbbbbadcRaeaeadbbbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxcncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncf
-coaaaaaaaaaaaaaaaacjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjbgbgbgbgbgbgbacCdEbabababababadFdGbacjcjcjcjcjcjcjbabdbacjcjbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbbbbadaeaeaeadbbbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxcncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncf
+coaaaaaaaaaaaaaaaacjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjbgbgbgbgbgbgbacCchbabababababadFdGbacjcjcjcjcjcjcjbabdbacjcjbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbbbbadaeaeaeadbbbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxcncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncf
 coaaaaaaaaaaaaaaaacjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjbgbgbgbgbgbgbacCcCdHdIdJdKdLdMdFdNbacjcjcjcjcjcjcjbabdbacjcjbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbbbbadbXaebYadbbbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxcncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncf
-coaaaaaaaaaaaaaaaacjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjbgbgaVaVaVaVbabadOcCcCdPdQdQdRdFdSbacjcjcjcjcjcjcjbabdbacjcjbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbbbbadaeaeaeadbbbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxcncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncf
+coaaaaaaaaaaaaaaaacjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjbgbgaVaVaVaVbabadOcCcCdPdQdQcmdFdSbacjcjcjcjcjcjcjbabdbacjcjbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbbbbadaeaeaeadbbbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxcncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncf
 coaaaaaaaaaaaaaaaacjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjbgbgaVcxcycxdTdUcCcCcCdVdQdWdQdXdYbacjcjcjcjcjcjcjbabdbacjcjbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbbbbadaeaecRadbbbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxcncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncf
 cocjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjbgbgcCcCcCcCdZcCcCcCcCeaebdQdQdFecbacjcjcjcjcjcjcjbabdbacjcjbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbbbbadcRaeaeadbbbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxcncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncf
 cocjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjcjbgbgcBcCcCcCedcCcCcCeedFdFdFefdFdGbacjcjcjcjcjcjcjbabdbabgbgbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbadaeaeaeadbbbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxbxcncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncncf
