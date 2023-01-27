@@ -66,6 +66,8 @@
 	selection_color = "#ff0000"
 	alt_titles = null
 
+	radio_speech_size = RADIO_SPEECH_LEADER
+
 /datum/job/geminus_innie/officer/equip(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch)
 	. = ..()
 
@@ -85,6 +87,8 @@
 	faction_whitelist = "Insurrection"
 	alt_titles = null
 
+	radio_speech_size = RADIO_SPEECH_COMMANDER
+
 /datum/job/geminus_innie/commander/equip(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch)
 	. = ..()
 
@@ -100,6 +104,8 @@
 	access = list(access_innie, access_innie_boss, access_innie_cargo)
 	faction_whitelist = "Insurrection"
 
+	radio_speech_size = RADIO_SPEECH_SPECIALIST
+
 /datum/job/insurrectionist_ai
 	title = "Insurrectionist AI"
 	spawn_faction = "Insurrection"
@@ -109,3 +115,5 @@
 	outfit_type = /decl/hierarchy/outfit/halo_ai_smart
 	//faction_whitelist = "Insurrection"
 	whitelisted_species = list()
+
+	radio_speech_size = RADIO_SPEECH_SPECIALIST

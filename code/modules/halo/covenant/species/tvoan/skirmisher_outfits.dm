@@ -87,3 +87,19 @@
 /decl/hierarchy/outfit/skirmisher_champion/armed
 	name = "Armed T\'Vaoan Skirmisher Champion"
 	belt = /obj/item/weapon/gun/energy/plasmapistol
+
+/decl/hierarchy/outfit/skirmisher_unsc
+	name = "T\'Vaoan Separatist"
+	l_ear = /obj/item/device/radio/headset/unsc/marine
+	uniform = /obj/item/clothing/under/kigyar
+	suit = /obj/item/clothing/suit/armor/special/skirmisher/unsc
+	belt = null
+	l_hand = /obj/item/language_learner/unggoy_to_common
+	r_hand = /obj/item/weapon/melee/blamite/cutlass
+	l_pocket = null
+	head = /obj/item/clothing/head/helmet/kigyar/skirmisher/unsc
+	gloves = /obj/item/clothing/gloves/skirmisher_shield_gauntlets/unsc
+	shoes = /obj/item/clothing/shoes/skirmisher/unsc
+	//
+	id_type = /obj/item/weapon/card/id/skirmisher_unsc
+	id_slot = slot_wear_id

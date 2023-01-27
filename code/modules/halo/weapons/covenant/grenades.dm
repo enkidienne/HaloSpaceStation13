@@ -1,5 +1,4 @@
 #define ADHERENCE_TIME 5
-#define PLASNADE_EMBEDDED_DAM_ADD 10
 
 //plasma grenade visual effect
 /obj/effect/plasma_explosion
@@ -65,7 +64,7 @@
 	else
 		L.embed(src)
 		A.visible_message("<span class = 'danger'>[src.name] sticks to [L.name]!</span>")
-		det_time += 1.5 SECONDS
+		det_time += 15
 	. = ..()
 
 /obj/item/weapon/grenade/plasma/detonate()
@@ -86,7 +85,6 @@
 				M.playsound_local(epicenter, 'code/modules/halo/sounds/Plasmanadedetonate.ogg', 100, 1)
 	var/mob/living/carbon/human/mob_containing = loc
 	if(istype(mob_containing))
-		alt_explosion_damage_max += PLASNADE_EMBEDDED_DAM_ADD
 		do_alt_explosion()
 		explosion(get_turf(src), -1, 2, 2, 0)
 		mob_containing.contents -= src
@@ -106,4 +104,3 @@
 	alt_explosion_damage_max = 60
 
 #undef ADHERENCE_TIME
-#undef PLASNADE_EMBEDDED_DAM_ADD

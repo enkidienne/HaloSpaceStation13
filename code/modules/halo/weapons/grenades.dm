@@ -7,7 +7,7 @@
 	num_fragments = 8
 	can_adjust_timer = 0
 	starttimer_on_hit = 1
-	det_time = 20
+	det_time = 30
 	explosion_size = 3
 	alt_explosion_range = 3
 	alt_explosion_damage_max = 40
@@ -20,7 +20,7 @@
 /obj/item/weapon/grenade/frag/m9_hedp/throw_impact(var/mob/living/mob_hit)
 	. = ..()
 	if(istype(mob_hit) && loc != mob_hit) //If we hit a mob and they don't catch us, then lower our det time by a second.
-		det_time -= 5
+		det_time -= 15
 
 /obj/item/weapon/storage/box/m9_frag
 	name = "box of M9 frag grenades (WARNING)"

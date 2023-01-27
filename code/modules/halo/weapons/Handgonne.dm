@@ -8,7 +8,7 @@
 	icon_state = "handcannon"
 	item_state = "handgonne"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
-	caliber = "14.5mm"
+	caliber = "14.5mmtracerless"
 	screen_shake = 1 //extra kickback
 	max_shells = 3
 	one_hand_penalty = 0

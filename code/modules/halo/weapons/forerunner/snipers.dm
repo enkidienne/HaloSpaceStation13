@@ -18,13 +18,12 @@
 	accuracy = -8
 	screen_shake = 0
 	dispersion = list(0)
-	fire_delay = 12
 	burst = 2
 	burst_delay = 1
 	fire_delay = 8
 
 	is_charged_weapon = 1
-	arm_time = 5
+	arm_time = 2
 	charge_sound = null
 	auto_eject = 1
 

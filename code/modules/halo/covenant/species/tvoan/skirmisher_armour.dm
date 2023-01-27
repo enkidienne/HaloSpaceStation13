@@ -37,3 +37,8 @@
 	icon_state = "champion_obj"
 	item_state = "champion"
 	specials = list(/datum/armourspecials/holo_decoy)
+
+/obj/item/clothing/suit/armor/special/skirmisher/unsc
+	name = "T\'Vaoan Separatist harness"
+	icon_state = "unsc_obj"
+	item_state = "unsc"

@@ -1426,6 +1426,7 @@
 #include "code\modules\games\tarot.dm"
 #include "code\modules\genetics\side_effects.dm"
 #include "code\modules\ghosttrap\trap.dm"
+#include "code\modules\halo\_defs_radio_speech_sizes.dm"
 #include "code\modules\halo\difficulty_setting.dm"
 #include "code\modules\halo\languages.dm"
 #include "code\modules\halo\abilities\dodge_roll.dm"

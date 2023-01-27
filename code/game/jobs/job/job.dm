@@ -59,6 +59,9 @@
 
 	var/lace_access = 0 //Forces the job to have a neural lace, so we can store the access in it instead of in the ID..
 
+	var/radio_speech_size = 100 //Percent. What size should our radio-speech be, when heard by our faction-members?
+	var/radio_speech_faction = 1 //Should our radio speech modifier apply to solely our faction, or everyone?
+
 /datum/job/New()
 	..()
 	if(prob(100-availablity_chance))	//Close positions, blah blah.

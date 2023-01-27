@@ -45,12 +45,6 @@
 
 /* SRS99 */
 
-/decl/hierarchy/supply_pack/unsc_specammo/srs99_m233 //Same as M232 but the projectile's invisible.
-	name = "SRS99 14.5mm M233 tracerless magazines (2x4 boxes)"
-	cost = 200
-	contains = list(/obj/item/weapon/storage/box/srs99_m233 = 2)
-	containername = "\improper SRS99 ammo crate (M233 tracerless)"
-
 /decl/hierarchy/supply_pack/unsc_specammo/srs99_m234 //High Velocity Armor Piercing.
 	name = "SRS99 14.5mm M234 HVAP magazines (2x4 boxes)"
 	cost = 500
@@ -113,12 +107,6 @@
 	containername = "\improper M5 ammo crate (M443 rubber)"
 
 /* SRS99 */
-
-/decl/hierarchy/supply_pack/oni_specammo/srs99_m233 //Same as M232 but the projectile's invisible.
-	name = "SRS99 14.5mm M233 tracerless magazines (2x4 boxes)"
-	cost = 200
-	contains = list(/obj/item/weapon/storage/box/srs99_m233 = 2)
-	containername = "\improper SRS99 ammo crate (M233 tracerless)"
 
 /decl/hierarchy/supply_pack/oni_specammo/srs99_m234 //High Velocity Armor Piercing.
 	name = "SRS99 14.5mm M234 HVAP magazines (2x4 boxes)"

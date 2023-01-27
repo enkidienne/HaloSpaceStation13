@@ -79,6 +79,9 @@
 	name = "Lesser Prophet"
 	suit = /obj/item/clothing/suit/armor/special/shielded_prophet_robe
 	l_ear = /obj/item/device/radio/headset/covenant
+	r_hand = /obj/item/weapon/gun/projectile/boltshot
+	l_pocket = /obj/item/ammo_magazine/boltshot
+	r_pocket =  /obj/item/ammo_magazine/boltshot_sg
 	//
 	id_type = /obj/item/weapon/card/id/prophet
 	id_slot = slot_wear_id

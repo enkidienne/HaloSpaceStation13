@@ -17,6 +17,8 @@
 		access_unsc_odst,\
 		access_unsc_specialist)
 
+	radio_speech_size = RADIO_SPEECH_SPECIALIST
+
 /datum/job/unsc/odst/squad_leader
 	title = "Orbital Drop Shock Trooper Officer"
 	department_flag = COM
@@ -37,3 +39,5 @@
 		access_unsc_odst,\
 		access_unsc_specialist,\
 		access_unsc_cargo)
+
+	radio_speech_size = RADIO_SPEECH_LEADER
