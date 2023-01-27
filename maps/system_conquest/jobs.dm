@@ -1,7 +1,7 @@
 
 /datum/map/system_conquest
 	allowed_jobs = list(
-//KS7//
+	//KS7//
 	/datum/job/colonist,
 	/datum/job/colonist/mayor,
 	/datum/job/colonist/aerodrome,
@@ -13,7 +13,7 @@
 	/datum/job/colonist/bartender,
 	/datum/job/colonist/chef,
 	/datum/job/colonist/librarian_museum,
-//UNSC//
+	//UNSC//
 	/datum/job/unsc/spartan_two,
 	/datum/job/unsc/crew,
 	/datum/job/unsc/medical,
@@ -28,7 +28,7 @@
 	/datum/job/unsc/oni/research,
 	/datum/job/unsc/oni/research/director,
 	/datum/job/unsc_ai,
-//Covenant//
+	//Covenant//
 	/datum/job/covenant/AI,
 	/datum/job/covenant/huragok,
 	/datum/job/covenant/sangheili_minor,
@@ -54,7 +54,7 @@
 	/datum/job/covenant/yanmee_ultra,
 	/datum/job/covenant/yanmee_leader,
 	/datum/job/covenant/mgalekgolo,
-//Innie//
+	//Innie//
 	/datum/job/geminus_innie,
 	/datum/job/geminus_innie/officer,
 	/datum/job/geminus_innie/commander,

@@ -1,5 +1,8 @@
+#include "faction_base.dm"
 
 /* INNIE BASE */
+//Placeholders to deter runtimes
+/obj/effect/overmap/ship/urf_flagship
 
 /obj/effect/overmap/ship/faction_base/innie
 	name = "Camp New Hope"

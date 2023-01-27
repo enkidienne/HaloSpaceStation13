@@ -1,3 +1,4 @@
+#include "faction_base.dm"
 
 /* UNSC BASE */
 //Placeholders to deter runtimes

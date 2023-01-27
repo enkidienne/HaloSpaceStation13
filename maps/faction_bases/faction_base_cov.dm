@@ -1,5 +1,8 @@
+#include "faction_base.dm"
 
 /* COVENANT BASE */
+//Placeholders to deter runtimes.
+/obj/effect/overmap/ship/covenant_light_cruiser
 
 /obj/effect/overmap/ship/faction_base/cov
 	name = "Vanguard's Mantle"
