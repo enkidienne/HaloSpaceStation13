@@ -68,6 +68,8 @@
 
 /area/faction_base/innie_shuttle
 
+/area/faction_base/unsc
+
 /area/faction_base/unsc_defense_platform
 
 /area/faction_base/unsc_shuttle
