@@ -97,8 +97,8 @@
 /datum/armourspecials/cloaking/on_drop(var/obj/source_armour)
 	if(!user)
 		return
-
-	deactivate_cloak(0)
+	if(cloak_active)
+		deactivate_cloak(0)
 
 /datum/armourspecials/cloaking/cov_specops
 	min_alpha = 45
