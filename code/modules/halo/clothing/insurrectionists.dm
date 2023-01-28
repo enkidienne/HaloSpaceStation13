@@ -85,7 +85,10 @@
 	item_state = "x52light"
 	icon_state = "x52lightobj"
 	armor = list(melee = 50, bullet = 40, laser = 50,energy = 20, bomb = 25, bio = 0, rad = 0)
-	slowdown_general = -0.1
+
+/obj/item/clothing/suit/storage/x52armor/light/New()
+	. = ..()
+	slowdown_per_slot[slot_wear_suit] = -0.1
 
 /obj/item/clothing/suit/storage/x52armor/medium
 	name = "V12D Body Armor"
@@ -158,7 +161,10 @@
 /obj/item/clothing/head/helmet/innie/light
 	desc = "The LV28L an armored helmet composed of materials salvaged from a wide array of UNSC equipment for a lightweight design crafted by X-52 for the new armor series being rolled out from Eridanus Secundus"
 	armor = list(melee = 50, bullet = 25, laser = 45,energy = 20, bomb = 20, bio = 0, rad = 0)
-	slowdown_general = -0.1
+
+/obj/item/clothing/head/helmet/innie/light/New()
+	. = ..()
+	slowdown_per_slot[slot_head] = -0.05
 
 /obj/item/clothing/head/helmet/innie/light/brown
 	name = "LV28L Armored Helmet - Brown Camo"
@@ -293,7 +299,10 @@
 /obj/item/clothing/shoes/innie_boots/light
 	desc = "An older standard issue combat boots model of the VZG7 Armored Boots modified with less plating for light movement."
 	armor = list(melee = 35, bullet = 35, laser = 0, energy = 15, bomb = 10, bio = 0, rad = 0)
-	slowdown_general = -0.1
+
+/obj/item/clothing/shoes/innie_boots/New()
+	. = ..()
+	slowdown_per_slot[slot_legs] = -0.05
 
 /obj/item/clothing/shoes/innie_boots/light/brown
 	name = "VZG4L Armored Boots - Brown Camo"
@@ -364,7 +373,10 @@
 	icon_state = "l_innie_chest_obj_blue"
 	blood_overlay_type = "l_innie_chest_blue"
 	armor = list(melee = 45, bullet = 50, laser = 35, energy = 40, bomb = 30, bio = 0, rad = 0)
-	slowdown_general = -0.1 //full light set = -0.3, between normal human and elite.
+
+/obj/item/clothing/suit/storage/innie/light/New()
+	. = ..()
+	slowdown_per_slot[slot_wear_suit] = -0.05 //Full innie suit is just above odst/elite/spartan at -0.15
 
 /obj/item/clothing/suit/storage/innie/light/blue
 	name = "M22L Body Armor - Blue Camo"
@@ -582,14 +594,13 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	unacidable = 1
 	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic,/obj/item/weapon/tank)
-	slowdown_general = -1
 	armor_thickness = 15
 	armor_thickness_max = 15
 	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 15, bio = 30, rad = 30)
 
 /obj/item/clothing/suit/justice/zeal/New()
 	. = ..()
-	slowdown_per_slot[slot_wear_suit] = 1
+	slowdown_per_slot[slot_wear_suit] = -1
 	pocket_curr = new/obj/item/weapon/storage/internal/pockets(src,2,ITEM_SIZE_SMALL,null,ARMOUR_POCKET_CANHOLD)
 
 
