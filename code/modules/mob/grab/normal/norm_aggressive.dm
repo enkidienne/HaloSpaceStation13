@@ -22,9 +22,6 @@
 /datum/grab/normal/aggressive/process_effect(var/obj/item/grab/G)
 	var/mob/living/carbon/human/affecting = G.affecting
 
-	affecting.drop_l_hand()
-	affecting.drop_r_hand()
-
 	// Keeps those who are on the ground down
 	if(affecting.lying)
 		affecting.Weaken(4)

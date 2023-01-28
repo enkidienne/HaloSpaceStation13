@@ -95,8 +95,8 @@
 		return
 
 /datum/grab/proc/let_go(var/obj/item/grab/G)
-	let_go_effect(G)
 	G.force_drop()
+	let_go_effect(G)
 
 /datum/grab/proc/process(var/obj/item/grab/G)
 	var/diff_zone = G.target_change()
