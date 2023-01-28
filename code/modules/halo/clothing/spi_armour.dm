@@ -133,7 +133,10 @@
 	/datum/armourspecials/gear/spi_gloves/gen2,\
 	/datum/armourspecials/gear/spi_boots/gen2,\
 	)
-	slowdown_general = -0.1
+
+/obj/item/clothing/suit/armor/special/SPIgen1/gen2/New()
+	. = ..()
+	slowdown_per_slot[slot_wear_suit] = -0.1
 
 /obj/item/clothing/shoes/magboots/SPIgen1/gen2
 	armor_thickness = 20
