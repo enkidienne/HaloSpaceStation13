@@ -252,7 +252,7 @@
 "eR" = (/obj/machinery/atmospherics/unary/freezer{dir = 1; icon_state = "freezer_1"; set_temperature = 0; use_power = 1},/obj/effect/floor_decal/industrial/warning/full,/turf/simulated/floor/plating,/area/faction_base/innie)
 "eS" = (/obj/machinery/atmospherics/binary/fusion_cooling{tag = "icon-cooling_manifold (WEST)"; icon_state = "cooling_manifold"; dir = 8},/obj/effect/floor_decal/industrial/warning/full,/turf/simulated/floor/plating,/area/faction_base/innie)
 "eT" = (/obj/machinery/atmospherics/pipe/simple/visible/blue{dir = 9},/obj/machinery/power/apc{dir = 4; name = "APC"; pixel_x = 24; pixel_y = 0},/obj/effect/floor_decal/industrial/warning{dir = 4},/obj/structure/cable/blue,/turf/simulated/floor/plating,/area/faction_base/innie)
-"eU" = (/obj/machinery/door/airlock/external{_wifi_id = 200; frequency = 1379; icon_state = "door_locked"; id_tag = "Listen_Airlock_Inner"; locked = 1; name = "Exterior Airlock"; req_access = list(11,13)},/turf/simulated/wall/r_wall,/area/faction_base/innie)
+"eU" = (/obj/machinery/door/airlock/external,/turf/simulated/floor/tiled/dark,/area/faction_base/innie)
 "eV" = (/obj/item/weapon/stool/padded,/obj/effect/floor_decal/corner/purple/three_quarters,/obj/effect/floor_decal/corner/pink/diagonal,/obj/effect/landmark/start/innie_base_fallback,/turf/simulated/floor/tiled/dark,/area/faction_base/innie)
 "eW" = (/obj/structure/closet,/obj/random/gloves,/obj/random/clothing,/obj/random/clothing,/turf/simulated/floor/tiled/dark,/area/faction_base/innie)
 "eX" = (/obj/structure/curtain/open/bed,/obj/structure/bed/padded,/obj/effect/floor_decal/corner/beige{icon_state = "corner_white"; dir = 10},/turf/simulated/floor/tiled/dark,/area/faction_base/innie)
@@ -314,7 +314,6 @@
 "gb" = (/obj/structure/table/steel,/obj/random/ammo,/turf/simulated/floor,/area/faction_base/innie)
 "gc" = (/obj/structure/table/steel,/obj/random/loot,/turf/simulated/floor,/area/faction_base/innie)
 "gd" = (/obj/structure/table/rack,/obj/random/handgun,/obj/random/handgun,/turf/simulated/floor/plating,/area/faction_base/innie)
-"ge" = (/obj/machinery/door/airlock/external{_wifi_id = 200; frequency = 1379; icon_state = "door_locked"; id_tag = "Listen_Airlock_Inner"; locked = 1; name = "Exterior Airlock"; req_access = list(11,13)},/turf/simulated/floor/tiled/dark,/area/faction_base/innie)
 "gf" = (/obj/machinery/portable_atmospherics/canister/oxygen,/obj/effect/floor_decal/industrial/outline,/obj/effect/floor_decal/industrial/warning/full,/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/plating,/area/faction_base/innie)
 "gg" = (/obj/machinery/portable_atmospherics/canister/oxygen,/obj/effect/floor_decal/industrial/outline,/obj/effect/floor_decal/industrial/warning/full,/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/simulated/floor/plating,/area/faction_base/innie)
 "gh" = (/obj/structure/table/woodentable,/turf/simulated/floor/wood,/area/faction_base/innie)
@@ -629,7 +628,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababaeafaAaAaAaAaAaffwamfxaAaAaAaAaAaAaA
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaeafaAaAckdyaAaffCfDafaAaAckaAaAaAbraAaAaAaAckaAaAaAaAaAaAaAaAbraAaAaAckaAaAbraAaAaAaAckaAaAaAbraAfzbrjzjzflfbamamamamamfmamjzdZababababababaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaeafafayafafafafafafafafafafafaAaAafafafcqafafafafafafafafcqafafafafafafaAaAafafaffFafafafafafafaAaAafeJfGfHfIfIfJfJfJfJfKamfLdZabbpabababaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaeaeaeaeaeaeaeafafaffMfMfNfOaffPaAaffQfQaAfQfQaffRfSdSdSfTamfVfWfXfYafafaAaAaffnjzjzfZafcOcPcQafaAaAbnjzgagbjzjzjzjzjzjzgcgagddZababacababaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababaebpabababbpeUckgeaAaAaAaAcqaAaAafgffQaAfQggafamamamamamamamamamamafbnaAaAaffwamjzgjafcXaAaAcqaAaAeYgkgkgldVjzjzjzjzjzgljzgddZababababaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababaebpabababbpeUckeUaAaAaAaAcqaAaAafgffQaAfQggafamamamamamamamamamamafbnaAaAaffwamjzgjafcXaAaAcqaAaAeYgkgkgldVjzjzjzjzjzgljzgddZababababaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababaeaeaeaeafafgmgnaAaAaAafaAaAaffQfQaAfQfQafgogpamgqgramamgqgsgtafguaAcDaffCfDgvgwafdjaAdkafaAcDafgxgxgxgyjzjzjzjzjzjzdVamdZababababaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaeaeaeaeaeaeaeaeafgzgAgBgCafazaAafafafcqafafafafafafafafcqafafafafafafaAaAafafafafafafafafafafaAaAafafafafafafeYafayafafafafafafababaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaababababaeaeaeaeaeaeaeaeafafafafafdlaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAcdaAaAaAaAaAaAaAaAaAaAaAaAaAcdaAaAaAafafaeaeaeaeaebsaeaebsaeaeabababaaaaaaaaaaaaaaaaaaaaaaaa

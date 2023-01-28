@@ -6,6 +6,8 @@
 
 #include "jobs.dm"
 
+#include "unit_tests.dm"
+
 #include "../npc_ships/om_ship_areas.dm"
 
 #include "../area_holders/include.dm"
@@ -17,8 +19,8 @@
 #include "../faction_bases/faction_base_innie.dm"
 
 #include "../faction_bases/cov_base/include.dm"
+
 #include "../faction_bases/innie_base/include.dm"
-#include "../faction_bases/unsc_base/include.dm"
 
 #include "../faction_bases/oni_prowler/include.dm"
 

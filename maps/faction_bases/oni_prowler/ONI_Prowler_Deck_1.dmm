@@ -39,22 +39,22 @@
 "aM" = (/obj/machinery/cryopod/oni,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/simulated/floor/tech/maint,/area/oniprowler/holdingcells)
 "aN" = (/turf/simulated/wall/r_wall,/area/oniprowler/bridge)
 "aO" = (/obj/structure/computerframe{anchored = 1; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; tag = "icon-computer"},/obj/machinery/computer/engines{tag = "icon-nav"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "nav"; dir = 2},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
-"aP" = (/turf/simulated/floor/plating,/turf/simulated/shuttle/wall/corner/smoothwhite/nw,/area/space)
-"aQ" = (/turf/simulated/shuttle/wall{dir = 4; icon_state = "swall_straight"},/area/space)
-"aR" = (/turf/simulated/shuttle/wall{dir = 8; icon_state = "swall"},/area/space)
-"aS" = (/obj/machinery/door/airlock/glass/cargo_shuttle{name = "Shuttle Access"; req_access = list(317)},/turf/simulated/floor/shuttle/yellow,/area/space)
+"aP" = (/turf/simulated/floor/plating,/turf/simulated/shuttle/wall/corner/smoothwhite/nw,/area/shuttle/oni_shuttle_supply)
+"aQ" = (/turf/simulated/shuttle/wall{dir = 4; icon_state = "swall_straight"},/area/shuttle/oni_shuttle_supply)
+"aR" = (/turf/simulated/shuttle/wall{dir = 8; icon_state = "swall"},/area/shuttle/oni_shuttle_supply)
+"aS" = (/obj/machinery/door/airlock/glass/cargo_shuttle{name = "Shuttle Access"; req_access = list(317)},/turf/simulated/floor/shuttle/yellow,/area/shuttle/oni_shuttle_supply)
 "aT" = (/obj/effect/hull_segment,/turf/simulated/wall/r_wall,/area/oniprowler/bridge)
-"aU" = (/obj/machinery/conveyor{dir = 1; id = "oni_cargo_conveyor"},/obj/structure/plasticflaps/mining,/turf/simulated/floor/shuttle/yellow,/area/space)
-"aV" = (/turf/simulated/shuttle/wall{dir = 4; icon_state = "swall"},/area/space)
-"aW" = (/obj/structure/shuttle/window{tag = "icon-9"; icon_state = "9"; color = "grey"},/turf/simulated/floor/shuttle/yellow,/area/space)
-"aX" = (/turf/simulated/shuttle/wall{icon_state = "swall_straight"},/area/space)
+"aU" = (/obj/machinery/conveyor{dir = 1; id = "oni_cargo_conveyor"},/obj/structure/plasticflaps/mining,/turf/simulated/floor/shuttle/yellow,/area/shuttle/oni_shuttle_supply)
+"aV" = (/turf/simulated/shuttle/wall{dir = 4; icon_state = "swall"},/area/shuttle/oni_shuttle_supply)
+"aW" = (/obj/structure/shuttle/window{tag = "icon-9"; icon_state = "9"; color = "grey"},/turf/simulated/floor/shuttle/yellow,/area/shuttle/oni_shuttle_supply)
+"aX" = (/turf/simulated/shuttle/wall{icon_state = "swall_straight"},/area/shuttle/oni_shuttle_supply)
 "aY" = (/obj/structure/closet/crate/radiation,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/structure/window/reinforced/crescent,/obj/machinery/door/window/eastleft,/obj/machinery/light/colored/orange{tag = "icon-orange1 (WEST)"; icon_state = "orange1"; dir = 8},/turf/simulated/floor/plating,/area/oniprowler/holdingcells)
-"aZ" = (/turf/simulated/floor/shuttle/yellow,/area/space)
-"ba" = (/obj/machinery/conveyor{dir = 1; id = "oni_cargo_conveyor"},/turf/simulated/floor/shuttle/yellow,/area/space)
+"aZ" = (/turf/simulated/floor/shuttle/yellow,/area/shuttle/oni_shuttle_supply)
+"ba" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/shuttle/yellow,/area/shuttle/oni_shuttle_supply)
 "bb" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tech/maint,/area/oniprowler/armory)
-"bc" = (/obj/structure/shuttle_engine{dir = 4},/turf/simulated/shuttle/wall{icon_state = "swall_straight"},/area/space)
-"bd" = (/obj/structure/shuttle/window{tag = "icon-11"; icon_state = "11"; color = "grey"},/turf/simulated/floor/shuttle/yellow,/area/space)
-"be" = (/obj/structure/shuttle/window{tag = "icon-10"; icon_state = "10"; color = "grey"},/turf/simulated/floor/shuttle/yellow,/area/space)
+"bc" = (/obj/machinery/conveyor{dir = 1; id = "oni_cargo_conveyor"},/turf/simulated/floor/shuttle/yellow,/area/shuttle/oni_shuttle_supply)
+"bd" = (/obj/structure/shuttle_engine{dir = 4},/turf/simulated/shuttle/wall{icon_state = "swall_straight"},/area/shuttle/oni_shuttle_supply)
+"be" = (/obj/structure/shuttle/window{tag = "icon-11"; icon_state = "11"; color = "grey"},/turf/simulated/floor/shuttle/yellow,/area/shuttle/oni_shuttle_supply)
 "bf" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tech/maint,/area/oniprowler/armory)
 "bg" = (/obj/machinery/light/invis,/turf/simulated/wall/r_wall,/area/oniprowler/bridge)
 "bh" = (/obj/structure/closet,/obj/item/clothing/mask/marine,/obj/item/clothing/accessory/holster/thigh,/obj/item/clothing/gloves/thick/oni_guard,/obj/item/clothing/head/helmet/oni_guard,/obj/item/clothing/head/helmet/oni_guard/visor,/obj/item/clothing/shoes/oni_guard,/obj/item/clothing/suit/storage/oni_guard,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m7_smg/silenced,/obj/item/weapon/gun/projectile/m7_smg/silenced,/obj/item/weapon/storage/box/m6d_m224,/turf/simulated/floor/tech/maint,/area/oniprowler/armory)
@@ -104,10 +104,10 @@
 "bZ" = (/obj/machinery/iv_drip,/turf/simulated/floor/tiled/white,/area/oniprowler/medbaystarboard)
 "ca" = (/obj/structure/closet/crate/medical{name = "Blood Packs Crate"},/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OPlus,/obj/item/weapon/reagent_containers/blood/OPlus,/obj/item/weapon/reagent_containers/blood/OPlus,/obj/item/weapon/reagent_containers/blood/OPlus,/obj/item/weapon/reagent_containers/blood/BMinus,/obj/item/weapon/reagent_containers/blood/BMinus,/obj/item/weapon/reagent_containers/blood/BMinus,/obj/item/weapon/reagent_containers/blood/APlus,/obj/item/weapon/reagent_containers/blood/APlus,/obj/item/weapon/reagent_containers/blood/APlus,/obj/item/weapon/reagent_containers/blood/AMinus,/obj/item/weapon/reagent_containers/blood/AMinus,/obj/item/weapon/reagent_containers/blood/AMinus,/obj/item/weapon/reagent_containers/blood/BPlus,/obj/item/weapon/reagent_containers/blood/BPlus,/obj/item/weapon/reagent_containers/blood/BPlus,/turf/simulated/floor/tiled/white,/area/oniprowler/medbaystarboard)
 "cb" = (/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/plating,/area/oniprowler/cargobay)
-"cc" = (/obj/effect/floor_decal/industrial/warning,/obj/machinery/conveyor_switch{id = "oni_cargo_conveyor"},/turf/simulated/floor/plating,/area/oniprowler/cargobay)
+"cc" = (/obj/machinery/conveyor_switch{id = "oni_cargo_conveyor"},/turf/simulated/floor/plating,/area/oniprowler/cargobay)
 "cd" = (/obj/structure/bed/chair/comfy/captain{dir = 1; icon_state = "capchair_preview"; name = "Bridge chair"; tag = "icon-capchair_preview (NORTH)"},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
-"ce" = (/obj/effect/floor_decal/industrial/warning,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/oniprowler/cargobay)
-"cf" = (/obj/machinery/conveyor{dir = 1; id = "oni_cargo_conveyor"},/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (EAST)"; icon_state = "warning"; dir = 4},/turf/simulated/floor/plating,/area/oniprowler/cargobay)
+"ce" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/plating,/area/oniprowler/cargobay)
+"cf" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/oniprowler/cargobay)
 "cg" = (/obj/structure/table/glass,/obj/item/weapon/storage/box/beakers,/obj/item/weapon/reagent_containers/glass/beaker/bluespace,/obj/item/weapon/reagent_containers/glass/beaker/bluespace,/obj/structure/window/reinforced/projresist,/turf/simulated/floor/tech/white,/area/oniprowler/medbaystarboard)
 "ch" = (/obj/structure/table/glass,/obj/item/weapon/reagent_containers/dropper,/obj/item/device/reagent_scanner/adv,/obj/item/weapon/storage/box/pillbottles,/obj/item/weapon/hand_labeler,/obj/item/weapon/storage/box/pillbottles,/obj/structure/window/reinforced/projresist,/turf/simulated/floor/tech/white,/area/oniprowler/medbaystarboard)
 "ci" = (/obj/structure/table/glass,/obj/machinery/reagentgrinder,/obj/item/stack/material/phoron{amount = 50},/obj/structure/window/reinforced/projresist,/turf/simulated/floor/tech/white,/area/oniprowler/medbaystarboard)
@@ -136,8 +136,8 @@
 "cF" = (/obj/machinery/computer/navigation{tag = "icon-engine (WEST)"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "engine"; dir = 8},/obj/structure/computerframe{anchored = 1; dir = 8; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; tag = "icon-computer (WEST)"},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
 "cG" = (/obj/machinery/button/remote/blast_door{_wifi_id = "prowlerbridge"; id = "prowlerbridge"; name = "Bridge Shutters Control"; pixel_x = 0; pixel_y = -32},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
 "cH" = (/turf/simulated/floor/tiled/white,/area/oniprowler/medbayport)
-"cI" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/plating,/area/oniprowler/cargobay)
-"cJ" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/space)
+"cI" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
+"cJ" = (/obj/structure/shuttle/window{tag = "icon-10"; icon_state = "10"; color = "grey"},/turf/simulated/floor/shuttle/yellow,/area/shuttle/oni_shuttle_supply)
 "cK" = (/obj/structure/stairs_decorative{tag = "icon-stairs (EAST)"; icon_state = "stairs"; dir = 4},/obj/machinery/light/colored/blue,/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
 "cL" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/multi_tile/halo/blast/oni_ship_preset{name = "Storage"},/turf/simulated/floor/tiled/dark,/area/oniprowler/storage)
 "cM" = (/obj/structure/bed/chair/comfy/captain,/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
@@ -161,7 +161,7 @@
 "de" = (/obj/machinery/research/protolathe/circuits,/turf/simulated/floor/tiled/dark,/area/oniprowler/rnd)
 "df" = (/obj/machinery/autolathe,/turf/simulated/floor/tiled/dark,/area/oniprowler/rnd)
 "dg" = (/obj/structure/table/standard,/obj/machinery/recharger,/turf/simulated/floor/tiled/dark,/area/oniprowler/rnd)
-"dh" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/shuttle/yellow,/area/space)
+"dh" = (/obj/effect/landmark/dropship_land_point/unsc{name = "ONI Aegis Hangar"},/turf/simulated/floor/plating,/area/oniprowler/cargobay)
 "di" = (/turf/simulated/floor/plating,/area/oniprowler/rnd)
 "dj" = (/obj/structure/morgue,/turf/simulated/floor/tiled/white,/area/oniprowler/medbayport)
 "dk" = (/obj/structure/morgue{tag = "icon-morgue1 (WEST)"; icon_state = "morgue1"; dir = 8},/turf/simulated/floor/tiled/white,/area/oniprowler/medbayport)
@@ -206,7 +206,7 @@
 "dX" = (/obj/structure/bed,/obj/item/weapon/bedsheet/rainbow,/turf/simulated/floor/plating,/area/oniprowler/medbayport)
 "dY" = (/obj/machinery/cryopod/unsc,/turf/simulated/floor/tiled/white,/area/oniprowler/medbayport)
 "dZ" = (/obj/effect/landmark/start{name = "ONI Researcher"},/turf/simulated/floor/tiled/white,/area/oniprowler/medbayport)
-"ea" = (/obj/machinery/light,/turf/simulated/floor/plating,/area/oniprowler/cargobay)
+"ea" = (/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (NORTH)"; icon_state = "warning"; dir = 1},/turf/simulated/floor/plating,/area/oniprowler/cargobay)
 "eb" = (/obj/machinery/light,/turf/simulated/floor/tiled/white,/area/oniprowler/medbaystarboard)
 "ec" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/storage/box/bodybags,/turf/simulated/floor/tiled/white,/area/oniprowler/medbayport)
 "ed" = (/obj/item/modular_computer/console/preset/research,/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tiled/dark,/area/oniprowler/rnd)
@@ -231,6 +231,7 @@
 "ew" = (/obj/item/weapon/gun/projectile/revolver/mateba{burst = 6; jam_chance = 99; name = "rusty iron"},/turf/simulated/floor/plating,/area/oniprowler/medbayport)
 "ex" = (/obj/docking_umbilical/south{name = "ONI Aegis Port"},/turf/simulated/floor/plating,/area/oniprowler/cargobay)
 "ey" = (/obj/item/weapon/tape_roll,/turf/simulated/floor/plating,/area/oniprowler/medbayport)
+"ez" = (/obj/machinery/light,/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (NORTH)"; icon_state = "warning"; dir = 1},/turf/simulated/floor/plating,/area/oniprowler/cargobay)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -259,15 +260,15 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAamamamam
 aaaaaaaaaaaaaaaaaaaaaaaaaNaNaNcVbLaDaGbLaAaAbjbkblbmbnbnbobpbqcsbrbsbtaAambubvbwamaBaCaCaCbxahahabababababaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaNaNaNaNbgaNcQbLaHaIdBaAaAbmbmebbmbmbmbmbmbmbmbybzbzaAambAbBbCambhaCcEaEaFahahamamamamamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaNaNaNaNaNaNaNbLbLbLbLbLaAaAbDbEaAekbmbmbmbmbmbmbFbGbHaAambIbJcCamaFaFaFaFaFaJbKambNevbNamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNbLbLbLaAbObmbmbPbmbmbmbmbmbmbmbQbRbRaAbNbNbNbNcIbNbNbNbNbNbNbNcIbNbNbNamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaNaNaNaLaNaOaNaNdyaNaAcWbTelaAbUbVbWbXbmbmebbZbZcaaAbNbNcbcccebNcfcbcbcbbNbNbNbNbNbNamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNbLbLbLaAbObmbmbPbmbmbmbmbmbmbmbQbRbRaAccbNcbcbcecbcbcbcbcbcbcbcecbcbcbamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaNaNaNaLaNaOaNaNdyaNaAcWbTelaAbUbVbWbXbmbmebbZbZcaaAbNcnbNbNcfbNbNbNbNbNbNbNbNbNbNbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaNaNaTaNcdbYcdaNckbLaNaAcgchcicjaAaAaAaAcTcmaAaAaAaAaAemcnaPaQaRaSaUaVaWaRbNbNbNbNbNdaamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaacqcrencubLcvbLeobLbLbLcxbLbLbLbLbLbLbLbLbLbLbLbLbLcocpbNcnaXaZdhaZbadhaZbcbNbNbNbNbNbNamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaNaNbYbLcwbYbLbLbLbLbLcxbLbLbLbLbLbLbLbLbLbLbLbLbLcocpbNcnbdaZaZaZbaaZaZbcbNbNbNbNbNbNamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaacqcFepcGbLcKbLeqbLbLbLdObLbLbLbLbLbLbLbLbLbLbLbLbLdRcpbNcnbeaZaZaZbaaZaZbcbNctbNbNbNbNamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaNaNaTaNcMbYcMaNdHcNaNaNcyczcAcBcyczcAcBdocDcBcBcBcBcBemcnaXaZaZaZbaaZaZbcbNbNbNbNbNbNamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaNaNaNcOaNcZaNaNdNaNaNdqcHcHcBdqcHcHcBerdZdYcHcBewcBbNbNcJaQaQaWaWaQaQaRbNbNbNbNbNdaamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNdDaNaNcPescRcBcPescRcBetdZdYcHcBeycBbNbNbNbNeabNbNbNbNeabNbNeabNbNbNamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaacqcrencubLcvbLeobLbLbLcxbLbLbLbLbLbLbLbLbLbLbLbLbLcocpbNcnaXaZbaaZbcbaaZbdbNbNbNbNbNbNamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaNaNbYbLcwbYbLbLbLbLbLcxbLbLbLbLbLbLbLbLbLbLbLbLbLcocpbNcnbeaZaZaZbcaZaZbdbNbNbNbNbNbNamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaacqcFepcGbLcKbLeqbLbLbLdObLbLbLbLbLbLbLbLbLbLbLbLbLdRcpbNcncJaZaZaZbcaZaZbdbNctbNbNbNbNamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaNaNaTaNcMbYcMaNdHcNaNaNcyczcAcBcyczcAcBdocDcBcBcBcBcBemcnaXaZaZaZbcaZaZbdbNdhbNbNbNbNamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaNaNaNcOaNcZaNaNdNaNaNdqcHcHcBdqcHcHcBerdZdYcHcBewcBbNcncIaQaQaWaWaQaQaRbNbNbNbNbNdaamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNdDaNaNcPescRcBcPescRcBetdZdYcHcBeycBbNbNeaeaezeaeaeaeaezeaeaezeaeaeaamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNaNcBcBcBcBcBcBcBcBdQcBcBcBcBdScBcScScScScScScScScScSbMcUambNexbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNcBcBcBcBcBcBcBeccHcXcYcBdUdVcBeddbdcdddedddfdgeecSdidiamamamamamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNcBcBcBcBcBcBcBdjeucHdkcBdWdXcBdldldldldldldldldldmdidicScScScSaKaaaaaaaaaaaaaa
