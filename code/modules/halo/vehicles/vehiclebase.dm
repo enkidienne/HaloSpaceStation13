@@ -455,7 +455,7 @@
 		. = ..()
 	update_object_sprites()
 
-/obj/vehicles/fall()
+/obj/vehicles/can_fall()
 	if(can_traverse_zs && !movement_destroyed && active)
 		return 0
 	. = ..()
