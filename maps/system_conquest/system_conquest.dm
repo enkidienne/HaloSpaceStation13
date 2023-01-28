@@ -8,6 +8,9 @@
 
 #include "unit_tests.dm"
 
+#include "../../code/modules/halo/lobby_music/odst_music.dm"
+#include "../../code/modules/halo/lobby_music/halo_music.dm"
+
 #include "../npc_ships/om_ship_areas.dm"
 
 #include "../area_holders/include.dm"
@@ -31,9 +34,6 @@
 #include "../CRS_Unyielding_Transgression/includes.dm"
 
 #include "../UNSC_Difference_Of_Opinion/includes.dm"
-
-#include "../../code/modules/halo/lobby_music/odst_music.dm"
-#include "../../code/modules/halo/lobby_music/halo_music.dm"
 
 #include "../Exoplanet Research/includes.dm"
 

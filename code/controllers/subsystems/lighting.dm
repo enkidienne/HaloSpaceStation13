@@ -47,6 +47,7 @@ SUBSYSTEM_DEF(lighting)
 
 // It's safe to pass a list of non-turfs to this list - it'll only check turfs.
 /datum/controller/subsystem/lighting/proc/InitializeTurfs(list/targets)
+	set background = 1
 	for (var/turf/T in (targets || world))
 		if (T.dynamic_lighting && T.loc:dynamic_lighting)
 			T.lighting_build_overlay()
