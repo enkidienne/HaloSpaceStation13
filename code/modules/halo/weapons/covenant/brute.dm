@@ -226,6 +226,11 @@
 	matter = list("nanolaminate" = 2, "duridium" = 3)
 	var/unique_afterattack = 1
 
+/obj/item/weapon/grav_hammer/attack(var/mob/m,var/mob/user)
+	. = ..()
+	var/throw_dir = get_dir(user,m)
+	m.throw_at(get_edge_target_turf(m, throw_dir),2,4,user)
+
 /obj/item/weapon/grav_hammer/afterattack(atom/A as mob|obj|turf|area, mob/user, proximity)
 	if(lunge_dist > 0)
 		. = ..()
@@ -258,9 +263,9 @@
 
 /obj/item/weapon/grav_hammer/gravless
 	name = "Type-2 Energy Weapon/Hammer, Depowered"
-	desc = "A long haft and a heavy head with a tungsten-alloy blade on the reverse end. The short-range gravity field in the head of the weapon has been disabled."
+	desc = "A long haft and a heavy head with a tungsten-alloy blade on the reverse end. The gravity generator in the head is low-power and only activates on direct hits."
 	icon_state = "gravlesshammer"
-	force = 40
+	force = 45 //It does not have afterattack.
 	lunge_dist = 4
 	hitsound = "swing_hit"
 	salvage_components = list()

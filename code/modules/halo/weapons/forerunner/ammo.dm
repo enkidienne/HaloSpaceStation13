@@ -48,7 +48,7 @@
 	fire_sound = 'code/modules/halo/sounds/boltshot_sg_fire.ogg'
 	damage = 25
 	pellets = 8
-	range_step = 2
+	range_step = 1
 
 /obj/item/ammo_magazine/binaryrifle
 	name = "Z-750 SASR magazine"
