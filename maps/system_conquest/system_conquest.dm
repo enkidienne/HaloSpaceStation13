@@ -24,6 +24,8 @@
 
 #include "../faction_bases/oni_prowler/include.dm"
 
+#include "../faction_bases/Cassius_Base/include.dm"
+
 #include "../urf_flagship/includes.dm"
 
 #include "../CRS_Unyielding_Transgression/includes.dm"
