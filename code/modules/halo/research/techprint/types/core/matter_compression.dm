@@ -4,7 +4,7 @@
 	desc = "Storing matter more compactly and efficiently."
 	required_materials = list("plasteel" = 10)
 	required_reagents = list(/datum/reagent/carbon = 10, /datum/reagent/acid/hydrochloric = 10)
-	ticks_max = 60
+	ticks_max = 30
 	design_unlocks = list(\
 		/datum/research_design/basic_matter_bin,\
 		/datum/research_design/adv_drill,\
@@ -16,7 +16,7 @@
 	tech_req_all = list(/datum/techprint/compression)
 	required_materials = list("plasteel" = 20)
 	required_reagents = list(/datum/reagent/carbon = 20, /datum/reagent/acid/hydrochloric = 20)
-	ticks_max = 120
+	ticks_max = 60
 	design_unlocks = list(\
 		/datum/research_design/adv_matter_bin,\
 		/datum/research_design/diamonddrill,\
@@ -26,9 +26,9 @@
 	name = "Matter Compression III"
 	desc = "Storing matter more compactly and efficiently."
 	tech_req_all = list(/datum/techprint/compression_two)
-	required_materials = list("plasteel" = 30, "osmium-carbide plasteel" = 5)
-	required_reagents = list(/datum/reagent/carbon = 30, /datum/reagent/acid/hydrochloric = 30)
-	ticks_max = 300
+	required_materials = list("plasteel" = 30)
+	required_reagents = list(/datum/reagent/carbon = 25, /datum/reagent/acid/hydrochloric = 25)
+	ticks_max = 150
 	design_unlocks = list(\
 		/datum/research_design/super_matter_bin,\
 		/datum/research_design/jackhammer,\

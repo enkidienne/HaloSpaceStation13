@@ -53,15 +53,13 @@
 /datum/research_design/basic_matter_bin
 	name = "basic matter bin"
 	build_type = PROTOLATHE
-	required_materials = list("steel" = 40)
-	required_reagents = list(/datum/reagent/mercury = 10)
+	required_materials = list("steel" = 5)
 	product_type = /obj/item/weapon/stock_parts/matter_bin
 
 /datum/research_design/adv_matter_bin
 	name = "advanced matter bin"
 	build_type = PROTOLATHE
-	required_materials = list("plasteel" = 40, "mhydrogen" = 10)
-	required_reagents = list(/datum/reagent/mercury = 10)
+	required_materials = list("plasteel" = 5, "steel" = 5)
 	product_type = /obj/item/weapon/stock_parts/matter_bin/adv
 
 /datum/research_design/super_matter_bin
