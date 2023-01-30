@@ -5,6 +5,7 @@
 	design_unlocks = list(/datum/research_design/armour_fibre)
 	required_materials = list("plasteel" = 10)
 	tech_req_all = list(/datum/techprint/compression)
+	ticks_max = 60
 
 /datum/techprint/diamond_patch
 	name = "Diamond Weave Patch"
@@ -12,6 +13,7 @@
 	design_unlocks = list(/datum/research_design/armour_diamond)
 	required_materials = list("diamond" = 1)
 	tech_req_all = list(/datum/techprint/compression_two)
+	ticks_max = 60
 
 /datum/techprint/nanolam_patch
 	name = "Armour Nanolaminate Patch"
@@ -19,4 +21,4 @@
 	design_unlocks = list(/datum/research_design/armour_nanolaminate)
 	required_materials = list("nanolaminate" = 5)
 	tech_req_all = list(/datum/techprint/nanolaminate, /datum/techprint/compression_three)
-	ticks_max = 250
+	ticks_max = 60

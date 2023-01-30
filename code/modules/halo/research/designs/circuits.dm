@@ -4,7 +4,7 @@
 	complexity = 8
 	category_type = /datum/research_design/circuit
 	required_materials = list("steel" = 1, "glass" = 1)
-	required_reagents = list(/datum/reagent/acid = 20)
+	required_reagents = list(/datum/reagent/acid = 5)
 
 /datum/research_design/circuit/recharger
 	name = T_BOARD("energy weapon recharging station")

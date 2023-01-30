@@ -10,7 +10,7 @@
 	desc = "Central component of a tablet computer."
 	required_materials = list("gold" = 5)
 	required_reagents = list(/datum/reagent/silicate = 5, /datum/reagent/copper = 5, /datum/reagent/acid = 5)
-	ticks_max = 60
+	ticks_max = 30
 	design_unlocks = list(/datum/research_design/processor_small)
 	tech_req_all = list(/datum/techprint/miniaturisation, /datum/techprint/processing)
 
@@ -28,7 +28,7 @@
 	desc = "Central component of a tablet computer."
 	required_materials = list("gold" = 5, "platinum" = 5, "osmium" = 5)
 	required_reagents = list(/datum/reagent/silicate = 15, /datum/reagent/copper = 5, /datum/reagent/acid/polyacid = 5)
-	ticks_max = 60
+	ticks_max = 90
 	design_unlocks = list(/datum/research_design/processor_photonic_small)
 	tech_req_all = list(/datum/techprint/miniaturisation_three, /datum/techprint/processing_three)
 
@@ -41,7 +41,7 @@
 	desc = "Efficient storage for a tablet computer."
 	required_materials = list("plasteel" = 1, "rglass" = 1, "plastic" = 10)
 	required_reagents = list(/datum/reagent/acid/hydrochloric = 20)
-	ticks_max = 60
+	ticks_max = 30
 	design_unlocks = list(/datum/research_design/drive_micro)
 	tech_req_all = list(/datum/techprint/miniaturisation, /datum/techprint/data)
 
@@ -63,7 +63,7 @@
 	desc = "Small crystal with imprinted photonic circuits that can be used to store data. Its capacity is 16 GQ."
 	required_materials = list("steel" = 1, "glass" = 1, "plastic" = 5)
 	required_reagents = list(/datum/reagent/acid = 20)
-	ticks_max = 60
+	ticks_max = 30
 	design_unlocks = list(/datum/research_design/portable_drive)
 	tech_req_all = list(/datum/techprint/miniaturisation, /datum/techprint/data)
 
@@ -72,7 +72,7 @@
 	desc = "Small crystal with imprinted high-density photonic circuits that can be used to store data. Its capacity is 64 GQ."
 	required_materials = list("plasteel" = 1, "rglass" = 1, "plastic" = 5)
 	required_reagents = list(/datum/reagent/acid/hydrochloric = 20)
-	ticks_max = 120
+	ticks_max = 60
 	design_unlocks = list(/datum/research_design/portable_drive_advanced)
 	tech_req_all = list(/datum/techprint/miniaturisation_two, /datum/techprint/data_two)
 
@@ -81,7 +81,7 @@
 	desc = "Small crystal with imprinted ultra-density photonic circuits that can be used to store data. Its capacity is 256 GQ."
 	required_materials = list("osmium-carbide plasteel" = 1, "phglass" = 1, "plastic" = 5)
 	required_reagents = list(/datum/reagent/nitric_acid = 20)
-	ticks_max = 200
+	ticks_max = 90
 	design_unlocks = list(/datum/research_design/portable_drive_super)
 	tech_req_all = list(/datum/techprint/miniaturisation_three, /datum/techprint/data_three)
 
@@ -94,6 +94,6 @@
 	desc = "Possible thanks to breakthroughs in plasma engineering."
 	required_materials = list("duridium" = 1, "rphglass" = 1, "plastic" = 10)
 	required_reagents = list(/datum/reagent/acid/polyacid = 20)
-	ticks_max = 200
+	ticks_max = 120
 	design_unlocks = list(/datum/research_design/drive_cluster)
 	tech_req_all = list(/datum/techprint/data_three, /datum/techprint/plasma_storage)

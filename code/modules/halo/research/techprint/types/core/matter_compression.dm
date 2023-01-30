@@ -27,7 +27,7 @@
 	desc = "Storing matter more compactly and efficiently."
 	tech_req_all = list(/datum/techprint/compression_two)
 	required_materials = list("plasteel" = 30)
-	required_reagents = list(/datum/reagent/carbon = 25, /datum/reagent/acid/hydrochloric = 25)
+	required_reagents = list(/datum/reagent/carbon = 30, /datum/reagent/acid/hydrochloric = 30)
 	ticks_max = 150
 	design_unlocks = list(\
 		/datum/research_design/super_matter_bin,\

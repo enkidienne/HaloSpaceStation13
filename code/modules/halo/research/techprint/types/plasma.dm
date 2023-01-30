@@ -2,7 +2,7 @@
 /datum/techprint/plasmadet
 	name = "Plasma Detonation"
 	desc = "Controlled explosive release of high pressure superheated plasma."
-	ticks_max = 55
+	ticks_max = 60
 	required_objs = list(/obj/item/plasma_core = "plasma core")
 	tech_req_one = list(\
 		/datum/techprint/plasmanade,\
@@ -12,11 +12,11 @@
 	name = "Plasma Generation"
 	desc = "Generation methods to consistently produce superheated plasma."
 	design_unlocks = list(/datum/research_design/plasma_charger)
-	required_reagents = list(/datum/reagent/toxin/phoron = 100)
+	required_reagents = list(/datum/reagent/toxin/phoron = 30)
 	required_objs = list(/obj/item/plasma_core = "plasma core")
 	tech_req_one = list(/datum/techprint/plasmarifle, /datum/techprint/plasmapistol)
 	tech_req_all = list(/datum/techprint/plasmanade)
-	ticks_max = 100
+	ticks_max = 90
 
 /datum/techprint/plasma_storage
 	name = "Plasma Storage"
@@ -25,7 +25,7 @@
 	tech_req_one = list(/datum/techprint/plasmarifle, /datum/techprint/plasmapistol)
 	tech_req_all = list(/datum/techprint/energy_three)
 	required_objs = list(/obj/item/plasma_core = "plasma core")
-	ticks_max = 100
+	ticks_max = 90
 
 /datum/techprint/plasma_channeling
 	name = "Plasma Channelling"
@@ -33,4 +33,4 @@
 	tech_req_one = list(/datum/techprint/plasmarifle, /datum/techprint/plasmapistol)
 	required_objs = list(/obj/item/plasma_core = "plasma core")
 	design_unlocks = list(/datum/research_design/plasmacutter)
-	ticks_max = 100
+	ticks_max = 90
