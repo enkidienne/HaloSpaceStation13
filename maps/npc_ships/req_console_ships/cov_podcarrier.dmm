@@ -25,6 +25,7 @@
 "ay" = (/obj/structure/window/reinforced/projresist/covenant{dir = 1},/obj/structure/window/reinforced/projresist/covenant{dir = 8},/obj/structure/grille,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "az" = (/obj/structure/window/reinforced/projresist/covenant{dir = 1},/obj/structure/window/reinforced/projresist/covenant{dir = 2},/obj/structure/window/reinforced/projresist/covenant{dir = 4},/obj/structure/grille,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "aA" = (/obj/machinery/overmap_comms/receiver/battlenet,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
+"aB" = (/obj/machinery/nav_computer/npc/covenant,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "aC" = (/obj/structure/window/reinforced/projresist/covenant{dir = 4},/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "aD" = (/obj/machinery/repulsor_engine{tag = "icon-nozzle (WEST)"; icon_state = "nozzle"; dir = 8},/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "aE" = (/obj/structure/window/reinforced/projresist/covenant{dir = 8},/obj/structure/window/reinforced/projresist/covenant{dir = 4},/obj/structure/grille,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
@@ -64,7 +65,6 @@
 "bn" = (/obj/machinery/light/covenant/north,/mob/living/bot/cleanbot/covenant,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "bo" = (/obj/structure/window/reinforced/projresist/covenant{dir = 8},/obj/structure/window/reinforced/projresist/covenant{dir = 2},/obj/structure/grille,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "bp" = (/obj/structure/window/reinforced/projresist/covenant{dir = 2},/obj/structure/window/reinforced/projresist/covenant{dir = 1},/obj/structure/window/reinforced/projresist/covenant{dir = 4},/obj/structure/grille,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
-"bq" = (/obj/machinery/nav_computer/covenant,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "bu" = (/obj/structure/reagent_dispensers/fueltank{color = "#ff99ff"},/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "bv" = (/obj/structure/table/rack,/obj/item/clothing/head/welding/covenant,/obj/item/clothing/head/welding/covenant,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "bw" = (/obj/machinery/door/airlock/covenant/cov_ship_preset,/obj/machinery/light/covenant/north,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
@@ -114,7 +114,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaayazakaAakakadadadhIadadadakeOadadadadbDakadadhIadadad
 aaaaaaaaaaaaaaaaaaaaaaaaaaaEaFhIadaGakadaHaIaIaIaJadakaKaLaLaLaLadajadadaMadafadafadafakaOaPadaQadaRaSaToxajakakakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaEaNaVadadajadaUaVaLaXadadajadChaYaYaYaZakbaadbbadbcaZakbdbeakakakajakajakakakakaKbfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaEalMyadbhakadbibjbjbjaJadakaKaLaLaLaLadajadadbkadafadafadafakblbmadbnadaRaSaToxajakakakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaabobpakbqakakadadadMyadadadakaWadadadadJXakadadMyadadadadadMyajadadadadadadadadpwadhIaCaDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaabobpakaBakakadadadMyadadadakaWadadadadJXakadadMyadadadadadMyajadadadadadadadadpwadhIaCaDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaababababimababababababababakcOTVLbHzakakajakakbubvasasatakakakakadauavawaxababadadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababababababababababakakoxakakadadadakakakakoxakakhIadajadababababababadadadababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababababadadadbwadadadaGadbwadadadajadadababababababababzwadadababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

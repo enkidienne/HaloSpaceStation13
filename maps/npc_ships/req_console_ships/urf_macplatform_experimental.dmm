@@ -14,7 +14,7 @@
 "an" = (/obj/structure/computerframe{anchored = 1; dir = 2; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; tag = "icon-computer (WEST)"},/obj/machinery/overmap_weapon_console/npc_comms_console/unsc{dir = 2; germ_level = 110; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "nav"; tag = "icon-comm (NORTH)"},/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
 "ao" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/shuttle/black,/area/om_ships/req_console_ship)
 "ap" = (/obj/structure/table/steel,/obj/item/weapon/storage/firstaid/o2,/obj/item/weapon/storage/firstaid/o2,/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
-"aq" = (/obj/machinery/nav_computer/unsc,/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
+"aq" = (/obj/machinery/nav_computer/npc/innie,/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
 "ar" = (/obj/machinery/light{dir = 8},/obj/structure/closet/emcloset/legacy,/turf/simulated/floor/shuttle/black,/area/om_ships/req_console_ship)
 "as" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
 "at" = (/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
