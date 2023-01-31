@@ -271,7 +271,7 @@
 "fl" = (/turf/simulated/mineral/random/planet,/area/glassed_planet/interior/crashed_shuttle_room/impacted_rock)
 "fm" = (/turf/simulated/mineral/random/planet,/area/glassed_planet/exterior/autolight)
 "fn" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/asteroid/planet,/area/glassed_planet/interior/outpost_groundfloor)
-"fo" = (/obj/effect/overmap/sector/exo_depot,/turf/unsimulated/mineral,/area/glassed_planet/exterior/caves)
+"fo" = (/obj/effect/overmap/sector/glassed_planet,/turf/unsimulated/mineral,/area/glassed_planet/exterior/caves)
 "fq" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/freezer,/area/glassed_planet/interior/outpost_groundfloor)
 "fr" = (/obj/machinery/light,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/freezer,/area/glassed_planet/interior/outpost_groundfloor)
 

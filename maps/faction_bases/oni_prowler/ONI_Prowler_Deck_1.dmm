@@ -136,7 +136,7 @@
 "cF" = (/obj/machinery/computer/navigation{tag = "icon-engine (WEST)"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "engine"; dir = 8},/obj/structure/computerframe{anchored = 1; dir = 8; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; tag = "icon-computer (WEST)"},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
 "cG" = (/obj/machinery/button/remote/blast_door{_wifi_id = "prowlerbridge"; id = "prowlerbridge"; name = "Bridge Shutters Control"; pixel_x = 0; pixel_y = -32},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
 "cH" = (/turf/simulated/floor/tiled/white,/area/oniprowler/medbayport)
-"cI" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
+"cI" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
 "cJ" = (/obj/structure/shuttle/window{tag = "icon-10"; icon_state = "10"; color = "grey"},/turf/simulated/floor/shuttle/yellow,/area/shuttle/oni_shuttle_supply)
 "cK" = (/obj/structure/stairs_decorative{tag = "icon-stairs (EAST)"; icon_state = "stairs"; dir = 4},/obj/machinery/light/colored/blue,/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
 "cL" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/multi_tile/halo/blast/oni_ship_preset{name = "Storage"},/turf/simulated/floor/tiled/dark,/area/oniprowler/storage)
@@ -232,6 +232,7 @@
 "ex" = (/obj/docking_umbilical/south{name = "ONI Aegis Port"},/turf/simulated/floor/plating,/area/oniprowler/cargobay)
 "ey" = (/obj/item/weapon/tape_roll,/turf/simulated/floor/plating,/area/oniprowler/medbayport)
 "ez" = (/obj/machinery/light,/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (NORTH)"; icon_state = "warning"; dir = 1},/turf/simulated/floor/plating,/area/oniprowler/cargobay)
+"eA" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -263,11 +264,11 @@ aaaaaaaaaaaaaaaaaNaNaNaNaNaNaNbLbLbLbLbLaAaAbDbEaAekbmbmbmbmbmbmbFbGbHaAambIbJcC
 aaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNbLbLbLaAbObmbmbPbmbmbmbmbmbmbmbQbRbRaAccbNcbcbcecbcbcbcbcbcbcbcecbcbcbamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaNaNaNaLaNaOaNaNdyaNaAcWbTelaAbUbVbWbXbmbmebbZbZcaaAbNcnbNbNcfbNbNbNbNbNbNbNbNbNbNbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaNaNaTaNcdbYcdaNckbLaNaAcgchcicjaAaAaAaAcTcmaAaAaAaAaAemcnaPaQaRaSaUaVaWaRbNbNbNbNbNdaamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaacqcrencubLcvbLeobLbLbLcxbLbLbLbLbLbLbLbLbLbLbLbLbLcocpbNcnaXaZbaaZbcbaaZbdbNbNbNbNbNbNamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaacqcrencubLcvbLeobLbLbLcxbLbLbLbLbLbLbLcIbLbLbLbLbLcocpbNcnaXaZbaaZbcbaaZbdbNbNbNbNbNbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaNaNbYbLcwbYbLbLbLbLbLcxbLbLbLbLbLbLbLbLbLbLbLbLbLcocpbNcnbeaZaZaZbcaZaZbdbNbNbNbNbNbNamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaacqcFepcGbLcKbLeqbLbLbLdObLbLbLbLbLbLbLbLbLbLbLbLbLdRcpbNcncJaZaZaZbcaZaZbdbNctbNbNbNbNamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaacqcFepcGbLcKbLeqbLbLbLdObLbLbLbLbLbLbLeqbLbLbLbLbLdRcpbNcncJaZaZaZbcaZaZbdbNctbNbNbNbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaNaNaTaNcMbYcMaNdHcNaNaNcyczcAcBcyczcAcBdocDcBcBcBcBcBemcnaXaZaZaZbcaZaZbdbNdhbNbNbNbNamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaNaNaNcOaNcZaNaNdNaNaNdqcHcHcBdqcHcHcBerdZdYcHcBewcBbNcncIaQaQaWaWaQaQaRbNbNbNbNbNdaamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaNaNaNcOaNcZaNaNdNaNaNdqcHcHcBdqcHcHcBerdZdYcHcBewcBbNcneAaQaQaWaWaQaQaRbNbNbNbNbNdaamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNdDaNaNcPescRcBcPescRcBetdZdYcHcBeycBbNbNeaeaezeaeaeaeaezeaeaezeaeaeaamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNaNcBcBcBcBcBcBcBcBdQcBcBcBcBdScBcScScScScScScScScScSbMcUambNexbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNcBcBcBcBcBcBcBeccHcXcYcBdUdVcBeddbdcdddedddfdgeecSdidiamamamamamaaaaaaaaaaaaaa
