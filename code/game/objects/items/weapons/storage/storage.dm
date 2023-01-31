@@ -41,13 +41,15 @@
 	var/slowdown_total = 0
 	for(var/obj/A in inv)
 		var/w_class_mod = A.w_class
-		if(!(A in inv_toplevel))
-			w_class_mod -= 1
-		if(w_class_mod <= 1)//Let's not make tiny items count.
-			slowdown_total += base_storage_cost(A.w_class) * BACKPACK_SLOWDOWN_MOD
+		if(istype(A,/obj/item/weapon/storage/)) //It's mostly hollow. Weight comes from what's inside it.
+			w_class_mod = ITEM_SIZE_SMALL //Consider it small.
+		else if(!(A in inv_toplevel))
+			w_class_mod -= ITEM_SIZE_TINY
+		if(w_class_mod <= ITEM_SIZE_TINY)//Let's not make tiny items count.
+			slowdown_total += base_storage_cost(A.w_class) * STORAGE_SLOWDOWN_MOD
 		inv -= A
 
-	var/min_threshold_slowdown = (base_storage_cost(ITEM_SIZE_NORMAL) * BACKPACK_SLOWDOWN_MOD) * 2 //2 normals.
+	var/min_threshold_slowdown = (base_storage_cost(ITEM_SIZE_NORMAL) * STORAGE_SLOWDOWN_MOD) * 2 //2 normals.
 	if(slowdown_total <= min_threshold_slowdown)
 		slowdown_total = 0
 	else
