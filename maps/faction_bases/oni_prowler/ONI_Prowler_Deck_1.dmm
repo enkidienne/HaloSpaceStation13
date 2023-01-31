@@ -27,12 +27,12 @@
 "aA" = (/turf/simulated/wall/r_wall,/area/oniprowler/medbaystarboard)
 "aB" = (/obj/structure/closet,/obj/item/clothing/mask/marine,/obj/item/clothing/accessory/holster/thigh,/obj/item/clothing/gloves/thick/oni_guard,/obj/item/clothing/head/helmet/oni_guard,/obj/item/clothing/head/helmet/oni_guard/visor,/obj/item/clothing/shoes/oni_guard,/obj/item/clothing/suit/storage/oni_guard,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m7_smg/silenced,/obj/item/weapon/gun/projectile/m7_smg/silenced,/obj/item/weapon/storage/box/m6d_m225,/turf/simulated/floor/tech/maint,/area/oniprowler/armory)
 "aC" = (/turf/simulated/floor/tech/maint,/area/oniprowler/armory)
-"aD" = (/obj/machinery/squad_camera_console{icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "holotable"},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
+"aD" = (/obj/machinery/camera/autoname/invis/oni_prowler{icon_state = "camera"; dir = 8},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
 "aE" = (/obj/machinery/pointbased_vending/armory/armor,/turf/simulated/floor/tech/maint,/area/oniprowler/armory)
 "aF" = (/turf/simulated/wall/r_wall,/area/oniprowler/armory)
-"aG" = (/obj/machinery/squad_camera_console{icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "holotable"; dir = 1},/obj/machinery/light/colored/blue{icon_state = "blue1"; dir = 8},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
-"aH" = (/obj/machinery/overmap_weapon_console/npc_comms_console/unsc{tag = "icon-comm (NORTH)"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "holotable"; dir = 4},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
-"aI" = (/obj/machinery/overmap_weapon_console/npc_comms_console/unsc{tag = "icon-comm (NORTH)"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "holotable"; dir = 8},/obj/machinery/camera/autoname/invis/oni_prowler{icon_state = "camera"; dir = 8},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
+"aG" = (/obj/machinery/slipspace_engine/human/experimental,/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
+"aH" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/halo/oni_ship_preset{name = "Slipspace Drive"},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
+"aI" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
 "aJ" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/multi_tile/halo/blast/oni_ship_preset,/turf/simulated/floor/tech/maint,/area/oniprowler/cargobay)
 "aK" = (/turf/simulated/wall/r_wall,/area/space)
 "aL" = (/obj/structure/computerframe{anchored = 1; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; tag = "icon-computer"},/obj/machinery/photocopier/faxmachine{department = "UNSC Aegis"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "nav"; name = "UNSC HIGHCOM Priority Communications Line"},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
@@ -178,7 +178,6 @@
 "dv" = (/obj/machinery/research/component_dissembler,/turf/simulated/floor/tiled/dark,/area/oniprowler/rnd)
 "dw" = (/obj/machinery/camera/autoname/invis/oni_prowler{icon_state = "camera"; dir = 4},/turf/simulated/floor/plating,/area/oniprowler/rnd)
 "dx" = (/turf/simulated/wall/r_wall,/area/oniprowler/storage)
-"dy" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/halo/oni_ship_preset{name = "Holotable"},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
 "dz" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/dark,/area/oniprowler/storage)
 "dA" = (/obj/structure/lattice,/turf/simulated/wall/r_wall,/area/oniprowler/rnd)
 "dB" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
@@ -232,7 +231,6 @@
 "ex" = (/obj/docking_umbilical/south{name = "ONI Aegis Port"},/turf/simulated/floor/plating,/area/oniprowler/cargobay)
 "ey" = (/obj/item/weapon/tape_roll,/turf/simulated/floor/plating,/area/oniprowler/medbayport)
 "ez" = (/obj/machinery/light,/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (NORTH)"; icon_state = "warning"; dir = 1},/turf/simulated/floor/plating,/area/oniprowler/cargobay)
-"eA" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -258,17 +256,17 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamamamam
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAamamamamamabababababahahabaYawataaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaAaaaaaaaaaaaaaaaaaaaAaAaAaAaAamamamamamaBaCbbaEaFahahaqawawataaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAamamamamambhaCaCaCbfahahabbSbiataaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaNaNaNcVbLaDaGbLaAaAbjbkblbmbnbnbobpbqcsbrbsbtaAambubvbwamaBaCaCaCbxahahabababababaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaNaNaNaNbgaNcQbLaHaIdBaAaAbmbmebbmbmbmbmbmbmbmbybzbzaAambAbBbCambhaCcEaEaFahahamamamamamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaNaNaNaNaNaNaNbLbLbLbLbLaAaAbDbEaAekbmbmbmbmbmbmbFbGbHaAambIbJcCamaFaFaFaFaFaJbKambNevbNamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNbLbLbLbLaAaAbjbkblbmbnbnbobpbqcsbrbsbtaAambubvbwamaBaCaCaCbxahahabababababaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaNaNaNaNbgaNcQbLaGaDdBaAaAbmbmebbmbmbmbmbmbmbmbybzbzaAambAbBbCambhaCcEaEaFahahamamamamamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaNaNaNaNaNaNaNcVbLbLbLbLaAaAbDbEaAekbmbmbmbmbmbmbFbGbHaAambIbJcCamaFaFaFaFaFaJbKambNevbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNbLbLbLaAbObmbmbPbmbmbmbmbmbmbmbQbRbRaAccbNcbcbcecbcbcbcbcbcbcbcecbcbcbamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaNaNaNaLaNaOaNaNdyaNaAcWbTelaAbUbVbWbXbmbmebbZbZcaaAbNcnbNbNcfbNbNbNbNbNbNbNbNbNbNbNamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaNaNaNaLaNaOaNaNaHaNaAcWbTelaAbUbVbWbXbmbmebbZbZcaaAbNcnbNbNcfbNbNbNbNbNbNbNbNbNbNbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaNaNaTaNcdbYcdaNckbLaNaAcgchcicjaAaAaAaAcTcmaAaAaAaAaAemcnaPaQaRaSaUaVaWaRbNbNbNbNbNdaamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaacqcrencubLcvbLeobLbLbLcxbLbLbLbLbLbLbLcIbLbLbLbLbLcocpbNcnaXaZbaaZbcbaaZbdbNbNbNbNbNbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaNaNbYbLcwbYbLbLbLbLbLcxbLbLbLbLbLbLbLbLbLbLbLbLbLcocpbNcnbeaZaZaZbcaZaZbdbNbNbNbNbNbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaacqcFepcGbLcKbLeqbLbLbLdObLbLbLbLbLbLbLeqbLbLbLbLbLdRcpbNcncJaZaZaZbcaZaZbdbNctbNbNbNbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaNaNaTaNcMbYcMaNdHcNaNaNcyczcAcBcyczcAcBdocDcBcBcBcBcBemcnaXaZaZaZbcaZaZbdbNdhbNbNbNbNamaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaNaNaNcOaNcZaNaNdNaNaNdqcHcHcBdqcHcHcBerdZdYcHcBewcBbNcneAaQaQaWaWaQaQaRbNbNbNbNbNdaamaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaNaNaNcOaNcZaNaNdNaNaNdqcHcHcBdqcHcHcBerdZdYcHcBewcBbNcnaIaQaQaWaWaQaQaRbNbNbNbNbNdaamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNdDaNaNcPescRcBcPescRcBetdZdYcHcBeycBbNbNeaeaezeaeaeaeaezeaeaezeaeaeaamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNaNcBcBcBcBcBcBcBcBdQcBcBcBcBdScBcScScScScScScScScScSbMcUambNexbNamaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNcBcBcBcBcBcBcBeccHcXcYcBdUdVcBeddbdcdddedddfdgeecSdidiamamamamamaaaaaaaaaaaaaa

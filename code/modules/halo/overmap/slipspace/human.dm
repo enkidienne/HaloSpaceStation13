@@ -7,3 +7,9 @@
 
 /obj/payload/slipspace_core/human
 	icon = 'code/modules/halo/overmap/slipspace/slipspace_drive_human.dmi'
+
+/obj/machinery/slipspace_engine/human/experimental
+	name = "\improper Experimental Shaw-Fujikawa Translight Engine"
+	desc = "A modified variant of the original slipspace engine, harnessing forerunner technology to make precise jumps."
+	req_access = list(access_unsc_oni)
+	precise_jump = TRUE
