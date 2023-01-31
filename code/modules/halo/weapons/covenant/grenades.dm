@@ -1,4 +1,5 @@
-#define ADHERENCE_TIME 5
+#define ADHERENCE_TIME 5 //If thrown before, does not stick.
+#define FIZZLE_TIME 20  //If thrown after; does not stick.
 
 //plasma grenade visual effect
 /obj/effect/plasma_explosion
@@ -23,7 +24,7 @@
 
 /obj/item/weapon/grenade/plasma
 	name = "Type-1 Antipersonnel Grenade"
-	desc = "When activated, the coating of this grenade becomes a powerful adhesive, sticking to anyone it is thrown at. Takes 0.25 seconds to heat to full adherence temperature once activated."
+	desc = "When activated, the coating of this grenade becomes a powerful adhesive, sticking to anyone it is thrown at. Heats to adherence in half a second, and loses that adherence after two."
 	icon = 'code/modules/halo/weapons/icons/Covenant Weapons.dmi'
 	icon_state = "plasmagrenade"
 	throw_speed = 0 //sleep each tick
@@ -32,7 +33,7 @@
 	starttimer_on_hit = 1
 	arm_sound = 'code/modules/halo/sounds/Plasmanadethrow.ogg'
 	alt_explosion_range = 3
-	alt_explosion_damage_max = 40
+	alt_explosion_damage_max = 30
 	matter = list("nanolaminate" = 1, "kemocite" = 1)
 	salvage_components = list()
 	item_state_slots = list(slot_l_hand_str = "plasma_nade_off", slot_r_hand_str = "plasma_nade_off")
@@ -59,8 +60,9 @@
 	var/mob/living/L = A
 	if(!istype(L))
 		return
-	if(world.time - activated_at <= ADHERENCE_TIME)
-		A.visible_message("<span class = 'warning'>[src.name] bounces off of [L.name], having not reached full adherance temperature.</span>")
+	var/timediff = world.time - activated_at
+	if(timediff <= ADHERENCE_TIME || timediff > FIZZLE_TIME)
+		A.visible_message("<span class = 'warning'>[src.name] bounces off of [L.name].</span>")
 	else
 		L.embed(src)
 		A.visible_message("<span class = 'danger'>[src.name] sticks to [L.name]!</span>")
