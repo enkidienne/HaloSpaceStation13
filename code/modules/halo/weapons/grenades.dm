@@ -10,7 +10,7 @@
 	det_time = 30
 	explosion_size = 3
 	alt_explosion_range = 3
-	alt_explosion_damage_max = 40
+	alt_explosion_damage_max = 30
 
 /obj/item/weapon/grenade/frag/m9_hedp/on_explosion(var/turf/O)
 	if(explosion_size)
