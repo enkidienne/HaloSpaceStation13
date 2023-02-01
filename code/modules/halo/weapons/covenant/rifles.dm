@@ -22,7 +22,7 @@
 	one_hand_penalty = 2
 	hud_bullet_usebar = 1
 
-	overheat_capacity = 32
+	overheat_capacity = 45
 	overheat_fullclear_delay = 3 SECONDS
 	overheat_sfx = 'code/modules/halo/sounds/plasrifle_overheat.ogg'
 
