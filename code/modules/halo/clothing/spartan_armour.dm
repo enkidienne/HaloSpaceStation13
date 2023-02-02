@@ -18,7 +18,7 @@
 	flash_protection = FLASH_PROTECTION_MAJOR
 	armor = list(melee = 60, bullet = 40, laser = 30,energy = 30, bomb = 25, bio = 30, rad = 30)
 	species_restricted = list("Spartan")
-	armor_thickness = 20
+	armor_thickness = 24
 
 	action_button_name = "Toggle Helmet Light"
 	light_overlay = "helmet_light_dual"
@@ -50,7 +50,7 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	armor_thickness = 22
+	armor_thickness = 24
 	species_restricted = list("Spartan")
 	max_suitstore_w_class = ITEM_SIZE_HUGE
 	unacidable = 1

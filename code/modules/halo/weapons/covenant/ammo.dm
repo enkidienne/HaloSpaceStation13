@@ -1,7 +1,7 @@
 #define NEEDLER_EMBED_PROB 60
 #define NEEDLER_SHARD_DET_TIME 10 SECONDS
 #define NEEDLER_SHRAPNEL_AP 50
-#define NEEDLER_SUPERCOMBINE_SHRAPNEL_DAMAGE_MULT 3
+#define NEEDLER_SUPERCOMBINE_SHRAPNEL_DAMAGE_MULT 1.5
 #define FUEL_ROD_IRRADIATE_RANGE 2
 #define FUEL_ROD_IRRADIATE_AMOUNT 10
 
@@ -229,9 +229,9 @@
 /obj/item/projectile/bullet/covenant/type51carbine
 	name = "Glowing Projectile"
 	desc = "This projectile leaves a green trail in its wake."
-	damage = 25 //A lot less rounds in a mag than the counterpart BR.
+	damage = 25
 	shield_damage = 10
-	armor_penetration = 20
+	armor_penetration = 35 //A lot less rounds in a mag than the counterpart BR.
 	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
 	icon_state = "carbine_casing"
 	check_armour = "energy"

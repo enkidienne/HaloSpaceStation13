@@ -21,7 +21,7 @@
 	hud_bullet_usebar = 1
 
 	overheat_capacity = 10
-	overheat_fullclear_delay = 2.5 SECONDS
+	overheat_fullclear_delay = 2 SECONDS
 	overheat_sfx = 'code/modules/halo/sounds/plaspistol_overheat.ogg'
 	alt_charge_method = 1
 

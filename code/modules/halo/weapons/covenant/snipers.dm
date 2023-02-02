@@ -77,7 +77,7 @@
 	is_scope_variable = 1
 	scoped_accuracy = 7
 	overheat_sfx = 'code/modules/halo/sounds/beam_rifle_overheat.ogg'
-	overheat_capacity = 4 //SRS mag equiv, but overheats on 4th click
+	overheat_capacity = 3 //1 less than SRS mag,
 	overheat_fullclear_delay = 2 SECONDS
 	hud_bullet_usebar = 1
 
