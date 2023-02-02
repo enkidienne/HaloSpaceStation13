@@ -1,7 +1,7 @@
 
 /obj/autolight_init/glassed_planet
 	targ_area = /area/glassed_planet/exterior/autolight
-	autolight_chance = 90
+	autolight_chance = 0
 	weathers = list(/datum/weather/windy/p20,/datum/weather/ash/p60,/datum/weather/windy/heavy/p40)
 
 /area/glassed_planet
@@ -25,6 +25,8 @@
 
 /area/glassed_planet/exterior/caves
 	name = "Glassed Planet - Caves"
+	dynamic_lighting = 1
+	luminosity = 0
 	sound_env = TUNNEL_ENCLOSED
 
 /area/glassed_planet/exterior/caves/lower

@@ -38,7 +38,7 @@
 "aL" = (/obj/structure/bed/chair/comfy/black{dir = 8},/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
 "aM" = (/obj/machinery/overmap_comms/receiver,/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
 "aN" = (/obj/machinery/overmap_weapon_console/deck_gun_control/local{dir = 4; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "engine"},/obj/structure/computerframe{anchored = 1; dir = 4; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; tag = "icon-computer (WEST)"},/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
-"aO" = (/obj/machinery/nav_computer/unsc,/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
+"aO" = (/obj/machinery/nav_computer/npc/innie,/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
 "aP" = (/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/shuttle/black,/area/om_ships/req_console_ship)
 "aQ" = (/obj/structure/table/steel,/obj/machinery/microwave,/turf/simulated/floor/shuttle/black,/area/om_ships/req_console_ship)
 "aR" = (/obj/effect/hull_segment,/turf/simulated/wall,/area/om_ships/req_console_ship)
