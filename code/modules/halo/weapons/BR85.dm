@@ -17,7 +17,7 @@
 	one_hand_penalty = -1
 	burst = 3
 	burst_delay = 1
-	fire_delay = 6
+	fire_delay = 5
 	hud_bullet_row_num = 18
 	w_class = ITEM_SIZE_LARGE
 	dispersion=list(0.16, 0.16, 0.16)
