@@ -96,7 +96,7 @@
 "bR" = (/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
 "bS" = (/obj/structure/closet,/obj/item/clothing/mask/marine,/obj/item/clothing/accessory/holster/thigh,/obj/item/clothing/gloves/thick/oni_guard,/obj/item/clothing/head/helmet/oni_guard,/obj/item/clothing/head/helmet/oni_guard/visor,/obj/item/clothing/shoes/oni_guard,/obj/item/clothing/suit/storage/oni_guard,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/storage/box/m6d_m225,/obj/item/weapon/storage/box/m7_m443,/obj/item/weapon/storage/box/m7_rubber{name = "box of M7 5mm M443 rubber magazines"},/obj/item/weapon/gun/projectile/m7_smg,/obj/item/weapon/gun/projectile/m7_smg,/turf/simulated/floor/tiled/white,/area/faction_base/oni/barracks)
 "bT" = (/obj/machinery/light{dir = 1},/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
-"bU" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
+"bU" = (/obj/effect/floor_decal/industrial/warning/corner{icon_state = "warningcorner"; dir = 4},/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
 "bV" = (/turf/simulated/floor/tech/gray,/area/faction_base/oni/barracks)
 "bW" = (/obj/machinery/atmospherics/pipe/manifold/visible{icon_state = "map"; dir = 4},/turf/simulated/floor/tiled/white,/area/faction_base/oni/medbay)
 "bX" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/simulated/floor/tiled/white,/area/faction_base/oni/medbay)
@@ -162,7 +162,7 @@
 "df" = (/obj/machinery/vending/dinnerware,/turf/simulated/floor/tiled/white,/area/faction_base/oni/barracks)
 "dg" = (/obj/structure/table/standard,/turf/simulated/floor/tiled/white,/area/faction_base/oni/barracks)
 "dh" = (/turf/simulated/floor/tech/white,/area/faction_base/oni/medbay)
-"di" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/wrench,/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,/obj/item/weapon/storage/box/bloodpacks,/turf/simulated/floor/tiled/white,/area/faction_base/oni/medbay)
+"di" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/shuttle/oni_shuttle_supply)
 "dj" = (/obj/machinery/light,/turf/simulated/floor/tech/gray,/area/faction_base/oni/research)
 "dk" = (/obj/machinery/light/colored/blue{icon_state = "blue1"; dir = 4},/turf/simulated/floor/tiled/dark,/area/faction_base/oni/research)
 "dl" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
@@ -397,6 +397,7 @@
 "hG" = (/obj/machinery/light/colored/red{icon_state = "red1"; dir = 4},/turf/simulated/floor/reinforced,/area/faction_base/oni/research)
 "hH" = (/obj/machinery/light/colored/red{icon_state = "red1"; dir = 8},/turf/simulated/floor/reinforced,/area/faction_base/oni/research)
 "hI" = (/turf/unsimulated/wall,/area/faction_base/oni/digsite)
+"hJ" = (/obj/effect/floor_decal/industrial/warning/corner{icon_state = "warningcorner"; dir = 1},/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
 "hK" = (/obj/machinery/light/colored/blue{icon_state = "blue1"; dir = 8},/obj/structure/closet,/obj/item/weapon/storage/box/masks,/obj/item/weapon/storage/box/gloves,/turf/simulated/floor/tiled/white,/area/faction_base/oni/research)
 "hL" = (/obj/machinery/light/colored/red{icon_state = "red1"; dir = 4},/turf/simulated/floor/tech/gray,/area/faction_base/oni/research)
 "hM" = (/obj/machinery/door/window{icon_state = "left"; dir = 4},/turf/simulated/floor/tech/gray,/area/faction_base/oni/research)
@@ -419,6 +420,9 @@
 "id" = (/obj/structure/table/standard,/obj/item/weapon/storage/pill_bottle/dice,/obj/item/weapon/deck/cards,/turf/simulated/floor/tiled/white,/area/faction_base/oni/barracks)
 "ie" = (/obj/structure/table/standard,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/blacksite)
 "if" = (/obj/structure/table/standard,/obj/item/weapon/storage/box/bodybags,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/blacksite)
+"ig" = (/obj/effect/floor_decal/industrial/warning/corner,/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
+"ih" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/wrench,/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,/obj/item/weapon/storage/box/bloodpacks,/obj/item/weapon/reagent_containers/dropper,/turf/simulated/floor/tiled/white,/area/faction_base/oni/medbay)
+"ii" = (/obj/machinery/vending/medical{density = 0; icon_state = "wallmed"; icon_vend = ""; pixel_x = -32},/turf/simulated/floor/tiled/white,/area/faction_base/oni/medbay)
 "js" = (/obj/structure/table/rack,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/turf/simulated/floor/tiled/dark,/area/faction_base/oni/research)
 "jQ" = (/obj/item/modular_computer/console/unsc/oni_supply,/turf/simulated/floor/tech/maint,/area/faction_base/oni/hangar)
 "kk" = (/obj/item/device/radio/intercom{dir = 4; icon_state = "intercom"; name = "intercom"; pixel_x = -32; pixel_y = 0; tag = "icon-intercom (EAST)"},/turf/simulated/floor/tech/gray,/area/faction_base/oni/barracks)
@@ -516,7 +520,7 @@ aaabacacfiafafafafafafafaffjacacacaiajajajawawawawawawawawawawawawawawawawawawaw
 aaabacacadafafafafafararargOacacacaibiajajawbjawawawawawbjawawawawawbjawawawawawbjawawawawawbjawawawaa
 aaaQacacaSafafagafafaLafafahacacacaiblajajawbmawawawawawbmawawawawawbmawawawaDaDaDaDaDaDaDaDaDaDaDaDaa
 aaabacacadafafanafafafafafahacacacaiajajajawawawawawawawawawawawawawawawawbhaDbnbQbLdndndndnbTaPaPaDaa
-aaabacacfiafafafafafarararfjacacacaiajajajawawawawawawawawawawawbebebebeaDaDaDdlaPaPdEdEdEdEaPaPNfaDaa
+aaabacacfiafafafafafarararfjacacacaiajajajawawawawawawawawawawawbebebebeaDaDaDdlaPbUdEdEdEdEhJaPNfaDaa
 aaaQacacadafafafafafafafafahacacacaiajajajawawawawawawawawawawawbedrdrdrdrdraDaPaPbRaPbRaPbRaPaPaPaDaa
 aaabacacadafafafafafafafafahacacacaiblajajawbmawawawawawbmawawawaDdrdQgvdQdraDgRaPbOaPaPaPcwaPaPgRaDaa
 aafoacacayafafafaffVafgTafahfnabfWbebebebebebebebebebebebebebebeaDdrdZeadZdraDgRaPcMaPcMbOdbaPaPaPaDaa
@@ -524,22 +528,22 @@ aaasatbqasaUaWaWaWasasasasasasaDaDaDaDaeaeaeaeaeaeaeaeaeaeaeaeaeaDaEaEaPfbflaDfp
 aaasbgbqbPaWaWaWaWcicjcjKfcjfIaDsNLYsNaeaeamaoazavazazavazazazaAaDaPaPaPaPaPdKaPaPbRaPcMbOcwaPaPaPaDaa
 aaasckbqaWaWaWaWaWcjapcjcjdDcjaDsNeBsNaeaBaCaFaCaFaCaFaCaFaCaFaGaDgMaPbOaPNfaDgRaPaPaPaPbOcwaPaPgRaDaa
 aaasbqbqaWededaWaWaWaWaWaWaWaWaDsNeBsNaeaHaFaFaFaFaFaFaFaFaFaFaGaDfYaPbOaPgIaDgbaPbRaPbRaPcwaPaPduaDaa
-aaasbqcmcjcjgUgXedaWaWaWaWaWaWaDsNeBsNaeaRaZgSaZaYaZaZaZbabbaZSnaDPGaPaPaPdeaDaPaPgfglgYaPcwgfgfdTaDaa
+aaasbqcmcjcjgUgXedaWaWaWaWaWaWaDsNeBsNaeaRaZgSaZaYaZaZaZbabbaZSnaDPGaPaPaPdeaDaPiggfglgYaPcwgfgfdTaDaa
 aaasbqbqcjRwcjcjededaWeAeAeAeDaDaDDraDaeaeaeaeaeaeaecIddaeaeaeaeaDaDaDdKaDaDaDaPgxdFgtgndJeygogmgnaDaa
 aaasgZgZcjcjcjcjaWaWaWcjcjcjcjbqeBhadRdHdIdIdIdIdIdScfeBbBaTeKsSaMaDaPaPaPbOgzaPgxgpaJememgyemaNeqaDaa
 aaasckgZbqbqbqbqbqbqgZgZbqbqgabqhahadMdNdNdNdNdNdNdOeBeBetaPaPaPaPdKaPaPaPbObOaPgxgremememgyememeqaDaa
 aaasbqgZbqbqcnbqakgZgZbqbqcnbqaueBeBdMdNdPdPdPdPdNdOfseBaPbObOaPaPaDdvjQdAaPbObOgxgsemememgyememeqaDaa
 aabfbfeIbVbfbfbfbfbfbfeIbVbfbfbfeBeBdMdNdPdPdPdPdNdOeBgcfHbOaPaPaPaDgAgBaPaPaPaPgxgpaJememgyemaNeqaDaa
-aabfbpbtbtbtbubtbvbtbtbtbtbwbSbfeBeBdMfqdUdNdNdNdNdOhaeBaDaXcagDgEaDaDgGgHgKgKgLaDbUgtgtgmgmgtgtgnaDaa
+aabfbpbtbtbtbubtbvbtbtbtbtbwbSbfeBeBdMfqdUdNdNdNdNdOhaeBaDaXcagDgEaDaDgGgHgKgKgLaDdigtgtgmgmgtgtgnaDaa
 aabfcBbtbtcdiddLbtdLdgcdbtbtbtbVeBeBdRdWdWdWdWdWdWdRhahcaDaDaDaDaDaDgNeBeBeBeBfgaDaDaDaDaDaDaDaDaDaDaa
 aabfeTbtbtdLhVdLbtdLhVdLbtbtggfreBeBhahaeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBgheBeBeBeBLYeBeBeBeBeBeBhaaDaa
 aabffBbtbtcddgdLbtdLdgcdbtbtfCbfeBeCeBhaeBcWeBdceBeBeCeBeBeBeBeCeBeBhahahahahaeBeBeBeBeBeBeBgieBeCaDaa
 aabfgPbtbtbtbtbtfDbtbtbtbtbtfEbfbxbxbybzbAbIeVdCbxbxbxbDbEbKbxbFbGbHgCbMccbGbHbHgCbFhdbJbNbNcsbNbNbNaa
 aabfdfbtfKfLfKfOfPfQicbtfRfTfUbfbxaVeVeVfyeVeVvTeVYObxbYbZeVbxbFcbcCcccccccccccrfkbFhebJbNcecgchclbNaa
 aabfbfbffJosfJbfbfbfbfbfgebfbfbfbxcocpeVcqeVeVeVeVeVeleVeVbXbxcNcQcccccucccvcchfhgbFheWwbNczcgcgcAbNaa
-aabebfynZNbVbVRnuDEmbfrTbVbVrTbfbxbdcGcHbxeVeVdXececbxeVeVcJbxcNcQcccKcLcOcPcQccccbFhehebNcRcgcgclbNaa
+aabebfynZNbVbVRnuDEmbfrTbVbVrTbfbxbdcGcHbxiieVdXececbxeVeVcJbxcNcQcccKcLcOcPcQccccbFhehebNcRcgcgclbNaa
 aabebfIVZNdmbVXxZNVSbfcVbVbVcVbfbxeneoeoeoeVeVepdhfSbxsoeVcYbxbFctcccccZcccZccfFfGbFbJbJbNbNbNbNbNbNaa
-aabebfIVhhbVbVXxhhhhbfcVhihicVbfbxboeVeVeVeVeVepgFdhbxsoeVdibxfwcQdjhfccccccccfMfNbFbJbJbNdxdyeiePbNaa
+aabebfIVhhbVbVXxhhhhbfcVhihicVbfbxboeVeVeVeVeVepgFdhbxsoeVihbxfwcQdjhfccccccccfMfNbFbJbJbNdxdyeiePbNaa
 aabebfxBhhdmbVXxZNVSbfcVbVhicVbfbxbcbreVdtdtcXeudhdhbxHDeVdobxbFbFbFbFdpccbFbFbFbFbFdkbJbNeQeReReUbNaa
 aabebfkkhihibVXxZNEmbfcVgdbVcVbfbxbcbWeVdBdheVepdhfSbxHDeVdwbxbFeXeYdzbJbJbJbJhebJdzbJbJeZfafafcfdbNaa
 aabebfsOZNhjbVxxbfbfbfbfbfbfbfbfbxcFbWeVeeefeVepgFdhbxoSeVdYbxbFfffmbJhehehehehkbJbJhehefteRfufxfzbNaa
