@@ -182,13 +182,13 @@
 	taste_description = "acid"
 	reagent_state = LIQUID
 	color = "#FF3300"
-	metabolism = REM * 0.15
+	metabolism = REM * 0.5 // 1u = 15 seconds.
 	overdose = 5 //Should be administered in low doses at the time it's needed, not held in system
 
 /datum/reagent/hyperzine_concentrated/affect_blood(var/mob/living/carbon/human/H, var/alien, var/removed)
 	if(H.internal_organs_by_name[BP_LIVER])
 		var/obj/item/organ/user_liver = H.internal_organs_by_name[BP_LIVER]
-		user_liver.take_damage(0.25,0.25)
+		user_liver.take_damage(0.3,0.3)
 	H.adjustToxLoss(0.75)
 	if(prob(10))
 		H.emote(pick("twitch", "blink_r", "shiver"))
