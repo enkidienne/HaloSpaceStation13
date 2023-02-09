@@ -178,6 +178,7 @@
 "dv" = (/obj/machinery/research/component_dissembler,/turf/simulated/floor/tiled/dark,/area/oniprowler/rnd)
 "dw" = (/obj/machinery/camera/autoname/invis/oni_prowler{icon_state = "camera"; dir = 4},/turf/simulated/floor/plating,/area/oniprowler/rnd)
 "dx" = (/turf/simulated/wall/r_wall,/area/oniprowler/storage)
+"dy" = (/obj/effect/overmap/ship/oni_aegis,/turf/space,/area/space)
 "dz" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/dark,/area/oniprowler/storage)
 "dA" = (/obj/structure/lattice,/turf/simulated/wall/r_wall,/area/oniprowler/rnd)
 "dB" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/simulated/floor/tiled/dark,/area/oniprowler/bridge)
@@ -292,5 +293,5 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+dyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}
