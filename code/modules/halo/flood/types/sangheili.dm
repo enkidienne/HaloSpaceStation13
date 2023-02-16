@@ -11,7 +11,7 @@
 	maxHealth = 125
 	melee_damage_lower = 35
 	melee_damage_upper = 40
-	attacktext = "slash"
+	attacktext = "slashed"
 	spawn_with_gun = COV_MEDIUM_FLOOD_GUN_LIST
 	gun_spawn_chance = 33
 
@@ -27,7 +27,7 @@
 	maxHealth = 125
 	melee_damage_lower = 35
 	melee_damage_upper = 40
-	attacktext = "slash"
+	attacktext = "slashed"
 	spawn_with_gun = COV_MEDIUM_FLOOD_GUN_LIST
 	gun_spawn_chance = 33
 
@@ -44,7 +44,7 @@
 	resistance = 5
 	melee_damage_lower = 35
 	melee_damage_upper = 40
-	attacktext = "slash"
+	attacktext = "slashed"
 	spawn_with_gun = COV_MEDIUM_FLOOD_GUN_LIST
 	gun_spawn_chance = 45
 	shield_left = 100
@@ -63,7 +63,7 @@
 	resistance = 5
 	melee_damage_lower = 35
 	melee_damage_upper = 40
-	attacktext = "slash"
+	attacktext = "slashed"
 	spawn_with_gun = COV_STRONG_FLOOD_GUN_LIST
 	gun_spawn_chance = 65
 	shield_left = 150
@@ -82,7 +82,7 @@
 	resistance = 5
 	melee_damage_lower = 35
 	melee_damage_upper = 40
-	attacktext = "slash"
+	attacktext = "slashed"
 	spawn_with_gun = COV_STRONG_FLOOD_GUN_LIST
 	gun_spawn_chance = 65
 	shield_left = 150
@@ -100,7 +100,7 @@
 	maxHealth = 150
 	melee_damage_lower = 35
 	melee_damage_upper = 40
-	attacktext = "slash"
+	attacktext = "slashed"
 	alpha = 20
 
 	shield_left = 0
@@ -122,6 +122,6 @@
 	resistance = 2
 	melee_damage_lower = 35
 	melee_damage_upper = 40
-	attacktext = "slash"
+	attacktext = "slashed"
 	spawn_with_gun = COV_MEDIUM_FLOOD_GUN_LIST
 	gun_spawn_chance = 65
