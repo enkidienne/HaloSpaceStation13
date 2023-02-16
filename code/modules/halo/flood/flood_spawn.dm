@@ -14,12 +14,12 @@
 	/mob/living/simple_animal/hostile/flood/combat_form/ODST,\
 	/mob/living/simple_animal/hostile/flood/combat_form/guard,\
 	/mob/living/simple_animal/hostile/flood/combat_form/oni,\
-	/mob/living/simple_animal/hostile/flood/combat_form/minor,\
-	/mob/living/simple_animal/hostile/flood/combat_form/minor2,\
-	/mob/living/simple_animal/hostile/flood/combat_form/zealot,\
-	/mob/living/simple_animal/hostile/flood/combat_form/ultra,\
-	/mob/living/simple_animal/hostile/flood/combat_form/specops,
-	/mob/living/simple_animal/hostile/flood/combat_form/ranger)
+	/mob/living/simple_animal/hostile/flood/combat_form/elite/minor,\
+	/mob/living/simple_animal/hostile/flood/combat_form/elite/minor2,\
+	/mob/living/simple_animal/hostile/flood/combat_form/elite/zealot,\
+	/mob/living/simple_animal/hostile/flood/combat_form/elite/ultra,\
+	/mob/living/simple_animal/hostile/flood/combat_form/elite/specops,
+	/mob/living/simple_animal/hostile/flood/combat_form/elite/ranger)
 
 /datum/flood_spawner/New(var/atom/a_owner, var/a_max_flood, var/a_respawn_delay,var/list/a_spawn_pool)
 	. = ..()
