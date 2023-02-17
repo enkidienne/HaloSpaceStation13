@@ -79,18 +79,24 @@
 		h.bloodstr.add_reagent(/datum/reagent/floodinfectiontoxin,melee_damage_lower/4)
 	pickup_gun(attacked)
 
-/mob/living/simple_animal/hostile/flood/combat_form/RangedAttack(var/atom/attacked)
+/mob/living/simple_animal/hostile/flood/combat_form/RangedAttack(var/atom/attacked, mob/user)
 	if(!our_gun)
 		return
-	var/gun_fire = our_gun.afterattack(attacked,src)
-	if(!ckey && !gun_fire)
+	
+	our_gun.afterattack(attacked,src)
+	
+	if(!ckey && our_gun.ammo_check(user) == 0) //If the gun has no ammo left we drop it
 		drop_gun()
 
-/mob/living/simple_animal/hostile/flood/combat_form/proc/pickup_gun(var/obj/item/weapon/gun/G)
+/mob/living/simple_animal/hostile/flood/combat_form/proc/pickup_gun(var/obj/item/weapon/gun/G, mob/living/user)
 	if(!istype(G))
 		return
 	if(our_gun)
 		drop_gun()
+		
+	var/ammo = G.ammo_check() 
+	if(ammo == 0 && !ckey)  //If a gun has no ammo we ignore it, players can still pick up though if they want
+		return
 	visible_message("<span class = 'notice'>[name] picks up [G.name]</span>")
 	our_gun = G
 	contents += our_gun
@@ -102,6 +108,7 @@
 		our_gun.forceMove(loc)
 		contents -= our_gun
 		ranged = 0
+		our_gun = 0 //So an NPC can pick up a new gun
 
 /mob/living/simple_animal/hostile/flood/combat_form/proc/human_in_sight()
 	for(var/mob/living/carbon/human/h in view(7,src))
@@ -131,7 +138,7 @@
 	var/list/viewlist = view(1,src)
 	if(locate(/obj/machinery/door/airlock) in viewlist)
 		smash_airlock()
-	if(!our_gun)
+	if(!our_gun || our_gun == 0)
 		for(var/obj/item/weapon/gun/G in viewlist)
 			pickup_gun(G)
 			return
