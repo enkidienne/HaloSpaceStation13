@@ -142,3 +142,21 @@
 		for(var/obj/item/weapon/gun/G in viewlist)
 			pickup_gun(G)
 			return
+
+/mob/living/simple_animal/hostile/flood/combat_form/MoveToTarget()
+	stop_automated_movement = 1
+	if(!target_mob || SA_attackable(target_mob))
+		stance = HOSTILE_STANCE_IDLE
+	var/list/targlist = ListTargets(7)
+	if(target_mob in targlist)
+		if(ranged || istype(loc,/obj/vehicles))
+			if(target_mob in targlist)
+				walk(src, 0)
+				OpenFire(target_mob)
+		hostilemob_walk_to(target_mob,1,move_to_delay) //Flood should chase down people even if ranged and use their arm to attack
+		spawn(get_dist(src,target_mob)*move_to_delay) //If the target is within range after our original move, we attack them.
+			AttackTarget()
+		
+	else
+		target_mob = null
+		stance = HOSTILE_STANCE_IDLE
