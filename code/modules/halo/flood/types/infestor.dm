@@ -59,7 +59,7 @@
 	if(is_being_infested(h))
 		return 0
 	visible_message("<span class = 'danger'>[name] leaps at [h.name], tearing at their armor and burrowing through their skin!</span>")
-	h.bloodstr.add_reagent(/datum/reagent/floodinfectiontoxin,15)
+	h.bloodstr.add_reagent(/datum/reagent/floodinfectiontoxin,60)
 	adjustBruteLoss(1)
 	return 1
 
