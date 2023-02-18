@@ -88,7 +88,7 @@
 	if(!ckey && our_gun.ammo_check(user) == 0) //If the gun has no ammo left we drop it
 		drop_gun()
 
-/mob/living/simple_animal/hostile/flood/combat_form/proc/pickup_gun(var/obj/item/weapon/gun/G, mob/living/user)
+/mob/living/simple_animal/hostile/flood/combat_form/proc/pickup_gun(var/obj/item/weapon/gun/G)
 	if(!istype(G))
 		return
 	if(our_gun)
