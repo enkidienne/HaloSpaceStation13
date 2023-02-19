@@ -163,3 +163,22 @@
 	..()
 	if(swarm_size > 1)
 		to_chat(user, "<span class='warning'>There are [swarm_size] in the swarm.</span>")
+		
+/mob/living/simple_animal/hostile/flood/infestor/apply_difficulty_setting()
+	. = ..()
+	switch(GLOB.difficulty_level)
+		if(DIFFICULTY_EASY)
+			//We dont want them to instantly die
+			health = 1
+			maxHealth = 1
+		if(DIFFICULTY_NORMAL)
+			//no change
+		if(DIFFICULTY_HEROIC)
+			//Dont want them too tanky
+			health = 1
+			maxHealth = 1
+			
+		if(DIFFICULTY_LEGENDARY)
+			//Dont want them too tanky
+			health = 1
+			maxHealth = 1
