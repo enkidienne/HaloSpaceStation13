@@ -1751,6 +1751,7 @@
 #include "code\modules\halo\flood\types\achlys.dm"
 #include "code\modules\halo\flood\types\carrier.dm"
 #include "code\modules\halo\flood\types\combat_form.dm"
+#include "code\modules\halo\flood\types\flood_shield.dm"
 #include "code\modules\halo\flood\types\human.dm"
 #include "code\modules\halo\flood\types\infestor.dm"
 #include "code\modules\halo\flood\types\pure.dm"

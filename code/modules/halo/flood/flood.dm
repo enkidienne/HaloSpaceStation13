@@ -32,12 +32,12 @@ GLOBAL_LIST_EMPTY(live_flood_simplemobs)
 /datum/species/sangheili = /mob/living/simple_animal/hostile/flood/combat_form/prisoner/abomination)
 
 #define ITEM_INFEST_TYPE_LIST list(\
-/obj/item/clothing/suit/armor/special/combatharness/minor = /mob/living/simple_animal/hostile/flood/combat_form/minor2,\
-/obj/item/clothing/suit/armor/special/combatharness/major = /mob/living/simple_animal/hostile/flood/combat_form/major,\
-/obj/item/clothing/suit/armor/special/combatharness/zealot = /mob/living/simple_animal/hostile/flood/combat_form/zealot,\
-/obj/item/clothing/suit/armor/special/combatharness/ultra = /mob/living/simple_animal/hostile/flood/combat_form/ultra,\
-/obj/item/clothing/suit/armor/special/combatharness/specops = /mob/living/simple_animal/hostile/flood/combat_form/specops,\
-/obj/item/clothing/suit/armor/special/combatharness/ranger = /mob/living/simple_animal/hostile/flood/combat_form/ranger,\
+/obj/item/clothing/suit/armor/special/combatharness/minor = /mob/living/simple_animal/hostile/flood/combat_form/elite/minor2,\
+/obj/item/clothing/suit/armor/special/combatharness/major = /mob/living/simple_animal/hostile/flood/combat_form/elite/major,\
+/obj/item/clothing/suit/armor/special/combatharness/zealot = /mob/living/simple_animal/hostile/flood/combat_form/elite/zealot,\
+/obj/item/clothing/suit/armor/special/combatharness/ultra = /mob/living/simple_animal/hostile/flood/combat_form/elite/ultra,\
+/obj/item/clothing/suit/armor/special/combatharness/specops = /mob/living/simple_animal/hostile/flood/combat_form/elite/specops,\
+/obj/item/clothing/suit/armor/special/combatharness/ranger = /mob/living/simple_animal/hostile/flood/combat_form/elite/ranger,\
 /obj/item/clothing/under/unsc/odst_jumpsuit = /mob/living/simple_animal/hostile/flood/combat_form/ODST,\
 /obj/item/clothing/under/unsc/marine_fatigues/oni_uniform = /mob/living/simple_animal/hostile/flood/combat_form/oni,\
 /obj/item/clothing/under/color/orange = /mob/living/simple_animal/hostile/flood/combat_form/prisoner)

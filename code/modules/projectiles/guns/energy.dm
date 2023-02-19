@@ -120,4 +120,11 @@
 			icon_state = "[modifystate][ratio]"
 		else
 			icon_state = "[initial(icon_state)][ratio]"
+			
+/obj/item/weapon/gun/energy/ammo_check()
+	
+	if(!power_supply || power_supply.charge < 1)  //If we have no power supply or it does not have enough charge to fire it fails the check
+		return 0
+	else 
+		return 1
 
