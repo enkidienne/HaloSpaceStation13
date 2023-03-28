@@ -810,4 +810,7 @@
 	if (scope_zoom_amount == 0) return
 
 	toggle_scope(usr, scope_zoom_amount)
+	
+/obj/item/weapon/gun/proc/ammo_check()     //We will change this in the projectile and energy dm files in the guns folder
+	return null
 
