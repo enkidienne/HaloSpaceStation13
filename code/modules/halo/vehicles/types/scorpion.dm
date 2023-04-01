@@ -114,3 +114,7 @@
 	damage_type = BRUTE
 	damtype = BRUTE
 	return ..()
+
+/obj/vehicles/scorpion_tank/innie
+	icon = 'code/modules/halo/vehicles/types/innie_scorpion.dmi'
+	icon_state = "move"
