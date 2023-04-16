@@ -17,7 +17,7 @@
 	burst_delay = 1.7
 	one_hand_penalty = -1
 	dispersion = list(0.2,0.3,0.5,0.73)
-	fire_sound = 'code/modules/halo/sounds/MA3firefix.ogg'
+	fire_sound = 'code/modules/halo/sounds/MA3_Assault_Rifle_Fire_New.ogg'
 	reload_sound = 'code/modules/halo/sounds/MA3reload.ogg'
 
 	wielded_item_state = "ma3-wielded"
