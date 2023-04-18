@@ -31,6 +31,33 @@
 	emote_message_3p = "USER attempts to terrify the enemy!"
 	species_sounds = list(/datum/species/spartan = 'code/modules/halo/sounds/licensed/boo.ogg')
 
+/decl/emote/audible/species_sound/berserk
+	key = "berserk"
+	emote_message_3p = "USER erupts into a rage!"
+	species_sounds = list(
+		/datum/species/sangheili = 'code/modules/halo/sounds/licensed/berserk/elite_berserk1.ogg',
+		/datum/species/brutes = 'code/modules/halo/sounds/licensed/berserk/brute_berserk1.ogg')
+
+/decl/emote/audible/species_sound/forerunner
+	key = "forerunner"
+	emote_message_3p = "USER raises their arms in reverence!"
+	species_sounds = list(
+		/datum/species/sangheili = 'code/modules/halo/sounds/licensed/forerunner/elite_forerunner.ogg',
+		/datum/species/unggoy =	'code/modules/halo/sounds/licensed/forerunner/grunt_forerunner.ogg',
+		/datum/species/sanshyuum = 'code/modules/halo/sounds/licensed/forerunner/prophet_forerunner.ogg')
+
+/decl/emote/audible/species_sound/taunt
+	key = "taunt"
+	emote_message_3p = "USER taunts their opponent!"
+	species_sounds = list(
+		/datum/species/brutes = 'code/modules/halo/sounds/licensed/taunt/brute_taunt1.ogg',
+		/datum/species/sangheili = 'code/modules/halo/sounds/licensed/taunt/elite_taunt1.ogg',
+		/datum/species/unggoy = 'code/modules/halo/sounds/licensed/taunt/grunt_taunt1.ogg',
+		/datum/species/kig_yar = 'code/modules/halo/sounds/licensed/taunt/jackal_taunt1.ogg',
+		/datum/species/kig_yar_skirmisher = 'code/modules/halo/sounds/licensed/taunt/skirmisher_taunt1.ogg',
+		/datum/species/yanmee = 'code/modules/halo/sounds/licensed/taunt/bugger_taunt1.ogg',
+		/datum/species/sanshyuum = 'code/modules/halo/sounds/licensed/taunt/prophet_taunt1.ogg')
+
 /decl/emote/audible/painscream
 	key = "painscream"
 	emote_message_3p = "USER screams in pain!"

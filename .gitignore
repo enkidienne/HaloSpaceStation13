@@ -27,3 +27,6 @@ config/*
 # python
 *.pyc
 __pycache__
+code/modules/halo/flood/types/flood_shield.dm
+code/modules/halo/flood/types/sangheili.dm
+code/modules/halo/vehicles/types/phantom_dropship.dm
