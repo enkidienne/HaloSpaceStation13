@@ -59,6 +59,6 @@
 	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/hellbringer
 	alt_titles = list("Flamethrower Operator" = /decl/hierarchy/outfit/job/unsc/marine/hellbringer)
 	access = list(access_unsc,access_unsc_armoury,access_unsc_marine,access_unsc_specialist)
-	faction_whitelist = "UNSC"
+	faction_whitelist = null
 
 	radio_speech_size = RADIO_SPEECH_SPECIALIST
