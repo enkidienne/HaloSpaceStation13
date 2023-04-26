@@ -16,6 +16,7 @@
 		access_unsc_marine,\
 		access_unsc_odst,\
 		access_unsc_specialist)
+	open_slot_on_death = 1
 
 	radio_speech_size = RADIO_SPEECH_SPECIALIST
 
