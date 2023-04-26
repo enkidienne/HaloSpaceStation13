@@ -31,8 +31,10 @@
 /obj/item/weapon/gun/projectile/m41/update_icon()
 	if(ammo_magazine)
 		icon_state = "M41closed"
+		slowdown_general = initial(slowdown_general)
 	else
 		icon_state = "M41open-empty"
+		slowdown_general = 0.15
 	..()
 
 //M41 rocket launcher
