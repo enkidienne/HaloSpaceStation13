@@ -1,0 +1,228 @@
+"aa" = (/turf/space,/area/space)
+"ab" = (/obj/structure/closet/crate/radiation,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/structure/window/reinforced/crescent,/obj/machinery/door/window/eastleft,/turf/simulated/floor/plating,/area/space)
+"ac" = (/obj/machinery/light/colored/orange{tag = "icon-orange1 (NORTH)"; icon_state = "orange1"; dir = 1},/turf/simulated/floor/plating,/area/space)
+"ad" = (/obj/machinery/fusion_thruster/fueled{tag = "icon-nozzle1 (WEST)"; icon_state = "nozzle1"; dir = 8},/obj/structure/window/reinforced/treated{basestate = "invis"; dir = 4; icon_state = "invis"},/obj/structure/window/reinforced/treated{basestate = "invis"; dir = 4; icon_state = "invis"},/obj/structure/window/reinforced/treated{basestate = "invis"; dir = 4; icon_state = "invis"},/turf/simulated/floor/plating,/area/space)
+"ae" = (/obj/machinery/organ_printer/robot/mapped,/turf/simulated/floor/tiled/white,/area/space)
+"af" = (/obj/structure/closet/crate/radiation,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/item/fusion_fuel,/obj/structure/window/reinforced/crescent,/obj/machinery/door/window/eastleft,/obj/machinery/camera/autoname/invis/oni_prowler{icon_state = "camera"; dir = 4},/turf/simulated/floor/plating,/area/space)
+"ag" = (/obj/structure/lattice,/turf/space,/area/space)
+"ah" = (/turf/simulated/floor/plating,/area/space)
+"ai" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tech/maint,/area/space)
+"aj" = (/obj/machinery/vending/tool,/turf/simulated/floor/plating,/area/space)
+"ak" = (/obj/machinery/vending/engivend,/turf/simulated/floor/plating,/area/space)
+"al" = (/obj/machinery/smartfridge/chemistry,/turf/simulated/wall/r_wall,/area/space)
+"am" = (/obj/machinery/light/colored/orange{tag = "icon-orange1 (WEST)"; icon_state = "orange1"; dir = 8},/turf/simulated/floor/plating,/area/space)
+"an" = (/obj/machinery/camera/autoname/invis/oni_prowler{icon_state = "camera"; dir = 4},/turf/simulated/floor/plating,/area/space)
+"ao" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/dark,/area/space)
+"ap" = (/obj/structure/lattice,/turf/simulated/wall/r_wall,/area/space)
+"aq" = (/obj/machinery/organ_printer/flesh/mapped,/turf/simulated/floor/tiled/white,/area/space)
+"ar" = (/turf/simulated/floor/tech/maint,/area/space)
+"as" = (/obj/machinery/sleeper,/turf/simulated/floor/tiled/white,/area/space)
+"at" = (/obj/machinery/vending/armory/medical,/turf/simulated/floor/tiled/white,/area/space)
+"au" = (/obj/item/weapon/reagent_containers/spray/cleaner{desc = "Someone has crossed out the Space from Space Cleaner and written in Surgery. 'Do not remove under punishment of death!!!' is scrawled on the back."; name = "Surgery Cleaner"},/obj/item/weapon/reagent_containers/spray/cleaner{desc = "Someone has crossed out the Space from Space Cleaner and written in Surgery. 'Do not remove under punishment of death!!!' is scrawled on the back."; name = "Surgery Cleaner"},/obj/item/weapon/reagent_containers/spray/cleaner{desc = "Someone has crossed out the Space from Space Cleaner and written in Surgery. 'Do not remove under punishment of death!!!' is scrawled on the back."; name = "Surgery Cleaner"},/obj/item/weapon/reagent_containers/spray/cleaner{desc = "Someone has crossed out the Space from Space Cleaner and written in Surgery. 'Do not remove under punishment of death!!!' is scrawled on the back."; name = "Surgery Cleaner"},/obj/structure/table/steel_reinforced,/obj/item/weapon/storage/box/bodybags,/obj/item/weapon/storage/box/masks,/obj/item/weapon/storage/box/masks,/turf/simulated/floor/tiled/white,/area/space)
+"av" = (/obj/structure/closet/crate/freezer,/obj/effect/floor_decal/industrial/warning/full,/obj/item/organ/internal/lungs/theta,/obj/item/organ/internal/liver/spartan/theta,/obj/item/organ/internal/heart/spartan/theta,/obj/item/organ/internal/eyes/occipital_reversal/theta,/obj/item/species_convert/orion,/turf/simulated/floor/tiled/white,/area/space)
+"aw" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/obj/structure/window/reinforced/projresist{icon_state = "rwindow"; dir = 1},/turf/simulated/floor/tech/white,/area/space)
+"ax" = (/obj/structure/filingcabinet,/turf/simulated/floor/tech/maint,/area/space)
+"ay" = (/obj/item/modular_computer/console/unsc/oni_supply,/turf/simulated/floor/tech/maint,/area/space)
+"az" = (/obj/structure/table/standard,/obj/item/weapon/stamp/cargo,/turf/simulated/floor/tech/maint,/area/space)
+"aA" = (/obj/structure/table/standard,/obj/item/weapon/paper_bin,/obj/item/weapon/pen,/turf/simulated/floor/tech/maint,/area/space)
+"aB" = (/obj/structure/bed/chair/office/light{tag = "icon-officechair_white_preview (NORTH)"; icon_state = "officechair_white_preview"; dir = 1},/turf/simulated/floor/tech/maint,/area/space)
+"aC" = (/obj/structure/grille,/obj/structure/window/reinforced/treated{dir = 1},/obj/structure/window/reinforced/treated{dir = 4},/obj/structure/window/reinforced/treated{dir = 8},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/dark,/area/space)
+"aD" = (/obj/machinery/squad_camera_console{icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "holotable"},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"aE" = (/obj/structure/window/reinforced/projresist,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/turf/simulated/floor/tech/white,/area/space)
+"aF" = (/obj/machinery/body_scanconsole{icon_state = "body_scannerconsole"; dir = 4},/turf/simulated/floor/tiled/white,/area/space)
+"aG" = (/obj/machinery/squad_camera_console{icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "holotable"; dir = 1},/obj/machinery/light/colored/blue{icon_state = "blue1"; dir = 8},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"aH" = (/obj/machinery/overmap_weapon_console/npc_comms_console/unsc{tag = "icon-comm (NORTH)"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "holotable"; dir = 4},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"aI" = (/obj/machinery/overmap_weapon_console/npc_comms_console/unsc{tag = "icon-comm (NORTH)"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "holotable"; dir = 8},/obj/machinery/camera/autoname/invis/oni_prowler{icon_state = "camera"; dir = 8},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"aJ" = (/obj/machinery/door/airlock/multi_tile/halo/blast{name = "Medbay"; req_access = list(142)},/turf/simulated/floor/tiled/white,/area/space)
+"aK" = (/turf/simulated/wall/r_wall,/area/space)
+"aL" = (/obj/structure/computerframe{anchored = 1; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; tag = "icon-computer"},/obj/machinery/photocopier/faxmachine{department = "UNSC Aegis"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "nav"; name = "UNSC HIGHCOM Priority Communications Line"},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"aM" = (/turf/simulated/floor/tiled/dark,/area/space)
+"aN" = (/turf/simulated/wall/r_wall,/area/corvette/oniprowler/bridge)
+"aO" = (/obj/structure/computerframe{anchored = 1; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; tag = "icon-computer"},/obj/machinery/computer/engines{tag = "icon-nav"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "nav"; dir = 2},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"aP" = (/turf/simulated/floor/plating,/turf/simulated/shuttle/wall/corner/smoothwhite/nw,/area/space)
+"aQ" = (/turf/simulated/shuttle/wall{dir = 4; icon_state = "swall_straight"},/area/space)
+"aR" = (/turf/simulated/shuttle/wall{dir = 8; icon_state = "swall"},/area/space)
+"aS" = (/obj/machinery/door/airlock/glass/cargo_shuttle{name = "Shuttle Access"; req_access = list(317)},/turf/simulated/floor/shuttle/yellow,/area/space)
+"aT" = (/obj/effect/hull_segment,/turf/simulated/wall/r_wall,/area/corvette/oniprowler/bridge)
+"aU" = (/obj/machinery/conveyor{dir = 1; id = "oni_cargo_conveyor"},/obj/structure/plasticflaps/mining,/turf/simulated/floor/shuttle/yellow,/area/space)
+"aV" = (/turf/simulated/shuttle/wall{dir = 4; icon_state = "swall"},/area/space)
+"aW" = (/obj/structure/shuttle/window{tag = "icon-9"; icon_state = "9"; color = "grey"},/turf/simulated/floor/shuttle/yellow,/area/space)
+"aX" = (/turf/simulated/shuttle/wall{icon_state = "swall_straight"},/area/space)
+"aY" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; pixel_y = 0},/turf/simulated/floor/shuttle/yellow,/area/space)
+"aZ" = (/turf/simulated/floor/shuttle/yellow,/area/space)
+"ba" = (/obj/machinery/conveyor{dir = 1; id = "oni_cargo_conveyor"},/turf/simulated/floor/shuttle/yellow,/area/space)
+"bb" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/simulated/floor/shuttle/yellow,/area/space)
+"bc" = (/obj/structure/shuttle_engine{dir = 4},/turf/simulated/shuttle/wall{icon_state = "swall_straight"},/area/space)
+"bd" = (/obj/structure/shuttle/window{tag = "icon-11"; icon_state = "11"; color = "grey"},/turf/simulated/floor/shuttle/yellow,/area/space)
+"be" = (/obj/structure/shuttle/window{tag = "icon-10"; icon_state = "10"; color = "grey"},/turf/simulated/floor/shuttle/yellow,/area/space)
+"bf" = (/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/plating,/area/space)
+"bg" = (/obj/machinery/light/invis,/turf/simulated/wall/r_wall,/area/corvette/oniprowler/bridge)
+"bh" = (/obj/machinery/bodyscanner{icon_state = "body_scanner_0"; dir = 4},/turf/simulated/floor/tiled/white,/area/space)
+"bi" = (/obj/machinery/thermopod,/turf/simulated/floor/tiled/white,/area/space)
+"bj" = (/obj/machinery/sleeper{tag = "icon-sleeper_0 (EAST)"; icon_state = "sleeper_0"; dir = 4},/turf/simulated/floor/tiled/white,/area/space)
+"bk" = (/obj/structure/closet,/obj/item/clothing/mask/marine,/obj/item/clothing/accessory/holster/thigh,/obj/item/clothing/gloves/thick/oni_guard,/obj/item/clothing/head/helmet/oni_guard,/obj/item/clothing/head/helmet/oni_guard/visor,/obj/item/clothing/shoes/oni_guard,/obj/item/clothing/suit/storage/oni_guard,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m7_smg/silenced,/obj/item/weapon/gun/projectile/m7_smg/silenced,/obj/item/weapon/storage/box/m6d_m225,/turf/simulated/floor/tech/maint,/area/space)
+"bl" = (/obj/item/modular_computer/console/preset/research,/turf/simulated/floor/tiled/dark,/area/space)
+"bm" = (/turf/simulated/floor/tiled/white,/area/space)
+"bn" = (/obj/machinery/research/destructive_analyzer,/turf/simulated/floor/tiled/dark,/area/space)
+"bo" = (/obj/machinery/research/protolathe,/turf/simulated/floor/tiled/dark,/area/space)
+"bp" = (/obj/machinery/mecha_part_fabricator,/turf/simulated/floor/tiled/dark,/area/space)
+"bq" = (/obj/machinery/research/protolathe/circuits,/turf/simulated/floor/tiled/dark,/area/space)
+"br" = (/obj/machinery/chemical_dispenser/full,/turf/simulated/floor/tech/white,/area/space)
+"bs" = (/obj/structure/table/standard,/turf/simulated/floor/tiled/dark,/area/space)
+"bt" = (/obj/structure/table/standard,/obj/item/weapon/aicard,/obj/item/weapon/aicard,/turf/simulated/floor/tiled/dark,/area/space)
+"bu" = (/obj/machinery/pointbased_vending/armory/armor,/turf/simulated/floor/tech/maint,/area/space)
+"bv" = (/obj/structure/closet/crate/medical{name = "Blood Packs Crate"},/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OMinus,/obj/item/weapon/reagent_containers/blood/OPlus,/obj/item/weapon/reagent_containers/blood/OPlus,/obj/item/weapon/reagent_containers/blood/OPlus,/obj/item/weapon/reagent_containers/blood/OPlus,/obj/item/weapon/reagent_containers/blood/BMinus,/obj/item/weapon/reagent_containers/blood/BMinus,/obj/item/weapon/reagent_containers/blood/BMinus,/obj/item/weapon/reagent_containers/blood/APlus,/obj/item/weapon/reagent_containers/blood/APlus,/obj/item/weapon/reagent_containers/blood/APlus,/obj/item/weapon/reagent_containers/blood/AMinus,/obj/item/weapon/reagent_containers/blood/AMinus,/obj/item/weapon/reagent_containers/blood/AMinus,/obj/item/weapon/reagent_containers/blood/BPlus,/obj/item/weapon/reagent_containers/blood/BPlus,/obj/item/weapon/reagent_containers/blood/BPlus,/turf/simulated/floor/tiled/white,/area/space)
+"bw" = (/obj/structure/closet,/obj/item/clothing/mask/marine,/obj/item/clothing/accessory/holster/thigh,/obj/item/clothing/gloves/thick/oni_guard,/obj/item/clothing/head/helmet/oni_guard,/obj/item/clothing/head/helmet/oni_guard/visor,/obj/item/clothing/shoes/oni_guard,/obj/item/clothing/suit/storage/oni_guard,/obj/machinery/light{dir = 1; icon_state = "tube1"},/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m7_smg/silenced,/obj/item/weapon/gun/projectile/m7_smg/silenced,/obj/item/weapon/storage/box/m6d_m224,/turf/simulated/floor/tech/maint,/area/space)
+"bx" = (/obj/machinery/chem_master,/obj/machinery/light{dir = 8},/turf/simulated/floor/tech/white,/area/space)
+"by" = (/obj/structure/bed/chair/office/light,/turf/simulated/floor/tiled/white,/area/space)
+"bz" = (/obj/machinery/door/airlock/halo/lifepod{name = "Chemlab"; req_access = list(142)},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/white,/area/space)
+"bA" = (/obj/machinery/door/airlock/halo{dir = 4; name = "Cell 2"; req_access = list(142)},/turf/space,/area/space)
+"bB" = (/obj/machinery/autolathe,/turf/simulated/floor/tiled/dark,/area/space)
+"bC" = (/obj/structure/table/standard,/obj/machinery/recharger,/turf/simulated/floor/tiled/dark,/area/space)
+"bD" = (/obj/structure/table/standard,/obj/machinery/cell_charger,/turf/simulated/floor/tiled/dark,/area/space)
+"bE" = (/obj/machinery/vending/engivend,/turf/simulated/floor/tiled/dark,/area/space)
+"bF" = (/obj/machinery/vending/tool,/turf/simulated/floor/tiled/dark,/area/space)
+"bG" = (/obj/structure/window/reinforced/projresist{icon_state = "rwindow"; dir = 1},/turf/simulated/floor/tech/white,/area/space)
+"bH" = (/obj/machinery/research/component_dissembler,/turf/simulated/floor/tiled/dark,/area/space)
+"bI" = (/obj/structure/table/rack,/obj/item/stack/material/plastic/fifty,/obj/item/stack/material/plastic/fifty,/obj/item/stack/material/plastic/fifty,/obj/item/stack/material/plastic/fifty,/obj/item/stack/material/plastic/fifty,/turf/simulated/floor/tiled/dark,/area/space)
+"bJ" = (/obj/structure/mopbucket,/obj/item/weapon/mop,/turf/simulated/floor/tiled/dark,/area/space)
+"bK" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/turf/simulated/floor/tech/white,/area/space)
+"bL" = (/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"bM" = (/turf/simulated/floor/tech/white,/area/space)
+"bN" = (/obj/structure/table/rack,/obj/item/stack/material/glass/fifty,/obj/item/stack/material/glass/fifty,/obj/item/stack/material/glass/fifty,/obj/item/stack/material/glass/fifty,/obj/item/stack/material/glass/fifty,/obj/item/stack/material/glass/fifty,/turf/simulated/floor/tiled/dark,/area/space)
+"bO" = (/obj/machinery/iv_drip,/turf/simulated/floor/tiled/white,/area/space)
+"bP" = (/obj/structure/table/rack,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/obj/item/stack/material/iron,/turf/simulated/floor/tiled/dark,/area/space)
+"bQ" = (/obj/structure/table/rack,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/obj/item/stack/material/plasteel/fifty,/turf/simulated/floor/tiled/dark,/area/space)
+"bR" = (/obj/effect/floor_decal/industrial/warning,/obj/machinery/conveyor_switch{id = "oni_cargo_conveyor"},/turf/simulated/floor/plating,/area/space)
+"bS" = (/obj/effect/floor_decal/industrial/warning,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/space)
+"bT" = (/obj/machinery/autosurgeon,/turf/simulated/floor/tech/white,/area/space)
+"bU" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/wrench,/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,/obj/item/weapon/storage/box/bloodpacks,/turf/simulated/floor/tiled/white,/area/space)
+"bV" = (/obj/structure/table/rack,/obj/item/stack/material/diamond/ten,/obj/item/stack/material/diamond/ten,/obj/item/stack/material/diamond/ten,/obj/item/stack/material/diamond/ten,/obj/item/stack/material/diamond/ten,/obj/item/stack/material/diamond/ten,/obj/item/stack/material/diamond/ten,/obj/item/stack/material/diamond/ten,/obj/item/stack/material/diamond/ten,/obj/item/stack/material/diamond/ten,/turf/simulated/floor/tiled/dark,/area/space)
+"bW" = (/obj/structure/table/rack,/obj/item/stack/material/steel/fifty,/obj/item/stack/material/steel/fifty,/obj/item/stack/material/steel/fifty,/obj/item/stack/material/steel/fifty,/obj/item/stack/material/steel/fifty,/turf/simulated/floor/tiled/dark,/area/space)
+"bX" = (/obj/machinery/conveyor{dir = 1; id = "oni_cargo_conveyor"},/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (EAST)"; icon_state = "warning"; dir = 4},/turf/simulated/floor/plating,/area/space)
+"bY" = (/obj/structure/window/reinforced/treated{tag = "icon-fwindow (SOUTHWEST)"; icon_state = "fwindow"; dir = 10},/obj/structure/grille,/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"bZ" = (/obj/structure/table/rack,/obj/item/stack/material/uranium/ten,/obj/item/stack/material/uranium/ten,/obj/item/stack/material/uranium/ten,/obj/item/stack/material/uranium/ten,/obj/item/stack/material/uranium/ten,/obj/item/stack/material/uranium/ten,/obj/item/stack/material/uranium/ten,/obj/item/stack/material/uranium/ten,/obj/item/stack/material/uranium/ten,/obj/item/stack/material/uranium/ten,/turf/simulated/floor/tiled/dark,/area/space)
+"ca" = (/obj/structure/table/rack,/obj/item/stack/material/gold/ten,/obj/item/stack/material/gold/ten,/obj/item/stack/material/gold/ten,/obj/item/stack/material/gold/ten,/obj/item/stack/material/gold/ten,/obj/item/stack/material/gold/ten,/obj/item/stack/material/gold/ten,/obj/item/stack/material/gold/ten,/obj/item/stack/material/gold/ten,/obj/item/stack/material/gold/ten,/turf/simulated/floor/tiled/dark,/area/space)
+"cb" = (/obj/structure/table/rack,/obj/item/stack/material/silver/ten,/obj/item/stack/material/silver/ten,/obj/item/stack/material/silver/ten,/obj/item/stack/material/silver/ten,/obj/item/stack/material/silver/ten,/obj/item/stack/material/silver/ten,/obj/item/stack/material/silver/ten,/obj/item/stack/material/silver/ten,/obj/item/stack/material/silver/ten,/obj/item/stack/material/silver/ten,/turf/simulated/floor/tiled/dark,/area/space)
+"cc" = (/obj/machinery/light/colored/green{dir = 4; icon_state = "green1"; tag = "icon-green1 (WEST)"},/turf/simulated/floor/tiled/dark,/area/space)
+"cd" = (/obj/structure/bed/chair/comfy/captain{dir = 1; icon_state = "capchair_preview"; name = "Bridge chair"; tag = "icon-capchair_preview (NORTH)"},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"ce" = (/obj/structure/table/steel_reinforced,/obj/item/bodybag/cryobag,/obj/item/bodybag/cryobag,/obj/item/bodybag/cryobag,/obj/item/roller,/obj/item/roller,/obj/item/roller,/obj/item/bodybag/cryobag,/obj/item/bodybag/cryobag,/obj/item/bodybag/cryobag,/obj/item/roller,/turf/simulated/floor/tiled/white,/area/space)
+"cf" = (/obj/structure/grille,/obj/structure/window/reinforced/treated{dir = 4},/obj/structure/window/reinforced/treated{dir = 8},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/dark,/area/space)
+"cg" = (/obj/structure/bed,/obj/item/weapon/bedsheet/orange,/turf/simulated/floor/tiled/dark,/area/space)
+"ch" = (/obj/structure/closet/crate/medical,/obj/item/weapon/storage/firstaid/toxin,/obj/item/weapon/storage/firstaid/o2,/obj/item/weapon/storage/firstaid/fire,/obj/item/weapon/storage/firstaid/combat,/obj/item/weapon/storage/firstaid/adv,/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/regular,/obj/item/weapon/storage/firstaid/regular,/obj/item/weapon/storage/firstaid/regular,/obj/item/weapon/storage/firstaid/regular,/obj/item/weapon/storage/firstaid/regular,/turf/simulated/floor/tiled/white,/area/space)
+"ci" = (/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/space)
+"cj" = (/obj/machinery/cryopod/oni,/turf/simulated/floor/tech/maint,/area/space)
+"ck" = (/obj/structure/closet/walllocker/emerglocker/north,/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"cl" = (/obj/structure/window/reinforced/projresist{icon_state = "rwindow"; dir = 1},/obj/structure/window/reinforced/projresist{icon_state = "rwindow"; dir = 8},/obj/structure/window/reinforced/projresist,/obj/structure/grille,/obj/structure/window/reinforced/projresist{icon_state = "rwindow"; dir = 4},/obj/machinery/door/firedoor,/turf/simulated/floor/tech/maint,/area/space)
+"cm" = (/obj/structure/table/standard,/obj/machinery/door/window,/obj/machinery/door/window{icon_state = "left"; dir = 1},/obj/machinery/door/firedoor,/turf/simulated/floor/tech/maint,/area/space)
+"cn" = (/obj/structure/closet/crate{name = "Resuscitation Supplies"},/obj/item/weapon/reagent_containers/spray/cleaner{desc = "Someone has crossed out the Space from Space Cleaner and written in Surgery. 'Do not remove under punishment of death!!!' is scrawled on the back."; name = "Surgery Cleaner"},/obj/item/weapon/storage/box/gloves,/obj/item/weapon/storage/box/masks,/obj/item/weapon/reagent_containers/syringe/ld50_syringe/triadrenaline,/obj/item/weapon/reagent_containers/syringe/ld50_syringe/triadrenaline,/obj/item/weapon/reagent_containers/syringe/ld50_syringe/triadrenaline,/obj/item/weapon/reagent_containers/syringe/ld50_syringe/triadrenaline,/obj/item/weapon/reagent_containers/syringe/ld50_syringe/triadrenaline,/obj/item/weapon/defibrillator/loaded,/obj/item/weapon/defibrillator/compact/combat/loaded,/obj/item/weapon/defibrillator/compact/combat/loaded,/turf/simulated/floor/tiled/white,/area/space)
+"co" = (/obj/structure/table/standard,/obj/item/weapon/storage/box/bodybags,/turf/simulated/floor/tiled/dark,/area/space)
+"cp" = (/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (EAST)"; icon_state = "warning"; dir = 4},/turf/simulated/floor/plating,/area/space)
+"cq" = (/obj/structure/grille,/obj/machinery/door/blast/regular{_wifi_id = "prowlerbridge"; id = "prowlerbridge"; name = "Blast Shield"},/obj/structure/window/reinforced/treated{tag = "icon-fwindow (SOUTHWEST)"; icon_state = "fwindow"; dir = 10},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"cr" = (/obj/machinery/computer/helm{tag = "icon-nav (WEST)"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "nav"; dir = 8; icon_keyboard = ""; icon_screen = "covie_console_overlay"},/obj/structure/computerframe{anchored = 1; dir = 8; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; tag = "icon-computer (WEST)"},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"cs" = (/obj/structure/bed/chair/comfy/captain{dir = 8; icon_state = "capchair_preview"; name = "Bridge chair"; tag = "icon-capchair_preview (WEST)"},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"ct" = (/obj/structure/table/standard,/obj/item/weapon/defibrillator/compact,/turf/simulated/floor/tiled/dark,/area/space)
+"cu" = (/obj/machinery/camera/autoname/invis/oni_prowler,/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"cv" = (/obj/structure/stairs_decorative{tag = "icon-stairs (EAST)"; icon_state = "stairs"; dir = 4},/obj/machinery/light/colored/blue{tag = "icon-blue1 (NORTH)"; icon_state = "blue1"; dir = 1},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"cw" = (/obj/structure/bed/chair/comfy/captain{dir = 8; icon_state = "capchair_preview"; name = "Captain's chair"; tag = "icon-capchair_preview (WEST)"},/obj/machinery/computer/helm{density = 0; dir = 2; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_keyboard = ""; icon_screen = "covie_console_overlay"; icon_state = "capnav"; layer = 14; pixel_x = 5; tag = "icon-nav (WEST)"},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"cx" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"cy" = (/obj/structure/table/standard,/obj/item/device/camera,/obj/item/device/camera_film,/obj/machinery/light/colored/green{tag = "icon-green1 (WEST)"; icon_state = "green1"; dir = 8},/turf/simulated/floor/tiled/dark,/area/space)
+"cz" = (/obj/structure/table/rack,/obj/item/device/flash,/obj/item/device/flash,/obj/item/device/flash,/turf/simulated/floor/tiled/dark,/area/space)
+"cA" = (/obj/structure/window/reinforced/projresist,/turf/simulated/floor/tech/white,/area/space)
+"cB" = (/obj/structure/table/rack,/obj/item/weapon/handcuffs,/obj/item/weapon/handcuffs,/obj/item/weapon/handcuffs,/obj/item/weapon/handcuffs,/obj/item/weapon/handcuffs,/turf/simulated/floor/tiled/dark,/area/space)
+"cC" = (/obj/structure/table/rack,/obj/item/weapon/melee/baton/humbler,/obj/item/weapon/melee/baton/humbler,/obj/item/weapon/melee/baton/humbler,/obj/item/weapon/melee/baton/humbler,/obj/item/weapon/melee/baton/humbler,/turf/simulated/floor/tiled/dark,/area/space)
+"cD" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/white,/area/space)
+"cE" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tech/white,/area/space)
+"cF" = (/obj/machinery/computer/navigation{tag = "icon-engine (WEST)"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "engine"; dir = 8},/obj/structure/computerframe{anchored = 1; dir = 8; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; tag = "icon-computer (WEST)"},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"cG" = (/obj/machinery/button/remote/blast_door{_wifi_id = "prowlerbridge"; id = "prowlerbridge"; name = "Bridge Shutters Control"; pixel_x = 0; pixel_y = -32},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"cH" = (/obj/structure/table/glass,/obj/machinery/door/window/westleft,/obj/machinery/door/window/eastright,/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/white,/area/space)
+"cI" = (/obj/structure/window/reinforced/polarized{icon_state = "rwindow"; dir = 1},/obj/structure/window/reinforced/polarized,/obj/structure/window/reinforced/polarized{icon_state = "rwindow"; dir = 4},/obj/structure/grille,/turf/simulated/floor/tech/white,/area/space)
+"cJ" = (/turf/simulated/floor/plating,/obj/effect/shuttle_landmark/oni_onsite_supply,/turf/simulated/shuttle/wall/corner/smoothwhite/sw,/area/space)
+"cK" = (/obj/structure/stairs_decorative{tag = "icon-stairs (EAST)"; icon_state = "stairs"; dir = 4},/obj/machinery/light/colored/blue,/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"cL" = (/obj/vehicles/air/overmap/pelican/unsc{icon_state = "base"; dir = 1},/turf/simulated/floor/plating,/area/space)
+"cM" = (/obj/structure/bed/chair/comfy/captain,/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"cN" = (/obj/machinery/power/apc{dir = 4; name = "APC"; pixel_x = 24; pixel_y = 0},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"cO" = (/obj/structure/computerframe{anchored = 1; dir = 1; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; tag = "icon-computer (NORTH)"},/obj/machinery/overmap_weapon_console/npc_comms_console/unsc{tag = "icon-comm (NORTH)"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "comm"; dir = 1},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"cP" = (/obj/structure/window/reinforced/polarized{icon_state = "rwindow"; dir = 1},/obj/structure/window/reinforced/polarized,/obj/structure/window/reinforced/polarized{icon_state = "rwindow"; dir = 8},/obj/structure/grille,/turf/simulated/floor/tech/white,/area/space)
+"cS" = (/obj/structure/sink{icon_state = "sink"; dir = 8; pixel_x = -12; pixel_y = 2},/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/white,/area/space)
+"cT" = (/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/white,/area/space)
+"cU" = (/obj/structure/table/standard,/obj/item/weapon/evidencebag,/obj/item/weapon/evidencebag,/obj/item/weapon/evidencebag,/turf/simulated/floor/tiled/dark,/area/space)
+"cV" = (/obj/structure/table/standard,/obj/item/weapon/melee/whip/chainofcommand,/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"cX" = (/obj/structure/table/standard,/obj/item/weapon/storage/firstaid/surgery,/obj/item/stack/nanopaste,/obj/item/weapon/reagent_containers/spray/cleaner{desc = "Someone has crossed out the Space from Space Cleaner and written in Surgery. 'Do not remove under punishment of death!!!' is scrawled on the back."; name = "Surgery Cleaner"},/turf/simulated/floor/tech/white,/area/space)
+"cY" = (/obj/machinery/oxygen_pump/anesthetic{name = "surgery anesthetic"; pixel_y = -32},/obj/machinery/optable,/turf/simulated/floor/tech/white,/area/space)
+"cZ" = (/obj/structure/computerframe{anchored = 1; dir = 1; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer_wide"; layer = 2; level = 1; tag = "icon-computer_wide (NORTH)"},/obj/machinery/computer/engines{tag = "icon-nav (NORTH)"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "nav"; dir = 1},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"da" = (/obj/structure/table/glass,/obj/item/weapon/storage/box/beakers,/obj/item/weapon/reagent_containers/glass/beaker/bluespace,/obj/item/weapon/reagent_containers/glass/beaker/bluespace,/obj/structure/window/reinforced/projresist,/turf/simulated/floor/tech/white,/area/space)
+"db" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/storage/box/bodybags,/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tiled/white,/area/space)
+"dc" = (/obj/machinery/button/crematorium{_wifi_id = "prowlercrem"; pixel_y = 24},/turf/simulated/floor/tiled/white,/area/space)
+"dd" = (/obj/structure/morgue{tag = "icon-morgue1 (WEST)"; icon_state = "morgue1"; dir = 8},/turf/simulated/floor/tiled/white,/area/space)
+"de" = (/obj/item/device/radio/intercom{dir = 8; icon_state = "intercom"; name = "intercom"; pixel_x = 25; pixel_y = 0; tag = "icon-intercom (WEST)"},/obj/structure/crematorium{_wifi_id = "prowlercrem"},/turf/simulated/floor/tiled/white,/area/space)
+"df" = (/obj/structure/table/standard,/obj/item/weapon/storage/box/gloves,/obj/item/weapon/storage/box/masks,/turf/simulated/floor/tech/white,/area/space)
+"dg" = (/obj/structure/morgue,/turf/simulated/floor/tiled/white,/area/space)
+"di" = (/obj/structure/table/glass,/obj/item/weapon/reagent_containers/dropper,/obj/item/device/reagent_scanner/adv,/obj/item/weapon/storage/box/pillbottles,/obj/item/weapon/hand_labeler,/obj/item/weapon/storage/box/pillbottles,/obj/structure/window/reinforced/projresist,/turf/simulated/floor/tech/white,/area/space)
+"dj" = (/obj/structure/table/glass,/obj/machinery/reagentgrinder,/obj/item/stack/material/phoron{amount = 50},/obj/structure/window/reinforced/projresist,/turf/simulated/floor/tech/white,/area/space)
+"dl" = (/obj/structure/sign/chemistry{name = "\improper Chemlab"},/turf/simulated/wall/r_wall,/area/space)
+"dH" = (/obj/machinery/alarm{dir = 1; icon_state = "alarm0"; pixel_y = -22},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+"gm" = (/obj/machinery/nav_computer/unsc,/obj/machinery/light,/obj/machinery/camera/autoname/invis/oni_prowler{icon_state = "camera"; dir = 8},/turf/simulated/floor/tiled/dark,/area/corvette/oniprowler/bridge)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaKaKaKaKaKaKaKcoctcycUaKaKaKaKaKaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagaKaKaKaKaKarararararcjaKaKaKaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagagaKaKaKczcBcCararcjaKaKaKaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagaKaKaKaKaKaKaKaiaiaKaKaKaKaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagaKaKaKaKaKaMaMaoararaKabacadaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagaKaKaKaKaKaKccaMaCararaKabahadaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaJbmaabAaaaaaaaaaaaaaKaKaKaKaKaKaKcgaMcfararaKafahadaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaKaKaKaKaKaKaKaKaKaKaKararaKabahadaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaKaaaaaaaaaaaaaaaaaaaKaKaKaKaKaKaKaKaKaKbkararbuaKararciahahadaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKbwarararaiararaKajakadaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaNaNaNcVbLaDaGbLaNaKaeaqasbmatatcebUaubmchcnavaKaKaxayazaKbkarararaiararaKaKaKaKaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaNaNaNaNbgaNbLbLaHaIbLaNaKbmbmbmbmbmbmbmbmbmbmawbGbGaKaKaAaBaraKbwararbuaKararaKaKaKaKaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaNaNaNaNaNaNaNbLbLbLbLbLaNaKbzalaKbmbmbmbmbmbmbmbKbTbMaKaKclcmaiaKaKaKaKaKaKaiaiaKahahahaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNbLbLbLaNbrbmbmcHbmbmbmbmbmbmbmaEcAcAaKahahahahahahahahahahahahahahahahaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaNaNaNaLaNaOaNaNcxaNaNbxbybmaKaFbhbibjbmbmbmbObObvaKahahbfbRbSahbXbfbfbfahahahahahahaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaNaNaTaNcdbYcdaNckbLaNaNdadidjdlaKaKaKaKcDcDaKaKaKaKaKahcpaPaQaRaSaUaVaWaRahahahahahahaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaacqcrcscubLcvbLcubLbLbLcxaMaMaMaMaMaMaMaMaMaMaMaMaMaoaMahcpaXaYaZaZbaaZbbbcahahahahahahaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaNaNbYbLcwbYbLbLbLbLbLcxaMaMaMaMaMaMaMaMaMaMaMaMaMaoaMahcpbdaZaZaZbaaZaZbcahahahahahahaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaacqcFcscGbLcKbLbLbLbLbLcxaMaMaMaMaMaMaMaMaMaMaMaMaMaoaMahcpbeaZaZaZbaaZaZbcahcLahahahahaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaNaNaTaNcMbYcMaNdHcNaNaNcIcEcPaKcIcEcPaKcDcDaKaKaKaKaKahcpaXaYaZaZbaaZbbbcahahahahahahaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaNaNaNcOaNcZaNaNcxaNaNcSbmcTaKcSbmcTaKbmbmbmaKahahaKahahcJaQaQaWaWaQaQaRahahahahahahaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNgmaNaNcXcYdfaKcXcYdfaKbmbmbmaKahahaKahahahahahahahahahahahahahahahahaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNaNaKaKaKaKaKaKaKaKcEaKaKaKahahaKaKaKaKaKaKaKaKaKaKaKciciaKahahahaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaNaNaNaKaKaKaKaKaKaKdbbmdcdeaKahahaKblbnbobpbqbpbBbCbDaKahahaKaKaKaKaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaNaNaKaKaKaKaKaKaKdgbmbmddaKahahaKaMaMaMaMaMaMaMaMaMaoahahaKaKaKaKaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaNaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKbEaMaMaMaMaMaMaMaMaoahahaKahahadaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaNaNaNaNaNaNaKaaaaaaaaaaaaaaaaaaaKaKaKaKaKaKbFaMaMaMaMaMaMaMaKahahciamahadaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaKaKaKbsbtbsbHaMaMaMaKahahaKanahadaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaKaKaKaKaKaKaKaoaoaKaKaKaKahahadaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagapaKaKaKaKbIaMaMbJaKaKaKamahadaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagapaKaKaKbNaMaMbPaKaKaKahahadaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagapaKaKbQaMaMbVaKaKaKaKaKaKaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagagapaKbWaMaMbZaKaKaKaKaKaKaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagaKaKaKaKaKcacbaKaKaKaKaKaKaKaKaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

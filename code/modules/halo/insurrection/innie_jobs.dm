@@ -36,6 +36,7 @@
 	"Insurrectionist Infiltrator")
 	whitelisted_species = list(/datum/species/human)
 	loadout_allowed = TRUE
+	fallback_spawnpoint = "Innie Base Fallback Spawns"
 	var/datum/antagonist/geminus_insurrectionist/antag
 
 /datum/job/geminus_innie/get_email_domain()

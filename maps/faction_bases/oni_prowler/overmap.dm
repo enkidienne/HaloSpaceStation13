@@ -1,9 +1,8 @@
 /obj/effect/overmap/ship/oni_aegis
 	name = "ONI Aegis"
 	desc = "A stealth vessel of unspecified design."
-
 	icon = 'prowl.dmi'
-	icon_state = "base"
+	icon_state = "ship"
 	fore_dir = WEST
 	vessel_mass = 1
 	faction = "UNSC"

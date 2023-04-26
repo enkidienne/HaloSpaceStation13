@@ -35,7 +35,7 @@
 "aI" = (/obj/machinery/overmap_comms/receiver,/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
 "aJ" = (/obj/structure/bed/chair{dir = 4},/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
 "aK" = (/obj/machinery/overmap_weapon_console/deck_gun_control/local{dir = 4; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "engine"},/obj/structure/computerframe{anchored = 1; dir = 4; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; tag = "icon-computer (WEST)"},/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
-"aL" = (/obj/machinery/nav_computer/unsc,/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
+"aL" = (/obj/machinery/nav_computer/npc/innie,/turf/simulated/floor/shuttle/darkred,/area/om_ships/req_console_ship)
 "aM" = (/obj/machinery/door/airlock/halo/innie_ship_preset,/turf/simulated/floor/plating,/area/om_ships/req_console_ship)
 "aN" = (/obj/effect/floor_decal/industrial/warning/dust{tag = "icon-warning_dust (EAST)"; icon_state = "warning_dust"; dir = 4},/turf/simulated/wall/r_wall,/area/om_ships/req_console_ship)
 "aO" = (/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/shuttle/black,/area/om_ships/req_console_ship)

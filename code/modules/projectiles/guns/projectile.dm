@@ -313,6 +313,12 @@
 	. = ..()
 	if(ammo_magazine && ammo_icon_state)
 		underlays += image(icon = src.icon,icon_state = src.ammo_icon_state)
+		
+/obj/item/weapon/gun/projectile/ammo_check() 
+	
+	var/ammo = getAmmo()  //Already have a proc to fetch us the ammo unique to projectiles
+	
+	return ammo
 
 /* Unneeded -- so far.
 //in case the weapon has firemodes and can't unload using attack_hand()

@@ -17,6 +17,7 @@
 	var/obj/effect/overmap/ship/npc_ship/automated_defenses/defense_type = /obj/effect/overmap/ship/npc_ship/automated_defenses
 	block_slipspace = 1
 	anchored = 1
+	occupy_range = 14
 
 /obj/effect/overmap/ship/faction_base/Initialize()
 	. = ..()

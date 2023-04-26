@@ -126,6 +126,9 @@
 		/decl/emote/audible/species_sound/aim,
 		/decl/emote/audible/species_sound/nipple,
 		/decl/emote/audible/species_sound/boo,
+		/decl/emote/audible/species_sound/berserk,
+		/decl/emote/audible/species_sound/forerunner,
+		/decl/emote/audible/species_sound/taunt
 
 	)
 

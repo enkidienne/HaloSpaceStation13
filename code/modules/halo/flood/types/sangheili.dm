@@ -1,5 +1,5 @@
 
-/mob/living/simple_animal/hostile/flood/combat_form/minor
+/mob/living/simple_animal/hostile/flood/combat_form/elite/minor
 	name = "Flood infested Minor"
 	icon = 'code/modules/halo/flood/sangheili_flood_uf.dmi'
 	icon_state = "Minor 1"
@@ -11,11 +11,11 @@
 	maxHealth = 125
 	melee_damage_lower = 35
 	melee_damage_upper = 40
-	attacktext = "slash"
+	attacktext = "slashed"
 	spawn_with_gun = COV_MEDIUM_FLOOD_GUN_LIST
 	gun_spawn_chance = 33
 
-/mob/living/simple_animal/hostile/flood/combat_form/minor2
+/mob/living/simple_animal/hostile/flood/combat_form/elite/minor2
 	name = "Flood infested Minor"
 	icon = 'code/modules/halo/flood/sangheili_flood_uf.dmi'
 	icon_state = "Minor 2"
@@ -27,11 +27,11 @@
 	maxHealth = 125
 	melee_damage_lower = 35
 	melee_damage_upper = 40
-	attacktext = "slash"
+	attacktext = "slashed"
 	spawn_with_gun = COV_MEDIUM_FLOOD_GUN_LIST
 	gun_spawn_chance = 33
 
-/mob/living/simple_animal/hostile/flood/combat_form/major
+/mob/living/simple_animal/hostile/flood/combat_form/elite/major
 	name = "Flood infested Major"
 	icon = 'code/modules/halo/flood/sangheili_flood_uf.dmi'
 	icon_state = "Major 1"
@@ -44,11 +44,14 @@
 	resistance = 5
 	melee_damage_lower = 35
 	melee_damage_upper = 40
-	attacktext = "slash"
+	attacktext = "slashed"
 	spawn_with_gun = COV_MEDIUM_FLOOD_GUN_LIST
 	gun_spawn_chance = 45
+	shield_left = 100
+	shield_max = 100
+	recharge_rate = 20
 
-/mob/living/simple_animal/hostile/flood/combat_form/zealot
+/mob/living/simple_animal/hostile/flood/combat_form/elite/zealot
 	name = "Flood infested Zealot"
 	icon = 'code/modules/halo/flood/sangheili_flood_uf.dmi'
 	icon_state = "Zealot 1"
@@ -60,11 +63,14 @@
 	resistance = 5
 	melee_damage_lower = 35
 	melee_damage_upper = 40
-	attacktext = "slash"
+	attacktext = "slashed"
 	spawn_with_gun = COV_STRONG_FLOOD_GUN_LIST
 	gun_spawn_chance = 65
+	shield_left = 150
+	shield_max = 150
+	recharge_rate = 25
 
-/mob/living/simple_animal/hostile/flood/combat_form/ultra
+/mob/living/simple_animal/hostile/flood/combat_form/elite/ultra
 	name = "Flood infested Ultra"
 	icon = 'code/modules/halo/flood/sangheili_flood_uf.dmi'
 	icon_state = "Ultra 1"
@@ -76,11 +82,14 @@
 	resistance = 5
 	melee_damage_lower = 35
 	melee_damage_upper = 40
-	attacktext = "slash"
+	attacktext = "slashed"
 	spawn_with_gun = COV_STRONG_FLOOD_GUN_LIST
 	gun_spawn_chance = 65
+	shield_left = 150
+	shield_max = 150
+	recharge_rate = 25
 
-/mob/living/simple_animal/hostile/flood/combat_form/specops
+/mob/living/simple_animal/hostile/flood/combat_form/elite/specops
 	name = "Flood infested Spec Ops"
 	icon = 'code/modules/halo/flood/sangheili_flood_uf.dmi'
 	icon_state = "SO 1"
@@ -91,10 +100,17 @@
 	maxHealth = 150
 	melee_damage_lower = 35
 	melee_damage_upper = 40
-	attacktext = "slash"
+	attacktext = "slashed"
 	alpha = 20
 
-/mob/living/simple_animal/hostile/flood/combat_form/ranger
+	shield_left = 0
+	shield_max = 0
+	recharge_rate = 0
+	recharge_rate = 10
+	last_damage = 0
+	recharging = 0
+
+/mob/living/simple_animal/hostile/flood/combat_form/elite/ranger
 	name = "Flood infested Ranger"
 	icon = 'code/modules/halo/flood/sangheili_flood_uf.dmi'
 	icon_state = "Ranger 1"
@@ -106,6 +122,6 @@
 	resistance = 2
 	melee_damage_lower = 35
 	melee_damage_upper = 40
-	attacktext = "slash"
+	attacktext = "slashed"
 	spawn_with_gun = COV_MEDIUM_FLOOD_GUN_LIST
 	gun_spawn_chance = 65

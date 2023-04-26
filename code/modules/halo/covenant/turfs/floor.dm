@@ -3,7 +3,7 @@
 	name = "Nanolaminate Flooring"
 	desc = "Floor made of an advanced alien alloy."
 	icon = 'code/modules/halo/covenant/turfs/floors.dmi'
-	icon_state = "Nanolaminate Framework"
+	icon_state = "cov_floor"
 
 	/*
 	base_name = "Nanolaminate Framework"

@@ -2,7 +2,7 @@
 /datum/job/unsc/oni
 	access = list(access_unsc,access_unsc_bridge,access_unsc_medical,access_unsc_armoury,access_unsc_supplies,access_unsc_oni,access_unsc_cargo)
 	spawnpoint_override = null
-	fallback_spawnpoint = null
+	fallback_spawnpoint = "UNSC Base Fallback Spawns"
 
 /datum/job/unsc/oni/research
 	title = "ONI Researcher"

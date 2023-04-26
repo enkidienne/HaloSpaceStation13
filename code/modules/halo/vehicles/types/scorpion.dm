@@ -51,7 +51,7 @@
 	desc = "A slow firing but devastatingly damaging cannon."
 
 	fire_delay = 40
-	fire_sound = 'code/modules/halo/sounds/scorp_cannon_fire.ogg'
+	fire_sound = 'code/modules/halo/sounds/scorpion_cannon_fire_new.ogg'
 
 	scope_zoom_amount = 1.5
 
@@ -67,7 +67,7 @@
 	burst_delay = 1
 	dispersion = list(0)
 	fire_delay = 40
-	fire_sound = 'code/modules/halo/sounds/scorp_cannon_fire.ogg'
+	fire_sound = 'code/modules/halo/sounds/scorpion_cannon_fire_new.ogg'
 	mag_used = /obj/item/ammo_magazine/scorp_shell
 
 /datum/vehicle_gun/scorp_machinegun
@@ -114,3 +114,7 @@
 	damage_type = BRUTE
 	damtype = BRUTE
 	return ..()
+
+/obj/vehicles/scorpion_tank/innie
+	icon = 'code/modules/halo/vehicles/types/innie_scorpion.dmi'
+	icon_state = "move"

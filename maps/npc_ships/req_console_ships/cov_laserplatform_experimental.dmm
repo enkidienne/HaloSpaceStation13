@@ -11,7 +11,7 @@
 "ak" = (/obj/structure/window/reinforced/projresist/covenant{dir = 2},/obj/machinery/mac_cannon/capacitor/energy_projector,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "al" = (/obj/structure/window/reinforced/projresist/covenant{dir = 4},/obj/structure/window/reinforced/projresist/covenant{dir = 2},/obj/machinery/mac_cannon/capacitor/energy_projector,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "am" = (/turf/simulated/wall/covenant,/area/om_ships/req_console_ship)
-"an" = (/obj/machinery/light/covenant/south,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
+"an" = (/obj/machinery/nav_computer/npc/covenant,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "ao" = (/obj/machinery/overmap_weapon_console/mac/orbital_bombard/energy_projector,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "ap" = (/obj/machinery/overmap_weapon_console/mac/energy_projector,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "aq" = (/obj/machinery/mac_cannon/ammo_loader/energy_projector,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
@@ -28,7 +28,6 @@
 "aB" = (/obj/structure/window/reinforced/projresist/covenant{dir = 1},/obj/structure/window/reinforced/projresist/covenant{dir = 8},/obj/structure/grille,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "aC" = (/obj/structure/window/reinforced/projresist/covenant{dir = 1},/obj/structure/window/reinforced/projresist/covenant{dir = 2},/obj/structure/window/reinforced/projresist/covenant{dir = 4},/obj/structure/grille,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "aD" = (/obj/machinery/overmap_comms/receiver/battlenet,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
-"aE" = (/obj/machinery/light/covenant/north,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "aF" = (/obj/structure/table/marble,/obj/item/weapon/storage/firstaid/unsc/cov,/obj/item/weapon/storage/firstaid/unsc/cov,/obj/item/weapon/storage/firstaid/unsc/cov,/obj/item/weapon/storage/firstaid/unsc/cov,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "aG" = (/obj/structure/table/marble,/obj/item/bodybag/cryobag/covenant,/obj/item/bodybag/cryobag/covenant,/obj/item/bodybag/cryobag/covenant,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "aH" = (/obj/structure/reagent_dispensers/fueltank{color = "#ff99ff"},/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
@@ -68,7 +67,6 @@
 "bp" = (/obj/machinery/light/covenant/north,/mob/living/bot/cleanbot/covenant,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "bq" = (/obj/structure/window/reinforced/projresist/covenant{dir = 8},/obj/structure/window/reinforced/projresist/covenant{dir = 2},/obj/structure/grille,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "br" = (/obj/structure/window/reinforced/projresist/covenant{dir = 2},/obj/structure/window/reinforced/projresist/covenant{dir = 1},/obj/structure/window/reinforced/projresist/covenant{dir = 4},/obj/structure/grille,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
-"bs" = (/obj/machinery/nav_computer/covenant,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "bt" = (/obj/structure/table/marble,/obj/item/weapon/storage/firstaid/o2/covenant,/obj/item/weapon/storage/firstaid/o2/covenant,/obj/item/weapon/storage/firstaid/o2/covenant,/obj/item/weapon/storage/firstaid/o2/covenant,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "bu" = (/obj/structure/reagent_dispensers/watertank{color = "#ff99ff"},/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "bv" = (/obj/machinery/photocopier/faxmachine/covenant,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
@@ -85,7 +83,7 @@
 "CA" = (/obj/machinery/light/covenant/south,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "He" = (/obj/structure/closet/walllocker/emerglocker/covvie/south,/obj/machinery/door/airlock/covenant/cov_ship_preset,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "MW" = (/obj/structure/closet/secure_closet/freezer/fridge{color = "#ff99ff"},/obj/structure/closet/walllocker/emerglocker/covvie/north,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
-"OX" = (/obj/structure/closet/secure_closet/freezer/meat{color = "#ff99ff"},/obj/structure/sink/kitchen{color = "#ff99ff";pixel_y = 22},/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
+"OX" = (/obj/structure/closet/secure_closet/freezer/meat{color = "#ff99ff"},/obj/structure/sink/kitchen{color = "#ff99ff"; pixel_y = 22},/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "QI" = (/obj/machinery/vending/dinnerware{color = "#ff99ff"},/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 "Sz" = (/obj/machinery/vending/armory/covenant/sangheili/food,/turf/simulated/floor/covenant{icon_state = "cov_floor"},/area/om_ships/req_console_ship)
 
@@ -110,17 +108,17 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaababababababababababab
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaaaaaababababababacadaeafacababababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababaaaaaaaaaaaaaaaaabababababacacacacagahaiacacaOacacabababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababababababababababababacacacacajakalacacacacacacabababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababababamacacanacaoapaqacanacacacacacacababababababababacacacababababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababababamacacCAacaoapaqacCAacacacacacacababababababababacacacababababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababababababababababamamshamamacacacacacamamshamamCAacaracababababababrHacacababababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabamamamshamamamamamamababamasatauavamamamaramamamacawacamamamamacaxayazaAababacacacababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaBaCamaDamamacacacaEacacaFamOXacacacacMWamaGacaHamacacacacacamaIaJacacacacacacxHacanaKaLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaMaNaEacaOamacaPaQaRaSacacamaTaUaUaUaUacaracacaVamaTacacacacaracacacaWacaXaYaZsharamamamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaBaCamaDamamacacacyDacacaFamOXacacacacMWamaGacaHamacacacacacamaIaJacacacacacacxHacCAaKaLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaMaNyDacaOamacaPaQaRaSacacamaTaUaUaUaUacaracacaVamaTacacacacaracacacaWacaXaYaZsharamamamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaMbabbacacaracbcbbacacbdacaracyXbebebebfambgacacaracacacacbfamamamaramaramamamamaTbhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaMbianacbjamacbkblbmbnacacamaTaUaUaUaUacaracacboamaTacacacacaracacacbpacaXaYaZsharamamamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaabqbrambsamamacacacanacacbtambvacacacacqkamaGacbuamacacacacacamaIaJacacacacacacHeacaEaKaLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaMbiCAacbjamacbkblbmbnacacamaTaUaUaUaUacaracacboamaTacacacacaracacacbpacaXaYaZsharamamamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaabqbramanamamacacacCAacacbtambvacacacacqkamaGacbuamacacacacacamaIaJacacacacacacHeacyDaKaLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababsQababababababababamQIwMSzmPamamamaramamamacbyacamamamamacaxayazaAababacacacababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababababababababababamamshamamacacacacacamamshamamyDacaracababababababacacacababababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababababamacacaEacaoapaqacaEacacacacacacababababababababrHacacababababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababababamacacyDacaoapaqacyDacacacacacacababababababababrHacacababababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababababababababababababacacacacadaeafacacacacacacabababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababaaaaaaaaaaaaaaaaabababababacacacacagahaiacacbjacacabababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaaaaaababababababacajakalacababababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

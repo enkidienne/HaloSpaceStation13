@@ -47,11 +47,11 @@
 		)
 
 	pain_scream_sounds = list(\
-	'code/modules/halo/sounds/species_pain_screams/kiggyscream_1.ogg',
-	'code/modules/halo/sounds/species_pain_screams/kiggyscream_2.ogg',
-	'code/modules/halo/sounds/species_pain_screams/kiggyscream_3.ogg',
-	'code/modules/halo/sounds/species_pain_screams/kiggyscream_4.ogg',
-	'code/modules/halo/sounds/species_pain_screams/kiggyscream_5.ogg')
+	'code/modules/halo/sounds/species_pain_screams/skirmisherscream_1.ogg',
+	'code/modules/halo/sounds/species_pain_screams/skirmisherscream_2.ogg',
+	'code/modules/halo/sounds/species_pain_screams/skirmisherscream_3.ogg',
+	'code/modules/halo/sounds/species_pain_screams/skirmisherscream_4.ogg',
+	'code/modules/halo/sounds/species_pain_screams/skirmisherscream_5.ogg')
 
 	roll_distance = 4
 	per_roll_delay = 1.5 //Slightly faster than a human's dodge roll
