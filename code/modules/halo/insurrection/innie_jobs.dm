@@ -102,7 +102,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	access = list(access_innie, access_innie_boss, access_innie_cargo)
-	faction_whitelist = "Insurrection"
+	faction_whitelist = null
 
 	radio_speech_size = RADIO_SPEECH_SPECIALIST
 

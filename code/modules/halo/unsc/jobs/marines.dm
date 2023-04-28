@@ -26,6 +26,7 @@
 	"Scout Sniper Marine",\
 	"Anti-Tank Marine")
 	access = list(access_unsc,access_unsc_armoury,access_unsc_marine,access_unsc_specialist)
+	open_slot_on_death = 1
 
 	radio_speech_size = RADIO_SPEECH_SPECIALIST
 
@@ -39,6 +40,7 @@
 		"Marine Staff Sergeant" = /decl/hierarchy/outfit/job/unsc/marine/e6,\
 		"Marine Gunnery Sergeant" = /decl/hierarchy/outfit/job/unsc/marine/e7)
 	access = list(access_unsc,access_unsc_cargo,access_unsc_armoury,access_unsc_marine,access_unsc_specialist)
+	open_slot_on_death = 1
 
 	radio_speech_size = RADIO_SPEECH_LEADER
 
@@ -59,6 +61,6 @@
 	outfit_type = /decl/hierarchy/outfit/job/unsc/marine/hellbringer
 	alt_titles = list("Flamethrower Operator" = /decl/hierarchy/outfit/job/unsc/marine/hellbringer)
 	access = list(access_unsc,access_unsc_armoury,access_unsc_marine,access_unsc_specialist)
-	faction_whitelist = "UNSC"
+	faction_whitelist = null
 
 	radio_speech_size = RADIO_SPEECH_SPECIALIST

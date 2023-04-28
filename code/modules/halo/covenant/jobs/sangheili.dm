@@ -64,7 +64,7 @@
 	spawn_positions = 2
 	outfit_type = /decl/hierarchy/outfit/sangheili/minor
 	access = list(access_covenant, access_covenant_command, access_covenant_slipspace, access_covenant_cargo)
-	faction_whitelist = "Covenant"
+	faction_whitelist = null //Let's see how it goes if we un-wl this.
 	whitelisted_species = list(/datum/species/sangheili)
 	open_slot_on_death = TRUE //just like brutes, lowest rank of a leader caste can respawn indefinitely although still capped low
 	pop_balance_mult = 2

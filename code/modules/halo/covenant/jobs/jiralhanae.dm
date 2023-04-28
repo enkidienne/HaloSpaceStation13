@@ -43,7 +43,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	outfit_type = /decl/hierarchy/outfit/jiralhanae/covenant/minor
-	faction_whitelist = "Covenant"
+	faction_whitelist = null //Let's see how it goes with these open.
 	whitelisted_species = list(/datum/species/brutes)
 	open_slot_on_death = 1 //Lowest rank of a leader caste can respawn indefinitely although still capped low
 	pop_balance_mult = 2

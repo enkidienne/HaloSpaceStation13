@@ -3,7 +3,7 @@
 	title = "Orbital Drop Shock Trooper"
 	total_positions = 6
 	spawn_positions = 6
-	faction_whitelist = "UNSC"
+	faction_whitelist = null
 	outfit_type = /decl/hierarchy/outfit/job/unsc/odst
 	alt_titles = list(\
 		"ODST Sharpshooter",\
@@ -16,6 +16,7 @@
 		access_unsc_marine,\
 		access_unsc_odst,\
 		access_unsc_specialist)
+	open_slot_on_death = 1
 
 	radio_speech_size = RADIO_SPEECH_SPECIALIST
 
