@@ -128,8 +128,11 @@
 		/decl/emote/audible/species_sound/boo,
 		/decl/emote/audible/species_sound/berserk,
 		/decl/emote/audible/species_sound/forerunner,
-		/decl/emote/audible/species_sound/taunt
-
+		/decl/emote/audible/species_sound/covenant,
+		/decl/emote/audible/species_sound/taunt,
+		/decl/emote/audible/species_sound/warcry,
+		/decl/emote/audible/species_sound/panic,
+		/decl/emote/audible/species_sound/chitter
 	)
 
 /mob/living/silicon/robot
@@ -152,6 +155,10 @@
 		/decl/emote/audible/synth/buzz,
 		/decl/emote/audible/synth/confirm,
 		/decl/emote/audible/synth/deny,
+		/decl/emote/audible/synth/chirrup1,
+		/decl/emote/audible/synth/chirrup2,
+		/decl/emote/audible/synth/chirrup3,
+		/decl/emote/audible/synth/chirrup4,
 		/decl/emote/audible/synth/security,
 		/decl/emote/audible/synth/security/halt
 		)
