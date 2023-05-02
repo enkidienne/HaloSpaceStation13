@@ -42,9 +42,25 @@
 	key = "forerunner"
 	emote_message_3p = "USER raises their arms in reverence!"
 	species_sounds = list(
+		/datum/species/brutes = 'code/modules/halo/sounds/licensed/forerunner/brute_forerunner.ogg',
 		/datum/species/sangheili = 'code/modules/halo/sounds/licensed/forerunner/elite_forerunner.ogg',
 		/datum/species/unggoy =	'code/modules/halo/sounds/licensed/forerunner/grunt_forerunner.ogg',
+		/datum/species/kig_yar = 'code/modules/halo/sounds/licensed/forerunner/jackal_forerunner.ogg',
+		/datum/species/kig_yar_skirmisher = 'code/modules/halo/sounds/licensed/forerunner/skirmisher_forerunner.ogg',
+		/datum/species/yanmee = 'code/modules/halo/sounds/licensed/forerunner/bugger_forerunner.ogg',
 		/datum/species/sanshyuum = 'code/modules/halo/sounds/licensed/forerunner/prophet_forerunner.ogg')
+
+/decl/emote/audible/species_sound/covenant
+	key = "covenant"
+	emote_message_3p = "USER proudly raises their fist!"
+	species_sounds = list(
+		/datum/species/brutes = 'code/modules/halo/sounds/licensed/covenant/brute_covenant.ogg',
+		/datum/species/sangheili = 'code/modules/halo/sounds/licensed/covenant/elite_covenant.ogg',
+		/datum/species/unggoy = 'code/modules/halo/sounds/licensed/covenant/grunt_covenant.ogg',
+		/datum/species/kig_yar = 'code/modules/halo/sounds/licensed/covenant/jackal_covenant.ogg',
+		/datum/species/kig_yar_skirmisher = 'code/modules/halo/sounds/licensed/covenant/skirmisher_covenant.ogg',
+		/datum/species/yanmee = 'code/modules/halo/sounds/licensed/covenant/bugger_covenant.ogg',
+		/datum/species/sanshyuum = 'code/modules/halo/sounds/licensed/covenant/prophet_covenant.ogg')
 
 /decl/emote/audible/species_sound/taunt
 	key = "taunt"
@@ -57,6 +73,45 @@
 		/datum/species/kig_yar_skirmisher = 'code/modules/halo/sounds/licensed/taunt/skirmisher_taunt1.ogg',
 		/datum/species/yanmee = 'code/modules/halo/sounds/licensed/taunt/bugger_taunt1.ogg',
 		/datum/species/sanshyuum = 'code/modules/halo/sounds/licensed/taunt/prophet_taunt1.ogg')
+
+/decl/emote/audible/species_sound/warcry
+	key = "warcry"
+	emote_message_3p = "USER emits a bellowing roar"
+	species_sounds = list(
+		/datum/species/brutes = 'code/modules/halo/sounds/licensed/warcry/brute_warcry.ogg')
+
+/decl/emote/audible/species_sound/panic
+	key = "panic"
+	emote_message_3p = "USER fails its arms around in panic!"
+	species_sounds = list(
+		/datum/species/unggoy = 'code/modules/halo/sounds/licensed/panic/grunt_panic.ogg')
+
+decl/emote/audible/species_sound/chitter
+	key = "panic"
+	emote_message_3p = "USER reverberates a sound through its exoskeleton"
+	species_sounds = list(
+		/datum/species/yanmee = 'code/modules/halo/sounds/licensed/chitter/bugger_chitter.ogg')
+
+/decl/emote/audible/synth/chirrup1
+	key = "chirrup1"
+	emote_message_3p = "USER emits a gaseous chirrup."
+	emote_sound = 'code/modules/halo/sounds/licensed/chirrup/engineer_chirrup1.ogg'
+
+/decl/emote/audible/synth/chirrup2
+	key = "chirrup2"
+	emote_message_3p = "USER emits a gaseous chirrup."
+	emote_sound = 'code/modules/halo/sounds/licensed/chirrup/engineer_chirrup2.ogg'
+
+/decl/emote/audible/synth/chirrup3
+	key = "chirrup3"
+	emote_message_3p = "USER emits a gaseous chirrup."
+	emote_sound = 'code/modules/halo/sounds/licensed/chirrup/engineer_chirrup3.ogg'
+
+/decl/emote/audible/synth/chirrup4
+	key = "chirrup4"
+	emote_message_3p = "USER emits a gaseous chirrup."
+	emote_sound = 'code/modules/halo/sounds/licensed/chirrup/engineer_chirrup4.ogg'
+
 
 /decl/emote/audible/painscream
 	key = "painscream"
