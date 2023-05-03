@@ -87,7 +87,7 @@
 		/datum/species/unggoy = 'code/modules/halo/sounds/licensed/panic/grunt_panic.ogg')
 
 decl/emote/audible/species_sound/chitter
-	key = "panic"
+	key = "chitter"
 	emote_message_3p = "USER reverberates a sound through its exoskeleton"
 	species_sounds = list(
 		/datum/species/yanmee = 'code/modules/halo/sounds/licensed/chitter/bugger_chitter.ogg')
