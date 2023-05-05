@@ -92,6 +92,8 @@
 		/obj/item/weapon/grenade/smokebomb/covenant = 0,
 		"Misc" = -1,
 		/obj/item/turret_deploy_kit/plasturret = 0,
+		/obj/item/weapon/armor_patch/cov = 0,
+		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/drop_pod_beacon/covenant = 0
 	)
 	amounts = list(\
@@ -144,6 +146,8 @@
 		/obj/item/weapon/plastique/breaching/longrange/covenant = 0,
 		/obj/item/weapon/armor_patch/cov = 0,
 		/obj/item/weapon/armor_patch/mini/cov = 0,
+		/obj/item/weapon/storage/firstaid/unsc/cov = 0,
+		/obj/item/drop_pod_beacon/covenant = 0,
 		/obj/item/weapon/pinpointer/artifact = 0
 	)
 	amounts = list(\
@@ -158,6 +162,7 @@
 		/obj/item/weapon/plastique/breaching/covenant = 5,
 		/obj/item/weapon/plastique/breaching/longrange/covenant = 5,
 		/obj/item/clothing/accessory/storage/IFAK/cov = 20,
+		/obj/item/weapon/storage/firstaid/unsc/cov = 6,
 		/obj/item/weapon/pinpointer/artifact = 3
 	)
 
@@ -186,6 +191,8 @@
 		/obj/item/weapon/grenade/frag/spike = 0,
 		"Misc" = -1,
 		/obj/item/turret_deploy_kit/plasturret = 0,
+		/obj/item/weapon/armor_patch/cov = 0,
+		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/drop_pod_beacon/covenant = 0
 	)
 	amounts = list(
@@ -227,6 +234,7 @@
 		/obj/item/weapon/tank/air/covenant = 0,
 		"Equipment" = -1,
 		/obj/item/clothing/ears/earmuffs/earplugs/covenant = 0,
+		/obj/item/weapon/pickaxe/plasma_drill = 0,
 		/obj/item/clothing/under/covenant/jiralhanae/blue/ = 0,
 		/obj/item/clothing/under/covenant/jiralhanae/red/ = 0,
 		/obj/item/clothing/under/covenant/jiralhanae/straps = 0,
@@ -238,11 +246,14 @@
 		/obj/item/weapon/plastique/breaching/longrange/covenant = 0,
 		/obj/item/weapon/armor_patch/cov = 0,
 		/obj/item/weapon/armor_patch/mini/cov = 0,
-		/obj/item/weapon/pinpointer/artifact = 0,
+		/obj/item/weapon/storage/firstaid/unsc/cov = 0,
+		/obj/item/drop_pod_beacon/covenant = 0,
+		/obj/item/weapon/pinpointer/artifact = 0
 	)
 	amounts = list(\
 		/obj/item/weapon/storage/box/large/armorset/brute/eva = 4,
 		/obj/item/weapon/tank/air/covenant = 7,
+		/obj/item/weapon/pickaxe/plasma_drill = 1,
 		/obj/item/flight_item/covenant_pack = 1,
 		/obj/item/dumb_ai_chip/cov = 2,
 		/obj/item/stack/barbedwire/covenant/fifteen = 5,
@@ -250,6 +261,7 @@
 		/obj/item/weapon/plastique/breaching/covenant = 5,
 		/obj/item/weapon/plastique/breaching/longrange/covenant = 5,
 		/obj/item/clothing/accessory/storage/IFAK/cov = 20,
+		/obj/item/weapon/storage/firstaid/unsc/cov = 6,
 		/obj/item/weapon/pinpointer/artifact = 2,
 	)
 
@@ -276,6 +288,8 @@
 		/obj/item/weapon/grenade/smokebomb/covenant = 0,
 		"Misc" = -1,
 		/obj/item/turret_deploy_kit/plasturret = 0,
+		/obj/item/weapon/armor_patch/cov = 0,
+		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/drop_pod_beacon/covenant = 0
 	)
 	amounts = list(\
@@ -326,6 +340,8 @@
 		/obj/item/weapon/plastique/breaching/longrange/covenant = 0,
 		/obj/item/weapon/armor_patch/cov = 0,
 		/obj/item/weapon/armor_patch/mini/cov = 0,
+		/obj/item/weapon/storage/firstaid/unsc/cov = 0,
+		/obj/item/drop_pod_beacon/covenant = 0,
 		/obj/item/weapon/pinpointer/artifact = 0
 	)
 	amounts = list(\
@@ -337,6 +353,7 @@
 		/obj/item/weapon/plastique/breaching/covenant = 4,
 		/obj/item/weapon/plastique/breaching/longrange/covenant = 4,
 		/obj/item/clothing/accessory/storage/IFAK/cov = 20,
+		/obj/item/weapon/storage/firstaid/unsc/cov = 6, 
 		/obj/item/weapon/pinpointer/artifact = 2
 	)
 
@@ -369,6 +386,8 @@
 		/obj/item/weapon/grenade/smokebomb/covenant = 0,
 		"Misc" = -1,
 		/obj/item/turret_deploy_kit/plasturret = 0,
+		/obj/item/weapon/armor_patch/cov = 0,
+		/obj/item/weapon/armor_patch/mini/cov = 0,
 		/obj/item/drop_pod_beacon/covenant = 0
 	)
 	amounts = list(\
@@ -403,9 +422,11 @@
 		/obj/item/weapon/storage/pocketstore/hardcase/armorkits/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/medbottles/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/hypos/cov = 0,
+		/obj/item/weapon/storage/pocketstore/hardcase/materials/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/tools/cov = 0,
 		"Equipment" = -1,
 		/obj/item/clothing/ears/earmuffs/earplugs/covenant = 0,
+		/obj/item/stack/barbedwire/covenant/fifteen = 0,
 		/obj/item/weapon/pickaxe/plasma_drill = 0,
 		/obj/item/stack/barbedwire/covenant/fifteen = 0,
 		/obj/item/weapon/plastique/covenant = 0,
@@ -413,6 +434,8 @@
 		/obj/item/weapon/plastique/breaching/longrange/covenant = 0,
 		/obj/item/weapon/armor_patch/cov = 0,
 		/obj/item/weapon/armor_patch/mini/cov = 0,
+		/obj/item/weapon/storage/firstaid/unsc/cov = 0,
+		/obj/item/drop_pod_beacon/covenant = 0,
 		/obj/item/weapon/pinpointer/artifact = 0
 	)
 	amounts = list(\
@@ -422,6 +445,7 @@
 		/obj/item/weapon/plastique/breaching/covenant = 4,
 		/obj/item/weapon/plastique/breaching/longrange/covenant = 4,
 		/obj/item/clothing/accessory/storage/IFAK/cov = 20,
+		/obj/item/weapon/storage/firstaid/unsc/cov = 6,
 		/obj/item/weapon/pinpointer/artifact = 1
 	)
 
@@ -450,8 +474,10 @@
 		/obj/item/weapon/storage/pocketstore/hardcase/medbottles/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/hypos/cov = 0,
 		/obj/item/weapon/storage/pocketstore/hardcase/materials/cov = 0,
+		/obj/item/weapon/storage/pocketstore/hardcase/tools/cov = 0,
 		"Equipment" = -1,
 		/obj/item/clothing/ears/earmuffs/earplugs/covenant = 0,
+		/obj/item/weapon/pickaxe/plasma_drill = 0,
 		/obj/item/stack/barbedwire/covenant/fifteen = 0,
 		/obj/item/weapon/plastique/covenant = 0,
 		/obj/item/weapon/plastique/breaching/covenant = 0,
@@ -462,6 +488,7 @@
 		/obj/item/drop_pod_beacon/covenant = 0
 	)
 	amounts = list(\
+		/obj/item/weapon/pickaxe/plasma_drill = 1,
 		/obj/item/stack/barbedwire/covenant/fifteen = 5,
 		/obj/item/weapon/plastique/covenant = 6,
 		/obj/item/weapon/plastique/breaching/covenant = 4,
@@ -486,11 +513,17 @@
 		/obj/item/ammo_magazine/type51mag = 0,
 		"Explosives" = -1,
 		/obj/item/weapon/grenade/smokebomb/covenant = 0,
-		/obj/item/weapon/grenade/plasma = 0
+		/obj/item/weapon/grenade/plasma = 0,
+		"Misc" = -1,
+		/obj/item/turret_deploy_kit/plasturret = 0,
+		/obj/item/weapon/armor_patch/cov = 0,
+		/obj/item/weapon/armor_patch/mini/cov = 0,
+		/obj/item/drop_pod_beacon/covenant = 0
 	)
 	amounts = list(\
 		/obj/item/weapon/grenade/plasma = 15,
-		/obj/item/weapon/grenade/smokebomb/covenant = 12
+		/obj/item/weapon/grenade/smokebomb/covenant = 12,
+		/obj/item/turret_deploy_kit/plasturret = 1
 	)
 
 /obj/machinery/vending/armory/covenant/sangheili/food
