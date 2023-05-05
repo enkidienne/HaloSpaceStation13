@@ -426,7 +426,6 @@
 		/obj/item/weapon/storage/pocketstore/hardcase/tools/cov = 0,
 		"Equipment" = -1,
 		/obj/item/clothing/ears/earmuffs/earplugs/covenant = 0,
-		/obj/item/stack/barbedwire/covenant/fifteen = 0,
 		/obj/item/weapon/pickaxe/plasma_drill = 0,
 		/obj/item/stack/barbedwire/covenant/fifteen = 0,
 		/obj/item/weapon/plastique/covenant = 0,
