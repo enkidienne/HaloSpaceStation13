@@ -85,6 +85,11 @@
 	lunge_dist = 2
 	salvage_components = list()
 	matter = list("duridium" = 1)
+	
+	firemodes = list(\
+	list(mode_name="firing mode",  burst=3),
+	list(mode_name="melee mode",  burst=0)
+	)
 
 /obj/item/weapon/gun/projectile/spiker/update_icon()
 	if(ammo_magazine)
@@ -162,6 +167,11 @@
 	lunge_dist = 2
 	salvage_components = list()
 	matter = list("duridium" = 1)
+	
+	firemodes = list(\
+	list(mode_name="firing mode",  burst=1),
+	list(mode_name="melee mode",  burst=0)
+	)
 
 /obj/item/weapon/gun/projectile/mauler/update_icon()
 	if(ammo_magazine)
@@ -300,6 +310,10 @@
 	)
 	salvage_components = list()
 	matter = list("nanolaminate" = 2, "kemocite" = 1, "duridium" = 1)
+	firemodes = list(\
+	list(mode_name="firing mode",  burst=1),
+	list(mode_name="melee mode",  burst=0)
+	)
 
 	whitelisted_grenades = list(/obj/item/weapon/grenade/brute_shot)
 
