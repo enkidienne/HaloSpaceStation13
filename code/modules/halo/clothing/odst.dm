@@ -187,6 +187,26 @@
 
 	icon_state = "Odst Armour Engineer"
 
+/obj/effect/odst_armour_set/old
+	helmet = /obj/item/clothing/head/helmet/odst/old
+	armour = /obj/item/clothing/suit/armor/special/odst/old
+
+/obj/item/clothing/head/helmet/odst/old
+	name = "ODST Helmet"
+	desc = "Standard issue short-EVA capable helmet issued to ODST forces. This particular helmet appears to be of a older pattern."
+
+	item_state = "h2_odst_helmet_worn"
+	icon_state = "h2_odst_helmet_transparent_obj"
+	item_state_novisr = "h2_odst_helmet_transparent_worn"
+	icon_state_novisr = "h2_odst_helmet_transparent_obj"
+
+/obj/item/clothing/suit/armor/special/odst/old
+	name = "ODST Armour"
+	desc = "Lightweight, durable armour issued to Orbital Drop Shock Troopers for increased survivability in the field. This particular BDU appears to be of a older pattern."
+
+	item_state = "h2_odst_armor_worn"
+	icon_state = "h2_odst_armor_obj"
+
 /obj/effect/odst_armour_set/squadleader
 	helmet = /obj/item/clothing/head/helmet/odst/squadleader
 	armour = /obj/item/clothing/suit/armor/special/odst/squadleader

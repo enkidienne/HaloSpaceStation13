@@ -305,6 +305,23 @@
         /obj/item/weapon/tank/emergency/oxygen/engi,
         )
 
+/obj/item/weapon/storage/box/large/armorset/odst/old
+  name = "ODST Old Armor Set"
+  startswith = list(
+        /obj/item/clothing/head/helmet/odst/old,
+        /obj/item/clothing/suit/armor/special/odst/old,
+        /obj/item/clothing/shoes/magboots/odst,
+        /obj/item/clothing/gloves/thick/combat,
+        /obj/item/weapon/tank/emergency/oxygen/engi,
+        )
+  can_hold = list(
+        /obj/item/clothing/head/helmet/odst/old,
+        /obj/item/clothing/suit/armor/special/odst/old,
+        /obj/item/clothing/shoes/magboots/odst,
+        /obj/item/clothing/gloves/thick/combat,
+        /obj/item/weapon/tank/emergency/oxygen/engi,
+        )
+
 /obj/item/weapon/storage/box/large/armorset/odst/squadleader
   name = "ODST Squad Leader Armor Set"
   startswith = list(
