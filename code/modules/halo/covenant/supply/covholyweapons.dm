@@ -26,22 +26,30 @@
 	cost = 800
 	containername = "\improper Sanctified Binary Rifle crate"
 
+/* EXPLOSIVES */
+
+/decl/hierarchy/supply_pack/covenant_holy_weapons/splintergrenade
+	name = "Holy Hand Grenades"
+	contains = list(/obj/item/weapon/grenade/splinter = 8)
+	cost = 300
+	containername = "\improper Holy Hand Grenade crate"
+
 /* AMMO */
 
 /decl/hierarchy/supply_pack/covenant_holy_weapons/boltshotammo
 	name = "Holy Boltshot Ammo"
 	contains = list(/obj/item/ammo_magazine/boltshot = 3)
-	cost = 100
+	cost = 75
 	containername = "\improper Holy Boltshot Ammo crate"
 
 /decl/hierarchy/supply_pack/covenant_holy_weapons/suppressorammo
 	name = "Blessed Suppressor Ammo"
 	contains = list(/obj/item/ammo_magazine/suppressor = 3)
-	cost = 100
+	cost = 50
 	containername = "\improper Blessed Suppressor Ammo crate"
 
 /decl/hierarchy/supply_pack/covenant_holy_weapons/binaryrifleammo
 	name = "Sanctified Binary Rifle Ammo"
 	contains = list(/obj/item/ammo_magazine/binaryrifle = 3)
-	cost = 100
+	cost = 200
 	containername = "\improper Sanctified Binary Rifle Ammo crate"
