@@ -4,7 +4,7 @@
 	desc = "Store and discharge larger amounts of energy."
 	required_materials = list("glass" = 10)
 	required_reagents = list(/datum/reagent/toxin/phoron = 10, /datum/reagent/radium = 10)
-	ticks_max = 60
+	ticks_max = 30
 	design_unlocks = list(/datum/research_design/basic_capacitor)
 
 /datum/techprint/energy_two
@@ -13,7 +13,7 @@
 	tech_req_all = list(/datum/techprint/energy)
 	required_materials = list("glass" = 20, "phoron" = 5)
 	required_reagents = list(/datum/reagent/toxin/phoron = 20, /datum/reagent/radium = 20)
-	ticks_max = 120
+	ticks_max = 60
 	design_unlocks = list(/datum/research_design/adv_capacitor)
 
 /datum/techprint/energy_three
@@ -22,5 +22,5 @@
 	tech_req_all = list(/datum/techprint/energy_two)
 	required_materials = list("glass" = 30, "phoron" = 10, "kemocite" = 5)
 	required_reagents = list(/datum/reagent/toxin/phoron = 30, /datum/reagent/radium = 30)
-	ticks_max = 300
+	ticks_max = 150
 	design_unlocks = list(/datum/research_design/super_capacitor)

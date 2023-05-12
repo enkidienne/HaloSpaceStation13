@@ -11,7 +11,7 @@
 		/datum/techprint/tvoan_gauntlet,\
 		/datum/techprint/shield_barricade)
 	tech_req_all = list(/datum/techprint/energy_two)
-	ticks_max = 120
+	ticks_max = 90
 /*
 /datum/techprint/bubble_shield
 	name = "Bubble Shield"
@@ -30,4 +30,4 @@
 	tech_req_all = list(\
 		/datum/techprint/energy_shielding_one,\
 		/datum/techprint/human_shield_ablative)
-	ticks_max = 275
+	ticks_max = 250

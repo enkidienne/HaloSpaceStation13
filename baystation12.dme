@@ -1648,6 +1648,7 @@
 #include "code\modules\halo\covenant\supply\coveva.dm"
 #include "code\modules\halo\covenant\supply\covexplosives.dm"
 #include "code\modules\halo\covenant\supply\covfood.dm"
+#include "code\modules\halo\covenant\supply\covholyweapons.dm"
 #include "code\modules\halo\covenant\supply\covmedical.dm"
 #include "code\modules\halo\covenant\supply\covmisc.dm"
 #include "code\modules\halo\covenant\supply\covNPCs.dm"
