@@ -8,7 +8,8 @@
 /decl/hierarchy/supply_pack/covenant_holy_weapons/boltshot
 	name = "Holy Boltshot"
 	contains = list(/obj/item/weapon/gun/projectile/boltshot = 1,
-					/obj/item/ammo_magazine/boltshot = 3)
+					/obj/item/ammo_magazine/boltshot = 3,
+					/obj/item/ammo_magazine/boltshot_sg = 3)
 	cost = 500
 	containername = "\improper Holy Boltshot crate"
 
@@ -38,7 +39,8 @@
 
 /decl/hierarchy/supply_pack/covenant_holy_weapons/boltshotammo
 	name = "Holy Boltshot Ammo"
-	contains = list(/obj/item/ammo_magazine/boltshot = 3)
+	contains = list(/obj/item/ammo_magazine/boltshot = 3,
+					/obj/item/ammo_magazine/boltshot_sg = 3)
 	cost = 75
 	containername = "\improper Holy Boltshot Ammo crate"
 
