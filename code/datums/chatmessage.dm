@@ -4,7 +4,7 @@
 #define CHAT_MESSAGE_EXP_DECAY		0.7 // Messages decay at pow(factor, idx in stack)
 #define CHAT_MESSAGE_HEIGHT_DECAY	0.9 // Increase message decay based on the height of the message
 #define CHAT_MESSAGE_APPROX_LHEIGHT	11 // Approximate height in pixels of an 'average' line, used for height decay
-#define CHAT_MESSAGE_WIDTH			72 // pixels
+#define CHAT_MESSAGE_WIDTH			92 // pixels
 #define CHAT_MESSAGE_MAX_LENGTH		110 // characters
 #define WXH_TO_HEIGHT(x)			text2num(copytext((x), findtextEx((x), "x") + 1)) // thanks lummox
 /atom
@@ -188,11 +188,6 @@
 /mob/proc/create_chat_message(atom/movable/speaker, datum/language/message_language, raw_message, list/spans, message_mode)
 	// Ensure the list we are using, if present, is a copy so we don't modify the list provided to us
 	spans = spans?.Copy()
-
-	var/client/speakerclient = speaker.client
-	if(speakerclient && speakerclient.prefs)//If clients have the bubbles turned off, let's stop here.
-		if(!speakerclient.prefs.chat_on_map)
-			return
 
 	var/atom/movable/originalSpeaker = speaker
 

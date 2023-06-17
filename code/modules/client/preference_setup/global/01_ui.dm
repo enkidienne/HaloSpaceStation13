@@ -4,7 +4,6 @@
 
 	var/chat_on_map = 1
 	var/max_chat_length = CHAT_MESSAGE_MAX_LENGTH
-	var/chat_non_mob = 1
 
 	var/UI_style = "Midnight"
 	var/UI_style_color = "#ffffff"
