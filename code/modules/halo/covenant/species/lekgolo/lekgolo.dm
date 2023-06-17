@@ -64,6 +64,7 @@
 	for(var/language in languages)
 		languages -= language
 		add_language(language)
+	default_language = languages[1]
 
 	//create our actions
 	for(var/action_type in typesof(/obj/item/hunter_action) - /obj/item/hunter_action)
