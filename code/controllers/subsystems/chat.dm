@@ -5,6 +5,12 @@ SUBSYSTEM_DEF(chat)
 	priority = SS_PRIORITY_CHAT
 	init_order = SS_INIT_CHAT
 	var/list/payload = list()
+	var/initialized = 0
+
+/datum/controller/subsystem/chat/Initialize(timeofday)
+	initialized = 1
+	return ..()
+
 
 /datum/controller/subsystem/chat/fire()
 	for(var/i in payload)

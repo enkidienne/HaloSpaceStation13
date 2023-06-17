@@ -136,7 +136,7 @@
 					else
 						to_chat(usr, "[icon2html(src,usr)]<span class='warning'>\The [O] doesn't have that much money!</span>")
 			else
-				to_chat(usr, "[icon2html(src,sr)]<span class='warning'>Connected account has been suspended.</span>")
+				to_chat(usr, "[icon2html(src,usr)]<span class='warning'>Connected account has been suspended.</span>")
 
 		else
 			to_chat(usr, "[icon2html(src, usr)]<span class='warning'>EFTPOS is not connected to an account.</span>")

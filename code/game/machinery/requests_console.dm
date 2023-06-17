@@ -170,7 +170,6 @@ var/list/obj/machinery/requests_console/allConsoles = list()
 			message_log += "<B>Message sent to [recipient]</B><BR>[message]"
 		else
 			audible_message(text("[icon2html(src, viewers(src))] *The Requests Console beeps: 'NOTICE: No server detected!'"),,4)
-		return TOPIC_REFRESH
 
 
 	//Handle screen switching

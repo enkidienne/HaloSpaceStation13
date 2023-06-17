@@ -17,7 +17,7 @@
 
 /obj/item/device/gps/proc/get_coordinates()
 	var/turf/T = get_turf(src)
-	to_chat(user, "<span class='notice'>\icon[src] \The [src] flashes <i>[T.x]:[T.y]:[T.z]</i>.</span>")
+	to_chat(usr, "<span class='notice'>[icon2html(src,usr)] \The [src] flashes <i>[T.x]:[T.y]:[T.z]</i>.</span>")
 
 /obj/item/device/measuring_tape
 	name = "measuring tape"

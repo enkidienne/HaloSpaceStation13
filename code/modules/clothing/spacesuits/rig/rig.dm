@@ -95,7 +95,7 @@
 			if(!piece || piece.loc != wearer)
 				continue
 
-			to_chat(user, "[icon2html(piece, user)] \The [piece] [piece.gender == PLURAL ? "are" : "is"] deployed.")
+			to_chat(usr, "[icon2html(piece, usr)] \The [piece] [piece.gender == PLURAL ? "are" : "is"] deployed.")
 
 
 	if(src.loc == usr)

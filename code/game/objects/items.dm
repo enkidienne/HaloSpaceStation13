@@ -711,7 +711,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 
 /obj/item/proc/get_examine_line()
 	if(blood_color)
-		. = SPAN_WARNING("[icon2html(src, viewers(src))] [gender==PLURAL?"some":"a"] <font color='[blood_color]'>stained</font> [src]")
+		. = "<span class = 'warning'>[icon2html(src, viewers(src))] [gender==PLURAL?"some":"a"] <font color='[blood_color]'>stained</font> [src]</span>"
 	else
 		. = "[icon2html(src, viewers(src))] \a [src]"
 	var/ID = GetIdCard()
@@ -720,46 +720,5 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 
 /obj/item/proc/on_active_hand()
 
-/obj/item/is_burnable()
-	return simulated
-
-/obj/item/lava_act()
-	. = (!throwing) ? ..() : FALSE
-
 /obj/item/proc/has_embedded()
 	return
-
-/obj/item/proc/get_pressure_weakness(pressure,zone)
-	. = 1
-	if(pressure > ONE_ATMOSPHERE)
-		if(max_pressure_protection != null)
-			if(max_pressure_protection < pressure)
-				return min(1, round((pressure - max_pressure_protection) / max_pressure_protection, 0.01))
-			else
-				return 0
-	if(pressure < ONE_ATMOSPHERE)
-		if(min_pressure_protection != null)
-			if(min_pressure_protection > pressure)
-				return min(1, round((min_pressure_protection - pressure) / min_pressure_protection, 0.01))
-			else
-				return 0
-
-/obj/item/do_simple_ranged_interaction(var/mob/user)
-	if(user)
-		attack_self(user)
-	return TRUE
-
-/obj/item/proc/inherit_custom_item_data(var/datum/custom_item/citem)
-	. = src
-	if(citem.item_name)
-		SetName(citem.item_name)
-	if(citem.item_desc)
-		desc = citem.item_desc
-	if(citem.item_icon_state)
-		item_state_slots = null
-		item_icons = null
-		icon = CUSTOM_ITEM_OBJ
-		set_icon_state(citem.item_icon_state)
-		item_state = null
-		icon_override = CUSTOM_ITEM_MOB
-

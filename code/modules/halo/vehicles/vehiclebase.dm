@@ -748,7 +748,7 @@
 		I.pixel_x = bound_width / 2
 		I.pixel_y = bound_height/ 2
 		overlays += I
-		show_image(src.loc, I)
+		image_to(src.loc, I)
 		spawn(10)
 			overlays -= I
 			qdel(I)
