@@ -2049,7 +2049,7 @@ window "mapwindow"
 		zoom = 0
 		on-show = ".winset\"mainwindow.mainvsplit.left=mapwindow\""
 		on-hide = ".winset\"mainwindow.mainvsplit.left=\""
-		style = ""
+		style=".center { text-align: center; } .maptext { font-family: 'Small Fonts'; font-size: 8px; -dm-text-outline: 1px black; color: white; line-height: 1.1; }"
 
 window "outputwindow"
 	elem "outputwindow"
