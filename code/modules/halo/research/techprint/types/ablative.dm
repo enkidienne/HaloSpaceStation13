@@ -4,7 +4,7 @@
 	desc = "A reflective plastalloy that better disperses energy."
 	required_materials = list("glass" = 10, "plastic" = 10, "steel" = 10, "plasteel" = 10)
 	required_reagents = list(/datum/reagent/lithium = 50)
-	ticks_max = 75
+	ticks_max = 60
 	tech_req_all = list(/datum/techprint/energy_two)
 
 /datum/techprint/human_shield_ablative
@@ -13,7 +13,7 @@
 	design_unlocks = list(/datum/research_design/shield_ablative)
 	required_reagents = list(/datum/reagent/tungsten = 20)
 	required_materials = list("glass" = 20, "plastic" = 20, "steel" = 20)
-	ticks_max = 225
+	ticks_max = 150
 	tech_req_all = list(/datum/techprint/ablative)
 
 /datum/techprint/ablative_patch
@@ -23,4 +23,4 @@
 	required_materials = list("rglass" = 10)
 	required_reagents = list(/datum/reagent/lithium = 10)
 	tech_req_all = list(/datum/techprint/ablative, /datum/techprint/compression_two)
-	ticks_max = 250
+	ticks_max = 180
