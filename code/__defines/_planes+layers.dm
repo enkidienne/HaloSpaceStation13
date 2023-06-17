@@ -153,6 +153,7 @@ What is the naming convention for planes or layers?
 	#define ABOVE_PROJECTILE_LAYER  5
 	#define SINGULARITY_LAYER       6
 	#define POINTER_LAYER           7
+	#define CHAT_LAYER              7
 
 #define OBSERVER_PLANE                 -3 // For observers and ghosts
 
