@@ -64,7 +64,7 @@
 		return 1
 
 	//Once we have all the references, let's make sure we're not cutting an npc in half.
-	if(item_to_disintegrate == mob_holding_disintegrate)
+	if(item_to_disintegrate == mob_holding_disintegrated)
 		return 1
 
 	if(!isnull(item_to_disintegrate) && istype(item_to_disintegrate,/obj/item/weapon/gun) && !prob(BASE_PARRY_PLASMA_DESTROY))
