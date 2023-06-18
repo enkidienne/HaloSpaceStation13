@@ -41,9 +41,10 @@
   * * target - The target atom to display the overlay at
   * * owner - The mob that owns this overlay, only this mob will be able to view it
   * * extra_classes - Extra classes to apply to the span that holds the text
+  * * messageloc_override - Put the message above this item, instead.
   * * lifespan - The lifespan of the message in deciseconds
   */
-/datum/chatmessage/New(text, atom/target, mob/owner, list/extra_classes = null, lifespan = CHAT_MESSAGE_LIFESPAN)
+/datum/chatmessage/New(text, atom/target, mob/owner, list/extra_classes = null, messageloc_override = null, lifespan = CHAT_MESSAGE_LIFESPAN)
 	. = ..()
 	if (!istype(target))
 		CRASH("Invalid target given for chatmessage")
@@ -51,6 +52,8 @@
 		stack_trace("/datum/chatmessage created with [isnull(owner) ? "null" : "invalid"] mob owner")
 		qdel(src)
 		return
+	if(messageloc_override)
+		message_loc = messageloc_override
 	INVOKE_ASYNC(src, .proc/generate_image, text, target, owner, extra_classes, lifespan)
 
 /datum/chatmessage/Destroy()
@@ -125,7 +128,8 @@
 	approx_lines = max(1, mheight / CHAT_MESSAGE_APPROX_LHEIGHT)
 
 	// Translate any existing messages upwards, apply exponential decay factors to timers
-	message_loc = target
+	if(!message_loc) //For overriding line in-vehicles and whatnot.
+		message_loc = target
 	if (owned_by.seen_messages)
 		var/idx = 1
 		var/combined_height = approx_lines
@@ -190,15 +194,19 @@
 	spans = spans?.Copy()
 
 	var/atom/movable/originalSpeaker = speaker
+	var/messageloc_override = null
 
 	// Ignore virtual speaker (most often radio messages) from ourself
 	if (originalSpeaker != src && speaker == src)
 		return
-	if(istype(speaker.loc,/obj/vehicles) || istype(speaker.loc,/obj/structure/closet))
-		speaker = originalSpeaker.loc
+	if(speaker.z != src.z) //We'll assume that speech from people we can't see is radio-speech.
+		return //They don't want to see non-z (radio) messages.
+
+	if(istype(originalSpeaker.loc,/obj/vehicles) || istype(originalSpeaker.loc,/obj/structure/closet))
+		messageloc_override = originalSpeaker.loc
 
 	// Display visual above source
-	new /datum/chatmessage(capitalize(raw_message), speaker, src, spans)
+	new /datum/chatmessage(capitalize(raw_message), speaker, src, spans, messageloc_override)
 
 
 // Tweak these defines to change the available color ranges
