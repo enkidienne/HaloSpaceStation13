@@ -288,13 +288,21 @@
 		view_from = v
 	var/list/L = list()
 
-	var/list/in_sight = view(dist,view_from) | dview(see_in_dark,view_from)
-	for(var/mob/living/M in in_sight)
-		L += M
-	for(var/obj/vehicles/M in in_sight)
-		L += M
-	for(var/obj/mecha/M in in_sight)
-		L += M
+	var/list/in_sight = view(dist,view_from)
+	//Let's only check our darkview if we can't see anything the first time round.
+	var/second_iter = 0
+	while (L.len == 0)
+		for(var/mob/living/M in in_sight)
+			L += M
+		for(var/obj/vehicles/M in in_sight)
+			L += M
+		for(var/obj/mecha/M in in_sight)
+			L += M
+		if(second_iter)
+			break
+		if(L.len == 0)
+			in_sight = dview(see_in_dark,view_from)
+			second_iter = 1
 
 	L -= src //Just in case we added ourselves to our own targets list.
 
