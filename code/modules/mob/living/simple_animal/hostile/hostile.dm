@@ -341,7 +341,7 @@
 		walk(src,0)
 		return 0
 	if(isturf(src.loc) || istype(src.loc,/obj/vehicles))
-		if(!stat)
+		if(!stat && players_on_z()) //Immersion breaking? Maybe. But let's not bother processing if there's noone to see it.
 			if(destroy_surroundings)
 				DestroySurroundings()
 			switch(stance)
