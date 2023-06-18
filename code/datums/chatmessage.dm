@@ -194,6 +194,8 @@
 	// Ignore virtual speaker (most often radio messages) from ourself
 	if (originalSpeaker != src && speaker == src)
 		return
+	if(istype(speaker.loc,/obj/vehicles) || istype(speaker.loc,/obj/structure/closet))
+		speaker = originalSpeaker.loc
 
 	// Display visual above source
 	new /datum/chatmessage(capitalize(raw_message), speaker, src, spans)
