@@ -156,14 +156,13 @@
 	stop_automated_movement = 1
 	if(!target_mob || SA_attackable(target_mob))
 		stance = HOSTILE_STANCE_IDLE
-	var/list/targlist = ListTargets(7)
-	if(target_mob in targlist)
+		return
+	var/targVis = can_see(src,target_mob,7)
+	if(targVis)
 		if(ranged || istype(loc,/obj/vehicles))
 			var/targ_loc_cached = target_mob.loc //This is required because OpenFire clears the target mob.
-			if(target_mob in targlist)
-				walk(src, 0)
-				OpenFire(target_mob)
-			var/engage_dist_mod = 0.5
+			OpenFire(target_mob)
+			var/engage_dist_mod = 0.6
 			if(istype(loc,/obj/vehicles))
 				engage_dist_mod = 0
 			if(get_dist(loc,targ_loc_cached) >= world.view*engage_dist_mod) //Don't let them flee!
@@ -184,7 +183,7 @@
 	if(!target_mob || SA_attackable(target_mob))
 		LostTarget()
 		return 0
-	if(!(target_mob in ListTargets(7)))
+	if(!can_see(src,target_mob,7))
 		LoseTarget()
 		return 0
 	if(next_move >= world.time)
