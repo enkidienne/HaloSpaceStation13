@@ -218,7 +218,7 @@
 	var/speech_bubble_test = say_test(formatted_message)
 	var/image/speech_bubble = image('icons/mob/talk.dmi',MC,"h[speech_bubble_test]")
 	for(var/mob/M in view(7, MC))
-		show_image(M, speech_bubble)
+		image_to(M, speech_bubble)
 	spawn(30) qdel(speech_bubble)
 
 /datum/nano_module/program/innie_comms/Topic(href, href_list)

@@ -60,7 +60,7 @@
 	//visual effect
 	var/image/I = image('icons/effects/effects.dmi', src, "empdisable")
 	overlays += I
-	show_image(src.loc, I)
+	image_to(src.loc, I)
 	spawn(30)
 		overlays -= I
 		qdel(I)

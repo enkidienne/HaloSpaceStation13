@@ -226,7 +226,7 @@ var/world_topic_spam_protect_time = world.timeofday
 			s["admins"] = admins
 
 		return list2params(s)
-		
+
 	else if(T == "revision")
 		var/list/L = list()
 		L["gameid"] = game_id
@@ -506,7 +506,7 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	if(config.server)	//if you set a server location in config.txt, it sends you there instead of trying to reconnect to the same world address. -- NeoFite
 		for(var/client/C in GLOB.clients)
-			to_chat(C, link("byond://[config.server]"))
+			send_link(C, "byond://[config.server]")
 
 	if(config.wait_for_sigusr1_reboot && reason != 3)
 		text2file("foo", "reboot_called")

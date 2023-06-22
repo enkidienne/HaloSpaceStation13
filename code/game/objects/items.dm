@@ -705,5 +705,20 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 /obj/item/proc/can_use_when_prone()
 	return (w_class <= ITEM_SIZE_NORMAL)
 
+
 /obj/item/proc/can_embed()
 	return 1
+
+/obj/item/proc/get_examine_line()
+	if(blood_color)
+		. = "<span class = 'warning'>[icon2html(src, viewers(src))] [gender==PLURAL?"some":"a"] <font color='[blood_color]'>stained</font> [src]</span>"
+	else
+		. = "[icon2html(src, viewers(src))] \a [src]"
+	var/ID = GetIdCard()
+	if(ID)
+		. += "  <a href='?src=\ref[ID];look_at_id=1'>\[Look at ID\]</a>"
+
+/obj/item/proc/on_active_hand()
+
+/obj/item/proc/has_embedded()
+	return
