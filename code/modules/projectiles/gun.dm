@@ -374,13 +374,11 @@
 	stored_targ = target
 	var/atom/use_targ = stored_targ
 	. = 1
-	/*
 	user.visible_message(
 	"<span class='danger'>\The [user] fires \the [src][pointblank ? " point blank at \the [target]":""]!</span>",
 	"<span class='warning'>You fire \the [src]!</span>",
 	"You hear a [fire_sound_text]!"
 	)
-	*/
 	for(var/i in 1 to burst)
 		if(!pershot_check(user))
 			break
@@ -810,7 +808,7 @@
 	if (scope_zoom_amount == 0) return
 
 	toggle_scope(usr, scope_zoom_amount)
-	
+
 /obj/item/weapon/gun/proc/ammo_check()     //We will change this in the projectile and energy dm files in the guns folder
 	return null
 

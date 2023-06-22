@@ -489,7 +489,7 @@ GLOBAL_LIST_EMPTY(all_radios)
 
 	var/image/I = image('icons/effects/effects.dmi', src, "empdisable")
 	overlays += I
-	show_image(src.loc, I)
+	image_to(src.loc, I)
 	spawn(10)
 		overlays -= I
 		qdel(I)

@@ -50,6 +50,5 @@
 		return
 
 /obj/item/weapon/weldpack/examine(mob/user)
-	. = ..(user)
-	to_chat(user, text("\icon[] [] units of fuel left!", src, src.reagents.total_volume))
-	return
+	. = ..()
+	to_chat(user, text("[icon2html(src, user)] [] units of fuel left!", src.reagents.total_volume))

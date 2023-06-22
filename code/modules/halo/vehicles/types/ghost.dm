@@ -91,6 +91,10 @@
 	caliber = "ghostPlas"
 	projectile_type = /obj/item/projectile/bullet/covenant/plasmarifle
 
+//Banished Variant//
+/obj/vehicles/ghost/banished
+	icon_state = "banished"
+
 //UTILISED BY SUPPLY DROPS, DELETED/TURNED TO SCRAP ON DEATH//
 
 /obj/vehicles/ghost/supplydrop_recon

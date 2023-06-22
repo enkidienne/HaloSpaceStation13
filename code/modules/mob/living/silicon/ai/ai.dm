@@ -219,7 +219,7 @@ var/list/ai_verbs_default = list(
 		var/area/node_area = node.loc.loc
 		for(var/turf/t in node_area)
 			var/image/image_send = image('code/modules/halo/icons/machinery/ai_area_displays.dmi',t,"area[ctr]")
-			show_image(src,image_send)
+			image_to(src,image_send)
 			spawn(RANGECHECK_DELETE_DELAY)
 				qdel(image_send)
 

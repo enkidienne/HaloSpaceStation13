@@ -11,6 +11,7 @@
 	name = "Confetti Maker Chaingun Turret"
 	desc = "A lead-spewing gun, usually found mounted to a turret. It is known for it's inaccuracy and extraordinary rate of fire.."
 
+	fire_sound = 'code/modules/halo/sounds/chaingun_fire.ogg'
 	icon_state = "chaingun_obj"
 	item_state = "chaingun_obj"
 

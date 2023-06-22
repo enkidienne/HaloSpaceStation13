@@ -131,3 +131,7 @@
 	P.pixel_y += src.pixel_y
 	explosion(get_turf(impacted),0,2,4,5,guaranteed_damage = 100,guaranteed_damage_range = 3)
 	. = ..()
+
+//Banished Variant//
+/obj/vehicles/wraith/banished
+	icon_state = "banishedwraith"

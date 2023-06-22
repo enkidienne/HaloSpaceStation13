@@ -162,6 +162,10 @@ var/list/_client_preferences_by_type
 	enabled_description = "Fancy"
 	disabled_description = "Plain"
 
+/datum/client_preference/goonchat
+	description = "Use Goon Chat"
+	key = "USE_GOONCHAT"
+
 /********************
 * Admin Preferences *
 ********************/
