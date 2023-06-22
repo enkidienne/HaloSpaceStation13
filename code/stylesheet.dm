@@ -111,6 +111,8 @@ h1.alert, h2.alert		{color: #000080;}
 .mixed					{color: #FF7F00; font-weight: bold;}
 .bad					{color: #ee0000; font-weight: bold;}
 
+.maptext				{font-size: 8px; -dm-text-outline: 2px black; color: white; line-height:1.1;}
+
 BIG IMG.icon 			{width: 32px; height: 32px;}
 
 </style>"}

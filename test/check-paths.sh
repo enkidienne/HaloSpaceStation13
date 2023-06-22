@@ -2,7 +2,7 @@
 set -e
 
 WORLD_LOG_COUNT=40
-ANGLE_BRACKET_COUNT=723
+ANGLE_BRACKET_COUNT=725
 
 FAILED=0
 
@@ -11,7 +11,7 @@ num=`grep -E '\\\\(red|blue|green|black|b|i[^mc])' **/*.dm | wc -l`; echo "$num 
 num=`grep -E '\WDel\(' **/*.dm | wc -l`; echo "$num Del()s (expecting exactly 6)"; [ $num -eq 6 ] || FAILED=1
 num=`grep -E '"/atom' **/*.dm | wc -l`; echo "$num /atom text paths (expecting 2 or less)"; [ $num -le 2 ] || FAILED=1
 num=`grep -E '"/area' **/*.dm | wc -l`; echo "$num /area text paths (expecting 2 or less)"; [ $num -le 2 ] || FAILED=1
-num=`grep -E '"/datum' **/*.dm | wc -l`; echo "$num /datum text paths (expecting 2 or less)"; [ $num -le 2 ] || FAILED=1
+num=`grep -E '"/datum' **/*.dm | wc -l`; echo "$num /datum text paths (expecting 3 or less)"; [ $num -le 3 ] || FAILED=1
 num=`grep -E '"/mob' **/*.dm | wc -l`; echo "$num /mob text paths (expecting 2 or less)"; [ $num -le 2 ] || FAILED=1
 num=`grep -E '"/obj' **/*.dm | wc -l`; echo "$num /obj text paths (expecting 12 or less)"; [ $num -le 12 ] || FAILED=1
 num=`grep -E '"/turf' **/*.dm | wc -l`; echo "$num /turf text paths (expecting 8 or less)"; [ $num -le 8 ] || FAILED=1

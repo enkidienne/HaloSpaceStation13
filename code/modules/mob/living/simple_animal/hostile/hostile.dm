@@ -156,14 +156,13 @@
 	stop_automated_movement = 1
 	if(!target_mob || SA_attackable(target_mob))
 		stance = HOSTILE_STANCE_IDLE
-	var/list/targlist = ListTargets(7)
-	if(target_mob in targlist)
+		return
+	var/targVis = can_see(src,target_mob,7)
+	if(targVis)
 		if(ranged || istype(loc,/obj/vehicles))
 			var/targ_loc_cached = target_mob.loc //This is required because OpenFire clears the target mob.
-			if(target_mob in targlist)
-				walk(src, 0)
-				OpenFire(target_mob)
-			var/engage_dist_mod = 0.5
+			OpenFire(target_mob)
+			var/engage_dist_mod = 0.6
 			if(istype(loc,/obj/vehicles))
 				engage_dist_mod = 0
 			if(get_dist(loc,targ_loc_cached) >= world.view*engage_dist_mod) //Don't let them flee!
@@ -184,7 +183,7 @@
 	if(!target_mob || SA_attackable(target_mob))
 		LostTarget()
 		return 0
-	if(!(target_mob in ListTargets(7)))
+	if(!can_see(src,target_mob,7))
 		LoseTarget()
 		return 0
 	if(next_move >= world.time)
@@ -288,13 +287,21 @@
 		view_from = v
 	var/list/L = list()
 
-	var/list/in_sight = view(dist,view_from) | dview(see_in_dark,view_from)
-	for(var/mob/living/M in in_sight)
-		L += M
-	for(var/obj/vehicles/M in in_sight)
-		L += M
-	for(var/obj/mecha/M in in_sight)
-		L += M
+	var/list/in_sight = view(dist,view_from)
+	//Let's only check our darkview if we can't see anything the first time round.
+	var/second_iter = 0
+	while (L.len == 0)
+		for(var/mob/living/M in in_sight)
+			L += M
+		for(var/obj/vehicles/M in in_sight)
+			L += M
+		for(var/obj/mecha/M in in_sight)
+			L += M
+		if(second_iter)
+			break
+		if(L.len == 0)
+			in_sight = dview(see_in_dark,view_from)
+			second_iter = 1
 
 	L -= src //Just in case we added ourselves to our own targets list.
 
@@ -334,7 +341,7 @@
 		walk(src,0)
 		return 0
 	if(isturf(src.loc) || istype(src.loc,/obj/vehicles))
-		if(!stat)
+		if(!stat && players_on_z()) //Immersion breaking? Maybe. But let's not bother processing if there's noone to see it.
 			if(destroy_surroundings)
 				DestroySurroundings()
 			switch(stance)

@@ -101,6 +101,7 @@ GLOBAL_LIST_EMPTY(live_flood_simplemobs)
 	. = ..()
 	GLOB.live_flood_simplemobs.Add(src)
 	add_language(LANGUAGE_FLOODMIND)
+	default_language = languages[1]
 	sm_radio = new(src)
 	/*if(prob(50))
 		wander = 1

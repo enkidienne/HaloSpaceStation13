@@ -134,6 +134,12 @@
 	else
 		visible_message("<span class = 'notice'>[src.name] seems to become more docile.</span>")
 
+/mob/living/simple_animal/proc/players_on_z()
+	for(var/mob/m in GLOB.player_list)
+		if(m.z == z)
+			return 1
+	return 0
+
 /mob/living/simple_animal/Life()
 	..()
 
@@ -166,7 +172,7 @@
 	handle_supernatural()
 
 	//Movement
-	if(!client && !stop_automated_movement && wander && !anchored)
+	if(!client && !stop_automated_movement && wander && !anchored && players_on_z())//Only move if there's people on the z level.
 		if((isturf(src.loc) || istype(loc,/obj/vehicles)) && !resting && !buckled && canmove)	//This is so it only moves if it's not inside a closet, gentics machine, etc.
 			turns_since_move++
 			if(turns_since_move >= turns_per_move)

@@ -206,6 +206,7 @@
 #include "code\datums\browser.dm"
 #include "code\datums\callbacks.dm"
 #include "code\datums\category.dm"
+#include "code\datums\chatmessage.dm"
 #include "code\datums\datacore.dm"
 #include "code\datums\datum.dm"
 #include "code\datums\hierarchy.dm"

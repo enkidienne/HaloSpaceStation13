@@ -2,6 +2,9 @@
 	var/clientfps = 0
 	var/ooccolor = "#010000" //Whatever this is set to acts as 'reset' color and is thus unusable as an actual custom color
 
+	var/chat_on_map = 1
+	var/max_chat_length = CHAT_MESSAGE_MAX_LENGTH
+
 	var/UI_style = "Midnight"
 	var/UI_style_color = "#ffffff"
 	var/UI_style_alpha = 255
@@ -14,6 +17,8 @@
 	S["UI_style"]		>> pref.UI_style
 	S["UI_style_color"]	>> pref.UI_style_color
 	S["UI_style_alpha"]	>> pref.UI_style_alpha
+	S["chat_on_map"]	>> pref.chat_on_map
+	S["max_chat_length"]>> pref.max_chat_length
 	S["ooccolor"]		>> pref.ooccolor
 	S["clientfps"]		>> pref.clientfps
 
@@ -21,6 +26,8 @@
 	S["UI_style"]		<< pref.UI_style
 	S["UI_style_color"]	<< pref.UI_style_color
 	S["UI_style_alpha"]	<< pref.UI_style_alpha
+	S["chat_on_map"]	<< pref.chat_on_map
+	S["max_chat_length"]<< pref.max_chat_length
 	S["ooccolor"]		<< pref.ooccolor
 	S["clientfps"]		<< pref.clientfps
 
@@ -28,6 +35,8 @@
 	pref.UI_style		= sanitize_inlist(pref.UI_style, all_ui_styles, initial(pref.UI_style))
 	pref.UI_style_color	= sanitize_hexcolor(pref.UI_style_color, initial(pref.UI_style_color))
 	pref.UI_style_alpha	= sanitize_integer(pref.UI_style_alpha, 0, 255, initial(pref.UI_style_alpha))
+	pref.chat_on_map	= sanitize_integer(pref.chat_on_map, 0, 1, initial(pref.chat_on_map))
+	pref.max_chat_length= sanitize_integer(pref.max_chat_length, 1, CHAT_MESSAGE_MAX_LENGTH, initial(pref.max_chat_length))
 	pref.ooccolor		= sanitize_hexcolor(pref.ooccolor, initial(pref.ooccolor))
 	pref.clientfps	    = sanitize_integer(pref.clientfps, CLIENT_MIN_FPS, CLIENT_MAX_FPS, initial(pref.clientfps))
 
@@ -43,6 +52,8 @@
 			. += "<a href='?src=\ref[src];select_ooc_color=1'><b>Using Default</b></a><br>"
 		else
 			. += "<a href='?src=\ref[src];select_ooc_color=1'><b>[pref.ooccolor]</b></a> <table style='display:inline;' bgcolor='[pref.ooccolor]'><tr><td>__</td></tr></table> <a href='?src=\ref[src];reset=ooc'>reset</a><br>"
+	. += "<b>Show Runechat Chat Bubbles:</b> <a href='?src=\ref[src];chat_on_map=1'>[pref.chat_on_map ? "Enabled" : "Disabled"]</a><br>"
+	. += "<b>Runechat message char limit:</b> <a href='?src=\ref[src];max_chat_length=1;task=input'>[pref.max_chat_length]</a><br>"
 	. += "<b>Client FPS:</b> <a href='?src=\ref[src];select_fps=1'><b>[pref.clientfps]</b></a><br>"
 
 /datum/category_item/player_setup_item/player_global/ui/OnTopic(var/href,var/list/href_list, var/mob/user)
@@ -84,6 +95,16 @@
 			if(target_mob && target_mob.client)
 				target_mob.client.apply_fps(pref.clientfps)
 			return TOPIC_REFRESH
+
+	else if (href_list["max_chat_length"])
+		var/desiredlength = input(user, "Choose the max character length of shown Runechat messages. Valid range is 1 to [CHAT_MESSAGE_MAX_LENGTH] (default: [initial(pref.max_chat_length)]))", "Character Preference", pref.max_chat_length)  as null|num
+		if (!isnull(desiredlength))
+			pref.max_chat_length = clamp(desiredlength, 1, CHAT_MESSAGE_MAX_LENGTH)
+		return TOPIC_REFRESH
+
+	else if(href_list["chat_on_map"])
+		pref.chat_on_map = !pref.chat_on_map
+		return TOPIC_REFRESH
 
 	else if(href_list["reset"])
 		switch(href_list["reset"])
