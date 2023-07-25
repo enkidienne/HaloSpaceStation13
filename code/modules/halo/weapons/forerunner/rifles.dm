@@ -18,7 +18,7 @@
 
 	fire_delay = 8
 	burst = 6
-	burst_delay = 1.4
+	burst_delay = 1.6
 	one_hand_penalty = -1
 	dispersion = list(0.0,0.2,0.3,0.5,0.73,0.8)
 	w_class = ITEM_SIZE_LARGE
@@ -29,8 +29,8 @@
 		)
 
 	firemodes = list(\
-	list(mode_name="short bursts", burst=5, dispersion=list(0.0,0.2,0.3,0.5,0.73,0.8)),
-	list(mode_name="extended bursts", burst=10, dispersion=list(0.1,0.2,0.3,0.3, 0.5, 0.5, 0.6, 0.7, 0.8, 1.0))
+	list(mode_name="short bursts", burst=6, dispersion=list(0.0,0.2,0.3,0.5,0.73,0.8)),
+	list(mode_name="extended bursts", burst=12, dispersion=list(0.1,0.2,0.3,0.6, 0.8, 0.9, 0.9, 0.9, 0.9, 1.0))
 	)
 
 /obj/item/weapon/gun/projectile/suppressor/can_use_when_prone()
