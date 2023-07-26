@@ -54,7 +54,7 @@
 /obj/item/weapon/gun/energy/laser/sentinel_beam/detached
 	burst = 10
 	recharge_time = 1
-	max_shots = 75
+	max_shots = 150
 
 
 // AI pathing landmark
