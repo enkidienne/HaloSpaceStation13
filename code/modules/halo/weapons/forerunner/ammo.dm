@@ -107,6 +107,6 @@
 	icon = 'code/modules/halo/weapons/icons/forerunner_sprites.dmi'
 	icon_state = "suppressor_ammo"
 	damage = 25
-	armor_penetration = 20
+	armor_penetration = 10
 	penetrating = 1
-	shield_damage = 15
+	shield_damage = 10
