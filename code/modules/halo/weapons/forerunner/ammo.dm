@@ -40,6 +40,7 @@
 	fire_sound = 'code/modules/halo/sounds/boltshot_fire.ogg'
 	damage = 25
 	armor_penetration = 15
+	penetrating = 1
 
 /obj/item/projectile/bullet/pellet/shotgun/boltshot
 	name = "hardlight shrapnel"
