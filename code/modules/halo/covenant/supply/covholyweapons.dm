@@ -27,6 +27,12 @@
 	cost = 800
 	containername = "\improper Sanctified Binary Rifle crate"
 
+/decl/hierarchy/supply_pack/covenant_holy_weapons/sentinelbeam
+	name = "Anointed Sentinel Beam"
+	contains = list(/obj/item/weapon/gun/energy/laser/sentinel_beam/detached)
+	cost = 600
+	containername = "\improper Anointed Sentinel Beam crate"
+
 /* EXPLOSIVES */
 
 /decl/hierarchy/supply_pack/covenant_holy_weapons/splintergrenade
