@@ -327,8 +327,7 @@
 /obj/item/projectile/process()
 	spawn while(src && src.loc)
 		if(kill_count < initial(kill_count) - SUPPRESSION_GRACE_STEPS)
-			spawn()
-				do_suppression_aoe(loc)
+			do_suppression_aoe(loc)
 
 		if(kill_count-- < 1)
 			on_impact(src.loc) //for any final impact behaviours
