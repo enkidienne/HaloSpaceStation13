@@ -327,7 +327,8 @@
 /obj/item/projectile/process()
 	spawn while(src && src.loc)
 		if(kill_count < initial(kill_count) - SUPPRESSION_GRACE_STEPS)
-			do_suppression_aoe(loc)
+			spawn()
+				do_suppression_aoe(loc)
 
 		if(kill_count-- < 1)
 			on_impact(src.loc) //for any final impact behaviours
@@ -361,10 +362,9 @@
 		if(steps_taken == 1)
 			muzzle_effect(effect_transform)
 		else if(!bumped)
-			spawn()
-				tracer_effect(effect_transform)
+			tracer_effect(effect_transform)
 
-		if(!hitscan || steps_taken % steps_between_delays == 0)
+		if(!hitscan || steps_between_delays == 1 || steps_taken % steps_between_delays == 0)
 			sleep(step_delay)	//add delay between movement iterations if it's not a hitscan weapon
 
 /obj/item/projectile/proc/before_move()
