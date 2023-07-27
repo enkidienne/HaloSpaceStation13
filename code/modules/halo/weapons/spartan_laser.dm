@@ -16,7 +16,7 @@
 	one_hand_penalty = -1
 	self_recharge = 1
 	recharge_time = 150
-	max_shots = 8
+	max_shots = 4
 	is_charged_weapon = TRUE
 
 	arm_time = 25 //Deciseconds
