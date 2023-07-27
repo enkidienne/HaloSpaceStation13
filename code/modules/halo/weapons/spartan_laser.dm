@@ -14,38 +14,48 @@
 		)
 
 	one_hand_penalty = -1
-	self_recharge = 0
-	recharge_time = 20
+	self_recharge = 1
+	recharge_time = 150
 	max_shots = 8
 	is_charged_weapon = TRUE
 
-	arm_time = 7 //Deciseconds
+	arm_time = 25 //Deciseconds
 	charge_meter = 0
 	force = 10
 	screen_shake = 0.5
-	fire_delay = 10
+	fire_delay = 12
 	scope_zoom_amount = 3
-	overheat_capacity = 3
-	overheat_fullclear_delay = 30
+	is_scope_variable = 1
+	overheat_capacity = 4
+	overheat_fullclear_delay = 40
 
 	fire_sound = null
 
 	origin_tech = list(TECH_COMBAT = 10, TECH_POWER = 20)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/projectile/beam/spartan
+	projectile_type = /obj/item/projectile/spartanlaser
 
 	hud_bullet_usebar = 1
 
 	burst = 2
-	burst_delay = 2.5
+	burst_delay = 2.0
 
+	slowdown_general = 0.5
 
-/obj/item/projectile/beam/spartan
+/obj/item/projectile/spartanlaser
 	name = "spartan laser"
 	icon_state = "heavylaser"
-	damage = 100
-	shield_damage = 210 //No shields for you
+	pass_flags = PASSTABLE | PASSGRILLE
+	damage = 60
+	shield_damage = 150 //No shields for you
 	armor_penetration = 100
+	damage_type = BURN
+	sharp = 1 //concentrated burns
+	hitscan = 1
+	step_delay = 0
+	invisibility = 101	//beam projectiles are invisible as they are rendered by the effect engine
+
+	steps_between_delays = 5
 
 	fire_sound = 'code/modules/halo/sounds/Spartan_Laser_Beam_Shot_Sound_Effect.ogg'
 
