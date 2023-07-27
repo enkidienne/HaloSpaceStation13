@@ -361,10 +361,9 @@
 		if(steps_taken == 1)
 			muzzle_effect(effect_transform)
 		else if(!bumped)
-			spawn()
-				tracer_effect(effect_transform)
+			tracer_effect(effect_transform)
 
-		if(!hitscan || steps_taken % steps_between_delays == 0)
+		if(!hitscan || steps_between_delays == 1 || steps_taken % steps_between_delays == 0)
 			sleep(step_delay)	//add delay between movement iterations if it's not a hitscan weapon
 
 /obj/item/projectile/proc/before_move()

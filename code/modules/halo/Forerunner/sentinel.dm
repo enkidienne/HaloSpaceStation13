@@ -18,10 +18,11 @@
 	name = "sentinel beam"
 	icon_state = "beam_blue"
 
-	damage = 9
+	damage = 11
+	shield_damage = 30
 	damage_type = BURN
-	check_armour = "laser"
-	armor_penetration = 15
+	check_armour = "energy"
+	armor_penetration = 30
 	tracer_delay_time = 2.5
 
 	muzzle_type = /obj/effect/projectile/laser_gold/muzzle
@@ -37,7 +38,7 @@
 	recharge_time = 0
 	max_shots = 500
 	fire_delay = 20
-	burst_delay = 2.5
+	burst_delay = 1.5
 	burst = 8
 	charge_meter = 0
 
@@ -53,8 +54,9 @@
 //Found as random loot in forerunner areas (Utilise loot distributor system)//
 /obj/item/weapon/gun/energy/laser/sentinel_beam/detached
 	burst = 10
+	fire_delay = 10
 	recharge_time = 1
-	max_shots = 75
+	max_shots = 150
 
 
 // AI pathing landmark

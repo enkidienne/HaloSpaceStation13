@@ -38,8 +38,9 @@
 	icon = 'code/modules/halo/weapons/icons/forerunner_sprites.dmi'
 	icon_state = "boolet"
 	fire_sound = 'code/modules/halo/sounds/boltshot_fire.ogg'
-	damage = 30
-	armor_penetration = 30
+	damage = 25
+	armor_penetration = 15
+	penetrating = 1
 
 /obj/item/projectile/bullet/pellet/shotgun/boltshot
 	name = "hardlight shrapnel"
@@ -58,7 +59,7 @@
 	caliber = "hardlightBinaryrifle"
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/binaryrifle
-	max_ammo = 4
+	max_ammo = 2
 
 /obj/item/ammo_casing/binaryrifle
 	name = "hardlight cell"
@@ -107,6 +108,6 @@
 	icon = 'code/modules/halo/weapons/icons/forerunner_sprites.dmi'
 	icon_state = "suppressor_ammo"
 	damage = 25
-	armor_penetration = 20
+	armor_penetration = 10
 	penetrating = 1
-	shield_damage = 15
+	shield_damage = 10
