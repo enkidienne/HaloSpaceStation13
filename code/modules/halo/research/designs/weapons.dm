@@ -10,7 +10,7 @@
 
 /datum/research_design/railgun
 	name = "Asymmetric Recoilless Carbine-920"
-	product_type = /obj/item/weapon/gun/energy/railrifle
+	product_type = /obj/item/weapon/gun/projectile/railrifle
 	build_type = PROTOLATHE
 	required_materials = list("osmium-carbide plasteel" = 40)
 	required_reagents = list(/datum/reagent/mercury = 40, /datum/reagent/radium = 40)

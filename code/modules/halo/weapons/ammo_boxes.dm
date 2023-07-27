@@ -100,3 +100,13 @@
 	desc = "A box of sniper rounds to assist in holding rounds for bolt-action sniper rifles"
 	capacity = 14
 	ammo_spawnwith = list(/obj/item/ammo_casing/m233)
+
+/obj/item/ammo_box/railrifle
+	name = "Railgun HE Slugs"
+	desc = "A box of railgun rounds, to assist in loading the ARC-920."
+	capacity = 8
+	ammo_spawnwith = list(/obj/item/ammo_casing/railslug)
+
+/obj/item/ammo_box/railrifle/AP
+	name = "Railgun AP Slugs"
+	ammo_spawnwith = list(/obj/item/ammo_casing/railslug/AP)
