@@ -2177,6 +2177,7 @@
 #include "code\modules\halo\unsc\supply\onispecial.dm"
 #include "code\modules\halo\unsc\supply\regammo.dm"
 #include "code\modules\halo\unsc\supply\specammo.dm"
+#include "code\modules\halo\unsc\supply\specweapons.dm"
 #include "code\modules\halo\unsc\supply\weapons.dm"
 #include "code\modules\halo\vehicles\__defs.dm"
 #include "code\modules\halo\vehicles\fuel.dm"
