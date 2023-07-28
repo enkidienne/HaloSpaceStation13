@@ -56,7 +56,7 @@
 	burst = 10
 	fire_delay = 10
 	recharge_time = 15
-	max_shots = 40
+	max_shots = 100
 
 
 // AI pathing landmark
