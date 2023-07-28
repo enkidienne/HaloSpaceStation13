@@ -34,11 +34,11 @@
 	steps_between_delays = 6
 
 /obj/item/projectile/bullet/railslug/HE
-	damage = 65
-	armor_penetration = 50
+	damage = 60
+	armor_penetration = 60
 	shield_damage = 175
 	penetrating = 0
 
 /obj/item/projectile/bullet/railslug/HE/on_impact(var/atom/target)
-	explosion(get_turf(target), 0, 1, 2, 4,guaranteed_damage = 35,guaranteed_damage_range = 1)
+	explosion(get_turf(target), -1, 1, 2, 4,guaranteed_damage = 20,guaranteed_damage_range = 1)
 	..()
