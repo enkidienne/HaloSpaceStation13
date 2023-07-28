@@ -81,7 +81,7 @@
 	maxHealth = 150
 	ranged = 1
 	move_to_delay = 5
-	resistance = 10
+	resistance = 15
 	speak_chance = 1
 	speak = list()
 	emote_see = list("extends and retracts its manipulator arms","scans its body for damage","scans the environment")
