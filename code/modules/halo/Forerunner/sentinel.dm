@@ -18,11 +18,11 @@
 	name = "sentinel beam"
 	icon_state = "beam_blue"
 
-	damage = 11
+	damage = 10
 	shield_damage = 30
 	damage_type = BURN
 	check_armour = "energy"
-	armor_penetration = 30
+	armor_penetration = 20
 	tracer_delay_time = 2.5
 
 	muzzle_type = /obj/effect/projectile/laser_gold/muzzle
@@ -35,7 +35,7 @@
 	icon = 'code/modules/halo/Forerunner/forerunner_weapons.dmi'
 	icon_state = "sentinel_beam"
 	self_recharge = 1
-	recharge_time = 0
+	recharge_time = 1
 	max_shots = 500
 	fire_delay = 20
 	burst_delay = 1.5
@@ -55,8 +55,8 @@
 /obj/item/weapon/gun/energy/laser/sentinel_beam/detached
 	burst = 10
 	fire_delay = 10
-	recharge_time = 1
-	max_shots = 150
+	recharge_time = 15
+	max_shots = 40
 
 
 // AI pathing landmark
