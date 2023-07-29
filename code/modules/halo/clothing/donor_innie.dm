@@ -346,5 +346,55 @@ obj/item/clothing/suit/armor/special/soe/pantas
 	head = /obj/item/clothing/head/helmet/urfc/socks
 	suit = /obj/item/clothing/suit/armor/special/urfc/socks
 
+////////TheMojaveWanderer\\\\\\\\
+
+//Insurrectionist
+
+/obj/item/clothing/head/helmet/innie/light/mojave
+	name = "Brimmed Cowboy Hat"
+	desc = "A flat brimmed cowboy hat, worn to protect its wearer from a desert's scorching sun."
+	icon = 'code/modules/halo/clothing/urf_commando.dmi'
+	icon_override = 'code/modules/halo/clothing/urf_commando.dmi'
+	icon_state = "reno_helmet_obj"
+	item_state = "reno_helmet_worn"
+
+/obj/item/clothing/suit/storage/innie/light/mojave
+	name = "Mojave Duster"
+	desc = "It's a standard insurrectionist vest cut down and placed under a tan duster."
+	icon = 'code/modules/halo/clothing/urf_commando.dmi'
+	icon_override = 'code/modules/halo/clothing/urf_commando.dmi'
+	icon_state = "reno_armor_obj"
+	item_state = "reno_armor_worn"
+
+/obj/item/weapon/gun/projectile/m392_dmr/mojave
+	name = "M392B Liberator"
+	desc = "An incredibly worn but well maintained unique variant of the M392, fitted with a custom stock."
+	icon_state = "mojave-m392"
+	item_state = "mojave-m392"
+	wielded_item_state = "mojave-m392-wielded"
+	item_icons = list(
+		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
+		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
+		slot_back_str = 'code/modules/halo/weapons/icons/Back_Weapons.dmi',
+		slot_s_store_str = 'code/modules/halo/weapons/icons/Armor_Weapons.dmi',
+		)
+
+/obj/item/weapon/gun/projectile/m392_dmr/mojave/update_icon()
+	. = ..()
+	if(ammo_magazine)
+		icon_state = "mojave-m392"
+	else
+		icon_state = "mojave-m392-unloaded"
+
+/obj/item/weapon/storage/box/large/donator/mojave
+	startswith = list(/obj/item/clothing/head/helmet/innie/light/mojave,
+					/obj/item/clothing/suit/storage/innie/light/mojave,
+					/obj/item/weapon/gun/projectile/m392_dmr/mojave
+					)
+	can_hold = list(/obj/item/clothing/head/helmet/innie/light/mojave,
+					/obj/item/clothing/suit/storage/innie/light/mojave,
+					/obj/item/weapon/gun/projectile/m392_dmr/mojave
+					)
+
 #undef URF_HAND
 #undef URF_OVERRIDE
