@@ -728,4 +728,32 @@
 	gloves = /obj/item/clothing/gloves/thick/sangheili/zagarnt
 	shoes = /obj/item/clothing/shoes/sangheili/zagarnt
 
+/////Lord_Inquisitor_Plasmaman
+
+/obj/item/clothing/head/helmet/jiralhanae/covenant/lord_inquisitor
+	icon = JIRALHANAE_ICON_PATH_MOB
+	icon_state = "helm_deion"
+	name = "Jiralhanae Berserker Helmet"
+
+/obj/item/clothing/suit/armor/jiralhanae/covenant/lord_inquisitor
+	icon = JIRALHANAE_ICON_PATH_MOB
+	icon_state = "armour_deion"
+	name = "Jiralhanae Berserker Armor"
+
+/obj/item/clothing/shoes/jiralhanae/covenant/lord_inquisitor
+	icon = JIRALHANAE_ICON_PATH_MOB
+	icon_state = "feet_deion"
+	name = "Jiralhanae Berserker Greaves"
+
+/obj/item/weapon/storage/box/large/donator/lord_inquisitor
+	startswith = list(/obj/item/clothing/head/helmet/jiralhanae/covenant/lord_inquisitor,
+					/obj/item/clothing/suit/armor/jiralhanae/covenant/lord_inquisitor,
+					/obj/item/clothing/shoes/jiralhanae/covenant/lord_inquisitor
+					)
+	can_hold = list(/obj/item/clothing/head/helmet/jiralhanae/covenant/lord_inquisitor,
+					/obj/item/clothing/suit/armor/jiralhanae/covenant/lord_inquisitor,
+					/obj/item/clothing/shoes/jiralhanae/covenant/lord_inquisitor
+					)
+
+
 #undef JIRALHANAE_ICON_PATH_OBJ

@@ -1973,6 +1973,31 @@ obj/item/clothing/head/helmet/odst/donator/roadcone_orange
 	/obj/item/clothing/suit/armor/special/spartan/mkvii
 	)
 
+///////////Pneumothorax/////////
+
+//Spartan
+
+/obj/item/clothing/head/helmet/spartan/pneumothorax
+	name = "Mark IV CQB Helmet"
+	desc = "A blue battle-worn MJOLNIR MKIV powered helmet."
+	icon_state = "husky_helm_obj"
+	item_state = "husky_helm_worn"
+
+/obj/item/clothing/suit/armor/special/spartan/pneumothorax
+	name = "Mark IV CQB Armor"
+	desc = "A set of blue battle-worn MJOLNIR MKIV powered armor."
+	icon_state = "husky_obj"
+	item_state = "husky_worn"
+
+/obj/item/weapon/storage/box/large/donator/pneumothorax
+	startswith = list(\
+	/obj/item/clothing/head/helmet/spartan/pneumothorax,
+	/obj/item/clothing/suit/armor/special/spartan/pneumothorax
+	)
+	can_hold = list(\
+	/obj/item/clothing/head/helmet/spartan/pneumothorax,
+	/obj/item/clothing/suit/armor/special/spartan/pneumothorax
+	)
 
 #undef ODST_OVERRIDE
 #undef ITEM_INHAND
