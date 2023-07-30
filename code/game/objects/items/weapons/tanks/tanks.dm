@@ -271,7 +271,7 @@ var/list/global/tank_gauge_cache = list()
 		// auto update every Master Controller tick
 		ui.set_auto_update(1)
 
-/obj/item/weapon/tank/Topic(user, href_list)
+/obj/item/weapon/tank/Topic(href, href_list)
 	..()
 	if (usr.stat|| usr.restrained())
 		return 0
