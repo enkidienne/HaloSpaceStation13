@@ -7,5 +7,4 @@
 #include "overmap.dm"
 #include "spawns.dm"
 #include "x52_spawns.dm"
-
 #include "gsn_retribution"
