@@ -15,7 +15,7 @@
 #include "../Asteroid Listening Post/includes.dm"
 */
 
-#include "maps\URF_GNS_Retribution\includes.dm"
+#include "maps\GNS_Retribution\includes.dm"
 
 #include "../CRS_Unyielding_Transgression/includes.dm"
 
