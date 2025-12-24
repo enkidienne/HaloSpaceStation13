@@ -17,9 +17,9 @@
 /decl/hierarchy/outfit/job/gao_battlejumper_officer
 	name = "GAO battlejumper Officer"
 
-	head = /obj/item/clothing/head/helmet/gao_battlejumper/specialist
+	head = /obj/item/clothing/head/helmet/gao_battlejumper
 	mask = /obj/item/clothing/mask/gas/soebalaclava
-	suit = /obj/item/clothing/suit/armor/special/gao_battlejumper
+	suit = /obj/item/clothing/suit/armor/special/gao_battlejumper/specialist
 	gloves = /obj/item/clothing/gloves/thick/gao_battlejumper
 	l_ear = /obj/item/device/radio/headset/commando
 	uniform = /obj/item/clothing/under/gao_battlejumper_jumpsuit
@@ -32,9 +32,9 @@
 /decl/hierarchy/outfit/job/gao_battlejumper_captain
 	name = "GAO battlejumper Captain"
 
-	head = /obj/item/clothing/head/helmet/gao_battlejumper/specialist
+	head = /obj/item/clothing/head/helmet/gao_battlejumper
 	mask = /obj/item/clothing/mask/gas/soebalaclava
-	suit = /obj/item/clothing/suit/armor/special/gao_battlejumper
+	suit = /obj/item/clothing/suit/armor/special/gao_battlejumper/specialist
 	gloves = /obj/item/clothing/gloves/thick/gao_battlejumper
 	l_ear = /obj/item/device/radio/headset/commando
 	uniform = /obj/item/clothing/under/gao_battlejumper_jumpsuit
