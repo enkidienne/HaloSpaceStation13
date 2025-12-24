@@ -17,7 +17,7 @@
 
 	#include "../CRS_Unyielding_Transgression/includes.dm"
 
-	#include "../gsn_retribution/includes.dm"
+	#include "../GNS_Retribution/includes.dm"
 
 	#include "../../code/modules/halo/lobby_music/odst_music.dm"
 	#include "../../code/modules/halo/lobby_music/halo_music.dm"
