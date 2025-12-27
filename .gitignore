@@ -15,6 +15,7 @@ use_map
 stopserver
 reboot_called
 atupdate
+
 # ignore config, but not subdirs
 !config/*/
 config/*
