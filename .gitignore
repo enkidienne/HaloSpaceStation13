@@ -15,7 +15,7 @@ use_map
 stopserver
 reboot_called
 atupdate
-
+baystation12.dme
 # ignore config, but not subdirs
 !config/*/
 config/*

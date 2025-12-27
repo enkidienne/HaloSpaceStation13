@@ -10,6 +10,10 @@
 #define DEBUG
 // END_PREFERENCES
 // BEGIN_INCLUDE
+#if (defined(SPACEMAN_DMM) || defined(FASTDMM))
+#define IN_MAP_EDITOR
+#define MAP_OVERRIDE
+#endif
 #include "code\_macros.dm"
 #include "code\client_macros.dm"
 #include "code\hub.dm"
