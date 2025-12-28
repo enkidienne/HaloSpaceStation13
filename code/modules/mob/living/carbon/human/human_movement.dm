@@ -19,14 +19,15 @@
 	if(embedded_flag || (stomach_contents && stomach_contents.len))
 		handle_embedded_and_stomach_objects() //Moving with objects stuck in you can cause bad times.
 
-	var/health_deficiency = (maxHealth - health)
 	/*
+	var/health_deficiency = (maxHealth - health)
+
 	//20% health loss, then we start giving slowdown.
 	if(health_deficiency >= (maxHealth*HEALTHDEFICIENCY_THRESHOLD))
 		tally += (health_deficiency / (maxHealth * HEALTHDEFICIENCY_HPLOSS_ONEPOINTSLOWDOWN_MOD))
 	*/
 	if(can_feel_pain())
-		if(get_shock() >= 20) tally += (get_shock() / 30) //halloss shouldn't slow you down if you can't even feel it
+		tally += (get_shock() / 30) //halloss shouldn't slow you down if you can't even feel it
 
 	var/list/broken_organ_checklist = list(BP_L_LEG, BP_R_LEG, BP_L_FOOT, BP_R_FOOT)
 	if(buckled && istype(buckled, /obj/structure/bed/chair/wheelchair))
