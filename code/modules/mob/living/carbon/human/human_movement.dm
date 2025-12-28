@@ -20,10 +20,11 @@
 		handle_embedded_and_stomach_objects() //Moving with objects stuck in you can cause bad times.
 
 	var/health_deficiency = (maxHealth - health)
+	/*
 	//20% health loss, then we start giving slowdown.
 	if(health_deficiency >= (maxHealth*HEALTHDEFICIENCY_THRESHOLD))
 		tally += (health_deficiency / (maxHealth * HEALTHDEFICIENCY_HPLOSS_ONEPOINTSLOWDOWN_MOD))
-
+	*/
 	if(can_feel_pain())
 		if(get_shock() >= 20) tally += (get_shock() / 30) //halloss shouldn't slow you down if you can't even feel it
 
