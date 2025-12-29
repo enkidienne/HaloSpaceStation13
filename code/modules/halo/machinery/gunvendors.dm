@@ -370,7 +370,7 @@
 					)
 
 /obj/machinery/vending/armory/attachment/soe
-	name = "SOE Attachments Vendor"
+	name = "GAO Attachments Vendor"
 	desc = "A vendor full? of attachments *the rest is scratched off*."
 	req_access = list(access_soe)
 	products = list(/obj/item/weapon_attachment/barrel/suppressor = 5,
@@ -619,13 +619,14 @@
 	req_access = list(access_soe)
 	products = list(
 					"Armor" = -1,
-					/obj/item/weapon/storage/box/large/armorset/soe = 4,
-					/obj/item/weapon/storage/box/large/armorset/soe/cqb = 2,
-					/obj/item/weapon/storage/box/large/armorset/soe/sniper = 2,
-					/obj/item/weapon/storage/box/large/armorset/soe/medic = 2,
-					/obj/item/weapon/storage/box/large/armorset/soe/engineer = 2,
-					/obj/item/weapon/storage/box/large/armorset/soe/squadleader = 1,
-					/obj/item/weapon/storage/box/large/armorset/soe/eva = 10,
+					/obj/item/clothing/suit/armor/special/gao_battlejumper = 10,
+					/obj/item/clothing/suit/armor/special/gao_battlejumper/specialist = 10,
+					/obj/item/clothing/head/helmet/gao_battlejumper/solid = 10,
+					/obj/item/clothing/head/helmet/gao_battlejumper/visor = 10,
+					/obj/item/clothing/head/helmet/gao_battlejumper = 10,
+					/obj/item/clothing/under/gao_battlejumper_jumpsuit = 10,
+					/obj/item/clothing/shoes/magboots/gao_battlejumper = 10,
+					/obj/item/clothing/gloves/thick/gao_battlejumper = 10,
 					/obj/item/weapon/storage/backpack/cmdo/eng = 2,
 					/obj/item/weapon/storage/backpack/cmdo/med = 2,
 					/obj/item/weapon/storage/backpack/cmdo = 2,
