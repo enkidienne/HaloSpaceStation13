@@ -332,7 +332,7 @@
 "ih" = (/obj/structure/table/steel,/obj/structure/window/reinforced{dir = 4; pixel_x = 0},/obj/machinery/light{dir = 1; icon_state = "tube1"; pixel_x = 0},/obj/machinery/computer/navigation{density = 0; dir = 8; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "engine"; pixel_x = -32; pixel_y = 0; tag = "icon-engine (NORTH)"},/obj/structure/computerframe{anchored = 1; density = 0; dir = 8; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; pixel_x = -32; tag = "icon-computer (WEST)"},/turf/simulated/floor/tech/gray,/area/gsn_retribution/bridge)
 "ii" = (/obj/structure/window/reinforced{dir = 4},/obj/effect/floor_decal/corner_techfloor_grid{icon_state = "corner_techfloor_grid"; dir = 6},/turf/simulated/floor/tech,/area/gsn_retribution/bridge)
 "ij" = (/obj/structure/computerframe{anchored = 1; dir = 8; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "computer"; layer = 2; level = 1; tag = "icon-computer (WEST)"},/obj/machinery/computer/helm{tag = "icon-nav (WEST)"; icon = 'code/modules/halo/icons/machinery/computer.dmi'; icon_state = "nav"; dir = 8; icon_keyboard = ""; icon_screen = "covie_console_overlay"},/turf/simulated/floor/tech/gray,/area/gsn_retribution/bridge)
-"ik" = (/obj/structure/bed/chair/comfy/captain{dir = 8; icon_state = "capchair_preview"; name = "Bridge chair"; tag = "icon-capchair_preview (WEST)"},/obj/machinery/light/invis{icon_state = "tube1"; dir = 4},/turf/simulated/floor/tech/gray,/area/gsn_retribution/bridge)
+"ik" = (/obj/structure/bed/chair/comfy/captain{dir = 8; icon_state = "capchair_preview"; name = "Bridge chair"; tag = "icon-capchair_preview (WEST)"},/obj/machinery/light/invis{icon_state = "tube1"; dir = 4},/mob/living/simple_animal/cat/fluff/reno,/turf/simulated/floor/tech/gray,/area/gsn_retribution/bridge)
 "il" = (/obj/structure/window/reinforced{dir = 8; pixel_x = 0},/obj/effect/floor_decal/corner_techfloor_grid{icon_state = "corner_techfloor_grid"; dir = 9},/turf/simulated/floor/tech,/area/gsn_retribution/bridge)
 "im" = (/obj/machinery/atmospherics/pipe/manifold/hidden/yellow{icon_state = "map"; dir = 4},/obj/machinery/meter,/turf/simulated/floor/tech,/area/gsn_retribution/engineering)
 "in" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"},/turf/simulated/floor/tech,/area/gsn_retribution/bridge)
@@ -678,7 +678,6 @@
 "pQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/door/firedoor,/turf/simulated/floor/tech/gray,/area/gsn_retribution/aft_hallway)
 "pR" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/effect/floor_decal/industrial/warning,/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (NORTH)"; icon_state = "warning"; dir = 1},/obj/machinery/door/blast/regular{id = "gsn8"; name = "Port Umbilical"},/turf/simulated/floor/tech/gray,/area/gsn_retribution/umbilicals)
 "pU" = (/obj/machinery/door/airlock/halo/maint{name = "Nuclear Warhead Storage"; req_access = list(250)},/turf/simulated/floor/tech/gray,/area/gsn_retribution/bridge)
-"pW" = (/obj/effect/landmark/map_data{name = "GSN Retribution"},/turf/space,/area/space)
 "pX" = (/obj/structure/closet/walllocker/emerglocker/south,/turf/simulated/floor/tech/endfulltwogray,/area/gsn_retribution/midship)
 "pY" = (/obj/machinery/alarm{dir = 1; icon_state = "alarm0"; pixel_y = -22},/turf/simulated/floor/tech/endfulltwogray,/area/gsn_retribution/midship)
 "pZ" = (/turf/simulated/floor/tech/graycorner{icon_state = "techfloor_graycorner"; dir = 8},/area/gsn_retribution/midship)
@@ -967,7 +966,6 @@
 "wv" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 1; icon_state = "map_vent"; pixel_y = 16},/turf/simulated/floor/tech/endfulltwogray,/area/gsn_retribution/engineering)
 "ww" = (/turf/simulated/floor/plating,/area/gsn_retribution/cargo_shuttle_hangar)
 "wx" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 1; icon_state = "map_scrubber_off"; pixel_y = 16},/turf/simulated/floor/tech/endfulltwogray,/area/gsn_retribution/engineering)
-"wA" = (/obj/effect/overmap/ship/gsn_retribution,/turf/space,/area/space)
 "wD" = (/obj/machinery/door/firedoor{icon_state = "open"; dir = 4},/obj/machinery/door/airlock/halo/maint{name = "Port Thrusters"; req_access = list(250)},/turf/simulated/floor/plating,/turf/simulated/floor/tranquility/catwalk1{icon_state = "catwalk4"},/area/gsn_retribution/engineering)
 "wE" = (/obj/effect/floor_decal/industrial/warning,/obj/structure/destructible/railing/dark,/turf/simulated/floor/tech/endfulltwogray,/area/gsn_retribution/cargo_shuttle_hangar)
 "wG" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9; icon_state = "intact-supply"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tech/endfulltwogray{icon_state = "techfloor_endfulltwogray"; dir = 4},/area/gsn_retribution/port_droppods)
@@ -1157,6 +1155,7 @@
 "Ji" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 4},/turf/simulated/floor/plating,/turf/simulated/floor/tranquility/catwalk1,/area/gsn_retribution/midship)
 "Jn" = (/turf/simulated/floor/tech/endfulltwogray,/area/gsn_retribution/aft_hallway)
 "Jo" = (/turf/simulated/floor/tech/endfulltwogray{icon_state = "techfloor_endfulltwogray"; dir = 6},/area/gsn_retribution/engineering)
+"Ju" = (/obj/effect/landmark/map_data{name = "GSN Retribution"},/turf/space,/area/space)
 "JF" = (/obj/machinery/camera/autoname/invis/innie_base{icon_state = "camera"; dir = 1},/turf/simulated/floor/tech/endfulltwogray,/area/gsn_retribution/aft_hallway)
 "JK" = (/obj/structure/ai_routing_node/innie,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tech,/area/gsn_retribution/mission_shuttle_hangar)
 "JO" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; pixel_x = 0},/turf/simulated/floor/tech/endfulltwogray{icon_state = "techfloor_endfulltwogray"; dir = 1},/area/gsn_retribution/midship)
@@ -1237,6 +1236,7 @@
 "SN" = (/turf/simulated/floor/tech/endfulltwogray{icon_state = "techfloor_endfulltwogray"; dir = 1},/area/gsn_retribution/bridge)
 "SQ" = (/obj/machinery/atmospherics/unary/vent_scrubber{icon_state = "map_scrubber_off"; dir = 4},/turf/simulated/floor/tiled/dark/dark,/area/gsn_retribution/medbay)
 "SR" = (/turf/simulated/floor/tech/endfulltwogray{icon_state = "techfloor_endfulltwogray"; dir = 4},/area/gsn_retribution/bridge)
+"Tc" = (/obj/effect/overmap/ship/gsn_retribution,/turf/space,/area/space)
 "Te" = (/turf/simulated/wall/r_wall,/area/gsn_retribution/midship)
 "Tj" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tech/gray,/area/gsn_retribution/aft_hallway)
 "To" = (/turf/simulated/floor/tech/endfulltwogray{icon_state = "techfloor_endfulltwogray"; dir = 5},/area/gsn_retribution/starboard_hangar)
@@ -1437,6 +1437,6 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-pWaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-wAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Juaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Tcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}
