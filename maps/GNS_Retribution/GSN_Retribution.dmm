@@ -70,7 +70,7 @@
 "bY" = (/obj/item/modular_computer/console/preset/innie_shuttle,/turf/simulated/floor/shuttle/red,/area/shuttle/innie_shuttle_transport)
 "bZ" = (/obj/item/modular_computer/console/preset/innie_comms{name = "Mission Comms Computer"},/turf/simulated/floor/shuttle/red,/area/shuttle/innie_shuttle_transport)
 "ca" = (/obj/structure/bed/chair,/obj/machinery/light/colored/red{icon_state = "red1"; dir = 1},/turf/simulated/floor/shuttle/red,/area/shuttle/innie_shuttle_transport)
-"cb" = (/obj/structure/bed/chair,/obj/machinery/power/apc/super{pixel_y = 28},/turf/simulated/floor/shuttle/red,/area/shuttle/innie_shuttle_transport)
+"cb" = (/obj/structure/bed/chair,/obj/machinery/power/apc/infinite{pixel_y = 30},/turf/simulated/floor/shuttle/red,/area/shuttle/innie_shuttle_transport)
 "cc" = (/obj/structure/thruster/dark/thruster{icon_state = "se1"; dir = 4},/obj/structure/window/reinforced/treated{icon_state = "fwindow"; dir = 8},/obj/structure/window/reinforced/treated{icon_state = "fwindow"; dir = 8},/turf/simulated/floor,/area/shuttle/innie_shuttle_transport)
 "ce" = (/obj/effect/floor_decal/industrial/warning{dir = 1},/turf/simulated/floor/plating,/turf/simulated/floor/tranquility/catwalk3,/area/gsn_retribution/bow_starboard_hallway)
 "cf" = (/obj/machinery/atmospherics/unary/vent_scrubber{icon_state = "map_scrubber_off"; dir = 4},/turf/simulated/floor/tech,/area/gsn_retribution/mission_shuttle_hangar)
@@ -395,6 +395,7 @@
 "jB" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/door/airlock/multi_tile/halo{name = "Medbay"; req_access = list(250)},/obj/machinery/door/firedoor,/turf/simulated/floor/tech/gray,/area/gsn_retribution/midship)
 "jC" = (/obj/effect/floor_decal/industrial/warning,/obj/structure/destructible/railing/dark,/turf/simulated/floor/tech/endfulltwogray,/area/gsn_retribution/mission_shuttle_hangar)
 "jD" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/door/firedoor,/turf/simulated/floor/tech/endfulltwogray{icon_state = "techfloor_endfulltwogray"; dir = 4},/area/gsn_retribution/bow_starboard_hallway)
+"jF" = (/obj/effect/overmap/ship/gsn_retribution,/turf/space,/area/space)
 "jG" = (/obj/structure/rearm_repair_station{dir = 1; icon_state = "human"; pixel_x = 16},/turf/simulated/floor/tech/endfulltwogray,/area/gsn_retribution/starboard_hangar)
 "jH" = (/obj/machinery/light,/obj/structure/closet/walllocker/emerglocker/south,/turf/simulated/floor/tech/endfulltwogray,/area/gsn_retribution/starboard_hangar)
 "jI" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tech/endfulltwogray,/area/gsn_retribution/starboard_hangar)
@@ -1086,6 +1087,7 @@
 "zP" = (/obj/machinery/deck_gun{pixel_y = 32},/turf/space,/area/space)
 "zQ" = (/obj/structure/lattice,/obj/machinery/deck_gun{pixel_y = 32},/turf/space,/area/space)
 "zR" = (/obj/structure/lattice,/obj/machinery/deck_gun/missile_pod{icon_state = "missile_pod"; dir = 1},/turf/space,/area/space)
+"Ad" = (/obj/effect/landmark/map_data{name = "GSN Retribution"},/turf/space,/area/space)
 "Aq" = (/turf/simulated/floor/tech/graycorner{icon_state = "techfloor_graycorner"; dir = 1},/area/gsn_retribution/engineering)
 "At" = (/turf/simulated/floor/tech/graycorner{icon_state = "techfloor_graycorner"; dir = 8},/area/gsn_retribution/engineering)
 "AD" = (/obj/effect/floor_decal/industrial/warning,/obj/structure/extinguisher_cabinet{pixel_y = 32},/turf/simulated/floor/plating,/turf/simulated/floor/tranquility/catwalk4,/area/gsn_retribution/port_droppods)
@@ -1155,7 +1157,6 @@
 "Ji" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 4},/turf/simulated/floor/plating,/turf/simulated/floor/tranquility/catwalk1,/area/gsn_retribution/midship)
 "Jn" = (/turf/simulated/floor/tech/endfulltwogray,/area/gsn_retribution/aft_hallway)
 "Jo" = (/turf/simulated/floor/tech/endfulltwogray{icon_state = "techfloor_endfulltwogray"; dir = 6},/area/gsn_retribution/engineering)
-"Ju" = (/obj/effect/landmark/map_data{name = "GSN Retribution"},/turf/space,/area/space)
 "JF" = (/obj/machinery/camera/autoname/invis/innie_base{icon_state = "camera"; dir = 1},/turf/simulated/floor/tech/endfulltwogray,/area/gsn_retribution/aft_hallway)
 "JK" = (/obj/structure/ai_routing_node/innie,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tech,/area/gsn_retribution/mission_shuttle_hangar)
 "JO" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; pixel_x = 0},/turf/simulated/floor/tech/endfulltwogray{icon_state = "techfloor_endfulltwogray"; dir = 1},/area/gsn_retribution/midship)
@@ -1236,7 +1237,6 @@
 "SN" = (/turf/simulated/floor/tech/endfulltwogray{icon_state = "techfloor_endfulltwogray"; dir = 1},/area/gsn_retribution/bridge)
 "SQ" = (/obj/machinery/atmospherics/unary/vent_scrubber{icon_state = "map_scrubber_off"; dir = 4},/turf/simulated/floor/tiled/dark/dark,/area/gsn_retribution/medbay)
 "SR" = (/turf/simulated/floor/tech/endfulltwogray{icon_state = "techfloor_endfulltwogray"; dir = 4},/area/gsn_retribution/bridge)
-"Tc" = (/obj/effect/overmap/ship/gsn_retribution,/turf/space,/area/space)
 "Te" = (/turf/simulated/wall/r_wall,/area/gsn_retribution/midship)
 "Tj" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tech/gray,/area/gsn_retribution/aft_hallway)
 "To" = (/turf/simulated/floor/tech/endfulltwogray{icon_state = "techfloor_endfulltwogray"; dir = 5},/area/gsn_retribution/starboard_hangar)
@@ -1437,6 +1437,6 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-Juaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-Tcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Adaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+jFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}
